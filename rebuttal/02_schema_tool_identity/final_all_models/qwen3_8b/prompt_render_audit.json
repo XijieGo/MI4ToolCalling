@@ -1,0 +1,10 @@
+{
+  "n_input_records": 4000,
+  "expected_input_records": 4000,
+  "source_schema_count": 1,
+  "mistral_v0_stored_id_roundtrip": {
+    "n": 0,
+    "exact_count": 0
+  },
+  "v0_input_rule": "stored native IDs for Mistral; source text re-tokenized with add_special_tokens=False for native text families"
+}

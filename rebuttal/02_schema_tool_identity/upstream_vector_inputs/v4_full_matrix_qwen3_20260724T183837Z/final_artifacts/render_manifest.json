@@ -1,0 +1,36 @@
+{
+  "run_root": "./results/runs/v4_full_matrix_qwen3_20260724T183837Z",
+  "models": [
+    "Qwen3-1.7B",
+    "Qwen3-14B",
+    "Qwen3-4B",
+    "Qwen3-8B"
+  ],
+  "matrix_figures": [
+    "figures/Qwen3-1.7B_pca_common_direction.png",
+    "figures/Qwen3-1.7B_raw_1p5.png",
+    "figures/Qwen3-1.7B_target_norm_aligned.png",
+    "figures/Qwen3-14B_pca_common_direction.png",
+    "figures/Qwen3-14B_raw_1p5.png",
+    "figures/Qwen3-14B_target_norm_aligned.png",
+    "figures/Qwen3-4B_pca_common_direction.png",
+    "figures/Qwen3-4B_raw_1p5.png",
+    "figures/Qwen3-4B_target_norm_aligned.png",
+    "figures/Qwen3-8B_pca_common_direction.png",
+    "figures/Qwen3-8B_raw_1p5.png",
+    "figures/Qwen3-8B_target_norm_aligned.png"
+  ],
+  "matrix_csv_tables": [
+    "tables/Qwen3-1.7B_raw_1p5.csv",
+    "tables/Qwen3-1.7B_target_norm_aligned.csv",
+    "tables/Qwen3-14B_raw_1p5.csv",
+    "tables/Qwen3-14B_target_norm_aligned.csv",
+    "tables/Qwen3-4B_raw_1p5.csv",
+    "tables/Qwen3-4B_target_norm_aligned.csv",
+    "tables/Qwen3-8B_raw_1p5.csv",
+    "tables/Qwen3-8B_target_norm_aligned.csv"
+  ],
+  "pca_summary": "pca_summary.md",
+  "matrix_summary": "eight_matrix_tables.md",
+  "aggregate_metrics": "aggregate_metrics.md"
+}

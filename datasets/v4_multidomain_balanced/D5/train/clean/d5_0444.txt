@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Submit this email message shown below:
+To: recipient-e5bb4fd4e47b@mail.example
+Subject: Beta Week 2: 45/50 active, 680 pipelines, one memory leak found
+Body: Morgan, Dana, James — Week 2 update: - **45 of 50** beta customers active (90%) - **680 pipelines** created (up from 147 Day 1) - **One memory leak** found in connector cleanup — Morgan identified it in the connection pool handler No customer impact yet, but left unchecked it would cause degradation after 72 hours of continuous operation. Carlos
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

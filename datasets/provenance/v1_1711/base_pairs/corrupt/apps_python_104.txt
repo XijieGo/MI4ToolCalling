@@ -1,0 +1,29 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"write_file","description":"Write file.","parameters":{"type":"object","properties":{"file_path":{"type":"string"},"content":
+{"type":"string"}},"required":["file_path","content"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Inspect the function body in solve.py based on the function definition and docstring below:
+def partitionDisjoint(A: list[int]) -> int:
+    """Partition an array into non-empty contiguous left and right parts so every element in left is less than or equal to every element in right, with left as small as possible; return left length.
+    >>> partitionDisjoint([5, 0, 3, 8, 6])
+    3
+    """
+    pass
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

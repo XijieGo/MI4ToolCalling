@@ -1,0 +1,32 @@
+{
+  "V1": {
+    "label": "Renamed",
+    "cosine": 0.9696030616760254,
+    "strict_flip": 0.8040540540540541,
+    "strict_drop": 0.6566666666666666,
+    "strict_flip_count": 238,
+    "strict_flip_denominator": 296,
+    "strict_drop_count": 197,
+    "strict_drop_denominator": 300
+  },
+  "V2": {
+    "label": "Removed",
+    "cosine": 0.889825701713562,
+    "strict_flip": 0.6789297658862876,
+    "strict_drop": 1.0,
+    "strict_flip_count": 203,
+    "strict_flip_denominator": 299,
+    "strict_drop_count": 289,
+    "strict_drop_denominator": 289
+  },
+  "V5": {
+    "label": "Mismatched",
+    "cosine": 0.8871293067932129,
+    "strict_flip": 0.18333333333333332,
+    "strict_drop": 1.0,
+    "strict_flip_count": 55,
+    "strict_flip_denominator": 300,
+    "strict_drop_count": 285,
+    "strict_drop_denominator": 285
+  }
+}

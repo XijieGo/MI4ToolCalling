@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "dataset_manifest_sha256": {
+    "clean": "95da26ab2646d312cc80a63c3fce7e71f02f1b2dfe4d3503c2262c4b40d647c9",
+    "corrupt": "30a496c9713268e3b442473a368846bc9eab4ff0aa4a9e5545fb92a686f5e486"
+  },
+  "n_test_pairs": 300,
+  "verbs": [
+    "add",
+    "build",
+    "complete",
+    "save",
+    "write",
+    "create",
+    "generate",
+    "implement",
+    "modify",
+    "update",
+    "discuss",
+    "explore",
+    "review",
+    "study",
+    "analyze",
+    "assess",
+    "compare",
+    "examine",
+    "inspect",
+    "summarize"
+  ],
+  "vector_bundle": "results/runs/rebuttal_lxey_other_concerns_v2_1500_20260727/vector_fit/vector_bundle.pt",
+  "patch_layer": 24,
+  "coordinate_definition": "dot(h_L24_pre - train_mean_corrupt, mu_delta) / ||mu_delta||^2; train corrupt mean=0 and clean mean=1",
+  "spearman_top1_rate_vs_mean_coordinate": 0.922655505271131,
+  "spearman_p_value": 7.087474450841821e-09
+}

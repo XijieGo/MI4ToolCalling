@@ -1,0 +1,32 @@
+{
+  "source_root": "./datasets/provenance/v1_1711/base_pairs",
+  "metadata_csv": "./datasets/provenance/v1_1711/metadata/dataset_assignment_audit.csv",
+  "candidate_profile": "final_pool",
+  "candidate_pools": {
+    "clean": [
+      "complete",
+      "build",
+      "write",
+      "save",
+      "add"
+    ],
+    "corrupt": [
+      "discuss",
+      "explore",
+      "inspect",
+      "review",
+      "study"
+    ]
+  },
+  "n_base_pairs": 1711,
+  "n_candidate_prompts": 17110,
+  "models": [
+    {
+      "model_name": "Qwen3-14B",
+      "model_path": "/root/autodl-tmp/Qwen/Qwen3-14B",
+      "tool_token_id": 151657
+    }
+  ],
+  "device": "cuda",
+  "dtype": "bfloat16"
+}

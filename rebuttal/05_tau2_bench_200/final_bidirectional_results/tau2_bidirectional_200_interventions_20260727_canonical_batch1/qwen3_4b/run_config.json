@@ -1,0 +1,90 @@
+{
+  "started_unix": 1785122019.2834964,
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+  "torch": "2.8.0+cu128",
+  "model": "Qwen3-4B",
+  "model_key": "qwen3_4b",
+  "model_path": "/root/autodl-tmp/Qwen/Qwen3-4B",
+  "source_domain": "telecom",
+  "selection_version": "canonical_batch1",
+  "selection_files": {
+    "tool": {
+      "path": "./datasets/external/tau2_telecom_qwen35_9b/collections/bidirectional_200_per_model_20260726_canonical_batch1/qwen3_4b/selected_tool_200.jsonl",
+      "sha256": "fddaf34e90196a0bbabee43a944736c331be34660a67ee6b45c86beddf030306"
+    },
+    "direct": {
+      "path": "./datasets/external/tau2_telecom_qwen35_9b/collections/bidirectional_200_per_model_20260726_canonical_batch1/qwen3_4b/selected_direct_200.jsonl",
+      "sha256": "15e9b0d017b9dfa9026e579cf6059c91d0ec8e23f59fc308a3ea69150f2d5675"
+    },
+    "summary": {
+      "path": "./datasets/external/tau2_telecom_qwen35_9b/collections/bidirectional_200_per_model_20260726_canonical_batch1/qwen3_4b/selection_summary.json",
+      "sha256": "4c83898a2057cd8c0458d053f8783b5dde73b1a83d94d64e4f52161525729a95"
+    }
+  },
+  "raw_files": {
+    "system_prompt": {
+      "path": "./datasets/external/tau2_telecom_qwen35_9b/raw/tau2_system_prompt.txt",
+      "sha256": "b7b858bcc95b40e66ca0a0bdaefe40beabeb8b4a6e51152506a4917d795cd08e"
+    },
+    "tool_schemas": {
+      "path": "./datasets/external/tau2_telecom_qwen35_9b/raw/tau2_tool_schemas.json",
+      "sha256": "a5938ab505dca5f7368b813a798400ff37a1decb2f0aa6e58057a16812be5671"
+    }
+  },
+  "frozen_coding_vector": {
+    "path": "./results/natural_trajectory/crossscale_qwen3_4b_14b_20260726/vector_bundles/qwen3_4b_l26_post.pt",
+    "sha256": "b8badf78655ea1d995092056dddd7232e70ea7b3fcd547ac0cc177eca68b93be",
+    "layer": 26,
+    "hook_kind": "post",
+    "mean_diff_norm": 61.05495071411133,
+    "bundle_source_domain": "Coding-only artifact",
+    "bundle_fit_split": null,
+    "bundle_model": "Qwen3-4B"
+  },
+  "tool_decision": {
+    "semantic_tool_opening": "<tool_call>",
+    "tool_token_id_via_convert": 151657,
+    "tool_token_ids_via_encode": [
+      151657
+    ],
+    "tool_token_encode_length": 1,
+    "decision_position": "final native prompt token / first generation decision"
+  },
+  "intervention_hook": "post-boundary of decoder L26, final real prompt token only",
+  "selection_policy": "Frozen Coding vector/layer; τ² is not used to estimate, tune, or select the vector/layer.",
+  "conditions": {
+    "coding_alphas": [
+      1.0,
+      1.5
+    ],
+    "random_alphas": [
+      1.0,
+      1.5
+    ],
+    "random_control": "saved seeded unit vector scaled to ||Coding mean-difference||"
+  },
+  "batch_size": 1,
+  "max_batch_tokens": 30000,
+  "max_context_tokens": 30000,
+  "arguments": {
+    "models": "qwen3_4b",
+    "output_root": "results/natural_trajectory/tau2_bidirectional_200_interventions_20260727_canonical_batch1",
+    "selection_version": "canonical_batch1",
+    "max_context_tokens": 30000,
+    "arms": "both",
+    "alphas": [
+      1.0,
+      1.5
+    ],
+    "random_alphas": [
+      1.0,
+      1.5
+    ],
+    "batch_size": 1,
+    "max_batch_tokens": 30000,
+    "max_samples": 0,
+    "seed": 20260726,
+    "resume": false
+  }
+}

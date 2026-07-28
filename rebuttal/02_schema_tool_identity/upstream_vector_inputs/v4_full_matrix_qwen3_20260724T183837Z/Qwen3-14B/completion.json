@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "expected_cells": 32,
+  "observed_cells": 32,
+  "tool_token_id": 151657,
+  "layer": 24,
+  "hook_kind": "pre",
+  "model_d_model": 5120,
+  "model_n_layers": 40
+}

@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Describe this email message shown below:
+To: recipient-4e6bd924fd4f@mail.example
+Subject: Re: New enterprise target
+Body: Craig, Raj — SOC 2 Type I cert, audit logging, RBAC — all standard now. I'll prep the security questionnaire response template. Last time took us 3 weeks; this time I can turn it around in 3 days.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

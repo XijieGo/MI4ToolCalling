@@ -1,0 +1,1812 @@
+{
+  "dataset_version": "v5_model_specific_balanced",
+  "model_key": "qwen35_4b",
+  "model_label": "Qwen3.5-4B",
+  "model_path": "/root/autodl-tmp/Qwen/Qwen3.5-4B",
+  "manifest_sha256": "bc805902cfc95166a95015f168e38aa429f6348f13234f5718d871abe534fc68",
+  "summary_sha256": "ab0ae703cf8b002134740d80d75df2e7f7789a4f73c3509d3cc9cd426fdadd9f",
+  "heldout_sample_ids": [
+    "v5_qwen35_4b_001",
+    "v5_qwen35_4b_002",
+    "v5_qwen35_4b_003",
+    "v5_qwen35_4b_004",
+    "v5_qwen35_4b_005",
+    "v5_qwen35_4b_006",
+    "v5_qwen35_4b_007",
+    "v5_qwen35_4b_008",
+    "v5_qwen35_4b_009",
+    "v5_qwen35_4b_010",
+    "v5_qwen35_4b_011",
+    "v5_qwen35_4b_012",
+    "v5_qwen35_4b_013",
+    "v5_qwen35_4b_014",
+    "v5_qwen35_4b_015",
+    "v5_qwen35_4b_016",
+    "v5_qwen35_4b_017",
+    "v5_qwen35_4b_018",
+    "v5_qwen35_4b_019",
+    "v5_qwen35_4b_020",
+    "v5_qwen35_4b_021",
+    "v5_qwen35_4b_022",
+    "v5_qwen35_4b_023",
+    "v5_qwen35_4b_024",
+    "v5_qwen35_4b_025",
+    "v5_qwen35_4b_026",
+    "v5_qwen35_4b_027",
+    "v5_qwen35_4b_028",
+    "v5_qwen35_4b_029",
+    "v5_qwen35_4b_030",
+    "v5_qwen35_4b_031",
+    "v5_qwen35_4b_032",
+    "v5_qwen35_4b_033",
+    "v5_qwen35_4b_034",
+    "v5_qwen35_4b_035",
+    "v5_qwen35_4b_036",
+    "v5_qwen35_4b_037",
+    "v5_qwen35_4b_038",
+    "v5_qwen35_4b_039",
+    "v5_qwen35_4b_040",
+    "v5_qwen35_4b_041",
+    "v5_qwen35_4b_042",
+    "v5_qwen35_4b_043",
+    "v5_qwen35_4b_044",
+    "v5_qwen35_4b_045",
+    "v5_qwen35_4b_046",
+    "v5_qwen35_4b_047",
+    "v5_qwen35_4b_048",
+    "v5_qwen35_4b_049",
+    "v5_qwen35_4b_050",
+    "v5_qwen35_4b_051",
+    "v5_qwen35_4b_052",
+    "v5_qwen35_4b_053",
+    "v5_qwen35_4b_054",
+    "v5_qwen35_4b_055",
+    "v5_qwen35_4b_056",
+    "v5_qwen35_4b_057",
+    "v5_qwen35_4b_058",
+    "v5_qwen35_4b_059",
+    "v5_qwen35_4b_060",
+    "v5_qwen35_4b_061",
+    "v5_qwen35_4b_062",
+    "v5_qwen35_4b_063",
+    "v5_qwen35_4b_064",
+    "v5_qwen35_4b_065",
+    "v5_qwen35_4b_066",
+    "v5_qwen35_4b_067",
+    "v5_qwen35_4b_068",
+    "v5_qwen35_4b_069",
+    "v5_qwen35_4b_070",
+    "v5_qwen35_4b_071",
+    "v5_qwen35_4b_072",
+    "v5_qwen35_4b_073",
+    "v5_qwen35_4b_074",
+    "v5_qwen35_4b_075",
+    "v5_qwen35_4b_076",
+    "v5_qwen35_4b_077",
+    "v5_qwen35_4b_078",
+    "v5_qwen35_4b_079",
+    "v5_qwen35_4b_080",
+    "v5_qwen35_4b_081",
+    "v5_qwen35_4b_082",
+    "v5_qwen35_4b_083",
+    "v5_qwen35_4b_084",
+    "v5_qwen35_4b_085",
+    "v5_qwen35_4b_086",
+    "v5_qwen35_4b_087",
+    "v5_qwen35_4b_088",
+    "v5_qwen35_4b_089",
+    "v5_qwen35_4b_090",
+    "v5_qwen35_4b_091",
+    "v5_qwen35_4b_092",
+    "v5_qwen35_4b_093",
+    "v5_qwen35_4b_094",
+    "v5_qwen35_4b_095",
+    "v5_qwen35_4b_096",
+    "v5_qwen35_4b_097",
+    "v5_qwen35_4b_098",
+    "v5_qwen35_4b_099",
+    "v5_qwen35_4b_100",
+    "v5_qwen35_4b_101",
+    "v5_qwen35_4b_102",
+    "v5_qwen35_4b_103",
+    "v5_qwen35_4b_104",
+    "v5_qwen35_4b_105",
+    "v5_qwen35_4b_106",
+    "v5_qwen35_4b_107",
+    "v5_qwen35_4b_108",
+    "v5_qwen35_4b_109",
+    "v5_qwen35_4b_110",
+    "v5_qwen35_4b_111",
+    "v5_qwen35_4b_112",
+    "v5_qwen35_4b_113",
+    "v5_qwen35_4b_114",
+    "v5_qwen35_4b_115",
+    "v5_qwen35_4b_116",
+    "v5_qwen35_4b_117",
+    "v5_qwen35_4b_118",
+    "v5_qwen35_4b_119",
+    "v5_qwen35_4b_120",
+    "v5_qwen35_4b_121",
+    "v5_qwen35_4b_122",
+    "v5_qwen35_4b_123",
+    "v5_qwen35_4b_124",
+    "v5_qwen35_4b_125",
+    "v5_qwen35_4b_126",
+    "v5_qwen35_4b_127",
+    "v5_qwen35_4b_128",
+    "v5_qwen35_4b_129",
+    "v5_qwen35_4b_130",
+    "v5_qwen35_4b_131",
+    "v5_qwen35_4b_132",
+    "v5_qwen35_4b_133",
+    "v5_qwen35_4b_134",
+    "v5_qwen35_4b_135",
+    "v5_qwen35_4b_136",
+    "v5_qwen35_4b_137",
+    "v5_qwen35_4b_138",
+    "v5_qwen35_4b_139",
+    "v5_qwen35_4b_140",
+    "v5_qwen35_4b_141",
+    "v5_qwen35_4b_142",
+    "v5_qwen35_4b_143",
+    "v5_qwen35_4b_144",
+    "v5_qwen35_4b_145",
+    "v5_qwen35_4b_146",
+    "v5_qwen35_4b_147",
+    "v5_qwen35_4b_148",
+    "v5_qwen35_4b_149",
+    "v5_qwen35_4b_150",
+    "v5_qwen35_4b_151",
+    "v5_qwen35_4b_152",
+    "v5_qwen35_4b_153",
+    "v5_qwen35_4b_154",
+    "v5_qwen35_4b_155",
+    "v5_qwen35_4b_156",
+    "v5_qwen35_4b_157",
+    "v5_qwen35_4b_158",
+    "v5_qwen35_4b_159",
+    "v5_qwen35_4b_160",
+    "v5_qwen35_4b_161",
+    "v5_qwen35_4b_162",
+    "v5_qwen35_4b_163",
+    "v5_qwen35_4b_164",
+    "v5_qwen35_4b_165",
+    "v5_qwen35_4b_166",
+    "v5_qwen35_4b_167",
+    "v5_qwen35_4b_168",
+    "v5_qwen35_4b_169",
+    "v5_qwen35_4b_170",
+    "v5_qwen35_4b_171",
+    "v5_qwen35_4b_172",
+    "v5_qwen35_4b_173",
+    "v5_qwen35_4b_174",
+    "v5_qwen35_4b_175",
+    "v5_qwen35_4b_176",
+    "v5_qwen35_4b_177",
+    "v5_qwen35_4b_178",
+    "v5_qwen35_4b_179",
+    "v5_qwen35_4b_180",
+    "v5_qwen35_4b_181",
+    "v5_qwen35_4b_182",
+    "v5_qwen35_4b_183",
+    "v5_qwen35_4b_184",
+    "v5_qwen35_4b_185",
+    "v5_qwen35_4b_186",
+    "v5_qwen35_4b_187",
+    "v5_qwen35_4b_188",
+    "v5_qwen35_4b_189",
+    "v5_qwen35_4b_190",
+    "v5_qwen35_4b_191",
+    "v5_qwen35_4b_192",
+    "v5_qwen35_4b_193",
+    "v5_qwen35_4b_194",
+    "v5_qwen35_4b_195",
+    "v5_qwen35_4b_196",
+    "v5_qwen35_4b_197",
+    "v5_qwen35_4b_198",
+    "v5_qwen35_4b_199",
+    "v5_qwen35_4b_200",
+    "v5_qwen35_4b_201",
+    "v5_qwen35_4b_202",
+    "v5_qwen35_4b_203",
+    "v5_qwen35_4b_204",
+    "v5_qwen35_4b_205",
+    "v5_qwen35_4b_206",
+    "v5_qwen35_4b_207",
+    "v5_qwen35_4b_208",
+    "v5_qwen35_4b_209",
+    "v5_qwen35_4b_210",
+    "v5_qwen35_4b_211",
+    "v5_qwen35_4b_212",
+    "v5_qwen35_4b_213",
+    "v5_qwen35_4b_214",
+    "v5_qwen35_4b_215",
+    "v5_qwen35_4b_216",
+    "v5_qwen35_4b_217",
+    "v5_qwen35_4b_218",
+    "v5_qwen35_4b_219",
+    "v5_qwen35_4b_220",
+    "v5_qwen35_4b_221",
+    "v5_qwen35_4b_222",
+    "v5_qwen35_4b_223",
+    "v5_qwen35_4b_224",
+    "v5_qwen35_4b_225",
+    "v5_qwen35_4b_226",
+    "v5_qwen35_4b_227",
+    "v5_qwen35_4b_228",
+    "v5_qwen35_4b_229",
+    "v5_qwen35_4b_230",
+    "v5_qwen35_4b_231",
+    "v5_qwen35_4b_232",
+    "v5_qwen35_4b_233",
+    "v5_qwen35_4b_234",
+    "v5_qwen35_4b_235",
+    "v5_qwen35_4b_236",
+    "v5_qwen35_4b_237",
+    "v5_qwen35_4b_238",
+    "v5_qwen35_4b_239",
+    "v5_qwen35_4b_240",
+    "v5_qwen35_4b_241",
+    "v5_qwen35_4b_242",
+    "v5_qwen35_4b_243",
+    "v5_qwen35_4b_244",
+    "v5_qwen35_4b_245",
+    "v5_qwen35_4b_246",
+    "v5_qwen35_4b_247",
+    "v5_qwen35_4b_248",
+    "v5_qwen35_4b_249",
+    "v5_qwen35_4b_250",
+    "v5_qwen35_4b_251",
+    "v5_qwen35_4b_252",
+    "v5_qwen35_4b_253",
+    "v5_qwen35_4b_254",
+    "v5_qwen35_4b_255",
+    "v5_qwen35_4b_256",
+    "v5_qwen35_4b_257",
+    "v5_qwen35_4b_258",
+    "v5_qwen35_4b_259",
+    "v5_qwen35_4b_260",
+    "v5_qwen35_4b_261",
+    "v5_qwen35_4b_262",
+    "v5_qwen35_4b_263",
+    "v5_qwen35_4b_264",
+    "v5_qwen35_4b_265",
+    "v5_qwen35_4b_266",
+    "v5_qwen35_4b_267",
+    "v5_qwen35_4b_268",
+    "v5_qwen35_4b_269",
+    "v5_qwen35_4b_270",
+    "v5_qwen35_4b_271",
+    "v5_qwen35_4b_272",
+    "v5_qwen35_4b_273",
+    "v5_qwen35_4b_274",
+    "v5_qwen35_4b_275",
+    "v5_qwen35_4b_276",
+    "v5_qwen35_4b_277",
+    "v5_qwen35_4b_278",
+    "v5_qwen35_4b_279",
+    "v5_qwen35_4b_280",
+    "v5_qwen35_4b_281",
+    "v5_qwen35_4b_282",
+    "v5_qwen35_4b_283",
+    "v5_qwen35_4b_284",
+    "v5_qwen35_4b_285",
+    "v5_qwen35_4b_286",
+    "v5_qwen35_4b_287",
+    "v5_qwen35_4b_288",
+    "v5_qwen35_4b_289",
+    "v5_qwen35_4b_290",
+    "v5_qwen35_4b_291",
+    "v5_qwen35_4b_292",
+    "v5_qwen35_4b_293",
+    "v5_qwen35_4b_294",
+    "v5_qwen35_4b_295",
+    "v5_qwen35_4b_296",
+    "v5_qwen35_4b_297",
+    "v5_qwen35_4b_298",
+    "v5_qwen35_4b_299",
+    "v5_qwen35_4b_300"
+  ],
+  "heldout_prompt_hashes": [
+    {
+      "sample_id": "v5_qwen35_4b_001",
+      "corrupt_relpath": "heldout/corrupt/001_telecom_t0031_m35.txt",
+      "corrupt_prompt_sha256": "5e4fd68c902f1395bd56081c640305443d29dfcf5c14e98bcaa8d6244cd31270"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_002",
+      "corrupt_relpath": "heldout/corrupt/002_telecom_t0071_m10.txt",
+      "corrupt_prompt_sha256": "e486fbb295df767bd442d5ae54c49c5692724c02db9e30d42f0627664a579e08"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_003",
+      "corrupt_relpath": "heldout/corrupt/003_telecom_t0113_m10.txt",
+      "corrupt_prompt_sha256": "20d181d83f118fa95451a4bf8df887aef45b56acc1859d458712974609ec8c3e"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_004",
+      "corrupt_relpath": "heldout/corrupt/004_telecom_t0167_m28.txt",
+      "corrupt_prompt_sha256": "ea26841169d976388e5c2b3befc3b47fd5dc356dda1cd9f7ad503a9d7c03565e"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_005",
+      "corrupt_relpath": "heldout/corrupt/005_telecom_t0182_m10.txt",
+      "corrupt_prompt_sha256": "9e89f86fa66c09d5053a30ef287985c6ab2bbbeac4085e6e4b67b43034bcc6f2"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_006",
+      "corrupt_relpath": "heldout/corrupt/006_telecom_t0277_m13.txt",
+      "corrupt_prompt_sha256": "9890e89bc3882dcdca64504ef6b70419f6d80d2041b0cbd7ec9d7570ff2ea4ff"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_007",
+      "corrupt_relpath": "heldout/corrupt/007_telecom_t0297_m10.txt",
+      "corrupt_prompt_sha256": "4959b0ef7e409d6f60e5e9e06e3a6ae10a1e3c77ff68755ca0e9e1d1aa5d9b77"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_008",
+      "corrupt_relpath": "heldout/corrupt/008_telecom_t0384_m10.txt",
+      "corrupt_prompt_sha256": "f43b33686b79f31fb7959fd2bbd098313a04d8ade236c1644a72054c69377bab"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_009",
+      "corrupt_relpath": "heldout/corrupt/009_telecom_t0449_m06.txt",
+      "corrupt_prompt_sha256": "eb2b707b1ecbbdd01ac1fce31b087eb7ba2619cedf0476e14b4368202d71e4c2"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_010",
+      "corrupt_relpath": "heldout/corrupt/010_telecom_t0532_m08.txt",
+      "corrupt_prompt_sha256": "1f8e262e40248d80c6b4a919dea9b7062e3419b9ad4aa04f195489d03a571670"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_011",
+      "corrupt_relpath": "heldout/corrupt/011_telecom_t0533_m10.txt",
+      "corrupt_prompt_sha256": "10a8f8c907b9b29635cb3528f0463f4ccc1094bd128bc59d38a35a674057409d"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_012",
+      "corrupt_relpath": "heldout/corrupt/012_telecom_t0902_m10.txt",
+      "corrupt_prompt_sha256": "e486fbb295df767bd442d5ae54c49c5692724c02db9e30d42f0627664a579e08"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_013",
+      "corrupt_relpath": "heldout/corrupt/013_telecom_t0921_m10.txt",
+      "corrupt_prompt_sha256": "777c1e50dfe2177535194df692db62ac3c9408164adb486119295db640211388"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_014",
+      "corrupt_relpath": "heldout/corrupt/014_telecom_t0942_m14.txt",
+      "corrupt_prompt_sha256": "4959b0ef7e409d6f60e5e9e06e3a6ae10a1e3c77ff68755ca0e9e1d1aa5d9b77"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_015",
+      "corrupt_relpath": "heldout/corrupt/015_telecom_t0981_m10.txt",
+      "corrupt_prompt_sha256": "e486fbb295df767bd442d5ae54c49c5692724c02db9e30d42f0627664a579e08"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_016",
+      "corrupt_relpath": "heldout/corrupt/016_telecom_t0995_m14.txt",
+      "corrupt_prompt_sha256": "5f8584a9c92dd04b8a572619e2d1b05a39ee40dfceed67b4d91361427df18b9e"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_017",
+      "corrupt_relpath": "heldout/corrupt/017_telecom_t1002_m12.txt",
+      "corrupt_prompt_sha256": "ba307fa4d5d79186503e076903a47633b1e47fdbe90fb3332f15646bbf57cb24"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_018",
+      "corrupt_relpath": "heldout/corrupt/018_telecom_t1117_m10.txt",
+      "corrupt_prompt_sha256": "4959b0ef7e409d6f60e5e9e06e3a6ae10a1e3c77ff68755ca0e9e1d1aa5d9b77"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_019",
+      "corrupt_relpath": "heldout/corrupt/019_telecom_t1210_m06.txt",
+      "corrupt_prompt_sha256": "1b1f37264ac80a58c3d15f0c1564290d0993082c299b9a48bf3afa6766960a2b"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_020",
+      "corrupt_relpath": "heldout/corrupt/020_telecom_t1273_m10.txt",
+      "corrupt_prompt_sha256": "4959b0ef7e409d6f60e5e9e06e3a6ae10a1e3c77ff68755ca0e9e1d1aa5d9b77"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_021",
+      "corrupt_relpath": "heldout/corrupt/021_telecom_t1340_m10.txt",
+      "corrupt_prompt_sha256": "4959b0ef7e409d6f60e5e9e06e3a6ae10a1e3c77ff68755ca0e9e1d1aa5d9b77"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_022",
+      "corrupt_relpath": "heldout/corrupt/022_telecom_t1361_m06.txt",
+      "corrupt_prompt_sha256": "a1b4bfeea4aa1f7d94670234a7443e8673af17918f2cfb52433369d947867146"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_023",
+      "corrupt_relpath": "heldout/corrupt/023_telecom_t1471_m12.txt",
+      "corrupt_prompt_sha256": "ba307fa4d5d79186503e076903a47633b1e47fdbe90fb3332f15646bbf57cb24"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_024",
+      "corrupt_relpath": "heldout/corrupt/024_telecom_t1498_m10.txt",
+      "corrupt_prompt_sha256": "4959b0ef7e409d6f60e5e9e06e3a6ae10a1e3c77ff68755ca0e9e1d1aa5d9b77"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_025",
+      "corrupt_relpath": "heldout/corrupt/025_telecom_t1596_m10.txt",
+      "corrupt_prompt_sha256": "4959b0ef7e409d6f60e5e9e06e3a6ae10a1e3c77ff68755ca0e9e1d1aa5d9b77"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_026",
+      "corrupt_relpath": "heldout/corrupt/026_telecom_t0023_m10.txt",
+      "corrupt_prompt_sha256": "c08d0459d9b1959e0a76c9994c911109f33f9af149d0b679e9aa9fab42e03979"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_027",
+      "corrupt_relpath": "heldout/corrupt/027_telecom_t0052_m12.txt",
+      "corrupt_prompt_sha256": "c104ee9fed0ab735c851156686f1876e7712a0aad2a5ff93d76201fafae2afa1"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_028",
+      "corrupt_relpath": "heldout/corrupt/028_telecom_t0212_m12.txt",
+      "corrupt_prompt_sha256": "c104ee9fed0ab735c851156686f1876e7712a0aad2a5ff93d76201fafae2afa1"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_029",
+      "corrupt_relpath": "heldout/corrupt/029_telecom_t0293_m10.txt",
+      "corrupt_prompt_sha256": "7ba9533061098be661679f3e919cdb3a141fa87230f3814588ea10f019e1661a"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_030",
+      "corrupt_relpath": "heldout/corrupt/030_telecom_t0355_m12.txt",
+      "corrupt_prompt_sha256": "bc01ee3c364277dd6ee98dc6363386347c16042bec31df167869b0c5478d283a"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_031",
+      "corrupt_relpath": "heldout/corrupt/031_telecom_t0395_m06.txt",
+      "corrupt_prompt_sha256": "703bfb5fc3d718c38fee3916c2a335228f03ff0d7cc1ab8d1888ec7c776421a9"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_032",
+      "corrupt_relpath": "heldout/corrupt/032_telecom_t0443_m06.txt",
+      "corrupt_prompt_sha256": "8f8c2f2b1cd2655ca8f803d97e5dbb0e9f2e8a452fe0d6b6f005c0a45b90a106"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_033",
+      "corrupt_relpath": "heldout/corrupt/033_telecom_t0790_m10.txt",
+      "corrupt_prompt_sha256": "2f3c6166c5e08e98bef73091b87a294b945311402241efc7e80e22dae40c98fa"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_034",
+      "corrupt_relpath": "heldout/corrupt/034_telecom_t0812_m06.txt",
+      "corrupt_prompt_sha256": "59a2f419f1ae04d97522489aafd9298c618c0e03605ac5cca3ce8edecf90ed3a"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_035",
+      "corrupt_relpath": "heldout/corrupt/035_telecom_t0825_m12.txt",
+      "corrupt_prompt_sha256": "c104ee9fed0ab735c851156686f1876e7712a0aad2a5ff93d76201fafae2afa1"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_036",
+      "corrupt_relpath": "heldout/corrupt/036_telecom_t0828_m14.txt",
+      "corrupt_prompt_sha256": "2115d56cc0b4dbf85b2aee0495d88a8badefc236c6f893db17b8fdc7c49f332a"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_037",
+      "corrupt_relpath": "heldout/corrupt/037_telecom_t0905_m10.txt",
+      "corrupt_prompt_sha256": "769b7d6e81f73c6f19fddb30d84bcce1d459d6db5549ef52883d3dce79e06bad"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_038",
+      "corrupt_relpath": "heldout/corrupt/038_telecom_t0967_m51.txt",
+      "corrupt_prompt_sha256": "6f562c333bc49364822cb574188157de966aa0d21fda497367f96bc99b07e7e3"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_039",
+      "corrupt_relpath": "heldout/corrupt/039_telecom_t0996_m50.txt",
+      "corrupt_prompt_sha256": "0a3938d046638e4a3959bdbfbeec140403bbb61cbddd465a60fffc3d9332e72f"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_040",
+      "corrupt_relpath": "heldout/corrupt/040_telecom_t1081_m20.txt",
+      "corrupt_prompt_sha256": "e0c0d0af5610518f89320a24dcda51375067f98556cd173828af6a60f4269c07"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_041",
+      "corrupt_relpath": "heldout/corrupt/041_telecom_t1151_m10.txt",
+      "corrupt_prompt_sha256": "aa73770f9a373427b5dbb0d5f8e901f15fb5ec530c1260416a6f02f38be0714f"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_042",
+      "corrupt_relpath": "heldout/corrupt/042_telecom_t1237_m10.txt",
+      "corrupt_prompt_sha256": "769b7d6e81f73c6f19fddb30d84bcce1d459d6db5549ef52883d3dce79e06bad"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_043",
+      "corrupt_relpath": "heldout/corrupt/043_telecom_t1274_m33.txt",
+      "corrupt_prompt_sha256": "a180d81838c3a9781076efe960605ecfbe4bb26f39bca51b728b7abc10f048d9"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_044",
+      "corrupt_relpath": "heldout/corrupt/044_telecom_t1295_m10.txt",
+      "corrupt_prompt_sha256": "769b7d6e81f73c6f19fddb30d84bcce1d459d6db5549ef52883d3dce79e06bad"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_045",
+      "corrupt_relpath": "heldout/corrupt/045_telecom_t1298_m15.txt",
+      "corrupt_prompt_sha256": "aa73770f9a373427b5dbb0d5f8e901f15fb5ec530c1260416a6f02f38be0714f"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_046",
+      "corrupt_relpath": "heldout/corrupt/046_telecom_t1309_m12.txt",
+      "corrupt_prompt_sha256": "c104ee9fed0ab735c851156686f1876e7712a0aad2a5ff93d76201fafae2afa1"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_047",
+      "corrupt_relpath": "heldout/corrupt/047_telecom_t1450_m49.txt",
+      "corrupt_prompt_sha256": "5ca4088dea5bfd6a2f2a53ca8c8f301ec8d4869aae40afdd2fa6acd484fd350c"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_048",
+      "corrupt_relpath": "heldout/corrupt/048_telecom_t1492_m10.txt",
+      "corrupt_prompt_sha256": "2f3c6166c5e08e98bef73091b87a294b945311402241efc7e80e22dae40c98fa"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_049",
+      "corrupt_relpath": "heldout/corrupt/049_telecom_t1552_m10.txt",
+      "corrupt_prompt_sha256": "c08d0459d9b1959e0a76c9994c911109f33f9af149d0b679e9aa9fab42e03979"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_050",
+      "corrupt_relpath": "heldout/corrupt/050_telecom_t0018_m06.txt",
+      "corrupt_prompt_sha256": "a050d2b97d1b6258cabb9aa3ecd9282b98885afebd48165b34dc57f6a479d568"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_051",
+      "corrupt_relpath": "heldout/corrupt/051_telecom_t0035_m06.txt",
+      "corrupt_prompt_sha256": "9a15aa5d4bb651eb2b58103624d5955ad8d499ccbdde29606a93e7edf840a465"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_052",
+      "corrupt_relpath": "heldout/corrupt/052_telecom_t0133_m06.txt",
+      "corrupt_prompt_sha256": "8df418188e17266966288fa7cb8454b31fb806b4d4db2c2346371e65709f5c32"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_053",
+      "corrupt_relpath": "heldout/corrupt/053_telecom_t0192_m12.txt",
+      "corrupt_prompt_sha256": "86cd508de7e86ca0bf4923f34308a63c6de2358bde524bbb9127d0b98f421811"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_054",
+      "corrupt_relpath": "heldout/corrupt/054_telecom_t0223_m14.txt",
+      "corrupt_prompt_sha256": "1c610a50125412a84040adf28e9e6b594f931d90919e982c0c264d3c96ad8755"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_055",
+      "corrupt_relpath": "heldout/corrupt/055_telecom_t0282_m14.txt",
+      "corrupt_prompt_sha256": "5c63459c5edae165a76b85ac4cc3b1d8bbf845ba9889db5c2a0d426e98882fd5"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_056",
+      "corrupt_relpath": "heldout/corrupt/056_telecom_t0408_m06.txt",
+      "corrupt_prompt_sha256": "b90ccbae2d35e5caa8408dc57760d0990edf9f80225728171991671c6396f209"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_057",
+      "corrupt_relpath": "heldout/corrupt/057_telecom_t0439_m06.txt",
+      "corrupt_prompt_sha256": "5e70f138f36fdcfef32705a72d763166dc5ef6e6ee0ba398645a7413035aa02c"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_058",
+      "corrupt_relpath": "heldout/corrupt/058_telecom_t0537_m06.txt",
+      "corrupt_prompt_sha256": "91d7275c463a3f4a038b272057ebaafbf5e316e705f8863ca6eeb225b21d8f4a"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_059",
+      "corrupt_relpath": "heldout/corrupt/059_telecom_t0647_m12.txt",
+      "corrupt_prompt_sha256": "29102607e5c4b3782706c7ccd6185759b32eb56fe913710b013c3ff76249cd4d"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_060",
+      "corrupt_relpath": "heldout/corrupt/060_telecom_t0851_m06.txt",
+      "corrupt_prompt_sha256": "03e85524c307d541cb89a95ef87830ae66c4343bbdb1482098324e843f5e3baa"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_061",
+      "corrupt_relpath": "heldout/corrupt/061_telecom_t0885_m06.txt",
+      "corrupt_prompt_sha256": "b6080be368b9c432c85c2a1150062c0bcd9764347e58131a7c6e91e67a07fa01"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_062",
+      "corrupt_relpath": "heldout/corrupt/062_telecom_t0907_m06.txt",
+      "corrupt_prompt_sha256": "81bcc820579cdf8e6e31078953caf185d2a6866082d0ca24a412a29734768ec8"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_063",
+      "corrupt_relpath": "heldout/corrupt/063_telecom_t1074_m06.txt",
+      "corrupt_prompt_sha256": "a050d2b97d1b6258cabb9aa3ecd9282b98885afebd48165b34dc57f6a479d568"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_064",
+      "corrupt_relpath": "heldout/corrupt/064_telecom_t1156_m12.txt",
+      "corrupt_prompt_sha256": "29102607e5c4b3782706c7ccd6185759b32eb56fe913710b013c3ff76249cd4d"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_065",
+      "corrupt_relpath": "heldout/corrupt/065_telecom_t1169_m42.txt",
+      "corrupt_prompt_sha256": "80cb695d7af567701071761324aaf0202c1ced5f5b7eea9c1843eb1ac325d061"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_066",
+      "corrupt_relpath": "heldout/corrupt/066_telecom_t1265_m06.txt",
+      "corrupt_prompt_sha256": "6f520f853b89bbfdae1ceb442a47e6a74bffaba9f83e8e985e981343c3c74655"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_067",
+      "corrupt_relpath": "heldout/corrupt/067_telecom_t1276_m06.txt",
+      "corrupt_prompt_sha256": "a050d2b97d1b6258cabb9aa3ecd9282b98885afebd48165b34dc57f6a479d568"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_068",
+      "corrupt_relpath": "heldout/corrupt/068_telecom_t1279_m06.txt",
+      "corrupt_prompt_sha256": "81bcc820579cdf8e6e31078953caf185d2a6866082d0ca24a412a29734768ec8"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_069",
+      "corrupt_relpath": "heldout/corrupt/069_telecom_t1287_m06.txt",
+      "corrupt_prompt_sha256": "f63f5f9ea669bcbb200931a132ca4ec1aa9114cc3494ab2e55ec3a9db4522dc7"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_070",
+      "corrupt_relpath": "heldout/corrupt/070_telecom_t1303_m10.txt",
+      "corrupt_prompt_sha256": "26125befbd5e9a2e6a7c42d5d24859c399b83683bb27eba0c69c16714a24660c"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_071",
+      "corrupt_relpath": "heldout/corrupt/071_telecom_t1333_m53.txt",
+      "corrupt_prompt_sha256": "b08d2d558a701b75fdb27ee3a1edf44379ec569afda77172e101c21a77a5fd89"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_072",
+      "corrupt_relpath": "heldout/corrupt/072_telecom_t1451_m19.txt",
+      "corrupt_prompt_sha256": "3cdd5487d64568b7752d051f24304826816e3150bedaf33ab926a4b8347433c3"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_073",
+      "corrupt_relpath": "heldout/corrupt/073_telecom_t1472_m10.txt",
+      "corrupt_prompt_sha256": "8c37db9a7261cb0daaacafe9ba1d4244abd5b0f9e6e1f14db2ebc98f264b6bf5"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_074",
+      "corrupt_relpath": "heldout/corrupt/074_telecom_t1499_m06.txt",
+      "corrupt_prompt_sha256": "fc10809d974614e8eb69a76f99222727513bced716c69620f22321fc8bf94cf9"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_075",
+      "corrupt_relpath": "heldout/corrupt/075_telecom_t1562_m06.txt",
+      "corrupt_prompt_sha256": "a050d2b97d1b6258cabb9aa3ecd9282b98885afebd48165b34dc57f6a479d568"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_076",
+      "corrupt_relpath": "heldout/corrupt/076_telecom_t0009_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_077",
+      "corrupt_relpath": "heldout/corrupt/077_telecom_t0027_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_078",
+      "corrupt_relpath": "heldout/corrupt/078_telecom_t0047_m12.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_079",
+      "corrupt_relpath": "heldout/corrupt/079_telecom_t0084_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_080",
+      "corrupt_relpath": "heldout/corrupt/080_telecom_t0090_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_081",
+      "corrupt_relpath": "heldout/corrupt/081_telecom_t0122_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_082",
+      "corrupt_relpath": "heldout/corrupt/082_telecom_t0157_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_083",
+      "corrupt_relpath": "heldout/corrupt/083_telecom_t0195_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_084",
+      "corrupt_relpath": "heldout/corrupt/084_telecom_t0255_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_085",
+      "corrupt_relpath": "heldout/corrupt/085_telecom_t0261_m14.txt",
+      "corrupt_prompt_sha256": "849ee1a4c95f63ceaa3123fafb70801d16a99fce33e271d8cfda2802e0a7dc43"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_086",
+      "corrupt_relpath": "heldout/corrupt/086_telecom_t0359_m08.txt",
+      "corrupt_prompt_sha256": "0692dfe96891d3f2056117fc611e5e6ec37e6e7753120a3304bdd7118eed0cb3"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_087",
+      "corrupt_relpath": "heldout/corrupt/087_telecom_t0403_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_088",
+      "corrupt_relpath": "heldout/corrupt/088_telecom_t0426_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_089",
+      "corrupt_relpath": "heldout/corrupt/089_telecom_t0467_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_090",
+      "corrupt_relpath": "heldout/corrupt/090_telecom_t0479_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_091",
+      "corrupt_relpath": "heldout/corrupt/091_telecom_t0500_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_092",
+      "corrupt_relpath": "heldout/corrupt/092_telecom_t0544_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_093",
+      "corrupt_relpath": "heldout/corrupt/093_telecom_t0574_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_094",
+      "corrupt_relpath": "heldout/corrupt/094_telecom_t0592_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_095",
+      "corrupt_relpath": "heldout/corrupt/095_telecom_t0598_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_096",
+      "corrupt_relpath": "heldout/corrupt/096_telecom_t0638_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_097",
+      "corrupt_relpath": "heldout/corrupt/097_telecom_t0652_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_098",
+      "corrupt_relpath": "heldout/corrupt/098_telecom_t0689_m10.txt",
+      "corrupt_prompt_sha256": "4959b0ef7e409d6f60e5e9e06e3a6ae10a1e3c77ff68755ca0e9e1d1aa5d9b77"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_099",
+      "corrupt_relpath": "heldout/corrupt/099_telecom_t0758_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_100",
+      "corrupt_relpath": "heldout/corrupt/100_telecom_t0762_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_101",
+      "corrupt_relpath": "heldout/corrupt/101_telecom_t0789_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_102",
+      "corrupt_relpath": "heldout/corrupt/102_telecom_t0802_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_103",
+      "corrupt_relpath": "heldout/corrupt/103_telecom_t0893_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_104",
+      "corrupt_relpath": "heldout/corrupt/104_telecom_t1068_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_105",
+      "corrupt_relpath": "heldout/corrupt/105_telecom_t1136_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_106",
+      "corrupt_relpath": "heldout/corrupt/106_telecom_t1182_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_107",
+      "corrupt_relpath": "heldout/corrupt/107_telecom_t1201_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_108",
+      "corrupt_relpath": "heldout/corrupt/108_telecom_t1294_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_109",
+      "corrupt_relpath": "heldout/corrupt/109_telecom_t1300_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_110",
+      "corrupt_relpath": "heldout/corrupt/110_telecom_t1453_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_111",
+      "corrupt_relpath": "heldout/corrupt/111_telecom_t1518_m08.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_112",
+      "corrupt_relpath": "heldout/corrupt/112_telecom_t1541_m12.txt",
+      "corrupt_prompt_sha256": "4c7d1edc58fc2220e638e81914bbbdfaff3471cc4649a50969c7247ec800a709"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_113",
+      "corrupt_relpath": "heldout/corrupt/113_telecom_t0005_m12.txt",
+      "corrupt_prompt_sha256": "c104ee9fed0ab735c851156686f1876e7712a0aad2a5ff93d76201fafae2afa1"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_114",
+      "corrupt_relpath": "heldout/corrupt/114_telecom_t0046_m10.txt",
+      "corrupt_prompt_sha256": "c27b9313b7776dad66c05758e8afa1d8905a126e6fa47620f7049a63ef8b9319"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_115",
+      "corrupt_relpath": "heldout/corrupt/115_telecom_t0049_m10.txt",
+      "corrupt_prompt_sha256": "769b7d6e81f73c6f19fddb30d84bcce1d459d6db5549ef52883d3dce79e06bad"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_116",
+      "corrupt_relpath": "heldout/corrupt/116_telecom_t0074_m16.txt",
+      "corrupt_prompt_sha256": "3416587adac239db2748df9fbb5b3c7b933e2a1f39f59cf3c49a484dc288b05a"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_117",
+      "corrupt_relpath": "heldout/corrupt/117_telecom_t0077_m10.txt",
+      "corrupt_prompt_sha256": "c08d0459d9b1959e0a76c9994c911109f33f9af149d0b679e9aa9fab42e03979"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_118",
+      "corrupt_relpath": "heldout/corrupt/118_telecom_t0198_m12.txt",
+      "corrupt_prompt_sha256": "c104ee9fed0ab735c851156686f1876e7712a0aad2a5ff93d76201fafae2afa1"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_119",
+      "corrupt_relpath": "heldout/corrupt/119_telecom_t0240_m42.txt",
+      "corrupt_prompt_sha256": "8fd6f270e6e0dd04cffd376a79be167fd3431285b963a72718816562e3b6c2e8"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_120",
+      "corrupt_relpath": "heldout/corrupt/120_telecom_t0289_m12.txt",
+      "corrupt_prompt_sha256": "bfd0313e1a92097586ae7cca243f768eacea317837b8b4e668576c0f21ecb904"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_121",
+      "corrupt_relpath": "heldout/corrupt/121_telecom_t0331_m14.txt",
+      "corrupt_prompt_sha256": "5b4538af3f2e12913de94e00e8548b4c4a8fc9ea1b691b4f516416636e711c53"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_122",
+      "corrupt_relpath": "heldout/corrupt/122_telecom_t0365_m10.txt",
+      "corrupt_prompt_sha256": "43553103dd97c282caecba6153f27ebf05ca8dfca2d953edbfe3e49e93d844b8"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_123",
+      "corrupt_relpath": "heldout/corrupt/123_telecom_t0385_m12.txt",
+      "corrupt_prompt_sha256": "ba7130d60ccdcf58986afe3c7b251acf9d7b4d62834fe470dac4d5cec1201494"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_124",
+      "corrupt_relpath": "heldout/corrupt/124_telecom_t0440_m10.txt",
+      "corrupt_prompt_sha256": "2f3c6166c5e08e98bef73091b87a294b945311402241efc7e80e22dae40c98fa"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_125",
+      "corrupt_relpath": "heldout/corrupt/125_telecom_t0540_m16.txt",
+      "corrupt_prompt_sha256": "fe5f6b490e6ef57809cdff87654590a4cca433a4f75a581b57d3b279e42b3726"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_126",
+      "corrupt_relpath": "heldout/corrupt/126_telecom_t0571_m10.txt",
+      "corrupt_prompt_sha256": "769b7d6e81f73c6f19fddb30d84bcce1d459d6db5549ef52883d3dce79e06bad"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_127",
+      "corrupt_relpath": "heldout/corrupt/127_telecom_t0578_m10.txt",
+      "corrupt_prompt_sha256": "769b7d6e81f73c6f19fddb30d84bcce1d459d6db5549ef52883d3dce79e06bad"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_128",
+      "corrupt_relpath": "heldout/corrupt/128_telecom_t0663_m10.txt",
+      "corrupt_prompt_sha256": "c27b9313b7776dad66c05758e8afa1d8905a126e6fa47620f7049a63ef8b9319"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_129",
+      "corrupt_relpath": "heldout/corrupt/129_telecom_t0686_m08.txt",
+      "corrupt_prompt_sha256": "3416587adac239db2748df9fbb5b3c7b933e2a1f39f59cf3c49a484dc288b05a"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_130",
+      "corrupt_relpath": "heldout/corrupt/130_telecom_t0690_m40.txt",
+      "corrupt_prompt_sha256": "e2522716ef1165bdad558e3030abcb293ec8b17f720d06f8758740834ae3677e"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_131",
+      "corrupt_relpath": "heldout/corrupt/131_telecom_t0757_m10.txt",
+      "corrupt_prompt_sha256": "c27b9313b7776dad66c05758e8afa1d8905a126e6fa47620f7049a63ef8b9319"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_132",
+      "corrupt_relpath": "heldout/corrupt/132_telecom_t0777_m08.txt",
+      "corrupt_prompt_sha256": "3416587adac239db2748df9fbb5b3c7b933e2a1f39f59cf3c49a484dc288b05a"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_133",
+      "corrupt_relpath": "heldout/corrupt/133_telecom_t0830_m14.txt",
+      "corrupt_prompt_sha256": "2115d56cc0b4dbf85b2aee0495d88a8badefc236c6f893db17b8fdc7c49f332a"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_134",
+      "corrupt_relpath": "heldout/corrupt/134_telecom_t0833_m14.txt",
+      "corrupt_prompt_sha256": "769b7d6e81f73c6f19fddb30d84bcce1d459d6db5549ef52883d3dce79e06bad"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_135",
+      "corrupt_relpath": "heldout/corrupt/135_telecom_t0861_m10.txt",
+      "corrupt_prompt_sha256": "c27b9313b7776dad66c05758e8afa1d8905a126e6fa47620f7049a63ef8b9319"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_136",
+      "corrupt_relpath": "heldout/corrupt/136_telecom_t0882_m10.txt",
+      "corrupt_prompt_sha256": "c27b9313b7776dad66c05758e8afa1d8905a126e6fa47620f7049a63ef8b9319"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_137",
+      "corrupt_relpath": "heldout/corrupt/137_telecom_t0916_m10.txt",
+      "corrupt_prompt_sha256": "c08d0459d9b1959e0a76c9994c911109f33f9af149d0b679e9aa9fab42e03979"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_138",
+      "corrupt_relpath": "heldout/corrupt/138_telecom_t1063_m08.txt",
+      "corrupt_prompt_sha256": "3416587adac239db2748df9fbb5b3c7b933e2a1f39f59cf3c49a484dc288b05a"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_139",
+      "corrupt_relpath": "heldout/corrupt/139_telecom_t1119_m15.txt",
+      "corrupt_prompt_sha256": "fe5f6b490e6ef57809cdff87654590a4cca433a4f75a581b57d3b279e42b3726"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_140",
+      "corrupt_relpath": "heldout/corrupt/140_telecom_t1375_m10.txt",
+      "corrupt_prompt_sha256": "769b7d6e81f73c6f19fddb30d84bcce1d459d6db5549ef52883d3dce79e06bad"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_141",
+      "corrupt_relpath": "heldout/corrupt/141_telecom_t1379_m10.txt",
+      "corrupt_prompt_sha256": "aa73770f9a373427b5dbb0d5f8e901f15fb5ec530c1260416a6f02f38be0714f"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_142",
+      "corrupt_relpath": "heldout/corrupt/142_telecom_t1391_m10.txt",
+      "corrupt_prompt_sha256": "769b7d6e81f73c6f19fddb30d84bcce1d459d6db5549ef52883d3dce79e06bad"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_143",
+      "corrupt_relpath": "heldout/corrupt/143_telecom_t1412_m08.txt",
+      "corrupt_prompt_sha256": "3416587adac239db2748df9fbb5b3c7b933e2a1f39f59cf3c49a484dc288b05a"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_144",
+      "corrupt_relpath": "heldout/corrupt/144_telecom_t1420_m10.txt",
+      "corrupt_prompt_sha256": "c27b9313b7776dad66c05758e8afa1d8905a126e6fa47620f7049a63ef8b9319"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_145",
+      "corrupt_relpath": "heldout/corrupt/145_telecom_t1430_m10.txt",
+      "corrupt_prompt_sha256": "c27b9313b7776dad66c05758e8afa1d8905a126e6fa47620f7049a63ef8b9319"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_146",
+      "corrupt_relpath": "heldout/corrupt/146_telecom_t1465_m10.txt",
+      "corrupt_prompt_sha256": "769b7d6e81f73c6f19fddb30d84bcce1d459d6db5549ef52883d3dce79e06bad"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_147",
+      "corrupt_relpath": "heldout/corrupt/147_telecom_t1533_m14.txt",
+      "corrupt_prompt_sha256": "2115d56cc0b4dbf85b2aee0495d88a8badefc236c6f893db17b8fdc7c49f332a"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_148",
+      "corrupt_relpath": "heldout/corrupt/148_telecom_t1546_m12.txt",
+      "corrupt_prompt_sha256": "904bee79a01811568ac92b66aac4c8b5ce28dfbd82cf0547be73aed0a419a5dd"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_149",
+      "corrupt_relpath": "heldout/corrupt/149_telecom_t1553_m12.txt",
+      "corrupt_prompt_sha256": "c104ee9fed0ab735c851156686f1876e7712a0aad2a5ff93d76201fafae2afa1"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_150",
+      "corrupt_relpath": "heldout/corrupt/150_telecom_t1567_m10.txt",
+      "corrupt_prompt_sha256": "769b7d6e81f73c6f19fddb30d84bcce1d459d6db5549ef52883d3dce79e06bad"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_151",
+      "corrupt_relpath": "heldout/corrupt/151_telecom_t0168_m27.txt",
+      "corrupt_prompt_sha256": "fced36e3fd0f1775eb9be49b201808cb3b6edd637babe9b48ecc78e5b009a6dd"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_152",
+      "corrupt_relpath": "heldout/corrupt/152_telecom_t0185_m12.txt",
+      "corrupt_prompt_sha256": "824e85d27f16d1bf90ce8edac42d3ce34e627a886fed4a6d5e027146a1fa6272"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_153",
+      "corrupt_relpath": "heldout/corrupt/153_telecom_t0202_m12.txt",
+      "corrupt_prompt_sha256": "0b44c870a824723d93890dc60a205cfa27a9615517498787e3cd7679742b80a1"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_154",
+      "corrupt_relpath": "heldout/corrupt/154_telecom_t0204_m28.txt",
+      "corrupt_prompt_sha256": "4fec08ccd2b0204e7bac7ba60ac177d397e2be9cb673f76d154699b1c3961e6e"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_155",
+      "corrupt_relpath": "heldout/corrupt/155_telecom_t0209_m12.txt",
+      "corrupt_prompt_sha256": "aba1c850bbec0cc116f6a6ac5337d7a59b0bb20c293982ca3ca86b2a4b3d4623"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_156",
+      "corrupt_relpath": "heldout/corrupt/156_telecom_t0291_m12.txt",
+      "corrupt_prompt_sha256": "824e85d27f16d1bf90ce8edac42d3ce34e627a886fed4a6d5e027146a1fa6272"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_157",
+      "corrupt_relpath": "heldout/corrupt/157_telecom_t0308_m10.txt",
+      "corrupt_prompt_sha256": "777c1e50dfe2177535194df692db62ac3c9408164adb486119295db640211388"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_158",
+      "corrupt_relpath": "heldout/corrupt/158_telecom_t0379_m10.txt",
+      "corrupt_prompt_sha256": "266ca12dc3c083c65f09ea3a913da26403fea10efc543803f1b47d4ba8464470"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_159",
+      "corrupt_relpath": "heldout/corrupt/159_telecom_t0473_m12.txt",
+      "corrupt_prompt_sha256": "966d3ef2d76d58838b65d603a11a8395364d001deb9ea856744b6b5a107a33b3"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_160",
+      "corrupt_relpath": "heldout/corrupt/160_telecom_t0477_m10.txt",
+      "corrupt_prompt_sha256": "4959b0ef7e409d6f60e5e9e06e3a6ae10a1e3c77ff68755ca0e9e1d1aa5d9b77"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_161",
+      "corrupt_relpath": "heldout/corrupt/161_telecom_t0512_m14.txt",
+      "corrupt_prompt_sha256": "0e5f14480eb9c2c607afa4f6239bcbd3a4dfcd5fd933921a61fdc0654c410e2b"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_162",
+      "corrupt_relpath": "heldout/corrupt/162_telecom_t0556_m06.txt",
+      "corrupt_prompt_sha256": "a1b4bfeea4aa1f7d94670234a7443e8673af17918f2cfb52433369d947867146"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_163",
+      "corrupt_relpath": "heldout/corrupt/163_telecom_t0560_m06.txt",
+      "corrupt_prompt_sha256": "9add624ba8bdfad502dbb3606095803a55cf44148759493053f12b913d12267d"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_164",
+      "corrupt_relpath": "heldout/corrupt/164_telecom_t0613_m10.txt",
+      "corrupt_prompt_sha256": "4959b0ef7e409d6f60e5e9e06e3a6ae10a1e3c77ff68755ca0e9e1d1aa5d9b77"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_165",
+      "corrupt_relpath": "heldout/corrupt/165_telecom_t0626_m06.txt",
+      "corrupt_prompt_sha256": "b1acaa45a74cc5c6f1669d215c10f44f6f6bbe89465541c4163f356ebdef2461"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_166",
+      "corrupt_relpath": "heldout/corrupt/166_telecom_t0719_m46.txt",
+      "corrupt_prompt_sha256": "b039eea8569cb485ac2b68b4f0fbaa327a5cf3c42689f262f146f4ead8d02d9b"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_167",
+      "corrupt_relpath": "heldout/corrupt/167_telecom_t0836_m16.txt",
+      "corrupt_prompt_sha256": "824e85d27f16d1bf90ce8edac42d3ce34e627a886fed4a6d5e027146a1fa6272"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_168",
+      "corrupt_relpath": "heldout/corrupt/168_telecom_t0839_m10.txt",
+      "corrupt_prompt_sha256": "e486fbb295df767bd442d5ae54c49c5692724c02db9e30d42f0627664a579e08"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_169",
+      "corrupt_relpath": "heldout/corrupt/169_telecom_t0874_m10.txt",
+      "corrupt_prompt_sha256": "4959b0ef7e409d6f60e5e9e06e3a6ae10a1e3c77ff68755ca0e9e1d1aa5d9b77"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_170",
+      "corrupt_relpath": "heldout/corrupt/170_telecom_t0900_m06.txt",
+      "corrupt_prompt_sha256": "b7051edf5abd07902e2da88286d2008d78fdd8cd0e2414c65b824678f0127ac0"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_171",
+      "corrupt_relpath": "heldout/corrupt/171_telecom_t0980_m06.txt",
+      "corrupt_prompt_sha256": "c4af1a335ca84bb3b752b5a413ca290848bf9cc52c9d1131c4ff1f64b31bd081"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_172",
+      "corrupt_relpath": "heldout/corrupt/172_telecom_t1035_m12.txt",
+      "corrupt_prompt_sha256": "ba307fa4d5d79186503e076903a47633b1e47fdbe90fb3332f15646bbf57cb24"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_173",
+      "corrupt_relpath": "heldout/corrupt/173_telecom_t1044_m06.txt",
+      "corrupt_prompt_sha256": "43e9ae9bd944895601204dd763aed94a8be6286e76f614b829570ea592c98528"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_174",
+      "corrupt_relpath": "heldout/corrupt/174_telecom_t1114_m10.txt",
+      "corrupt_prompt_sha256": "4959b0ef7e409d6f60e5e9e06e3a6ae10a1e3c77ff68755ca0e9e1d1aa5d9b77"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_175",
+      "corrupt_relpath": "heldout/corrupt/175_telecom_t1135_m06.txt",
+      "corrupt_prompt_sha256": "7b4f6db2a1dda86e628b23b13a180856b038433ad94585b1b89b16da11ed8056"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_176",
+      "corrupt_relpath": "heldout/corrupt/176_telecom_t1139_m06.txt",
+      "corrupt_prompt_sha256": "a1b4bfeea4aa1f7d94670234a7443e8673af17918f2cfb52433369d947867146"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_177",
+      "corrupt_relpath": "heldout/corrupt/177_telecom_t1159_m06.txt",
+      "corrupt_prompt_sha256": "a1b4bfeea4aa1f7d94670234a7443e8673af17918f2cfb52433369d947867146"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_178",
+      "corrupt_relpath": "heldout/corrupt/178_telecom_t1208_m06.txt",
+      "corrupt_prompt_sha256": "acd391186f8d1003e12f10cbdb07c8bbf91b2bc0f6eb11bdd14a813cbe2bb36a"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_179",
+      "corrupt_relpath": "heldout/corrupt/179_telecom_t1231_m10.txt",
+      "corrupt_prompt_sha256": "e486fbb295df767bd442d5ae54c49c5692724c02db9e30d42f0627664a579e08"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_180",
+      "corrupt_relpath": "heldout/corrupt/180_telecom_t1241_m12.txt",
+      "corrupt_prompt_sha256": "08416ccd1a71a1f713a4d9e505f93433ff85aa6fed9a7c12e56aa49a1ac3c4da"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_181",
+      "corrupt_relpath": "heldout/corrupt/181_telecom_t1253_m14.txt",
+      "corrupt_prompt_sha256": "62761d54b920a5d252b4e1309e2a4bc69978c4388d95b60e29f3000ff93d5230"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_182",
+      "corrupt_relpath": "heldout/corrupt/182_telecom_t1377_m44.txt",
+      "corrupt_prompt_sha256": "618c0cad3ca563aaa84737aff3a22a598533aee0fb9e12f8285d7d30d343d6ed"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_183",
+      "corrupt_relpath": "heldout/corrupt/183_telecom_t1397_m10.txt",
+      "corrupt_prompt_sha256": "e486fbb295df767bd442d5ae54c49c5692724c02db9e30d42f0627664a579e08"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_184",
+      "corrupt_relpath": "heldout/corrupt/184_telecom_t1438_m06.txt",
+      "corrupt_prompt_sha256": "58607b26dc269a0fa17d58bc629568a825715c1f0a0ccb730feeeef48678612f"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_185",
+      "corrupt_relpath": "heldout/corrupt/185_telecom_t1455_m10.txt",
+      "corrupt_prompt_sha256": "e486fbb295df767bd442d5ae54c49c5692724c02db9e30d42f0627664a579e08"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_186",
+      "corrupt_relpath": "heldout/corrupt/186_telecom_t1469_m10.txt",
+      "corrupt_prompt_sha256": "e486fbb295df767bd442d5ae54c49c5692724c02db9e30d42f0627664a579e08"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_187",
+      "corrupt_relpath": "heldout/corrupt/187_telecom_t1543_m10.txt",
+      "corrupt_prompt_sha256": "4959b0ef7e409d6f60e5e9e06e3a6ae10a1e3c77ff68755ca0e9e1d1aa5d9b77"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_188",
+      "corrupt_relpath": "heldout/corrupt/188_telecom_t1612_m10.txt",
+      "corrupt_prompt_sha256": "4959b0ef7e409d6f60e5e9e06e3a6ae10a1e3c77ff68755ca0e9e1d1aa5d9b77"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_189",
+      "corrupt_relpath": "heldout/corrupt/189_telecom_t0486_m06.txt",
+      "corrupt_prompt_sha256": "f0ccbdbd20cc1e797651b71c395ad1428fd31613e73bd3ff7af7b057d744237f"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_190",
+      "corrupt_relpath": "heldout/corrupt/190_telecom_t0520_m06.txt",
+      "corrupt_prompt_sha256": "086abcf2001344d29ea7cc94ea255181c4087fce23b1e443e8511498272fcdd4"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_191",
+      "corrupt_relpath": "heldout/corrupt/191_telecom_t0631_m06.txt",
+      "corrupt_prompt_sha256": "703bfb5fc3d718c38fee3916c2a335228f03ff0d7cc1ab8d1888ec7c776421a9"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_192",
+      "corrupt_relpath": "heldout/corrupt/192_telecom_t0734_m06.txt",
+      "corrupt_prompt_sha256": "703bfb5fc3d718c38fee3916c2a335228f03ff0d7cc1ab8d1888ec7c776421a9"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_193",
+      "corrupt_relpath": "heldout/corrupt/193_telecom_t0741_m06.txt",
+      "corrupt_prompt_sha256": "563e103e2dd0436497fd4e141fd976a0ba6a43941bd60d435a7c0b43b77f3941"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_194",
+      "corrupt_relpath": "heldout/corrupt/194_telecom_t0781_m06.txt",
+      "corrupt_prompt_sha256": "ae1b0c4e0bd7be65457700bbc2d7c52cdeb779a7a9b63e5c598328d39eb4d02c"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_195",
+      "corrupt_relpath": "heldout/corrupt/195_telecom_t0915_m06.txt",
+      "corrupt_prompt_sha256": "313465408b566be41aa35df40ea00acad07b9d40ff5b54a31e21552c8a894f70"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_196",
+      "corrupt_relpath": "heldout/corrupt/196_telecom_t1065_m06.txt",
+      "corrupt_prompt_sha256": "a80b7946d4f82ec3cfdcad580b50c6710e17e7c9896df817f06bb05b1465cdc6"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_197",
+      "corrupt_relpath": "heldout/corrupt/197_telecom_t1116_m06.txt",
+      "corrupt_prompt_sha256": "8e70cf8f5a5bda50aa460dc377ac5baf467906c92d100c66e1cafaa11f92874b"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_198",
+      "corrupt_relpath": "heldout/corrupt/198_telecom_t1339_m06.txt",
+      "corrupt_prompt_sha256": "edb5295f04bbbd9b4a2f96094c480bc50aa3d76a6034b6c0371f1e78b1f5b413"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_199",
+      "corrupt_relpath": "heldout/corrupt/199_telecom_t1403_m06.txt",
+      "corrupt_prompt_sha256": "716925d722b532002e2b9d46c3fc6b0fda882d11b2f7d0f521f6e432ae3e1ee7"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_200",
+      "corrupt_relpath": "heldout/corrupt/200_telecom_t0048_m06.txt",
+      "corrupt_prompt_sha256": "391d6be9e1fb2f9ee27955911b8e3eaeabac2fccdcb0b8d435f6be33891d2a66"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_201",
+      "corrupt_relpath": "heldout/corrupt/201_telecom_t0070_m06.txt",
+      "corrupt_prompt_sha256": "f0b43a5b8e91045b76516532163b6f5d4bd558847939aab24f4f79aa879f2882"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_202",
+      "corrupt_relpath": "heldout/corrupt/202_telecom_t0252_m06.txt",
+      "corrupt_prompt_sha256": "8a385111053477ca047ab743e7f6377148d9c500f4a3f704b1b1f3032cfcf495"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_203",
+      "corrupt_relpath": "heldout/corrupt/203_telecom_t0266_m10.txt",
+      "corrupt_prompt_sha256": "e7daf101f036056a24b57f3b32cc5ed159164adfe9e345101d146c9725455c6d"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_204",
+      "corrupt_relpath": "heldout/corrupt/204_telecom_t0306_m06.txt",
+      "corrupt_prompt_sha256": "57b3a05755ab335d1b50b6e0790f9ed7c73cb664de6351e24a4404d7040a73dd"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_205",
+      "corrupt_relpath": "heldout/corrupt/205_telecom_t0347_m12.txt",
+      "corrupt_prompt_sha256": "e44df18691ad40c4a519f5af0bbf707208ac87f5de593ad1453698adcbb37764"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_206",
+      "corrupt_relpath": "heldout/corrupt/206_telecom_t0421_m10.txt",
+      "corrupt_prompt_sha256": "26125befbd5e9a2e6a7c42d5d24859c399b83683bb27eba0c69c16714a24660c"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_207",
+      "corrupt_relpath": "heldout/corrupt/207_telecom_t0438_m06.txt",
+      "corrupt_prompt_sha256": "4c07b8a9ca36ed0fff2609582dabf635ba59408ebcf87c83b7fb7f8d42aa967c"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_208",
+      "corrupt_relpath": "heldout/corrupt/208_telecom_t0469_m10.txt",
+      "corrupt_prompt_sha256": "bd495758ad67727db73d983f9885cdbbb2387d42e56db7f54b4ba684607f2ac7"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_209",
+      "corrupt_relpath": "heldout/corrupt/209_telecom_t0498_m06.txt",
+      "corrupt_prompt_sha256": "81bcc820579cdf8e6e31078953caf185d2a6866082d0ca24a412a29734768ec8"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_210",
+      "corrupt_relpath": "heldout/corrupt/210_telecom_t0632_m06.txt",
+      "corrupt_prompt_sha256": "b4adf9cddce9f2d40f38648a5180ffe053f9de364c527df7efd55c0031e51c3c"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_211",
+      "corrupt_relpath": "heldout/corrupt/211_telecom_t0675_m06.txt",
+      "corrupt_prompt_sha256": "b6080be368b9c432c85c2a1150062c0bcd9764347e58131a7c6e91e67a07fa01"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_212",
+      "corrupt_relpath": "heldout/corrupt/212_telecom_t0696_m10.txt",
+      "corrupt_prompt_sha256": "e7daf101f036056a24b57f3b32cc5ed159164adfe9e345101d146c9725455c6d"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_213",
+      "corrupt_relpath": "heldout/corrupt/213_telecom_t0773_m10.txt",
+      "corrupt_prompt_sha256": "d2b0814433f2ba6517125dde05e1ae740565b53123f88ae06ddeea0299243ecc"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_214",
+      "corrupt_relpath": "heldout/corrupt/214_telecom_t0799_m10.txt",
+      "corrupt_prompt_sha256": "d2b0814433f2ba6517125dde05e1ae740565b53123f88ae06ddeea0299243ecc"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_215",
+      "corrupt_relpath": "heldout/corrupt/215_telecom_t0815_m38.txt",
+      "corrupt_prompt_sha256": "552bd2d18a963c10f5484c334e7f9f94623b17af7ca04868b35b1eaac02d4479"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_216",
+      "corrupt_relpath": "heldout/corrupt/216_telecom_t0867_m10.txt",
+      "corrupt_prompt_sha256": "d2b0814433f2ba6517125dde05e1ae740565b53123f88ae06ddeea0299243ecc"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_217",
+      "corrupt_relpath": "heldout/corrupt/217_telecom_t0954_m06.txt",
+      "corrupt_prompt_sha256": "1ee8b500ba508e6d1718c3c714beda88083e0ced10ca262855d1483f32e26b2c"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_218",
+      "corrupt_relpath": "heldout/corrupt/218_telecom_t1028_m06.txt",
+      "corrupt_prompt_sha256": "f0b43a5b8e91045b76516532163b6f5d4bd558847939aab24f4f79aa879f2882"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_219",
+      "corrupt_relpath": "heldout/corrupt/219_telecom_t1053_m06.txt",
+      "corrupt_prompt_sha256": "a050d2b97d1b6258cabb9aa3ecd9282b98885afebd48165b34dc57f6a479d568"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_220",
+      "corrupt_relpath": "heldout/corrupt/220_telecom_t1069_m06.txt",
+      "corrupt_prompt_sha256": "81bcc820579cdf8e6e31078953caf185d2a6866082d0ca24a412a29734768ec8"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_221",
+      "corrupt_relpath": "heldout/corrupt/221_telecom_t1240_m22.txt",
+      "corrupt_prompt_sha256": "583b84897911cdbda05d8ef80069815fdbbe36207ac370cae8aab644d798c439"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_222",
+      "corrupt_relpath": "heldout/corrupt/222_telecom_t1283_m10.txt",
+      "corrupt_prompt_sha256": "d2b0814433f2ba6517125dde05e1ae740565b53123f88ae06ddeea0299243ecc"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_223",
+      "corrupt_relpath": "heldout/corrupt/223_telecom_t1299_m06.txt",
+      "corrupt_prompt_sha256": "04035ae38ba8dbbc863e1d8e47bed71e4916960819c5e8657ba1168dcc014f2f"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_224",
+      "corrupt_relpath": "heldout/corrupt/224_telecom_t1416_m14.txt",
+      "corrupt_prompt_sha256": "d2b0814433f2ba6517125dde05e1ae740565b53123f88ae06ddeea0299243ecc"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_225",
+      "corrupt_relpath": "heldout/corrupt/225_telecom_t1444_m06.txt",
+      "corrupt_prompt_sha256": "81bcc820579cdf8e6e31078953caf185d2a6866082d0ca24a412a29734768ec8"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_226",
+      "corrupt_relpath": "heldout/corrupt/226_telecom_t0033_m46.txt",
+      "corrupt_prompt_sha256": "e97979cb49916d9a51f22339a2ea189d33aeb254059538080bd8b5ee9e2bddaa"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_227",
+      "corrupt_relpath": "heldout/corrupt/227_telecom_t0078_m10.txt",
+      "corrupt_prompt_sha256": "c08d0459d9b1959e0a76c9994c911109f33f9af149d0b679e9aa9fab42e03979"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_228",
+      "corrupt_relpath": "heldout/corrupt/228_telecom_t0098_m10.txt",
+      "corrupt_prompt_sha256": "2f3c6166c5e08e98bef73091b87a294b945311402241efc7e80e22dae40c98fa"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_229",
+      "corrupt_relpath": "heldout/corrupt/229_telecom_t0121_m14.txt",
+      "corrupt_prompt_sha256": "e0c0d0af5610518f89320a24dcda51375067f98556cd173828af6a60f4269c07"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_230",
+      "corrupt_relpath": "heldout/corrupt/230_telecom_t0131_m10.txt",
+      "corrupt_prompt_sha256": "2f3c6166c5e08e98bef73091b87a294b945311402241efc7e80e22dae40c98fa"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_231",
+      "corrupt_relpath": "heldout/corrupt/231_telecom_t0206_m10.txt",
+      "corrupt_prompt_sha256": "2f3c6166c5e08e98bef73091b87a294b945311402241efc7e80e22dae40c98fa"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_232",
+      "corrupt_relpath": "heldout/corrupt/232_telecom_t0216_m12.txt",
+      "corrupt_prompt_sha256": "bfd0313e1a92097586ae7cca243f768eacea317837b8b4e668576c0f21ecb904"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_233",
+      "corrupt_relpath": "heldout/corrupt/233_telecom_t0256_m14.txt",
+      "corrupt_prompt_sha256": "aa73770f9a373427b5dbb0d5f8e901f15fb5ec530c1260416a6f02f38be0714f"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_234",
+      "corrupt_relpath": "heldout/corrupt/234_telecom_t0313_m12.txt",
+      "corrupt_prompt_sha256": "b900767ee1958ff3ddff42100f3b14d45e1a3c2d1645407975ef0ba1967729f7"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_235",
+      "corrupt_relpath": "heldout/corrupt/235_telecom_t0343_m10.txt",
+      "corrupt_prompt_sha256": "c08d0459d9b1959e0a76c9994c911109f33f9af149d0b679e9aa9fab42e03979"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_236",
+      "corrupt_relpath": "heldout/corrupt/236_telecom_t0398_m10.txt",
+      "corrupt_prompt_sha256": "2f3c6166c5e08e98bef73091b87a294b945311402241efc7e80e22dae40c98fa"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_237",
+      "corrupt_relpath": "heldout/corrupt/237_telecom_t0416_m10.txt",
+      "corrupt_prompt_sha256": "2f3c6166c5e08e98bef73091b87a294b945311402241efc7e80e22dae40c98fa"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_238",
+      "corrupt_relpath": "heldout/corrupt/238_telecom_t0505_m10.txt",
+      "corrupt_prompt_sha256": "fe5f6b490e6ef57809cdff87654590a4cca433a4f75a581b57d3b279e42b3726"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_239",
+      "corrupt_relpath": "heldout/corrupt/239_telecom_t0538_m10.txt",
+      "corrupt_prompt_sha256": "c27b9313b7776dad66c05758e8afa1d8905a126e6fa47620f7049a63ef8b9319"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_240",
+      "corrupt_relpath": "heldout/corrupt/240_telecom_t0588_m06.txt",
+      "corrupt_prompt_sha256": "086abcf2001344d29ea7cc94ea255181c4087fce23b1e443e8511498272fcdd4"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_241",
+      "corrupt_relpath": "heldout/corrupt/241_telecom_t0628_m10.txt",
+      "corrupt_prompt_sha256": "c27b9313b7776dad66c05758e8afa1d8905a126e6fa47620f7049a63ef8b9319"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_242",
+      "corrupt_relpath": "heldout/corrupt/242_telecom_t0910_m10.txt",
+      "corrupt_prompt_sha256": "769b7d6e81f73c6f19fddb30d84bcce1d459d6db5549ef52883d3dce79e06bad"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_243",
+      "corrupt_relpath": "heldout/corrupt/243_telecom_t0919_m12.txt",
+      "corrupt_prompt_sha256": "c104ee9fed0ab735c851156686f1876e7712a0aad2a5ff93d76201fafae2afa1"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_244",
+      "corrupt_relpath": "heldout/corrupt/244_telecom_t0965_m21.txt",
+      "corrupt_prompt_sha256": "2d7f0f4faa0b04630c763f1be24d34d2200d4af8b9929c149991349cc22526e3"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_245",
+      "corrupt_relpath": "heldout/corrupt/245_telecom_t1088_m14.txt",
+      "corrupt_prompt_sha256": "dc9ac6bc0edd968a94d8e4cc3d749cd6ec4615e4d686aac45471dec519679757"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_246",
+      "corrupt_relpath": "heldout/corrupt/246_telecom_t1090_m06.txt",
+      "corrupt_prompt_sha256": "bda9b49244b51efd863c800139052afff9dc75ce7e25ceb8c94d695fc0b2a3e8"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_247",
+      "corrupt_relpath": "heldout/corrupt/247_telecom_t1178_m10.txt",
+      "corrupt_prompt_sha256": "2f3c6166c5e08e98bef73091b87a294b945311402241efc7e80e22dae40c98fa"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_248",
+      "corrupt_relpath": "heldout/corrupt/248_telecom_t1291_m10.txt",
+      "corrupt_prompt_sha256": "c08d0459d9b1959e0a76c9994c911109f33f9af149d0b679e9aa9fab42e03979"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_249",
+      "corrupt_relpath": "heldout/corrupt/249_telecom_t1456_m10.txt",
+      "corrupt_prompt_sha256": "769b7d6e81f73c6f19fddb30d84bcce1d459d6db5549ef52883d3dce79e06bad"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_250",
+      "corrupt_relpath": "heldout/corrupt/250_telecom_t1550_m10.txt",
+      "corrupt_prompt_sha256": "c08d0459d9b1959e0a76c9994c911109f33f9af149d0b679e9aa9fab42e03979"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_251",
+      "corrupt_relpath": "heldout/corrupt/251_telecom_t1569_m12.txt",
+      "corrupt_prompt_sha256": "c104ee9fed0ab735c851156686f1876e7712a0aad2a5ff93d76201fafae2afa1"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_252",
+      "corrupt_relpath": "heldout/corrupt/252_telecom_t1583_m13.txt",
+      "corrupt_prompt_sha256": "c5a7d2aa888e1c37632ad9df6c1159216fca520a5e8abc5108b11bff9a680069"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_253",
+      "corrupt_relpath": "heldout/corrupt/253_telecom_t0025_m06.txt",
+      "corrupt_prompt_sha256": "a050d2b97d1b6258cabb9aa3ecd9282b98885afebd48165b34dc57f6a479d568"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_254",
+      "corrupt_relpath": "heldout/corrupt/254_telecom_t0041_m12.txt",
+      "corrupt_prompt_sha256": "29102607e5c4b3782706c7ccd6185759b32eb56fe913710b013c3ff76249cd4d"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_255",
+      "corrupt_relpath": "heldout/corrupt/255_telecom_t0137_m12.txt",
+      "corrupt_prompt_sha256": "29102607e5c4b3782706c7ccd6185759b32eb56fe913710b013c3ff76249cd4d"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_256",
+      "corrupt_relpath": "heldout/corrupt/256_telecom_t0153_m10.txt",
+      "corrupt_prompt_sha256": "d2b0814433f2ba6517125dde05e1ae740565b53123f88ae06ddeea0299243ecc"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_257",
+      "corrupt_relpath": "heldout/corrupt/257_telecom_t0173_m10.txt",
+      "corrupt_prompt_sha256": "26125befbd5e9a2e6a7c42d5d24859c399b83683bb27eba0c69c16714a24660c"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_258",
+      "corrupt_relpath": "heldout/corrupt/258_telecom_t0200_m50.txt",
+      "corrupt_prompt_sha256": "2999fd305405363bfa33df95b4c1fce952d0c3ac26985fd3e2a1fbe0f60e0713"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_259",
+      "corrupt_relpath": "heldout/corrupt/259_telecom_t0224_m14.txt",
+      "corrupt_prompt_sha256": "1f88dce1ff1d07cb2e992abcaf04b91acbbb217d6df1bda21de54b8e8a007c56"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_260",
+      "corrupt_relpath": "heldout/corrupt/260_telecom_t0258_m18.txt",
+      "corrupt_prompt_sha256": "955b006ebdd17312d7c3bec9fbd354c6cb667057fc0a36b55bf70d8761165dbc"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_261",
+      "corrupt_relpath": "heldout/corrupt/261_telecom_t0269_m10.txt",
+      "corrupt_prompt_sha256": "93355e551d50609658300890c052737403235e5db45b0f0e3188b900449913ed"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_262",
+      "corrupt_relpath": "heldout/corrupt/262_telecom_t0295_m12.txt",
+      "corrupt_prompt_sha256": "07abe1e18d9fda603b694123a39756f9f4d9305c9747baa2eb547c54c1431f1f"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_263",
+      "corrupt_relpath": "heldout/corrupt/263_telecom_t0299_m14.txt",
+      "corrupt_prompt_sha256": "a19e57f4090025f06be8bd0d60119d0aa85225f36d924dde5f4aee79476b271a"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_264",
+      "corrupt_relpath": "heldout/corrupt/264_telecom_t0332_m12.txt",
+      "corrupt_prompt_sha256": "480241660221c70686fbe795039e4e91d5d2aace0646cac3dac9cb3c01494b80"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_265",
+      "corrupt_relpath": "heldout/corrupt/265_telecom_t0373_m10.txt",
+      "corrupt_prompt_sha256": "4aed938aaf950ca44d5740e81d226b0946395b4ffc71b6ccec31775e99466539"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_266",
+      "corrupt_relpath": "heldout/corrupt/266_telecom_t0420_m06.txt",
+      "corrupt_prompt_sha256": "dd6fcfd62080402673d3dcc602a7440a011a004b7f0a8029035b8473b1529e8d"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_267",
+      "corrupt_relpath": "heldout/corrupt/267_telecom_t0428_m12.txt",
+      "corrupt_prompt_sha256": "c504c34cf81283304582d7cb19cbafeb1d7882cbf7fec8c725356745309bd267"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_268",
+      "corrupt_relpath": "heldout/corrupt/268_telecom_t0516_m06.txt",
+      "corrupt_prompt_sha256": "b6080be368b9c432c85c2a1150062c0bcd9764347e58131a7c6e91e67a07fa01"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_269",
+      "corrupt_relpath": "heldout/corrupt/269_telecom_t0546_m10.txt",
+      "corrupt_prompt_sha256": "d2b0814433f2ba6517125dde05e1ae740565b53123f88ae06ddeea0299243ecc"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_270",
+      "corrupt_relpath": "heldout/corrupt/270_telecom_t0549_m53.txt",
+      "corrupt_prompt_sha256": "be72a9af11357eff7f5c7c11e2baf1b38c8928fd1ce376aa0a1811eb09d3fa84"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_271",
+      "corrupt_relpath": "heldout/corrupt/271_telecom_t0569_m48.txt",
+      "corrupt_prompt_sha256": "009d98c2477b7b07cc58719f29e3ce10688f11d237f661112d8a1fa78290712e"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_272",
+      "corrupt_relpath": "heldout/corrupt/272_telecom_t0575_m43.txt",
+      "corrupt_prompt_sha256": "9f490001bfec59e11a1303c7409552ae7ea390a0997abf91504451df137843ba"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_273",
+      "corrupt_relpath": "heldout/corrupt/273_telecom_t0579_m47.txt",
+      "corrupt_prompt_sha256": "480241660221c70686fbe795039e4e91d5d2aace0646cac3dac9cb3c01494b80"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_274",
+      "corrupt_relpath": "heldout/corrupt/274_telecom_t0581_m10.txt",
+      "corrupt_prompt_sha256": "6b8391a7f2c79d7c58fa340ee7cea9663aedfa8072636a38fd9bf74bbc5a99db"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_275",
+      "corrupt_relpath": "heldout/corrupt/275_telecom_t0591_m06.txt",
+      "corrupt_prompt_sha256": "f0b43a5b8e91045b76516532163b6f5d4bd558847939aab24f4f79aa879f2882"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_276",
+      "corrupt_relpath": "heldout/corrupt/276_telecom_t0605_m10.txt",
+      "corrupt_prompt_sha256": "d2b0814433f2ba6517125dde05e1ae740565b53123f88ae06ddeea0299243ecc"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_277",
+      "corrupt_relpath": "heldout/corrupt/277_telecom_t0653_m10.txt",
+      "corrupt_prompt_sha256": "d2b0814433f2ba6517125dde05e1ae740565b53123f88ae06ddeea0299243ecc"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_278",
+      "corrupt_relpath": "heldout/corrupt/278_telecom_t0658_m06.txt",
+      "corrupt_prompt_sha256": "96a283be115498c524c674a530b1caac6150e1511d495f6de69f0ac7dc33b0be"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_279",
+      "corrupt_relpath": "heldout/corrupt/279_telecom_t0665_m06.txt",
+      "corrupt_prompt_sha256": "26e44093c1e8780018334c6a81d1ad86e503f9c8d2c56fca0574bb771d400d16"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_280",
+      "corrupt_relpath": "heldout/corrupt/280_telecom_t0767_m10.txt",
+      "corrupt_prompt_sha256": "d2b0814433f2ba6517125dde05e1ae740565b53123f88ae06ddeea0299243ecc"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_281",
+      "corrupt_relpath": "heldout/corrupt/281_telecom_t0804_m12.txt",
+      "corrupt_prompt_sha256": "07abe1e18d9fda603b694123a39756f9f4d9305c9747baa2eb547c54c1431f1f"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_282",
+      "corrupt_relpath": "heldout/corrupt/282_telecom_t0835_m10.txt",
+      "corrupt_prompt_sha256": "d180caa2c97a7c40727e8eb4855166f19e303199ef77790933959f33a92e7b1c"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_283",
+      "corrupt_relpath": "heldout/corrupt/283_telecom_t0909_m14.txt",
+      "corrupt_prompt_sha256": "6d69e8827f3b0564a6af6260be66a992124926a6f10b9a28be0a5e2d7ba44e06"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_284",
+      "corrupt_relpath": "heldout/corrupt/284_telecom_t0949_m10.txt",
+      "corrupt_prompt_sha256": "d2b0814433f2ba6517125dde05e1ae740565b53123f88ae06ddeea0299243ecc"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_285",
+      "corrupt_relpath": "heldout/corrupt/285_telecom_t0987_m40.txt",
+      "corrupt_prompt_sha256": "191351f8a2bd03dcf1a5a2c5c8d9175dcc31f0975fce7d6e608aacecad04dd5f"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_286",
+      "corrupt_relpath": "heldout/corrupt/286_telecom_t1079_m10.txt",
+      "corrupt_prompt_sha256": "d180caa2c97a7c40727e8eb4855166f19e303199ef77790933959f33a92e7b1c"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_287",
+      "corrupt_relpath": "heldout/corrupt/287_telecom_t1107_m06.txt",
+      "corrupt_prompt_sha256": "04035ae38ba8dbbc863e1d8e47bed71e4916960819c5e8657ba1168dcc014f2f"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_288",
+      "corrupt_relpath": "heldout/corrupt/288_telecom_t1125_m10.txt",
+      "corrupt_prompt_sha256": "d2b0814433f2ba6517125dde05e1ae740565b53123f88ae06ddeea0299243ecc"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_289",
+      "corrupt_relpath": "heldout/corrupt/289_telecom_t1147_m27.txt",
+      "corrupt_prompt_sha256": "b0b6a28f564c6723cde49fd76674c4942d8b042b7acb45bd63631b843b82fe72"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_290",
+      "corrupt_relpath": "heldout/corrupt/290_telecom_t1308_m12.txt",
+      "corrupt_prompt_sha256": "29102607e5c4b3782706c7ccd6185759b32eb56fe913710b013c3ff76249cd4d"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_291",
+      "corrupt_relpath": "heldout/corrupt/291_telecom_t1314_m10.txt",
+      "corrupt_prompt_sha256": "26125befbd5e9a2e6a7c42d5d24859c399b83683bb27eba0c69c16714a24660c"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_292",
+      "corrupt_relpath": "heldout/corrupt/292_telecom_t1331_m10.txt",
+      "corrupt_prompt_sha256": "d2b0814433f2ba6517125dde05e1ae740565b53123f88ae06ddeea0299243ecc"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_293",
+      "corrupt_relpath": "heldout/corrupt/293_telecom_t1349_m19.txt",
+      "corrupt_prompt_sha256": "a096ec005fcf786fe542de1a704460daa561dc8fda6a3c2e233b211f6a74ef9a"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_294",
+      "corrupt_relpath": "heldout/corrupt/294_telecom_t1353_m10.txt",
+      "corrupt_prompt_sha256": "d2b0814433f2ba6517125dde05e1ae740565b53123f88ae06ddeea0299243ecc"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_295",
+      "corrupt_relpath": "heldout/corrupt/295_telecom_t1381_m10.txt",
+      "corrupt_prompt_sha256": "d180caa2c97a7c40727e8eb4855166f19e303199ef77790933959f33a92e7b1c"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_296",
+      "corrupt_relpath": "heldout/corrupt/296_telecom_t1384_m14.txt",
+      "corrupt_prompt_sha256": "955b006ebdd17312d7c3bec9fbd354c6cb667057fc0a36b55bf70d8761165dbc"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_297",
+      "corrupt_relpath": "heldout/corrupt/297_telecom_t1443_m06.txt",
+      "corrupt_prompt_sha256": "e09b7cf2a6d889e329ec5ca404d09eaa3ffc8996e2ddc1bd58ad472c3f972d1f"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_298",
+      "corrupt_relpath": "heldout/corrupt/298_telecom_t1458_m10.txt",
+      "corrupt_prompt_sha256": "93355e551d50609658300890c052737403235e5db45b0f0e3188b900449913ed"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_299",
+      "corrupt_relpath": "heldout/corrupt/299_telecom_t1558_m10.txt",
+      "corrupt_prompt_sha256": "d180caa2c97a7c40727e8eb4855166f19e303199ef77790933959f33a92e7b1c"
+    },
+    {
+      "sample_id": "v5_qwen35_4b_300",
+      "corrupt_relpath": "heldout/corrupt/300_telecom_t1609_m06.txt",
+      "corrupt_prompt_sha256": "3d5e6b10199822b03725926c333a26742b0c32e7308b2d6123e25cfd3dadb3e1"
+    }
+  ]
+}

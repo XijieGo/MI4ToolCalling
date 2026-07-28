@@ -1,0 +1,299 @@
+{
+ "shared_analysis": {
+  "describe": {
+   "D1_code": 0.0,
+   "D2_math": 0.25,
+   "D3_search": 0.0,
+   "D4_sql": 0.0,
+   "D5_email": 0.0
+  },
+  "discuss": {
+   "D1_code": 0.0,
+   "D2_math": 0.375,
+   "D3_search": 0.875,
+   "D4_sql": 0.0,
+   "D5_email": 0.0
+  },
+  "review": {
+   "D1_code": 0.0,
+   "D2_math": 0.25,
+   "D3_search": 0.5,
+   "D4_sql": 0.0,
+   "D5_email": 0.0
+  },
+  "study": {
+   "D1_code": 0.0,
+   "D2_math": 0.5,
+   "D3_search": 0.75,
+   "D4_sql": 0.0,
+   "D5_email": 1.0
+  },
+  "inspect": {
+   "D1_code": 0.0,
+   "D2_math": 0.875,
+   "D3_search": 0.75,
+   "D4_sql": 0.0,
+   "D5_email": 0.0
+  },
+  "compare": {
+   "D1_code": 0.0,
+   "D2_math": 1.0,
+   "D3_search": 0.875,
+   "D4_sql": 0.0,
+   "D5_email": 0.0
+  },
+  "outline": {
+   "D1_code": 1.0,
+   "D2_math": 0.0,
+   "D3_search": 0.0,
+   "D4_sql": 0.0,
+   "D5_email": 1.0
+  }
+ },
+ "exec": {
+  "D1_code": {
+   "write": 1.0,
+   "add": 1.0,
+   "save": 1.0,
+   "build": 1.0,
+   "complete": 1.0
+  },
+  "D2_math": {
+   "compute": 1.0,
+   "calculate": 1.0,
+   "evaluate": 1.0,
+   "count": 1.0,
+   "total": 1.0
+  },
+  "D3_search": {
+   "search": 1.0,
+   "verify": 1.0,
+   "lookup": 1.0,
+   "check": 0.875,
+   "confirm": 0.875
+  },
+  "D4_sql": {
+   "run": 1.0,
+   "execute": 1.0,
+   "query": 1.0,
+   "fetch": 1.0
+  },
+  "D5_email": {
+   "send": 1.0,
+   "mail": 1.0,
+   "forward": 1.0,
+   "dispatch": 1.0,
+   "submit": 1.0
+  }
+ },
+ "d3_tails": {
+  "the claim shown below about the entity given:": {
+   "analysis": {
+    "describe": 0.0,
+    "discuss": 0.875,
+    "review": 0.5,
+    "study": 0.75,
+    "inspect": 0.75,
+    "compare": 0.875,
+    "outline": 0.0
+   },
+   "verify": 1.0
+  },
+  "the claim about the entity stated below:": {
+   "analysis": {
+    "describe": 0.125,
+    "discuss": 1.0,
+    "review": 0.75,
+    "study": 1.0,
+    "inspect": 1.0,
+    "compare": 0.875,
+    "outline": 0.0
+   },
+   "verify": 1.0
+  },
+  "the factual record shown below for the entity given:": {
+   "analysis": {
+    "describe": 0.375,
+    "discuss": 0.875,
+    "review": 0.75,
+    "study": 0.625,
+    "inspect": 0.75,
+    "compare": 1.0,
+    "outline": 1.0
+   },
+   "verify": 1.0
+  },
+  "the statement shown below concerning the entity given:": {
+   "analysis": {
+    "describe": 0.25,
+    "discuss": 0.75,
+    "review": 0.5,
+    "study": 0.625,
+    "inspect": 0.75,
+    "compare": 0.875,
+    "outline": 0.0
+   },
+   "verify": 1.0
+  }
+ },
+ "layer_sweep": {
+  "14": {
+   "D1_code": 0.0,
+   "D2_math": 0.0,
+   "D3_search": 0.0,
+   "D4_sql": 0.0,
+   "D5_email": 0.0
+  },
+  "16": {
+   "D1_code": 0.0,
+   "D2_math": 0.0,
+   "D3_search": 0.0,
+   "D4_sql": 0.0,
+   "D5_email": 0.0
+  },
+  "18": {
+   "D1_code": 0.0,
+   "D2_math": 0.0,
+   "D3_search": 0.0,
+   "D4_sql": 0.0,
+   "D5_email": 0.125
+  },
+  "20": {
+   "D1_code": 0.625,
+   "D2_math": 1.0,
+   "D3_search": 0.2857142857142857,
+   "D4_sql": 0.3076923076923077,
+   "D5_email": 0.75
+  },
+  "22": {
+   "D1_code": 0.875,
+   "D2_math": 1.0,
+   "D3_search": 0.8571428571428571,
+   "D4_sql": 0.9230769230769231,
+   "D5_email": 1.0
+  },
+  "23": {
+   "D1_code": 1.0,
+   "D2_math": 1.0,
+   "D3_search": 1.0,
+   "D4_sql": 1.0,
+   "D5_email": 1.0
+  },
+  "24": {
+   "D1_code": 1.0,
+   "D2_math": 1.0,
+   "D3_search": 1.0,
+   "D4_sql": 1.0,
+   "D5_email": 1.0
+  },
+  "25": {
+   "D1_code": 1.0,
+   "D2_math": 1.0,
+   "D3_search": 1.0,
+   "D4_sql": 1.0,
+   "D5_email": 1.0
+  },
+  "26": {
+   "D1_code": 1.0,
+   "D2_math": 1.0,
+   "D3_search": 1.0,
+   "D4_sql": 1.0,
+   "D5_email": 1.0
+  },
+  "28": {
+   "D1_code": 1.0,
+   "D2_math": 1.0,
+   "D3_search": 1.0,
+   "D4_sql": 1.0,
+   "D5_email": 1.0
+  },
+  "30": {
+   "D1_code": 1.0,
+   "D2_math": 1.0,
+   "D3_search": 1.0,
+   "D4_sql": 1.0,
+   "D5_email": 1.0
+  },
+  "32": {
+   "D1_code": 1.0,
+   "D2_math": 1.0,
+   "D3_search": 1.0,
+   "D4_sql": 1.0,
+   "D5_email": 1.0
+  }
+ },
+ "transfer_L24": {
+  "D1_code": {
+   "D1_code": 1.0,
+   "D2_math": 1.0,
+   "D3_search": 1.0,
+   "D4_sql": 1.0,
+   "D5_email": 1.0
+  },
+  "D2_math": {
+   "D1_code": 0.9375,
+   "D2_math": 1.0,
+   "D3_search": 1.0,
+   "D4_sql": 1.0,
+   "D5_email": 1.0
+  },
+  "D3_search": {
+   "D1_code": 1.0,
+   "D2_math": 1.0,
+   "D3_search": 1.0,
+   "D4_sql": 1.0,
+   "D5_email": 1.0
+  },
+  "D4_sql": {
+   "D1_code": 1.0,
+   "D2_math": 1.0,
+   "D3_search": 1.0,
+   "D4_sql": 1.0,
+   "D5_email": 1.0
+  },
+  "D5_email": {
+   "D1_code": 1.0,
+   "D2_math": 1.0,
+   "D3_search": 1.0,
+   "D4_sql": 1.0,
+   "D5_email": 1.0
+  }
+ },
+ "cosine_L24": {
+  "D1_code": {
+   "D1_code": 0.9999999403953552,
+   "D2_math": 0.5253537893295288,
+   "D3_search": 0.4608861207962036,
+   "D4_sql": 0.6736886501312256,
+   "D5_email": 0.7022449374198914
+  },
+  "D2_math": {
+   "D1_code": 0.5253537893295288,
+   "D2_math": 1.0,
+   "D3_search": 0.5918601751327515,
+   "D4_sql": 0.6157995462417603,
+   "D5_email": 0.5175216197967529
+  },
+  "D3_search": {
+   "D1_code": 0.4608861207962036,
+   "D2_math": 0.5918601751327515,
+   "D3_search": 0.9999997615814209,
+   "D4_sql": 0.5274258255958557,
+   "D5_email": 0.44302722811698914
+  },
+  "D4_sql": {
+   "D1_code": 0.6736886501312256,
+   "D2_math": 0.6157995462417603,
+   "D3_search": 0.5274258255958557,
+   "D4_sql": 0.9999998211860657,
+   "D5_email": 0.7512980699539185
+  },
+  "D5_email": {
+   "D1_code": 0.7022449374198914,
+   "D2_math": 0.5175216197967529,
+   "D3_search": 0.44302722811698914,
+   "D4_sql": 0.7512980699539185,
+   "D5_email": 1.0
+  }
+ }
+}

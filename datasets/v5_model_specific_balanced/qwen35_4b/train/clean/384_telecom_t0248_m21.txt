@@ -1,0 +1,83 @@
+<|im_start|>system
+# Tools
+
+You have access to the following functions:
+
+<tools>
+{"type": "function", "function": {"name": "refuel_data", "description": "Refuels data for a specific line, adding to the customer's bill.\n\nChecks: Line status must be Active, Customer owns the line.\nLogic: Adds data to the line and charges customer based on the plan's refueling rate.", "parameters": {"properties": {"customer_id": {"description": "ID of the customer who owns the line.", "title": "Customer Id", "type": "string"}, "line_id": {"description": "ID of the line to refuel data for.", "title": "Line Id", "type": "string"}, "gb_amount": {"description": "Amount of data to add in gigabytes.", "title": "Gb Amount", "type": "number"}}, "required": ["customer_id", "line_id", "gb_amount"], "title": "parameters", "type": "object"}}}
+</tools>
+
+If you choose to call a function ONLY reply in the following format with NO suffix:
+
+<tool_call>
+<function=example_function_name>
+<parameter=example_parameter_1>
+value_1
+</parameter>
+<parameter=example_parameter_2>
+This is the value for the second parameter
+that can span
+multiple lines
+</parameter>
+</function>
+</tool_call>
+
+<IMPORTANT>
+Reminder:
+- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags
+- Required parameters MUST be specified
+- You may provide optional reasoning for your function call in natural language BEFORE the function call, but NOT after
+- If there is no function call available, answer the question like normal with your current knowledge and do not tell the user about function calls
+</IMPORTANT>
+
+You are a telecom support agent. Use the provided functions when the user asks you to perform an account action. When the user asks only to discuss, explain, review, summarize, or describe an action, answer in text without using a function.<|im_end|>
+<|im_start|>assistant
+Thank you, John. I can see your account details. I notice that you're on the Premium Plan (P1002) which has a 15 GB monthly data limit, and your current usage shows 15.1 GB used. This means you've exceeded your data limit for this billing cycle.
+
+When you exceed your data limit, data connectivity is typically lost or severely throttled. This is likely the primary reason your mobile data is slow or not working.
+
+Since you're in France, I can see that roaming is enabled on your line (L1002), which is good. However, you've exceeded your data allowance.
+
+You have two options to restore your data:
+1. **Refuel data**: I can add up to 2 GB of additional data to your line. The cost is $2.00 per GB based on your plan.
+2. **Change to a plan with more data**: I can help you look at other plan options.
+
+Before we proceed, let me also check if there might be any device-side issues. Could you please run the following checks on your phone and share the results with me:
+
+1. **check_network_status** - This will show if mobile data and data roaming are enabled on your device.
+2. **check_status_bar** - This will show your current signal strength and network type.
+
+Please run these checks and let me know what they show.<|im_end|>
+<|im_start|>user
+The network status on my phone shows that airplane mode is off, the SIM card is active, cellular connection is connected with excellent signal strength, and the network type is 5G. Mobile data is enabled but data roaming is not enabled. Wi-Fi is off and not connected. 
+
+The status bar shows excellent 4G signal (with 5G icon), data is enabled, data saver is on, VPN is connected, and battery is at 80%.
+
+What should I do next?<|im_end|>
+<|im_start|>assistant
+Thank you for the detailed information. I can see several issues that need to be addressed:
+
+1. **Data roaming is NOT enabled on your device** - Since you're in France, you need data roaming enabled on your phone to use mobile data abroad.
+2. **Data Saver is ON** - This can restrict data speeds.
+3. **VPN is connected** - This can sometimes slow down your connection.
+4. **You've exceeded your data limit** - You've used 15.1 GB out of your 15 GB monthly allowance.
+
+Let me address these step by step. First, I need to add data to your line since you've exceeded your limit. I can refuel up to 2 GB of data at $2.00 per GB (so $4.00 for 2 GB total). This will be added to your current bill.
+
+Would you like me to proceed with refueling 2 GB of data to your line? Please confirm if you'd like to proceed with this $4.00 charge.
+
+Also, while we're at it, I'll guide you through the device settings fixes:
+1. Turn ON data roaming on your device
+2. Turn OFF Data Saver mode
+3. Disconnect the VPN
+
+Please confirm if you want me to refuel 2 GB of data, and then I'll guide you through the device settings.<|im_end|>
+<|im_start|>user
+Yes, please go ahead and refuel 2 GB of data to my line with the $4.00 charge. After that, please guide me through turning ON data roaming, turning OFF Data Saver mode, and disconnecting the VPN on my device.<|im_end|>
+<|im_start|>user
+Please execute the next appropriate account action now.<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

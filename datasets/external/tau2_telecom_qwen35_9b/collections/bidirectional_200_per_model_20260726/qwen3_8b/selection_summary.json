@@ -1,0 +1,52 @@
+{
+  "collection_name": "tau2_bidirectional_200_per_model_20260726",
+  "model": "Qwen3-8B",
+  "model_key": "qwen3_8b",
+  "target_per_arm": 200,
+  "max_non_tool_probability": 0.05,
+  "legacy_50_task_ids_excluded": 99,
+  "legacy_selection_task_counts": {
+    "./datasets/external/tau2_telecom_qwen35_9b/prepared/selected_50_qwen3_8b.jsonl": 50,
+    "./datasets/external/tau2_telecom_qwen35_9b/prepared/text_reply_induction_terminal/selected_50_qwen3_8b_text_reply.jsonl": 50
+  },
+  "screen_records": {
+    "tool": 300,
+    "direct": 230
+  },
+  "eligible_unique_tasks_after_legacy_exclusion": {
+    "tool": 278,
+    "direct": 221
+  },
+  "selection_priority": [
+    "direct",
+    "tool"
+  ],
+  "selected": {
+    "tool": 200,
+    "direct": 200
+  },
+  "complete": true,
+  "task_overlap_between_arms": 0,
+  "selected_token_lengths": {
+    "tool": {
+      "min": 10295,
+      "median": 10715,
+      "max": 12850
+    },
+    "direct": {
+      "min": 11211,
+      "median": 11825,
+      "max": 13054
+    }
+  },
+  "selection_rule": {
+    "tool": "target-model native tool opener is baseline top-1",
+    "direct": "target-model native tool opener is not baseline top-1 and has probability <= cutoff",
+    "independence": "one task_id per arm; arms and legacy 50 task IDs are disjoint",
+    "source_success": "not used for selection"
+  },
+  "files": {
+    "tool": "./datasets/external/tau2_telecom_qwen35_9b/collections/bidirectional_200_per_model_20260726/qwen3_8b/selected_tool_200.jsonl",
+    "direct": "./datasets/external/tau2_telecom_qwen35_9b/collections/bidirectional_200_per_model_20260726/qwen3_8b/selected_direct_200.jsonl"
+  }
+}

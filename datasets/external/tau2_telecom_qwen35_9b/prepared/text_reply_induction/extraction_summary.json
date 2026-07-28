@@ -1,0 +1,26 @@
+{
+  "traces": 1625,
+  "candidate_prefixes": 14125,
+  "screen_pool_prefixes": 1625,
+  "screen_pool_unit": "one pre-text-reply candidate per source trajectory",
+  "screen_pool_seed": 20260725,
+  "candidate_depth_group_counts": {
+    "0": 1762,
+    "3": 3560,
+    "4": 5176,
+    "5": 3627
+  },
+  "pool_depth_group_counts": {
+    "0": 1212,
+    "3": 93,
+    "4": 171,
+    "5": 149
+  },
+  "candidate_success_counts": {
+    "False": 11177,
+    "True": 2948
+  },
+  "exclusions": {
+    "target_preceded_by_tool": 1993
+  }
+}

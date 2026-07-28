@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "n_test_pairs": 300,
+  "dataset_manifest_sha256": {
+    "clean": "95da26ab2646d312cc80a63c3fce7e71f02f1b2dfe4d3503c2262c4b40d647c9",
+    "corrupt": "30a496c9713268e3b442473a368846bc9eab4ff0aa4a9e5545fb92a686f5e486"
+  },
+  "vector_bundle": "results/runs/rebuttal_lxey_other_concerns_v2_1500_20260727/vector_fit/vector_bundle.pt",
+  "patch_layer": 24,
+  "baseline_tool_top1_count": 11,
+  "patched_tool_top1_count": 297,
+  "strict_recovery_count": 286,
+  "recovery_failure_count": 3,
+  "patched_non_tool_count": 3,
+  "baseline_tool_top1_rate": 0.03666666666666667,
+  "patched_tool_top1_rate": 0.99,
+  "strict_recovery_rate": 0.9533333333333334,
+  "mean_tool_logit_change": 6.7925,
+  "mean_baseline_mu_coordinate": -0.0005001500251334316,
+  "mean_patched_mu_coordinate": 0.9995928124586742,
+  "length_tertiles": {
+    "short_max": 229.0,
+    "medium_max": 241.33333333333331
+  }
+}

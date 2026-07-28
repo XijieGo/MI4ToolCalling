@@ -1,0 +1,59 @@
+{
+  "model": "Qwen3-4B",
+  "model_path": "/root/autodl-tmp/Qwen/Qwen3-4B",
+  "renderer": "qwen3_source",
+  "source_candidates": 600,
+  "source_path": "./outputs/implicit_intent_transfer/implicit_intent_oversampled_600.jsonl",
+  "source_sha256": "2e869c930b3b1e663df2171d01fc7c5cde66e914185af2160b8e6d9eaee9e0ac",
+  "tool_token": {
+    "text": "<tool_call>",
+    "id_via_convert": 151657,
+    "ids_via_encode": [
+      151657
+    ]
+  },
+  "layer": 24,
+  "hook_kind": "pre",
+  "decoder_layers": 36,
+  "batch_size": 1,
+  "vector": {
+    "bundle_path": "./results/runs/v4_full_matrix_qwen3_20260724T183837Z/Qwen3-4B/native_vectors/D1_L24_pre.pt",
+    "bundle_sha256": "d15f93b13e65774cb7e2de57c1de808083b7bce122b130e8928a20e5ec42a5fc",
+    "mean_diff_norm": 30.912132263183594,
+    "random_direction_norm": 30.912126541137695,
+    "cosine_mean_random": -0.0029136883094906807,
+    "bundle_layer": 24,
+    "bundle_hook_kind": "pre",
+    "bundle_keys": [
+      "components",
+      "domain",
+      "explained_variance",
+      "explained_variance_ratio",
+      "hook_kind",
+      "layer",
+      "mean_diff",
+      "model_d_model",
+      "patch_layer",
+      "sample_ids_train",
+      "singular_values"
+    ]
+  },
+  "conditions": [
+    {
+      "name": "mean_diff_a1.0",
+      "direction": "mean_diff",
+      "alpha": 1.0
+    },
+    {
+      "name": "mean_diff_a1.5",
+      "direction": "mean_diff",
+      "alpha": 1.5
+    },
+    {
+      "name": "random_a1.5",
+      "direction": "random",
+      "alpha": 1.5
+    }
+  ],
+  "started_unix": 1785066067.7392
+}

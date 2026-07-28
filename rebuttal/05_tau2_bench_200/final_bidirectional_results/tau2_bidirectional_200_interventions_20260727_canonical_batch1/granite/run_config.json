@@ -1,0 +1,90 @@
+{
+  "started_unix": 1785123742.037921,
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+  "torch": "2.8.0+cu128",
+  "model": "Granite-3.3-8B-Instruct",
+  "model_key": "granite",
+  "model_path": "/root/autodl-tmp/Granite/granite-3.3-8b-instruct",
+  "source_domain": "retail",
+  "selection_version": "canonical_batch1",
+  "selection_files": {
+    "tool": {
+      "path": "./datasets/external/tau2_retail_qwen35_9b/collections/bidirectional_200_per_model_20260726_canonical_batch1/granite/selected_tool_200.jsonl",
+      "sha256": "4dc8dbaa23bb7472ddd097166610101858f8049ef81b9293421652a274727747"
+    },
+    "direct": {
+      "path": "./datasets/external/tau2_retail_qwen35_9b/collections/bidirectional_200_per_model_20260726_canonical_batch1/granite/selected_direct_200.jsonl",
+      "sha256": "dc4cae9900ef3da6672d8b36a1a67129be442670bb06746b03e8ca752b40a414"
+    },
+    "summary": {
+      "path": "./datasets/external/tau2_retail_qwen35_9b/collections/bidirectional_200_per_model_20260726_canonical_batch1/granite/selection_summary.json",
+      "sha256": "1ec75d222cccff1b5f051dc2a6438e2ab4c31d1c1514d75cb97b84029a3fb462"
+    }
+  },
+  "raw_files": {
+    "system_prompt": {
+      "path": "./datasets/external/tau2_retail_qwen35_9b/raw/tau2_system_prompt.txt",
+      "sha256": "2c9652afbce57d6e087768d37cda64d31c53d50b3e3225cfdb791bac66466467"
+    },
+    "tool_schemas": {
+      "path": "./datasets/external/tau2_retail_qwen35_9b/raw/tau2_tool_schemas.json",
+      "sha256": "75a679a53665076eb040cf8a77c2c0aea6a839b3c0afc2b4378e3f5bf888f81f"
+    }
+  },
+  "frozen_coding_vector": {
+    "path": "./results/natural_trajectory/cross_family_tau2_20260726/granite/coding_vector_bundle.pt",
+    "sha256": "0b72941ac71b6d4317fbca5b7f2ec47d62bc531016de2e7fcd3f86d82d873d47",
+    "layer": 35,
+    "hook_kind": "post",
+    "mean_diff_norm": 55.736270904541016,
+    "bundle_source_domain": "coding clean/corrupt pairs only",
+    "bundle_fit_split": "train",
+    "bundle_model": "Granite-3.3-8B-Instruct"
+  },
+  "tool_decision": {
+    "semantic_tool_opening": "<|tool_call|>",
+    "tool_token_id_via_convert": 49154,
+    "tool_token_ids_via_encode": [
+      49154
+    ],
+    "tool_token_encode_length": 1,
+    "decision_position": "final native prompt token / first generation decision"
+  },
+  "intervention_hook": "post-boundary of decoder L35, final real prompt token only",
+  "selection_policy": "Frozen Coding vector/layer; τ² is not used to estimate, tune, or select the vector/layer.",
+  "conditions": {
+    "coding_alphas": [
+      1.0,
+      1.5
+    ],
+    "random_alphas": [
+      1.0,
+      1.5
+    ],
+    "random_control": "saved seeded unit vector scaled to ||Coding mean-difference||"
+  },
+  "batch_size": 1,
+  "max_batch_tokens": 30000,
+  "max_context_tokens": 30000,
+  "arguments": {
+    "models": "granite",
+    "output_root": "results/natural_trajectory/tau2_bidirectional_200_interventions_20260727_canonical_batch1",
+    "selection_version": "canonical_batch1",
+    "max_context_tokens": 30000,
+    "arms": "both",
+    "alphas": [
+      1.0,
+      1.5
+    ],
+    "random_alphas": [
+      1.0,
+      1.5
+    ],
+    "batch_size": 1,
+    "max_batch_tokens": 30000,
+    "max_samples": 0,
+    "seed": 20260726,
+    "resume": false
+  }
+}

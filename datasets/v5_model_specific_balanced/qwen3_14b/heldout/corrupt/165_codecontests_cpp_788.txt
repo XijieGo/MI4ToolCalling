@@ -1,0 +1,63 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"write_file","description":"Write file.","parameters":{"type":"object","properties":{"file_path":{"type":"string"},"content":
+{"type":"string"}},"required":["file_path","content"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Inspect the function body in solve.cpp based on the function definition and docstring below:
+/*
+Given a sequence of recorded plays and clears in chronological order, determine if it could correspond to a valid sequence of player attempts where each attempt increments plays and optionally increments clears.
+Example:
+input:
+6
+3
+0 0
+1 1
+1 2
+2
+1 0
+1000 3
+4
+10 1
+15 2
+10 2
+15 2
+1
+765 432
+2
+4 4
+4 3
+5
+0 0
+1 0
+1 0
+1 0
+1 0
+output:
+NO
+YES
+NO
+YES
+NO
+YES
+*/
+std::string solve(const std::string& input) {
+    // TODO: implement
+    return "";
+}
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

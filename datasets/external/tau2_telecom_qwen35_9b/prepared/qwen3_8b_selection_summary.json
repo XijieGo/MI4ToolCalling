@@ -1,0 +1,56 @@
+{
+  "screened_prefixes": 400,
+  "baseline_tool_call_top1_prefixes": 379,
+  "baseline_tool_call_top1_rate": 0.9475,
+  "selected_prefixes": 50,
+  "selection_seed": 20260725,
+  "selection_rule": "baseline <tool_call> top-1; one prefix per trace; round-robin (tool identity, agent-tool depth) strata",
+  "selected_tool_counts": {
+    "can_send_mms": 4,
+    "check_status_bar": 1,
+    "enable_roaming": 5,
+    "get_bills_for_customer": 5,
+    "get_customer_by_phone": 2,
+    "get_data_usage": 6,
+    "get_details_by_id": 9,
+    "refuel_data": 3,
+    "resume_line": 1,
+    "run_speed_test": 2,
+    "send_payment_request": 5,
+    "transfer_to_human_agents": 7
+  },
+  "selected_tool_ordinal_counts": {
+    "2": 5,
+    "3": 3,
+    "4": 13,
+    "5": 15,
+    "6": 14
+  },
+  "selected_token_lengths": {
+    "min": 10257,
+    "median": 10824,
+    "max": 12237
+  },
+  "next_causal_intervention": {
+    "model": "Qwen3-8B",
+    "vector_bundle": "results/8b_main/phase7_l24_directionality/exp_a_fixed_direction/pc_bundle.pt",
+    "vector_key": "mean_diff",
+    "layer": 24,
+    "hook": "blocks.24.hook_resid_pre",
+    "token_position": "final prompt token / first generated-token prediction position",
+    "suppression_operation": "add -mean_diff at the hook; +mean_diff is the tool-call direction",
+    "pre_registered_amplitudes": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "negative_control": "norm-matched random direction at the same hook and token position",
+    "required_control": "same prefixes, no hook; report top-1, tool logit, probability, and generated behavior"
+  },
+  "files": {
+    "baseline_screen": "datasets/external/tau2_telecom_qwen35_9b/prepared/qwen3_8b_baseline_screen.jsonl",
+    "selected_50": "datasets/external/tau2_telecom_qwen35_9b/prepared/selected_50_qwen3_8b.jsonl"
+  }
+}

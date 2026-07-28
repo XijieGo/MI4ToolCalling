@@ -1,0 +1,61 @@
+{
+  "n_pairs": 500,
+  "clean_tool_call_top1_rate": 1.0,
+  "corrupt_tool_call_top1_rate": 0.0,
+  "clean_candidate_counts": {
+    "save": 167,
+    "write": 166,
+    "add": 167
+  },
+  "corrupt_candidate_counts": {
+    "inspect": 100,
+    "discuss": 100,
+    "explore": 100,
+    "study": 100,
+    "review": 100
+  },
+  "language_counts": {
+    "python": 57,
+    "cpp": 170,
+    "java": 273
+  },
+  "dataset_counts": {
+    "apps": 47,
+    "codecontests": 443,
+    "humaneval": 2,
+    "mbpp": 8
+  },
+  "quadrant_counts": {
+    "clean_only": 500
+  },
+  "seed": 42,
+  "target_pairs": 500,
+  "selection_policy": {
+    "pair_filter": "clean_is_tool_call_top1 == True and corrupt_is_tool_call_top1 == False",
+    "clean_candidates": [
+      "add",
+      "save",
+      "write"
+    ],
+    "corrupt_candidates": [
+      "discuss",
+      "explore",
+      "inspect",
+      "review",
+      "study"
+    ],
+    "row_targets": {
+      "add": 167,
+      "save": 167,
+      "write": 166
+    },
+    "col_targets": {
+      "discuss": 100,
+      "explore": 100,
+      "inspect": 100,
+      "review": 100,
+      "study": 100
+    },
+    "edit_applied_count": 0
+  }
+}

@@ -1,0 +1,682 @@
+{
+ "domains": {
+  "D1": {
+   "exec:write": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:add": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:save": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:build": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:complete": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:create": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:insert": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:patch": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "analysis:discuss": {
+    "rate": 0.0,
+    "tops": [
+     "The",
+     "The",
+     "The"
+    ]
+   },
+   "analysis:explore": {
+    "rate": 0.0,
+    "tops": [
+     "The",
+     "The",
+     "The"
+    ]
+   },
+   "analysis:inspect": {
+    "rate": 0.0,
+    "tops": [
+     "The",
+     "The",
+     "The"
+    ]
+   },
+   "analysis:review": {
+    "rate": 0.0,
+    "tops": [
+     "The",
+     "The",
+     "The"
+    ]
+   },
+   "analysis:study": {
+    "rate": 0.0,
+    "tops": [
+     "The",
+     "The",
+     "The"
+    ]
+   },
+   "analysis:describe": {
+    "rate": 0.0,
+    "tops": [
+     "The",
+     "The",
+     "The"
+    ]
+   },
+   "analysis:outline": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "analysis:document": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "analysis:compare": {
+    "rate": 0.0,
+    "tops": [
+     "The",
+     "The",
+     "The"
+    ]
+   }
+  },
+  "D2": {
+   "exec:compute": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:calculate": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:evaluate": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:count": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:total": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:return": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:check": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "analysis:discuss": {
+    "rate": 0.125,
+    "tops": [
+     "To",
+     "Maria",
+     "To"
+    ]
+   },
+   "analysis:outline": {
+    "rate": 0.0,
+    "tops": [
+     "To",
+     "Maria",
+     "To"
+    ]
+   },
+   "analysis:describe": {
+    "rate": 0.25,
+    "tops": [
+     "To",
+     "Maria",
+     "To"
+    ]
+   },
+   "analysis:review": {
+    "rate": 0.25,
+    "tops": [
+     "The",
+     "Maria",
+     "The"
+    ]
+   },
+   "analysis:study": {
+    "rate": 0.5,
+    "tops": [
+     "The",
+     "Maria",
+     "<tool_call>"
+    ]
+   },
+   "analysis:explore": {
+    "rate": 0.875,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "analysis:define": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "analysis:document": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   }
+  },
+  "D3": {
+   "exec:search": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:find": {
+    "rate": 0.25,
+    "tops": [
+     "<tool_call>",
+     "The",
+     "The"
+    ]
+   },
+   "exec:verify": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:check": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:confirm": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:lookup": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:retrieve": {
+    "rate": 0.375,
+    "tops": [
+     "<tool_call>",
+     "The",
+     "The"
+    ]
+   },
+   "exec:look": {
+    "rate": 0.875,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "analysis:discuss": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "analysis:describe": {
+    "rate": 0.375,
+    "tops": [
+     "<tool_call>",
+     "The",
+     "The"
+    ]
+   },
+   "analysis:define": {
+    "rate": 0.25,
+    "tops": [
+     "<tool_call>",
+     "The",
+     "The"
+    ]
+   },
+   "analysis:review": {
+    "rate": 0.875,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "analysis:study": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "analysis:outline": {
+    "rate": 0.0,
+    "tops": [
+     "The",
+     "The",
+     "The"
+    ]
+   },
+   "analysis:document": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "analysis:explore": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   }
+  },
+  "D4": {
+   "exec:run": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:execute": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:query": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:fetch": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:list": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:select": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:extract": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:return": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "analysis:discuss": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "analysis:describe": {
+    "rate": 0.75,
+    "tops": [
+     "<tool_call>",
+     "The",
+     "<tool_call>"
+    ]
+   },
+   "analysis:review": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "analysis:study": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "analysis:outline": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "analysis:document": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "analysis:explore": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "analysis:inspect": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   }
+  },
+  "D5": {
+   "exec:send": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:mail": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:forward": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:reply": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:dispatch": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:submit": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "exec:post": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "analysis:draft": {
+    "rate": 0.875,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "analysis:plan": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "analysis:outline": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "analysis:sketch": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "analysis:compose": {
+    "rate": 1.0,
+    "tops": [
+     "<tool_call>",
+     "<tool_call>",
+     "<tool_call>"
+    ]
+   },
+   "analysis:review": {
+    "rate": 0.5,
+    "tops": [
+     "<tool_call>",
+     "The",
+     "<tool_call>"
+    ]
+   },
+   "analysis:discuss": {
+    "rate": 0.375,
+    "tops": [
+     "The",
+     "The",
+     "<tool_call>"
+    ]
+   },
+   "analysis:describe": {
+    "rate": 0.25,
+    "tops": [
+     "The",
+     "The",
+     "The"
+    ]
+   }
+  }
+ },
+ "reversal": {
+  "review_writefile_vs_submitreview": {
+   "A": 0.0,
+   "B": 1.0
+  },
+  "document_writefile_vs_submitrev": {
+   "A": 1.0,
+   "B": 0.0
+  },
+  "inspect_writefile_vs_readfile": {
+   "A": 0.0,
+   "B": 0.125
+  },
+  "draft_sendemail_vs_savedraft": {
+   "A": 0.875,
+   "B": 1.0
+  },
+  "outline_sendemail_vs_savedraft": {
+   "A": 1.0,
+   "B": 1.0
+  }
+ },
+ "irrelevant": {
+  "D1": {
+   "native": 1.0,
+   "irrelevant": 0.0
+  },
+  "D2": {
+   "native": 1.0,
+   "irrelevant": 0.0
+  },
+  "D4": {
+   "native": 1.0,
+   "irrelevant": 0.0
+  }
+ }
+}

@@ -1,0 +1,18 @@
+{
+  "fit_pairs": 215,
+  "heldout_pairs": 94,
+  "layer": 33,
+  "mean_diff_norm": 7.948761940002441,
+  "validation": {
+    "n_heldout_pairs": 94,
+    "clean_baseline_tool_top1": 92,
+    "clean_minus_tool_top1": 9,
+    "strict_drop": 83,
+    "strict_drop_rate": 0.9021739130434783,
+    "corrupt_baseline_tool_top1": 0,
+    "corrupt_plus_tool_top1": 79,
+    "strict_flip": 79,
+    "strict_flip_rate": 0.8404255319148937
+  },
+  "vector_bundle": "./results/natural_trajectory/cross_family_tau2_20260726/devstral/coding_vector_bundle.pt"
+}

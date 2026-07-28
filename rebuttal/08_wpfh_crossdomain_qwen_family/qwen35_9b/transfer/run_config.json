@@ -1,0 +1,22 @@
+{
+  "model_label": "Qwen3.5-9B",
+  "model_path": "/root/autodl-tmp/Qwen/Qwen3.5-9B",
+  "dataset_view_root": "./results/runs/rebuttal_wpfh_crossdomain_qwen_family_20260727/qwen35_9b/v4_pair_view",
+  "prompt_interface": "frozen v4 Qwen <|im_start|> prompt serialization",
+  "frozen_coding_bundle": "./results/natural_trajectory/cross_family_tau2_20260726/qwen35_9b/coding_vector_bundle.pt",
+  "frozen_coding_layer": 31,
+  "hook_kind": "post",
+  "train_pairs": 400,
+  "eval_pairs": 100,
+  "targets": [
+    "D3",
+    "D4",
+    "D5"
+  ],
+  "random_control": {
+    "kind": "one seeded Gaussian unit vector per model",
+    "seed": 20260727,
+    "cosine_to_v4_d1_code": 0.016008585691452026,
+    "per_target_scaling": "target native-vector L2 norm"
+  }
+}

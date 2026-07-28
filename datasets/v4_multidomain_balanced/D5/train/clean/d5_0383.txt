@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Mail this email message shown below:
+To: recipient-c8d5362f8f2d@mail.example
+Subject: Post-mortem: 3-hour Slack outage communication gaps
+Body: Dmitri, Pat, James — Today's 3-hour Slack outage exposed how dependent we are on a single communication channel. Observations: - Engineering fell back to GitHub comments (worked okay) - Sales used phone calls and personal texts (chaotic) - Customer support had no way to coordinate - 2 customer escalations were delayed because nobody saw them Proposal: designate Microsoft Teams as our emergency backup channel. Pre-configure it with the same channel structure as Slack so the transition is seamless.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

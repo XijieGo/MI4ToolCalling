@@ -1,0 +1,68 @@
+<|im_start|>system
+# Tools
+
+You have access to the following functions:
+
+<tools>
+{"type": "function", "function": {"name": "refuel_data", "description": "Refuels data for a specific line, adding to the customer's bill.\n\nChecks: Line status must be Active, Customer owns the line.\nLogic: Adds data to the line and charges customer based on the plan's refueling rate.", "parameters": {"properties": {"customer_id": {"description": "ID of the customer who owns the line.", "title": "Customer Id", "type": "string"}, "line_id": {"description": "ID of the line to refuel data for.", "title": "Line Id", "type": "string"}, "gb_amount": {"description": "Amount of data to add in gigabytes.", "title": "Gb Amount", "type": "number"}}, "required": ["customer_id", "line_id", "gb_amount"], "title": "parameters", "type": "object"}}}
+</tools>
+
+If you choose to call a function ONLY reply in the following format with NO suffix:
+
+<tool_call>
+<function=example_function_name>
+<parameter=example_parameter_1>
+value_1
+</parameter>
+<parameter=example_parameter_2>
+This is the value for the second parameter
+that can span
+multiple lines
+</parameter>
+</function>
+</tool_call>
+
+<IMPORTANT>
+Reminder:
+- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags
+- Required parameters MUST be specified
+- You may provide optional reasoning for your function call in natural language BEFORE the function call, but NOT after
+- If there is no function call available, answer the question like normal with your current knowledge and do not tell the user about function calls
+</IMPORTANT>
+
+You are a telecom support agent. Use the provided functions when the user asks you to perform an account action. When the user asks only to discuss, explain, review, summarize, or describe an action, answer in text without using a function.<|im_end|>
+<|im_start|>assistant
+Perfect! Let's fix this step by step. I'll guide you through each action carefully.
+
+**Step 1: Change your network mode preference to allow faster networks**
+
+Please run this on your phone:
+**set_network_mode_preference(mode: "4g_5g_preferred")**
+
+This will allow your phone to connect to 4G and 5G networks instead of being stuck on 2G. After you do this, please let me know when it's complete.
+
+Once you confirm Step 1 is done, we'll move to the next step to address your data limit issue.<|im_end|>
+<|im_start|>user
+I have changed the network mode preference to 4G/5G preferred. The status bar now shows an excellent 4G or 5G signal with mobile data enabled. What should I do next to fix the data limit issue? I'm ready for the next step.<|im_end|>
+<|im_start|>assistant
+Great! Your network mode is now set correctly. Now let's address the data limit issue.
+
+**Step 2: Confirm the refuel data price**
+
+Based on your Premium Plan, the data refueling rate is $2.00 per GB. If you want to add 2 GB of data, the total cost would be:
+- 2 GB × $2.00/GB = **$4.00**
+
+This charge will be added to your current bill.
+
+**Please confirm:** Do you want to proceed with adding 2 GB of data for $4.00 to your line (555-123-2002)?
+
+Once you confirm, I'll apply the refueled data to your line. After that, your data connectivity should be restored with excellent speeds on your 4G/5G network.<|im_end|>
+<|im_start|>user
+Yes, please proceed with adding the 2 GB of refuel data for $4.00 to my line 555-123-2002. I want to restore my data connectivity with excellent speeds on the 4G/5G network. Please let me know when it's done.<|im_end|>
+<|im_start|>user
+Please perform the next appropriate account action now.<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

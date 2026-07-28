@@ -1,0 +1,141 @@
+{
+  "e2972fd181ecc921f72b56c19d8679d69121ebf28835ca1d38b098b49205d3cf": {
+    "source_schema_sha256": "e2972fd181ecc921f72b56c19d8679d69121ebf28835ca1d38b098b49205d3cf",
+    "source_tool_name": "write_file",
+    "source_tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "write_file",
+          "description": "Write file.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "file_path": {
+                "type": "string"
+              },
+              "content": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "file_path",
+              "content"
+            ]
+          }
+        }
+      }
+    ],
+    "source_prompt_count": 1000,
+    "variants": {
+      "V0": {
+        "schema_sha256": "e2972fd181ecc921f72b56c19d8679d69121ebf28835ca1d38b098b49205d3cf",
+        "tool_name": "write_file",
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "write_file",
+              "description": "Write file.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "file_path": {
+                    "type": "string"
+                  },
+                  "content": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "file_path",
+                  "content"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "V1": {
+        "schema_sha256": "71b96e4c30169953e5b205e8dc0701c9be71ebd16fe0db84f5a6a919d034d9bd",
+        "tool_name": "apply_patch",
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "apply_patch",
+              "description": "Write file.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "file_path": {
+                    "type": "string"
+                  },
+                  "content": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "file_path",
+                  "content"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "V2": {
+        "schema_sha256": "fe87a225df1143c1ceaefebfbf735ae1d1325807236b0c56c54a8ec565c5dca7",
+        "tool_name": "f1",
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "f1",
+              "description": "",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "arg_1": {
+                    "type": "string"
+                  },
+                  "arg_2": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "arg_1",
+                  "arg_2"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "V5": {
+        "schema_sha256": "7d44a45d8ed9843deaa3853b6696c7b2e8926a398d029d2ce72039a3cf07fc2d",
+        "tool_name": "get_weather",
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "get_weather",
+              "description": "Retrieve the current weather for a location.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "location": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "location"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

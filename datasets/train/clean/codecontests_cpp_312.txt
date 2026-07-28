@@ -1,0 +1,38 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"write_file","description":"Write file.","parameters":{"type":"object","properties":{"file_path":{"type":"string"},"content":
+{"type":"string"}},"required":["file_path","content"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Write the function body in solve.cpp based on the function definition and docstring below:
+/*
+For each test case, given s, a, b, c, compute the maximum number of chocolate bars obtainable with a "buy a, get b free" offer applied repeatedly.
+Example:
+input:
+2
+10 3 1 1
+1000000000 1 1000000000 1
+output:
+13
+1000000001000000000
+*/
+std::string solve(const std::string& input) {
+    // TODO: implement
+    return "";
+}
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

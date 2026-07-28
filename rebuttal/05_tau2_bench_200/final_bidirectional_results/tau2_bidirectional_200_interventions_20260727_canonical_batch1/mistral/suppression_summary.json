@@ -1,0 +1,121 @@
+{
+  "conditions": [
+    {
+      "condition": "baseline_no_hook_alpha_0",
+      "condition_family": "baseline",
+      "alpha": 0.0,
+      "delta_norm": 0.0,
+      "n": 200,
+      "tool_call_top1_count": 200,
+      "tool_call_top1_rate": 1.0,
+      "baseline_tool_call_top1_count": 200,
+      "baseline_non_tool_top1_count": 0,
+      "baseline_tool_to_non_tool_count": 0,
+      "baseline_tool_to_non_tool_rate": 0.0,
+      "baseline_non_tool_to_tool_count": 0,
+      "baseline_non_tool_to_tool_rate": 0.0,
+      "mean_tool_call_logit": 23.519375,
+      "mean_tool_call_probability": 0.9671837119758129,
+      "mean_tool_logit_change_vs_baseline": 0.0
+    },
+    {
+      "condition": "minus_mean_diff_alpha_1",
+      "condition_family": "coding_direction_suppression",
+      "alpha": 1.0,
+      "delta_norm": 6.639774322509766,
+      "n": 200,
+      "tool_call_top1_count": 127,
+      "tool_call_top1_rate": 0.635,
+      "baseline_tool_call_top1_count": 200,
+      "baseline_non_tool_top1_count": 0,
+      "baseline_tool_to_non_tool_count": 73,
+      "baseline_tool_to_non_tool_rate": 0.365,
+      "baseline_non_tool_to_tool_count": 0,
+      "baseline_non_tool_to_tool_rate": 0.0,
+      "mean_tool_call_logit": 20.495625,
+      "mean_tool_call_probability": 0.5368841527309268,
+      "mean_tool_logit_change_vs_baseline": -3.02375
+    },
+    {
+      "condition": "minus_mean_diff_alpha_1.5",
+      "condition_family": "coding_direction_suppression",
+      "alpha": 1.5,
+      "delta_norm": 9.959660530090332,
+      "n": 200,
+      "tool_call_top1_count": 39,
+      "tool_call_top1_rate": 0.195,
+      "baseline_tool_call_top1_count": 200,
+      "baseline_non_tool_top1_count": 0,
+      "baseline_tool_to_non_tool_count": 161,
+      "baseline_tool_to_non_tool_rate": 0.805,
+      "baseline_non_tool_to_tool_count": 0,
+      "baseline_non_tool_to_tool_rate": 0.0,
+      "mean_tool_call_logit": 18.614375,
+      "mean_tool_call_probability": 0.2143980188993737,
+      "mean_tool_logit_change_vs_baseline": -4.905
+    },
+    {
+      "condition": "minus_random_norm_matched_alpha_1",
+      "condition_family": "norm_matched_random_control",
+      "alpha": 1.0,
+      "delta_norm": 6.639774799346924,
+      "n": 200,
+      "tool_call_top1_count": 198,
+      "tool_call_top1_rate": 0.99,
+      "baseline_tool_call_top1_count": 200,
+      "baseline_non_tool_top1_count": 0,
+      "baseline_tool_to_non_tool_count": 2,
+      "baseline_tool_to_non_tool_rate": 0.01,
+      "baseline_non_tool_to_tool_count": 0,
+      "baseline_non_tool_to_tool_rate": 0.0,
+      "mean_tool_call_logit": 22.030625,
+      "mean_tool_call_probability": 0.9523787885904312,
+      "mean_tool_logit_change_vs_baseline": -1.48875
+    },
+    {
+      "condition": "minus_random_norm_matched_alpha_1.5",
+      "condition_family": "norm_matched_random_control",
+      "alpha": 1.5,
+      "delta_norm": 9.959661483764648,
+      "n": 200,
+      "tool_call_top1_count": 196,
+      "tool_call_top1_rate": 0.98,
+      "baseline_tool_call_top1_count": 200,
+      "baseline_non_tool_top1_count": 0,
+      "baseline_tool_to_non_tool_count": 4,
+      "baseline_tool_to_non_tool_rate": 0.02,
+      "baseline_non_tool_to_tool_count": 0,
+      "baseline_non_tool_to_tool_rate": 0.0,
+      "mean_tool_call_logit": 21.430625,
+      "mean_tool_call_probability": 0.9603363214619458,
+      "mean_tool_logit_change_vs_baseline": -2.08875
+    }
+  ],
+  "hook_stats": {
+    "baseline_no_hook_alpha_0": {
+      "hook_calls": 0,
+      "modified_calls": 0
+    },
+    "minus_mean_diff_alpha_1": {
+      "hook_calls": 200,
+      "modified_calls": 200
+    },
+    "minus_mean_diff_alpha_1.5": {
+      "hook_calls": 200,
+      "modified_calls": 200
+    },
+    "minus_random_norm_matched_alpha_1": {
+      "hook_calls": 200,
+      "modified_calls": 200
+    },
+    "minus_random_norm_matched_alpha_1.5": {
+      "hook_calls": 200,
+      "modified_calls": 200
+    }
+  },
+  "fresh_baseline_vs_selection": {
+    "all_top1_match": true,
+    "max_abs_tool_logit_difference": 0.0,
+    "max_abs_tool_probability_difference": 0.0
+  }
+}

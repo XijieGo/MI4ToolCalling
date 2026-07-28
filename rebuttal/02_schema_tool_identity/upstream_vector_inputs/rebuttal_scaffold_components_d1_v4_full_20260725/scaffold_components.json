@@ -1,0 +1,31 @@
+{
+  "role_instructions": "# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n",
+  "tool_schema_block": "<tools>\n{\"type\":\"function\",\"function\":{\"name\":\"write_file\",\"description\":\"Write file.\",\"parameters\":{\"type\":\"object\",\"properties\":{\"file_path\":{\"type\":\"string\"},\"content\":\n{\"type\":\"string\"}},\"required\":[\"file_path\",\"content\"]}}}\n</tools>\n\n",
+  "format_template": "For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>",
+  "role_instructions_sha256": "f1dba0d158fa94b7d17877b324017d47f344f12f691cd8930c80e52fe2e93ca4",
+  "tool_schema_block_sha256": "42846f94255b33565b68f992b83381e94db137b30fbe5eb43393787272ba9dd1",
+  "format_template_sha256": "ab06640fe37b3e82d0d9ebe2333f0e096355986cfe7e9595b660a6febb59ab57",
+  "component_definition": {
+    "R": "All system text before <tools>, excluding the system-role wrapper.",
+    "T": "The complete <tools> schema block, including its trailing separators.",
+    "F": "The complete function-call output-format instruction and literal <tool_call> example.",
+    "system_role_wrapper": "Retained in all 2^3 cells so the model receives a valid native chat prompt; L7 of the separate request ladder removes it."
+  },
+  "length_matched_control": {
+    "block": "General background material is available. background background background background background background background background background background background background background background background background background background background background background background background background background background background background background background background background background background background background background background background background background background background background background background background background\n\n",
+    "target_full_prompt_token_length": 229,
+    "matched_full_prompt_token_length": 229,
+    "base": "General background material is available.",
+    "filler": " background",
+    "repetitions": 48,
+    "candidates_checked": 49,
+    "forbidden_substrings": [
+      "tool",
+      "function",
+      "call",
+      "format",
+      "<",
+      ">"
+    ]
+  }
+}

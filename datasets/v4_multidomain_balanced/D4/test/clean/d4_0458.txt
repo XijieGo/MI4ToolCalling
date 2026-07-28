@@ -1,0 +1,28 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"run_sql","description":"Run query.","parameters":{"type":"object","properties":{"database":{"type":"string"},"query":{"type":"string"}},"required":["database","query"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Run the completed SQL query shown below:
+Database: tracking_grants_for_research
+Schema:
+  grants(grant_id, organisation_id, grant_amount, grant_start_date, grant_end_date, other_details)
+  organisations(organisation_id, organisation_type, organisation_details)
+SQL:
+  SELECT T2.organisation_id , T2.organisation_details FROM Grants AS T1 JOIN Organisations AS T2 ON T1.organisation_id = T2.organisation_id GROUP BY T2.organisation_id HAVING sum(T1.grant_amount) > 6000
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

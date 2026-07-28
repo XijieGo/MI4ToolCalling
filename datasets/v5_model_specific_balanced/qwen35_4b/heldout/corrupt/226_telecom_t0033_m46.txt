@@ -1,0 +1,61 @@
+<|im_start|>system
+# Tools
+
+You have access to the following functions:
+
+<tools>
+{"type": "function", "function": {"name": "get_details_by_id", "description": "Retrieves the details for a given ID.\n\nThe ID must be a valid ID for a Customer, Line, Device, Bill, or Plan.", "parameters": {"properties": {"id": {"description": "The ID of the object to retrieve.", "title": "Id", "type": "string"}}, "required": ["id"], "title": "parameters", "type": "object"}}}
+</tools>
+
+If you choose to call a function ONLY reply in the following format with NO suffix:
+
+<tool_call>
+<function=example_function_name>
+<parameter=example_parameter_1>
+value_1
+</parameter>
+<parameter=example_parameter_2>
+This is the value for the second parameter
+that can span
+multiple lines
+</parameter>
+</function>
+</tool_call>
+
+<IMPORTANT>
+Reminder:
+- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags
+- Required parameters MUST be specified
+- You may provide optional reasoning for your function call in natural language BEFORE the function call, but NOT after
+- If there is no function call available, answer the question like normal with your current knowledge and do not tell the user about function calls
+</IMPORTANT>
+
+You are a telecom support agent. Use the provided functions when the user asks you to perform an account action. When the user asks only to discuss, explain, review, summarize, or describe an action, answer in text without using a function.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+<function=get_data_usage>
+<parameter=customer_id>
+C1001
+</parameter>
+<parameter=line_id>
+L1002
+</parameter>
+</function>
+</tool_call><|im_end|>
+<|im_start|>user
+<tool_response>
+{"line_id": "L1002", "data_used_gb": "15.1", "data_limit_gb": "15.0", "data_refueling_gb": "0.0", "cycle_end_date": "2025-02-28"}
+</tool_response><|im_end|>
+<|im_start|>assistant
+I see that your data usage shows 15.1 GB used, but your Premium Plan (P1002) has a 15.0 GB monthly data limit. This means you've exceeded your data allowance for this billing cycle (which ends on 2025-02-28).
+
+However, you mentioned you can browse the web using mobile data. Let me check if there might be a VPN connection affecting your MMS. Please use **check_vpn_status** on your device and tell me whether a VPN is currently active or connected.<|im_end|>
+<|im_start|>user
+There is no VPN active or connected on my phone. Given that my data usage exceeded the monthly limit but I can still browse the web, what do you suggest we do next to fix the MMS sending issue?<|im_end|>
+<|im_start|>user
+Please explain the next appropriate account action now.<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

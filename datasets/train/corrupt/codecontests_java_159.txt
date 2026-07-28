@@ -1,0 +1,43 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"write_file","description":"Write file.","parameters":{"type":"object","properties":{"file_path":{"type":"string"},"content":
+{"type":"string"}},"required":["file_path","content"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Explore the function body in solve.java based on the function definition and docstring below:
+/*
+For each query with buns, beef patties, chicken cutlets and prices, compute the maximum profit from making burgers using 2 buns per burger.
+Example:
+input:
+3
+15 2 3
+5 10
+7 5 2
+10 12
+1 100 100
+100 100
+output:
+40
+34
+0
+*/
+static String solve(String input) {
+    // TODO: implement
+    return "";
+}
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

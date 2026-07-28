@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Rate this email message shown below:
+To: recipient-cad4bf67700c@mail.example
+Subject: Re: ALERT: New competitor DataBridge — $45M funding, enterprise focus
+Body: Everyone — DataBridge is a real threat but we have advantages they don't: 4 years of production-hardened infrastructure, 200+ customers, and a team that's been through the fire. The answer isn't expanding scope. The answer is shipping what we have faster.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

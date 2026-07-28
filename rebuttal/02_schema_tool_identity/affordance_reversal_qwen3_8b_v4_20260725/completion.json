@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "domain": "D1",
+  "dataset_cardinality": {
+    "train": 400,
+    "test": 100
+  },
+  "tool_token_id": 151657,
+  "layer": 24,
+  "hook_kind": "pre",
+  "variants": [
+    "V0",
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6"
+  ],
+  "affordance_reversal_completed": true,
+  "model_d_model": 4096,
+  "model_n_layers": 36
+}

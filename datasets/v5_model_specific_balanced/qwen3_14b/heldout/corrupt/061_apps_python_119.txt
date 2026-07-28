@@ -1,0 +1,29 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"write_file","description":"Write file.","parameters":{"type":"object","properties":{"file_path":{"type":"string"},"content":
+{"type":"string"}},"required":["file_path","content"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Discuss the function body in solve.py based on the function definition and docstring below:
+def magic_call_depth_number(pattern):
+    """Parse RoboScript pattern definitions and calls, then analyze executed calls to find min and max depths at which infinite recursion can occur; return [min,max].
+    >>> magic_call_depth_number('p0F2LF2RqP0')
+    [0, 0]
+    """
+    pass
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

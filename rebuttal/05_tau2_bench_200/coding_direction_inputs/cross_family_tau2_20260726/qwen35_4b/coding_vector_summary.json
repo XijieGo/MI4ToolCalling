@@ -1,0 +1,49 @@
+{
+  "all_pair_baseline": {
+    "train": {
+      "pairs": 1200,
+      "clean_tool_top1": 129,
+      "corrupt_tool_top1": 42,
+      "eligible_clean_tool_vs_corrupt_non_tool": 125
+    },
+    "test": {
+      "pairs": 300,
+      "clean_tool_top1": 27,
+      "corrupt_tool_top1": 15,
+      "eligible_clean_tool_vs_corrupt_non_tool": 27
+    }
+  },
+  "layer_selection": {
+    "layer": 31,
+    "fit_pairs": 64,
+    "evaluation_pairs": 32,
+    "selection_file": "./results/natural_trajectory/cross_family_tau2_20260726/qwen35_4b/coding_layer_selection.json"
+  },
+  "vector_fit_pairs": 125,
+  "heldout_pairs": 300,
+  "heldout_behavior_positive_pairs": 27,
+  "mean_diff_norm": 30.77223777770996,
+  "validation_full_test": {
+    "n_heldout_pairs": 300,
+    "clean_baseline_tool_top1": 26,
+    "clean_minus_tool_top1": 1,
+    "strict_drop": 25,
+    "strict_drop_rate": 0.9615384615384616,
+    "corrupt_baseline_tool_top1": 15,
+    "corrupt_plus_tool_top1": 225,
+    "strict_flip": 210,
+    "strict_flip_rate": 0.7368421052631579
+  },
+  "validation_behavior_positive_test": {
+    "n_heldout_pairs": 27,
+    "clean_baseline_tool_top1": 23,
+    "clean_minus_tool_top1": 0,
+    "strict_drop": 23,
+    "strict_drop_rate": 1.0,
+    "corrupt_baseline_tool_top1": 0,
+    "corrupt_plus_tool_top1": 19,
+    "strict_flip": 19,
+    "strict_flip_rate": 0.7037037037037037
+  },
+  "vector_bundle": "./results/natural_trajectory/cross_family_tau2_20260726/qwen35_4b/coding_vector_bundle.pt"
+}

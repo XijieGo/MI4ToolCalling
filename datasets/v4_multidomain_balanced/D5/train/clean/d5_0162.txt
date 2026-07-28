@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Send this email message shown below:
+To: recipient-4ead643faf14@mail.example
+Subject: 3.0 feature revision: streaming deferred to 3.1, observability promoted
+Body: Derek, Wesley, Theo, Talia, Nadia — Based on Talia's 30-customer research (87% want observability, 34% want streaming), I'm revising the 3.0 scope: **Promoted to 3.0 core:** Pipeline observability dashboard — real-time visibility into pipeline health, error tracing, performance metrics **Deferred to 3.1:** Real-time streaming I made the spec creep mistake once. Not again. We ship what customers need, not what sounds impressive.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Send this email message shown below:
+To: recipient-d63d767578c2@mail.example
+Subject: 🍿 The Great Snack Drawer Reorganization of 2026
+Body: Darius, Nadia — Status report on the snack situation: - Takis: restocked (Darius, you ate 4 bags last week. I have receipts.) - Energy drinks: Nadia's shelf is clearly labeled "DO NOT TOUCH — N" and I'm honoring it - New addition: Japanese rice crackers (Amir's suggestion — they're amazing) The snack drawer is a microcosm of this company: organized chaos, strong opinions, and somehow it all works. Pat
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

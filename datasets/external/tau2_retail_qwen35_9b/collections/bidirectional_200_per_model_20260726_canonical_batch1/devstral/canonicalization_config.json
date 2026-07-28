@@ -1,0 +1,24 @@
+{
+  "model": "Devstral-Small-2-24B-Instruct-2512",
+  "source_domain": "retail",
+  "old_model_root": "./datasets/external/tau2_retail_qwen35_9b/collections/bidirectional_200_per_model_20260726/devstral",
+  "old_screen_files": {
+    "tool": [
+      "./datasets/external/tau2_retail_qwen35_9b/collections/bidirectional_200_per_model_20260726/devstral/tool_baseline_screen_primary.jsonl"
+    ],
+    "direct": [
+      "./datasets/external/tau2_retail_qwen35_9b/collections/bidirectional_200_per_model_20260726/devstral/direct_baseline_screen_primary.jsonl"
+    ]
+  },
+  "fresh_screen_files": {
+    "tool": "./datasets/external/tau2_retail_qwen35_9b/collections/bidirectional_200_per_model_20260726_canonical_batch1/devstral/tool_baseline_screen_canonical_batch1.jsonl",
+    "direct": "./datasets/external/tau2_retail_qwen35_9b/collections/bidirectional_200_per_model_20260726_canonical_batch1/devstral/direct_baseline_screen_canonical_batch1.jsonl"
+  },
+  "raw_resources": {
+    "system_prompt_sha256": "2c9652afbce57d6e087768d37cda64d31c53d50b3e3225cfdb791bac66466467",
+    "tool_schemas_sha256": "75a679a53665076eb040cf8a77c2c0aea6a839b3c0afc2b4378e3f5bf888f81f"
+  },
+  "batch_size": 1,
+  "selection_success_or_reward_used": false,
+  "completed_unix": 1785131521.909183
+}

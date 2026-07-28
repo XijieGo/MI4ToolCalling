@@ -1,0 +1,58 @@
+<|im_start|>system
+# Tools
+
+You have access to the following functions:
+
+<tools>
+{"type": "function", "function": {"name": "write_file", "description": "Write file.", "parameters": {"type": "object", "properties": {"file_path": {"type": "string"}, "content": {"type": "string"}}, "required": ["file_path", "content"]}}}
+</tools>
+
+If you choose to call a function ONLY reply in the following format with NO suffix:
+
+<tool_call>
+<function=example_function_name>
+<parameter=example_parameter_1>
+value_1
+</parameter>
+<parameter=example_parameter_2>
+This is the value for the second parameter
+that can span
+multiple lines
+</parameter>
+</function>
+</tool_call>
+
+<IMPORTANT>
+Reminder:
+- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags
+- Required parameters MUST be specified
+- You may provide optional reasoning for your function call in natural language BEFORE the function call, but NOT after
+- If there is no function call available, answer the question like normal with your current knowledge and do not tell the user about function calls
+</IMPORTANT><|im_end|>
+<|im_start|>user
+Inspect the function body in solve.java based on the function definition and docstring below:
+/*
+ * For each test case, you are given an integer n and a digit string s of length n (no leading zeros).
+ * You may delete some digits from s (keeping the remaining digits in the same order), deleting between
+ * 0 and n-1 digits (so at least one digit must remain). The resulting number must not have leading zeros.
+ *
+ * Define a number as "ebne" (even but not even) if the sum of its digits is even, but the number itself
+ * is odd. For each test case, output any ebne number obtainable from s by deletions, or -1 if impossible.
+ *
+ * Example:
+ * input:
+ * 1
+ * 6
+ * 177013
+ * output:
+ * 17703
+ */
+static String solve(String input) {
+    // TODO: implement
+    return "";
+}<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

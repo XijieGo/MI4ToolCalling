@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pt
+*.pth
+*.safetensors
+*.log
+*.partial.*
+.ipynb_checkpoints/
+.DS_Store
+.venv/
+venv/
+outputs/
+wandb/
+
+# Generated experiment outputs are not release inputs.
+results/
+
+# The release must include frozen intervention vectors. These exceptions are
+# intentionally narrow so newly generated checkpoints remain ignored.
+!rebuttal/**/*.pt
+!rebuttal/**/*.pth
+!rebuttal/**/*.safetensors

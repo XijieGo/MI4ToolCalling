@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "completed_at": "2026-07-28T00:27:58.108274Z",
+  "model_key": "qwen3_4b",
+  "n_heldout": 300,
+  "manifest_sha256": "b0649501922ba0c7cfe7054f6eb972a74c715fe49f28b428990d0398d53db01c",
+  "summary_sha256": "583d4aaa9db987e767798306d8e15c9662c5c1fe67105b85ba016b3108705c22",
+  "replay_status": "complete",
+  "behavior_replay_status": "exact_match",
+  "rank_vs_construction_status": "differs_from_construction",
+  "probability_vs_construction_status": "environment_sensitive"
+}

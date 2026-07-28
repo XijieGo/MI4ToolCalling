@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Dispatch this email message shown below:
+To: recipient-dbf53926ec5d@mail.example
+Subject: January pulse survey: trust 76%, satisfaction 79% — highest ever
+Body: Marcus, James — January pulse results: - **Trust in leadership: 76%** (up from 62% post-Maya) - **Job satisfaction: 79%** (highest since we started measuring) - **Would recommend Vectrix: 81%** The Maya Reforms are working. Structured 1-on-1s, career development paths, transparent decision-making — it's all landing. The team believes in the direction.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

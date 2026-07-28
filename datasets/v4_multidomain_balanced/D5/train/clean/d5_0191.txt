@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Send this email message shown below:
+To: recipient-5bd142b46084@mail.example
+Subject: 💜 International Women's Day — Celebrating Vectrix Women
+Body: Sandra, Priya, Nadia, Olive, Monica — IWD celebration highlights: - Priya keynoted: "Building Through Chaos" — standing ovation - Nadia did a lightning talk: "Why I Stayed" — 4 minutes, no slides, no notes, devastating - Panel: Sandra, Olive, Monica on "navigating growth as women in leadership" Nadia refused a panel ("too many people talking") but her lightning talk was the highlight. As usual. Pat
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

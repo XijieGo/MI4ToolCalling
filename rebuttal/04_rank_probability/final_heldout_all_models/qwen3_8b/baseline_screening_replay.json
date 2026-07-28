@@ -1,0 +1,941 @@
+{
+  "n": 300,
+  "argmax_top1_mismatch_count": 0,
+  "rank_mismatch_count": 108,
+  "probability_mismatch_count": 64,
+  "probability_tolerance": 5e-05,
+  "maximum_probability_absolute_delta": 0.09991686418652534,
+  "argmax_top1_mismatches": [],
+  "rank_mismatches": [
+    {
+      "sample_id": "v5_qwen3_8b_001",
+      "manifest": 17,
+      "observed": 18
+    },
+    {
+      "sample_id": "v5_qwen3_8b_003",
+      "manifest": 19,
+      "observed": 18
+    },
+    {
+      "sample_id": "v5_qwen3_8b_005",
+      "manifest": 18,
+      "observed": 17
+    },
+    {
+      "sample_id": "v5_qwen3_8b_006",
+      "manifest": 17,
+      "observed": 18
+    },
+    {
+      "sample_id": "v5_qwen3_8b_007",
+      "manifest": 16,
+      "observed": 15
+    },
+    {
+      "sample_id": "v5_qwen3_8b_008",
+      "manifest": 27,
+      "observed": 24
+    },
+    {
+      "sample_id": "v5_qwen3_8b_009",
+      "manifest": 30,
+      "observed": 24
+    },
+    {
+      "sample_id": "v5_qwen3_8b_011",
+      "manifest": 16,
+      "observed": 17
+    },
+    {
+      "sample_id": "v5_qwen3_8b_014",
+      "manifest": 10,
+      "observed": 9
+    },
+    {
+      "sample_id": "v5_qwen3_8b_021",
+      "manifest": 69,
+      "observed": 59
+    },
+    {
+      "sample_id": "v5_qwen3_8b_022",
+      "manifest": 14,
+      "observed": 17
+    },
+    {
+      "sample_id": "v5_qwen3_8b_026",
+      "manifest": 13,
+      "observed": 12
+    },
+    {
+      "sample_id": "v5_qwen3_8b_027",
+      "manifest": 14,
+      "observed": 12
+    },
+    {
+      "sample_id": "v5_qwen3_8b_028",
+      "manifest": 14,
+      "observed": 16
+    },
+    {
+      "sample_id": "v5_qwen3_8b_030",
+      "manifest": 14,
+      "observed": 12
+    },
+    {
+      "sample_id": "v5_qwen3_8b_031",
+      "manifest": 9,
+      "observed": 8
+    },
+    {
+      "sample_id": "v5_qwen3_8b_032",
+      "manifest": 36,
+      "observed": 35
+    },
+    {
+      "sample_id": "v5_qwen3_8b_037",
+      "manifest": 24,
+      "observed": 18
+    },
+    {
+      "sample_id": "v5_qwen3_8b_049",
+      "manifest": 9,
+      "observed": 8
+    },
+    {
+      "sample_id": "v5_qwen3_8b_050",
+      "manifest": 5,
+      "observed": 4
+    },
+    {
+      "sample_id": "v5_qwen3_8b_051",
+      "manifest": 10,
+      "observed": 9
+    },
+    {
+      "sample_id": "v5_qwen3_8b_061",
+      "manifest": 21,
+      "observed": 28
+    },
+    {
+      "sample_id": "v5_qwen3_8b_062",
+      "manifest": 22,
+      "observed": 24
+    },
+    {
+      "sample_id": "v5_qwen3_8b_063",
+      "manifest": 17,
+      "observed": 20
+    },
+    {
+      "sample_id": "v5_qwen3_8b_064",
+      "manifest": 26,
+      "observed": 28
+    },
+    {
+      "sample_id": "v5_qwen3_8b_066",
+      "manifest": 41,
+      "observed": 37
+    },
+    {
+      "sample_id": "v5_qwen3_8b_067",
+      "manifest": 48,
+      "observed": 42
+    },
+    {
+      "sample_id": "v5_qwen3_8b_071",
+      "manifest": 30,
+      "observed": 35
+    },
+    {
+      "sample_id": "v5_qwen3_8b_073",
+      "manifest": 40,
+      "observed": 43
+    },
+    {
+      "sample_id": "v5_qwen3_8b_076",
+      "manifest": 8,
+      "observed": 9
+    },
+    {
+      "sample_id": "v5_qwen3_8b_077",
+      "manifest": 38,
+      "observed": 34
+    },
+    {
+      "sample_id": "v5_qwen3_8b_078",
+      "manifest": 94,
+      "observed": 96
+    },
+    {
+      "sample_id": "v5_qwen3_8b_080",
+      "manifest": 30,
+      "observed": 28
+    },
+    {
+      "sample_id": "v5_qwen3_8b_081",
+      "manifest": 42,
+      "observed": 50
+    },
+    {
+      "sample_id": "v5_qwen3_8b_083",
+      "manifest": 24,
+      "observed": 26
+    },
+    {
+      "sample_id": "v5_qwen3_8b_084",
+      "manifest": 21,
+      "observed": 20
+    },
+    {
+      "sample_id": "v5_qwen3_8b_090",
+      "manifest": 34,
+      "observed": 44
+    },
+    {
+      "sample_id": "v5_qwen3_8b_091",
+      "manifest": 17,
+      "observed": 16
+    },
+    {
+      "sample_id": "v5_qwen3_8b_092",
+      "manifest": 13,
+      "observed": 14
+    },
+    {
+      "sample_id": "v5_qwen3_8b_093",
+      "manifest": 13,
+      "observed": 14
+    },
+    {
+      "sample_id": "v5_qwen3_8b_094",
+      "manifest": 16,
+      "observed": 17
+    },
+    {
+      "sample_id": "v5_qwen3_8b_095",
+      "manifest": 9,
+      "observed": 12
+    },
+    {
+      "sample_id": "v5_qwen3_8b_096",
+      "manifest": 53,
+      "observed": 60
+    },
+    {
+      "sample_id": "v5_qwen3_8b_097",
+      "manifest": 27,
+      "observed": 21
+    },
+    {
+      "sample_id": "v5_qwen3_8b_098",
+      "manifest": 12,
+      "observed": 14
+    },
+    {
+      "sample_id": "v5_qwen3_8b_099",
+      "manifest": 16,
+      "observed": 13
+    },
+    {
+      "sample_id": "v5_qwen3_8b_100",
+      "manifest": 12,
+      "observed": 10
+    },
+    {
+      "sample_id": "v5_qwen3_8b_109",
+      "manifest": 2,
+      "observed": 3
+    },
+    {
+      "sample_id": "v5_qwen3_8b_110",
+      "manifest": 18,
+      "observed": 22
+    },
+    {
+      "sample_id": "v5_qwen3_8b_111",
+      "manifest": 23,
+      "observed": 25
+    },
+    {
+      "sample_id": "v5_qwen3_8b_112",
+      "manifest": 5,
+      "observed": 4
+    },
+    {
+      "sample_id": "v5_qwen3_8b_113",
+      "manifest": 5,
+      "observed": 4
+    },
+    {
+      "sample_id": "v5_qwen3_8b_114",
+      "manifest": 6,
+      "observed": 7
+    },
+    {
+      "sample_id": "v5_qwen3_8b_115",
+      "manifest": 9,
+      "observed": 10
+    },
+    {
+      "sample_id": "v5_qwen3_8b_116",
+      "manifest": 12,
+      "observed": 13
+    },
+    {
+      "sample_id": "v5_qwen3_8b_122",
+      "manifest": 53,
+      "observed": 45
+    },
+    {
+      "sample_id": "v5_qwen3_8b_125",
+      "manifest": 37,
+      "observed": 36
+    },
+    {
+      "sample_id": "v5_qwen3_8b_128",
+      "manifest": 16,
+      "observed": 15
+    },
+    {
+      "sample_id": "v5_qwen3_8b_129",
+      "manifest": 39,
+      "observed": 36
+    },
+    {
+      "sample_id": "v5_qwen3_8b_131",
+      "manifest": 18,
+      "observed": 19
+    },
+    {
+      "sample_id": "v5_qwen3_8b_133",
+      "manifest": 5,
+      "observed": 6
+    },
+    {
+      "sample_id": "v5_qwen3_8b_137",
+      "manifest": 17,
+      "observed": 16
+    },
+    {
+      "sample_id": "v5_qwen3_8b_138",
+      "manifest": 41,
+      "observed": 43
+    },
+    {
+      "sample_id": "v5_qwen3_8b_139",
+      "manifest": 40,
+      "observed": 36
+    },
+    {
+      "sample_id": "v5_qwen3_8b_140",
+      "manifest": 34,
+      "observed": 24
+    },
+    {
+      "sample_id": "v5_qwen3_8b_141",
+      "manifest": 26,
+      "observed": 25
+    },
+    {
+      "sample_id": "v5_qwen3_8b_142",
+      "manifest": 34,
+      "observed": 43
+    },
+    {
+      "sample_id": "v5_qwen3_8b_146",
+      "manifest": 3,
+      "observed": 2
+    },
+    {
+      "sample_id": "v5_qwen3_8b_159",
+      "manifest": 9,
+      "observed": 8
+    },
+    {
+      "sample_id": "v5_qwen3_8b_161",
+      "manifest": 5,
+      "observed": 7
+    },
+    {
+      "sample_id": "v5_qwen3_8b_165",
+      "manifest": 8,
+      "observed": 9
+    },
+    {
+      "sample_id": "v5_qwen3_8b_166",
+      "manifest": 6,
+      "observed": 7
+    },
+    {
+      "sample_id": "v5_qwen3_8b_178",
+      "manifest": 11,
+      "observed": 9
+    },
+    {
+      "sample_id": "v5_qwen3_8b_182",
+      "manifest": 35,
+      "observed": 40
+    },
+    {
+      "sample_id": "v5_qwen3_8b_185",
+      "manifest": 15,
+      "observed": 16
+    },
+    {
+      "sample_id": "v5_qwen3_8b_186",
+      "manifest": 7,
+      "observed": 5
+    },
+    {
+      "sample_id": "v5_qwen3_8b_187",
+      "manifest": 8,
+      "observed": 7
+    },
+    {
+      "sample_id": "v5_qwen3_8b_188",
+      "manifest": 8,
+      "observed": 7
+    },
+    {
+      "sample_id": "v5_qwen3_8b_196",
+      "manifest": 2,
+      "observed": 3
+    },
+    {
+      "sample_id": "v5_qwen3_8b_202",
+      "manifest": 16,
+      "observed": 18
+    },
+    {
+      "sample_id": "v5_qwen3_8b_203",
+      "manifest": 12,
+      "observed": 11
+    },
+    {
+      "sample_id": "v5_qwen3_8b_204",
+      "manifest": 13,
+      "observed": 14
+    },
+    {
+      "sample_id": "v5_qwen3_8b_205",
+      "manifest": 8,
+      "observed": 11
+    },
+    {
+      "sample_id": "v5_qwen3_8b_218",
+      "manifest": 8,
+      "observed": 10
+    },
+    {
+      "sample_id": "v5_qwen3_8b_219",
+      "manifest": 10,
+      "observed": 8
+    },
+    {
+      "sample_id": "v5_qwen3_8b_221",
+      "manifest": 8,
+      "observed": 9
+    },
+    {
+      "sample_id": "v5_qwen3_8b_229",
+      "manifest": 8,
+      "observed": 9
+    },
+    {
+      "sample_id": "v5_qwen3_8b_240",
+      "manifest": 3,
+      "observed": 2
+    },
+    {
+      "sample_id": "v5_qwen3_8b_242",
+      "manifest": 8,
+      "observed": 7
+    },
+    {
+      "sample_id": "v5_qwen3_8b_243",
+      "manifest": 8,
+      "observed": 5
+    },
+    {
+      "sample_id": "v5_qwen3_8b_246",
+      "manifest": 7,
+      "observed": 8
+    },
+    {
+      "sample_id": "v5_qwen3_8b_252",
+      "manifest": 9,
+      "observed": 12
+    },
+    {
+      "sample_id": "v5_qwen3_8b_253",
+      "manifest": 8,
+      "observed": 7
+    },
+    {
+      "sample_id": "v5_qwen3_8b_254",
+      "manifest": 7,
+      "observed": 8
+    },
+    {
+      "sample_id": "v5_qwen3_8b_256",
+      "manifest": 11,
+      "observed": 10
+    },
+    {
+      "sample_id": "v5_qwen3_8b_259",
+      "manifest": 13,
+      "observed": 11
+    },
+    {
+      "sample_id": "v5_qwen3_8b_272",
+      "manifest": 9,
+      "observed": 10
+    },
+    {
+      "sample_id": "v5_qwen3_8b_273",
+      "manifest": 8,
+      "observed": 9
+    },
+    {
+      "sample_id": "v5_qwen3_8b_274",
+      "manifest": 5,
+      "observed": 7
+    },
+    {
+      "sample_id": "v5_qwen3_8b_278",
+      "manifest": 7,
+      "observed": 8
+    },
+    {
+      "sample_id": "v5_qwen3_8b_279",
+      "manifest": 10,
+      "observed": 11
+    },
+    {
+      "sample_id": "v5_qwen3_8b_282",
+      "manifest": 13,
+      "observed": 14
+    },
+    {
+      "sample_id": "v5_qwen3_8b_285",
+      "manifest": 12,
+      "observed": 11
+    },
+    {
+      "sample_id": "v5_qwen3_8b_286",
+      "manifest": 8,
+      "observed": 11
+    },
+    {
+      "sample_id": "v5_qwen3_8b_289",
+      "manifest": 15,
+      "observed": 17
+    },
+    {
+      "sample_id": "v5_qwen3_8b_298",
+      "manifest": 6,
+      "observed": 5
+    },
+    {
+      "sample_id": "v5_qwen3_8b_299",
+      "manifest": 8,
+      "observed": 10
+    },
+    {
+      "sample_id": "v5_qwen3_8b_300",
+      "manifest": 8,
+      "observed": 7
+    }
+  ],
+  "probability_mismatches": [
+    {
+      "sample_id": "v5_qwen3_8b_033",
+      "manifest": 0.007533732336014509,
+      "observed": 0.004051110241562128,
+      "absolute_delta": 0.003482622094452381
+    },
+    {
+      "sample_id": "v5_qwen3_8b_034",
+      "manifest": 0.002469397382810712,
+      "observed": 0.002796259243041277,
+      "absolute_delta": 0.00032686186023056507
+    },
+    {
+      "sample_id": "v5_qwen3_8b_035",
+      "manifest": 0.002180360956117511,
+      "observed": 0.0024701766669750214,
+      "absolute_delta": 0.00028981571085751057
+    },
+    {
+      "sample_id": "v5_qwen3_8b_036",
+      "manifest": 0.0005522016435861588,
+      "observed": 0.0003796116216108203,
+      "absolute_delta": 0.00017259002197533846
+    },
+    {
+      "sample_id": "v5_qwen3_8b_054",
+      "manifest": 0.0014888773439452052,
+      "observed": 0.0009050100343301892,
+      "absolute_delta": 0.000583867309615016
+    },
+    {
+      "sample_id": "v5_qwen3_8b_055",
+      "manifest": 0.004064476583153009,
+      "observed": 0.005212872289121151,
+      "absolute_delta": 0.0011483957059681416
+    },
+    {
+      "sample_id": "v5_qwen3_8b_056",
+      "manifest": 0.05334497615695,
+      "observed": 0.04738515987992287,
+      "absolute_delta": 0.00595981627702713
+    },
+    {
+      "sample_id": "v5_qwen3_8b_058",
+      "manifest": 0.008570660836994648,
+      "observed": 0.014050616882741451,
+      "absolute_delta": 0.005479956045746803
+    },
+    {
+      "sample_id": "v5_qwen3_8b_106",
+      "manifest": 0.01241807360202074,
+      "observed": 0.005215607583522797,
+      "absolute_delta": 0.007202466018497944
+    },
+    {
+      "sample_id": "v5_qwen3_8b_107",
+      "manifest": 0.0028003163170069456,
+      "observed": 0.00460844999179244,
+      "absolute_delta": 0.0018081336747854948
+    },
+    {
+      "sample_id": "v5_qwen3_8b_108",
+      "manifest": 0.002799239242449403,
+      "observed": 0.0031708076130598783,
+      "absolute_delta": 0.00037156837061047554
+    },
+    {
+      "sample_id": "v5_qwen3_8b_109",
+      "manifest": 0.0011678985320031643,
+      "observed": 0.0006256803753785789,
+      "absolute_delta": 0.0005422181566245854
+    },
+    {
+      "sample_id": "v5_qwen3_8b_117",
+      "manifest": 0.02014158107340336,
+      "observed": 0.029006274417042732,
+      "absolute_delta": 0.008864693343639374
+    },
+    {
+      "sample_id": "v5_qwen3_8b_118",
+      "manifest": 0.00012327141303103417,
+      "observed": 0.0002032224729191512,
+      "absolute_delta": 7.995105988811702e-05
+    },
+    {
+      "sample_id": "v5_qwen3_8b_146",
+      "manifest": 0.00037971718120388687,
+      "observed": 0.0011683765333145857,
+      "absolute_delta": 0.0007886593521106988
+    },
+    {
+      "sample_id": "v5_qwen3_8b_147",
+      "manifest": 0.01586885377764702,
+      "observed": 0.04199494421482086,
+      "absolute_delta": 0.026126090437173843
+    },
+    {
+      "sample_id": "v5_qwen3_8b_148",
+      "manifest": 0.001030572922900319,
+      "observed": 0.0013220414984971285,
+      "absolute_delta": 0.0002914685755968094
+    },
+    {
+      "sample_id": "v5_qwen3_8b_150",
+      "manifest": 0.0031638138461858034,
+      "observed": 0.003581972559913993,
+      "absolute_delta": 0.00041815871372818947
+    },
+    {
+      "sample_id": "v5_qwen3_8b_152",
+      "manifest": 0.010936842299997807,
+      "observed": 0.012376563623547554,
+      "absolute_delta": 0.0014397213235497475
+    },
+    {
+      "sample_id": "v5_qwen3_8b_153",
+      "manifest": 0.059776708483695984,
+      "observed": 0.04186825826764107,
+      "absolute_delta": 0.017908450216054916
+    },
+    {
+      "sample_id": "v5_qwen3_8b_154",
+      "manifest": 0.07565369457006454,
+      "observed": 0.05322101712226868,
+      "absolute_delta": 0.022432677447795868
+    },
+    {
+      "sample_id": "v5_qwen3_8b_155",
+      "manifest": 0.04736551269888878,
+      "observed": 0.053342051804065704,
+      "absolute_delta": 0.005976539105176926
+    },
+    {
+      "sample_id": "v5_qwen3_8b_156",
+      "manifest": 0.022945528849959373,
+      "observed": 0.03302910923957825,
+      "absolute_delta": 0.010083580389618874
+    },
+    {
+      "sample_id": "v5_qwen3_8b_157",
+      "manifest": 0.17681379616260529,
+      "observed": 0.19507171213626862,
+      "absolute_delta": 0.01825791597366333
+    },
+    {
+      "sample_id": "v5_qwen3_8b_168",
+      "manifest": 0.028862128034234047,
+      "observed": 0.04134071618318558,
+      "absolute_delta": 0.01247858814895153
+    },
+    {
+      "sample_id": "v5_qwen3_8b_169",
+      "manifest": 0.13284346461296082,
+      "observed": 0.1479118913412094,
+      "absolute_delta": 0.015068426728248596
+    },
+    {
+      "sample_id": "v5_qwen3_8b_170",
+      "manifest": 0.05246074125170708,
+      "observed": 0.11686207354068756,
+      "absolute_delta": 0.06440133228898048
+    },
+    {
+      "sample_id": "v5_qwen3_8b_171",
+      "manifest": 0.07550773024559021,
+      "observed": 0.10629641264677048,
+      "absolute_delta": 0.030788682401180267
+    },
+    {
+      "sample_id": "v5_qwen3_8b_173",
+      "manifest": 0.06728994101285934,
+      "observed": 0.05987429991364479,
+      "absolute_delta": 0.007415641099214554
+    },
+    {
+      "sample_id": "v5_qwen3_8b_174",
+      "manifest": 0.06738792359828949,
+      "observed": 0.08490430563688278,
+      "absolute_delta": 0.017516382038593292
+    },
+    {
+      "sample_id": "v5_qwen3_8b_175",
+      "manifest": 0.05814310163259506,
+      "observed": 0.06491179019212723,
+      "absolute_delta": 0.0067686885595321655
+    },
+    {
+      "sample_id": "v5_qwen3_8b_177",
+      "manifest": 0.0015267522539943457,
+      "observed": 0.0031900436151772738,
+      "absolute_delta": 0.001663291361182928
+    },
+    {
+      "sample_id": "v5_qwen3_8b_193",
+      "manifest": 0.0075749680399894714,
+      "observed": 0.01242834609001875,
+      "absolute_delta": 0.004853378050029278
+    },
+    {
+      "sample_id": "v5_qwen3_8b_194",
+      "manifest": 0.008574307896196842,
+      "observed": 0.007574348244816065,
+      "absolute_delta": 0.0009999596513807774
+    },
+    {
+      "sample_id": "v5_qwen3_8b_195",
+      "manifest": 0.012420380488038063,
+      "observed": 0.007570347283035517,
+      "absolute_delta": 0.004850033205002546
+    },
+    {
+      "sample_id": "v5_qwen3_8b_196",
+      "manifest": 0.0005523135769180954,
+      "observed": 0.0003350878832861781,
+      "absolute_delta": 0.00021722569363191724
+    },
+    {
+      "sample_id": "v5_qwen3_8b_197",
+      "manifest": 0.0058997939340770245,
+      "observed": 0.004062856547534466,
+      "absolute_delta": 0.0018369373865425587
+    },
+    {
+      "sample_id": "v5_qwen3_8b_198",
+      "manifest": 0.0027995158452540636,
+      "observed": 0.0021819572430104017,
+      "absolute_delta": 0.0006175586022436619
+    },
+    {
+      "sample_id": "v5_qwen3_8b_201",
+      "manifest": 0.00029480975354090333,
+      "observed": 0.0006235859473235905,
+      "absolute_delta": 0.0003287761937826872
+    },
+    {
+      "sample_id": "v5_qwen3_8b_212",
+      "manifest": 0.007552347145974636,
+      "observed": 0.010950439609587193,
+      "absolute_delta": 0.0033980924636125565
+    },
+    {
+      "sample_id": "v5_qwen3_8b_214",
+      "manifest": 0.012388857081532478,
+      "observed": 0.025833576917648315,
+      "absolute_delta": 0.013444719836115837
+    },
+    {
+      "sample_id": "v5_qwen3_8b_215",
+      "manifest": 0.03729359805583954,
+      "observed": 0.04738236218690872,
+      "absolute_delta": 0.010088764131069183
+    },
+    {
+      "sample_id": "v5_qwen3_8b_216",
+      "manifest": 0.009657373651862144,
+      "observed": 0.012378453277051449,
+      "absolute_delta": 0.0027210796251893044
+    },
+    {
+      "sample_id": "v5_qwen3_8b_217",
+      "manifest": 0.004604150075465441,
+      "observed": 0.003590283216908574,
+      "absolute_delta": 0.0010138668585568666
+    },
+    {
+      "sample_id": "v5_qwen3_8b_232",
+      "manifest": 0.010920034721493721,
+      "observed": 0.0058797444216907024,
+      "absolute_delta": 0.005040290299803019
+    },
+    {
+      "sample_id": "v5_qwen3_8b_233",
+      "manifest": 0.006668308284133673,
+      "observed": 0.005198495462536812,
+      "absolute_delta": 0.0014698128215968609
+    },
+    {
+      "sample_id": "v5_qwen3_8b_234",
+      "manifest": 0.04129762575030327,
+      "observed": 0.036618929356336594,
+      "absolute_delta": 0.004678696393966675
+    },
+    {
+      "sample_id": "v5_qwen3_8b_235",
+      "manifest": 0.01796017400920391,
+      "observed": 0.01588188298046589,
+      "absolute_delta": 0.002078291028738022
+    },
+    {
+      "sample_id": "v5_qwen3_8b_236",
+      "manifest": 0.02866399474442005,
+      "observed": 0.022421153262257576,
+      "absolute_delta": 0.006242841482162476
+    },
+    {
+      "sample_id": "v5_qwen3_8b_237",
+      "manifest": 0.04583079367876053,
+      "observed": 0.040814608335494995,
+      "absolute_delta": 0.0050161853432655334
+    },
+    {
+      "sample_id": "v5_qwen3_8b_238",
+      "manifest": 0.037021294236183167,
+      "observed": 0.029061872512102127,
+      "absolute_delta": 0.00795942172408104
+    },
+    {
+      "sample_id": "v5_qwen3_8b_240",
+      "manifest": 0.003152606077492237,
+      "observed": 0.003576913382858038,
+      "absolute_delta": 0.00042430730536580086
+    },
+    {
+      "sample_id": "v5_qwen3_8b_247",
+      "manifest": 0.005908777937293053,
+      "observed": 0.004607826005667448,
+      "absolute_delta": 0.0013009519316256046
+    },
+    {
+      "sample_id": "v5_qwen3_8b_248",
+      "manifest": 0.007571547292172909,
+      "observed": 0.010977918282151222,
+      "absolute_delta": 0.0034063709899783134
+    },
+    {
+      "sample_id": "v5_qwen3_8b_249",
+      "manifest": 0.014050116762518883,
+      "observed": 0.008570133708417416,
+      "absolute_delta": 0.005479983054101467
+    },
+    {
+      "sample_id": "v5_qwen3_8b_250",
+      "manifest": 0.0005521090934053063,
+      "observed": 0.00048714104923419654,
+      "absolute_delta": 6.49680441711098e-05
+    },
+    {
+      "sample_id": "v5_qwen3_8b_262",
+      "manifest": 0.03703540936112404,
+      "observed": 0.047010309994220734,
+      "absolute_delta": 0.009974900633096695
+    },
+    {
+      "sample_id": "v5_qwen3_8b_263",
+      "manifest": 0.047292329370975494,
+      "observed": 0.07561014592647552,
+      "absolute_delta": 0.02831781655550003
+    },
+    {
+      "sample_id": "v5_qwen3_8b_265",
+      "manifest": 0.020245356485247612,
+      "observed": 0.03712953254580498,
+      "absolute_delta": 0.016884176060557365
+    },
+    {
+      "sample_id": "v5_qwen3_8b_266",
+      "manifest": 0.01792755536735058,
+      "observed": 0.015861541032791138,
+      "absolute_delta": 0.0020660143345594406
+    },
+    {
+      "sample_id": "v5_qwen3_8b_267",
+      "manifest": 0.033065155148506165,
+      "observed": 0.025943344458937645,
+      "absolute_delta": 0.00712181068956852
+    },
+    {
+      "sample_id": "v5_qwen3_8b_293",
+      "manifest": 0.04718616232275963,
+      "observed": 0.14710302650928497,
+      "absolute_delta": 0.09991686418652534
+    },
+    {
+      "sample_id": "v5_qwen3_8b_296",
+      "manifest": 0.0027872519567608833,
+      "observed": 0.0016926431562751532,
+      "absolute_delta": 0.0010946088004857302
+    },
+    {
+      "sample_id": "v5_qwen3_8b_297",
+      "manifest": 0.022884925827383995,
+      "observed": 0.020230069756507874,
+      "absolute_delta": 0.0026548560708761215
+    }
+  ],
+  "behavior_status": "exact_match",
+  "rank_vs_construction_status": "differs_from_construction",
+  "probability_vs_construction_status": "environment_sensitive",
+  "status": "complete"
+}

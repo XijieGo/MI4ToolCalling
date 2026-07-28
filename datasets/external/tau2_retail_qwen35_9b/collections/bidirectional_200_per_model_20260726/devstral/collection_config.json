@@ -1,0 +1,29 @@
+{
+  "collection_name": "tau2_retail_bidirectional_200_per_model_20260726",
+  "model": "Devstral-Small-2-24B-Instruct-2512",
+  "model_key": "devstral",
+  "model_path": "/root/autodl-tmp/Mistral/Devstral-Small-2-24B-Instruct-2512",
+  "tier_last_run": "primary",
+  "target_per_arm": 200,
+  "max_context_tokens": 30000,
+  "max_non_tool_probability": 0.05,
+  "source_files": {
+    "tool_primary": {
+      "path": "./datasets/external/tau2_retail_qwen35_9b/prepared/screen_pool.jsonl",
+      "sha256": "bfd1db4eb6b63505ccc42aa07f7879486ab7e12274f394cc513a2f69be8b131e"
+    },
+    "direct_primary": {
+      "path": "./datasets/external/tau2_retail_qwen35_9b/prepared/text_reply_induction_terminal/screen_pool.jsonl",
+      "sha256": "1e264a9062a77ba77b71e331a7a12d2fcbd916aad7e5b4f00cf9e9b597f1d221"
+    },
+    "system_prompt": {
+      "path": "./datasets/external/tau2_retail_qwen35_9b/raw/tau2_system_prompt.txt",
+      "sha256": "2c9652afbce57d6e087768d37cda64d31c53d50b3e3225cfdb791bac66466467"
+    },
+    "tool_schemas": {
+      "path": "./datasets/external/tau2_retail_qwen35_9b/raw/tau2_tool_schemas.json",
+      "sha256": "75a679a53665076eb040cf8a77c2c0aea6a839b3c0afc2b4378e3f5bf888f81f"
+    }
+  },
+  "selection_scope": "Baseline-only target-model screening; no vector, layer, reward, or success is used."
+}

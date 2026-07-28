@@ -1,0 +1,90 @@
+{
+  "started_unix": 1785131578.795679,
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+  "torch": "2.8.0+cu128",
+  "model": "Devstral-Small-2-24B-Instruct-2512",
+  "model_key": "devstral",
+  "model_path": "/root/autodl-tmp/Mistral/Devstral-Small-2-24B-Instruct-2512",
+  "source_domain": "retail",
+  "selection_version": "canonical_batch1",
+  "selection_files": {
+    "tool": {
+      "path": "./datasets/external/tau2_retail_qwen35_9b/collections/bidirectional_200_per_model_20260726_canonical_batch1/devstral/selected_tool_200.jsonl",
+      "sha256": "500ea98e20b3428b281c2883dd2981e983d30435a4b9b84bc71c2cfe28d24b1b"
+    },
+    "direct": {
+      "path": "./datasets/external/tau2_retail_qwen35_9b/collections/bidirectional_200_per_model_20260726_canonical_batch1/devstral/selected_direct_200.jsonl",
+      "sha256": "ada2c10a296ebe57c8ac1c5bcdab90a5275b37285ddd848506a0e31da806f338"
+    },
+    "summary": {
+      "path": "./datasets/external/tau2_retail_qwen35_9b/collections/bidirectional_200_per_model_20260726_canonical_batch1/devstral/selection_summary.json",
+      "sha256": "f5ee986be3a697e6dec46e33a83e96670affcb969980f753bd3ecc610cb9e16b"
+    }
+  },
+  "raw_files": {
+    "system_prompt": {
+      "path": "./datasets/external/tau2_retail_qwen35_9b/raw/tau2_system_prompt.txt",
+      "sha256": "2c9652afbce57d6e087768d37cda64d31c53d50b3e3225cfdb791bac66466467"
+    },
+    "tool_schemas": {
+      "path": "./datasets/external/tau2_retail_qwen35_9b/raw/tau2_tool_schemas.json",
+      "sha256": "75a679a53665076eb040cf8a77c2c0aea6a839b3c0afc2b4378e3f5bf888f81f"
+    }
+  },
+  "frozen_coding_vector": {
+    "path": "./results/natural_trajectory/cross_family_tau2_20260726/devstral/coding_vector_bundle.pt",
+    "sha256": "a3ad8d506bbdee2da3ecfd4d9cb6eb88751979847c913c2604ff024b576aeb98",
+    "layer": 33,
+    "hook_kind": "post",
+    "mean_diff_norm": 7.948761940002441,
+    "bundle_source_domain": "coding clean/corrupt pairs only",
+    "bundle_fit_split": "train",
+    "bundle_model": "Devstral-Small-2-24B-Instruct-2512"
+  },
+  "tool_decision": {
+    "semantic_tool_opening": "[TOOL_CALLS]",
+    "tool_token_id_via_convert": 9,
+    "tool_token_ids_via_encode": [
+      9
+    ],
+    "tool_token_encode_length": 1,
+    "decision_position": "final native prompt token / first generation decision"
+  },
+  "intervention_hook": "post-boundary of decoder L33, final real prompt token only",
+  "selection_policy": "Frozen Coding vector/layer; τ² is not used to estimate, tune, or select the vector/layer.",
+  "conditions": {
+    "coding_alphas": [
+      1.0,
+      1.5
+    ],
+    "random_alphas": [
+      1.0,
+      1.5
+    ],
+    "random_control": "saved seeded unit vector scaled to ||Coding mean-difference||"
+  },
+  "batch_size": 1,
+  "max_batch_tokens": 30000,
+  "max_context_tokens": 30000,
+  "arguments": {
+    "models": "devstral",
+    "output_root": "results/natural_trajectory/tau2_bidirectional_200_interventions_20260727_canonical_batch1",
+    "selection_version": "canonical_batch1",
+    "max_context_tokens": 30000,
+    "arms": "both",
+    "alphas": [
+      1.0,
+      1.5
+    ],
+    "random_alphas": [
+      1.0,
+      1.5
+    ],
+    "batch_size": 1,
+    "max_batch_tokens": 30000,
+    "max_samples": 0,
+    "seed": 20260726,
+    "resume": false
+  }
+}

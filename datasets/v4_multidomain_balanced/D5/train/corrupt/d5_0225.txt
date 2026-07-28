@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Rate this email message shown below:
+To: recipient-696e446d7c91@mail.example
+Subject: Mid-market at 65% Q2 quota — Priscilla leading
+Body: Priscilla, Rachel — Mid-market update: we're at **65% of Q2 quota** with 6 weeks remaining. Breakdown: - Priscilla: 82% of individual quota (on track for President's Club) - Isaiah: 61% (ramping nicely) - Pipeline: $380K in qualified opps Rachel — mid-market is carrying the company while enterprise ramps. Just want to make sure that's recognized.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

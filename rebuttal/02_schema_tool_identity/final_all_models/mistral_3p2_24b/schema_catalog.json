@@ -1,0 +1,128 @@
+{
+  "6d587fe0043aa6fff7ed0487588b580ea3a0cc28b171fa9de9adfb8b0f30badc": {
+    "source_schema_sha256": "6d587fe0043aa6fff7ed0487588b580ea3a0cc28b171fa9de9adfb8b0f30badc",
+    "source_tool_name": "perform_account_action",
+    "source_tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "perform_account_action",
+          "description": "Perform the appropriate account action requested by the customer. Use only for an action request, not for a request to discuss or explain.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "request": {
+                "type": "string",
+                "description": "The requested account action."
+              }
+            },
+            "required": [
+              "request"
+            ]
+          }
+        }
+      }
+    ],
+    "source_prompt_count": 1000,
+    "variants": {
+      "V0": {
+        "schema_sha256": "6d587fe0043aa6fff7ed0487588b580ea3a0cc28b171fa9de9adfb8b0f30badc",
+        "tool_name": "perform_account_action",
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "perform_account_action",
+              "description": "Perform the appropriate account action requested by the customer. Use only for an action request, not for a request to discuss or explain.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "request": {
+                    "type": "string",
+                    "description": "The requested account action."
+                  }
+                },
+                "required": [
+                  "request"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "V1": {
+        "schema_sha256": "e95b7f54a17269e1e6c8ef37dcffff7a87f204dc19d946948114ad706d5dcc9f",
+        "tool_name": "complete_account_request",
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "complete_account_request",
+              "description": "Perform the appropriate account action requested by the customer. Use only for an action request, not for a request to discuss or explain.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "request": {
+                    "type": "string",
+                    "description": "The requested account action."
+                  }
+                },
+                "required": [
+                  "request"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "V2": {
+        "schema_sha256": "586d55fade619ad54fffc50222adcfd80981ef85a9e3aadfd513bff4269147a8",
+        "tool_name": "f1",
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "f1",
+              "description": "",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "arg_1": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "arg_1"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "V5": {
+        "schema_sha256": "7d44a45d8ed9843deaa3853b6696c7b2e8926a398d029d2ce72039a3cf07fc2d",
+        "tool_name": "get_weather",
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "get_weather",
+              "description": "Retrieve the current weather for a location.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "location": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "location"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

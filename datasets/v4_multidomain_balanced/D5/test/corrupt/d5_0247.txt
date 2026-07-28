@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Discuss this email message shown below:
+To: recipient-7cb3c65b9b82@mail.example
+Subject: 2.5 Sprint 2: connector framework integration — 8 of 12 working
+Body: Morgan, Nadia, Ravi, Tomás, Sam — Sprint 2 update: connector framework integration. **Status:** 8 of 12 connectors adapted to the 2.x engine. The pattern is solid — each new adapter takes 4-6 hours once you understand the bridge.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

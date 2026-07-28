@@ -1,0 +1,16 @@
+clean_candidate,corrupt_candidate,selected_count,available_count
+add,discuss,0,103
+add,explore,0,97
+add,inspect,45,68
+add,review,61,64
+add,study,61,61
+save,discuss,13,109
+save,explore,31,69
+save,inspect,49,49
+save,review,39,39
+save,study,35,35
+write,discuss,87,87
+write,explore,69,76
+write,inspect,6,65
+write,review,0,85
+write,study,4,93

@@ -1,0 +1,34 @@
+{
+  "status": "complete",
+  "models": {
+    "qwen3_4b": {
+      "status": "complete",
+      "n_heldout": 300
+    },
+    "qwen3_8b": {
+      "status": "complete",
+      "n_heldout": 300
+    },
+    "qwen3_14b": {
+      "status": "complete",
+      "n_heldout": 300
+    },
+    "qwen35_4b": {
+      "status": "complete",
+      "n_heldout": 300
+    },
+    "qwen35_9b": {
+      "status": "complete",
+      "n_heldout": 300
+    },
+    "mistral_3p2_24b": {
+      "status": "complete",
+      "n_heldout": 300
+    },
+    "granite_3p3_8b": {
+      "status": "complete",
+      "n_heldout": 300
+    }
+  },
+  "completed_at": "2026-07-28T00:33:09.802693Z"
+}

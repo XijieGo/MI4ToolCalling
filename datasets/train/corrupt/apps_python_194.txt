@@ -1,0 +1,30 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"write_file","description":"Write file.","parameters":{"type":"object","properties":{"file_path":{"type":"string"},"content":
+{"type":"string"}},"required":["file_path","content"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Discuss the function body in solve.py based on the function definition and docstring below:
+def calculate_years(principal, interest, tax, desired):
+    """
+    Return the number of whole years required for the principal to grow to the desired amount, with yearly interest applied and tax deducted from the interest earned each year.
+    >>> calculate_years(1000, 0.05, 0.18, 1100)
+    3
+    """
+    pass
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

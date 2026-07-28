@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "dataset_version": "v5_model_specific_balanced",
+  "model_key": "mistral_3p2_24b",
+  "model_label": "Mistral-Small-3.2-24B-Instruct-2506",
+  "model_path": "/root/autodl-tmp/Mistral/Mistral-Small-3.2-24B-Instruct-2506",
+  "source_root": "./datasets/external/tau2_telecom_qwen35_9b",
+  "source_candidate_file": "./datasets/external/tau2_telecom_qwen35_9b/prepared/text_reply_induction/candidate_prefixes.jsonl",
+  "tool_call_marker": "[TOOL_CALLS]",
+  "tool_call_token_id": 9,
+  "seed": 20260728,
+  "candidate_per_verb_cell": 100,
+  "selected_clean_verbs": [
+    "execute",
+    "perform",
+    "complete",
+    "process"
+  ],
+  "selected_corrupt_verbs": [
+    "discuss",
+    "explain",
+    "review",
+    "summarize"
+  ],
+  "selection_rule": "Target-model first-token clean-call/corrupt-non-call screen with required safety margins, followed by maximum-quality exact marginal verb balancing.",
+  "screening_margin_requirements": {
+    "minimum_clean_tool_minus_best_non_tool": 1.0,
+    "minimum_corrupt_best_non_tool_minus_tool": 1.0
+  },
+  "template": "two_turn_tau2_history_plus_single_final_verb_edit",
+  "prompt_format": "mistral_native_input_ids",
+  "n_pairs": 500,
+  "n_train": 200,
+  "n_heldout": 300,
+  "all": {
+    "n_pairs": 500,
+    "clean_tool_call_top1_rate": 1.0,
+    "corrupt_tool_call_top1_rate": 0.0,
+    "mean_clean_tool_probability": 0.9897519444227219,
+    "mean_corrupt_tool_probability": 0.0029514225367495896,
+    "minimum_clean_margin": 1.375,
+    "minimum_corrupt_non_tool_margin": 1.5625,
+    "clean_verb_counts": {
+      "complete": 125,
+      "execute": 125,
+      "perform": 125,
+      "process": 125
+    },
+    "corrupt_verb_counts": {
+      "discuss": 125,
+      "explain": 125,
+      "review": 125,
+      "summarize": 125
+    },
+    "verb_pair_counts": {
+      "complete__discuss": 38,
+      "complete__explain": 29,
+      "complete__review": 33,
+      "complete__summarize": 25,
+      "execute__discuss": 28,
+      "execute__explain": 33,
+      "execute__review": 28,
+      "execute__summarize": 36,
+      "perform__discuss": 28,
+      "perform__explain": 33,
+      "perform__review": 33,
+      "perform__summarize": 31,
+      "process__discuss": 31,
+      "process__explain": 30,
+      "process__review": 31,
+      "process__summarize": 33
+    },
+    "source_dataset_counts": {
+      "tau2_telecom": 500
+    },
+    "source_language_counts": {
+      "en": 500
+    }
+  },
+  "splits": {
+    "train": {
+      "n_pairs": 200,
+      "clean_tool_call_top1_rate": 1.0,
+      "corrupt_tool_call_top1_rate": 0.0,
+      "mean_clean_tool_probability": 0.9895653551816941,
+      "mean_corrupt_tool_probability": 0.0020619645790351626,
+      "minimum_clean_margin": 2.0,
+      "minimum_corrupt_non_tool_margin": 2.0,
+      "clean_verb_counts": {
+        "complete": 50,
+        "execute": 50,
+        "perform": 50,
+        "process": 50
+      },
+      "corrupt_verb_counts": {
+        "discuss": 50,
+        "explain": 50,
+        "review": 50,
+        "summarize": 50
+      },
+      "verb_pair_counts": {
+        "complete__discuss": 19,
+        "complete__explain": 29,
+        "complete__review": 2,
+        "execute__review": 15,
+        "execute__summarize": 35,
+        "perform__explain": 2,
+        "perform__review": 33,
+        "perform__summarize": 15,
+        "process__discuss": 31,
+        "process__explain": 19
+      },
+      "source_dataset_counts": {
+        "tau2_telecom": 200
+      },
+      "source_language_counts": {
+        "en": 200
+      }
+    },
+    "heldout": {
+      "n_pairs": 300,
+      "clean_tool_call_top1_rate": 1.0,
+      "corrupt_tool_call_top1_rate": 0.0,
+      "mean_clean_tool_probability": 0.9898763372500737,
+      "mean_corrupt_tool_probability": 0.0035443945085592075,
+      "minimum_clean_margin": 1.375,
+      "minimum_corrupt_non_tool_margin": 1.5625,
+      "clean_verb_counts": {
+        "complete": 75,
+        "execute": 75,
+        "perform": 75,
+        "process": 75
+      },
+      "corrupt_verb_counts": {
+        "discuss": 75,
+        "explain": 75,
+        "review": 75,
+        "summarize": 75
+      },
+      "verb_pair_counts": {
+        "complete__discuss": 19,
+        "complete__review": 31,
+        "complete__summarize": 25,
+        "execute__discuss": 28,
+        "execute__explain": 33,
+        "execute__review": 13,
+        "execute__summarize": 1,
+        "perform__discuss": 28,
+        "perform__explain": 31,
+        "perform__summarize": 16,
+        "process__explain": 11,
+        "process__review": 31,
+        "process__summarize": 33
+      },
+      "source_dataset_counts": {
+        "tau2_telecom": 300
+      },
+      "source_language_counts": {
+        "en": 300
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "model_path": "joint_multi_model_pool_selection",
+  "model_paths": [
+    "/root/autodl-tmp/Qwen/Qwen3-1.7B",
+    "/root/autodl-tmp/Qwen/Qwen3-4B",
+    "/root/autodl-tmp/Qwen/Qwen3-8B"
+  ],
+  "output_root": "/root/autodl-tmp/project-new/datasets",
+  "strict_pruned": true,
+  "dropped_rows": 11,
+  "kept_rows": 1711,
+  "clean_rows": 1711,
+  "corrupt_rows": 1711,
+  "language_counts": {
+    "cpp": 575,
+    "java": 581,
+    "python": 555
+  },
+  "clean_candidate_pool": [
+    "complete",
+    "build",
+    "write",
+    "save",
+    "add"
+  ],
+  "corrupt_candidate_pool": [
+    "discuss",
+    "explore",
+    "study",
+    "review",
+    "inspect"
+  ],
+  "clean_candidate_counts": {
+    "add": 492,
+    "build": 118,
+    "complete": 118,
+    "save": 492,
+    "write": 491
+  },
+  "corrupt_candidate_counts": {
+    "discuss": 343,
+    "explore": 342,
+    "inspect": 342,
+    "review": 342,
+    "study": 342
+  },
+  "clean_model_tool_call_top1_counts": {
+    "Qwen3-1.7B": 1711,
+    "Qwen3-4B": 1711,
+    "Qwen3-8B": 1711
+  },
+  "corrupt_model_tool_call_top1_counts": {
+    "Qwen3-1.7B": 0,
+    "Qwen3-4B": 0,
+    "Qwen3-8B": 0
+  },
+  "artifacts": {
+    "candidate_validity_csv": "/root/autodl-tmp/project-new/datasets/candidate_validity.csv",
+    "clean_assignment_audit_csv": "/root/autodl-tmp/project-new/datasets/clean_assignment_audit.csv",
+    "corrupt_assignment_audit_csv": "/root/autodl-tmp/project-new/datasets/corrupt_assignment_audit.csv",
+    "dataset_assignment_audit_csv": "/root/autodl-tmp/project-new/datasets/dataset_assignment_audit.csv",
+    "dropped_samples_csv": "/root/autodl-tmp/project-new/datasets/dropped_samples.csv"
+  }
+}

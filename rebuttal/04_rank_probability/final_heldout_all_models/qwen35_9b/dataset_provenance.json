@@ -1,0 +1,1812 @@
+{
+  "dataset_version": "v5_model_specific_balanced",
+  "model_key": "qwen35_9b",
+  "model_label": "Qwen3.5-9B",
+  "model_path": "/root/autodl-tmp/Qwen/Qwen3.5-9B",
+  "manifest_sha256": "80260edfa2faa90d445e2c59e0f07f68c2d47c51bc23c05a5402d312038d5f24",
+  "summary_sha256": "8d43bbf0df7a75ee0fbff254b7ffa340c9670b6c967853008209b436e34759eb",
+  "heldout_sample_ids": [
+    "v5_qwen35_9b_001",
+    "v5_qwen35_9b_002",
+    "v5_qwen35_9b_003",
+    "v5_qwen35_9b_004",
+    "v5_qwen35_9b_005",
+    "v5_qwen35_9b_006",
+    "v5_qwen35_9b_007",
+    "v5_qwen35_9b_008",
+    "v5_qwen35_9b_009",
+    "v5_qwen35_9b_010",
+    "v5_qwen35_9b_011",
+    "v5_qwen35_9b_012",
+    "v5_qwen35_9b_013",
+    "v5_qwen35_9b_014",
+    "v5_qwen35_9b_015",
+    "v5_qwen35_9b_016",
+    "v5_qwen35_9b_017",
+    "v5_qwen35_9b_018",
+    "v5_qwen35_9b_019",
+    "v5_qwen35_9b_020",
+    "v5_qwen35_9b_021",
+    "v5_qwen35_9b_022",
+    "v5_qwen35_9b_023",
+    "v5_qwen35_9b_024",
+    "v5_qwen35_9b_025",
+    "v5_qwen35_9b_026",
+    "v5_qwen35_9b_027",
+    "v5_qwen35_9b_028",
+    "v5_qwen35_9b_029",
+    "v5_qwen35_9b_030",
+    "v5_qwen35_9b_031",
+    "v5_qwen35_9b_032",
+    "v5_qwen35_9b_033",
+    "v5_qwen35_9b_034",
+    "v5_qwen35_9b_035",
+    "v5_qwen35_9b_036",
+    "v5_qwen35_9b_037",
+    "v5_qwen35_9b_038",
+    "v5_qwen35_9b_039",
+    "v5_qwen35_9b_040",
+    "v5_qwen35_9b_041",
+    "v5_qwen35_9b_042",
+    "v5_qwen35_9b_043",
+    "v5_qwen35_9b_044",
+    "v5_qwen35_9b_045",
+    "v5_qwen35_9b_046",
+    "v5_qwen35_9b_047",
+    "v5_qwen35_9b_048",
+    "v5_qwen35_9b_049",
+    "v5_qwen35_9b_050",
+    "v5_qwen35_9b_051",
+    "v5_qwen35_9b_052",
+    "v5_qwen35_9b_053",
+    "v5_qwen35_9b_054",
+    "v5_qwen35_9b_055",
+    "v5_qwen35_9b_056",
+    "v5_qwen35_9b_057",
+    "v5_qwen35_9b_058",
+    "v5_qwen35_9b_059",
+    "v5_qwen35_9b_060",
+    "v5_qwen35_9b_061",
+    "v5_qwen35_9b_062",
+    "v5_qwen35_9b_063",
+    "v5_qwen35_9b_064",
+    "v5_qwen35_9b_065",
+    "v5_qwen35_9b_066",
+    "v5_qwen35_9b_067",
+    "v5_qwen35_9b_068",
+    "v5_qwen35_9b_069",
+    "v5_qwen35_9b_070",
+    "v5_qwen35_9b_071",
+    "v5_qwen35_9b_072",
+    "v5_qwen35_9b_073",
+    "v5_qwen35_9b_074",
+    "v5_qwen35_9b_075",
+    "v5_qwen35_9b_076",
+    "v5_qwen35_9b_077",
+    "v5_qwen35_9b_078",
+    "v5_qwen35_9b_079",
+    "v5_qwen35_9b_080",
+    "v5_qwen35_9b_081",
+    "v5_qwen35_9b_082",
+    "v5_qwen35_9b_083",
+    "v5_qwen35_9b_084",
+    "v5_qwen35_9b_085",
+    "v5_qwen35_9b_086",
+    "v5_qwen35_9b_087",
+    "v5_qwen35_9b_088",
+    "v5_qwen35_9b_089",
+    "v5_qwen35_9b_090",
+    "v5_qwen35_9b_091",
+    "v5_qwen35_9b_092",
+    "v5_qwen35_9b_093",
+    "v5_qwen35_9b_094",
+    "v5_qwen35_9b_095",
+    "v5_qwen35_9b_096",
+    "v5_qwen35_9b_097",
+    "v5_qwen35_9b_098",
+    "v5_qwen35_9b_099",
+    "v5_qwen35_9b_100",
+    "v5_qwen35_9b_101",
+    "v5_qwen35_9b_102",
+    "v5_qwen35_9b_103",
+    "v5_qwen35_9b_104",
+    "v5_qwen35_9b_105",
+    "v5_qwen35_9b_106",
+    "v5_qwen35_9b_107",
+    "v5_qwen35_9b_108",
+    "v5_qwen35_9b_109",
+    "v5_qwen35_9b_110",
+    "v5_qwen35_9b_111",
+    "v5_qwen35_9b_112",
+    "v5_qwen35_9b_113",
+    "v5_qwen35_9b_114",
+    "v5_qwen35_9b_115",
+    "v5_qwen35_9b_116",
+    "v5_qwen35_9b_117",
+    "v5_qwen35_9b_118",
+    "v5_qwen35_9b_119",
+    "v5_qwen35_9b_120",
+    "v5_qwen35_9b_121",
+    "v5_qwen35_9b_122",
+    "v5_qwen35_9b_123",
+    "v5_qwen35_9b_124",
+    "v5_qwen35_9b_125",
+    "v5_qwen35_9b_126",
+    "v5_qwen35_9b_127",
+    "v5_qwen35_9b_128",
+    "v5_qwen35_9b_129",
+    "v5_qwen35_9b_130",
+    "v5_qwen35_9b_131",
+    "v5_qwen35_9b_132",
+    "v5_qwen35_9b_133",
+    "v5_qwen35_9b_134",
+    "v5_qwen35_9b_135",
+    "v5_qwen35_9b_136",
+    "v5_qwen35_9b_137",
+    "v5_qwen35_9b_138",
+    "v5_qwen35_9b_139",
+    "v5_qwen35_9b_140",
+    "v5_qwen35_9b_141",
+    "v5_qwen35_9b_142",
+    "v5_qwen35_9b_143",
+    "v5_qwen35_9b_144",
+    "v5_qwen35_9b_145",
+    "v5_qwen35_9b_146",
+    "v5_qwen35_9b_147",
+    "v5_qwen35_9b_148",
+    "v5_qwen35_9b_149",
+    "v5_qwen35_9b_150",
+    "v5_qwen35_9b_151",
+    "v5_qwen35_9b_152",
+    "v5_qwen35_9b_153",
+    "v5_qwen35_9b_154",
+    "v5_qwen35_9b_155",
+    "v5_qwen35_9b_156",
+    "v5_qwen35_9b_157",
+    "v5_qwen35_9b_158",
+    "v5_qwen35_9b_159",
+    "v5_qwen35_9b_160",
+    "v5_qwen35_9b_161",
+    "v5_qwen35_9b_162",
+    "v5_qwen35_9b_163",
+    "v5_qwen35_9b_164",
+    "v5_qwen35_9b_165",
+    "v5_qwen35_9b_166",
+    "v5_qwen35_9b_167",
+    "v5_qwen35_9b_168",
+    "v5_qwen35_9b_169",
+    "v5_qwen35_9b_170",
+    "v5_qwen35_9b_171",
+    "v5_qwen35_9b_172",
+    "v5_qwen35_9b_173",
+    "v5_qwen35_9b_174",
+    "v5_qwen35_9b_175",
+    "v5_qwen35_9b_176",
+    "v5_qwen35_9b_177",
+    "v5_qwen35_9b_178",
+    "v5_qwen35_9b_179",
+    "v5_qwen35_9b_180",
+    "v5_qwen35_9b_181",
+    "v5_qwen35_9b_182",
+    "v5_qwen35_9b_183",
+    "v5_qwen35_9b_184",
+    "v5_qwen35_9b_185",
+    "v5_qwen35_9b_186",
+    "v5_qwen35_9b_187",
+    "v5_qwen35_9b_188",
+    "v5_qwen35_9b_189",
+    "v5_qwen35_9b_190",
+    "v5_qwen35_9b_191",
+    "v5_qwen35_9b_192",
+    "v5_qwen35_9b_193",
+    "v5_qwen35_9b_194",
+    "v5_qwen35_9b_195",
+    "v5_qwen35_9b_196",
+    "v5_qwen35_9b_197",
+    "v5_qwen35_9b_198",
+    "v5_qwen35_9b_199",
+    "v5_qwen35_9b_200",
+    "v5_qwen35_9b_201",
+    "v5_qwen35_9b_202",
+    "v5_qwen35_9b_203",
+    "v5_qwen35_9b_204",
+    "v5_qwen35_9b_205",
+    "v5_qwen35_9b_206",
+    "v5_qwen35_9b_207",
+    "v5_qwen35_9b_208",
+    "v5_qwen35_9b_209",
+    "v5_qwen35_9b_210",
+    "v5_qwen35_9b_211",
+    "v5_qwen35_9b_212",
+    "v5_qwen35_9b_213",
+    "v5_qwen35_9b_214",
+    "v5_qwen35_9b_215",
+    "v5_qwen35_9b_216",
+    "v5_qwen35_9b_217",
+    "v5_qwen35_9b_218",
+    "v5_qwen35_9b_219",
+    "v5_qwen35_9b_220",
+    "v5_qwen35_9b_221",
+    "v5_qwen35_9b_222",
+    "v5_qwen35_9b_223",
+    "v5_qwen35_9b_224",
+    "v5_qwen35_9b_225",
+    "v5_qwen35_9b_226",
+    "v5_qwen35_9b_227",
+    "v5_qwen35_9b_228",
+    "v5_qwen35_9b_229",
+    "v5_qwen35_9b_230",
+    "v5_qwen35_9b_231",
+    "v5_qwen35_9b_232",
+    "v5_qwen35_9b_233",
+    "v5_qwen35_9b_234",
+    "v5_qwen35_9b_235",
+    "v5_qwen35_9b_236",
+    "v5_qwen35_9b_237",
+    "v5_qwen35_9b_238",
+    "v5_qwen35_9b_239",
+    "v5_qwen35_9b_240",
+    "v5_qwen35_9b_241",
+    "v5_qwen35_9b_242",
+    "v5_qwen35_9b_243",
+    "v5_qwen35_9b_244",
+    "v5_qwen35_9b_245",
+    "v5_qwen35_9b_246",
+    "v5_qwen35_9b_247",
+    "v5_qwen35_9b_248",
+    "v5_qwen35_9b_249",
+    "v5_qwen35_9b_250",
+    "v5_qwen35_9b_251",
+    "v5_qwen35_9b_252",
+    "v5_qwen35_9b_253",
+    "v5_qwen35_9b_254",
+    "v5_qwen35_9b_255",
+    "v5_qwen35_9b_256",
+    "v5_qwen35_9b_257",
+    "v5_qwen35_9b_258",
+    "v5_qwen35_9b_259",
+    "v5_qwen35_9b_260",
+    "v5_qwen35_9b_261",
+    "v5_qwen35_9b_262",
+    "v5_qwen35_9b_263",
+    "v5_qwen35_9b_264",
+    "v5_qwen35_9b_265",
+    "v5_qwen35_9b_266",
+    "v5_qwen35_9b_267",
+    "v5_qwen35_9b_268",
+    "v5_qwen35_9b_269",
+    "v5_qwen35_9b_270",
+    "v5_qwen35_9b_271",
+    "v5_qwen35_9b_272",
+    "v5_qwen35_9b_273",
+    "v5_qwen35_9b_274",
+    "v5_qwen35_9b_275",
+    "v5_qwen35_9b_276",
+    "v5_qwen35_9b_277",
+    "v5_qwen35_9b_278",
+    "v5_qwen35_9b_279",
+    "v5_qwen35_9b_280",
+    "v5_qwen35_9b_281",
+    "v5_qwen35_9b_282",
+    "v5_qwen35_9b_283",
+    "v5_qwen35_9b_284",
+    "v5_qwen35_9b_285",
+    "v5_qwen35_9b_286",
+    "v5_qwen35_9b_287",
+    "v5_qwen35_9b_288",
+    "v5_qwen35_9b_289",
+    "v5_qwen35_9b_290",
+    "v5_qwen35_9b_291",
+    "v5_qwen35_9b_292",
+    "v5_qwen35_9b_293",
+    "v5_qwen35_9b_294",
+    "v5_qwen35_9b_295",
+    "v5_qwen35_9b_296",
+    "v5_qwen35_9b_297",
+    "v5_qwen35_9b_298",
+    "v5_qwen35_9b_299",
+    "v5_qwen35_9b_300"
+  ],
+  "heldout_prompt_hashes": [
+    {
+      "sample_id": "v5_qwen35_9b_001",
+      "corrupt_relpath": "heldout/corrupt/001_gid1230_codecontests_java_504.txt",
+      "corrupt_prompt_sha256": "45fd103345fa69ca88d44fc024b4687015d4ff5b360e1f3e3b57817dfcc6056c"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_002",
+      "corrupt_relpath": "heldout/corrupt/002_gid2174_apps_python_493.txt",
+      "corrupt_prompt_sha256": "6eed046fde21807b8fd3333c41f4599bf0bdaa751a0574b34e50e84c88a35da8"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_003",
+      "corrupt_relpath": "heldout/corrupt/003_gid2425_codecontests_cpp_258.txt",
+      "corrupt_prompt_sha256": "f500270aae9215b2eced62e3bfc7f2d95e9ef30997c61161b2e37cc65c8a87d8"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_004",
+      "corrupt_relpath": "heldout/corrupt/004_gid385_codecontests_cpp_310.txt",
+      "corrupt_prompt_sha256": "fec2a2fb17a92ca7cb6a846b4f07e86e7eacc3e7cc6a42007df258a0c3ba3343"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_005",
+      "corrupt_relpath": "heldout/corrupt/005_gid1074_codecontests_java_364.txt",
+      "corrupt_prompt_sha256": "c8aeb3321520dee67959edbb041801de0c0ac791d2c0db1419431125795a6346"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_006",
+      "corrupt_relpath": "heldout/corrupt/006_gid1173_codecontests_java_453.txt",
+      "corrupt_prompt_sha256": "b1ea090366d59e51831b89995f4e5796ae1a9e18acf6ae203f0a9bc509c78e7f"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_007",
+      "corrupt_relpath": "heldout/corrupt/007_gid1214_codecontests_java_490.txt",
+      "corrupt_prompt_sha256": "d0b33df4de8e41091222bbe06fff5a5efc5094c0d795294058886b6cb14c6362"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_008",
+      "corrupt_relpath": "heldout/corrupt/008_gid1253_codecontests_java_525.txt",
+      "corrupt_prompt_sha256": "ab637f997777c16b672849bc7658aa1a6d853e2baf2bfdd6cfd318af47552e3e"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_009",
+      "corrupt_relpath": "heldout/corrupt/009_gid1453_humaneval_python_139.txt",
+      "corrupt_prompt_sha256": "0bf125472bd6c03ced45293bf513ab3e91243f739a3fc1a990a142203589ce1b"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_010",
+      "corrupt_relpath": "heldout/corrupt/010_gid1530_humaneval_python_60.txt",
+      "corrupt_prompt_sha256": "4b76ba9b332f8e71b6f451b5863eab3f614a849f08fc8779c6efd70bff17a827"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_011",
+      "corrupt_relpath": "heldout/corrupt/011_gid1950_mbpp_python_54.txt",
+      "corrupt_prompt_sha256": "f098ef88b0c7280b3750b31dd6a966fce56654fff964463569fecccfb0b07bcd"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_012",
+      "corrupt_relpath": "heldout/corrupt/012_gid2324_apps_python_676.txt",
+      "corrupt_prompt_sha256": "8dfd783ec4cb7240b27496557b06b37099e00b74bde708a054eca8e5f779bd0a"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_013",
+      "corrupt_relpath": "heldout/corrupt/013_gid2352_apps_python_83.txt",
+      "corrupt_prompt_sha256": "9a0cc469257c52e87b0268e2ce4f2b158abd0c21cb89ea2af945411bb9844439"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_014",
+      "corrupt_relpath": "heldout/corrupt/014_gid2589_mbpp_python_52.txt",
+      "corrupt_prompt_sha256": "1205eb988338cc0f3d6ac4208cf1ca309a4ae03438db478ab1ceea23ac5b733a"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_015",
+      "corrupt_relpath": "heldout/corrupt/015_gid425_codecontests_cpp_347.txt",
+      "corrupt_prompt_sha256": "18817fafecf1ff3a57c5753e6d8e0c97c4a6742f08ca08e2bcd0c02d638cce34"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_016",
+      "corrupt_relpath": "heldout/corrupt/016_gid825_codecontests_java_14.txt",
+      "corrupt_prompt_sha256": "67a6ac42561423aa6478090d55d449630b50fc134b7066cd140e56abaeb044d0"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_017",
+      "corrupt_relpath": "heldout/corrupt/017_gid915_codecontests_java_220.txt",
+      "corrupt_prompt_sha256": "7fee79af9263e78feec41b07bdea1007a3d34d7f5a5ae02ae64d7f7a755d07df"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_018",
+      "corrupt_relpath": "heldout/corrupt/018_gid983_codecontests_java_282.txt",
+      "corrupt_prompt_sha256": "f26bfdb3a56594161ca48e5957f3405064bbb9b59cb77de4f402bcacc0084c46"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_019",
+      "corrupt_relpath": "heldout/corrupt/019_gid1163_codecontests_java_444.txt",
+      "corrupt_prompt_sha256": "67b7950657e7e739044e751df49498a277424420ae9416df0d5e40ff7c17971f"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_020",
+      "corrupt_relpath": "heldout/corrupt/020_gid1175_codecontests_java_455.txt",
+      "corrupt_prompt_sha256": "f57daad6e06fe49330c35d9b6647bee7e998ee615cd938c359193893479a3113"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_021",
+      "corrupt_relpath": "heldout/corrupt/021_gid1190_codecontests_java_469.txt",
+      "corrupt_prompt_sha256": "f4445c6f255352f8325879fecb6ff6a420ae34f0186acd2da25a278dacd4443f"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_022",
+      "corrupt_relpath": "heldout/corrupt/022_gid11_apps_python_109.txt",
+      "corrupt_prompt_sha256": "8095c27dc4a6491ab38b476b64c72df5872eaf4113d2bf9523b74a300e63aefa"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_023",
+      "corrupt_relpath": "heldout/corrupt/023_gid1248_codecontests_java_520.txt",
+      "corrupt_prompt_sha256": "2ebef1e1bf8ca1a3380d7a168dd0a35623c6fed2dee91f7d446f5eeb2e39b03f"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_024",
+      "corrupt_relpath": "heldout/corrupt/024_gid1319_codecontests_java_585.txt",
+      "corrupt_prompt_sha256": "a30aec3472b887ec272a54b390bc66636056a1ebebc589e5e542f5ea5f8b94f5"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_025",
+      "corrupt_relpath": "heldout/corrupt/025_gid1359_codecontests_java_620.txt",
+      "corrupt_prompt_sha256": "70045a6e246e4b82ee64fd264237b1e348bb1abe25e15e2baa1be9228ed6fd21"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_026",
+      "corrupt_relpath": "heldout/corrupt/026_gid1470_humaneval_python_154.txt",
+      "corrupt_prompt_sha256": "981aa1249029299bf0ebd744aade9f4fd6c4c63ca0ed4328687f91b5d67b4a7c"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_027",
+      "corrupt_relpath": "heldout/corrupt/027_gid2042_apps_python_203.txt",
+      "corrupt_prompt_sha256": "5008e4435c8f31498f2f45db8f522b6959446e665eb5c7afc05336fa28bbe0f2"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_028",
+      "corrupt_relpath": "heldout/corrupt/028_gid2191_apps_python_512.txt",
+      "corrupt_prompt_sha256": "2be88248b03e4954f061ee60bb51e890e6b0173eda9902ffa7d9dad82fbc37ec"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_029",
+      "corrupt_relpath": "heldout/corrupt/029_gid2208_apps_python_538.txt",
+      "corrupt_prompt_sha256": "8d8c51d5501c6ac7624d56f39f2cc2f4b1bdfae5562617da4892d76ec1468668"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_030",
+      "corrupt_relpath": "heldout/corrupt/030_gid2282_apps_python_626.txt",
+      "corrupt_prompt_sha256": "2668e9e56429dfd81217aefbbb16eb1e7524a43ee59130ebd26fc486cc4c3079"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_031",
+      "corrupt_relpath": "heldout/corrupt/031_gid2290_apps_python_635.txt",
+      "corrupt_prompt_sha256": "1d88901aa7c52db9b052c53110ff2c4f0a115154353c6a5e9cf0f64ee44c4fd4"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_032",
+      "corrupt_relpath": "heldout/corrupt/032_gid2294_apps_python_640.txt",
+      "corrupt_prompt_sha256": "4039c32ae3339a7f8af20e320a3b98eba03f34bdcc0277854d6d617b644546cc"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_033",
+      "corrupt_relpath": "heldout/corrupt/033_gid2303_apps_python_651.txt",
+      "corrupt_prompt_sha256": "417bd87fea7f2a5ca72dac517c2d667ddb0fc03ee77ec77e0b4dd2e21d4d0ffa"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_034",
+      "corrupt_relpath": "heldout/corrupt/034_gid2309_apps_python_657.txt",
+      "corrupt_prompt_sha256": "d1d89a7bfdd2e9b622f3cacd65a00b5f11b818cdad0c960468fa3cdf2b5c61df"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_035",
+      "corrupt_relpath": "heldout/corrupt/035_gid2331_apps_python_685.txt",
+      "corrupt_prompt_sha256": "25c9fccf9ac071decffb83194d8c03068c4a4e191b6151cfba1ede275122f30f"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_036",
+      "corrupt_relpath": "heldout/corrupt/036_gid2350_apps_python_78.txt",
+      "corrupt_prompt_sha256": "b12bae7517907dcc086332100429fd441e5c29b262f612b59fd2cb5661c7363f"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_037",
+      "corrupt_relpath": "heldout/corrupt/037_gid806_codecontests_java_122.txt",
+      "corrupt_prompt_sha256": "bf64a99632e674225dafca586f65601dfaedc3238337afb7cf6f61c559eade25"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_038",
+      "corrupt_relpath": "heldout/corrupt/038_gid84_apps_python_4.txt",
+      "corrupt_prompt_sha256": "354d1b88926e6ce6f498668e5460fdd2930aa2904729840970090ce614ba4093"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_039",
+      "corrupt_relpath": "heldout/corrupt/039_gid877_codecontests_java_187.txt",
+      "corrupt_prompt_sha256": "95692532be207ed19a5ae7c046506aea4434516745bd307a9acd131a4e3217e6"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_040",
+      "corrupt_relpath": "heldout/corrupt/040_gid91_apps_python_46.txt",
+      "corrupt_prompt_sha256": "46813e5d926d357da15abf322a3ddf76f693573f538566b9af2ca0e16d97bcc9"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_041",
+      "corrupt_relpath": "heldout/corrupt/041_gid929_codecontests_java_233.txt",
+      "corrupt_prompt_sha256": "0c3bdbfeb3af1c4e2f4f2c9d5aeb94a3c10059fee3179665f9d427b939a7620a"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_042",
+      "corrupt_relpath": "heldout/corrupt/042_gid1001_codecontests_java_299.txt",
+      "corrupt_prompt_sha256": "b2369a286e4a9623200d7203139b9207335b36d8a9b664044835282e17f95ddd"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_043",
+      "corrupt_relpath": "heldout/corrupt/043_gid1050_codecontests_java_342.txt",
+      "corrupt_prompt_sha256": "314e0371308934732f655cc53efef4cfe18aab36f0e674d61d335ec37dde723e"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_044",
+      "corrupt_relpath": "heldout/corrupt/044_gid1222_codecontests_java_498.txt",
+      "corrupt_prompt_sha256": "c13a2bacb918253b4fc7ede95e9aa8fb05ace4890bf86b934e992df7f683c35e"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_045",
+      "corrupt_relpath": "heldout/corrupt/045_gid1339_codecontests_java_602.txt",
+      "corrupt_prompt_sha256": "95975fd938d7e318d300f001db6f6b96d95504626908d589a473f9f63b871309"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_046",
+      "corrupt_relpath": "heldout/corrupt/046_gid1351_codecontests_java_613.txt",
+      "corrupt_prompt_sha256": "4913c9940d047156414fea6cee7383afae5bd30036844ed2f57e764761185364"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_047",
+      "corrupt_relpath": "heldout/corrupt/047_gid1401_codecontests_java_92.txt",
+      "corrupt_prompt_sha256": "f5ca5346181843f24b710c2590325cfdab9a8a19e408b0590d95f44c39b533c0"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_048",
+      "corrupt_relpath": "heldout/corrupt/048_gid147_apps_python_97.txt",
+      "corrupt_prompt_sha256": "8c27a36ed46275cb28e4185c1dbe0616050a9dd33b6d4cb9ad49be474c806ae4"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_049",
+      "corrupt_relpath": "heldout/corrupt/049_gid1588_mbpp_python_112.txt",
+      "corrupt_prompt_sha256": "4fb0a3d7bd9bbc7b18d28e07c516e43b6d23643aa57a095d128c71f4411043f5"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_050",
+      "corrupt_relpath": "heldout/corrupt/050_gid2014_apps_python_135.txt",
+      "corrupt_prompt_sha256": "84ec032a01ffeabaae187d8948bf904b4a26034e271dc8d017d48c20ecba0afe"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_051",
+      "corrupt_relpath": "heldout/corrupt/051_gid2175_apps_python_494.txt",
+      "corrupt_prompt_sha256": "bff70fcd979e4d1e9ea248246ef63bf36fbc01653325e4a2179bdf19212f4f40"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_052",
+      "corrupt_relpath": "heldout/corrupt/052_gid2195_apps_python_517.txt",
+      "corrupt_prompt_sha256": "549fe84d92b0ce9359c3ddcafbafcfe50a3f6e1a9132bb68be57e5350665d219"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_053",
+      "corrupt_relpath": "heldout/corrupt/053_gid2231_apps_python_566.txt",
+      "corrupt_prompt_sha256": "2fe73e81c95df4c5133e8ec4201a4951898f4191d1cc11928edce280ec0d9003"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_054",
+      "corrupt_relpath": "heldout/corrupt/054_gid2328_apps_python_682.txt",
+      "corrupt_prompt_sha256": "8e7b262df80779b4a8f21ddc5e5cad0b124f2fd96bfe8c5a8967c4ba32830fac"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_055",
+      "corrupt_relpath": "heldout/corrupt/055_gid2340_apps_python_696.txt",
+      "corrupt_prompt_sha256": "d063b85f2614a8dc39f0eae6dc4f3ab0fd7db06e0b32790e8ef81414a11b4f82"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_056",
+      "corrupt_relpath": "heldout/corrupt/056_gid2563_mbpp_python_169.txt",
+      "corrupt_prompt_sha256": "adca00d16dbf3f44758abe1c47121ebc9b7c13981a1e42014470df6a7754bbb0"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_057",
+      "corrupt_relpath": "heldout/corrupt/057_gid25_apps_python_121.txt",
+      "corrupt_prompt_sha256": "a24873d571521ee3e0df1813e7fb4a77e0e2e2cb5bab18fd70d65135aa523d38"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_058",
+      "corrupt_relpath": "heldout/corrupt/058_gid823_codecontests_java_138.txt",
+      "corrupt_prompt_sha256": "e090fea8c51a448a82048c7e71212a9bd68b739021454e322400d4ca167933b5"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_059",
+      "corrupt_relpath": "heldout/corrupt/059_gid886_codecontests_java_195.txt",
+      "corrupt_prompt_sha256": "b313f888a4aecbae0d3d6472ca74d2e4f6c7818eaabe7889937ce5c791b97686"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_060",
+      "corrupt_relpath": "heldout/corrupt/060_gid891_codecontests_java_2.txt",
+      "corrupt_prompt_sha256": "1b324350698777f425c0e606f74744df1bca70080d7e08a41ee076e55a99bfa0"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_061",
+      "corrupt_relpath": "heldout/corrupt/061_gid1067_codecontests_java_358.txt",
+      "corrupt_prompt_sha256": "6056ee6595fd4092dfb1376bfa1d0cc48f3706604984fe0c035c5d3fadfe9f0e"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_062",
+      "corrupt_relpath": "heldout/corrupt/062_gid1122_codecontests_java_407.txt",
+      "corrupt_prompt_sha256": "64d51f52b4ba25c696d8aa46f433c614b5aa1817fd7a8ecba600342a5a32764d"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_063",
+      "corrupt_relpath": "heldout/corrupt/063_gid1133_codecontests_java_417.txt",
+      "corrupt_prompt_sha256": "045408382dcbc23352f15cb4fe0b92d07a697fb4c2e0ef8843d5d0cdb2c1bd05"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_064",
+      "corrupt_relpath": "heldout/corrupt/064_gid1159_codecontests_java_440.txt",
+      "corrupt_prompt_sha256": "d0034ee9de9772444df18756290873e7e0a21559b8f3f6288762774773edaf23"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_065",
+      "corrupt_relpath": "heldout/corrupt/065_gid1304_codecontests_java_571.txt",
+      "corrupt_prompt_sha256": "4a536aa7c3684d61a2d61a1ac1042aa962797fd7a480660baa96a150e5fbeda0"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_066",
+      "corrupt_relpath": "heldout/corrupt/066_gid1380_codecontests_java_73.txt",
+      "corrupt_prompt_sha256": "b8dd2c5a15ee9b83bd7664519f297166bdfd5168539e382ec9a72210df47e25c"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_067",
+      "corrupt_relpath": "heldout/corrupt/067_gid1573_mbpp_python_1.txt",
+      "corrupt_prompt_sha256": "ff6fd100fe892e2b4eb56d764c7d424d802d105d767d61e1664049bcba4c501e"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_068",
+      "corrupt_relpath": "heldout/corrupt/068_gid2024_apps_python_160.txt",
+      "corrupt_prompt_sha256": "f25704dc232c49b92336f5081990d45b191e079bf642f417b8c14ce73f9e13cb"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_069",
+      "corrupt_relpath": "heldout/corrupt/069_gid2033_apps_python_186.txt",
+      "corrupt_prompt_sha256": "06fe1ffada110d5fbeff266ca6a93488b3c8c5deb9be6f77642462a9048c4172"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_070",
+      "corrupt_relpath": "heldout/corrupt/070_gid2367_codecontests_cpp_130.txt",
+      "corrupt_prompt_sha256": "d45e1a30feb2c3314947d52e80c5f8ee9cc48036f853834ad91a9613540d2efa"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_071",
+      "corrupt_relpath": "heldout/corrupt/071_gid331_codecontests_cpp_262.txt",
+      "corrupt_prompt_sha256": "7492338d8497980d639e5a74d971306e4be4d23d89dec5e6b6be57aa68c7884b"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_072",
+      "corrupt_relpath": "heldout/corrupt/072_gid334_codecontests_cpp_265.txt",
+      "corrupt_prompt_sha256": "c4238f04cefb4d225d28538a52fcbdf7b188e38f967fd562e213ad50075dc729"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_073",
+      "corrupt_relpath": "heldout/corrupt/073_gid344_codecontests_cpp_274.txt",
+      "corrupt_prompt_sha256": "80ae6d8d9b38c63c95e3d8565e6a70e6fdec000039ced2794144b094e8d86333"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_074",
+      "corrupt_relpath": "heldout/corrupt/074_gid440_codecontests_cpp_360.txt",
+      "corrupt_prompt_sha256": "7f8c16e243a16035266b74fc5eb8903f8809fa3ab04b393f85eb94d92df40e0c"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_075",
+      "corrupt_relpath": "heldout/corrupt/075_gid4_apps_python_102.txt",
+      "corrupt_prompt_sha256": "fbe822be941f8685339f073b3787d3f744a5e6f62a5c4605e5199d1e0d97918d"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_076",
+      "corrupt_relpath": "heldout/corrupt/076_gid803_codecontests_java_12.txt",
+      "corrupt_prompt_sha256": "69a506e46eaa487dc906e9f73413ecbaeaef9fb816559b3f5513a8849e2ab068"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_077",
+      "corrupt_relpath": "heldout/corrupt/077_gid80_apps_python_36.txt",
+      "corrupt_prompt_sha256": "1a007caa14a2c011fce0bbfe769535ebd30af0c4f54f93b4609efbe2b572a100"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_078",
+      "corrupt_relpath": "heldout/corrupt/078_gid894_codecontests_java_201.txt",
+      "corrupt_prompt_sha256": "8d74865e5d6a188020cd9537fefd74a867935a80e7e94d2861a683ddc6ed499f"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_079",
+      "corrupt_relpath": "heldout/corrupt/079_gid1007_codecontests_java_303.txt",
+      "corrupt_prompt_sha256": "7267683b313ee39de884beee50c23ca3703a23110c550392d528134e0d1fedd0"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_080",
+      "corrupt_relpath": "heldout/corrupt/080_gid1031_codecontests_java_325.txt",
+      "corrupt_prompt_sha256": "3b6ee8870388a0f8e0a279d28988424062695d53e85fc0875d6ac79789f4d831"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_081",
+      "corrupt_relpath": "heldout/corrupt/081_gid1033_codecontests_java_327.txt",
+      "corrupt_prompt_sha256": "21a65c15129648a4e65acaff445f2a76a1616431184804c19b01c1b2aeec93c5"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_082",
+      "corrupt_relpath": "heldout/corrupt/082_gid1116_codecontests_java_401.txt",
+      "corrupt_prompt_sha256": "b5e7481ebccdacc08b068f44fe56525428442e65a2fdb7c6738c46b8ef1c62df"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_083",
+      "corrupt_relpath": "heldout/corrupt/083_gid1185_codecontests_java_464.txt",
+      "corrupt_prompt_sha256": "971cb1c374e1610b7fd875c5c0a449581c2780340c6bd04a5416011639f6225b"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_084",
+      "corrupt_relpath": "heldout/corrupt/084_gid1205_codecontests_java_482.txt",
+      "corrupt_prompt_sha256": "b42641a71d805544a2c507db0dd23b52f729fe472a8e4a108732ffa23556a699"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_085",
+      "corrupt_relpath": "heldout/corrupt/085_gid1357_codecontests_java_619.txt",
+      "corrupt_prompt_sha256": "fb3f4650e1b276b63e179e1573d1d988bf3ed9eae1382296ad824e0c75596c97"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_086",
+      "corrupt_relpath": "heldout/corrupt/086_gid135_apps_python_86.txt",
+      "corrupt_prompt_sha256": "d2b0001e655c098eafac561fb40ca055f3eef0c68113990e6599d64b5ea6222d"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_087",
+      "corrupt_relpath": "heldout/corrupt/087_gid1424_humaneval_python_112.txt",
+      "corrupt_prompt_sha256": "c62a00eed629305f7ab77101f180d55f13dbab1a3b49d58e6e270475fbeb9dc2"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_088",
+      "corrupt_relpath": "heldout/corrupt/088_gid1434_humaneval_python_121.txt",
+      "corrupt_prompt_sha256": "a7c3b6646426793b49721931f5dfcad117e11c622b39fa7b8851cbfa3aac9afe"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_089",
+      "corrupt_relpath": "heldout/corrupt/089_gid1478_humaneval_python_161.txt",
+      "corrupt_prompt_sha256": "0d38c6cb539d7e761283d6a29e0c51d3a5940ef101e288ab078f3ac564fe5790"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_090",
+      "corrupt_relpath": "heldout/corrupt/090_gid1775_mbpp_python_281.txt",
+      "corrupt_prompt_sha256": "84b83f9205a96a3e923542fa170a252357cc469f2c5b7926ad6914d215e74db3"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_091",
+      "corrupt_relpath": "heldout/corrupt/091_gid1818_mbpp_python_32.txt",
+      "corrupt_prompt_sha256": "732bca02b68a769f9c99cf7a2958c34bac863d330db957a6b51dd69b561ab057"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_092",
+      "corrupt_relpath": "heldout/corrupt/092_gid2010_apps_python_130.txt",
+      "corrupt_prompt_sha256": "f3d091275146ccb6e14550d9e62afc4fb978460e03ef423ebcb3d7acc1d66e22"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_093",
+      "corrupt_relpath": "heldout/corrupt/093_gid2086_apps_python_322.txt",
+      "corrupt_prompt_sha256": "b55e184d908a3b2f3b06b7901861ae6ffc87c66619867ddd28aeef44b50bc0ca"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_094",
+      "corrupt_relpath": "heldout/corrupt/094_gid2101_apps_python_38.txt",
+      "corrupt_prompt_sha256": "a1c1cbc184b4bc34fc126d3431a4811ad284742b7b7496047af7a1984161f7ae"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_095",
+      "corrupt_relpath": "heldout/corrupt/095_gid2128_apps_python_433.txt",
+      "corrupt_prompt_sha256": "adbb6140a2bb6ab6dee82d6146914278b12a9eb03411b3b205c95116bd9c3a03"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_096",
+      "corrupt_relpath": "heldout/corrupt/096_gid2165_apps_python_480.txt",
+      "corrupt_prompt_sha256": "51b1e43193232541ea61aaf455896503c589d2a8b5572391c101065984399d0a"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_097",
+      "corrupt_relpath": "heldout/corrupt/097_gid2228_apps_python_563.txt",
+      "corrupt_prompt_sha256": "641f5671f950d45108dc7ebd733bcd51bbe320b0c55e500ee2af1c6089018550"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_098",
+      "corrupt_relpath": "heldout/corrupt/098_gid2333_apps_python_688.txt",
+      "corrupt_prompt_sha256": "3cd0d1069ece14023ff206a0511b37455adabe0d4a1a5b8eff16c7a7a41e2e74"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_099",
+      "corrupt_relpath": "heldout/corrupt/099_gid746_codecontests_cpp_69.txt",
+      "corrupt_prompt_sha256": "95f4f3f31ec4efb614da2aeac3b90bbada173142085de2f4337724b21354dbe9"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_100",
+      "corrupt_relpath": "heldout/corrupt/100_gid800_codecontests_java_117.txt",
+      "corrupt_prompt_sha256": "ada09e00cfdb7a53d5fb5ec36a69fcfcbec66ebccfd414829a1dbe1170d0a06d"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_101",
+      "corrupt_relpath": "heldout/corrupt/101_gid828_codecontests_java_142.txt",
+      "corrupt_prompt_sha256": "09ad69079d5b9f18bff93ecec5d74e5e934103487add33be24ba16ba7a1629a1"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_102",
+      "corrupt_relpath": "heldout/corrupt/102_gid844_codecontests_java_157.txt",
+      "corrupt_prompt_sha256": "b5f5c24166c716b47ebc5f9a7d7c0a23de8c27f59f368e86d03e77222f44121b"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_103",
+      "corrupt_relpath": "heldout/corrupt/103_gid857_codecontests_java_169.txt",
+      "corrupt_prompt_sha256": "c39983ab291033a65550012924b3c803b2b070595fca4a9f0ff0cdcefd9c8a48"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_104",
+      "corrupt_relpath": "heldout/corrupt/104_gid961_codecontests_java_262.txt",
+      "corrupt_prompt_sha256": "8b0c2061b3680f8d91554d8dacaa14580b222624e445eb25a67ecb9d0240c639"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_105",
+      "corrupt_relpath": "heldout/corrupt/105_gid1826_mbpp_python_327.txt",
+      "corrupt_prompt_sha256": "6ef85389091ec0d286eb5941f1949e8a1a5140c54c533804ea4bcbfa37655e9f"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_106",
+      "corrupt_relpath": "heldout/corrupt/106_gid1128_codecontests_java_412.txt",
+      "corrupt_prompt_sha256": "3dbc30f8fd51434b3ac97d135e143f8ddc3890ce8f928a6d98cdd9d842f46ab7"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_107",
+      "corrupt_relpath": "heldout/corrupt/107_gid130_apps_python_81.txt",
+      "corrupt_prompt_sha256": "8b6c591ec9324d084c8c1101d2d6f22dfcd31b22b68f2456485cdb4f35c712bd"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_108",
+      "corrupt_relpath": "heldout/corrupt/108_gid1313_codecontests_java_58.txt",
+      "corrupt_prompt_sha256": "9e0f171e4a5ef022117acadc651f309b6acd19cf0114385c07accad94f50de40"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_109",
+      "corrupt_relpath": "heldout/corrupt/109_gid1314_codecontests_java_580.txt",
+      "corrupt_prompt_sha256": "804bd49c0c31dcc6175bde4005025400e687a9c5e68bd6d78648adb5dae9d13f"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_110",
+      "corrupt_relpath": "heldout/corrupt/110_gid1651_mbpp_python_17.txt",
+      "corrupt_prompt_sha256": "2d6ed651b368b21b477b3b89048864b0ccdabf4f5646210e8fc4cc6fb5c675d5"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_111",
+      "corrupt_relpath": "heldout/corrupt/111_gid2026_apps_python_168.txt",
+      "corrupt_prompt_sha256": "1dfb035e8838f909acaaa289ddf54836610163a0955d6e96aca24606cdf27f6a"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_112",
+      "corrupt_relpath": "heldout/corrupt/112_gid2156_apps_python_47.txt",
+      "corrupt_prompt_sha256": "ef36d0e245e78006c0377255f57615eb637174c3076d5ce7a6124530528a0394"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_113",
+      "corrupt_relpath": "heldout/corrupt/113_gid2180_apps_python_5.txt",
+      "corrupt_prompt_sha256": "ecef5eaab75d80f12401e6f0596ca0969b4fe2aeb887774cf951b76d3f201cf4"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_114",
+      "corrupt_relpath": "heldout/corrupt/114_gid2276_apps_python_62.txt",
+      "corrupt_prompt_sha256": "86af8acbdaad7ad1e6988e1135c6e0875d770c773e05c641aebb0869af1d25f5"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_115",
+      "corrupt_relpath": "heldout/corrupt/115_gid2337_apps_python_693.txt",
+      "corrupt_prompt_sha256": "ad7010d6f5a19b193a4c4ead9892b7fa876d2bdc02672e3e0fcea1e1c3edc833"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_116",
+      "corrupt_relpath": "heldout/corrupt/116_gid2559_mbpp_python_131.txt",
+      "corrupt_prompt_sha256": "04c3b6019f450eb093cb11e44145872e1866edada12c7e191966f927e8cf64ed"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_117",
+      "corrupt_relpath": "heldout/corrupt/117_gid498_codecontests_cpp_412.txt",
+      "corrupt_prompt_sha256": "0c1b4b769259e92ae5211f80dc07c6fc03b56cf7a67da17573a5049529bfdfa2"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_118",
+      "corrupt_relpath": "heldout/corrupt/118_gid871_codecontests_java_181.txt",
+      "corrupt_prompt_sha256": "dc08ea5922e5fb657c676455b2f25826f59c55774b73c01cf12dbf17ff292a6b"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_119",
+      "corrupt_relpath": "heldout/corrupt/119_gid922_codecontests_java_227.txt",
+      "corrupt_prompt_sha256": "02dfbc90084a7e8c286d5a45d199d5e60ec89631bd14947330a8626f20518dcc"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_120",
+      "corrupt_relpath": "heldout/corrupt/120_gid965_codecontests_java_266.txt",
+      "corrupt_prompt_sha256": "12afbbc530c8a081047c9a8294a7fe65b7f95827e6ed0d653323a8282fa1027c"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_121",
+      "corrupt_relpath": "heldout/corrupt/121_gid1108_codecontests_java_395.txt",
+      "corrupt_prompt_sha256": "cf2fcceda7e3c87e1f2d3056f67e910516bd04bdaf9093839a2f39c63dc05b5d"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_122",
+      "corrupt_relpath": "heldout/corrupt/122_gid1206_codecontests_java_483.txt",
+      "corrupt_prompt_sha256": "a26716183e01b889dbb5f16a3f296e5cdab73e80214054906ee838573052d0ef"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_123",
+      "corrupt_relpath": "heldout/corrupt/123_gid1257_codecontests_java_529.txt",
+      "corrupt_prompt_sha256": "5dc7f5e624dffdfeb2151a2a233995ee73d19b4f31ea36b7bb093a5256c22c81"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_124",
+      "corrupt_relpath": "heldout/corrupt/124_gid1312_codecontests_java_579.txt",
+      "corrupt_prompt_sha256": "1dac90d9f3cc6985e6e8b30f444e1b4211eaade7507850c83f06c0eb8c5b6880"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_125",
+      "corrupt_relpath": "heldout/corrupt/125_gid1321_codecontests_java_587.txt",
+      "corrupt_prompt_sha256": "64ea066715acbad8f683ae42912d44618ccf7d024858f0865165ba0d235b92cd"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_126",
+      "corrupt_relpath": "heldout/corrupt/126_gid1369_codecontests_java_63.txt",
+      "corrupt_prompt_sha256": "15ce03a26b5243c4e6d49bbb3672eeaa4cc8ed6ff49aecf8575c59de1e395dc8"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_127",
+      "corrupt_relpath": "heldout/corrupt/127_gid1467_humaneval_python_151.txt",
+      "corrupt_prompt_sha256": "adcbf800250cb5d1041a3bb5eee458a1efde114cad8c575034202cb1a25d6f08"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_128",
+      "corrupt_relpath": "heldout/corrupt/128_gid2057_apps_python_24.txt",
+      "corrupt_prompt_sha256": "91d455b6ff49ac9523e94e37881b17256d842f5e9fa858152a33a3bc19eeb094"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_129",
+      "corrupt_relpath": "heldout/corrupt/129_gid2184_apps_python_504.txt",
+      "corrupt_prompt_sha256": "d954e3f32d0f287553896e25e8292bedb24bcf2b3ba6da0847846f93200e7965"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_130",
+      "corrupt_relpath": "heldout/corrupt/130_gid2238_apps_python_576.txt",
+      "corrupt_prompt_sha256": "86cf3a68a9094dcc342c2ce714421a00f4b913cc1af068208c6783a9941b8a6b"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_131",
+      "corrupt_relpath": "heldout/corrupt/131_gid2346_apps_python_72.txt",
+      "corrupt_prompt_sha256": "338bbd90b479cdbe3505d036a605ec6eef9364bba4211bb55ce495b38c67b52e"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_132",
+      "corrupt_relpath": "heldout/corrupt/132_gid2501_codecontests_cpp_424.txt",
+      "corrupt_prompt_sha256": "026973d56b9d259c045542b444572b0b6b5679322aca9f6a06411bedab84cab9"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_133",
+      "corrupt_relpath": "heldout/corrupt/133_gid328_codecontests_cpp_26.txt",
+      "corrupt_prompt_sha256": "2e651db8c1163235ce0534345dd3934e0dd01e66e96401a187fe36f8a6fd4ae7"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_134",
+      "corrupt_relpath": "heldout/corrupt/134_gid342_codecontests_cpp_272.txt",
+      "corrupt_prompt_sha256": "58cd6db5a441de3e952fd5be62db923536ce8fc8388500f5652562757660c181"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_135",
+      "corrupt_relpath": "heldout/corrupt/135_gid418_codecontests_cpp_340.txt",
+      "corrupt_prompt_sha256": "d4dd7c20e175ae7bb9bcc17b7d6273d63a4f76b143ad8ed8c5a3df95c316b916"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_136",
+      "corrupt_relpath": "heldout/corrupt/136_gid441_codecontests_cpp_361.txt",
+      "corrupt_prompt_sha256": "c6daec12a36925409d1773e6981ee67be1dc3277e25bb29468ddf1a642655f66"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_137",
+      "corrupt_relpath": "heldout/corrupt/137_gid539_codecontests_cpp_45.txt",
+      "corrupt_prompt_sha256": "0e7679c196279ee49852d3109bb820f4eef4b59c397bbd633d1b57343204fb0a"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_138",
+      "corrupt_relpath": "heldout/corrupt/138_gid541_codecontests_cpp_451.txt",
+      "corrupt_prompt_sha256": "069f3e7593d7485338810e835fd90f69c4d93dc70e4a1d5207777461011f8069"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_139",
+      "corrupt_relpath": "heldout/corrupt/139_gid633_codecontests_cpp_534.txt",
+      "corrupt_prompt_sha256": "63ae039e33d8b1ef1cc499cea57457330972a4b5f3ddd62574ecdaf85951cbd2"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_140",
+      "corrupt_relpath": "heldout/corrupt/140_gid668_codecontests_cpp_566.txt",
+      "corrupt_prompt_sha256": "924374141388357dfd6d7b1049a5f88f3afb2814f8d924fd4aebff6dbdf45123"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_141",
+      "corrupt_relpath": "heldout/corrupt/141_gid824_codecontests_java_139.txt",
+      "corrupt_prompt_sha256": "0aef47697c1f6c93ad43f64a482e34bc39362a807c7f62181ded52917f9a1fed"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_142",
+      "corrupt_relpath": "heldout/corrupt/142_gid845_codecontests_java_158.txt",
+      "corrupt_prompt_sha256": "df8504f47fd01ddb5f5e2efb6815213026d8c2aa713f4fd68fd2774d5d4aadd0"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_143",
+      "corrupt_relpath": "heldout/corrupt/143_gid920_codecontests_java_225.txt",
+      "corrupt_prompt_sha256": "6bf6d085eb420d3009e97204b8f02d13a334e927793978e5309eabcceefa972c"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_144",
+      "corrupt_relpath": "heldout/corrupt/144_gid962_codecontests_java_263.txt",
+      "corrupt_prompt_sha256": "17e0bf23b0ce75d96d9bfff7a0d945c5ed1ecdff211750a7e40acb43636ea677"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_145",
+      "corrupt_relpath": "heldout/corrupt/145_gid1043_codecontests_java_336.txt",
+      "corrupt_prompt_sha256": "ef4433d4c544045485d9cf39032dd1f288673b7953b4b52508b1320aca93b264"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_146",
+      "corrupt_relpath": "heldout/corrupt/146_gid1045_codecontests_java_338.txt",
+      "corrupt_prompt_sha256": "784e7acc2c803b2f9df02748fc9c0cf59d59626ba2eb15ba924352f36acf4f2e"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_147",
+      "corrupt_relpath": "heldout/corrupt/147_gid1134_codecontests_java_418.txt",
+      "corrupt_prompt_sha256": "efab6f9ac1a1b07f79ba01d3e05d1328a3469ab5c1a1678bcb3a8160b9ca8ed8"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_148",
+      "corrupt_relpath": "heldout/corrupt/148_gid1264_codecontests_java_535.txt",
+      "corrupt_prompt_sha256": "1e74d1abafd8f513c740c6c087071265b8914fcc6d5bf3153c8a842f70ebaa70"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_149",
+      "corrupt_relpath": "heldout/corrupt/149_gid1874_mbpp_python_370.txt",
+      "corrupt_prompt_sha256": "c94d70c7960e5c93657825210aec4b81b10a0ae8c68300c795494f803d4af34d"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_150",
+      "corrupt_relpath": "heldout/corrupt/150_gid2049_apps_python_222.txt",
+      "corrupt_prompt_sha256": "8cd8fad20eff9303eaed4a48b505e5aef7a5f58b4e7fba98922c98a7bac1c9d3"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_151",
+      "corrupt_relpath": "heldout/corrupt/151_gid2160_apps_python_475.txt",
+      "corrupt_prompt_sha256": "0b6a2982848d3a032cfe6cb872451f58449731e463bec013129d0c040e149b68"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_152",
+      "corrupt_relpath": "heldout/corrupt/152_gid2224_apps_python_56.txt",
+      "corrupt_prompt_sha256": "9c7e44687d050a2b525bacf82c69f1f9b3d4b4c3b26a2a0092f1b70da450179e"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_153",
+      "corrupt_relpath": "heldout/corrupt/153_gid2237_apps_python_573.txt",
+      "corrupt_prompt_sha256": "f16a6b2263e43c630d1f6f7e9358be3c8999526a00b40066a4f1f4ee4022ca36"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_154",
+      "corrupt_relpath": "heldout/corrupt/154_gid2288_apps_python_633.txt",
+      "corrupt_prompt_sha256": "49af710855b742b787e78ecc009b7a4ac6fc19a9ccd0a1edc6751e1918993d2a"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_155",
+      "corrupt_relpath": "heldout/corrupt/155_gid2296_apps_python_642.txt",
+      "corrupt_prompt_sha256": "aba9b53e2a799896e1e0d550ad2ea7c4f6c0c7ddeeab7f6517c5b79b1253a4de"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_156",
+      "corrupt_relpath": "heldout/corrupt/156_gid2401_codecontests_cpp_202.txt",
+      "corrupt_prompt_sha256": "b70fbe64ea96458fb64d35bcef2d874fda19607e9118e10984366738a6a19d96"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_157",
+      "corrupt_relpath": "heldout/corrupt/157_gid2561_mbpp_python_157.txt",
+      "corrupt_prompt_sha256": "29e58cae2805a692119e0d0e41d55a9e39275e0d07a6a196ba5d59db889c2566"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_158",
+      "corrupt_relpath": "heldout/corrupt/158_gid486_codecontests_cpp_401.txt",
+      "corrupt_prompt_sha256": "2792eaf0ffc78506008c02d02d9d15ffe1e68c5a81d182f98dae34fed757b66a"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_159",
+      "corrupt_relpath": "heldout/corrupt/159_gid634_codecontests_cpp_535.txt",
+      "corrupt_prompt_sha256": "3011a2fb4d27f79ae69aec3eee05cc7a0d739df8e6cbe812cc289b6f5d6f125b"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_160",
+      "corrupt_relpath": "heldout/corrupt/160_gid748_codecontests_cpp_70.txt",
+      "corrupt_prompt_sha256": "2858e3efccc798fff3b5fe0cb5fefe785fc3c550568fe6c192675e7eefcf9ff1"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_161",
+      "corrupt_relpath": "heldout/corrupt/161_gid783_codecontests_java_101.txt",
+      "corrupt_prompt_sha256": "abb89794ac5439599c57a2edb0b8c67601b6da3720fc40ecce9d259e3c595845"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_162",
+      "corrupt_relpath": "heldout/corrupt/162_gid790_codecontests_java_108.txt",
+      "corrupt_prompt_sha256": "8a0ee5a278106a91f18805fcaa242c6f919a992719ff0ee67c12b881b195eda9"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_163",
+      "corrupt_relpath": "heldout/corrupt/163_gid889_codecontests_java_198.txt",
+      "corrupt_prompt_sha256": "c739e6d7307a6e07106cd37c863b28653b342cec5dc72f2c6efb17b87c5794d9"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_164",
+      "corrupt_relpath": "heldout/corrupt/164_gid946_codecontests_java_249.txt",
+      "corrupt_prompt_sha256": "2dfbcc5b221081573acad0c565bab8679e46a8dc5957bcce26764db663006db9"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_165",
+      "corrupt_relpath": "heldout/corrupt/165_gid1080_codecontests_java_37.txt",
+      "corrupt_prompt_sha256": "698a5f6bf671833b2716f64e5bd999aca9f871f9251fb5a5193ab7203ebcb260"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_166",
+      "corrupt_relpath": "heldout/corrupt/166_gid2111_apps_python_405.txt",
+      "corrupt_prompt_sha256": "2d18f7262489b027708cb49a401950899c7eeddc2e0efeae01d28036ebe4fbe4"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_167",
+      "corrupt_relpath": "heldout/corrupt/167_gid315_codecontests_cpp_248.txt",
+      "corrupt_prompt_sha256": "af5dd0e5f97ef643a09a2070b8d961629c6486339c401c2597162d102c73dab9"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_168",
+      "corrupt_relpath": "heldout/corrupt/168_gid1182_codecontests_java_461.txt",
+      "corrupt_prompt_sha256": "b9e34065b9027a8ed634444e2d4ec18262ae672cc0f7547b4b3ec4675eca0fdd"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_169",
+      "corrupt_relpath": "heldout/corrupt/169_gid1259_codecontests_java_530.txt",
+      "corrupt_prompt_sha256": "d3530ea5c8652a433133e875906f04d8cdb863183d2057056b239db279859c90"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_170",
+      "corrupt_relpath": "heldout/corrupt/170_gid1427_humaneval_python_115.txt",
+      "corrupt_prompt_sha256": "30db95dc4b7dee7af3aa2280ab433dfeaffe58427f4ac4a6421567ab56ccfe38"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_171",
+      "corrupt_relpath": "heldout/corrupt/171_gid1648_mbpp_python_167.txt",
+      "corrupt_prompt_sha256": "31404bce69334e1e35ed4faac4ccfb42949c17c520e8abf5aed930360115c2e6"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_172",
+      "corrupt_relpath": "heldout/corrupt/172_gid1719_mbpp_python_230.txt",
+      "corrupt_prompt_sha256": "0a403eeb9b32c9bd094d38ca5dcd4fde0eb3eb3c941a31d4b7c2de54fb69c6b6"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_173",
+      "corrupt_relpath": "heldout/corrupt/173_gid1851_mbpp_python_35.txt",
+      "corrupt_prompt_sha256": "2ef97c64adf094693adc650955d75f0e0cc70663aa842413823dee3235365a7f"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_174",
+      "corrupt_relpath": "heldout/corrupt/174_gid2017_apps_python_142.txt",
+      "corrupt_prompt_sha256": "56ac4f59f804244f100fb64b71496b676f3c677e39b46652777055f04b288981"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_175",
+      "corrupt_relpath": "heldout/corrupt/175_gid2062_apps_python_251.txt",
+      "corrupt_prompt_sha256": "88bc734f88a2868bed6d45ef73f978d64fe84c2c8f502d057a912dc71df3a282"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_176",
+      "corrupt_relpath": "heldout/corrupt/176_gid2263_apps_python_605.txt",
+      "corrupt_prompt_sha256": "cd33f70d4810811a16d5e7dc73f095d27a049294f0eb018a25dc7142ecbdb37d"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_177",
+      "corrupt_relpath": "heldout/corrupt/177_gid2270_apps_python_614.txt",
+      "corrupt_prompt_sha256": "744cdb906aa8983b6cd7a5bd140f162ceb3cc379ee2fcba7ba014f29c8456612"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_178",
+      "corrupt_relpath": "heldout/corrupt/178_gid813_codecontests_java_129.txt",
+      "corrupt_prompt_sha256": "2045e0a3eb356234931cddf6854f6870d3988174f38b3d08d70dc6a30a8edaf7"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_179",
+      "corrupt_relpath": "heldout/corrupt/179_gid838_codecontests_java_151.txt",
+      "corrupt_prompt_sha256": "e3bd3f436399dbae04f5dbfa64bc003d484799b61ec3e214134d39c53c5c0d22"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_180",
+      "corrupt_relpath": "heldout/corrupt/180_gid980_codecontests_java_28.txt",
+      "corrupt_prompt_sha256": "8840922a12b8e27a9db0d90f11f7e65e16dcbf8b6854ebf3eebb0dcc13a4a1d7"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_181",
+      "corrupt_relpath": "heldout/corrupt/181_gid1075_codecontests_java_365.txt",
+      "corrupt_prompt_sha256": "638f0d06fe87025c6896eef9576b6b2c84fd86d7d8bfd45841f459ac610c76b4"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_182",
+      "corrupt_relpath": "heldout/corrupt/182_gid1506_humaneval_python_39.txt",
+      "corrupt_prompt_sha256": "1c1138a869411eaf6def39eebd2bf680f61c3ecb0ad5c1bd9379ee89c9fbdff0"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_183",
+      "corrupt_relpath": "heldout/corrupt/183_gid1885_mbpp_python_380.txt",
+      "corrupt_prompt_sha256": "1b8e41d60d68c631e33191b2f68ebc7c5b45c01af64dacae35094487e3dc0ef6"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_184",
+      "corrupt_relpath": "heldout/corrupt/184_gid2071_apps_python_288.txt",
+      "corrupt_prompt_sha256": "46fe23eaa42106dd757dbe29ee851bdc5077be2ebf89fb4e7c7dd6d82e844b2c"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_185",
+      "corrupt_relpath": "heldout/corrupt/185_gid2172_apps_python_491.txt",
+      "corrupt_prompt_sha256": "b950525e7afcf7faf0ef8187139b54680022ca24ef77d2c9c07034f731220eca"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_186",
+      "corrupt_relpath": "heldout/corrupt/186_gid2178_apps_python_497.txt",
+      "corrupt_prompt_sha256": "638960a4f88151e88c402ff16560527f9829bf0d8d03473456afcd1292dbadc1"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_187",
+      "corrupt_relpath": "heldout/corrupt/187_gid2189_apps_python_510.txt",
+      "corrupt_prompt_sha256": "7aa045856911bcfb90cd1215231055390322161be4c08cca387ce20ba51f4cd7"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_188",
+      "corrupt_relpath": "heldout/corrupt/188_gid2204_apps_python_532.txt",
+      "corrupt_prompt_sha256": "41cdeeb91a18f743909fa8e7b210d39238c000208515c71b4eee028321bcd5ee"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_189",
+      "corrupt_relpath": "heldout/corrupt/189_gid2209_apps_python_539.txt",
+      "corrupt_prompt_sha256": "a37af5eda5d1447e589799f58e5a0c96210c09d191ea1641e32637bd7699a1af"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_190",
+      "corrupt_relpath": "heldout/corrupt/190_gid2302_apps_python_650.txt",
+      "corrupt_prompt_sha256": "5e60de42d118bdc87a844a5a6cc09173fb78c1e75737e8cf7bd49b50e540fcff"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_191",
+      "corrupt_relpath": "heldout/corrupt/191_gid2586_mbpp_python_40.txt",
+      "corrupt_prompt_sha256": "a1a2f54ebd8aed9a91770efdb03ce4ad6bdf7449618170d72f7dcd320ef3e3b0"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_192",
+      "corrupt_relpath": "heldout/corrupt/192_gid642_codecontests_cpp_542.txt",
+      "corrupt_prompt_sha256": "5463c0d7d84d6fdf1c081d6aaa6f2ded8e55737e938b9bcea640b1095f580c74"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_193",
+      "corrupt_relpath": "heldout/corrupt/193_gid685_codecontests_cpp_581.txt",
+      "corrupt_prompt_sha256": "20b90e7cfed303405a196ad4db400e470d56ca281c867b43a1f0a5733d23b05f"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_194",
+      "corrupt_relpath": "heldout/corrupt/194_gid899_codecontests_java_206.txt",
+      "corrupt_prompt_sha256": "816c27074e4bb61f4580e4b090f26f940be2643ee484de2c8db8ce0d5152f66e"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_195",
+      "corrupt_relpath": "heldout/corrupt/195_gid1087_codecontests_java_376.txt",
+      "corrupt_prompt_sha256": "d0d3614833e78d81216dcea867a2d4eebc6dea3f52b9ad864479b54a516425c9"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_196",
+      "corrupt_relpath": "heldout/corrupt/196_gid111_apps_python_64.txt",
+      "corrupt_prompt_sha256": "c893205d33b2318549aed781c35e8e447dddcfa358ce6ca336d21af0fb746223"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_197",
+      "corrupt_relpath": "heldout/corrupt/197_gid1207_codecontests_java_484.txt",
+      "corrupt_prompt_sha256": "e98f0922b481f4c6f5c18c0134e35b26a51e77f615e921ab51e5ab6190b07a46"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_198",
+      "corrupt_relpath": "heldout/corrupt/198_gid1608_mbpp_python_130.txt",
+      "corrupt_prompt_sha256": "45a10a26ca7de20367f6dbc252e7a30014d1aa09816a3fb9994ef10ea166bbd2"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_199",
+      "corrupt_relpath": "heldout/corrupt/199_gid1820_mbpp_python_321.txt",
+      "corrupt_prompt_sha256": "4b6d9918753d9907abaf8c98054492a594da8c89394a3dffac211197766a53aa"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_200",
+      "corrupt_relpath": "heldout/corrupt/200_gid1824_mbpp_python_325.txt",
+      "corrupt_prompt_sha256": "3d229faf62f0bec3c753ab6de48c17effba850942d8789ddd15384490d5d623a"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_201",
+      "corrupt_relpath": "heldout/corrupt/201_gid2038_apps_python_197.txt",
+      "corrupt_prompt_sha256": "d36fad9ff676351759d9ec27c2cf4e0e45ac03f03c511add97b581200add257b"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_202",
+      "corrupt_relpath": "heldout/corrupt/202_gid2051_apps_python_226.txt",
+      "corrupt_prompt_sha256": "e44a6f3fd25da08f1c841a16a83d46f399a3184579fdc4abe24e7e6690698051"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_203",
+      "corrupt_relpath": "heldout/corrupt/203_gid2077_apps_python_303.txt",
+      "corrupt_prompt_sha256": "f6c55fb287d7625d2b8062ce4737d8356f7026d3540ebae767cb2425ff18fa39"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_204",
+      "corrupt_relpath": "heldout/corrupt/204_gid2083_apps_python_316.txt",
+      "corrupt_prompt_sha256": "e14d49141a3fcd2349996f4fb3399cd68eff8e4469480d9fbe207a5838560f2a"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_205",
+      "corrupt_relpath": "heldout/corrupt/205_gid2166_apps_python_483.txt",
+      "corrupt_prompt_sha256": "83f14e4b5f796fa4b8a00d430616574b662386ec5793fd172368de984906fee6"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_206",
+      "corrupt_relpath": "heldout/corrupt/206_gid2297_apps_python_645.txt",
+      "corrupt_prompt_sha256": "071730e5c98e11b1fa9df164fb6ce547187b2cc8f2c98a7ecc730a1a3f3dd192"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_207",
+      "corrupt_relpath": "heldout/corrupt/207_gid445_codecontests_cpp_365.txt",
+      "corrupt_prompt_sha256": "e058be9932836cf34406a68cc80f66cf40e87ebbf8a49c4fb8962b5a77e625eb"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_208",
+      "corrupt_relpath": "heldout/corrupt/208_gid655_codecontests_cpp_554.txt",
+      "corrupt_prompt_sha256": "14f50010cf869c116b56fe8733f53eb909b4b480930373dc78dec559d494350c"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_209",
+      "corrupt_relpath": "heldout/corrupt/209_gid1051_codecontests_java_343.txt",
+      "corrupt_prompt_sha256": "e2f49236ae10e11703688cb55ccff1777e0d8cf15b8480e86fbeee35d4458ce1"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_210",
+      "corrupt_relpath": "heldout/corrupt/210_gid1329_codecontests_java_594.txt",
+      "corrupt_prompt_sha256": "025b6cee314a7b129398f6fa19ca5a95260436d435c14e0eaeabd81781113a80"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_211",
+      "corrupt_relpath": "heldout/corrupt/211_gid1438_humaneval_python_125.txt",
+      "corrupt_prompt_sha256": "9759fabe0ea21698eeda0703caac3fd3731446151020cf1a913f5197aa6ac9a5"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_212",
+      "corrupt_relpath": "heldout/corrupt/212_gid1512_humaneval_python_44.txt",
+      "corrupt_prompt_sha256": "9b1f1038675b817c29622c34fe7f6335f7161c5ada2e46eac9d7be5752394cc3"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_213",
+      "corrupt_relpath": "heldout/corrupt/213_gid1585_mbpp_python_11.txt",
+      "corrupt_prompt_sha256": "5173d9985b04f5bae7769acf2f003782146171a36c8995f8102350bc631743a6"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_214",
+      "corrupt_relpath": "heldout/corrupt/214_gid2047_apps_python_22.txt",
+      "corrupt_prompt_sha256": "00a2f8596cd88c48d6a8b533071c9b4741cda04316d778beb7d23d5f7a2d5510"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_215",
+      "corrupt_relpath": "heldout/corrupt/215_gid2098_apps_python_367.txt",
+      "corrupt_prompt_sha256": "3b717363cda6f8ba1d15f5551c9ce629dfa9a1f0558f9f1665ce11e0810546d9"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_216",
+      "corrupt_relpath": "heldout/corrupt/216_gid2144_apps_python_455.txt",
+      "corrupt_prompt_sha256": "2b62f4e78b79eb08b6fde100a7b9b3e20af2f99634b7e8ee6428bc3163daa92d"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_217",
+      "corrupt_relpath": "heldout/corrupt/217_gid2170_apps_python_489.txt",
+      "corrupt_prompt_sha256": "112161c94a7abd323237417146a24e9c7187c3ea8780eada3ff084a3996430be"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_218",
+      "corrupt_relpath": "heldout/corrupt/218_gid2207_apps_python_537.txt",
+      "corrupt_prompt_sha256": "16f6bb2429af752e4b61db27d23a3b19e4470a9e8612f1caa8aeda92f4eee99b"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_219",
+      "corrupt_relpath": "heldout/corrupt/219_gid2232_apps_python_568.txt",
+      "corrupt_prompt_sha256": "71e329433b5626001065e835758a0af3d456692fdb4c88ed783b77c9cd4261de"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_220",
+      "corrupt_relpath": "heldout/corrupt/220_gid2239_apps_python_578.txt",
+      "corrupt_prompt_sha256": "1429a965ba5c0a0f44347fb2bcc496f644cb86d4199247102cd85f76a7e688e2"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_221",
+      "corrupt_relpath": "heldout/corrupt/221_gid2274_apps_python_618.txt",
+      "corrupt_prompt_sha256": "a0253e724c2494eea4e06fd368c79a5e4a8eb511c633c41b187d0a243dd4ea7b"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_222",
+      "corrupt_relpath": "heldout/corrupt/222_gid2287_apps_python_632.txt",
+      "corrupt_prompt_sha256": "55de691d9330dd95ad96f45c10ec8f7ca4848a9a867438162f445fb5083327f4"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_223",
+      "corrupt_relpath": "heldout/corrupt/223_gid2327_apps_python_681.txt",
+      "corrupt_prompt_sha256": "c721b433a5d5eff0286f4373eb61dcc9d7baa9eb02e424cc74da9f3cc97a2923"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_224",
+      "corrupt_relpath": "heldout/corrupt/224_gid2342_apps_python_698.txt",
+      "corrupt_prompt_sha256": "d6872156c1fe9b34a6beadba2d57a3d5fad8ed72bd9c03c89205b93d046168f5"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_225",
+      "corrupt_relpath": "heldout/corrupt/225_gid2435_codecontests_cpp_280.txt",
+      "corrupt_prompt_sha256": "8da656840d5f6333240e406eee7c0b38e07a904331f43414f6ec2c3889c116cf"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_226",
+      "corrupt_relpath": "heldout/corrupt/226_gid2_apps_python_100.txt",
+      "corrupt_prompt_sha256": "337536654e4f67443a991e5f4f80498eb3553f1bcd5e4cf39dc5a4dc86fc8d68"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_227",
+      "corrupt_relpath": "heldout/corrupt/227_gid50_apps_python_144.txt",
+      "corrupt_prompt_sha256": "51ce38d0c7b64a9d36fa91a59c391c313988c6e1f0252b6eba79e849412410c3"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_228",
+      "corrupt_relpath": "heldout/corrupt/228_gid72_apps_python_29.txt",
+      "corrupt_prompt_sha256": "847369586d64ddebca13a955d92dd15d6060ef765c6b0f520b5410e9c235b2f3"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_229",
+      "corrupt_relpath": "heldout/corrupt/229_gid959_codecontests_java_260.txt",
+      "corrupt_prompt_sha256": "0fe20b6f85688fb9c8a239c4ea368767eb728b1782dc29c1d5c71ce5cc521257"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_230",
+      "corrupt_relpath": "heldout/corrupt/230_gid1383_codecontests_java_76.txt",
+      "corrupt_prompt_sha256": "8c18a27b715af5400838d371719532b4e3c60ced735174d4a6f4df5a02dff703"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_231",
+      "corrupt_relpath": "heldout/corrupt/231_gid1390_codecontests_java_82.txt",
+      "corrupt_prompt_sha256": "1ccd9dbef2a22b81ee6bb432be677cb3da137c173f7bd8888fe0151a2c129eeb"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_232",
+      "corrupt_relpath": "heldout/corrupt/232_gid2099_apps_python_368.txt",
+      "corrupt_prompt_sha256": "3d4ec9a991d6db535f4c16ca5e1c93d71b95e38c73d0c947e01affb604b78d7d"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_233",
+      "corrupt_relpath": "heldout/corrupt/233_gid2123_apps_python_428.txt",
+      "corrupt_prompt_sha256": "0e4d5b50bc83a405a7898ccc923e74d21ab01be48591fbb40ada1b2124a7c957"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_234",
+      "corrupt_relpath": "heldout/corrupt/234_gid2131_apps_python_439.txt",
+      "corrupt_prompt_sha256": "f84b787146787a0ce671ad3b4d53b6f151cc036200b257dda94d36c3da93c730"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_235",
+      "corrupt_relpath": "heldout/corrupt/235_gid2216_apps_python_550.txt",
+      "corrupt_prompt_sha256": "aeeba4309efd8dc74cb41be8fd5bce7bfa442c64ff18205b734c0c247efa0470"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_236",
+      "corrupt_relpath": "heldout/corrupt/236_gid2220_apps_python_556.txt",
+      "corrupt_prompt_sha256": "3963d5673fe9b886f853317d5121dbb76ee8ce50b894613322a08c1e66eedb96"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_237",
+      "corrupt_relpath": "heldout/corrupt/237_gid2227_apps_python_562.txt",
+      "corrupt_prompt_sha256": "3123985d6340a7903cad054c20bc4153a1d61c7567ef37e1b634df9631a16cb7"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_238",
+      "corrupt_relpath": "heldout/corrupt/238_gid2329_apps_python_683.txt",
+      "corrupt_prompt_sha256": "fef953871c60bebfcd3ffe37fd1896def69a78f1d0235262a4a25aa78ec1928d"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_239",
+      "corrupt_relpath": "heldout/corrupt/239_gid856_codecontests_java_168.txt",
+      "corrupt_prompt_sha256": "0b3ac1d9b0c8319fdb187a4426a414de8e563e1cf3eec3ea7ad436c00698c7ac"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_240",
+      "corrupt_relpath": "heldout/corrupt/240_gid935_codecontests_java_239.txt",
+      "corrupt_prompt_sha256": "ea0659c4774c503a0e1f83e17bd0b3d627b0c18ef8dd70977e6d91910d4706e0"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_241",
+      "corrupt_relpath": "heldout/corrupt/241_gid1019_codecontests_java_314.txt",
+      "corrupt_prompt_sha256": "72b8e43ba672404896220daa5b9e0adf42442563e9f78dfaeeb301f73956c17a"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_242",
+      "corrupt_relpath": "heldout/corrupt/242_gid1062_codecontests_java_353.txt",
+      "corrupt_prompt_sha256": "e97a40325960493d6babacf4ac50fa4f8a77ff01123ec3d75513805a8d3053cd"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_243",
+      "corrupt_relpath": "heldout/corrupt/243_gid1082_codecontests_java_371.txt",
+      "corrupt_prompt_sha256": "9732ae4c45aa795d974eacb4e1adb672b7c6afdb74cd71cbe38fc98927a191be"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_244",
+      "corrupt_relpath": "heldout/corrupt/244_gid1317_codecontests_java_583.txt",
+      "corrupt_prompt_sha256": "e0ebf499b48dcefe7e99dc9e72ae21764f1344c319410c6a002a8cca4944b3f0"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_245",
+      "corrupt_relpath": "heldout/corrupt/245_gid149_apps_python_99.txt",
+      "corrupt_prompt_sha256": "3cce97a9b744d4c014b955c81a2b51b411722dddae0bec4cefac28002276de13"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_246",
+      "corrupt_relpath": "heldout/corrupt/246_gid1578_mbpp_python_103.txt",
+      "corrupt_prompt_sha256": "603cd067b7d70df9d225620531df5b40c59508b4536aa346b81f5fc6e6864414"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_247",
+      "corrupt_relpath": "heldout/corrupt/247_gid2002_apps_python_107.txt",
+      "corrupt_prompt_sha256": "4bf215c6429df3b73c028c16259e03a607041668f58b06a997fbad4cd29a1277"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_248",
+      "corrupt_relpath": "heldout/corrupt/248_gid2121_apps_python_424.txt",
+      "corrupt_prompt_sha256": "ba75081feed97adf9de0d5d6c3d2ce72e394ccfb64a5d7299424dd669de67a1b"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_249",
+      "corrupt_relpath": "heldout/corrupt/249_gid2242_apps_python_583.txt",
+      "corrupt_prompt_sha256": "7051cb66e7d05ba558f9e3a61a637e47a343d8a1f65b7a906c16df7830d6283e"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_250",
+      "corrupt_relpath": "heldout/corrupt/250_gid2249_apps_python_590.txt",
+      "corrupt_prompt_sha256": "d6a9f60abf271bac4e1f9736c4aca4049459a1c74c42ce37b890b0f7cbceaefb"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_251",
+      "corrupt_relpath": "heldout/corrupt/251_gid285_codecontests_cpp_220.txt",
+      "corrupt_prompt_sha256": "1a445f32e30323be22b73c1c7d4474e4b98e4905512d4fb29c80df9d3e54a764"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_252",
+      "corrupt_relpath": "heldout/corrupt/252_gid536_codecontests_cpp_447.txt",
+      "corrupt_prompt_sha256": "9d48ab2a834400a0395946a1d7434b082281d9a9a4a54a5759e1f7c8146b130f"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_253",
+      "corrupt_relpath": "heldout/corrupt/253_gid805_codecontests_java_121.txt",
+      "corrupt_prompt_sha256": "d133415ff93bcb5fc188107b103017b7bff14f5a50858dbbb5506981d8251436"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_254",
+      "corrupt_relpath": "heldout/corrupt/254_gid811_codecontests_java_127.txt",
+      "corrupt_prompt_sha256": "60c5f77d2365fb1425f879a39fa0aa385bfd4805a1e58f7a74679c2520c58ad9"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_255",
+      "corrupt_relpath": "heldout/corrupt/255_gid912_codecontests_java_218.txt",
+      "corrupt_prompt_sha256": "9aaa213a83b66523dd830d94f30da476dae87984265d7bf9068cbd761025d18c"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_256",
+      "corrupt_relpath": "heldout/corrupt/256_gid916_codecontests_java_221.txt",
+      "corrupt_prompt_sha256": "37602374e59e67d95f376bdd191e690e69505c8230c79a501a7f508756df7322"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_257",
+      "corrupt_relpath": "heldout/corrupt/257_gid919_codecontests_java_224.txt",
+      "corrupt_prompt_sha256": "a45c6821d98c0e4399f2705d2329189d46b0912afd54b21a750fcf822df878d9"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_258",
+      "corrupt_relpath": "heldout/corrupt/258_gid942_codecontests_java_245.txt",
+      "corrupt_prompt_sha256": "e33a7fef22798d8646f791a67037f4aeb64f7d34ff361f87b00ba807b38e6931"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_259",
+      "corrupt_relpath": "heldout/corrupt/259_gid948_codecontests_java_250.txt",
+      "corrupt_prompt_sha256": "e217075daf907ee2f578469fff3a824ca21b19fbc42f28a8abe520a2ed3df2b4"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_260",
+      "corrupt_relpath": "heldout/corrupt/260_gid1023_codecontests_java_318.txt",
+      "corrupt_prompt_sha256": "e5d6d29634c1c9f65ebd3d890effc933a7f888fa5b2818a9e148d02d99852fe1"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_261",
+      "corrupt_relpath": "heldout/corrupt/261_gid107_apps_python_60.txt",
+      "corrupt_prompt_sha256": "046c1331271ce7bb8648e33ff034704daec26145137436a6ae72a593a7d69507"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_262",
+      "corrupt_relpath": "heldout/corrupt/262_gid1132_codecontests_java_416.txt",
+      "corrupt_prompt_sha256": "8e78de9763ae8879e053d000f1e6ad1cd2f2e122b2f96d36e758d123c3067c15"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_263",
+      "corrupt_relpath": "heldout/corrupt/263_gid1220_codecontests_java_496.txt",
+      "corrupt_prompt_sha256": "b344363fbbcfd709139dae6dd08bbaabdc99185d51659c18c334c3890738e64a"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_264",
+      "corrupt_relpath": "heldout/corrupt/264_gid1307_codecontests_java_574.txt",
+      "corrupt_prompt_sha256": "57161b6fee773339d2b2993536534d1abac3104698e57e8c83968d6f5614838c"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_265",
+      "corrupt_relpath": "heldout/corrupt/265_gid1346_codecontests_java_609.txt",
+      "corrupt_prompt_sha256": "3a48d4852962a76fdc65b5005fe2fbef4c5d25a3f804125d1f7f26b154d065a2"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_266",
+      "corrupt_relpath": "heldout/corrupt/266_gid2133_apps_python_441.txt",
+      "corrupt_prompt_sha256": "3a8c5158b9338ecf30e7a50dc634ea370e2890d5161daae3757a18b9c37c3995"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_267",
+      "corrupt_relpath": "heldout/corrupt/267_gid2164_apps_python_48.txt",
+      "corrupt_prompt_sha256": "019a249eeb84c9b658533df6b6152dc066073f3b3983dcd6062404a7d4f5d63a"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_268",
+      "corrupt_relpath": "heldout/corrupt/268_gid2167_apps_python_485.txt",
+      "corrupt_prompt_sha256": "3c57701f386227dda01e284265b1d1e36625cb19c326a0e7e3d1344bc7c5c83c"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_269",
+      "corrupt_relpath": "heldout/corrupt/269_gid216_codecontests_cpp_159.txt",
+      "corrupt_prompt_sha256": "b5c4dd8dd5d168a386bd167f878e733e9d7b657fd476de0e5580b027f8400c32"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_270",
+      "corrupt_relpath": "heldout/corrupt/270_gid2176_apps_python_495.txt",
+      "corrupt_prompt_sha256": "a390d1b2ee7f1c44dbb984a265014259bf896d5f6022d0e020d41bdbb3a40701"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_271",
+      "corrupt_relpath": "heldout/corrupt/271_gid2185_apps_python_506.txt",
+      "corrupt_prompt_sha256": "e48e0b4074fb21b26aeaef35dd50caf82c053f455bc4596f5e6c14cf153f5cfd"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_272",
+      "corrupt_relpath": "heldout/corrupt/272_gid2284_apps_python_629.txt",
+      "corrupt_prompt_sha256": "506f4f77d4ecd41a88aa49169df02549bc41725762485ed7247c7b0774e6aaa7"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_273",
+      "corrupt_relpath": "heldout/corrupt/273_gid2343_apps_python_699.txt",
+      "corrupt_prompt_sha256": "f0bbca3dc12e50066167ae0c3c8f39f96e490f1ee8e729b907095449151d8394"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_274",
+      "corrupt_relpath": "heldout/corrupt/274_gid2348_apps_python_76.txt",
+      "corrupt_prompt_sha256": "e083de0c2932aac0cbc41d1134f622df86aa8d7d33d82de3d7262b40a13c14e0"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_275",
+      "corrupt_relpath": "heldout/corrupt/275_gid864_codecontests_java_175.txt",
+      "corrupt_prompt_sha256": "0688dfabf4f0d79d1b0fc9200adf8cd5a1ea11bd1684b8ae4bf484784e7f8113"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_276",
+      "corrupt_relpath": "heldout/corrupt/276_gid869_codecontests_java_18.txt",
+      "corrupt_prompt_sha256": "e4774dfa4e9a9ebbb43b975e89a314df6a44834b8d28085ad8a9eaf116d010bb"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_277",
+      "corrupt_relpath": "heldout/corrupt/277_gid952_codecontests_java_254.txt",
+      "corrupt_prompt_sha256": "b0b9f944ecdeca22dd47a10017a3ec37f96a12654c988f38552693320840e033"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_278",
+      "corrupt_relpath": "heldout/corrupt/278_gid964_codecontests_java_265.txt",
+      "corrupt_prompt_sha256": "06a9524ad960ddb7e3d0d730d48c5acf696b3dea18ee829d5d8d157f12c30b41"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_279",
+      "corrupt_relpath": "heldout/corrupt/279_gid977_codecontests_java_277.txt",
+      "corrupt_prompt_sha256": "9442daaf8c136bd965366436cfd8ded1b259122e71815dd00ed5516c70b2472c"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_280",
+      "corrupt_relpath": "heldout/corrupt/280_gid1113_codecontests_java_4.txt",
+      "corrupt_prompt_sha256": "d71acb675a0f679da39cf95269ec3f585e621b5c2c3fad94fac2e70d3098d4b3"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_281",
+      "corrupt_relpath": "heldout/corrupt/281_gid1145_codecontests_java_428.txt",
+      "corrupt_prompt_sha256": "3d25738f5aa2d355e2168d2631b19921483faf822838e8157b45e6c0b1fb88a0"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_282",
+      "corrupt_relpath": "heldout/corrupt/282_gid1228_codecontests_java_502.txt",
+      "corrupt_prompt_sha256": "4543ca1b0c753ae7537257206464507d04d9bb174763803a023a8d1c23456c5b"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_283",
+      "corrupt_relpath": "heldout/corrupt/283_gid122_apps_python_74.txt",
+      "corrupt_prompt_sha256": "d9b5b27eded471061b88c1089ff9479868b65ecf007027cd5bd521d2b42d3ed9"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_284",
+      "corrupt_relpath": "heldout/corrupt/284_gid1245_codecontests_java_518.txt",
+      "corrupt_prompt_sha256": "2a8dddf4e5357b5ffa94b1b4468669a3aec08767e6d0a8667cebfc5871170211"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_285",
+      "corrupt_relpath": "heldout/corrupt/285_gid1382_codecontests_java_75.txt",
+      "corrupt_prompt_sha256": "5368e6dd1cf0dd4b0e821402832aa95efe36663664546d81ee4546cfccbf4bff"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_286",
+      "corrupt_relpath": "heldout/corrupt/286_gid1403_codecontests_java_94.txt",
+      "corrupt_prompt_sha256": "b895c5fe8b3898eec40cbcfda8f7bdd15974f602dc7ef1eabe230b29a1ada947"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_287",
+      "corrupt_relpath": "heldout/corrupt/287_gid1420_humaneval_python_109.txt",
+      "corrupt_prompt_sha256": "016d1c01b2d232d0e831eba5fe9c46571dcd7a4346514b7b03b59b72a39412d3"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_288",
+      "corrupt_relpath": "heldout/corrupt/288_gid1659_mbpp_python_177.txt",
+      "corrupt_prompt_sha256": "5ac69e0b65eaa9c2c481ec9e5153e7375847087ff80357f5bb16684dfc442585"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_289",
+      "corrupt_relpath": "heldout/corrupt/289_gid1794_mbpp_python_299.txt",
+      "corrupt_prompt_sha256": "4dceb5b2075ba1d19c4b15b0b6ec400436e59e4a1b0f7a2e71785670fa59c121"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_290",
+      "corrupt_relpath": "heldout/corrupt/290_gid1977_mbpp_python_79.txt",
+      "corrupt_prompt_sha256": "462d7a10253d6604b5aa35bf1e4d0aaf347417b04e30fa68a7d4ea76fe539bad"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_291",
+      "corrupt_relpath": "heldout/corrupt/291_gid2036_apps_python_194.txt",
+      "corrupt_prompt_sha256": "f0ad11ccb7ce3acca044a9f4ac035724c6a2baa773786ea4f11e2d5140a0d28b"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_292",
+      "corrupt_relpath": "heldout/corrupt/292_gid2063_apps_python_257.txt",
+      "corrupt_prompt_sha256": "28f5dbe6a93684f6ec0d3d71373415ffe630d4a040e2d60f6a4886644308e0d2"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_293",
+      "corrupt_relpath": "heldout/corrupt/293_gid2085_apps_python_319.txt",
+      "corrupt_prompt_sha256": "6a57b873cea322fec6ea2e94cb66ef53179a4c425293ca94810c9c02db3760fd"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_294",
+      "corrupt_relpath": "heldout/corrupt/294_gid2113_apps_python_408.txt",
+      "corrupt_prompt_sha256": "4218262c4878ff88e2a41778913fefe997c30be926031e4ec3c476e9920ba0c8"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_295",
+      "corrupt_relpath": "heldout/corrupt/295_gid2217_apps_python_551.txt",
+      "corrupt_prompt_sha256": "268b7c30e648aa388e2c6236006a5277758d3e29e13c03f2d432392c46a6b4a3"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_296",
+      "corrupt_relpath": "heldout/corrupt/296_gid2240_apps_python_58.txt",
+      "corrupt_prompt_sha256": "767cbf09932b2cefc4972de5eadd74d65175fb2fa6bf97d87a5ace5518007828"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_297",
+      "corrupt_relpath": "heldout/corrupt/297_gid2285_apps_python_63.txt",
+      "corrupt_prompt_sha256": "996674e568d8099044b29521617afb138873264eaa90205d7657649321058b8c"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_298",
+      "corrupt_relpath": "heldout/corrupt/298_gid2569_mbpp_python_197.txt",
+      "corrupt_prompt_sha256": "63383533a0e9fd797568a7d9895fe2184532eb1a3103260bba9e215d162f87e6"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_299",
+      "corrupt_relpath": "heldout/corrupt/299_gid2581_mbpp_python_268.txt",
+      "corrupt_prompt_sha256": "a1660f08c697fb1ebfce4725d196e56fc7f2b0c8317357e39f7a049b023fff3d"
+    },
+    {
+      "sample_id": "v5_qwen35_9b_300",
+      "corrupt_relpath": "heldout/corrupt/300_gid7_apps_python_105.txt",
+      "corrupt_prompt_sha256": "947f62273c0b3003e1de1ce59ab9a34eef632419244b82a6d5a558946442a76e"
+    }
+  ]
+}

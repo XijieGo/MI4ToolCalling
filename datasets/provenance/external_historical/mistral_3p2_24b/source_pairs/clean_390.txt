@@ -1,0 +1,33 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"write_file","description":"Write file.","parameters":{"type":"object","properties":{"file_path":{"type":"string"},"content":
+{"type":"string"}},"required":["file_path","content"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Complete the function body in solve.py based on the function definition and docstring below:
+def parse_music(music_string: str) -> list[int]:
+    """
+    Given a string of ASCII music notes, return the beat count of each note.
+
+    Use 'o' for 4 beats, 'o|' for 2 beats, and '.|' for 1 beat.
+
+    >>> parse_music('o o| .| o| o| .| .| .| .| o o')
+    [4, 2, 1, 2, 2, 1, 1, 1, 1, 4, 4]
+    """
+    pass
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

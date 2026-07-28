@@ -1,0 +1,26 @@
+{
+  "D3/test": {
+    "pair_count": 100,
+    "token_length_min": 162,
+    "token_length_max": 196,
+    "unique_differing_token_positions": [
+      130
+    ]
+  },
+  "D4/test": {
+    "pair_count": 100,
+    "token_length_min": 178,
+    "token_length_max": 371,
+    "unique_differing_token_positions": [
+      131
+    ]
+  },
+  "D5/test": {
+    "pair_count": 100,
+    "token_length_min": 217,
+    "token_length_max": 321,
+    "unique_differing_token_positions": [
+      139
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Evaluate this email message shown below:
+To: recipient-cf59b29e22b9@mail.example
+Subject: 🚀 3.0 GA GO/NO-GO: APPROVED — July 15 Launch
+Body: Priya, Nadia, Harrison — The final go/no-go. Result: **GO.** **GA scorecard:** - Reliability: 99.7% across 2 months of beta ✅ - Performance: 3.2x over 2.x ✅ - P0 bugs in beta: 0 ✅ - Customer NPS: 71 ✅ - Migration path: validated ✅ - Documentation: complete ✅ **July 15, 2026.** Flow 3.0 goes GA. 18 months from vision to reality.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

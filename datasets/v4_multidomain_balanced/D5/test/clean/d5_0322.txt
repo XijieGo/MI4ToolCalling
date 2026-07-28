@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Dispatch this email message shown below:
+To: recipient-a83e12c79b58@mail.example
+Subject: All-hands recap: $1M MRR celebrated, 3.0 update
+Body: All — Thanks to everyone who joined the all-hands. Highlights: - 🎉 **$1M MRR milestone** — every person in this company built that - SSO shipped, audit logging in progress, SOC 2 on track - Enterprise pipeline growing: Sentinel, PharmaCorp, and 3 more in eval - Mid-market team crushing it — Priscilla on pace for President's Club Priya gave the 3.0 update — we're at ~45% complete with feature freeze agreed. Beta target is Q4.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

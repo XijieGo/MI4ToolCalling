@@ -1,0 +1,28 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"run_sql","description":"Run query.","parameters":{"type":"object","properties":{"database":{"type":"string"},"query":{"type":"string"}},"required":["database","query"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Outline the completed SQL query shown below:
+Database: cre_Docs_and_Epenses
+Schema:
+  projects(Project_ID, Project_Details)
+  documents(Document_ID, Document_Type_Code, Project_ID, Document_Date, Document_Name, Document_Description, Other_Details)
+SQL:
+  SELECT T1.project_id , T1.project_details FROM Projects AS T1 JOIN Documents AS T2 ON T1.project_id = T2.project_id GROUP BY T1.project_id HAVING count(*) > 2
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

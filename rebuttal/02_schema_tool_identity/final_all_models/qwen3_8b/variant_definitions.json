@@ -1,0 +1,44 @@
+{
+  "V0": {
+    "label": "Original",
+    "definition": "Native release schema preserved without alteration."
+  },
+  "V1": {
+    "label": "Renamed",
+    "definition": "Only function.name changes; the original description and parameter schema are preserved byte-for-byte in text renderings and structurally unchanged in Mistral tools.",
+    "rename_map": {
+      "write_file": "apply_patch",
+      "get_details_by_id": "lookup_record",
+      "get_data_usage": "view_usage",
+      "enable_roaming": "activate_roaming",
+      "refuel_data": "top_up_data",
+      "get_bills_for_customer": "list_customer_bills",
+      "transfer_to_human_agents": "escalate_to_support",
+      "can_send_mms": "check_mms_capability",
+      "perform_account_action": "complete_account_request"
+    }
+  },
+  "V2": {
+    "label": "Removed",
+    "definition": "Function name f1, empty function description, and recursively neutralized argument names/descriptions while retaining parameter type/property/required structure."
+  },
+  "V5": {
+    "label": "Mismatched",
+    "definition": "A get_weather function with one required location string parameter.",
+    "function": {
+      "name": "get_weather",
+      "description": "Retrieve the current weather for a location.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "location": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "location"
+        ]
+      }
+    }
+  }
+}

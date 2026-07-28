@@ -1,0 +1,28 @@
+domain,scaffold,scaffold_label,role_instructions,tool_schema,format_template,length_matched_control,request_type,behavior_n,behavior_mean_tool_call_logit,behavior_mean_tool_call_prob,behavior_tool_call_top1_rate,behavior_mean_tool_call_rank,behavior_median_tool_call_rank,behavior_tool_call_top3_rate
+D1,RTF,R + T + F (full scaffold),True,present,True,False,execution,100,32.08875,0.9997425866127014,1.0,1.0,1.0,1.0
+D1,RTF,R + T + F (full scaffold),True,present,True,False,neutral,100,29.97625,0.9270466103567742,0.94,1.12,1.0,0.99
+D1,RTF,R + T + F (full scaffold),True,present,True,False,analysis,100,25.02,0.05097822714771315,0.0,4.96,2.0,0.6
+D1,-TF,T + F (no role instructions),False,present,True,False,execution,100,31.56,0.9995055830478669,1.0,1.0,1.0,1.0
+D1,-TF,T + F (no role instructions),False,present,True,False,neutral,100,30.1575,0.9679324884712696,0.97,1.03,1.0,1.0
+D1,-TF,T + F (no role instructions),False,present,True,False,analysis,100,27.41625,0.4053294816009293,0.4,1.95,2.0,0.96
+D1,R-F,R + F (no tool schema),True,removed,True,False,execution,100,31.38625,0.9998928278684616,1.0,1.0,1.0,1.0
+D1,R-F,R + F (no tool schema),True,removed,True,False,neutral,100,30.67125,0.9726091548462864,0.98,1.04,1.0,0.99
+D1,R-F,R + F (no tool schema),True,removed,True,False,analysis,100,28.9375,0.7032532810978591,0.7,1.29,1.0,0.99
+D1,RT-,R + T (no format template),True,present,False,False,execution,100,18.365625,2.6801360043520185e-05,0.0,22.78,18.0,0.0
+D1,RT-,R + T (no format template),True,present,False,False,neutral,100,16.993125,2.1781974006560665e-06,0.0,93.23,45.5,0.0
+D1,RT-,R + T (no format template),True,present,False,False,analysis,100,14.07125,1.1715531359881028e-09,0.0,474.5,316.5,0.0
+D1,--F,F only,False,removed,True,False,execution,100,33.4775,0.9999872124195099,1.0,1.0,1.0,1.0
+D1,--F,F only,False,removed,True,False,neutral,100,33.0275,0.9999808436632156,1.0,1.0,1.0,1.0
+D1,--F,F only,False,removed,True,False,analysis,100,32.66,0.9998765850067138,1.0,1.0,1.0,1.0
+D1,-T-,T only,False,present,False,False,execution,100,15.92625,4.548852996057964e-07,0.0,89.98,64.0,0.0
+D1,-T-,T only,False,present,False,False,neutral,100,15.283125,1.9433371895946594e-08,0.0,291.01,101.0,0.0
+D1,-T-,T only,False,present,False,False,analysis,100,8.2875,5.2367057688510365e-11,0.0,7003.9,3997.0,0.0
+D1,R--,R only,True,removed,False,False,execution,100,15.944375,4.0884041231412096e-07,0.0,64.6,46.0,0.0
+D1,R--,R only,True,removed,False,False,neutral,100,16.06625,3.6079720475102024e-08,0.0,124.7,88.5,0.0
+D1,R--,R only,True,removed,False,False,analysis,100,11.8796875,7.842253490019375e-11,0.0,1724.89,823.5,0.0
+D1,---,empty system scaffold,False,removed,False,False,execution,100,2.18443115234375,2.9177599302689885e-16,0.0,24145.82,24424.0,0.0
+D1,---,empty system scaffold,False,removed,False,False,neutral,100,2.581328125,2.8740202700931393e-15,0.0,25130.46,24469.0,0.0
+D1,---,empty system scaffold,False,removed,False,False,analysis,100,1.3806640625,1.928637575908703e-15,0.0,39414.18,38629.5,0.0
+D1,R_TLEN_F,R + length-matched neutral text + F,True,length_matched_neutral_text,True,True,execution,100,29.84875,0.9819298018142582,0.99,1.03,1.0,0.99
+D1,R_TLEN_F,R + length-matched neutral text + F,True,length_matched_neutral_text,True,True,neutral,100,29.22,0.8767841875657905,0.9,1.22,1.0,0.99
+D1,R_TLEN_F,R + length-matched neutral text + F,True,length_matched_neutral_text,True,True,analysis,100,27.07125,0.37667813164796826,0.39,2.06,2.0,0.88

@@ -1,0 +1,11 @@
+{
+  "source": "./datasets/external/tau2_telecom_qwen35_9b/prepared/text_reply_induction/candidate_prefixes.jsonl",
+  "source_sha256": "d4e4b2744c66e1153f426d058746cc92f94f195a0f6fa29e67b66d1adc5412f9",
+  "selector": "real preceding user turn contains an interaction-closure phrase; source agent's next turn is the existing text-only reply",
+  "uses_source_success_or_reward": false,
+  "candidate_rows": 526,
+  "independent_trajectory_count": 477,
+  "independent_task_id_count": 477,
+  "screen_pool_rows": 477,
+  "seed": 20260726
+}

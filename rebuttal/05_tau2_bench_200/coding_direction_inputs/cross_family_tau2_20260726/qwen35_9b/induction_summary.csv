@@ -1,0 +1,5 @@
+condition,condition_family,alpha,delta_norm,n,tool_call_top1_count,tool_call_top1_rate,baseline_tool_call_top1_count,baseline_non_tool_top1_count,baseline_tool_to_non_tool_count,baseline_tool_to_non_tool_rate,baseline_non_tool_to_tool_count,baseline_non_tool_to_tool_rate,mean_tool_call_logit,mean_tool_call_probability,mean_tool_logit_change_vs_baseline
+baseline_no_hook_alpha_0,baseline,0.0,0.0,50,0,0.0,0,50,0,0.0,0,0.0,18.85125,0.002026542859912297,0.0
+plus_mean_diff_alpha_1,coding_direction_induction,1.0,111.07202911376953,50,35,0.7,0,50,0,0.0,35,0.7,21.6075,0.48390793610364197,2.75625
+plus_mean_diff_alpha_1.5,coding_direction_induction,1.5,166.6080322265625,50,49,0.98,0,50,0,0.0,49,0.98,21.24,0.8333815756440163,2.38875
+plus_random_norm_matched_alpha_1,norm_matched_random_control,1.0,111.07205200195312,50,0,0.0,0,50,0,0.0,0,0.0,16.28,0.002742898690703441,-2.57125

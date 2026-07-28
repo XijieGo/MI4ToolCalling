@@ -1,0 +1,59 @@
+{
+  "model": "Qwen3.5-4B",
+  "model_path": "/root/autodl-tmp/Qwen/Qwen3.5-4B",
+  "renderer": "qwen35_source_style",
+  "source_candidates": 600,
+  "source_path": "./outputs/implicit_intent_transfer/implicit_intent_oversampled_600.jsonl",
+  "source_sha256": "2e869c930b3b1e663df2171d01fc7c5cde66e914185af2160b8e6d9eaee9e0ac",
+  "tool_token": {
+    "text": "<tool_call>",
+    "id_via_convert": 248058,
+    "ids_via_encode": [
+      248058
+    ]
+  },
+  "layer": 31,
+  "hook_kind": "post",
+  "decoder_layers": 32,
+  "batch_size": 1,
+  "vector": {
+    "bundle_path": "./results/natural_trajectory/cross_family_tau2_20260726/qwen35_4b/coding_vector_bundle.pt",
+    "bundle_sha256": "e0769573e84184a4f531f427c14f6e8cb52466505af01962a7061b1ad6a73d0d",
+    "mean_diff_norm": 30.77223777770996,
+    "random_direction_norm": 30.772239685058594,
+    "cosine_mean_random": -0.019936146214604378,
+    "bundle_layer": 31,
+    "bundle_hook_kind": "post",
+    "bundle_keys": [
+      "fit_split",
+      "hook_kind",
+      "layer",
+      "mean_diff",
+      "model",
+      "model_path",
+      "random_direction_unit",
+      "random_seed",
+      "source_domain",
+      "tool_token",
+      "validation_split"
+    ]
+  },
+  "conditions": [
+    {
+      "name": "mean_diff_a1.0",
+      "direction": "mean_diff",
+      "alpha": 1.0
+    },
+    {
+      "name": "mean_diff_a1.5",
+      "direction": "mean_diff",
+      "alpha": 1.5
+    },
+    {
+      "name": "random_a1.5",
+      "direction": "random",
+      "alpha": 1.5
+    }
+  ],
+  "started_unix": 1785066244.2049468
+}

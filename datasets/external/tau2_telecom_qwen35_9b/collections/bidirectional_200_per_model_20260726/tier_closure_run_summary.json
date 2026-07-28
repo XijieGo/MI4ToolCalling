@@ -1,0 +1,58 @@
+{
+  "completed_unix": 1785074399.5596159,
+  "tier": "closure",
+  "models": {
+    "qwen3_4b": {
+      "collection_name": "tau2_bidirectional_200_per_model_20260726",
+      "model": "Qwen3-4B",
+      "model_key": "qwen3_4b",
+      "target_per_arm": 200,
+      "max_non_tool_probability": 0.05,
+      "legacy_50_task_ids_excluded": 99,
+      "legacy_selection_task_counts": {
+        "./results/natural_trajectory/crossscale_qwen3_4b_14b_20260725/Qwen3-4B/01_screen_tool/selected_50.jsonl": 50,
+        "./results/natural_trajectory/crossscale_qwen3_4b_14b_20260725/Qwen3-4B/02_screen_text/selected_50.jsonl": 50
+      },
+      "screen_records": {
+        "tool": 300,
+        "direct": 330
+      },
+      "eligible_unique_tasks_after_legacy_exclusion": {
+        "tool": 268,
+        "direct": 263
+      },
+      "selection_priority": [
+        "direct",
+        "tool"
+      ],
+      "selected": {
+        "tool": 200,
+        "direct": 200
+      },
+      "complete": true,
+      "task_overlap_between_arms": 0,
+      "selected_token_lengths": {
+        "tool": {
+          "min": 10297,
+          "median": 10679,
+          "max": 12850
+        },
+        "direct": {
+          "min": 11211,
+          "median": 11818,
+          "max": 12981
+        }
+      },
+      "selection_rule": {
+        "tool": "target-model native tool opener is baseline top-1",
+        "direct": "target-model native tool opener is not baseline top-1 and has probability <= cutoff",
+        "independence": "one task_id per arm; arms and legacy 50 task IDs are disjoint",
+        "source_success": "not used for selection"
+      },
+      "files": {
+        "tool": "./datasets/external/tau2_telecom_qwen35_9b/collections/bidirectional_200_per_model_20260726/qwen3_4b/selected_tool_200.jsonl",
+        "direct": "./datasets/external/tau2_telecom_qwen35_9b/collections/bidirectional_200_per_model_20260726/qwen3_4b/selected_direct_200.jsonl"
+      }
+    }
+  }
+}

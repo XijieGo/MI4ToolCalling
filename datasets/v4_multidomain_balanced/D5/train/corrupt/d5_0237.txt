@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Rate this email message shown below:
+To: recipient-7632076bb295@mail.example
+Subject: Re: Sentinel RFP received — 47 pages, all hands
+Body: Craig, Trish — All hands is right. I'm clearing my calendar this week. Pricing scenarios by Wednesday — I'll model 3 tiers: aggressive ($350K), standard ($420K), and premium ($480K) with different support levels.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

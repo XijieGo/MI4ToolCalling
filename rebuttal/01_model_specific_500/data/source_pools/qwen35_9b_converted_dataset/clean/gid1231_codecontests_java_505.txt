@@ -1,0 +1,69 @@
+<|im_start|>system
+# Tools
+
+You have access to the following functions:
+
+<tools>
+{"type": "function", "function": {"name": "write_file", "description": "Write file.", "parameters": {"type": "object", "properties": {"file_path": {"type": "string"}, "content": {"type": "string"}}, "required": ["file_path", "content"]}}}
+</tools>
+
+If you choose to call a function ONLY reply in the following format with NO suffix:
+
+<tool_call>
+<function=example_function_name>
+<parameter=example_parameter_1>
+value_1
+</parameter>
+<parameter=example_parameter_2>
+This is the value for the second parameter
+that can span
+multiple lines
+</parameter>
+</function>
+</tool_call>
+
+<IMPORTANT>
+Reminder:
+- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags
+- Required parameters MUST be specified
+- You may provide optional reasoning for your function call in natural language BEFORE the function call, but NOT after
+- If there is no function call available, answer the question like normal with your current knowledge and do not tell the user about function calls
+</IMPORTANT><|im_end|>
+<|im_start|>user
+Save the function body in solve.java based on the function definition and docstring below:
+/*
+For each test case with a hero and monsters (attack/health), determine if the hero can kill all monsters by choosing fight order, even if he dies after the last kill.
+Example:
+input:
+5
+3 17 1
+2
+16
+10 999 3
+10 20 30
+100 50 30
+1000 1000 4
+200 300 400 500
+1000 1000 1000 1000
+999 999 1
+1000
+1000
+999 999 1
+1000000
+999
+output:
+YES
+YES
+YES
+NO
+YES
+*/
+static String solve(String input) {
+    // TODO: implement
+    return "";
+}<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

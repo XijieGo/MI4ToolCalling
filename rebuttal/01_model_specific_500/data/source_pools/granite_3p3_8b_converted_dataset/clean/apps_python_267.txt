@@ -1,0 +1,36 @@
+<|start_of_role|>system<|end_of_role|>Knowledge Cutoff Date: April 2024.
+Today's Date: May 05, 2026.
+You are Granite, developed by IBM. You are a helpful assistant with access to the following tools. When a tool is required to answer the user's query, respond only with <|tool_call|> followed by a JSON list of tools used. If a tool does not exist in the provided list of tools, notify the user that you do not have the ability to fulfill the request.<|end_of_text|>
+<|start_of_role|>available_tools<|end_of_role|>[
+    {
+        "type": "function",
+        "function": {
+            "name": "write_file",
+            "description": "Write file.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "file_path": {
+                        "type": "string"
+                    },
+                    "content": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "file_path",
+                    "content"
+                ]
+            }
+        }
+    }
+]<|end_of_text|>
+<|start_of_role|>user<|end_of_role|>Save the function body in solve.py based on the function definition and docstring below:
+def count_col_triang(a):
+    """
+    Given a list of points with coordinates and colours, return the total points, total colours, total triangles, and the colour(s) with the maximum triangle count.
+    >>> count_col_triang([[[3, -4], 'blue'], [[-7, -1], 'red'], [[7, -6], 'yellow'], [[2, 5], 'yellow'], [[1, -5], 'red'], [[-1, 4], 'red'], [[1, 7], 'red'], [[-3, 5], 'red'], [[-3, -5], 'blue'], [[4, 1], 'blue']])
+    [10, 3, 11, ['red', 10]]
+    """
+    pass<|end_of_text|>
+<|start_of_role|>assistant<|end_of_role|>

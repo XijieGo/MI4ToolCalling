@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "completed_at": "2026-07-28T00:33:09.802876Z",
+  "models": [
+    "qwen3_4b",
+    "qwen3_8b",
+    "qwen3_14b",
+    "qwen35_4b",
+    "qwen35_9b",
+    "mistral_3p2_24b",
+    "granite_3p3_8b"
+  ],
+  "heldout_pairs_per_model": 300,
+  "rebuttal_table": "./results/runs/rebuttal_lxey_v5_rank_probability_20260728T003500Z/rebuttal_table.md"
+}

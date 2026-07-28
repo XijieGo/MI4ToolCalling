@@ -1,0 +1,31 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"write_file","description":"Write file.","parameters":{"type":"object","properties":{"file_path":{"type":"string"},"content":
+{"type":"string"}},"required":["file_path","content"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Add the function body in solve.py based on the function definition and docstring below:
+def to_chinese_numeral(n):
+    """
+    Convert n in [-99999.999, 99999.999] to a simplified Chinese numeral string. Use digit and place symbols for 0-9, 10, 100, 1000, and 10000; omit the leading one only for 10-19, collapse interior zeros, write decimals digit by digit after the point symbol, and prefix negatives.
+
+    >>> to_chinese_numeral(0)
+    '零'
+    """
+    pass
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

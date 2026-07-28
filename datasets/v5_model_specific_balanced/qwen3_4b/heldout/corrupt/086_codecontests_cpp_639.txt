@@ -1,0 +1,40 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"write_file","description":"Write file.","parameters":{"type":"object","properties":{"file_path":{"type":"string"},"content":
+{"type":"string"}},"required":["file_path","content"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Discuss the function body in solve.cpp based on the function definition and docstring below:
+/*
+Compute the minimal time in seconds for a squirrel to eat all nuts on n trees by moving up/down, eating, or jumping to the next tree at the same height.
+Example:
+input:
+5
+2
+1
+2
+1
+1
+output:
+14
+*/
+std::string solve(const std::string& input) {
+    // TODO: implement
+    return "";
+}
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

@@ -1,0 +1,1812 @@
+{
+  "dataset_version": "v5_model_specific_balanced",
+  "model_key": "qwen3_8b",
+  "model_label": "Qwen3-8B",
+  "model_path": "/root/autodl-tmp/Qwen/Qwen3-8B",
+  "manifest_sha256": "429ba1edd66b1512d43331d15d7816f1b56a200b7548157b5e760610470d7247",
+  "summary_sha256": "814a157daba6478a118e6ff45d439ab09a675e1efbaee082f25ae9b242b2a83b",
+  "heldout_sample_ids": [
+    "v5_qwen3_8b_001",
+    "v5_qwen3_8b_002",
+    "v5_qwen3_8b_003",
+    "v5_qwen3_8b_004",
+    "v5_qwen3_8b_005",
+    "v5_qwen3_8b_006",
+    "v5_qwen3_8b_007",
+    "v5_qwen3_8b_008",
+    "v5_qwen3_8b_009",
+    "v5_qwen3_8b_010",
+    "v5_qwen3_8b_011",
+    "v5_qwen3_8b_012",
+    "v5_qwen3_8b_013",
+    "v5_qwen3_8b_014",
+    "v5_qwen3_8b_015",
+    "v5_qwen3_8b_016",
+    "v5_qwen3_8b_017",
+    "v5_qwen3_8b_018",
+    "v5_qwen3_8b_019",
+    "v5_qwen3_8b_020",
+    "v5_qwen3_8b_021",
+    "v5_qwen3_8b_022",
+    "v5_qwen3_8b_023",
+    "v5_qwen3_8b_024",
+    "v5_qwen3_8b_025",
+    "v5_qwen3_8b_026",
+    "v5_qwen3_8b_027",
+    "v5_qwen3_8b_028",
+    "v5_qwen3_8b_029",
+    "v5_qwen3_8b_030",
+    "v5_qwen3_8b_031",
+    "v5_qwen3_8b_032",
+    "v5_qwen3_8b_033",
+    "v5_qwen3_8b_034",
+    "v5_qwen3_8b_035",
+    "v5_qwen3_8b_036",
+    "v5_qwen3_8b_037",
+    "v5_qwen3_8b_038",
+    "v5_qwen3_8b_039",
+    "v5_qwen3_8b_040",
+    "v5_qwen3_8b_041",
+    "v5_qwen3_8b_042",
+    "v5_qwen3_8b_043",
+    "v5_qwen3_8b_044",
+    "v5_qwen3_8b_045",
+    "v5_qwen3_8b_046",
+    "v5_qwen3_8b_047",
+    "v5_qwen3_8b_048",
+    "v5_qwen3_8b_049",
+    "v5_qwen3_8b_050",
+    "v5_qwen3_8b_051",
+    "v5_qwen3_8b_052",
+    "v5_qwen3_8b_053",
+    "v5_qwen3_8b_054",
+    "v5_qwen3_8b_055",
+    "v5_qwen3_8b_056",
+    "v5_qwen3_8b_057",
+    "v5_qwen3_8b_058",
+    "v5_qwen3_8b_059",
+    "v5_qwen3_8b_060",
+    "v5_qwen3_8b_061",
+    "v5_qwen3_8b_062",
+    "v5_qwen3_8b_063",
+    "v5_qwen3_8b_064",
+    "v5_qwen3_8b_065",
+    "v5_qwen3_8b_066",
+    "v5_qwen3_8b_067",
+    "v5_qwen3_8b_068",
+    "v5_qwen3_8b_069",
+    "v5_qwen3_8b_070",
+    "v5_qwen3_8b_071",
+    "v5_qwen3_8b_072",
+    "v5_qwen3_8b_073",
+    "v5_qwen3_8b_074",
+    "v5_qwen3_8b_075",
+    "v5_qwen3_8b_076",
+    "v5_qwen3_8b_077",
+    "v5_qwen3_8b_078",
+    "v5_qwen3_8b_079",
+    "v5_qwen3_8b_080",
+    "v5_qwen3_8b_081",
+    "v5_qwen3_8b_082",
+    "v5_qwen3_8b_083",
+    "v5_qwen3_8b_084",
+    "v5_qwen3_8b_085",
+    "v5_qwen3_8b_086",
+    "v5_qwen3_8b_087",
+    "v5_qwen3_8b_088",
+    "v5_qwen3_8b_089",
+    "v5_qwen3_8b_090",
+    "v5_qwen3_8b_091",
+    "v5_qwen3_8b_092",
+    "v5_qwen3_8b_093",
+    "v5_qwen3_8b_094",
+    "v5_qwen3_8b_095",
+    "v5_qwen3_8b_096",
+    "v5_qwen3_8b_097",
+    "v5_qwen3_8b_098",
+    "v5_qwen3_8b_099",
+    "v5_qwen3_8b_100",
+    "v5_qwen3_8b_101",
+    "v5_qwen3_8b_102",
+    "v5_qwen3_8b_103",
+    "v5_qwen3_8b_104",
+    "v5_qwen3_8b_105",
+    "v5_qwen3_8b_106",
+    "v5_qwen3_8b_107",
+    "v5_qwen3_8b_108",
+    "v5_qwen3_8b_109",
+    "v5_qwen3_8b_110",
+    "v5_qwen3_8b_111",
+    "v5_qwen3_8b_112",
+    "v5_qwen3_8b_113",
+    "v5_qwen3_8b_114",
+    "v5_qwen3_8b_115",
+    "v5_qwen3_8b_116",
+    "v5_qwen3_8b_117",
+    "v5_qwen3_8b_118",
+    "v5_qwen3_8b_119",
+    "v5_qwen3_8b_120",
+    "v5_qwen3_8b_121",
+    "v5_qwen3_8b_122",
+    "v5_qwen3_8b_123",
+    "v5_qwen3_8b_124",
+    "v5_qwen3_8b_125",
+    "v5_qwen3_8b_126",
+    "v5_qwen3_8b_127",
+    "v5_qwen3_8b_128",
+    "v5_qwen3_8b_129",
+    "v5_qwen3_8b_130",
+    "v5_qwen3_8b_131",
+    "v5_qwen3_8b_132",
+    "v5_qwen3_8b_133",
+    "v5_qwen3_8b_134",
+    "v5_qwen3_8b_135",
+    "v5_qwen3_8b_136",
+    "v5_qwen3_8b_137",
+    "v5_qwen3_8b_138",
+    "v5_qwen3_8b_139",
+    "v5_qwen3_8b_140",
+    "v5_qwen3_8b_141",
+    "v5_qwen3_8b_142",
+    "v5_qwen3_8b_143",
+    "v5_qwen3_8b_144",
+    "v5_qwen3_8b_145",
+    "v5_qwen3_8b_146",
+    "v5_qwen3_8b_147",
+    "v5_qwen3_8b_148",
+    "v5_qwen3_8b_149",
+    "v5_qwen3_8b_150",
+    "v5_qwen3_8b_151",
+    "v5_qwen3_8b_152",
+    "v5_qwen3_8b_153",
+    "v5_qwen3_8b_154",
+    "v5_qwen3_8b_155",
+    "v5_qwen3_8b_156",
+    "v5_qwen3_8b_157",
+    "v5_qwen3_8b_158",
+    "v5_qwen3_8b_159",
+    "v5_qwen3_8b_160",
+    "v5_qwen3_8b_161",
+    "v5_qwen3_8b_162",
+    "v5_qwen3_8b_163",
+    "v5_qwen3_8b_164",
+    "v5_qwen3_8b_165",
+    "v5_qwen3_8b_166",
+    "v5_qwen3_8b_167",
+    "v5_qwen3_8b_168",
+    "v5_qwen3_8b_169",
+    "v5_qwen3_8b_170",
+    "v5_qwen3_8b_171",
+    "v5_qwen3_8b_172",
+    "v5_qwen3_8b_173",
+    "v5_qwen3_8b_174",
+    "v5_qwen3_8b_175",
+    "v5_qwen3_8b_176",
+    "v5_qwen3_8b_177",
+    "v5_qwen3_8b_178",
+    "v5_qwen3_8b_179",
+    "v5_qwen3_8b_180",
+    "v5_qwen3_8b_181",
+    "v5_qwen3_8b_182",
+    "v5_qwen3_8b_183",
+    "v5_qwen3_8b_184",
+    "v5_qwen3_8b_185",
+    "v5_qwen3_8b_186",
+    "v5_qwen3_8b_187",
+    "v5_qwen3_8b_188",
+    "v5_qwen3_8b_189",
+    "v5_qwen3_8b_190",
+    "v5_qwen3_8b_191",
+    "v5_qwen3_8b_192",
+    "v5_qwen3_8b_193",
+    "v5_qwen3_8b_194",
+    "v5_qwen3_8b_195",
+    "v5_qwen3_8b_196",
+    "v5_qwen3_8b_197",
+    "v5_qwen3_8b_198",
+    "v5_qwen3_8b_199",
+    "v5_qwen3_8b_200",
+    "v5_qwen3_8b_201",
+    "v5_qwen3_8b_202",
+    "v5_qwen3_8b_203",
+    "v5_qwen3_8b_204",
+    "v5_qwen3_8b_205",
+    "v5_qwen3_8b_206",
+    "v5_qwen3_8b_207",
+    "v5_qwen3_8b_208",
+    "v5_qwen3_8b_209",
+    "v5_qwen3_8b_210",
+    "v5_qwen3_8b_211",
+    "v5_qwen3_8b_212",
+    "v5_qwen3_8b_213",
+    "v5_qwen3_8b_214",
+    "v5_qwen3_8b_215",
+    "v5_qwen3_8b_216",
+    "v5_qwen3_8b_217",
+    "v5_qwen3_8b_218",
+    "v5_qwen3_8b_219",
+    "v5_qwen3_8b_220",
+    "v5_qwen3_8b_221",
+    "v5_qwen3_8b_222",
+    "v5_qwen3_8b_223",
+    "v5_qwen3_8b_224",
+    "v5_qwen3_8b_225",
+    "v5_qwen3_8b_226",
+    "v5_qwen3_8b_227",
+    "v5_qwen3_8b_228",
+    "v5_qwen3_8b_229",
+    "v5_qwen3_8b_230",
+    "v5_qwen3_8b_231",
+    "v5_qwen3_8b_232",
+    "v5_qwen3_8b_233",
+    "v5_qwen3_8b_234",
+    "v5_qwen3_8b_235",
+    "v5_qwen3_8b_236",
+    "v5_qwen3_8b_237",
+    "v5_qwen3_8b_238",
+    "v5_qwen3_8b_239",
+    "v5_qwen3_8b_240",
+    "v5_qwen3_8b_241",
+    "v5_qwen3_8b_242",
+    "v5_qwen3_8b_243",
+    "v5_qwen3_8b_244",
+    "v5_qwen3_8b_245",
+    "v5_qwen3_8b_246",
+    "v5_qwen3_8b_247",
+    "v5_qwen3_8b_248",
+    "v5_qwen3_8b_249",
+    "v5_qwen3_8b_250",
+    "v5_qwen3_8b_251",
+    "v5_qwen3_8b_252",
+    "v5_qwen3_8b_253",
+    "v5_qwen3_8b_254",
+    "v5_qwen3_8b_255",
+    "v5_qwen3_8b_256",
+    "v5_qwen3_8b_257",
+    "v5_qwen3_8b_258",
+    "v5_qwen3_8b_259",
+    "v5_qwen3_8b_260",
+    "v5_qwen3_8b_261",
+    "v5_qwen3_8b_262",
+    "v5_qwen3_8b_263",
+    "v5_qwen3_8b_264",
+    "v5_qwen3_8b_265",
+    "v5_qwen3_8b_266",
+    "v5_qwen3_8b_267",
+    "v5_qwen3_8b_268",
+    "v5_qwen3_8b_269",
+    "v5_qwen3_8b_270",
+    "v5_qwen3_8b_271",
+    "v5_qwen3_8b_272",
+    "v5_qwen3_8b_273",
+    "v5_qwen3_8b_274",
+    "v5_qwen3_8b_275",
+    "v5_qwen3_8b_276",
+    "v5_qwen3_8b_277",
+    "v5_qwen3_8b_278",
+    "v5_qwen3_8b_279",
+    "v5_qwen3_8b_280",
+    "v5_qwen3_8b_281",
+    "v5_qwen3_8b_282",
+    "v5_qwen3_8b_283",
+    "v5_qwen3_8b_284",
+    "v5_qwen3_8b_285",
+    "v5_qwen3_8b_286",
+    "v5_qwen3_8b_287",
+    "v5_qwen3_8b_288",
+    "v5_qwen3_8b_289",
+    "v5_qwen3_8b_290",
+    "v5_qwen3_8b_291",
+    "v5_qwen3_8b_292",
+    "v5_qwen3_8b_293",
+    "v5_qwen3_8b_294",
+    "v5_qwen3_8b_295",
+    "v5_qwen3_8b_296",
+    "v5_qwen3_8b_297",
+    "v5_qwen3_8b_298",
+    "v5_qwen3_8b_299",
+    "v5_qwen3_8b_300"
+  ],
+  "heldout_prompt_hashes": [
+    {
+      "sample_id": "v5_qwen3_8b_001",
+      "corrupt_relpath": "heldout/corrupt/001_apps_python_174.txt",
+      "corrupt_prompt_sha256": "a98b39396278220bd3fe6e8ca1102ffbc11b3fc37b33e11d88ce33cb116ca080"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_002",
+      "corrupt_relpath": "heldout/corrupt/002_apps_python_211.txt",
+      "corrupt_prompt_sha256": "4b42b11029aa19e037251219099f550c143cc0d6ae7c2d00639e7a88e23e7fcf"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_003",
+      "corrupt_relpath": "heldout/corrupt/003_apps_python_324.txt",
+      "corrupt_prompt_sha256": "74ca6c685d1e1d9b7888fbffc76e373cd83161454f9044fdecf003e53daab405"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_004",
+      "corrupt_relpath": "heldout/corrupt/004_apps_python_371.txt",
+      "corrupt_prompt_sha256": "19f6d6ae8923204a77da8b00f95e8cbbab183e255e040bdf3a5eadb43b672f60"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_005",
+      "corrupt_relpath": "heldout/corrupt/005_apps_python_382.txt",
+      "corrupt_prompt_sha256": "2b8ea6421d3d09066a99a7bc31083ce4b577ffa090bcc64b54e0a0577e457355"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_006",
+      "corrupt_relpath": "heldout/corrupt/006_apps_python_407.txt",
+      "corrupt_prompt_sha256": "1c64a8c0a0259412e5aeb7b236591efc0686c50ba406b209045a544297a043f9"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_007",
+      "corrupt_relpath": "heldout/corrupt/007_apps_python_40.txt",
+      "corrupt_prompt_sha256": "df648d22272ddbe7d76f182a148563045c051a3d05174f7a166859e9650297c3"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_008",
+      "corrupt_relpath": "heldout/corrupt/008_apps_python_419.txt",
+      "corrupt_prompt_sha256": "c710ac7bdaf26844d6ba94add8c9b0a2e54a5d0a4418ea1545e33cd0c34b6587"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_009",
+      "corrupt_relpath": "heldout/corrupt/009_apps_python_425.txt",
+      "corrupt_prompt_sha256": "7b5639e2dd76fac1a9b43021394f2745b11ab6a19999d44502af941456c3f066"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_010",
+      "corrupt_relpath": "heldout/corrupt/010_apps_python_484.txt",
+      "corrupt_prompt_sha256": "9598ad2cac3d7b99e1fdadd7333015f7807c98ac6a0e2bb4fa3720ab002aa443"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_011",
+      "corrupt_relpath": "heldout/corrupt/011_apps_python_86.txt",
+      "corrupt_prompt_sha256": "68dfe9d612d23d575ae83c194e4027cd5a4331ca0edcd3ab8c4cdff2fd57daee"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_012",
+      "corrupt_relpath": "heldout/corrupt/012_codecontests_cpp_824.txt",
+      "corrupt_prompt_sha256": "4ef0826a88f7416151574e341cc905913d8d5f4696538273317aeb6adb2cccff"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_013",
+      "corrupt_relpath": "heldout/corrupt/013_codecontests_java_216.txt",
+      "corrupt_prompt_sha256": "d820de6b2fa6d49f8845bbfb194e06ac54e20f85eefad0fda099c6528ccc30e9"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_014",
+      "corrupt_relpath": "heldout/corrupt/014_codecontests_java_266.txt",
+      "corrupt_prompt_sha256": "9a07917082cb8e913cdac9bbe22b73d27b8dd2615b5f6e17314c119685e80e11"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_015",
+      "corrupt_relpath": "heldout/corrupt/015_codecontests_java_421.txt",
+      "corrupt_prompt_sha256": "f1e45603f08deedf9cb1b85bdd5c2e136638ce01b720a3ba26955693143ae870"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_016",
+      "corrupt_relpath": "heldout/corrupt/016_codecontests_java_474.txt",
+      "corrupt_prompt_sha256": "71c4a641c8ecf95018537c2414344f17f8755d3771242b64e1916dee726642cc"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_017",
+      "corrupt_relpath": "heldout/corrupt/017_codecontests_java_597.txt",
+      "corrupt_prompt_sha256": "1f8adde5017db010ffb06296a3f69e9cbc8d6780cf9070faa265d2c22c950024"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_018",
+      "corrupt_relpath": "heldout/corrupt/018_mbpp_python_103.txt",
+      "corrupt_prompt_sha256": "576644c88744583a31459fb05e86f5d70c27d503ad52b24d843ec07285025146"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_019",
+      "corrupt_relpath": "heldout/corrupt/019_apps_python_142.txt",
+      "corrupt_prompt_sha256": "229eba8a62d8e3aacfe2b72af724ed574b3a5a3aa13e55074678751fae6a0340"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_020",
+      "corrupt_relpath": "heldout/corrupt/020_apps_python_257.txt",
+      "corrupt_prompt_sha256": "7c5b6b1e1c878b872ba76522555d5efa2dd634c83fb8ebf69aa6b18c289eb390"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_021",
+      "corrupt_relpath": "heldout/corrupt/021_apps_python_277.txt",
+      "corrupt_prompt_sha256": "d30b12c2bec0802f90652fc2edda75fe9c2cf187ae73dea461ce8c0da5a1e1e9"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_022",
+      "corrupt_relpath": "heldout/corrupt/022_apps_python_302.txt",
+      "corrupt_prompt_sha256": "15e393efa7909d8d2e5ef34bf27638c73914c555846956cca57157ca309b1356"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_023",
+      "corrupt_relpath": "heldout/corrupt/023_apps_python_318.txt",
+      "corrupt_prompt_sha256": "723467ef53bf8af28f45e5de23341b66a6748295e763d5789d13c7a6f2fbb38f"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_024",
+      "corrupt_relpath": "heldout/corrupt/024_apps_python_378.txt",
+      "corrupt_prompt_sha256": "aaec997ac0895a6ae7820e0adc7a8ea6c35d3e8c2dd94850611accdcd4e8c453"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_025",
+      "corrupt_relpath": "heldout/corrupt/025_apps_python_388.txt",
+      "corrupt_prompt_sha256": "76d28a6fd45ca0298b808d9a0c134b3e32d112bb8599cb0ea9c381cc557ca3e2"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_026",
+      "corrupt_relpath": "heldout/corrupt/026_apps_python_394.txt",
+      "corrupt_prompt_sha256": "e76885fd078be424e4cf99d683bb162fe88ad840a9ad164274eb33f6aa196f60"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_027",
+      "corrupt_relpath": "heldout/corrupt/027_apps_python_435.txt",
+      "corrupt_prompt_sha256": "b7e151a2be42ff526047a3af47a2f1c688fd647c727bdb30a4e9ab4a351bdc0b"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_028",
+      "corrupt_relpath": "heldout/corrupt/028_apps_python_442.txt",
+      "corrupt_prompt_sha256": "03df7a876347ea9299fd464ea31028d446ba2fc48011eeee794b317c91624cb2"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_029",
+      "corrupt_relpath": "heldout/corrupt/029_apps_python_446.txt",
+      "corrupt_prompt_sha256": "c1ab2e8a325597595c24f72c43e1c4dc53574ff8819e7535d00f3bfb3942e126"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_030",
+      "corrupt_relpath": "heldout/corrupt/030_apps_python_447.txt",
+      "corrupt_prompt_sha256": "fc42ae4b346c18eb0b8defc43dd8273b7dfd4505c15b4202278b29885f2beb8e"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_031",
+      "corrupt_relpath": "heldout/corrupt/031_apps_python_498.txt",
+      "corrupt_prompt_sha256": "9fdb0862da565d4073f379b211f3b353be0d2d24b055cbe4b7e73e31891f1fcb"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_032",
+      "corrupt_relpath": "heldout/corrupt/032_apps_python_64.txt",
+      "corrupt_prompt_sha256": "4bda05156d8b0893a551c085f5468e9f30b6311c6e90bf15a5da8aa34fd09d25"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_033",
+      "corrupt_relpath": "heldout/corrupt/033_codecontests_cpp_1.txt",
+      "corrupt_prompt_sha256": "d8eb4c51da6b745724ef35f31d1072299d5c3ebefe66e61cc74220d55c346e67"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_034",
+      "corrupt_relpath": "heldout/corrupt/034_codecontests_cpp_568.txt",
+      "corrupt_prompt_sha256": "31148ccc6c8f6c5ce7b8ae9dbd91439fbec030bac9a5b0cba9be269dfc53b2f5"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_035",
+      "corrupt_relpath": "heldout/corrupt/035_codecontests_cpp_725.txt",
+      "corrupt_prompt_sha256": "e32bf2ad667951a374ca377d8b6c7ae815e37a3f26644d5a6a1ee2f904cbed04"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_036",
+      "corrupt_relpath": "heldout/corrupt/036_codecontests_java_1.txt",
+      "corrupt_prompt_sha256": "002eb7bc05a23d6062a05d7df75ba7a873b6397393e2d14b2047ad92abe50e82"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_037",
+      "corrupt_relpath": "heldout/corrupt/037_humaneval_python_78.txt",
+      "corrupt_prompt_sha256": "9b19d15d3e90e0b37d8764b340587d64efc66bd3daac93f40500384393259f32"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_038",
+      "corrupt_relpath": "heldout/corrupt/038_mbpp_python_165.txt",
+      "corrupt_prompt_sha256": "f5346747486e2d5ee66a12147b1c26ba9c68ad01a8843db8c08e261a0332afe3"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_039",
+      "corrupt_relpath": "heldout/corrupt/039_mbpp_python_194.txt",
+      "corrupt_prompt_sha256": "697adb5bee10f08437b9388c793353ebedc3a83580becf8914ea5a33d9f7967f"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_040",
+      "corrupt_relpath": "heldout/corrupt/040_mbpp_python_204.txt",
+      "corrupt_prompt_sha256": "a92c0bc7e9a81a1e315153f8cd824eb87765d9adeca2a5a17c3fa3b7ae2906cb"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_041",
+      "corrupt_relpath": "heldout/corrupt/041_mbpp_python_305.txt",
+      "corrupt_prompt_sha256": "c623fa6660aab1228cac914f1692ed8f2156f6a1932f13d6043f860bf0a29f26"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_042",
+      "corrupt_relpath": "heldout/corrupt/042_mbpp_python_451.txt",
+      "corrupt_prompt_sha256": "59f70980571d26782edc97641729c575c79752415907a19dfed86e5468b080f7"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_043",
+      "corrupt_relpath": "heldout/corrupt/043_apps_python_151.txt",
+      "corrupt_prompt_sha256": "5128edf8c92aae20e5bd1530c43f7b467f85f12e4565e11ad5c890233abf9601"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_044",
+      "corrupt_relpath": "heldout/corrupt/044_apps_python_172.txt",
+      "corrupt_prompt_sha256": "84e40c44ab2f2665d4afda9301dd9e76fa1a92147f153b2d4bf9953e51f4265c"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_045",
+      "corrupt_relpath": "heldout/corrupt/045_apps_python_255.txt",
+      "corrupt_prompt_sha256": "ca981739d37c642f20b3cd5f24bcf5468851f4a7d76102bca0c1b9bc56e652c6"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_046",
+      "corrupt_relpath": "heldout/corrupt/046_apps_python_299.txt",
+      "corrupt_prompt_sha256": "f02804dfa94c38a60919223b57f5f08df747ae32068a45ca1661fda3fa2c1328"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_047",
+      "corrupt_relpath": "heldout/corrupt/047_apps_python_328.txt",
+      "corrupt_prompt_sha256": "38255fc9947a95b10100582b43e5acae554ad228f41bf7647c8e58ec63a4f926"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_048",
+      "corrupt_relpath": "heldout/corrupt/048_apps_python_344.txt",
+      "corrupt_prompt_sha256": "0d912c29530af039d4a286ddc481c644c252d8d75e643c9b040448518b111bd3"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_049",
+      "corrupt_relpath": "heldout/corrupt/049_apps_python_372.txt",
+      "corrupt_prompt_sha256": "f94ded5c7cbdf1ffdc69b19452af9f14f844e7d4a1e637da4a70cad6b5d89397"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_050",
+      "corrupt_relpath": "heldout/corrupt/050_apps_python_396.txt",
+      "corrupt_prompt_sha256": "b682d99dbee068aa356a30f8bbc74edaccb107f02e6657aa1a682ec135065d0e"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_051",
+      "corrupt_relpath": "heldout/corrupt/051_apps_python_397.txt",
+      "corrupt_prompt_sha256": "da4bc538eaedd2d8252c6db3a65d4e6a8618bd63e4fc2815cd1ee3810779e826"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_052",
+      "corrupt_relpath": "heldout/corrupt/052_apps_python_455.txt",
+      "corrupt_prompt_sha256": "125250d075052f683a7bd5a689fe717f50ceaf3e498f9841bcbd067344231413"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_053",
+      "corrupt_relpath": "heldout/corrupt/053_apps_python_82.txt",
+      "corrupt_prompt_sha256": "06186d29eb17bb09ce8d10bd0fa003350b6d09f7bdfb5b340afaa088896b94b7"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_054",
+      "corrupt_relpath": "heldout/corrupt/054_apps_python_98.txt",
+      "corrupt_prompt_sha256": "a09290f045c45d2815a0aed1b1c8a25a230bd1285f13e213cb30de0de08faad2"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_055",
+      "corrupt_relpath": "heldout/corrupt/055_codecontests_java_195.txt",
+      "corrupt_prompt_sha256": "df6f27244bff73624358ddade4115894c128f26cbb585b536128eac5918b13c5"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_056",
+      "corrupt_relpath": "heldout/corrupt/056_codecontests_java_278.txt",
+      "corrupt_prompt_sha256": "d6cb665fc6b1a2e4aba3b2b8706dfd13e7a4919933ecf9ca69868bdd7bc0a3bb"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_057",
+      "corrupt_relpath": "heldout/corrupt/057_codecontests_java_412.txt",
+      "corrupt_prompt_sha256": "7a8364c7a377e319159b4d2e15fe1d3adecf09cc700094694021bf2c550db481"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_058",
+      "corrupt_relpath": "heldout/corrupt/058_codecontests_java_448.txt",
+      "corrupt_prompt_sha256": "9ff93b4bfcd2b94c55d9465cbecbdc043e0469214d41da6c32f6b3c22b704071"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_059",
+      "corrupt_relpath": "heldout/corrupt/059_codecontests_java_583.txt",
+      "corrupt_prompt_sha256": "4058695e4b9486cf037259432e068771cb6e3861339a821a81c5011d1ece3062"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_060",
+      "corrupt_relpath": "heldout/corrupt/060_humaneval_python_109.txt",
+      "corrupt_prompt_sha256": "ac7c60dd7bef6197236550c3cba96f1b2950ffa9efb99196fc110c0286e8d396"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_061",
+      "corrupt_relpath": "heldout/corrupt/061_apps_python_133.txt",
+      "corrupt_prompt_sha256": "678c87a64ada6681f8b0205177d87a19e9d6e4c8265acd0fbe165a15be185eff"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_062",
+      "corrupt_relpath": "heldout/corrupt/062_apps_python_166.txt",
+      "corrupt_prompt_sha256": "e3f2835fb96ca923d22b64774f71d479292739efc105159e43c773d2422c13b5"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_063",
+      "corrupt_relpath": "heldout/corrupt/063_apps_python_17.txt",
+      "corrupt_prompt_sha256": "ed705b70b4cfc9c58df42082810f3c0f68f1b72a3b3874a84ebe83b31467740d"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_064",
+      "corrupt_relpath": "heldout/corrupt/064_apps_python_224.txt",
+      "corrupt_prompt_sha256": "b0f3f906e9764754bdef8d3380f66e0addcf68da0963f34f10ce24fab93c6010"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_065",
+      "corrupt_relpath": "heldout/corrupt/065_apps_python_232.txt",
+      "corrupt_prompt_sha256": "da55c3b90e065dd18eaba29a19d09159bea62b33342a6ef3b62527ab96130c0f"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_066",
+      "corrupt_relpath": "heldout/corrupt/066_apps_python_237.txt",
+      "corrupt_prompt_sha256": "76459efa7f380f0c75c8f5b986e850f76840a57e3f03aa44a42c479ff6c5d847"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_067",
+      "corrupt_relpath": "heldout/corrupt/067_apps_python_238.txt",
+      "corrupt_prompt_sha256": "e543f918baa7cc1cc9c0ede8c05b13fb724072cc0bcfa9a4d9168037f68af328"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_068",
+      "corrupt_relpath": "heldout/corrupt/068_apps_python_259.txt",
+      "corrupt_prompt_sha256": "a3d23f379d787c100122e965bd682c2ef3f48b30418050ad023cbc774c5bd242"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_069",
+      "corrupt_relpath": "heldout/corrupt/069_apps_python_279.txt",
+      "corrupt_prompt_sha256": "40c8989c331c27551d96037e0a11958fe3d20cd00227270b7fefb6d23fd26e51"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_070",
+      "corrupt_relpath": "heldout/corrupt/070_apps_python_393.txt",
+      "corrupt_prompt_sha256": "42d9f7a1521dcb66a107680692ff8fed7da7acad5860cd3b0b4f29ab40c43e8f"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_071",
+      "corrupt_relpath": "heldout/corrupt/071_apps_python_403.txt",
+      "corrupt_prompt_sha256": "1bf7894586d08af0c349d1f7ceebfdb6d1f4c47725d687c912abcc765c2992b2"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_072",
+      "corrupt_relpath": "heldout/corrupt/072_apps_python_437.txt",
+      "corrupt_prompt_sha256": "e384e9f120e0254f97569626023e13e80b4572cde667f266033ef41fea107d25"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_073",
+      "corrupt_relpath": "heldout/corrupt/073_apps_python_495.txt",
+      "corrupt_prompt_sha256": "3ccc49b1336e26456f595f0873ff170df2da21f82335dc72b5f2954bdb9f792f"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_074",
+      "corrupt_relpath": "heldout/corrupt/074_codecontests_java_342.txt",
+      "corrupt_prompt_sha256": "5dbb012515e2988e3387c3836c0488e8019f38626326e8deca6715c03727efe5"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_075",
+      "corrupt_relpath": "heldout/corrupt/075_codecontests_java_394.txt",
+      "corrupt_prompt_sha256": "580d16da634b9002604f8339c17d43966d88931973207c6a0a31e8cc973d8eb3"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_076",
+      "corrupt_relpath": "heldout/corrupt/076_codecontests_java_433.txt",
+      "corrupt_prompt_sha256": "7a80b4290d528c85e06f8210d539f6bdcc571687ea6cf6296378bda2844aa323"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_077",
+      "corrupt_relpath": "heldout/corrupt/077_humaneval_python_60.txt",
+      "corrupt_prompt_sha256": "d1e71ef3034e69114f2253d0b367cbd2b43ee47a0f57aabaeede2eb7b9a836d4"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_078",
+      "corrupt_relpath": "heldout/corrupt/078_mbpp_python_17.txt",
+      "corrupt_prompt_sha256": "f7dcc5183f30d126ea48e53126c02e9b5e110c82fd5394edf82bb99e55f55966"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_079",
+      "corrupt_relpath": "heldout/corrupt/079_mbpp_python_416.txt",
+      "corrupt_prompt_sha256": "59ef8aecb1e024e24092a896e0a42644e930d6a5ceacc21db2968252aa406dbe"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_080",
+      "corrupt_relpath": "heldout/corrupt/080_mbpp_python_423.txt",
+      "corrupt_prompt_sha256": "98a8a50a01a435297c2b6535544fcc5fa88917d3e7c454c231d0d553064f7396"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_081",
+      "corrupt_relpath": "heldout/corrupt/081_mbpp_python_455.txt",
+      "corrupt_prompt_sha256": "a1868787eae44e8b77a4fa711c6a4cc45c5ce2e1767cda7e23706c8e994e661a"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_082",
+      "corrupt_relpath": "heldout/corrupt/082_mbpp_python_456.txt",
+      "corrupt_prompt_sha256": "fc7f13f8e190ef4f79e1f5e3b12ea5842f2845cb995f5cd684b0514cab5421f8"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_083",
+      "corrupt_relpath": "heldout/corrupt/083_mbpp_python_459.txt",
+      "corrupt_prompt_sha256": "eb0f458c92b49c0b504764ae6d17d57520ede76de2ee2c9be974089421fe03e2"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_084",
+      "corrupt_relpath": "heldout/corrupt/084_apps_python_110.txt",
+      "corrupt_prompt_sha256": "b0dad378bb9a3a325a2dbc1c626f34e40af68099e897c92d83baab17b04a8a7a"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_085",
+      "corrupt_relpath": "heldout/corrupt/085_apps_python_158.txt",
+      "corrupt_prompt_sha256": "c802ea1555960ef8ab4a5a8e4d1094a4786abf2bbb8197163fe5b331a0a5c91d"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_086",
+      "corrupt_relpath": "heldout/corrupt/086_apps_python_175.txt",
+      "corrupt_prompt_sha256": "6749c8ddffc62dd59b0ab0786db68b6a2b549c4993ab7987d10d5e16545ece3f"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_087",
+      "corrupt_relpath": "heldout/corrupt/087_apps_python_194.txt",
+      "corrupt_prompt_sha256": "5f901bd6bde23b50c702e37dd0a88fcb78bc785dcd692613fa0fa2abe7a1f66d"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_088",
+      "corrupt_relpath": "heldout/corrupt/088_apps_python_311.txt",
+      "corrupt_prompt_sha256": "0f5e00b727a9bae7f079f28157469f11190c44e5eeab04aa9f6f6d8b734650cb"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_089",
+      "corrupt_relpath": "heldout/corrupt/089_apps_python_329.txt",
+      "corrupt_prompt_sha256": "aa411a2f66b1dbc759a46e3a539020851368f56440197f7bb9bf6bf112602b27"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_090",
+      "corrupt_relpath": "heldout/corrupt/090_apps_python_351.txt",
+      "corrupt_prompt_sha256": "2018850b585a942eb8ca980fa95563370822bd10aab0d82bde4ea4db88c450ff"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_091",
+      "corrupt_relpath": "heldout/corrupt/091_apps_python_387.txt",
+      "corrupt_prompt_sha256": "7b429180e0635c350a37b8c1dae21daa0210db4848d238a8b1acaee99bdefa89"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_092",
+      "corrupt_relpath": "heldout/corrupt/092_apps_python_392.txt",
+      "corrupt_prompt_sha256": "d7e134f9871d83eb6dd27b329c72cee4de7ac9fa1b117558e9554d47f5f756af"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_093",
+      "corrupt_relpath": "heldout/corrupt/093_apps_python_395.txt",
+      "corrupt_prompt_sha256": "acbdbc384e51beef9edd91ce7b993ac0eefdb26b35b883290ab08e9dbbcb5498"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_094",
+      "corrupt_relpath": "heldout/corrupt/094_apps_python_404.txt",
+      "corrupt_prompt_sha256": "a9bb7088949e2743509a74a8bf63c18bab35ec61dd054ab7e119aee8e62536f4"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_095",
+      "corrupt_relpath": "heldout/corrupt/095_apps_python_422.txt",
+      "corrupt_prompt_sha256": "da2bbf1c63ebb93af1dada45e6f6c1fc95d306a842a6dfa84ee18a4947d67518"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_096",
+      "corrupt_relpath": "heldout/corrupt/096_apps_python_434.txt",
+      "corrupt_prompt_sha256": "45369275e39e9f9bce8e1b3dfef1bd05431d89fee365c7fca6796215e3f46ccb"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_097",
+      "corrupt_relpath": "heldout/corrupt/097_apps_python_448.txt",
+      "corrupt_prompt_sha256": "ee60ca0f4ea4f01e9d8ce975088fa74918e2d23da0f7ec09215db16666e33b80"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_098",
+      "corrupt_relpath": "heldout/corrupt/098_apps_python_458.txt",
+      "corrupt_prompt_sha256": "b23a75a96358128d5da14a0dd149afbfcab8131ac4ed9ca1832541b65171035c"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_099",
+      "corrupt_relpath": "heldout/corrupt/099_apps_python_488.txt",
+      "corrupt_prompt_sha256": "32c52c710dd52dd1bc8452ca8efa09598ee77570404acfd9e9565153e1947b2d"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_100",
+      "corrupt_relpath": "heldout/corrupt/100_apps_python_494.txt",
+      "corrupt_prompt_sha256": "02f82d1323c9baee48581407a3535112f6e6287507c684e7f972cf595a8d9a8a"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_101",
+      "corrupt_relpath": "heldout/corrupt/101_apps_python_500.txt",
+      "corrupt_prompt_sha256": "5dd6d089e3bb86b11e33a516557fa0d61d5876eafd07863fe54602a359898173"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_102",
+      "corrupt_relpath": "heldout/corrupt/102_apps_python_503.txt",
+      "corrupt_prompt_sha256": "376704071e06b8d52c957b909fb976e26a7a2a4eeb15eb49e0d6c25066d0f312"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_103",
+      "corrupt_relpath": "heldout/corrupt/103_apps_python_5.txt",
+      "corrupt_prompt_sha256": "75a4bc9da2a777b4584e2bf68cb0b5e05d58fc6a5b3bb40bee36b79380564804"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_104",
+      "corrupt_relpath": "heldout/corrupt/104_apps_python_77.txt",
+      "corrupt_prompt_sha256": "eb8b86098d88c6bb17f604a8f85cb64d26562856460f29391f8e9b23fe7cd144"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_105",
+      "corrupt_relpath": "heldout/corrupt/105_apps_python_8.txt",
+      "corrupt_prompt_sha256": "16f86dcb8f1f45ef3857e8d95aae83d3041b6a51d60bb37901d40d38d50fe5b6"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_106",
+      "corrupt_relpath": "heldout/corrupt/106_codecontests_cpp_195.txt",
+      "corrupt_prompt_sha256": "4b2a1a353bb20c4aeff5bb92fe4a975218f7e0c5223e5f3ee77129cfe4a7af78"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_107",
+      "corrupt_relpath": "heldout/corrupt/107_codecontests_cpp_476.txt",
+      "corrupt_prompt_sha256": "a212269394b50d0ba2b186eebcf702c73af84e5f019c851daabf9b245037cdfd"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_108",
+      "corrupt_relpath": "heldout/corrupt/108_codecontests_cpp_661.txt",
+      "corrupt_prompt_sha256": "45e671247983db4d2dd646562015cf199e40f2782b1703c45438820256db2eb8"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_109",
+      "corrupt_relpath": "heldout/corrupt/109_codecontests_java_533.txt",
+      "corrupt_prompt_sha256": "59c0308590a5e38838e47d721dd8369f9d90408e04d4907a79b573724a7c8625"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_110",
+      "corrupt_relpath": "heldout/corrupt/110_humaneval_python_151.txt",
+      "corrupt_prompt_sha256": "ee759c0ccc62f9285b9ca790bd71a890871b2f979590f988261f8fe9cc641b96"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_111",
+      "corrupt_relpath": "heldout/corrupt/111_mbpp_python_61.txt",
+      "corrupt_prompt_sha256": "4b78a1109b784a07a850f9b987971ff9454a666a6349b6546154f9fa46ce0e41"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_112",
+      "corrupt_relpath": "heldout/corrupt/112_apps_python_261.txt",
+      "corrupt_prompt_sha256": "96d74045add77c99faf37f91de2f64019bb0426bf6023ed7d461ed338f5edc50"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_113",
+      "corrupt_relpath": "heldout/corrupt/113_apps_python_386.txt",
+      "corrupt_prompt_sha256": "f343c0e8aa19bf6b96f17fae0fb07e7b85606785fa29c286ae46a1da54119ab6"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_114",
+      "corrupt_relpath": "heldout/corrupt/114_apps_python_417.txt",
+      "corrupt_prompt_sha256": "49699c1fb4fe7a686f52ad95b4c4aab189b4dcd5e2ee672409a936baa3f8650d"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_115",
+      "corrupt_relpath": "heldout/corrupt/115_apps_python_452.txt",
+      "corrupt_prompt_sha256": "2cce55dc254ff2c0cfea99f5867fa7616ce01b6229352119e9e2ad9ba5638fee"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_116",
+      "corrupt_relpath": "heldout/corrupt/116_apps_python_472.txt",
+      "corrupt_prompt_sha256": "d4daae2161a7147e58371f0690572629e6f7cf2ce604cfa25943d2d3aeaf45b4"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_117",
+      "corrupt_relpath": "heldout/corrupt/117_codecontests_cpp_87.txt",
+      "corrupt_prompt_sha256": "93f6b7cebfa2743fef703147e6fe62b7c629f466649761b15c6cfa84bc2e8c58"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_118",
+      "corrupt_relpath": "heldout/corrupt/118_mbpp_python_273.txt",
+      "corrupt_prompt_sha256": "4a651fa087081ccb50d80146a97b270bdcfd845db778040ae7a694e1df268e8b"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_119",
+      "corrupt_relpath": "heldout/corrupt/119_mbpp_python_430.txt",
+      "corrupt_prompt_sha256": "460a2f4387375f111422971776c9fbfd0cca91aafeda19d191d3c9f42db3fcdc"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_120",
+      "corrupt_relpath": "heldout/corrupt/120_mbpp_python_4.txt",
+      "corrupt_prompt_sha256": "4cecb9561b66f28a6a433132be46dd5c9193d984ecb250028ebe327f2f321cf4"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_121",
+      "corrupt_relpath": "heldout/corrupt/121_apps_python_101.txt",
+      "corrupt_prompt_sha256": "a6fb6e7c87e218ff5e3cf7e1264d7ef28872bb811ae5cfac9e8e2de165a1c258"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_122",
+      "corrupt_relpath": "heldout/corrupt/122_apps_python_1.txt",
+      "corrupt_prompt_sha256": "a7d31f5e3e89e1f6f6c9908c967e1bc09a9f631940dc940005c18afc2555894c"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_123",
+      "corrupt_relpath": "heldout/corrupt/123_apps_python_251.txt",
+      "corrupt_prompt_sha256": "6e795a0436b95dac74384252b39aa49bf98a738c8a4500f6e514f7f1dad7ec82"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_124",
+      "corrupt_relpath": "heldout/corrupt/124_apps_python_297.txt",
+      "corrupt_prompt_sha256": "ee32eea2287c9a99e17841b603c78b7f9cf59a424d4fd71b43c2a36d7585f2fb"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_125",
+      "corrupt_relpath": "heldout/corrupt/125_apps_python_312.txt",
+      "corrupt_prompt_sha256": "8b01178bd1ade9fede29430a83136d4773b40e57f2aae52aabcf5a76edbc1fed"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_126",
+      "corrupt_relpath": "heldout/corrupt/126_apps_python_389.txt",
+      "corrupt_prompt_sha256": "112e13d1e7b69efdce2be9d8c97a88fa0d20d29851f2f1477d6232e7f44847e3"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_127",
+      "corrupt_relpath": "heldout/corrupt/127_apps_python_43.txt",
+      "corrupt_prompt_sha256": "32465e0b7e26ff48b5bb76cb2da61ca712d1c925bd9da493f5d92415b3f80a01"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_128",
+      "corrupt_relpath": "heldout/corrupt/128_apps_python_444.txt",
+      "corrupt_prompt_sha256": "e4d1466bc8f10294e322e864a899a802d43d0b2ed8f3bc710176726cbdd333ed"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_129",
+      "corrupt_relpath": "heldout/corrupt/129_apps_python_487.txt",
+      "corrupt_prompt_sha256": "8a69e212d512de6a0c6911480760e2518c2add8ea0d56edf99742cc75b4aa201"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_130",
+      "corrupt_relpath": "heldout/corrupt/130_apps_python_54.txt",
+      "corrupt_prompt_sha256": "d20d21edc0298e7d40603f1f28091d9c863926fb4ad64edf63a819ec3c0bfa03"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_131",
+      "corrupt_relpath": "heldout/corrupt/131_apps_python_75.txt",
+      "corrupt_prompt_sha256": "bb1615a4fddb9047b69c5b36468f5db7236d53897383a5a901a0b80ae28de217"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_132",
+      "corrupt_relpath": "heldout/corrupt/132_apps_python_91.txt",
+      "corrupt_prompt_sha256": "45a10e8bdd1f60d4ded3e9af9ef3c2d4da8dd299c9e00ab0ef5e97ab36a717ec"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_133",
+      "corrupt_relpath": "heldout/corrupt/133_codecontests_java_167.txt",
+      "corrupt_prompt_sha256": "f3a5892ea79e1682a66fb94151719f1217c4c06c0f93a64b0856fa6a33a5d105"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_134",
+      "corrupt_relpath": "heldout/corrupt/134_codecontests_java_387.txt",
+      "corrupt_prompt_sha256": "b248f98f2a75122671a71101657dc37b4f4f1b9429a1f9c0f54b2b8350b95029"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_135",
+      "corrupt_relpath": "heldout/corrupt/135_codecontests_java_463.txt",
+      "corrupt_prompt_sha256": "47431b26edf9a2c11d6f0df74cc9309d72d7241f8f1c28931554476438e7b9cb"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_136",
+      "corrupt_relpath": "heldout/corrupt/136_codecontests_java_82.txt",
+      "corrupt_prompt_sha256": "2eab26e674a595574fc59ec1333a3e50260fc7fa605cef38d123ecc1bbd3b494"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_137",
+      "corrupt_relpath": "heldout/corrupt/137_humaneval_python_131.txt",
+      "corrupt_prompt_sha256": "08d31d0ce32f4f97efc950d3d74b11d798b8f2a9489383ed5e04654a24526d2f"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_138",
+      "corrupt_relpath": "heldout/corrupt/138_humaneval_python_161.txt",
+      "corrupt_prompt_sha256": "a5eae8269308c02ab9b599dd19581f9355c3f6b57175d556419a1fcc3506ed2a"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_139",
+      "corrupt_relpath": "heldout/corrupt/139_humaneval_python_42.txt",
+      "corrupt_prompt_sha256": "76d8ec1070964d14dc78300c2648aebe171e126dd07e7be0303eb1e6932d4aaa"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_140",
+      "corrupt_relpath": "heldout/corrupt/140_mbpp_python_147.txt",
+      "corrupt_prompt_sha256": "c034c217db7b91b554084c2c13e3e0888ab332a62a92a34d9da352228e2abde3"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_141",
+      "corrupt_relpath": "heldout/corrupt/141_mbpp_python_175.txt",
+      "corrupt_prompt_sha256": "2604a6a8ea002c0a3991a5bff7c91dcbb235cb3d46e4f6232cfaa149dc9b4198"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_142",
+      "corrupt_relpath": "heldout/corrupt/142_mbpp_python_271.txt",
+      "corrupt_prompt_sha256": "d6e6182ce14d54396313e1adf044d10f471bd1783e6cca42666593cff4e1809b"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_143",
+      "corrupt_relpath": "heldout/corrupt/143_apps_python_138.txt",
+      "corrupt_prompt_sha256": "ebcf42c5437451dee8371df8cc1b422acec0a1c86f21e3fe59ef501f63ad9e25"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_144",
+      "corrupt_relpath": "heldout/corrupt/144_apps_python_213.txt",
+      "corrupt_prompt_sha256": "0487715fa127dcb41f7d6282ea8dbb2fabefe879f6e881026a0ff87859ccb416"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_145",
+      "corrupt_relpath": "heldout/corrupt/145_apps_python_333.txt",
+      "corrupt_prompt_sha256": "6dc18c20bba0ea10ee64b0af819b4e9636ad24d946d16b9e08439f64df929990"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_146",
+      "corrupt_relpath": "heldout/corrupt/146_codecontests_cpp_692.txt",
+      "corrupt_prompt_sha256": "450349fd61a8fa55e5f28b0bc54bc1a09392aa67d1b32d8dd7b752aa45c72638"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_147",
+      "corrupt_relpath": "heldout/corrupt/147_codecontests_java_318.txt",
+      "corrupt_prompt_sha256": "4a85f29222dd5b05051f0a2031ad853490b1647f1472dc59adc1755716d7d967"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_148",
+      "corrupt_relpath": "heldout/corrupt/148_codecontests_java_347.txt",
+      "corrupt_prompt_sha256": "edc777843f78226cc4fbd0cfc91cdbfe99ba23a912ff7994a6f6d8ec6a15bcbe"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_149",
+      "corrupt_relpath": "heldout/corrupt/149_apps_python_235.txt",
+      "corrupt_prompt_sha256": "2860d0e4150a7d7aed3b3429bbc19aa60d3f8d9ab14cd2d9451c075c1db1a7b1"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_150",
+      "corrupt_relpath": "heldout/corrupt/150_codecontests_cpp_141.txt",
+      "corrupt_prompt_sha256": "2816b858ad0484a64f29d701a897db0f055f6557eeaf26f1a725a83e1063b7f9"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_151",
+      "corrupt_relpath": "heldout/corrupt/151_codecontests_cpp_401.txt",
+      "corrupt_prompt_sha256": "213c796d5e8db6b0930953c1aef2aee395cda945ad722b7896e15d72ef6c3e75"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_152",
+      "corrupt_relpath": "heldout/corrupt/152_codecontests_cpp_469.txt",
+      "corrupt_prompt_sha256": "89eb6007df18f3bf398f0f6f3b4c52411fb78b517b7c223de23ac888eaa476ae"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_153",
+      "corrupt_relpath": "heldout/corrupt/153_codecontests_java_329.txt",
+      "corrupt_prompt_sha256": "9c0cad132dbd33df6dbd5cffb37923803f4c4f2ab24e0c2a0f1367c4c1a08dcc"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_154",
+      "corrupt_relpath": "heldout/corrupt/154_codecontests_java_341.txt",
+      "corrupt_prompt_sha256": "3d3fee86006c56f45cd1ff7fd05795c63e290e8575bf0723609a8ac66dab9d9d"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_155",
+      "corrupt_relpath": "heldout/corrupt/155_codecontests_java_35.txt",
+      "corrupt_prompt_sha256": "0b8f621b01ea4ebc338b3fb05a23deda463f67774ba04bfe4458eeb34f4e090c"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_156",
+      "corrupt_relpath": "heldout/corrupt/156_codecontests_java_379.txt",
+      "corrupt_prompt_sha256": "51053e1393c44f5142c56d2fb98c9d7abcf795fef5df02f03e484daffc859ce4"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_157",
+      "corrupt_relpath": "heldout/corrupt/157_codecontests_java_88.txt",
+      "corrupt_prompt_sha256": "e452f6bc40d546e15e5fee6024bc8b8cc125f16a5338a504d472903a4149396b"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_158",
+      "corrupt_relpath": "heldout/corrupt/158_apps_python_117.txt",
+      "corrupt_prompt_sha256": "fc943ce9b8e6bb920fc80e4fca5256ed93b0c1f5a5fe438380fcc97b1c5f4bb2"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_159",
+      "corrupt_relpath": "heldout/corrupt/159_apps_python_155.txt",
+      "corrupt_prompt_sha256": "c9ce40778713931a2052e9cb5c2ee162b14c09b81032dc49439217497ba8aa86"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_160",
+      "corrupt_relpath": "heldout/corrupt/160_apps_python_181.txt",
+      "corrupt_prompt_sha256": "84d61c8d16be8402fefca8b0c25686528fb2bde1ffb9b674a8619c45e8cc000e"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_161",
+      "corrupt_relpath": "heldout/corrupt/161_apps_python_239.txt",
+      "corrupt_prompt_sha256": "d649ce3b484e6c98ca5cb9da4386eb97d64d1250c3c69f0344bd7fb9c08efe58"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_162",
+      "corrupt_relpath": "heldout/corrupt/162_apps_python_321.txt",
+      "corrupt_prompt_sha256": "86c6fa2e6ec55df4664425eacc5e94fa8305f0cc8724e3a0e79ac6a30d3fd252"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_163",
+      "corrupt_relpath": "heldout/corrupt/163_apps_python_346.txt",
+      "corrupt_prompt_sha256": "84019460ba415aa2f1260ac159b22b98895a420d7c2f4cdf780a8f9b6089ea41"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_164",
+      "corrupt_relpath": "heldout/corrupt/164_apps_python_406.txt",
+      "corrupt_prompt_sha256": "1cff5579dc7e8fb0a654807157ab48fd6a04ef70a850b3a4d051ed91f3287056"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_165",
+      "corrupt_relpath": "heldout/corrupt/165_apps_python_502.txt",
+      "corrupt_prompt_sha256": "aafd7148b23e2a2a7061f21f93bce55be0f8f39d68803d7dbe9f25e0392de61e"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_166",
+      "corrupt_relpath": "heldout/corrupt/166_apps_python_93.txt",
+      "corrupt_prompt_sha256": "f1c2bb14780206c831dfdb55ecb373679822c319900b18e2923c9e5cfc109a9d"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_167",
+      "corrupt_relpath": "heldout/corrupt/167_apps_python_95.txt",
+      "corrupt_prompt_sha256": "2d72c623fd6afc89e0921ba130ce5d79c111c22644ac3aa0f9f3ab8d7e9f289a"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_168",
+      "corrupt_relpath": "heldout/corrupt/168_codecontests_cpp_313.txt",
+      "corrupt_prompt_sha256": "326b0cfe3aeae611a23ec2382d83515d01809198447bd603ceaad7c6027a92bb"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_169",
+      "corrupt_relpath": "heldout/corrupt/169_codecontests_cpp_554.txt",
+      "corrupt_prompt_sha256": "690f3086ee84e1184ead128c94026ed978430c792110bdb4caf6fd3e746ccc9a"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_170",
+      "corrupt_relpath": "heldout/corrupt/170_codecontests_java_159.txt",
+      "corrupt_prompt_sha256": "bb859d84dbaec818f5275591e5400ed23e34f1389296eb242d327a741cdc5aeb"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_171",
+      "corrupt_relpath": "heldout/corrupt/171_codecontests_java_196.txt",
+      "corrupt_prompt_sha256": "c5f39666620e88f1d27d508791411b1fc0c007e777dfab380b3a5b0bc681d7c5"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_172",
+      "corrupt_relpath": "heldout/corrupt/172_codecontests_java_322.txt",
+      "corrupt_prompt_sha256": "1361b7bbc00a522ac22e56a62d31b37fa8d5d63272f54b424979cd27c20c01e3"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_173",
+      "corrupt_relpath": "heldout/corrupt/173_codecontests_java_368.txt",
+      "corrupt_prompt_sha256": "eccec40b3c6f91c4c1e5eece820f165b7ffee6ed197094f86a99f47d18e1f6fa"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_174",
+      "corrupt_relpath": "heldout/corrupt/174_codecontests_java_458.txt",
+      "corrupt_prompt_sha256": "9cca1a2fea5dfbf648208b1399d28523a846558edf0e1905423fe55ee6be1f1f"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_175",
+      "corrupt_relpath": "heldout/corrupt/175_codecontests_java_45.txt",
+      "corrupt_prompt_sha256": "bd8c754a79b83ecc61dd69c3b102eeb98f3c7b545aeb1db3daf27d637b1b6609"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_176",
+      "corrupt_relpath": "heldout/corrupt/176_codecontests_java_605.txt",
+      "corrupt_prompt_sha256": "2c9764acc3c2ffc942211382381dd8ba452e67aa5b6d4a826f1b3ba894234f69"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_177",
+      "corrupt_relpath": "heldout/corrupt/177_humaneval_python_85.txt",
+      "corrupt_prompt_sha256": "94ec196692ac6b92773f2aa8322064d863a991924a8ca4c5b2b01d2d493c51a5"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_178",
+      "corrupt_relpath": "heldout/corrupt/178_mbpp_python_444.txt",
+      "corrupt_prompt_sha256": "f2a5c4ed3cc5d659d661c3845ee5bac9c24e9daee438504f46f73a6f11c57631"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_179",
+      "corrupt_relpath": "heldout/corrupt/179_mbpp_python_54.txt",
+      "corrupt_prompt_sha256": "b06428d55c34b4c0af496a0ccd83405c776973361d0e1f7e10e8e59f618d45d4"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_180",
+      "corrupt_relpath": "heldout/corrupt/180_mbpp_python_79.txt",
+      "corrupt_prompt_sha256": "52cf2efb74c711e01c68fffa600c04116e4be27fe97cfed59af686f0fbea5204"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_181",
+      "corrupt_relpath": "heldout/corrupt/181_apps_python_167.txt",
+      "corrupt_prompt_sha256": "0fdaf48a4d4b5b9e9cc49fa834cc4e617d39351cb2b9af8e1f14340518bc6429"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_182",
+      "corrupt_relpath": "heldout/corrupt/182_apps_python_185.txt",
+      "corrupt_prompt_sha256": "262aa1068c7a09ce81382aa8250d17c965ef7a882b4b9ea013bb3d14e4c43c0a"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_183",
+      "corrupt_relpath": "heldout/corrupt/183_apps_python_306.txt",
+      "corrupt_prompt_sha256": "ad06e3825912e0f61dfbedfd94527532d0ec01b41ea877b5f441530d27ebdda9"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_184",
+      "corrupt_relpath": "heldout/corrupt/184_apps_python_322.txt",
+      "corrupt_prompt_sha256": "b11325a77c89865d270535072b33b0adfc418d44291981e8e1c840eb9cae40d8"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_185",
+      "corrupt_relpath": "heldout/corrupt/185_apps_python_46.txt",
+      "corrupt_prompt_sha256": "3ee7abfa82e9cec9fbb8bdf3e72e19e174a6810c870637b7a579a0033510082d"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_186",
+      "corrupt_relpath": "heldout/corrupt/186_codecontests_cpp_638.txt",
+      "corrupt_prompt_sha256": "b47a57733f9e2d0920fd79f048397987b4f945e82e1bafa9c3e3544eac2ffdfc"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_187",
+      "corrupt_relpath": "heldout/corrupt/187_codecontests_cpp_771.txt",
+      "corrupt_prompt_sha256": "28a8a9a77357fb219572fd706c0d23d0b3b870cb70713178055219a2012a5c7c"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_188",
+      "corrupt_relpath": "heldout/corrupt/188_codecontests_java_123.txt",
+      "corrupt_prompt_sha256": "ec7c579a058a9638397978998accd69de56d1f7b159c2cf3950ddda18a67addc"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_189",
+      "corrupt_relpath": "heldout/corrupt/189_codecontests_java_224.txt",
+      "corrupt_prompt_sha256": "97d7482e6f5bdfcd388b201a8575f2d24189915147a5498dad64614a7be2b462"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_190",
+      "corrupt_relpath": "heldout/corrupt/190_codecontests_java_326.txt",
+      "corrupt_prompt_sha256": "07f76ac604ca6d42b4a86574050391a57e6d6155a0f4aaff0000cbb8bcd696a9"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_191",
+      "corrupt_relpath": "heldout/corrupt/191_codecontests_java_432.txt",
+      "corrupt_prompt_sha256": "fe0625965ec3864d839a82fd3859bdc3c7de5927befc89ef6c76d9f2741288e9"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_192",
+      "corrupt_relpath": "heldout/corrupt/192_humaneval_python_84.txt",
+      "corrupt_prompt_sha256": "12194b433eeba9cb8fe944e61186242af72247e01c4838977ea84ec229f4726c"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_193",
+      "corrupt_relpath": "heldout/corrupt/193_codecontests_cpp_16.txt",
+      "corrupt_prompt_sha256": "9d44c106531c8ca22e6bbf80af13ebe58deea1ff9a5ae7622497d8a4fbeae03e"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_194",
+      "corrupt_relpath": "heldout/corrupt/194_codecontests_cpp_255.txt",
+      "corrupt_prompt_sha256": "f9eed2566e07abfe64caf050095fdbbea3817a909b4fecbeb54e70dfbc30e97e"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_195",
+      "corrupt_relpath": "heldout/corrupt/195_codecontests_cpp_683.txt",
+      "corrupt_prompt_sha256": "eae35ac1a5699023b20b6c170f0d609dfa0feba16da40959ae284e7f929db697"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_196",
+      "corrupt_relpath": "heldout/corrupt/196_codecontests_java_127.txt",
+      "corrupt_prompt_sha256": "11881e51522a18b2dc6d786077b352a84bd049513cdc99523f5a6c659f18cd9f"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_197",
+      "corrupt_relpath": "heldout/corrupt/197_codecontests_java_624.txt",
+      "corrupt_prompt_sha256": "e690470dac8ca1ba0efb8750dd48f37243b4fc1566e4110d6938d6e09293c093"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_198",
+      "corrupt_relpath": "heldout/corrupt/198_codecontests_java_9.txt",
+      "corrupt_prompt_sha256": "c7a0daaf0f11ada73935cb990218957daaca705047550159bcb1bc4bce946a68"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_199",
+      "corrupt_relpath": "heldout/corrupt/199_apps_python_114.txt",
+      "corrupt_prompt_sha256": "94f193ac33769207ae6e4fc9b0a2c9c90ebb58a75c94cb37487403475689a303"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_200",
+      "corrupt_relpath": "heldout/corrupt/200_apps_python_136.txt",
+      "corrupt_prompt_sha256": "df1f178a8e96b0728194c35076e1ec81e4a9dbb81e81e3b007caaa2634d47c05"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_201",
+      "corrupt_relpath": "heldout/corrupt/201_apps_python_164.txt",
+      "corrupt_prompt_sha256": "030b2f5b1cf9ddffba4de699da03021179d55560ce5508e67413d61fe235834f"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_202",
+      "corrupt_relpath": "heldout/corrupt/202_apps_python_208.txt",
+      "corrupt_prompt_sha256": "d6c947805edd79f4f73c8daf48cb946790670de071983d915b5d0fb7ce5effbb"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_203",
+      "corrupt_relpath": "heldout/corrupt/203_apps_python_262.txt",
+      "corrupt_prompt_sha256": "baf150a84f018c1b33ddb0697995597fdb9b156354858736151520c571ec3d0f"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_204",
+      "corrupt_relpath": "heldout/corrupt/204_apps_python_275.txt",
+      "corrupt_prompt_sha256": "8617df0c220fe7dce05b5291adefaa11c21dab54a0023401274550f28df15d06"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_205",
+      "corrupt_relpath": "heldout/corrupt/205_apps_python_292.txt",
+      "corrupt_prompt_sha256": "b01db32dc0e856b69782c084dd93821984e8cc0c6cf64413a1fa5989cd639bd1"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_206",
+      "corrupt_relpath": "heldout/corrupt/206_apps_python_409.txt",
+      "corrupt_prompt_sha256": "7744dde8b13cdc2543ecac23e580d681d74cea7e54fa38a5f6af10207ddbdfbb"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_207",
+      "corrupt_relpath": "heldout/corrupt/207_apps_python_454.txt",
+      "corrupt_prompt_sha256": "042544b07e6625cf8027e205c510c2f0f7b2f41f5d4dddd697dbb6590f817268"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_208",
+      "corrupt_relpath": "heldout/corrupt/208_apps_python_459.txt",
+      "corrupt_prompt_sha256": "4f4eb6fb90e7d5e44297988384c1ebd05709c6fe4be73a9ad30810b8bc5d5479"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_209",
+      "corrupt_relpath": "heldout/corrupt/209_apps_python_470.txt",
+      "corrupt_prompt_sha256": "aae55fd8f81544b0c7b9a01724a2272adedb94f60b73a3aedbdb6c288ca63a83"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_210",
+      "corrupt_relpath": "heldout/corrupt/210_apps_python_58.txt",
+      "corrupt_prompt_sha256": "ab4a789a1eb0bc8841c34c88741bf816235f91a12412288e293ca6bebaa2307f"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_211",
+      "corrupt_relpath": "heldout/corrupt/211_codecontests_cpp_306.txt",
+      "corrupt_prompt_sha256": "f06e09b8872484fdd0f228468d7f0f31f2ba0af5668b2d6fe0bd8f2d501e0e93"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_212",
+      "corrupt_relpath": "heldout/corrupt/212_codecontests_java_314.txt",
+      "corrupt_prompt_sha256": "a3b4066fffd560f41e3980686452135550a44b7433d4956013b2f71f99567f51"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_213",
+      "corrupt_relpath": "heldout/corrupt/213_codecontests_java_430.txt",
+      "corrupt_prompt_sha256": "05a9737ffa277efc19985e1976b96daba9042d5146714567bd509ee64ff5494c"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_214",
+      "corrupt_relpath": "heldout/corrupt/214_codecontests_java_485.txt",
+      "corrupt_prompt_sha256": "ab6d0e556824584da8763182845526b59d437e05edcebc8e5573ef7cbb6c2b8d"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_215",
+      "corrupt_relpath": "heldout/corrupt/215_codecontests_java_487.txt",
+      "corrupt_prompt_sha256": "1ef9d84261a61b5f803d9ee2fbafa4f8c8b2dbc3108e500cbb917a9c7ecc56e4"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_216",
+      "corrupt_relpath": "heldout/corrupt/216_codecontests_java_48.txt",
+      "corrupt_prompt_sha256": "086eabc46bf6210fe382814a1044fb4298cc03c7af291b84655ae1c1399746eb"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_217",
+      "corrupt_relpath": "heldout/corrupt/217_codecontests_java_510.txt",
+      "corrupt_prompt_sha256": "593a7e1a93050e9bc9c6080d20dbd867e198fc3c1ab080f3f294a7079d6b0a05"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_218",
+      "corrupt_relpath": "heldout/corrupt/218_humaneval_python_74.txt",
+      "corrupt_prompt_sha256": "11d1656818c68dda8f95d6b3aa54773f3e11882b0679392e162c5e7f3a3509c0"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_219",
+      "corrupt_relpath": "heldout/corrupt/219_mbpp_python_327.txt",
+      "corrupt_prompt_sha256": "63fd588227c54b82fdcfb0ae0f064730edcb886b3db4de213d469d862f55c6fb"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_220",
+      "corrupt_relpath": "heldout/corrupt/220_mbpp_python_35.txt",
+      "corrupt_prompt_sha256": "6c0c9a354b70c780aed1a03a634737aa9bf338c69539984d719fd4c727e9139b"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_221",
+      "corrupt_relpath": "heldout/corrupt/221_mbpp_python_449.txt",
+      "corrupt_prompt_sha256": "389ad36147f8117fac255d4e037f26f2b0849fdc1eeb8641b17bd7abc9db8e20"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_222",
+      "corrupt_relpath": "heldout/corrupt/222_mbpp_python_450.txt",
+      "corrupt_prompt_sha256": "307540b39b69a64828b0b04e1501dfde03d06c1db234baeb6bee1bbd859e25f1"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_223",
+      "corrupt_relpath": "heldout/corrupt/223_mbpp_python_453.txt",
+      "corrupt_prompt_sha256": "56edc3b5ea4b864264bfe0d8b16f4293ebb16d810359599d28ddf7968013503d"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_224",
+      "corrupt_relpath": "heldout/corrupt/224_mbpp_python_458.txt",
+      "corrupt_prompt_sha256": "67e85f8ba1d774f476bafc8a1519f77c6d6cddbb2900ec2b2bb39b8f4ae12bee"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_225",
+      "corrupt_relpath": "heldout/corrupt/225_apps_python_103.txt",
+      "corrupt_prompt_sha256": "c28c5a76eb6844506d04a88a006cb09fe18b5b74d1b40bbe1421e43fab6834c8"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_226",
+      "corrupt_relpath": "heldout/corrupt/226_apps_python_169.txt",
+      "corrupt_prompt_sha256": "be90d37e88fcc4e96d2bd6d2e0bcec7d6f80a1cf58bc0134f6e0ebff98924961"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_227",
+      "corrupt_relpath": "heldout/corrupt/227_apps_python_195.txt",
+      "corrupt_prompt_sha256": "72f643a7de3f7ab0a932e7a3b0a0693cd12282e54d0016fc850e518415180fc4"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_228",
+      "corrupt_relpath": "heldout/corrupt/228_apps_python_347.txt",
+      "corrupt_prompt_sha256": "03201a2d39d3153f2a1daee4d3fb3d584fea3faace8cb0d6501a833254270258"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_229",
+      "corrupt_relpath": "heldout/corrupt/229_apps_python_348.txt",
+      "corrupt_prompt_sha256": "9a04b40c10b7cf5ab3142369f2d801bfb0234bb55a4791413c9d415d787c45e1"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_230",
+      "corrupt_relpath": "heldout/corrupt/230_apps_python_365.txt",
+      "corrupt_prompt_sha256": "d4e17620b7d44368f3019f7c780118cbf275abfd40f402f09ee14b1fdc750421"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_231",
+      "corrupt_relpath": "heldout/corrupt/231_apps_python_96.txt",
+      "corrupt_prompt_sha256": "c8524811057e18846fb8e921813f24814a528f925e15176039255634bf6a9e5e"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_232",
+      "corrupt_relpath": "heldout/corrupt/232_codecontests_cpp_528.txt",
+      "corrupt_prompt_sha256": "26789b6adb2ec1548d82034aa4800b03859242e89c0c8f43f89be68fffcb5118"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_233",
+      "corrupt_relpath": "heldout/corrupt/233_codecontests_cpp_570.txt",
+      "corrupt_prompt_sha256": "a85c73d14b89ed24f26108be5861b4331da1df8883468d8a97828c041e05083a"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_234",
+      "corrupt_relpath": "heldout/corrupt/234_codecontests_cpp_693.txt",
+      "corrupt_prompt_sha256": "293aba728b2ff9f1d4ed92b6f15e8c06885bb65c9a24cec192f0c89452dc3198"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_235",
+      "corrupt_relpath": "heldout/corrupt/235_codecontests_cpp_699.txt",
+      "corrupt_prompt_sha256": "8507b0b36bdc0b5c4198a00edfcd69f3012815befb7ab541844eed5d58336b12"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_236",
+      "corrupt_relpath": "heldout/corrupt/236_codecontests_cpp_739.txt",
+      "corrupt_prompt_sha256": "49dc4a052c5850a68ed194754d1067457706fa69be6346ea8dd26b0160122175"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_237",
+      "corrupt_relpath": "heldout/corrupt/237_codecontests_cpp_793.txt",
+      "corrupt_prompt_sha256": "3d12b7f50bad5dbc9cba6f3e105367192f2b35827f1e4846256d18a7b13c010b"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_238",
+      "corrupt_relpath": "heldout/corrupt/238_codecontests_java_194.txt",
+      "corrupt_prompt_sha256": "60cafc205d1434f9f5328b6f9243792f461170db939ef9fb46d41b710aad7f41"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_239",
+      "corrupt_relpath": "heldout/corrupt/239_codecontests_java_38.txt",
+      "corrupt_prompt_sha256": "235622ce1283828fd7152a603508aef6ceac31c5c1fe2fb07f7c61acfdd1d8d2"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_240",
+      "corrupt_relpath": "heldout/corrupt/240_codecontests_java_436.txt",
+      "corrupt_prompt_sha256": "31b6066adf854a84ab5d523dd09e0f979cfd4fa872cdcb7d5940a4e1af0656ea"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_241",
+      "corrupt_relpath": "heldout/corrupt/241_apps_python_170.txt",
+      "corrupt_prompt_sha256": "afcd5c40baecd155c6c009ec6b2d33af81f47ce53ab1e8a83804b93fa91c39f8"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_242",
+      "corrupt_relpath": "heldout/corrupt/242_apps_python_182.txt",
+      "corrupt_prompt_sha256": "78328c776d87f0f1af388528b81d300aa007440c50986c4bd682d095ce3b463e"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_243",
+      "corrupt_relpath": "heldout/corrupt/243_apps_python_207.txt",
+      "corrupt_prompt_sha256": "ae63b1e74e6bd973f5301983adc2e914b817042abdedddae5042d8c01063c15f"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_244",
+      "corrupt_relpath": "heldout/corrupt/244_apps_python_331.txt",
+      "corrupt_prompt_sha256": "40f9d4573671324a375dba0ed8c34c05057635e844bef5404a395317bade66b2"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_245",
+      "corrupt_relpath": "heldout/corrupt/245_apps_python_390.txt",
+      "corrupt_prompt_sha256": "d1e82f1a05fcf5f9b3fd16a2bddb298e230eb79d2946c1ea503a4c6bf726730a"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_246",
+      "corrupt_relpath": "heldout/corrupt/246_apps_python_506.txt",
+      "corrupt_prompt_sha256": "b2c86562b60b9e7357da1da4e31c912168fe0d5e6520873375ecd1691c640419"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_247",
+      "corrupt_relpath": "heldout/corrupt/247_codecontests_cpp_188.txt",
+      "corrupt_prompt_sha256": "df87fdcd2252c68f05dd14de9ece0888be790507d7d00bb43438ddd863c77253"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_248",
+      "corrupt_relpath": "heldout/corrupt/248_codecontests_cpp_436.txt",
+      "corrupt_prompt_sha256": "26e58ef55ca33840d9d5674694aea823a1bfa0a8536546058679f468a8e1c3f9"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_249",
+      "corrupt_relpath": "heldout/corrupt/249_codecontests_cpp_585.txt",
+      "corrupt_prompt_sha256": "82e73ac38d693eb0027f49c5d38f9244b1bfe0e548023d4b6a47f62132aff5d1"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_250",
+      "corrupt_relpath": "heldout/corrupt/250_codecontests_cpp_817.txt",
+      "corrupt_prompt_sha256": "55f1ff04791793828947642b7b9dcfd258709da3d2d68eaa1a65b42ad07b0811"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_251",
+      "corrupt_relpath": "heldout/corrupt/251_mbpp_python_11.txt",
+      "corrupt_prompt_sha256": "685fb855bd4be673b3159e5cc737067d7ccd44dfcd709bdb56ca4b2bb769846c"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_252",
+      "corrupt_relpath": "heldout/corrupt/252_apps_python_123.txt",
+      "corrupt_prompt_sha256": "1bafe9006f717e6714c66bed95ab85d871d9d974453f3176368c6b2ce1df7c59"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_253",
+      "corrupt_relpath": "heldout/corrupt/253_apps_python_14.txt",
+      "corrupt_prompt_sha256": "c44a8d52a198a25aded552415ffda6ea5df1b02fba2fd6075510ba8b18885cc1"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_254",
+      "corrupt_relpath": "heldout/corrupt/254_apps_python_198.txt",
+      "corrupt_prompt_sha256": "221f704c2c154500e19f77d58c3ad8cfb7661442187a37c574b46184281a50ec"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_255",
+      "corrupt_relpath": "heldout/corrupt/255_apps_python_254.txt",
+      "corrupt_prompt_sha256": "57cf859d9b443b9a01c4891fb0f1d488cb084142ca56098d46183dbca2e16b81"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_256",
+      "corrupt_relpath": "heldout/corrupt/256_apps_python_284.txt",
+      "corrupt_prompt_sha256": "eb5a67552b586f061238102a802d2a0dbb10b0c5bc4afd252b5957518bbceff4"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_257",
+      "corrupt_relpath": "heldout/corrupt/257_apps_python_304.txt",
+      "corrupt_prompt_sha256": "50ae2d21a045aca9882129595b7894f06207732c78c8bf5322bfd64baedb2f74"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_258",
+      "corrupt_relpath": "heldout/corrupt/258_apps_python_327.txt",
+      "corrupt_prompt_sha256": "bf46491380254531dfce004a81ccc4d424341c08d84b159833e274b107227815"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_259",
+      "corrupt_relpath": "heldout/corrupt/259_apps_python_343.txt",
+      "corrupt_prompt_sha256": "785e170abd66c53f49db7adf04a4b0aca17a7870bdf1acf8b0262a8772d90baf"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_260",
+      "corrupt_relpath": "heldout/corrupt/260_apps_python_361.txt",
+      "corrupt_prompt_sha256": "9bd9f3e571cbc817d662611a3314f8266e19ec55ef5196a0cf7f0b98c06e8e26"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_261",
+      "corrupt_relpath": "heldout/corrupt/261_apps_python_87.txt",
+      "corrupt_prompt_sha256": "b4b794c15018378038a811c90d8e95c2ada44628f81b628341f3ba049ff6e57a"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_262",
+      "corrupt_relpath": "heldout/corrupt/262_codecontests_cpp_369.txt",
+      "corrupt_prompt_sha256": "eaac2efc7b99a31fa54f050b70498d32fa007811ba3393ee4b9e52f0a73c39e6"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_263",
+      "corrupt_relpath": "heldout/corrupt/263_codecontests_cpp_389.txt",
+      "corrupt_prompt_sha256": "1ff85bb2c74cc66a444b9508f79d3b61c4746aefd1fd5a133f45e4e160b6b570"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_264",
+      "corrupt_relpath": "heldout/corrupt/264_codecontests_cpp_48.txt",
+      "corrupt_prompt_sha256": "e02ebedfa9bae604134656d54f348e475784d5a8350f5dd8d0ba38274881c89c"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_265",
+      "corrupt_relpath": "heldout/corrupt/265_codecontests_cpp_645.txt",
+      "corrupt_prompt_sha256": "e6cb893dd55bfadb64970147dd522258a2feefcaaa36852ad0ccdfe71a1fced4"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_266",
+      "corrupt_relpath": "heldout/corrupt/266_codecontests_cpp_790.txt",
+      "corrupt_prompt_sha256": "34f9f8e2428fe1c7e4148b4b241ba3348cd157d06c360a153cff904dd6101ee3"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_267",
+      "corrupt_relpath": "heldout/corrupt/267_codecontests_java_76.txt",
+      "corrupt_prompt_sha256": "1f122853b1a66231250084b78bb34212c0afb81e059c42522003f790bad33cd4"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_268",
+      "corrupt_relpath": "heldout/corrupt/268_humaneval_python_18.txt",
+      "corrupt_prompt_sha256": "aca8d71d928b764cd6c849ac99573b0abc623f0b36b09f6d380c45e8ab3d1c2e"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_269",
+      "corrupt_relpath": "heldout/corrupt/269_mbpp_python_112.txt",
+      "corrupt_prompt_sha256": "cf0dc792477a04f3bfc6aa9d30c4363f5ce01242447ae9022ee93cb1bda66c3b"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_270",
+      "corrupt_relpath": "heldout/corrupt/270_mbpp_python_148.txt",
+      "corrupt_prompt_sha256": "d7d6580ac3e4ddb2eab51815c501ff863483cb423cda580943cfc6b93db87b1d"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_271",
+      "corrupt_relpath": "heldout/corrupt/271_mbpp_python_230.txt",
+      "corrupt_prompt_sha256": "5216c5442ba5b71a50e3888b5f59ab11bfa29042462487baf218eccc4863c8f8"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_272",
+      "corrupt_relpath": "heldout/corrupt/272_mbpp_python_418.txt",
+      "corrupt_prompt_sha256": "b583cd533796c5db34fa0024ae14b0e9ffd6af1137846d58a364fab31c202d7a"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_273",
+      "corrupt_relpath": "heldout/corrupt/273_mbpp_python_422.txt",
+      "corrupt_prompt_sha256": "715ad54d24376886c17a3536535ec170a34ec800889b94c75da08f475ea4abf3"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_274",
+      "corrupt_relpath": "heldout/corrupt/274_apps_python_105.txt",
+      "corrupt_prompt_sha256": "123e1f8685bf36ab3862d92e991a7e5fd2118d1d59cdc0e79507a92cf67841f1"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_275",
+      "corrupt_relpath": "heldout/corrupt/275_apps_python_131.txt",
+      "corrupt_prompt_sha256": "0d7c46895cfb2f300745875d5b72ee9f7f7bec2065c815e8483648f131cdb060"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_276",
+      "corrupt_relpath": "heldout/corrupt/276_apps_python_152.txt",
+      "corrupt_prompt_sha256": "d9614b587dd214bac4ab605d79957a956243807f20190acc3148752ff467a582"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_277",
+      "corrupt_relpath": "heldout/corrupt/277_apps_python_178.txt",
+      "corrupt_prompt_sha256": "83f2dd64e87d915a883f50011036a70c6df13866e036212dde028d0e436af4b2"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_278",
+      "corrupt_relpath": "heldout/corrupt/278_apps_python_188.txt",
+      "corrupt_prompt_sha256": "5eb1994d76880264cc4304e2ba45518d8feeceeff8e7d29957ef8671d84359f7"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_279",
+      "corrupt_relpath": "heldout/corrupt/279_apps_python_202.txt",
+      "corrupt_prompt_sha256": "116e4406ee7ef704054d53e964a615298e4c291a5f65c94ae66bfba1297745e6"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_280",
+      "corrupt_relpath": "heldout/corrupt/280_apps_python_215.txt",
+      "corrupt_prompt_sha256": "f00443f52d7d286224d380a99499e0713396d00690df6ba676330564b0662012"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_281",
+      "corrupt_relpath": "heldout/corrupt/281_apps_python_236.txt",
+      "corrupt_prompt_sha256": "2840e21318d85aa6bdc5009633ff0d23205ec6a42144046ae8d98ed0a3763d75"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_282",
+      "corrupt_relpath": "heldout/corrupt/282_apps_python_242.txt",
+      "corrupt_prompt_sha256": "5fe9411a7b284d849554da36c1e6b4b5e5984e8391fd166767a0739fbb256750"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_283",
+      "corrupt_relpath": "heldout/corrupt/283_apps_python_249.txt",
+      "corrupt_prompt_sha256": "c6f53c4e7800e8454cc36e411b5121489898aa27402e63dd2d01cf8c8fb3826c"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_284",
+      "corrupt_relpath": "heldout/corrupt/284_apps_python_267.txt",
+      "corrupt_prompt_sha256": "abd687de1266b42a08f55ee521f84aca92393bbcd6a7f27fc815f6112633adf3"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_285",
+      "corrupt_relpath": "heldout/corrupt/285_apps_python_309.txt",
+      "corrupt_prompt_sha256": "39358b868b2d3dcd8d8f0565e7cc83a7b8af4fbfc73ed09976f36fa6b8b14a5f"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_286",
+      "corrupt_relpath": "heldout/corrupt/286_apps_python_326.txt",
+      "corrupt_prompt_sha256": "ca4a6d7d0a2c1d6eea7b0dacfb36e0be9ccb421b8f9a6845bdf11b01f161d68c"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_287",
+      "corrupt_relpath": "heldout/corrupt/287_apps_python_461.txt",
+      "corrupt_prompt_sha256": "f7c2b6c01cec41a173b5544c81e958055cf18b469932b542935073ce9abf4534"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_288",
+      "corrupt_relpath": "heldout/corrupt/288_apps_python_477.txt",
+      "corrupt_prompt_sha256": "074856b571b59c9de4203471aad317d99c56905afca2a6c822620183567dc71a"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_289",
+      "corrupt_relpath": "heldout/corrupt/289_apps_python_48.txt",
+      "corrupt_prompt_sha256": "39e0a6a1639d2053a43ac972ba5a0b6aebb6d4fbdaec5ccff40bac47c72aa23a"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_290",
+      "corrupt_relpath": "heldout/corrupt/290_apps_python_491.txt",
+      "corrupt_prompt_sha256": "3071722968faefa004cd125f81fd846f0c925552f4a72c81c9a2a3c508035a07"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_291",
+      "corrupt_relpath": "heldout/corrupt/291_apps_python_84.txt",
+      "corrupt_prompt_sha256": "c5cb7cc114ffcbd5d121a3594ddabdbf71bb84f8222604f3c2c8d733502b0d69"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_292",
+      "corrupt_relpath": "heldout/corrupt/292_apps_python_88.txt",
+      "corrupt_prompt_sha256": "ee01947397b5c77147f4282224c499828db8c72e9b5ac6e5728b5e45e8deca98"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_293",
+      "corrupt_relpath": "heldout/corrupt/293_codecontests_cpp_485.txt",
+      "corrupt_prompt_sha256": "a6dd7d9966ae91ba35c2fa720d8d38a510e742146756870e4c86a7b0a6a613f1"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_294",
+      "corrupt_relpath": "heldout/corrupt/294_codecontests_cpp_493.txt",
+      "corrupt_prompt_sha256": "d886b9530d93cd5028645c71cfbeeaa14586750d665126b8ae17c97552c6022a"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_295",
+      "corrupt_relpath": "heldout/corrupt/295_codecontests_cpp_736.txt",
+      "corrupt_prompt_sha256": "7b7109ecc055b0c483b12580c47f3615018cb444fdf5d2e10e68d149353e905c"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_296",
+      "corrupt_relpath": "heldout/corrupt/296_codecontests_cpp_742.txt",
+      "corrupt_prompt_sha256": "ceb5ced8b0fa4672e7233a97268620a7c955ec11c0affaba38b20e68c1583ee4"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_297",
+      "corrupt_relpath": "heldout/corrupt/297_codecontests_cpp_770.txt",
+      "corrupt_prompt_sha256": "548bb9d895ef8f29fdbe033c9abdda385d4672b42e1ef787a484698514057263"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_298",
+      "corrupt_relpath": "heldout/corrupt/298_mbpp_python_325.txt",
+      "corrupt_prompt_sha256": "c6c73e1250c65974744886647d70978780855978ce201e3f54f7e9b7eb553599"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_299",
+      "corrupt_relpath": "heldout/corrupt/299_mbpp_python_32.txt",
+      "corrupt_prompt_sha256": "bb35b7dedc6b8347856ffa36c0ba87900fd3693a6d028257cf92a918226f3203"
+    },
+    {
+      "sample_id": "v5_qwen3_8b_300",
+      "corrupt_relpath": "heldout/corrupt/300_mbpp_python_380.txt",
+      "corrupt_prompt_sha256": "ad17402701ce6a91c630f5c77f87226b2f89a86cb7e578a44e89c4eed8846f78"
+    }
+  ]
+}

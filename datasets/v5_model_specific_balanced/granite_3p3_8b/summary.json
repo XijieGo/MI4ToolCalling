@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "dataset_version": "v5_model_specific_balanced",
+  "model_key": "granite_3p3_8b",
+  "model_label": "Granite-3.3-8B-Instruct",
+  "model_path": "/root/autodl-tmp/Granite/granite-3.3-8b-instruct",
+  "source_root": "/root/autodl-tmp/project-new/results/granite-3.3-8b-instruct/converted_dataset",
+  "tool_call_marker": "<|tool_call|>",
+  "tool_call_token_id": 49154,
+  "seed": 20260728,
+  "candidate_per_verb_cell": 100,
+  "selected_clean_verbs": [
+    "add",
+    "save",
+    "write"
+  ],
+  "selected_corrupt_verbs": [
+    "discuss",
+    "explore",
+    "inspect",
+    "review",
+    "study"
+  ],
+  "selection_rule": "Target-model first-token clean-call/corrupt-non-call screen with required safety margins, followed by maximum-quality exact marginal verb balancing.",
+  "screening_margin_requirements": {
+    "minimum_clean_tool_minus_best_non_tool": 1.0,
+    "minimum_corrupt_best_non_tool_minus_tool": 1.0
+  },
+  "n_pairs": 500,
+  "n_train": 200,
+  "n_heldout": 300,
+  "all": {
+    "n_pairs": 500,
+    "clean_tool_call_top1_rate": 1.0,
+    "corrupt_tool_call_top1_rate": 0.0,
+    "mean_clean_tool_probability": 0.8839144362211228,
+    "mean_corrupt_tool_probability": 0.025014123833505437,
+    "minimum_clean_margin": 1.125,
+    "minimum_corrupt_non_tool_margin": 1.125,
+    "clean_verb_counts": {
+      "add": 167,
+      "save": 167,
+      "write": 166
+    },
+    "corrupt_verb_counts": {
+      "discuss": 100,
+      "explore": 100,
+      "inspect": 100,
+      "review": 100,
+      "study": 100
+    },
+    "verb_pair_counts": {
+      "add__discuss": 34,
+      "add__explore": 36,
+      "add__inspect": 35,
+      "add__review": 34,
+      "add__study": 28,
+      "save__discuss": 30,
+      "save__explore": 36,
+      "save__inspect": 32,
+      "save__review": 34,
+      "save__study": 35,
+      "write__discuss": 36,
+      "write__explore": 28,
+      "write__inspect": 33,
+      "write__review": 32,
+      "write__study": 37
+    },
+    "source_dataset_counts": {
+      "apps": 21,
+      "codecontests": 465,
+      "humaneval": 6,
+      "mbpp": 8
+    },
+    "source_language_counts": {
+      "cpp": 167,
+      "java": 298,
+      "python": 35
+    }
+  },
+  "splits": {
+    "train": {
+      "n_pairs": 200,
+      "clean_tool_call_top1_rate": 1.0,
+      "corrupt_tool_call_top1_rate": 0.0,
+      "mean_clean_tool_probability": 0.8841552031040192,
+      "mean_corrupt_tool_probability": 0.019385060945060106,
+      "minimum_clean_margin": 1.125,
+      "minimum_corrupt_non_tool_margin": 1.125,
+      "clean_verb_counts": {
+        "add": 67,
+        "save": 67,
+        "write": 66
+      },
+      "corrupt_verb_counts": {
+        "discuss": 40,
+        "explore": 40,
+        "inspect": 40,
+        "review": 40,
+        "study": 40
+      },
+      "verb_pair_counts": {
+        "add__discuss": 12,
+        "add__inspect": 6,
+        "add__review": 21,
+        "add__study": 28,
+        "save__explore": 12,
+        "save__inspect": 32,
+        "save__review": 19,
+        "save__study": 4,
+        "write__discuss": 28,
+        "write__explore": 28,
+        "write__inspect": 2,
+        "write__study": 8
+      },
+      "source_dataset_counts": {
+        "apps": 8,
+        "codecontests": 184,
+        "humaneval": 4,
+        "mbpp": 4
+      },
+      "source_language_counts": {
+        "cpp": 54,
+        "java": 130,
+        "python": 16
+      }
+    },
+    "heldout": {
+      "n_pairs": 300,
+      "clean_tool_call_top1_rate": 1.0,
+      "corrupt_tool_call_top1_rate": 0.0,
+      "mean_clean_tool_probability": 0.8837539249658585,
+      "mean_corrupt_tool_probability": 0.028766832425802327,
+      "minimum_clean_margin": 1.125,
+      "minimum_corrupt_non_tool_margin": 1.125,
+      "clean_verb_counts": {
+        "add": 100,
+        "save": 100,
+        "write": 100
+      },
+      "corrupt_verb_counts": {
+        "discuss": 60,
+        "explore": 60,
+        "inspect": 60,
+        "review": 60,
+        "study": 60
+      },
+      "verb_pair_counts": {
+        "add__discuss": 22,
+        "add__explore": 36,
+        "add__inspect": 29,
+        "add__review": 13,
+        "save__discuss": 30,
+        "save__explore": 24,
+        "save__review": 15,
+        "save__study": 31,
+        "write__discuss": 8,
+        "write__inspect": 31,
+        "write__review": 32,
+        "write__study": 29
+      },
+      "source_dataset_counts": {
+        "apps": 13,
+        "codecontests": 281,
+        "humaneval": 2,
+        "mbpp": 4
+      },
+      "source_language_counts": {
+        "cpp": 113,
+        "java": 168,
+        "python": 19
+      }
+    }
+  }
+}

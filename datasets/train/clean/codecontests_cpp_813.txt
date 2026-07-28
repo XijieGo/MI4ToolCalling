@@ -1,0 +1,36 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"write_file","description":"Write file.","parameters":{"type":"object","properties":{"file_path":{"type":"string"},"content":
+{"type":"string"}},"required":["file_path","content"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Write the function body in solve.cpp based on the function definition and docstring below:
+/*
+Given two strings a and b, find the length of their longest uncommon subsequence, which is the longest string that is a subsequence of one of them and not a subsequence of the other.
+Example:
+input:
+abcd
+defgh
+output:
+5
+*/
+std::string solve(const std::string& input) {
+    // TODO: implement
+    return "";
+}
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

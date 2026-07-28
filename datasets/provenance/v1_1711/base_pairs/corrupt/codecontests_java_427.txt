@@ -1,0 +1,46 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"write_file","description":"Write file.","parameters":{"type":"object","properties":{"file_path":{"type":"string"},"content":
+{"type":"string"}},"required":["file_path","content"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Study the function body in solve.java based on the function definition and docstring below:
+/*
+Split a multiset of integers into two multisets A and B to maximize mex(A) + mex(B). Output this maximum for each test case.
+Example:
+input:
+4
+6
+0 2 1 5 0 1
+3
+0 1 2
+4
+0 2 0 1
+6
+1 2 3 4 5 6
+output:
+5
+3
+4
+0
+*/
+static String solve(String input) {
+    // TODO: implement
+    return "";
+}
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

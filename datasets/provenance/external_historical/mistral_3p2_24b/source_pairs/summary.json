@@ -1,0 +1,60 @@
+{
+  "n_pairs": 500,
+  "selection_rule": "Use only python samples because current Mistral+VIBE partial results show the strongest clean/corrupt separation there. Exclude build because current partial evidence is negative. Reassign clean verbs uniformly over save/write/add/complete and corrupt verbs uniformly over discuss/explore/inspect/review/study.",
+  "clean_verbs": [
+    "save",
+    "write",
+    "add",
+    "complete"
+  ],
+  "corrupt_verbs": [
+    "discuss",
+    "explore",
+    "inspect",
+    "review",
+    "study"
+  ],
+  "clean_counts": {
+    "save": 125,
+    "write": 125,
+    "add": 125,
+    "complete": 125
+  },
+  "corrupt_counts": {
+    "discuss": 100,
+    "explore": 100,
+    "inspect": 100,
+    "review": 100,
+    "study": 100
+  },
+  "combo_counts": {
+    "save__discuss": 25,
+    "save__explore": 25,
+    "save__inspect": 25,
+    "save__review": 25,
+    "save__study": 25,
+    "write__discuss": 25,
+    "write__explore": 25,
+    "write__inspect": 25,
+    "write__review": 25,
+    "write__study": 25,
+    "add__discuss": 25,
+    "add__explore": 25,
+    "add__inspect": 25,
+    "add__review": 25,
+    "add__study": 25,
+    "complete__discuss": 25,
+    "complete__explore": 25,
+    "complete__inspect": 25,
+    "complete__review": 25,
+    "complete__study": 25
+  },
+  "dataset_counts": {
+    "apps": 367,
+    "humaneval": 40,
+    "mbpp": 93
+  },
+  "language_counts": {
+    "python": 500
+  }
+}

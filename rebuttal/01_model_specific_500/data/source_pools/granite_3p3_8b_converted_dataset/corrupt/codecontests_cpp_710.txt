@@ -1,0 +1,52 @@
+<|start_of_role|>system<|end_of_role|>Knowledge Cutoff Date: April 2024.
+Today's Date: May 05, 2026.
+You are Granite, developed by IBM. You are a helpful assistant with access to the following tools. When a tool is required to answer the user's query, respond only with <|tool_call|> followed by a JSON list of tools used. If a tool does not exist in the provided list of tools, notify the user that you do not have the ability to fulfill the request.<|end_of_text|>
+<|start_of_role|>available_tools<|end_of_role|>[
+    {
+        "type": "function",
+        "function": {
+            "name": "write_file",
+            "description": "Write file.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "file_path": {
+                        "type": "string"
+                    },
+                    "content": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "file_path",
+                    "content"
+                ]
+            }
+        }
+    }
+]<|end_of_text|>
+<|start_of_role|>user<|end_of_role|>Study the function body in solve.cpp based on the function definition and docstring below:
+/*
+Given two positive integers a and b, you can replace a with floor(a/b) or increment b by 1. Find the minimum number of operations to make a equal to 0.
+Example:
+input:
+6
+9 2
+1337 1
+1 1
+50000000 4
+991026972 997
+1234 5678
+output:
+4
+9
+2
+12
+3
+1
+*/
+std::string solve(const std::string& input) {
+    // TODO: implement
+    return "";
+}<|end_of_text|>
+<|start_of_role|>assistant<|end_of_role|>

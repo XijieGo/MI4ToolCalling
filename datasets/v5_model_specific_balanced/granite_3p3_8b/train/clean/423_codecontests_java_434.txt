@@ -1,0 +1,49 @@
+<|start_of_role|>system<|end_of_role|>Knowledge Cutoff Date: April 2024.
+Today's Date: May 05, 2026.
+You are Granite, developed by IBM. You are a helpful assistant with access to the following tools. When a tool is required to answer the user's query, respond only with <|tool_call|> followed by a JSON list of tools used. If a tool does not exist in the provided list of tools, notify the user that you do not have the ability to fulfill the request.<|end_of_text|>
+<|start_of_role|>available_tools<|end_of_role|>[
+    {
+        "type": "function",
+        "function": {
+            "name": "write_file",
+            "description": "Write file.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "file_path": {
+                        "type": "string"
+                    },
+                    "content": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "file_path",
+                    "content"
+                ]
+            }
+        }
+    }
+]<|end_of_text|>
+<|start_of_role|>user<|end_of_role|>Save the function body in solve.java based on the function definition and docstring below:
+/*
+ * For each test case, you are given an integer n and a digit string s of length n (no leading zeros).
+ * You may delete some digits from s (keeping the remaining digits in the same order), deleting between
+ * 0 and n-1 digits (so at least one digit must remain). The resulting number must not have leading zeros.
+ *
+ * Define a number as "ebne" (even but not even) if the sum of its digits is even, but the number itself
+ * is odd. For each test case, output any ebne number obtainable from s by deletions, or -1 if impossible.
+ *
+ * Example:
+ * input:
+ * 1
+ * 6
+ * 177013
+ * output:
+ * 17703
+ */
+static String solve(String input) {
+    // TODO: implement
+    return "";
+}<|end_of_text|>
+<|start_of_role|>assistant<|end_of_role|>

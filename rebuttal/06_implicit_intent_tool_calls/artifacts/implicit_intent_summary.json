@@ -1,0 +1,22 @@
+{
+  "D1": {
+    "pool_size": 384,
+    "built": 150,
+    "rejected": 9
+  },
+  "D3": {
+    "pool_size": 4500,
+    "built": 150,
+    "rejected": 7
+  },
+  "D4": {
+    "pool_size": 2434,
+    "built": 150,
+    "rejected": 6
+  },
+  "D5": {
+    "pool_size": 676,
+    "built": 150,
+    "rejected": 174
+  }
+}

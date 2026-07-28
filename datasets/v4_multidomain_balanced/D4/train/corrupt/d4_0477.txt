@@ -1,0 +1,28 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"run_sql","description":"Run query.","parameters":{"type":"object","properties":{"database":{"type":"string"},"query":{"type":"string"}},"required":["database","query"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Review the completed SQL query shown below:
+Database: tracking_share_transactions
+Schema:
+  investors(investor_id, Investor_details)
+  transactions(transaction_id, investor_id, transaction_type_code, date_of_transaction, amount_of_transaction, share_count, other_details)
+SQL:
+  SELECT T2.investor_id , T1.Investor_details FROM INVESTORS AS T1 JOIN TRANSACTIONS AS T2 ON T1.investor_id = T2.investor_id GROUP BY T2.investor_id ORDER BY COUNT(*) DESC LIMIT 1
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

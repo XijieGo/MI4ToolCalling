@@ -1,0 +1,44 @@
+{
+  "n_test_pairs": 300,
+  "layers": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "n_heads": 32,
+  "vector_bundle": "results/runs/rebuttal_lxey_other_concerns_v2_1500_20260727/vector_fit/vector_bundle.pt",
+  "vector_bundle_sha256": "0c612f60e9c4374ca0fb20d4cc401b7711da491efb800d5abbf05eb3e84cc9be",
+  "dataset_manifest_sha256": {
+    "clean": "95da26ab2646d312cc80a63c3fce7e71f02f1b2dfe4d3503c2262c4b40d647c9",
+    "corrupt": "30a496c9713268e3b442473a368846bc9eab4ff0aa4a9e5545fb92a686f5e486"
+  },
+  "selection": "abs(mean clean-corrupt verb attention) * abs(mean clean-corrupt mu linear write) * abs(pairwise Pearson r)",
+  "selected_heads": [
+    "L20H29",
+    "L19H29",
+    "L20H14",
+    "L19H31",
+    "L18H19",
+    "L20H21",
+    "L19H10",
+    "L16H7",
+    "L20H17",
+    "L20H13",
+    "L19H13",
+    "L20H16"
+  ],
+  "causal_validation_present": true
+}

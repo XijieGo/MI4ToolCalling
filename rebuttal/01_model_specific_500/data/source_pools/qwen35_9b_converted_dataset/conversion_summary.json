@@ -1,0 +1,22 @@
+{
+  "model_path": "/root/autodl-tmp/Qwen/Qwen3.5-9B",
+  "output_root": "/root/autodl-tmp/project-new/results/Qwen3.5-9B/converted_dataset",
+  "n_pairs": 1711,
+  "splits": {
+    "train": 1204,
+    "test": 507
+  },
+  "languages": {
+    "cpp": 575,
+    "java": 581,
+    "python": 555
+  },
+  "tool_call_token_text": "<tool_call>",
+  "tool_call_token_id": 248058,
+  "tool_response_token_text": "<tool_response>",
+  "tool_response_token_id": 248066,
+  "think_token_text": "<think>",
+  "think_token_id": 248068,
+  "enable_thinking": false,
+  "template_behavior_note": "Prompts are rerendered with Qwen3.5-9B's native chat_template using tools=... and add_generation_prompt=True. By default thinking is disabled to keep the assistant prefill closer to a first-token tool-call/no-tool decision interface."
+}

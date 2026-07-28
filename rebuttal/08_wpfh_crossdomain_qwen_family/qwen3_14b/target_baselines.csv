@@ -1,0 +1,4 @@
+target_domain,n,clean_mean_tool_logit,corrupt_mean_tool_logit,clean_mean_tool_prob,corrupt_mean_tool_prob,clean_top1_rate,corrupt_top1_rate,clean_tool_count,corrupt_non_tool_count
+D3,100,29.24,21.75875,0.9768925619125366,0.012642734694342152,1.0,0.0,100,100
+D4,100,31.02,17.9203125,0.999930328130722,4.145274216620128e-06,1.0,0.0,100,100
+D5,100,31.98875,12.47171875,0.9999995267391205,1.3260878581207235e-08,1.0,0.0,100,100

@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Evaluate this email message shown below:
+To: recipient-fab46428db73@mail.example
+Subject: 1Password Enterprise — rolled out company-wide
+Body: Andre — 1Password Enterprise is live for all 100 employees. Migration stats: - **94 employees** completed setup in the first 48 hours - **6 holdouts** getting personal follow-ups today - **The Spreadsheet** has been ceremonially deleted (I took a screenshot first) - Found 3 passwords stored in .env files during the migration. I'm choosing not to name names.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

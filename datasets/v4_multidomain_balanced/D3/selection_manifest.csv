@@ -1,0 +1,501 @@
+filename,candidate_id,domain,source_id,source_group,split,clean_verb,corrupt_verb,models
+d3_0001.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:10008:retrieve:ignore,D3,10008,audi,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0002.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:100144:research:ignore,D3,100144,tennis,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0003.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:100391:search:ignore,D3,100391,george clooney,test,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0004.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:101046:search:ignore,D3,101046,los angeles lakers,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0005.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:101214:lookup:ignore,D3,101214,kumkum bhagya,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0006.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:101267:search:ignore,D3,101267,lion,test,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0007.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:101293:research:ignore,D3,101293,crown colony,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0008.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:101718:lookup:ignore,D3,101718,al gore,test,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0009.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:101967:research:ignore,D3,101967,foo fighters,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0010.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:103330:research:ignore,D3,103330,x-men-colon- days of future past,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0011.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:103880:research:ignore,D3,103880,grey's anatomy,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0012.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:104419:search:ignore,D3,104419,buddy holly,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0013.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:104684:fetch:ignore,D3,104684,greece,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0014.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:104748:fetch:ignore,D3,104748,fantastic beasts and where to find them (film),train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0015.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:105455:fetch:ignore,D3,105455,danny devito,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0016.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:10594:search:ignore,D3,10594,dwayne johnson,test,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0017.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:106548:retrieve:ignore,D3,106548,attack on titan,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0018.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:106559:fetch:ignore,D3,106559,jeff hardy,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0019.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:10805:retrieve:ignore,D3,10805,united states,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0020.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:109110:research:ignore,D3,109110,cell (biology),train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0021.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:10929:fetch:ignore,D3,10929,serena williams,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0022.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:11003:retrieve:ignore,D3,11003,a perfect circle,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0023.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:110708:fetch:ignore,D3,110708,ford motor company,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0024.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:110980:retrieve:ignore,D3,110980,patrick bateman,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0025.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:110983:retrieve:ignore,D3,110983,david beckham,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0026.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:111531:retrieve:ignore,D3,111531,dementia,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0027.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:1123:retrieve:ignore,D3,1123,lion (2016 film),train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0028.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:113209:search:ignore,D3,113209,iraq,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0029.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:113217:lookup:ignore,D3,113217,hotel hell,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0030.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:113781:retrieve:ignore,D3,113781,feels so good (mel b song),train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0031.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:114718:research:ignore,D3,114718,grand theft auto v,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0032.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:114810:search:ignore,D3,114810,land rover,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0033.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:115170:research:ignore,D3,115170,hotel hell,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0034.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:11533:research:ignore,D3,11533,adele,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0035.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:115690:fetch:ignore,D3,115690,newcastle united f.c.,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0036.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:115862:research:ignore,D3,115862,overwatch (video game),test,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0037.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:116292:retrieve:ignore,D3,116292,mexico city,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0038.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:116662:search:ignore,D3,116662,ancient egypt,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0039.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:117266:fetch:ignore,D3,117266,apple store,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0040.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:117339:search:ignore,D3,117339,event management,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0041.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:118282:fetch:ignore,D3,118282,fred trump,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0042.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:118360:search:ignore,D3,118360,cancer,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0043.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:11896:lookup:ignore,D3,11896,the promise (2016 film),train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0044.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:120179:fetch:ignore,D3,120179,selena gomez,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0045.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:120855:research:ignore,D3,120855,willie nelson,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0046.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:121062:lookup:ignore,D3,121062,danny glover,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0047.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:121403:research:ignore,D3,121403,world war i,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0048.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:121500:retrieve:ignore,D3,121500,tokyo,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0049.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:12351:research:ignore,D3,12351,houston,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0050.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:123577:fetch:ignore,D3,123577,toyota,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0051.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:123662:research:ignore,D3,123662,adrianne palicki,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0052.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:123743:fetch:ignore,D3,123743,illuminati,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0053.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:123848:search:ignore,D3,123848,a few good men,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0054.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:12480:retrieve:ignore,D3,12480,peyton manning,test,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0055.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:124929:fetch:ignore,D3,124929,lion,test,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0056.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:12492:fetch:ignore,D3,12492,jerome,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0057.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:125218:fetch:ignore,D3,125218,the formula (1980 film),train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0058.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:126106:lookup:ignore,D3,126106,james blake (musician),test,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0059.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:126679:retrieve:ignore,D3,126679,taipei,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0060.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:12716:fetch:ignore,D3,12716,leonard cohen,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0061.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:127799:retrieve:ignore,D3,127799,barbados,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0062.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:127855:retrieve:ignore,D3,127855,christian state,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0063.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:128165:search:ignore,D3,128165,heroin,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0064.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:129242:fetch:ignore,D3,129242,motorola,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0065.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:129400:research:ignore,D3,129400,lewis hamilton,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0066.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:12961:retrieve:ignore,D3,12961,tony blair,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0067.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:130441:lookup:ignore,D3,130441,deadpool,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0068.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:132625:retrieve:ignore,D3,132625,united states,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0069.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:133580:retrieve:ignore,D3,133580,belgium,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0070.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:133962:lookup:ignore,D3,133962,gray wolf,test,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0071.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:134000:retrieve:ignore,D3,134000,the panic in needle park,test,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0072.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:134071:retrieve:ignore,D3,134071,zeus,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0073.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:134416:fetch:ignore,D3,134416,david jones (video game developer),train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0074.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:137106:research:ignore,D3,137106,steven spielberg,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0075.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:137884:search:ignore,D3,137884,the supremes,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0076.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:138021:fetch:ignore,D3,138021,jennifer lawrence,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0077.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:138855:lookup:ignore,D3,138855,ocean's eight,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0078.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:139218:search:ignore,D3,139218,"tesla, inc.",train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0079.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:139450:search:ignore,D3,139450,honey to the b,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0080.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:140052:fetch:ignore,D3,140052,the shield,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0081.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:140301:retrieve:ignore,D3,140301,anti-nuclear antibody,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0082.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:140888:lookup:ignore,D3,140888,elton john,test,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0083.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:142102:fetch:ignore,D3,142102,chris brown,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0084.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:142349:search:ignore,D3,142349,"west hollywood, california",train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0085.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:14239:lookup:ignore,D3,14239,the new york times,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0086.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:142554:retrieve:ignore,D3,142554,united states,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0087.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:142857:search:ignore,D3,142857,world of warcraft,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0088.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:143418:lookup:ignore,D3,143418,journey (band),train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0089.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:143426:search:ignore,D3,143426,the avengers (2012 film),train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0090.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:143466:research:ignore,D3,143466,kurt angle,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0091.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:14352:search:ignore,D3,14352,gold,test,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0092.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:14360:fetch:ignore,D3,14360,black mirror,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0093.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:143813:search:ignore,D3,143813,ak-47,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0094.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:144495:fetch:ignore,D3,144495,the getaway (red hot chili peppers album),test,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0095.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:145082:research:ignore,D3,145082,nelson mandela,test,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0096.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:145146:lookup:ignore,D3,145146,antarctica,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0097.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:146603:lookup:ignore,D3,146603,water,test,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0098.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:147663:lookup:ignore,D3,147663,quarry,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0099.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:148458:fetch:ignore,D3,148458,indiana jones,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0100.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:148745:fetch:ignore,D3,148745,helena bonham carter,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0101.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:149240:research:ignore,D3,149240,russia,test,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0102.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:149384:fetch:ignore,D3,149384,thor-colon- the dark world,test,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0103.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:149402:retrieve:ignore,D3,149402,magna carta,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0104.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:150094:research:ignore,D3,150094,venus williams,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0105.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:150206:retrieve:ignore,D3,150206,ricin,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0106.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:150359:research:ignore,D3,150359,lyme disease,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0107.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:15035:fetch:ignore,D3,15035,republican party (united states),test,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0108.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:150364:search:ignore,D3,150364,the golden girls,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0109.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:151404:lookup:ignore,D3,151404,adderall,test,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0110.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:151795:lookup:ignore,D3,151795,get out (film),train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0111.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:152323:lookup:ignore,D3,152323,matt smith (actor),train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0112.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:153340:lookup:ignore,D3,153340,eagles (band),train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0113.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:153830:retrieve:ignore,D3,153830,the twilight zone,test,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0114.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:153947:search:ignore,D3,153947,nasa,test,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0115.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:153966:search:ignore,D3,153966,south wales valleys,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0116.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:154081:search:ignore,D3,154081,gucci,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0117.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:154830:retrieve:ignore,D3,154830,miami marlins,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0118.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:15511:lookup:ignore,D3,15511,paleogene,test,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0119.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:155129:research:ignore,D3,155129,newfoundland and labrador,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0120.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:155254:fetch:ignore,D3,155254,hitman (2007 film),test,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0121.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:155605:search:ignore,D3,155605,democratic republic of the congo,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0122.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:15624:retrieve:ignore,D3,15624,boston,test,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0123.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:156279:retrieve:ignore,D3,156279,doctor who (series 10),train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0124.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:156966:fetch:ignore,D3,156966,tina fey,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0125.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:157594:research:ignore,D3,157594,iron man (2008 film),train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0126.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:157861:research:ignore,D3,157861,chess,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0127.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:15811:fetch:ignore,D3,15811,peggy sue got married,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0128.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:159266:retrieve:ignore,D3,159266,the secret life of us,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0129.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:159466:retrieve:ignore,D3,159466,hisense,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0130.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:159779:retrieve:ignore,D3,159779,water,test,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0131.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:159837:lookup:ignore,D3,159837,alien-colon- covenant,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0132.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:160271:search:ignore,D3,160271,backstreet boys,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0133.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:160769:research:ignore,D3,160769,shingles,test,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0134.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:161218:research:ignore,D3,161218,egypt,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0135.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:161400:lookup:ignore,D3,161400,homeland (tv series),train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0136.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:161440:research:ignore,D3,161440,buddhism,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0137.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:161702:search:ignore,D3,161702,streptococcus,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0138.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:162397:search:ignore,D3,162397,helios,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0139.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:163261:research:ignore,D3,163261,that '70s show,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0140.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:163777:fetch:ignore,D3,163777,wishful drinking,test,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0141.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:164008:search:ignore,D3,164008,barry gibb,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0142.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:16470:lookup:ignore,D3,16470,hermetic order of the golden dawn,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0143.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:165497:search:ignore,D3,165497,cell (biology),train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0144.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:166232:lookup:ignore,D3,166232,cat on a hot tin roof,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0145.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:16631:search:ignore,D3,16631,green day,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0146.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:166710:search:ignore,D3,166710,cannibalism,test,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0147.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:166716:search:ignore,D3,166716,cannibalism,test,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0148.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:166720:fetch:ignore,D3,166720,cannibalism,test,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0149.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:168740:search:ignore,D3,168740,the ten commandments (1956 film),train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0150.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:170228:retrieve:ignore,D3,170228,the divergent series-colon- insurgent,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0151.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:170340:fetch:ignore,D3,170340,juris doctor,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0152.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:170623:search:ignore,D3,170623,dragon ball,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0153.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:170849:fetch:ignore,D3,170849,memorial day,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0154.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:17120:search:ignore,D3,17120,cerebral palsy,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0155.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:171267:search:ignore,D3,171267,cougar town,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0156.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:171403:research:ignore,D3,171403,blue velvet (film),train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0157.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:171551:research:ignore,D3,171551,bradley cooper,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0158.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:171865:search:ignore,D3,171865,hogwarts,test,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0159.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:171868:lookup:ignore,D3,171868,hogwarts,test,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0160.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:17196:lookup:ignore,D3,17196,apple inc.,test,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0161.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:172269:lookup:ignore,D3,172269,the jim henson company,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0162.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:172362:lookup:ignore,D3,172362,national security agency,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0163.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:172365:research:ignore,D3,172365,national security agency,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0164.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:172368:fetch:ignore,D3,172368,national security agency,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0165.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:173220:search:ignore,D3,173220,france,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0166.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:173558:search:ignore,D3,173558,bring it on (film),train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0167.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:173832:lookup:ignore,D3,173832,national library of india,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0168.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:173857:fetch:ignore,D3,173857,national library of india,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0169.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:173971:retrieve:ignore,D3,173971,susan sarandon,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0170.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:174561:research:ignore,D3,174561,bill black,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0171.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:175301:fetch:ignore,D3,175301,sarrainodu,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0172.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:176850:lookup:ignore,D3,176850,enemy (2013 film),train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0173.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:177036:research:ignore,D3,177036,asset management,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0174.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:177045:fetch:ignore,D3,177045,asset management,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0175.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:177650:retrieve:ignore,D3,177650,jeff hardy,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0176.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:178622:retrieve:ignore,D3,178622,gang signs & prayer,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0177.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:178695:fetch:ignore,D3,178695,andrew stanton,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0178.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:178815:research:ignore,D3,178815,harry potter (film series),train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0179.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:17888:lookup:ignore,D3,17888,elton john,test,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0180.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:179444:retrieve:ignore,D3,179444,collision course (album),train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0181.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:179457:fetch:ignore,D3,179457,collision course (album),train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0182.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:179498:lookup:ignore,D3,179498,audra mcdonald,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0183.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:17949:retrieve:ignore,D3,17949,internet,test,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0184.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:17969:research:ignore,D3,17969,michael jackson,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0185.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:180846:research:ignore,D3,180846,central america,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0186.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:18237:lookup:ignore,D3,18237,ufc 216,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0187.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:182831:retrieve:ignore,D3,182831,artemis,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0188.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:183902:research:ignore,D3,183902,bradford,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0189.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:184328:lookup:ignore,D3,184328,howard hughes,test,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0190.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:184944:fetch:ignore,D3,184944,winnipeg,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0191.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:184976:search:ignore,D3,184976,yamaha corporation,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0192.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:185278:retrieve:ignore,D3,185278,batman-colon- the killing joke,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0193.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:185337:lookup:ignore,D3,185337,will turner,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0194.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:185448:search:ignore,D3,185448,buckingham palace,test,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0195.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:186792:retrieve:ignore,D3,186792,con man (web series),train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0196.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:186893:fetch:ignore,D3,186893,batman v superman-colon- dawn of justice,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0197.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:188215:lookup:ignore,D3,188215,the bostonians (film),train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0198.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:188258:retrieve:ignore,D3,188258,machine gun kelly (rapper),train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0199.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:189204:fetch:ignore,D3,189204,world bank group,test,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0200.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:189221:fetch:ignore,D3,189221,world bank group,test,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0201.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:190375:retrieve:ignore,D3,190375,all my children,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0202.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:19107:lookup:ignore,D3,19107,kobe bryant,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0203.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:191232:retrieve:ignore,D3,191232,100 greatest of all time,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0204.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:191670:lookup:ignore,D3,191670,zambia,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0205.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:192070:retrieve:ignore,D3,192070,the long run (song),test,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0206.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:192558:retrieve:ignore,D3,192558,liberty bond,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0207.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:19259:search:ignore,D3,19259,the beatles,test,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0208.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:194616:research:ignore,D3,194616,avatar-colon- the last airbender,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0209.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:194946:retrieve:ignore,D3,194946,ku klux klan,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0210.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:196127:lookup:ignore,D3,196127,albanians,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0211.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:196239:research:ignore,D3,196239,the prince of egypt,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0212.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:196931:fetch:ignore,D3,196931,"worcester, massachusetts",test,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0213.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:196932:research:ignore,D3,196932,"worcester, massachusetts",test,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0214.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:197330:retrieve:ignore,D3,197330,floyd mayweather jr.,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0215.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:197589:search:ignore,D3,197589,plantation era,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0216.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:19778:lookup:ignore,D3,19778,john glenn,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0217.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:198570:fetch:ignore,D3,198570,the dakota,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0218.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:198572:research:ignore,D3,198572,the dakota,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0219.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:198575:retrieve:ignore,D3,198575,the dakota,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0220.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:198621:fetch:ignore,D3,198621,jordan knight,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0221.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:199161:search:ignore,D3,199161,to kill a mockingbird,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0222.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:199253:fetch:ignore,D3,199253,justice (dc comics),train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0223.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:199590:retrieve:ignore,D3,199590,cracks (film),train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0224.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:199774:fetch:ignore,D3,199774,michael phelps,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0225.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:199844:research:ignore,D3,199844,the blue lagoon (novel),train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0226.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:200486:lookup:ignore,D3,200486,twilight (novel series),train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0227.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:200735:research:ignore,D3,200735,a song of ice and fire,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0228.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:202537:search:ignore,D3,202537,little boy,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0229.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:202710:retrieve:ignore,D3,202710,luxo jr.,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0230.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:202861:fetch:ignore,D3,202861,beasts of the southern wild,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0231.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:202887:research:ignore,D3,202887,the woman in red (1984 film),train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0232.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:202915:retrieve:ignore,D3,202915,the woman in red (1984 film),train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0233.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:203399:lookup:ignore,D3,203399,red (2010 film),train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0234.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:203479:fetch:ignore,D3,203479,christian bale,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0235.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:203488:fetch:ignore,D3,203488,christian bale,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0236.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:203638:retrieve:ignore,D3,203638,pink floyd,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0237.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:203641:search:ignore,D3,203641,pink floyd,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0238.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:203647:research:ignore,D3,203647,pink floyd,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0239.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:203777:research:ignore,D3,203777,perth,test,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0240.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:204232:lookup:ignore,D3,204232,green arrow,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0241.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:204405:search:ignore,D3,204405,cbs,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0242.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:204540:retrieve:ignore,D3,204540,jack nicholson,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0243.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:204659:research:ignore,D3,204659,youth olympic games,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0244.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:205220:lookup:ignore,D3,205220,audrey horne,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0245.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:205874:fetch:ignore,D3,205874,song sung blue,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0246.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:205903:lookup:ignore,D3,205903,cosmopolitan (magazine),train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0247.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:205959:lookup:ignore,D3,205959,cosmopolitan (magazine),train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0248.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:206071:research:ignore,D3,206071,sociology,test,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0249.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:206082:research:ignore,D3,206082,sociology,test,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0250.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:206099:search:ignore,D3,206099,sociology,test,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0251.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:206504:research:ignore,D3,206504,warren buffett,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0252.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:206695:research:ignore,D3,206695,indonesia,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0253.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:20681:lookup:ignore,D3,20681,republic of ireland,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0254.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:206827:lookup:ignore,D3,206827,cosmopolitan (magazine),train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0255.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:207290:retrieve:ignore,D3,207290,charles haley,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0256.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:207359:search:ignore,D3,207359,vitamin b12,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0257.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:207588:retrieve:ignore,D3,207588,father of the bride (1991 film),train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0258.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:207711:research:ignore,D3,207711,blizzard entertainment,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0259.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:207990:research:ignore,D3,207990,baby driver,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0260.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:208276:retrieve:ignore,D3,208276,braveheart,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0261.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:209503:lookup:ignore,D3,209503,sleep,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0262.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:209544:search:ignore,D3,209544,sleep,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0263.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:209676:lookup:ignore,D3,209676,red velvet (band),train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0264.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:209988:fetch:ignore,D3,209988,afghanistan,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0265.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:210496:search:ignore,D3,210496,slovenia,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0266.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:210863:lookup:ignore,D3,210863,saw vi,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0267.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:211004:lookup:ignore,D3,211004,laurence olivier,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0268.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:213002:search:ignore,D3,213002,marlon brando,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0269.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:213124:fetch:ignore,D3,213124,the weeknd,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0270.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:213892:fetch:ignore,D3,213892,labor day,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0271.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:213899:lookup:ignore,D3,213899,labor day,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0272.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:214964:retrieve:ignore,D3,214964,boot monument,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0273.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:215450:research:ignore,D3,215450,goldeneye,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0274.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:215601:search:ignore,D3,215601,game of thrones (season 1),train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0275.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:215745:research:ignore,D3,215745,sierra leone,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0276.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:216679:search:ignore,D3,216679,glenn close,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0277.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:216746:lookup:ignore,D3,216746,reds (film),train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0278.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:216880:search:ignore,D3,216880,william shakespeare,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0279.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:216930:fetch:ignore,D3,216930,michael phelps,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0280.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:21711:fetch:ignore,D3,21711,led zeppelin,test,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0281.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:217986:search:ignore,D3,217986,michael jackson,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0282.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:219859:fetch:ignore,D3,219859,on the road (film),test,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0283.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:220997:search:ignore,D3,220997,assassin's creed,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0284.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:221752:lookup:ignore,D3,221752,arkham asylum,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0285.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:221764:research:ignore,D3,221764,friendship,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0286.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:222153:search:ignore,D3,222153,the right stuff (film),train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0287.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:222516:lookup:ignore,D3,222516,horseshoe falls,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0288.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:223411:lookup:ignore,D3,223411,the dark half (film),test,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0289.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:223430:research:ignore,D3,223430,the dark half (film),test,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0290.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:223510:lookup:ignore,D3,223510,maisie williams,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0291.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:223894:lookup:ignore,D3,223894,stone temple pilots,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0292.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:22554:research:ignore,D3,22554,belgium,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0293.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:22567:retrieve:ignore,D3,22567,justin bieber,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0294.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:225945:research:ignore,D3,225945,hate group,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0295.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:226024:search:ignore,D3,226024,tetris,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0296.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:226073:lookup:ignore,D3,226073,john lennon,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0297.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:226380:search:ignore,D3,226380,seminary,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0298.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:226385:search:ignore,D3,226385,seminary,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0299.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:22651:search:ignore,D3,22651,united states congress,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0300.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:227054:fetch:ignore,D3,227054,the people vs. larry flynt,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0301.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:227626:research:ignore,D3,227626,born this way (song),train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0302.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:227764:fetch:ignore,D3,227764,jackson family,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0303.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:227830:fetch:ignore,D3,227830,music journalism,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0304.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:228281:research:ignore,D3,228281,the silence of the lambs (film),test,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0305.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:228292:lookup:ignore,D3,228292,the silence of the lambs (film),test,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0306.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:228873:search:ignore,D3,228873,drama school,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0307.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:228885:retrieve:ignore,D3,228885,drama school,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0308.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:229329:lookup:ignore,D3,229329,kerala,test,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0309.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:24751:research:ignore,D3,24751,pawn sacrifice,test,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0310.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:25838:lookup:ignore,D3,25838,renaissance,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0311.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:25860:research:ignore,D3,25860,new york,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0312.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:27075:retrieve:ignore,D3,27075,social anxiety disorder,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0313.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:2731:search:ignore,D3,2731,internet,test,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0314.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:28022:research:ignore,D3,28022,"tyler, the creator",train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0315.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:2977:fetch:ignore,D3,2977,big brother 18 (uk),train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0316.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:29980:fetch:ignore,D3,29980,lisa bonet,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0317.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:3005:search:ignore,D3,3005,telangana,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0318.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:30536:research:ignore,D3,30536,alpha house,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0319.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:30729:fetch:ignore,D3,30729,crown colony,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0320.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:31536:retrieve:ignore,D3,31536,deadpool (film),test,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0321.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:31621:research:ignore,D3,31621,united states army,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0322.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:3229:retrieve:ignore,D3,3229,deadpool (film),test,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0323.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:32400:retrieve:ignore,D3,32400,deadpool (film),test,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0324.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:32823:search:ignore,D3,32823,"west hollywood, california",train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0325.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:33211:research:ignore,D3,33211,apple inc.,test,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0326.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:33304:lookup:ignore,D3,33304,g1 climax,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0327.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:33681:research:ignore,D3,33681,prison break,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0328.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:34054:fetch:ignore,D3,34054,santorini,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0329.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:34365:retrieve:ignore,D3,34365,boromir,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0330.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:34632:research:ignore,D3,34632,dustin hoffman,test,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0331.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:35070:retrieve:ignore,D3,35070,vietnam war,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0332.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:35836:search:ignore,D3,35836,paleogene,test,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0333.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:36543:lookup:ignore,D3,36543,red velvet (band),train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0334.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:37383:lookup:ignore,D3,37383,g20,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0335.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:37551:search:ignore,D3,37551,tanzania,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0336.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:38078:lookup:ignore,D3,38078,resident evil (film series),train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0337.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:38328:search:ignore,D3,38328,ancient egypt,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0338.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:383:fetch:ignore,D3,383,emma (1996 tv film),train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0339.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:38458:fetch:ignore,D3,38458,hungary,test,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0340.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:38744:retrieve:ignore,D3,38744,douglas aircraft company,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0341.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:387:search:ignore,D3,387,arya stark,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0342.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:38858:lookup:ignore,D3,38858,holiday-colon- a soldier is never off duty,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0343.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:38881:retrieve:ignore,D3,38881,deadpool (film),test,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0344.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:41167:search:ignore,D3,41167,south america,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0345.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:41236:retrieve:ignore,D3,41236,peggy sue got married,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0346.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:42232:fetch:ignore,D3,42232,apocalypse now,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0347.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:42861:research:ignore,D3,42861,social anxiety disorder,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0348.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:43398:fetch:ignore,D3,43398,usain bolt,test,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0349.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:43537:lookup:ignore,D3,43537,minions (film),train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0350.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:43629:research:ignore,D3,43629,the belko experiment,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0351.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:43892:fetch:ignore,D3,43892,tanzania,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0352.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:45210:search:ignore,D3,45210,international space station,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0353.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:46426:fetch:ignore,D3,46426,willie nelson,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0354.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:46921:retrieve:ignore,D3,46921,venus,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0355.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:47128:search:ignore,D3,47128,minions (film),train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0356.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:48156:research:ignore,D3,48156,council on foreign relations,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0357.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:48334:search:ignore,D3,48334,united kingdom,test,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0358.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:48356:search:ignore,D3,48356,water,test,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0359.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:48376:research:ignore,D3,48376,norovirus,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0360.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:48528:retrieve:ignore,D3,48528,london,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0361.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:49023:retrieve:ignore,D3,49023,australia,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0362.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:49073:research:ignore,D3,49073,hugh jackman,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0363.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:49501:lookup:ignore,D3,49501,motorola,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0364.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:49873:search:ignore,D3,49873,fc barcelona,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0365.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:50462:fetch:ignore,D3,50462,venus williams,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0366.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:50470:fetch:ignore,D3,50470,manchester city f.c.,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0367.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:51200:fetch:ignore,D3,51200,danny glover,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0368.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:51240:search:ignore,D3,51240,the lion king,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0369.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:51332:fetch:ignore,D3,51332,russ (rapper),train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0370.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:51767:search:ignore,D3,51767,that's so raven,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0371.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:52676:search:ignore,D3,52676,russia,test,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0372.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:52679:research:ignore,D3,52679,conan o'brien,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0373.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:52698:retrieve:ignore,D3,52698,the golden girls,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0374.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:52990:fetch:ignore,D3,52990,french revolution,test,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0375.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:53276:retrieve:ignore,D3,53276,tyrese gibson,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0376.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:5383:fetch:ignore,D3,5383,the divergent series,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0377.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:54285:fetch:ignore,D3,54285,star trek,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0378.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:55360:research:ignore,D3,55360,royal rumble (2002),test,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0379.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:55558:retrieve:ignore,D3,55558,cancer,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0380.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:55780:research:ignore,D3,55780,adolf hitler,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0381.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:56136:lookup:ignore,D3,56136,green day,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0382.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:56188:research:ignore,D3,56188,russia,test,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0383.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:56439:research:ignore,D3,56439,haiti,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0384.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:56506:retrieve:ignore,D3,56506,greece,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0385.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:5694:retrieve:ignore,D3,5694,judy garland,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0386.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:57184:research:ignore,D3,57184,amelia earhart,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0387.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:57200:retrieve:ignore,D3,57200,chris carter (screenwriter),test,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0388.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:57341:lookup:ignore,D3,57341,sharon stone,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0389.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:57419:fetch:ignore,D3,57419,deadpool (film),test,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0390.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:5762:search:ignore,D3,5762,good will hunting,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0391.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:5808:research:ignore,D3,5808,hungary,test,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0392.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:58169:lookup:ignore,D3,58169,adolf hitler,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0393.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:5863:lookup:ignore,D3,5863,hairspray (2007 soundtrack),train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0394.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:5871:lookup:ignore,D3,5871,new york,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0395.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:58775:lookup:ignore,D3,58775,gilmore girls,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0396.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:58784:retrieve:ignore,D3,58784,darth vader,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0397.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:59011:research:ignore,D3,59011,the twilight zone,test,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0398.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:59114:research:ignore,D3,59114,pennsylvania chronicle,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0399.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:59356:lookup:ignore,D3,59356,overwatch (video game),test,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0400.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:59561:fetch:ignore,D3,59561,good will hunting,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0401.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:59694:research:ignore,D3,59694,fairy tail,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0402.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:60005:research:ignore,D3,60005,g1 climax,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0403.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:60456:research:ignore,D3,60456,blue velvet (film),train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0404.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:60667:retrieve:ignore,D3,60667,the beatles,test,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0405.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:61057:lookup:ignore,D3,61057,italy,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0406.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:61405:retrieve:ignore,D3,61405,gorillaz,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0407.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:61516:retrieve:ignore,D3,61516,the incredible hulk (film),train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0408.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:6247:search:ignore,D3,6247,asia,test,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0409.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:62531:search:ignore,D3,62531,isle of man,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0410.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:62700:retrieve:ignore,D3,62700,the amanda show,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0411.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:63021:retrieve:ignore,D3,63021,boeing 777,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0412.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:64564:fetch:ignore,D3,64564,chris froome,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0413.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:64820:lookup:ignore,D3,64820,pacific rim (film),train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0414.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:64912:search:ignore,D3,64912,canada,test,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0415.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:64977:lookup:ignore,D3,64977,cloud atlas (film),train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0416.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:65374:lookup:ignore,D3,65374,spider-man,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0417.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:65842:retrieve:ignore,D3,65842,liverpool f.c.,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0418.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:65884:lookup:ignore,D3,65884,the breakfast club,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0419.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:65894:retrieve:ignore,D3,65894,richard ramirez,test,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0420.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:66422:lookup:ignore,D3,66422,new girl,test,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0421.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:67183:fetch:ignore,D3,67183,magna carta,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0422.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:67221:search:ignore,D3,67221,buddhism,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0423.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:68340:retrieve:ignore,D3,68340,views (album),train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0424.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:68435:search:ignore,D3,68435,doctor strange,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0425.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:68529:retrieve:ignore,D3,68529,united kingdom,test,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0426.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:69490:fetch:ignore,D3,69490,hungary,test,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0427.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:69847:search:ignore,D3,69847,frank sinatra,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0428.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:70390:search:ignore,D3,70390,greenpeace,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0429.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:70558:fetch:ignore,D3,70558,ozarks,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0430.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:70752:lookup:ignore,D3,70752,barack obama,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0431.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:71135:research:ignore,D3,71135,south wales valleys,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0432.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:71474:lookup:ignore,D3,71474,arrow (tv series),test,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0433.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:71897:research:ignore,D3,71897,empress matilda,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0434.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:72004:fetch:ignore,D3,72004,italian language,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0435.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:72094:fetch:ignore,D3,72094,arrow (tv series),test,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0436.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:72898:search:ignore,D3,72898,kingdom hearts,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0437.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:73618:research:ignore,D3,73618,boston university,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0438.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:73920:research:ignore,D3,73920,final fantasy xii,test,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0439.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:73962:search:ignore,D3,73962,manchester city f.c.,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0440.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:74729:fetch:ignore,D3,74729,lost highway (film),train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0441.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:74742:fetch:ignore,D3,74742,philippines,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0442.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:7671:retrieve:ignore,D3,7671,colombia,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0443.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:76806:lookup:ignore,D3,76806,underworld (film series),test,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0444.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:76908:lookup:ignore,D3,76908,albania,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0445.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:77088:research:ignore,D3,77088,galaxy quest,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0446.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:77244:lookup:ignore,D3,77244,boston,test,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0447.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:7789:retrieve:ignore,D3,7789,dawn of the planet of the apes,test,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0448.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:7820:fetch:ignore,D3,7820,suits (tv series),train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0449.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:78296:search:ignore,D3,78296,lady gaga,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0450.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:7861:fetch:ignore,D3,7861,harley quinn,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0451.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:7890:lookup:ignore,D3,7890,willie nelson,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0452.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:79649:search:ignore,D3,79649,anderson cooper,test,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0453.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:80000:research:ignore,D3,80000,xxx-colon- return of xander cage,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0454.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:80450:search:ignore,D3,80450,samsung life insurance,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0455.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:80661:lookup:ignore,D3,80661,haiti,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0456.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:80704:search:ignore,D3,80704,canada,test,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0457.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:81830:retrieve:ignore,D3,81830,tina turner,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0458.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:82201:fetch:ignore,D3,82201,david beckham,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0459.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:85720:retrieve:ignore,D3,85720,adderall,test,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0460.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:85869:research:ignore,D3,85869,minnesota vikings,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0461.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:86008:lookup:ignore,D3,86008,playstation 4,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0462.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:86468:research:ignore,D3,86468,peyton manning,test,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0463.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:86580:fetch:ignore,D3,86580,neil degrasse tyson,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0464.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:8670:fetch:ignore,D3,8670,peyton manning,test,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0465.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:86841:research:ignore,D3,86841,helen gardner (art historian),train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0466.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:8739:retrieve:ignore,D3,8739,syrian desert,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0467.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:87727:retrieve:ignore,D3,87727,tunisia,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0468.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:88527:research:ignore,D3,88527,bosnia and herzegovina,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0469.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:89084:fetch:ignore,D3,89084,the flash (1990 tv series),train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0470.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:8968:lookup:ignore,D3,8968,lightning rod,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0471.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:89695:search:ignore,D3,89695,united states naval academy,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0472.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:89816:retrieve:ignore,D3,89816,the walt disney company,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0473.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:90004:lookup:ignore,D3,90004,divergent (film),train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0474.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:90167:research:ignore,D3,90167,barbados,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0475.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:90710:fetch:ignore,D3,90710,american broadcasting company,test,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0476.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:91138:lookup:ignore,D3,91138,quinoa,test,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0477.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:9150:search:ignore,D3,9150,netherlands,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0478.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:9246:search:ignore,D3,9246,republic of ireland,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0479.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:92803:lookup:ignore,D3,92803,olympic games,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0480.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:9303:retrieve:ignore,D3,9303,neil patrick harris,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0481.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:9311:retrieve:ignore,D3,9311,ketogenic diet,test,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0482.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:93579:retrieve:ignore,D3,93579,shingles,test,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0483.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:93752:search:ignore,D3,93752,semitic languages,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0484.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:93783:fetch:ignore,D3,93783,the chainsmokers,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0485.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:94048:lookup:ignore,D3,94048,michelangelo,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0486.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:9444:research:ignore,D3,9444,one by one (foo fighters album),train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0487.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:9495:search:ignore,D3,9495,netherlands,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0488.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:95216:fetch:ignore,D3,95216,coke boys records,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0489.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:95231:lookup:ignore,D3,95231,rms titanic,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0490.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:95924:research:ignore,D3,95924,rhode island,test,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0491.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:96297:retrieve:ignore,D3,96297,the voice (u.s. tv series),train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0492.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:96334:retrieve:ignore,D3,96334,ready player one,train,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0493.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:96540:lookup:ignore,D3,96540,buddy holly,train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0494.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:96654:fetch:ignore,D3,96654,cher,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0495.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:96875:search:ignore,D3,96875,dinosaur,train,search,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0496.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:9716:fetch:ignore,D3,9716,liverpool f.c.,train,fetch,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0497.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:98083:retrieve:ignore,D3,98083,pirates of the caribbean (film series),test,retrieve,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0498.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:984:research:ignore,D3,984,ryan o'neal,train,research,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0499.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:98994:lookup:ignore,D3,98994,the wolf of wall street (2013 film),train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B
+d3_0500.txt,D3:v4_d3_factual_claim_ignore_title_normalized:cdba62445109:99371:lookup:ignore,D3,99371,the last house on the left (2009 film),train,lookup,ignore,Qwen3-1.7B;Qwen3-14B;Qwen3-4B;Qwen3-8B

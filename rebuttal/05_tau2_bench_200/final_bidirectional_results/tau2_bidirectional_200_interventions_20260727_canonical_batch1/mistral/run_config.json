@@ -1,0 +1,95 @@
+{
+  "started_unix": 1785126885.8543558,
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+  "torch": "2.8.0+cu128",
+  "model": "Mistral-Small-3.2-24B-Instruct-2506",
+  "model_key": "mistral",
+  "model_path": "/root/autodl-tmp/Mistral/Mistral-Small-3.2-24B-Instruct-2506",
+  "source_domain": "retail",
+  "selection_version": "canonical_batch1",
+  "selection_files": {
+    "tool": {
+      "path": "./datasets/external/tau2_retail_qwen35_9b/collections/bidirectional_200_per_model_20260726_canonical_batch1/mistral/selected_tool_200.jsonl",
+      "sha256": "18f6cc8bdd0d0e1413f49b9136873246ed5a124625444c60791a0a72e3ebd572"
+    },
+    "direct": {
+      "path": "./datasets/external/tau2_retail_qwen35_9b/collections/bidirectional_200_per_model_20260726_canonical_batch1/mistral/selected_direct_200.jsonl",
+      "sha256": "ed6ad61d0a99e79ad54caf376d0821b3393d6c544ab1388e90a41742bb92adfb"
+    },
+    "summary": {
+      "path": "./datasets/external/tau2_retail_qwen35_9b/collections/bidirectional_200_per_model_20260726_canonical_batch1/mistral/selection_summary.json",
+      "sha256": "3b4b8b96ee551077d2732f0a302cddc555ab1965a419cd252b4ed5a126738d50"
+    }
+  },
+  "raw_files": {
+    "system_prompt": {
+      "path": "./datasets/external/tau2_retail_qwen35_9b/raw/tau2_system_prompt.txt",
+      "sha256": "2c9652afbce57d6e087768d37cda64d31c53d50b3e3225cfdb791bac66466467"
+    },
+    "tool_schemas": {
+      "path": "./datasets/external/tau2_retail_qwen35_9b/raw/tau2_tool_schemas.json",
+      "sha256": "75a679a53665076eb040cf8a77c2c0aea6a839b3c0afc2b4378e3f5bf888f81f"
+    }
+  },
+  "frozen_coding_vector": {
+    "path": "./results/natural_trajectory/cross_family_tau2_20260726/mistral/coding_vector_bundle.pt",
+    "sha256": "94988e0149770101f60c94651dae3f7fb9c6059fca042e3cbbbbfcb3746460ca",
+    "layer": 26,
+    "hook_kind": "post",
+    "mean_diff_norm": 6.639774322509766,
+    "bundle_source_domain": "coding clean/corrupt pairs only",
+    "bundle_fit_split": "train",
+    "bundle_model": "Mistral-Small-3.2-24B-Instruct-2506"
+  },
+  "tool_decision": {
+    "semantic_tool_opening": "[TOOL_CALLS]",
+    "tool_token_id_via_convert": 9,
+    "tool_token_ids_via_encode": [
+      1091,
+      9197,
+      8568,
+      74483,
+      1083,
+      1093
+    ],
+    "tool_token_encode_length": 6,
+    "decision_position": "final native prompt token / first generation decision"
+  },
+  "intervention_hook": "post-boundary of decoder L26, final real prompt token only",
+  "selection_policy": "Frozen Coding vector/layer; τ² is not used to estimate, tune, or select the vector/layer.",
+  "conditions": {
+    "coding_alphas": [
+      1.0,
+      1.5
+    ],
+    "random_alphas": [
+      1.0,
+      1.5
+    ],
+    "random_control": "saved seeded unit vector scaled to ||Coding mean-difference||"
+  },
+  "batch_size": 1,
+  "max_batch_tokens": 30000,
+  "max_context_tokens": 30000,
+  "arguments": {
+    "models": "mistral",
+    "output_root": "results/natural_trajectory/tau2_bidirectional_200_interventions_20260727_canonical_batch1",
+    "selection_version": "canonical_batch1",
+    "max_context_tokens": 30000,
+    "arms": "both",
+    "alphas": [
+      1.0,
+      1.5
+    ],
+    "random_alphas": [
+      1.0,
+      1.5
+    ],
+    "batch_size": 1,
+    "max_batch_tokens": 30000,
+    "max_samples": 0,
+    "seed": 20260726,
+    "resume": false
+  }
+}

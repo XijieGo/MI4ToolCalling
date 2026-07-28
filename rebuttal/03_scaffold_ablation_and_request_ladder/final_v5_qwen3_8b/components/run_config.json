@@ -1,0 +1,34 @@
+{
+  "experiment": "scaffold_component_factorial",
+  "dataset_label": "qwen3_8b_v5_final",
+  "dataset_root": "./datasets/v5_model_specific_balanced/qwen3_8b",
+  "train_split": "train",
+  "eval_split": "heldout",
+  "model_path": "/root/autodl-tmp/Qwen/Qwen3-8B",
+  "model_label": "Qwen3-8B",
+  "layer": 24,
+  "hook_kind": "pre",
+  "train_pairs": 200,
+  "eval_pairs": 300,
+  "batch_size": 12,
+  "seed": 42,
+  "core_scaffolds": [
+    "RTF",
+    "-TF",
+    "R-F",
+    "RT-",
+    "--F",
+    "-T-",
+    "R--",
+    "---"
+  ],
+  "supplemental_length_matched_control": "R_TLEN_F",
+  "request_types": [
+    "execution",
+    "neutral",
+    "analysis"
+  ],
+  "membership_rule": "Fixed released split; no scaffold-variant behavioral re-screening or re-selection.",
+  "frozen_vector": "RTF native mean(clean L24 pre residual − analysis L24 pre residual) on the fixed train split.",
+  "alternate_templates": "Not part of the required 2^3 core; intentionally deferred until the main factorial is complete."
+}

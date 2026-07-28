@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Evaluate this email message shown below:
+To: recipient-126305a918d5@mail.example
+Subject: Data Lineage Feature — SHIPPED 🗺️
+Body: Andre, Craig — Data lineage tracking is live. Every piece of data can be traced from source to destination — full audit trail. This was specifically requested by 3 enterprise prospects during evaluation.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

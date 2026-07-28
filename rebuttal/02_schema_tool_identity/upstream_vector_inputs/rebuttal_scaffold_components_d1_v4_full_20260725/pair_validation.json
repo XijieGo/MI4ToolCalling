@@ -1,0 +1,178 @@
+{
+  "fixed": {
+    "train": {
+      "pair_count": 400,
+      "sample_id_count": 400,
+      "token_length_min": 192,
+      "token_length_max": 376,
+      "unique_differing_token_positions": [
+        134
+      ]
+    },
+    "test": {
+      "pair_count": 100,
+      "sample_id_count": 100,
+      "token_length_min": 197,
+      "token_length_max": 346,
+      "unique_differing_token_positions": [
+        134
+      ]
+    }
+  },
+  "RTF/train": {
+    "pair_count": 400,
+    "token_length_min": 192,
+    "token_length_max": 376,
+    "unique_differing_token_positions": [
+      134
+    ]
+  },
+  "-TF/train": {
+    "pair_count": 400,
+    "token_length_min": 160,
+    "token_length_max": 344,
+    "unique_differing_token_positions": [
+      102
+    ]
+  },
+  "R-F/train": {
+    "pair_count": 400,
+    "token_length_min": 137,
+    "token_length_max": 321,
+    "unique_differing_token_positions": [
+      79
+    ]
+  },
+  "RT-/train": {
+    "pair_count": 400,
+    "token_length_min": 153,
+    "token_length_max": 337,
+    "unique_differing_token_positions": [
+      95
+    ]
+  },
+  "--F/train": {
+    "pair_count": 400,
+    "token_length_min": 105,
+    "token_length_max": 289,
+    "unique_differing_token_positions": [
+      47
+    ]
+  },
+  "-T-/train": {
+    "pair_count": 400,
+    "token_length_min": 121,
+    "token_length_max": 305,
+    "unique_differing_token_positions": [
+      63
+    ]
+  },
+  "R--/train": {
+    "pair_count": 400,
+    "token_length_min": 98,
+    "token_length_max": 282,
+    "unique_differing_token_positions": [
+      40
+    ]
+  },
+  "---/train": {
+    "pair_count": 400,
+    "token_length_min": 66,
+    "token_length_max": 250,
+    "unique_differing_token_positions": [
+      8
+    ]
+  },
+  "R_TLEN_F/train": {
+    "pair_count": 400,
+    "token_length_min": 192,
+    "token_length_max": 376,
+    "unique_differing_token_positions": [
+      134
+    ]
+  },
+  "R_TLEN_F/train_length_control": {
+    "full_prompt_token_length_deltas": [
+      0
+    ],
+    "all_exact": true
+  },
+  "RTF/test": {
+    "pair_count": 100,
+    "token_length_min": 197,
+    "token_length_max": 346,
+    "unique_differing_token_positions": [
+      134
+    ]
+  },
+  "-TF/test": {
+    "pair_count": 100,
+    "token_length_min": 165,
+    "token_length_max": 314,
+    "unique_differing_token_positions": [
+      102
+    ]
+  },
+  "R-F/test": {
+    "pair_count": 100,
+    "token_length_min": 142,
+    "token_length_max": 291,
+    "unique_differing_token_positions": [
+      79
+    ]
+  },
+  "RT-/test": {
+    "pair_count": 100,
+    "token_length_min": 158,
+    "token_length_max": 307,
+    "unique_differing_token_positions": [
+      95
+    ]
+  },
+  "--F/test": {
+    "pair_count": 100,
+    "token_length_min": 110,
+    "token_length_max": 259,
+    "unique_differing_token_positions": [
+      47
+    ]
+  },
+  "-T-/test": {
+    "pair_count": 100,
+    "token_length_min": 126,
+    "token_length_max": 275,
+    "unique_differing_token_positions": [
+      63
+    ]
+  },
+  "R--/test": {
+    "pair_count": 100,
+    "token_length_min": 103,
+    "token_length_max": 252,
+    "unique_differing_token_positions": [
+      40
+    ]
+  },
+  "---/test": {
+    "pair_count": 100,
+    "token_length_min": 71,
+    "token_length_max": 220,
+    "unique_differing_token_positions": [
+      8
+    ]
+  },
+  "R_TLEN_F/test": {
+    "pair_count": 100,
+    "token_length_min": 197,
+    "token_length_max": 346,
+    "unique_differing_token_positions": [
+      134
+    ]
+  },
+  "R_TLEN_F/test_length_control": {
+    "full_prompt_token_length_deltas": [
+      0
+    ],
+    "all_exact": true
+  }
+}

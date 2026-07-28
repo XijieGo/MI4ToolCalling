@@ -1,0 +1,20 @@
+{
+  "D3": {
+    "baseline_clean_top1_rate": 0.0,
+    "baseline_corrupt_top1_rate": 0.0,
+    "add_strict_flip_rate": 0.0,
+    "remove_strict_drop_rate": 0.0
+  },
+  "D4": {
+    "baseline_clean_top1_rate": 0.0,
+    "baseline_corrupt_top1_rate": 0.0,
+    "add_strict_flip_rate": 0.0,
+    "remove_strict_drop_rate": 0.0
+  },
+  "D5": {
+    "baseline_clean_top1_rate": 0.0,
+    "baseline_corrupt_top1_rate": 0.0,
+    "add_strict_flip_rate": 0.0,
+    "remove_strict_drop_rate": 0.0
+  }
+}

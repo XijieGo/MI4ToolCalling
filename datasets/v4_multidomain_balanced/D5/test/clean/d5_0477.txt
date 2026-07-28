@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Submit this email message shown below:
+To: recipient-f37cb76982f4@mail.example
+Subject: Career Ladder — Company-Wide Launch
+Body: James, Rachel, Marcus — Career ladder is live for all departments: - **Engineering:** IC track (L1-L7) + Management track (M1-M5) - **Sales:** Individual contributor + management tracks - **Product & Design:** Same dual-track model - **Operations:** Tailored to each function Clear criteria, transparent compensation bands, documented promotion process. First company-wide career framework in Vectrix history. This is what Maya asked for.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

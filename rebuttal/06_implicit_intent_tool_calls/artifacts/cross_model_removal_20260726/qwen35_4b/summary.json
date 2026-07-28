@@ -1,0 +1,228 @@
+{
+  "model": "Qwen3.5-4B",
+  "source_candidates": 600,
+  "baseline_tool_call_top1": 385,
+  "baseline_by_domain_pattern": {
+    "D1": {
+      "P1": {
+        "n": 30,
+        "baseline_tool_call_top1": 0
+      },
+      "P2": {
+        "n": 30,
+        "baseline_tool_call_top1": 11
+      },
+      "P3": {
+        "n": 30,
+        "baseline_tool_call_top1": 20
+      },
+      "P4": {
+        "n": 30,
+        "baseline_tool_call_top1": 15
+      },
+      "P5": {
+        "n": 30,
+        "baseline_tool_call_top1": 19
+      }
+    },
+    "D3": {
+      "P1": {
+        "n": 30,
+        "baseline_tool_call_top1": 17
+      },
+      "P2": {
+        "n": 30,
+        "baseline_tool_call_top1": 15
+      },
+      "P3": {
+        "n": 30,
+        "baseline_tool_call_top1": 21
+      },
+      "P4": {
+        "n": 30,
+        "baseline_tool_call_top1": 12
+      },
+      "P5": {
+        "n": 30,
+        "baseline_tool_call_top1": 9
+      }
+    },
+    "D4": {
+      "P1": {
+        "n": 30,
+        "baseline_tool_call_top1": 27
+      },
+      "P2": {
+        "n": 30,
+        "baseline_tool_call_top1": 30
+      },
+      "P3": {
+        "n": 30,
+        "baseline_tool_call_top1": 29
+      },
+      "P4": {
+        "n": 30,
+        "baseline_tool_call_top1": 26
+      },
+      "P5": {
+        "n": 30,
+        "baseline_tool_call_top1": 23
+      }
+    },
+    "D5": {
+      "P1": {
+        "n": 30,
+        "baseline_tool_call_top1": 14
+      },
+      "P2": {
+        "n": 30,
+        "baseline_tool_call_top1": 28
+      },
+      "P3": {
+        "n": 30,
+        "baseline_tool_call_top1": 27
+      },
+      "P4": {
+        "n": 30,
+        "baseline_tool_call_top1": 18
+      },
+      "P5": {
+        "n": 30,
+        "baseline_tool_call_top1": 24
+      }
+    }
+  },
+  "removal_arm_n": 189,
+  "conditions": {
+    "mean_diff_a1.0": {
+      "n": 189,
+      "strict_drop": 189,
+      "strict_drop_rate": 1.0,
+      "by_domain": {
+        "D1": {
+          "n": 40,
+          "strict_drop": 40,
+          "strict_drop_rate": 1.0
+        },
+        "D3": {
+          "n": 49,
+          "strict_drop": 49,
+          "strict_drop_rate": 1.0
+        },
+        "D4": {
+          "n": 50,
+          "strict_drop": 50,
+          "strict_drop_rate": 1.0
+        },
+        "D5": {
+          "n": 50,
+          "strict_drop": 50,
+          "strict_drop_rate": 1.0
+        }
+      }
+    },
+    "mean_diff_a1.5": {
+      "n": 189,
+      "strict_drop": 189,
+      "strict_drop_rate": 1.0,
+      "by_domain": {
+        "D1": {
+          "n": 40,
+          "strict_drop": 40,
+          "strict_drop_rate": 1.0
+        },
+        "D3": {
+          "n": 49,
+          "strict_drop": 49,
+          "strict_drop_rate": 1.0
+        },
+        "D4": {
+          "n": 50,
+          "strict_drop": 50,
+          "strict_drop_rate": 1.0
+        },
+        "D5": {
+          "n": 50,
+          "strict_drop": 50,
+          "strict_drop_rate": 1.0
+        }
+      }
+    },
+    "random_a1.5": {
+      "n": 189,
+      "strict_drop": 75,
+      "strict_drop_rate": 0.3968253968253968,
+      "by_domain": {
+        "D1": {
+          "n": 40,
+          "strict_drop": 8,
+          "strict_drop_rate": 0.2
+        },
+        "D3": {
+          "n": 49,
+          "strict_drop": 23,
+          "strict_drop_rate": 0.46938775510204084
+        },
+        "D4": {
+          "n": 50,
+          "strict_drop": 20,
+          "strict_drop_rate": 0.4
+        },
+        "D5": {
+          "n": 50,
+          "strict_drop": 24,
+          "strict_drop_rate": 0.48
+        }
+      }
+    }
+  },
+  "hook_audits": {
+    "baseline": {
+      "hook_calls": 0,
+      "modified_calls": 0
+    },
+    "mean_diff_a1.0": {
+      "hook_calls": 189,
+      "modified_calls": 189
+    },
+    "mean_diff_a1.5": {
+      "hook_calls": 189,
+      "modified_calls": 189
+    },
+    "random_a1.5": {
+      "hook_calls": 189,
+      "modified_calls": 189
+    }
+  },
+  "vector": {
+    "bundle_path": "./results/natural_trajectory/cross_family_tau2_20260726/qwen35_4b/coding_vector_bundle.pt",
+    "bundle_sha256": "e0769573e84184a4f531f427c14f6e8cb52466505af01962a7061b1ad6a73d0d",
+    "mean_diff_norm": 30.77223777770996,
+    "random_direction_norm": 30.772239685058594,
+    "cosine_mean_random": -0.019936146214604378,
+    "bundle_layer": 31,
+    "bundle_hook_kind": "post",
+    "bundle_keys": [
+      "fit_split",
+      "hook_kind",
+      "layer",
+      "mean_diff",
+      "model",
+      "model_path",
+      "random_direction_unit",
+      "random_seed",
+      "source_domain",
+      "tool_token",
+      "validation_split"
+    ]
+  },
+  "layer": 31,
+  "hook_kind": "post",
+  "tool_token": {
+    "text": "<tool_call>",
+    "id_via_convert": 248058,
+    "ids_via_encode": [
+      248058
+    ]
+  }
+}

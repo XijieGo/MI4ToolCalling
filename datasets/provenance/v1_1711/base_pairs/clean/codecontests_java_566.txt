@@ -1,0 +1,39 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"write_file","description":"Write file.","parameters":{"type":"object","properties":{"file_path":{"type":"string"},"content":
+{"type":"string"}},"required":["file_path","content"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Save the function body in solve.java based on the function definition and docstring below:
+/*
+Given prices of n items and m coupons with size q, each coupon makes the cheapest among chosen q free; for each q, output the minimum total cost.
+Example:
+input:
+7
+7 1 3 1 4 10 8
+2
+3 4
+output:
+27
+30
+*/
+static String solve(String input) {
+    // TODO: implement
+    return "";
+}
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

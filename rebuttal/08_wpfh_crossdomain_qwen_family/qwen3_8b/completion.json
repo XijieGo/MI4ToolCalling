@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "expected_rows": 6,
+  "observed_rows": 6,
+  "tool_token_id": 151657,
+  "layer": 24,
+  "hook_kind": "pre",
+  "model_d_model": 4096,
+  "code_reproduction": "exact strict-rate match to the frozen matrix"
+}

@@ -1,0 +1,41 @@
+{
+  "experiment": "reviewer_lxey_v5_neighbor_layers",
+  "created_at": "2026-07-28T04:08:59.830036Z",
+  "model_key": "qwen3_8b",
+  "model_label": "Qwen3-8B",
+  "model_path": "external Qwen3-8B checkpoint (supply --model-path)",
+  "dataset_root": "datasets/v5_model_specific_balanced/qwen3_8b",
+  "dataset_version": "v5_model_specific_balanced",
+  "layers": [
+    22,
+    23,
+    24,
+    25
+  ],
+  "train_pairs": 200,
+  "heldout_pairs": 300,
+  "partition_rule": "all v5 train / all v5 held-out in canonical mode; manifest-order prefixes only under --allow-subset",
+  "vector_protocol": "mean(clean block-input state - corrupt block-input state) at final non-padding prompt token",
+  "intervention_protocol": "add each frozen vector to corrupt prompts and subtract it from clean prompts at the same decoder-block input / final prompt token",
+  "control_protocol": "one independently seeded random unit vector per layer, scaled to that layer's raw mean-difference norm; both add and subtract arms",
+  "top1_definition": "tool logit is uniquely rank 1; exact ties are losses",
+  "v0_input_rule": "native release text encoded with add_special_tokens=False for Qwen3; no prompt mutations",
+  "batch_size": 16,
+  "dtype": "bfloat16",
+  "attn_implementation": null,
+  "seed": 20260728,
+  "allow_subset": false,
+  "script_path": "src/rebuttal/run_lxey_v5_neighbor_layers.py",
+  "script_sha256": "89bec81d9353796a465c77584102c70616362da91b7fd5aa33cc89b1bf061057",
+  "native_input_helper_path": "src/rebuttal/run_cjrq_v5_tool_identity.py",
+  "native_input_helper_sha256": "547334670d5370f1d7c5f20dedadab61d1715b7a7daf63fd095a9ccee4ab0554",
+  "git": {
+    "commit": "9202b474a88a80ebb54299df54ee5d4e0a67d499",
+    "branch": "main",
+    "worktree_dirty": true,
+    "worktree_status_line_count": 174
+  },
+  "torch_version": "2.8.0+cu128",
+  "cuda_available": true,
+  "gpu_before": "0, NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 3 MiB, 0 %"
+}

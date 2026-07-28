@@ -1,0 +1,1741 @@
+{
+  "model_key": "qwen35_9b",
+  "model_label": "Qwen3.5-9B",
+  "tool_call": {
+    "tool_call_marker": "<tool_call>",
+    "tool_call_token_id": 248058,
+    "resolution": "tokenizer.encode",
+    "encode_ids": [
+      248058
+    ]
+  },
+  "metrics": {
+    "n": 300,
+    "top1_count": 0,
+    "top1_rate": 0.0,
+    "top3_count": 135,
+    "top3_rate": 0.45,
+    "top10_count": 300,
+    "top10_rate": 1.0,
+    "median_probability": 0.048633718863129616,
+    "mean_probability": 0.05318024734888847,
+    "rank_2_count": 26,
+    "probability_at_least_0p30_count": 1,
+    "target_logit_tie_count": 40,
+    "rank_bins": {
+      "1": 0,
+      "2": 26,
+      "3": 109,
+      "4": 63,
+      "5": 32,
+      "6": 33,
+      "7": 25,
+      "8": 11,
+      "9": 0,
+      "10": 1,
+      "11-20": 0,
+      "21-50": 0,
+      "51-100": 0,
+      "101+": 0
+    },
+    "exact_rank_histogram": {
+      "2": 26,
+      "3": 109,
+      "4": 63,
+      "5": 32,
+      "6": 33,
+      "7": 25,
+      "8": 11,
+      "10": 1
+    }
+  },
+  "baseline_screening_replay": {
+    "n": 300,
+    "argmax_top1_mismatch_count": 0,
+    "rank_mismatch_count": 27,
+    "probability_mismatch_count": 256,
+    "probability_tolerance": 5e-05,
+    "maximum_probability_absolute_delta": 0.03962910920381546,
+    "argmax_top1_mismatches": [],
+    "rank_mismatches": [
+      {
+        "sample_id": "v5_qwen35_9b_017",
+        "manifest": 3,
+        "observed": 4
+      },
+      {
+        "sample_id": "v5_qwen35_9b_024",
+        "manifest": 4,
+        "observed": 3
+      },
+      {
+        "sample_id": "v5_qwen35_9b_056",
+        "manifest": 4,
+        "observed": 3
+      },
+      {
+        "sample_id": "v5_qwen35_9b_068",
+        "manifest": 6,
+        "observed": 7
+      },
+      {
+        "sample_id": "v5_qwen35_9b_072",
+        "manifest": 7,
+        "observed": 8
+      },
+      {
+        "sample_id": "v5_qwen35_9b_083",
+        "manifest": 3,
+        "observed": 4
+      },
+      {
+        "sample_id": "v5_qwen35_9b_086",
+        "manifest": 2,
+        "observed": 3
+      },
+      {
+        "sample_id": "v5_qwen35_9b_094",
+        "manifest": 4,
+        "observed": 5
+      },
+      {
+        "sample_id": "v5_qwen35_9b_114",
+        "manifest": 5,
+        "observed": 4
+      },
+      {
+        "sample_id": "v5_qwen35_9b_115",
+        "manifest": 6,
+        "observed": 7
+      },
+      {
+        "sample_id": "v5_qwen35_9b_129",
+        "manifest": 5,
+        "observed": 4
+      },
+      {
+        "sample_id": "v5_qwen35_9b_137",
+        "manifest": 8,
+        "observed": 7
+      },
+      {
+        "sample_id": "v5_qwen35_9b_140",
+        "manifest": 10,
+        "observed": 8
+      },
+      {
+        "sample_id": "v5_qwen35_9b_147",
+        "manifest": 2,
+        "observed": 4
+      },
+      {
+        "sample_id": "v5_qwen35_9b_149",
+        "manifest": 2,
+        "observed": 3
+      },
+      {
+        "sample_id": "v5_qwen35_9b_170",
+        "manifest": 5,
+        "observed": 4
+      },
+      {
+        "sample_id": "v5_qwen35_9b_183",
+        "manifest": 4,
+        "observed": 5
+      },
+      {
+        "sample_id": "v5_qwen35_9b_184",
+        "manifest": 4,
+        "observed": 3
+      },
+      {
+        "sample_id": "v5_qwen35_9b_187",
+        "manifest": 6,
+        "observed": 5
+      },
+      {
+        "sample_id": "v5_qwen35_9b_216",
+        "manifest": 4,
+        "observed": 5
+      },
+      {
+        "sample_id": "v5_qwen35_9b_220",
+        "manifest": 3,
+        "observed": 4
+      },
+      {
+        "sample_id": "v5_qwen35_9b_225",
+        "manifest": 6,
+        "observed": 4
+      },
+      {
+        "sample_id": "v5_qwen35_9b_237",
+        "manifest": 6,
+        "observed": 5
+      },
+      {
+        "sample_id": "v5_qwen35_9b_238",
+        "manifest": 6,
+        "observed": 7
+      },
+      {
+        "sample_id": "v5_qwen35_9b_239",
+        "manifest": 4,
+        "observed": 3
+      },
+      {
+        "sample_id": "v5_qwen35_9b_271",
+        "manifest": 4,
+        "observed": 5
+      },
+      {
+        "sample_id": "v5_qwen35_9b_297",
+        "manifest": 4,
+        "observed": 3
+      }
+    ],
+    "probability_mismatches": [
+      {
+        "sample_id": "v5_qwen35_9b_002",
+        "manifest": 0.0034874193370342255,
+        "observed": 0.003079959424212575,
+        "absolute_delta": 0.0004074599128216505
+      },
+      {
+        "sample_id": "v5_qwen35_9b_003",
+        "manifest": 0.0044610812328755856,
+        "observed": 0.00405274098739028,
+        "absolute_delta": 0.0004083402454853058
+      },
+      {
+        "sample_id": "v5_qwen35_9b_005",
+        "manifest": 0.0867709070444107,
+        "observed": 0.0836905688047409,
+        "absolute_delta": 0.0030803382396698
+      },
+      {
+        "sample_id": "v5_qwen35_9b_006",
+        "manifest": 0.16469541192054749,
+        "observed": 0.17479313910007477,
+        "absolute_delta": 0.010097727179527283
+      },
+      {
+        "sample_id": "v5_qwen35_9b_007",
+        "manifest": 0.06728286296129227,
+        "observed": 0.07415888458490372,
+        "absolute_delta": 0.00687602162361145
+      },
+      {
+        "sample_id": "v5_qwen35_9b_008",
+        "manifest": 0.07457265257835388,
+        "observed": 0.07353394478559494,
+        "absolute_delta": 0.0010387077927589417
+      },
+      {
+        "sample_id": "v5_qwen35_9b_009",
+        "manifest": 0.040012020617723465,
+        "observed": 0.04184374958276749,
+        "absolute_delta": 0.0018317289650440216
+      },
+      {
+        "sample_id": "v5_qwen35_9b_010",
+        "manifest": 0.04453176259994507,
+        "observed": 0.04440129175782204,
+        "absolute_delta": 0.00013047084212303162
+      },
+      {
+        "sample_id": "v5_qwen35_9b_011",
+        "manifest": 0.07341346144676208,
+        "observed": 0.07275310903787613,
+        "absolute_delta": 0.0006603524088859558
+      },
+      {
+        "sample_id": "v5_qwen35_9b_012",
+        "manifest": 0.10108712315559387,
+        "observed": 0.09182429313659668,
+        "absolute_delta": 0.009262830018997192
+      },
+      {
+        "sample_id": "v5_qwen35_9b_013",
+        "manifest": 0.04992347210645676,
+        "observed": 0.049712296575307846,
+        "absolute_delta": 0.00021117553114891052
+      },
+      {
+        "sample_id": "v5_qwen35_9b_014",
+        "manifest": 0.08103255182504654,
+        "observed": 0.0811765119433403,
+        "absolute_delta": 0.0001439601182937622
+      },
+      {
+        "sample_id": "v5_qwen35_9b_015",
+        "manifest": 0.06424044072628021,
+        "observed": 0.05567927286028862,
+        "absolute_delta": 0.008561167865991592
+      },
+      {
+        "sample_id": "v5_qwen35_9b_016",
+        "manifest": 0.05435619503259659,
+        "observed": 0.05428395792841911,
+        "absolute_delta": 7.223710417747498e-05
+      },
+      {
+        "sample_id": "v5_qwen35_9b_017",
+        "manifest": 0.06168099865317345,
+        "observed": 0.054557472467422485,
+        "absolute_delta": 0.007123526185750961
+      },
+      {
+        "sample_id": "v5_qwen35_9b_018",
+        "manifest": 0.062644362449646,
+        "observed": 0.07035526633262634,
+        "absolute_delta": 0.007710903882980347
+      },
+      {
+        "sample_id": "v5_qwen35_9b_020",
+        "manifest": 0.12636809051036835,
+        "observed": 0.12249001115560532,
+        "absolute_delta": 0.003878079354763031
+      },
+      {
+        "sample_id": "v5_qwen35_9b_021",
+        "manifest": 0.100291408598423,
+        "observed": 0.09634654968976974,
+        "absolute_delta": 0.003944858908653259
+      },
+      {
+        "sample_id": "v5_qwen35_9b_022",
+        "manifest": 0.0957757830619812,
+        "observed": 0.10702738165855408,
+        "absolute_delta": 0.011251598596572876
+      },
+      {
+        "sample_id": "v5_qwen35_9b_023",
+        "manifest": 0.055601704865694046,
+        "observed": 0.06223864480853081,
+        "absolute_delta": 0.0066369399428367615
+      },
+      {
+        "sample_id": "v5_qwen35_9b_024",
+        "manifest": 0.04290091618895531,
+        "observed": 0.04866734519600868,
+        "absolute_delta": 0.005766429007053375
+      },
+      {
+        "sample_id": "v5_qwen35_9b_025",
+        "manifest": 0.08094488084316254,
+        "observed": 0.08194655179977417,
+        "absolute_delta": 0.0010016709566116333
+      },
+      {
+        "sample_id": "v5_qwen35_9b_026",
+        "manifest": 0.14127612113952637,
+        "observed": 0.10164701193571091,
+        "absolute_delta": 0.03962910920381546
+      },
+      {
+        "sample_id": "v5_qwen35_9b_027",
+        "manifest": 0.10997616499662399,
+        "observed": 0.10833794623613358,
+        "absolute_delta": 0.0016382187604904175
+      },
+      {
+        "sample_id": "v5_qwen35_9b_028",
+        "manifest": 0.03330984339118004,
+        "observed": 0.0374913290143013,
+        "absolute_delta": 0.004181485623121262
+      },
+      {
+        "sample_id": "v5_qwen35_9b_029",
+        "manifest": 0.047155000269412994,
+        "observed": 0.04824184253811836,
+        "absolute_delta": 0.001086842268705368
+      },
+      {
+        "sample_id": "v5_qwen35_9b_030",
+        "manifest": 0.024894023314118385,
+        "observed": 0.03157086297869682,
+        "absolute_delta": 0.006676839664578438
+      },
+      {
+        "sample_id": "v5_qwen35_9b_032",
+        "manifest": 0.04690071940422058,
+        "observed": 0.05136562138795853,
+        "absolute_delta": 0.0044649019837379456
+      },
+      {
+        "sample_id": "v5_qwen35_9b_033",
+        "manifest": 0.06201263517141342,
+        "observed": 0.06254459917545319,
+        "absolute_delta": 0.0005319640040397644
+      },
+      {
+        "sample_id": "v5_qwen35_9b_034",
+        "manifest": 0.054122164845466614,
+        "observed": 0.053924836218357086,
+        "absolute_delta": 0.0001973286271095276
+      },
+      {
+        "sample_id": "v5_qwen35_9b_035",
+        "manifest": 0.040348365902900696,
+        "observed": 0.04026937857270241,
+        "absolute_delta": 7.898733019828796e-05
+      },
+      {
+        "sample_id": "v5_qwen35_9b_036",
+        "manifest": 0.06630680710077286,
+        "observed": 0.064429871737957,
+        "absolute_delta": 0.001876935362815857
+      },
+      {
+        "sample_id": "v5_qwen35_9b_037",
+        "manifest": 0.0889643207192421,
+        "observed": 0.099000945687294,
+        "absolute_delta": 0.01003662496805191
+      },
+      {
+        "sample_id": "v5_qwen35_9b_038",
+        "manifest": 0.07299347966909409,
+        "observed": 0.06746990978717804,
+        "absolute_delta": 0.005523569881916046
+      },
+      {
+        "sample_id": "v5_qwen35_9b_039",
+        "manifest": 0.15908415615558624,
+        "observed": 0.15956707298755646,
+        "absolute_delta": 0.00048291683197021484
+      },
+      {
+        "sample_id": "v5_qwen35_9b_040",
+        "manifest": 0.07388930022716522,
+        "observed": 0.08006506413221359,
+        "absolute_delta": 0.00617576390504837
+      },
+      {
+        "sample_id": "v5_qwen35_9b_041",
+        "manifest": 0.16727614402770996,
+        "observed": 0.1676243543624878,
+        "absolute_delta": 0.00034821033477783203
+      },
+      {
+        "sample_id": "v5_qwen35_9b_043",
+        "manifest": 0.06982997059822083,
+        "observed": 0.06220944970846176,
+        "absolute_delta": 0.007620520889759064
+      },
+      {
+        "sample_id": "v5_qwen35_9b_044",
+        "manifest": 0.06162799522280693,
+        "observed": 0.062135808169841766,
+        "absolute_delta": 0.0005078129470348358
+      },
+      {
+        "sample_id": "v5_qwen35_9b_045",
+        "manifest": 0.15007323026657104,
+        "observed": 0.14660219848155975,
+        "absolute_delta": 0.0034710317850112915
+      },
+      {
+        "sample_id": "v5_qwen35_9b_046",
+        "manifest": 0.12128961086273193,
+        "observed": 0.13198156654834747,
+        "absolute_delta": 0.01069195568561554
+      },
+      {
+        "sample_id": "v5_qwen35_9b_047",
+        "manifest": 0.1597345769405365,
+        "observed": 0.15385624766349792,
+        "absolute_delta": 0.005878329277038574
+      },
+      {
+        "sample_id": "v5_qwen35_9b_048",
+        "manifest": 0.06065918877720833,
+        "observed": 0.05680214613676071,
+        "absolute_delta": 0.0038570426404476166
+      },
+      {
+        "sample_id": "v5_qwen35_9b_049",
+        "manifest": 0.04812144115567207,
+        "observed": 0.04999833181500435,
+        "absolute_delta": 0.0018768906593322754
+      },
+      {
+        "sample_id": "v5_qwen35_9b_050",
+        "manifest": 0.048437487334012985,
+        "observed": 0.04884263500571251,
+        "absolute_delta": 0.0004051476716995239
+      },
+      {
+        "sample_id": "v5_qwen35_9b_051",
+        "manifest": 0.03730091452598572,
+        "observed": 0.0446932427585125,
+        "absolute_delta": 0.007392328232526779
+      },
+      {
+        "sample_id": "v5_qwen35_9b_052",
+        "manifest": 0.03391900286078453,
+        "observed": 0.036999598145484924,
+        "absolute_delta": 0.0030805952847003937
+      },
+      {
+        "sample_id": "v5_qwen35_9b_053",
+        "manifest": 0.07592638581991196,
+        "observed": 0.071995809674263,
+        "absolute_delta": 0.003930576145648956
+      },
+      {
+        "sample_id": "v5_qwen35_9b_054",
+        "manifest": 0.04047810286283493,
+        "observed": 0.04336198419332504,
+        "absolute_delta": 0.0028838813304901123
+      },
+      {
+        "sample_id": "v5_qwen35_9b_055",
+        "manifest": 0.03394428640604019,
+        "observed": 0.032105669379234314,
+        "absolute_delta": 0.0018386170268058777
+      },
+      {
+        "sample_id": "v5_qwen35_9b_056",
+        "manifest": 0.03658066689968109,
+        "observed": 0.04130249470472336,
+        "absolute_delta": 0.004721827805042267
+      },
+      {
+        "sample_id": "v5_qwen35_9b_057",
+        "manifest": 0.07162497937679291,
+        "observed": 0.07886436581611633,
+        "absolute_delta": 0.007239386439323425
+      },
+      {
+        "sample_id": "v5_qwen35_9b_058",
+        "manifest": 0.03173043951392174,
+        "observed": 0.028720006346702576,
+        "absolute_delta": 0.003010433167219162
+      },
+      {
+        "sample_id": "v5_qwen35_9b_060",
+        "manifest": 0.08617222309112549,
+        "observed": 0.0784158930182457,
+        "absolute_delta": 0.007756330072879791
+      },
+      {
+        "sample_id": "v5_qwen35_9b_062",
+        "manifest": 0.005835904739797115,
+        "observed": 0.005263115279376507,
+        "absolute_delta": 0.0005727894604206085
+      },
+      {
+        "sample_id": "v5_qwen35_9b_068",
+        "manifest": 0.007564805913716555,
+        "observed": 0.006542061921209097,
+        "absolute_delta": 0.0010227439925074577
+      },
+      {
+        "sample_id": "v5_qwen35_9b_069",
+        "manifest": 0.0068647610023617744,
+        "observed": 0.006687769200652838,
+        "absolute_delta": 0.0001769918017089367
+      },
+      {
+        "sample_id": "v5_qwen35_9b_071",
+        "manifest": 0.0025069541297852993,
+        "observed": 0.002754530403763056,
+        "absolute_delta": 0.0002475762739777565
+      },
+      {
+        "sample_id": "v5_qwen35_9b_072",
+        "manifest": 0.003272661240771413,
+        "observed": 0.0026083446573466063,
+        "absolute_delta": 0.0006643165834248066
+      },
+      {
+        "sample_id": "v5_qwen35_9b_073",
+        "manifest": 0.0032172328792512417,
+        "observed": 0.002910373732447624,
+        "absolute_delta": 0.0003068591468036175
+      },
+      {
+        "sample_id": "v5_qwen35_9b_075",
+        "manifest": 0.01229084376245737,
+        "observed": 0.011104696430265903,
+        "absolute_delta": 0.0011861473321914673
+      },
+      {
+        "sample_id": "v5_qwen35_9b_079",
+        "manifest": 0.0985274612903595,
+        "observed": 0.08912503719329834,
+        "absolute_delta": 0.009402424097061157
+      },
+      {
+        "sample_id": "v5_qwen35_9b_080",
+        "manifest": 0.07245965301990509,
+        "observed": 0.07261613011360168,
+        "absolute_delta": 0.00015647709369659424
+      },
+      {
+        "sample_id": "v5_qwen35_9b_081",
+        "manifest": 0.10371425002813339,
+        "observed": 0.08962365239858627,
+        "absolute_delta": 0.01409059762954712
+      },
+      {
+        "sample_id": "v5_qwen35_9b_082",
+        "manifest": 0.07687824964523315,
+        "observed": 0.07954327017068863,
+        "absolute_delta": 0.002665020525455475
+      },
+      {
+        "sample_id": "v5_qwen35_9b_083",
+        "manifest": 0.054931335151195526,
+        "observed": 0.06024707108736038,
+        "absolute_delta": 0.005315735936164856
+      },
+      {
+        "sample_id": "v5_qwen35_9b_084",
+        "manifest": 0.056252025067806244,
+        "observed": 0.05823718383908272,
+        "absolute_delta": 0.001985158771276474
+      },
+      {
+        "sample_id": "v5_qwen35_9b_085",
+        "manifest": 0.04433790594339371,
+        "observed": 0.041380874812603,
+        "absolute_delta": 0.0029570311307907104
+      },
+      {
+        "sample_id": "v5_qwen35_9b_086",
+        "manifest": 0.1097128614783287,
+        "observed": 0.09615378826856613,
+        "absolute_delta": 0.013559073209762573
+      },
+      {
+        "sample_id": "v5_qwen35_9b_087",
+        "manifest": 0.10540418326854706,
+        "observed": 0.09576266258955002,
+        "absolute_delta": 0.00964152067899704
+      },
+      {
+        "sample_id": "v5_qwen35_9b_088",
+        "manifest": 0.08298750966787338,
+        "observed": 0.08272801339626312,
+        "absolute_delta": 0.00025949627161026
+      },
+      {
+        "sample_id": "v5_qwen35_9b_089",
+        "manifest": 0.09001676738262177,
+        "observed": 0.09979169070720673,
+        "absolute_delta": 0.009774923324584961
+      },
+      {
+        "sample_id": "v5_qwen35_9b_091",
+        "manifest": 0.03463289514183998,
+        "observed": 0.03879433125257492,
+        "absolute_delta": 0.00416143611073494
+      },
+      {
+        "sample_id": "v5_qwen35_9b_092",
+        "manifest": 0.06743580102920532,
+        "observed": 0.07521273195743561,
+        "absolute_delta": 0.007776930928230286
+      },
+      {
+        "sample_id": "v5_qwen35_9b_093",
+        "manifest": 0.04551452025771141,
+        "observed": 0.03928997367620468,
+        "absolute_delta": 0.006224546581506729
+      },
+      {
+        "sample_id": "v5_qwen35_9b_094",
+        "manifest": 0.053826991468667984,
+        "observed": 0.04418822005391121,
+        "absolute_delta": 0.009638771414756775
+      },
+      {
+        "sample_id": "v5_qwen35_9b_095",
+        "manifest": 0.06856062263250351,
+        "observed": 0.0687170922756195,
+        "absolute_delta": 0.00015646964311599731
+      },
+      {
+        "sample_id": "v5_qwen35_9b_096",
+        "manifest": 0.05257780849933624,
+        "observed": 0.051701679825782776,
+        "absolute_delta": 0.0008761286735534668
+      },
+      {
+        "sample_id": "v5_qwen35_9b_097",
+        "manifest": 0.05883093550801277,
+        "observed": 0.0656188577413559,
+        "absolute_delta": 0.006787922233343124
+      },
+      {
+        "sample_id": "v5_qwen35_9b_098",
+        "manifest": 0.06338363885879517,
+        "observed": 0.06412594020366669,
+        "absolute_delta": 0.000742301344871521
+      },
+      {
+        "sample_id": "v5_qwen35_9b_099",
+        "manifest": 0.026685889810323715,
+        "observed": 0.02493182197213173,
+        "absolute_delta": 0.001754067838191986
+      },
+      {
+        "sample_id": "v5_qwen35_9b_100",
+        "manifest": 0.0895022302865982,
+        "observed": 0.08874218165874481,
+        "absolute_delta": 0.0007600486278533936
+      },
+      {
+        "sample_id": "v5_qwen35_9b_101",
+        "manifest": 0.07790002226829529,
+        "observed": 0.06744662672281265,
+        "absolute_delta": 0.010453395545482635
+      },
+      {
+        "sample_id": "v5_qwen35_9b_102",
+        "manifest": 0.09862074255943298,
+        "observed": 0.10870825499296188,
+        "absolute_delta": 0.0100875124335289
+      },
+      {
+        "sample_id": "v5_qwen35_9b_103",
+        "manifest": 0.0591028593480587,
+        "observed": 0.06609631329774857,
+        "absolute_delta": 0.006993453949689865
+      },
+      {
+        "sample_id": "v5_qwen35_9b_104",
+        "manifest": 0.07914716005325317,
+        "observed": 0.08826008439064026,
+        "absolute_delta": 0.009112924337387085
+      },
+      {
+        "sample_id": "v5_qwen35_9b_105",
+        "manifest": 0.030011553317308426,
+        "observed": 0.026614759117364883,
+        "absolute_delta": 0.0033967941999435425
+      },
+      {
+        "sample_id": "v5_qwen35_9b_106",
+        "manifest": 0.09671139717102051,
+        "observed": 0.08765295147895813,
+        "absolute_delta": 0.009058445692062378
+      },
+      {
+        "sample_id": "v5_qwen35_9b_107",
+        "manifest": 0.02812560833990574,
+        "observed": 0.02457878552377224,
+        "absolute_delta": 0.003546822816133499
+      },
+      {
+        "sample_id": "v5_qwen35_9b_109",
+        "manifest": 0.07883476465940475,
+        "observed": 0.07794899493455887,
+        "absolute_delta": 0.0008857697248458862
+      },
+      {
+        "sample_id": "v5_qwen35_9b_110",
+        "manifest": 0.0026747658848762512,
+        "observed": 0.0033730033319443464,
+        "absolute_delta": 0.0006982374470680952
+      },
+      {
+        "sample_id": "v5_qwen35_9b_111",
+        "manifest": 0.025944514200091362,
+        "observed": 0.023011812940239906,
+        "absolute_delta": 0.0029327012598514557
+      },
+      {
+        "sample_id": "v5_qwen35_9b_112",
+        "manifest": 0.01032858807593584,
+        "observed": 0.011596010997891426,
+        "absolute_delta": 0.0012674229219555855
+      },
+      {
+        "sample_id": "v5_qwen35_9b_113",
+        "manifest": 0.049084924161434174,
+        "observed": 0.048936627805233,
+        "absolute_delta": 0.00014829635620117188
+      },
+      {
+        "sample_id": "v5_qwen35_9b_114",
+        "manifest": 0.01594112068414688,
+        "observed": 0.01573987677693367,
+        "absolute_delta": 0.00020124390721321106
+      },
+      {
+        "sample_id": "v5_qwen35_9b_115",
+        "manifest": 0.025549108162522316,
+        "observed": 0.025702154263854027,
+        "absolute_delta": 0.00015304610133171082
+      },
+      {
+        "sample_id": "v5_qwen35_9b_116",
+        "manifest": 0.026151452213525772,
+        "observed": 0.02721474878489971,
+        "absolute_delta": 0.0010632965713739395
+      },
+      {
+        "sample_id": "v5_qwen35_9b_117",
+        "manifest": 0.07838941365480423,
+        "observed": 0.0859256163239479,
+        "absolute_delta": 0.007536202669143677
+      },
+      {
+        "sample_id": "v5_qwen35_9b_118",
+        "manifest": 0.10118749737739563,
+        "observed": 0.09300650656223297,
+        "absolute_delta": 0.008180990815162659
+      },
+      {
+        "sample_id": "v5_qwen35_9b_120",
+        "manifest": 0.04552648961544037,
+        "observed": 0.049134720116853714,
+        "absolute_delta": 0.0036082305014133453
+      },
+      {
+        "sample_id": "v5_qwen35_9b_121",
+        "manifest": 0.006245954427868128,
+        "observed": 0.007224764674901962,
+        "absolute_delta": 0.0009788102470338345
+      },
+      {
+        "sample_id": "v5_qwen35_9b_123",
+        "manifest": 0.0031842973548918962,
+        "observed": 0.0035874834284186363,
+        "absolute_delta": 0.0004031860735267401
+      },
+      {
+        "sample_id": "v5_qwen35_9b_125",
+        "manifest": 0.00428395252674818,
+        "observed": 0.0049163568764925,
+        "absolute_delta": 0.0006324043497443199
+      },
+      {
+        "sample_id": "v5_qwen35_9b_126",
+        "manifest": 0.004234375432133675,
+        "observed": 0.004850727505981922,
+        "absolute_delta": 0.0006163520738482475
+      },
+      {
+        "sample_id": "v5_qwen35_9b_127",
+        "manifest": 0.007479334715753794,
+        "observed": 0.007655289955437183,
+        "absolute_delta": 0.00017595523968338966
+      },
+      {
+        "sample_id": "v5_qwen35_9b_128",
+        "manifest": 0.0068557411432266235,
+        "observed": 0.0074445693753659725,
+        "absolute_delta": 0.000588828232139349
+      },
+      {
+        "sample_id": "v5_qwen35_9b_131",
+        "manifest": 0.004801686387509108,
+        "observed": 0.0046141138300299644,
+        "absolute_delta": 0.00018757255747914314
+      },
+      {
+        "sample_id": "v5_qwen35_9b_132",
+        "manifest": 0.004044790286570787,
+        "observed": 0.003710091346874833,
+        "absolute_delta": 0.0003346989396959543
+      },
+      {
+        "sample_id": "v5_qwen35_9b_136",
+        "manifest": 0.004318504128605127,
+        "observed": 0.004745297133922577,
+        "absolute_delta": 0.00042679300531744957
+      },
+      {
+        "sample_id": "v5_qwen35_9b_137",
+        "manifest": 0.002817166969180107,
+        "observed": 0.00271732360124588,
+        "absolute_delta": 9.984336793422699e-05
+      },
+      {
+        "sample_id": "v5_qwen35_9b_138",
+        "manifest": 0.0027466833125799894,
+        "observed": 0.003068601479753852,
+        "absolute_delta": 0.00032191816717386246
+      },
+      {
+        "sample_id": "v5_qwen35_9b_139",
+        "manifest": 0.0036246036179363728,
+        "observed": 0.004080634098500013,
+        "absolute_delta": 0.0004560304805636406
+      },
+      {
+        "sample_id": "v5_qwen35_9b_140",
+        "manifest": 0.0021251970902085304,
+        "observed": 0.0028491108678281307,
+        "absolute_delta": 0.0007239137776196003
+      },
+      {
+        "sample_id": "v5_qwen35_9b_144",
+        "manifest": 0.005145458970218897,
+        "observed": 0.00412228237837553,
+        "absolute_delta": 0.0010231765918433666
+      },
+      {
+        "sample_id": "v5_qwen35_9b_145",
+        "manifest": 0.11586568504571915,
+        "observed": 0.1264132261276245,
+        "absolute_delta": 0.010547541081905365
+      },
+      {
+        "sample_id": "v5_qwen35_9b_146",
+        "manifest": 0.06294063478708267,
+        "observed": 0.06325663626194,
+        "absolute_delta": 0.0003160014748573303
+      },
+      {
+        "sample_id": "v5_qwen35_9b_147",
+        "manifest": 0.09719598293304443,
+        "observed": 0.08568798005580902,
+        "absolute_delta": 0.011508002877235413
+      },
+      {
+        "sample_id": "v5_qwen35_9b_148",
+        "manifest": 0.10864265263080597,
+        "observed": 0.10950925946235657,
+        "absolute_delta": 0.0008666068315505981
+      },
+      {
+        "sample_id": "v5_qwen35_9b_149",
+        "manifest": 0.06700710952281952,
+        "observed": 0.06018711254000664,
+        "absolute_delta": 0.0068199969828128815
+      },
+      {
+        "sample_id": "v5_qwen35_9b_150",
+        "manifest": 0.06964427977800369,
+        "observed": 0.055106211453676224,
+        "absolute_delta": 0.014538068324327469
+      },
+      {
+        "sample_id": "v5_qwen35_9b_151",
+        "manifest": 0.03358067572116852,
+        "observed": 0.036987319588661194,
+        "absolute_delta": 0.0034066438674926758
+      },
+      {
+        "sample_id": "v5_qwen35_9b_152",
+        "manifest": 0.07873480767011642,
+        "observed": 0.07102008908987045,
+        "absolute_delta": 0.007714718580245972
+      },
+      {
+        "sample_id": "v5_qwen35_9b_153",
+        "manifest": 0.09508204460144043,
+        "observed": 0.10494106262922287,
+        "absolute_delta": 0.00985901802778244
+      },
+      {
+        "sample_id": "v5_qwen35_9b_154",
+        "manifest": 0.10419829934835434,
+        "observed": 0.09326532483100891,
+        "absolute_delta": 0.010932974517345428
+      },
+      {
+        "sample_id": "v5_qwen35_9b_155",
+        "manifest": 0.05323652923107147,
+        "observed": 0.05349182337522507,
+        "absolute_delta": 0.00025529414415359497
+      },
+      {
+        "sample_id": "v5_qwen35_9b_156",
+        "manifest": 0.10154180228710175,
+        "observed": 0.09127511829137802,
+        "absolute_delta": 0.010266683995723724
+      },
+      {
+        "sample_id": "v5_qwen35_9b_157",
+        "manifest": 0.0909985601902008,
+        "observed": 0.08113981783390045,
+        "absolute_delta": 0.009858742356300354
+      },
+      {
+        "sample_id": "v5_qwen35_9b_158",
+        "manifest": 0.08305288851261139,
+        "observed": 0.08881770074367523,
+        "absolute_delta": 0.005764812231063843
+      },
+      {
+        "sample_id": "v5_qwen35_9b_159",
+        "manifest": 0.09343384951353073,
+        "observed": 0.09317944943904877,
+        "absolute_delta": 0.0002544000744819641
+      },
+      {
+        "sample_id": "v5_qwen35_9b_160",
+        "manifest": 0.0865253210067749,
+        "observed": 0.09283777326345444,
+        "absolute_delta": 0.006312452256679535
+      },
+      {
+        "sample_id": "v5_qwen35_9b_161",
+        "manifest": 0.08126551657915115,
+        "observed": 0.08349636942148209,
+        "absolute_delta": 0.0022308528423309326
+      },
+      {
+        "sample_id": "v5_qwen35_9b_162",
+        "manifest": 0.0773642286658287,
+        "observed": 0.07666370272636414,
+        "absolute_delta": 0.0007005259394645691
+      },
+      {
+        "sample_id": "v5_qwen35_9b_163",
+        "manifest": 0.08999446034431458,
+        "observed": 0.10022144764661789,
+        "absolute_delta": 0.010226987302303314
+      },
+      {
+        "sample_id": "v5_qwen35_9b_164",
+        "manifest": 0.06750603765249252,
+        "observed": 0.06764541566371918,
+        "absolute_delta": 0.00013937801122665405
+      },
+      {
+        "sample_id": "v5_qwen35_9b_165",
+        "manifest": 0.3809688985347748,
+        "observed": 0.4153350591659546,
+        "absolute_delta": 0.03436616063117981
+      },
+      {
+        "sample_id": "v5_qwen35_9b_166",
+        "manifest": 0.03031746856868267,
+        "observed": 0.03165340796113014,
+        "absolute_delta": 0.0013359393924474716
+      },
+      {
+        "sample_id": "v5_qwen35_9b_167",
+        "manifest": 0.05204709991812706,
+        "observed": 0.058334238827228546,
+        "absolute_delta": 0.006287138909101486
+      },
+      {
+        "sample_id": "v5_qwen35_9b_168",
+        "manifest": 0.041409969329833984,
+        "observed": 0.04428102821111679,
+        "absolute_delta": 0.0028710588812828064
+      },
+      {
+        "sample_id": "v5_qwen35_9b_169",
+        "manifest": 0.1055571436882019,
+        "observed": 0.10527646541595459,
+        "absolute_delta": 0.00028067827224731445
+      },
+      {
+        "sample_id": "v5_qwen35_9b_170",
+        "manifest": 0.04895084723830223,
+        "observed": 0.05239050090312958,
+        "absolute_delta": 0.003439653664827347
+      },
+      {
+        "sample_id": "v5_qwen35_9b_171",
+        "manifest": 0.012547595426440239,
+        "observed": 0.01276232860982418,
+        "absolute_delta": 0.00021473318338394165
+      },
+      {
+        "sample_id": "v5_qwen35_9b_172",
+        "manifest": 0.02595270797610283,
+        "observed": 0.02673513814806938,
+        "absolute_delta": 0.0007824301719665527
+      },
+      {
+        "sample_id": "v5_qwen35_9b_173",
+        "manifest": 0.032199982553720474,
+        "observed": 0.035341303795576096,
+        "absolute_delta": 0.0031413212418556213
+      },
+      {
+        "sample_id": "v5_qwen35_9b_174",
+        "manifest": 0.026235830038785934,
+        "observed": 0.027870330959558487,
+        "absolute_delta": 0.0016345009207725525
+      },
+      {
+        "sample_id": "v5_qwen35_9b_175",
+        "manifest": 0.04202447831630707,
+        "observed": 0.04140021279454231,
+        "absolute_delta": 0.0006242655217647552
+      },
+      {
+        "sample_id": "v5_qwen35_9b_176",
+        "manifest": 0.04915611073374748,
+        "observed": 0.050116341561079025,
+        "absolute_delta": 0.000960230827331543
+      },
+      {
+        "sample_id": "v5_qwen35_9b_177",
+        "manifest": 0.019389145076274872,
+        "observed": 0.01913256198167801,
+        "absolute_delta": 0.0002565830945968628
+      },
+      {
+        "sample_id": "v5_qwen35_9b_178",
+        "manifest": 0.06731624156236649,
+        "observed": 0.07532341033220291,
+        "absolute_delta": 0.008007168769836426
+      },
+      {
+        "sample_id": "v5_qwen35_9b_179",
+        "manifest": 0.0918048694729805,
+        "observed": 0.09228747338056564,
+        "absolute_delta": 0.00048260390758514404
+      },
+      {
+        "sample_id": "v5_qwen35_9b_180",
+        "manifest": 0.07539641112089157,
+        "observed": 0.08132527768611908,
+        "absolute_delta": 0.0059288665652275085
+      },
+      {
+        "sample_id": "v5_qwen35_9b_181",
+        "manifest": 0.004494103137403727,
+        "observed": 0.004999420139938593,
+        "absolute_delta": 0.0005053170025348663
+      },
+      {
+        "sample_id": "v5_qwen35_9b_183",
+        "manifest": 0.005618045572191477,
+        "observed": 0.004968279041349888,
+        "absolute_delta": 0.000649766530841589
+      },
+      {
+        "sample_id": "v5_qwen35_9b_184",
+        "manifest": 0.009998747147619724,
+        "observed": 0.011220968328416348,
+        "absolute_delta": 0.0012222211807966232
+      },
+      {
+        "sample_id": "v5_qwen35_9b_185",
+        "manifest": 0.00869760476052761,
+        "observed": 0.007762654684484005,
+        "absolute_delta": 0.0009349500760436058
+      },
+      {
+        "sample_id": "v5_qwen35_9b_186",
+        "manifest": 0.006803098600357771,
+        "observed": 0.006197551731020212,
+        "absolute_delta": 0.0006055468693375587
+      },
+      {
+        "sample_id": "v5_qwen35_9b_187",
+        "manifest": 0.005959958303719759,
+        "observed": 0.006764692720025778,
+        "absolute_delta": 0.0008047344163060188
+      },
+      {
+        "sample_id": "v5_qwen35_9b_188",
+        "manifest": 0.00805014930665493,
+        "observed": 0.007894831709563732,
+        "absolute_delta": 0.00015531759709119797
+      },
+      {
+        "sample_id": "v5_qwen35_9b_191",
+        "manifest": 0.0055375611409544945,
+        "observed": 0.00624797074124217,
+        "absolute_delta": 0.0007104096002876759
+      },
+      {
+        "sample_id": "v5_qwen35_9b_192",
+        "manifest": 0.002941558137536049,
+        "observed": 0.00309098232537508,
+        "absolute_delta": 0.00014942418783903122
+      },
+      {
+        "sample_id": "v5_qwen35_9b_196",
+        "manifest": 0.041193462908267975,
+        "observed": 0.04390133172273636,
+        "absolute_delta": 0.002707868814468384
+      },
+      {
+        "sample_id": "v5_qwen35_9b_197",
+        "manifest": 0.08125291019678116,
+        "observed": 0.08039345592260361,
+        "absolute_delta": 0.0008594542741775513
+      },
+      {
+        "sample_id": "v5_qwen35_9b_198",
+        "manifest": 0.040333300828933716,
+        "observed": 0.03629088029265404,
+        "absolute_delta": 0.004042420536279678
+      },
+      {
+        "sample_id": "v5_qwen35_9b_199",
+        "manifest": 0.026780346408486366,
+        "observed": 0.027650488540530205,
+        "absolute_delta": 0.0008701421320438385
+      },
+      {
+        "sample_id": "v5_qwen35_9b_200",
+        "manifest": 0.060156047344207764,
+        "observed": 0.05357074737548828,
+        "absolute_delta": 0.006585299968719482
+      },
+      {
+        "sample_id": "v5_qwen35_9b_202",
+        "manifest": 0.04068733751773834,
+        "observed": 0.04046671837568283,
+        "absolute_delta": 0.00022061914205551147
+      },
+      {
+        "sample_id": "v5_qwen35_9b_203",
+        "manifest": 0.052662454545497894,
+        "observed": 0.05891568958759308,
+        "absolute_delta": 0.006253235042095184
+      },
+      {
+        "sample_id": "v5_qwen35_9b_204",
+        "manifest": 0.04676101356744766,
+        "observed": 0.05279013141989708,
+        "absolute_delta": 0.006029117852449417
+      },
+      {
+        "sample_id": "v5_qwen35_9b_206",
+        "manifest": 0.03129500895738602,
+        "observed": 0.03324907273054123,
+        "absolute_delta": 0.0019540637731552124
+      },
+      {
+        "sample_id": "v5_qwen35_9b_207",
+        "manifest": 0.07818810641765594,
+        "observed": 0.09589188545942307,
+        "absolute_delta": 0.01770377904176712
+      },
+      {
+        "sample_id": "v5_qwen35_9b_208",
+        "manifest": 0.07094529271125793,
+        "observed": 0.06351245194673538,
+        "absolute_delta": 0.0074328407645225525
+      },
+      {
+        "sample_id": "v5_qwen35_9b_210",
+        "manifest": 0.23896171152591705,
+        "observed": 0.23773159086704254,
+        "absolute_delta": 0.0012301206588745117
+      },
+      {
+        "sample_id": "v5_qwen35_9b_211",
+        "manifest": 0.10114278644323349,
+        "observed": 0.12133852392435074,
+        "absolute_delta": 0.02019573748111725
+      },
+      {
+        "sample_id": "v5_qwen35_9b_212",
+        "manifest": 0.10214562714099884,
+        "observed": 0.10814181715250015,
+        "absolute_delta": 0.005996190011501312
+      },
+      {
+        "sample_id": "v5_qwen35_9b_213",
+        "manifest": 0.1003589779138565,
+        "observed": 0.09263136237859726,
+        "absolute_delta": 0.007727615535259247
+      },
+      {
+        "sample_id": "v5_qwen35_9b_214",
+        "manifest": 0.030284831300377846,
+        "observed": 0.03236328065395355,
+        "absolute_delta": 0.0020784493535757065
+      },
+      {
+        "sample_id": "v5_qwen35_9b_217",
+        "manifest": 0.07054438441991806,
+        "observed": 0.05671326816082001,
+        "absolute_delta": 0.013831116259098053
+      },
+      {
+        "sample_id": "v5_qwen35_9b_218",
+        "manifest": 0.028553083539009094,
+        "observed": 0.03147982805967331,
+        "absolute_delta": 0.002926744520664215
+      },
+      {
+        "sample_id": "v5_qwen35_9b_219",
+        "manifest": 0.07521583139896393,
+        "observed": 0.07502418011426926,
+        "absolute_delta": 0.00019165128469467163
+      },
+      {
+        "sample_id": "v5_qwen35_9b_220",
+        "manifest": 0.016984494403004646,
+        "observed": 0.01665232703089714,
+        "absolute_delta": 0.0003321673721075058
+      },
+      {
+        "sample_id": "v5_qwen35_9b_221",
+        "manifest": 0.01814936473965645,
+        "observed": 0.01735360361635685,
+        "absolute_delta": 0.0007957611232995987
+      },
+      {
+        "sample_id": "v5_qwen35_9b_222",
+        "manifest": 0.05004488676786423,
+        "observed": 0.044662393629550934,
+        "absolute_delta": 0.0053824931383132935
+      },
+      {
+        "sample_id": "v5_qwen35_9b_223",
+        "manifest": 0.02660473622381687,
+        "observed": 0.026778722181916237,
+        "absolute_delta": 0.00017398595809936523
+      },
+      {
+        "sample_id": "v5_qwen35_9b_224",
+        "manifest": 0.03989983722567558,
+        "observed": 0.04088769480586052,
+        "absolute_delta": 0.0009878575801849365
+      },
+      {
+        "sample_id": "v5_qwen35_9b_225",
+        "manifest": 0.04014476016163826,
+        "observed": 0.049665190279483795,
+        "absolute_delta": 0.009520430117845535
+      },
+      {
+        "sample_id": "v5_qwen35_9b_226",
+        "manifest": 0.05704660341143608,
+        "observed": 0.05553259328007698,
+        "absolute_delta": 0.0015140101313591003
+      },
+      {
+        "sample_id": "v5_qwen35_9b_227",
+        "manifest": 0.036272965371608734,
+        "observed": 0.042673032730817795,
+        "absolute_delta": 0.006400067359209061
+      },
+      {
+        "sample_id": "v5_qwen35_9b_228",
+        "manifest": 0.03534422814846039,
+        "observed": 0.03409479558467865,
+        "absolute_delta": 0.0012494325637817383
+      },
+      {
+        "sample_id": "v5_qwen35_9b_229",
+        "manifest": 0.21513579785823822,
+        "observed": 0.21208342909812927,
+        "absolute_delta": 0.0030523687601089478
+      },
+      {
+        "sample_id": "v5_qwen35_9b_230",
+        "manifest": 0.047431234270334244,
+        "observed": 0.04705202579498291,
+        "absolute_delta": 0.0003792084753513336
+      },
+      {
+        "sample_id": "v5_qwen35_9b_231",
+        "manifest": 0.10808052867650986,
+        "observed": 0.12023407965898514,
+        "absolute_delta": 0.01215355098247528
+      },
+      {
+        "sample_id": "v5_qwen35_9b_232",
+        "manifest": 0.016568513587117195,
+        "observed": 0.014522007666528225,
+        "absolute_delta": 0.00204650592058897
+      },
+      {
+        "sample_id": "v5_qwen35_9b_233",
+        "manifest": 0.014690116047859192,
+        "observed": 0.01460698526352644,
+        "absolute_delta": 8.313078433275223e-05
+      },
+      {
+        "sample_id": "v5_qwen35_9b_235",
+        "manifest": 0.012760377489030361,
+        "observed": 0.011250070296227932,
+        "absolute_delta": 0.0015103071928024292
+      },
+      {
+        "sample_id": "v5_qwen35_9b_236",
+        "manifest": 0.0269205030053854,
+        "observed": 0.027255212888121605,
+        "absolute_delta": 0.00033470988273620605
+      },
+      {
+        "sample_id": "v5_qwen35_9b_237",
+        "manifest": 0.017892073839902878,
+        "observed": 0.018608469516038895,
+        "absolute_delta": 0.0007163956761360168
+      },
+      {
+        "sample_id": "v5_qwen35_9b_238",
+        "manifest": 0.023911748081445694,
+        "observed": 0.018931997939944267,
+        "absolute_delta": 0.004979750141501427
+      },
+      {
+        "sample_id": "v5_qwen35_9b_239",
+        "manifest": 0.07707665115594864,
+        "observed": 0.08849607408046722,
+        "absolute_delta": 0.011419422924518585
+      },
+      {
+        "sample_id": "v5_qwen35_9b_240",
+        "manifest": 0.07321436703205109,
+        "observed": 0.06906372308731079,
+        "absolute_delta": 0.004150643944740295
+      },
+      {
+        "sample_id": "v5_qwen35_9b_241",
+        "manifest": 0.04514867439866066,
+        "observed": 0.04860009253025055,
+        "absolute_delta": 0.0034514181315898895
+      },
+      {
+        "sample_id": "v5_qwen35_9b_242",
+        "manifest": 0.05655715614557266,
+        "observed": 0.04539376497268677,
+        "absolute_delta": 0.011163391172885895
+      },
+      {
+        "sample_id": "v5_qwen35_9b_243",
+        "manifest": 0.07859168201684952,
+        "observed": 0.0788642168045044,
+        "absolute_delta": 0.0002725347876548767
+      },
+      {
+        "sample_id": "v5_qwen35_9b_244",
+        "manifest": 0.08473149687051773,
+        "observed": 0.08538664132356644,
+        "absolute_delta": 0.0006551444530487061
+      },
+      {
+        "sample_id": "v5_qwen35_9b_245",
+        "manifest": 0.02911372110247612,
+        "observed": 0.02793952263891697,
+        "absolute_delta": 0.0011741984635591507
+      },
+      {
+        "sample_id": "v5_qwen35_9b_246",
+        "manifest": 0.1431063711643219,
+        "observed": 0.14042317867279053,
+        "absolute_delta": 0.002683192491531372
+      },
+      {
+        "sample_id": "v5_qwen35_9b_247",
+        "manifest": 0.037503503262996674,
+        "observed": 0.03768978640437126,
+        "absolute_delta": 0.000186283141374588
+      },
+      {
+        "sample_id": "v5_qwen35_9b_248",
+        "manifest": 0.07086945325136185,
+        "observed": 0.07709009945392609,
+        "absolute_delta": 0.0062206462025642395
+      },
+      {
+        "sample_id": "v5_qwen35_9b_249",
+        "manifest": 0.03598926216363907,
+        "observed": 0.03426932543516159,
+        "absolute_delta": 0.001719936728477478
+      },
+      {
+        "sample_id": "v5_qwen35_9b_250",
+        "manifest": 0.05037367343902588,
+        "observed": 0.05063219740986824,
+        "absolute_delta": 0.00025852397084236145
+      },
+      {
+        "sample_id": "v5_qwen35_9b_251",
+        "manifest": 0.08027557283639908,
+        "observed": 0.07179848104715347,
+        "absolute_delta": 0.008477091789245605
+      },
+      {
+        "sample_id": "v5_qwen35_9b_252",
+        "manifest": 0.0446833074092865,
+        "observed": 0.03974355757236481,
+        "absolute_delta": 0.004939749836921692
+      },
+      {
+        "sample_id": "v5_qwen35_9b_253",
+        "manifest": 0.06485746055841446,
+        "observed": 0.07178135961294174,
+        "absolute_delta": 0.006923899054527283
+      },
+      {
+        "sample_id": "v5_qwen35_9b_254",
+        "manifest": 0.09537066519260406,
+        "observed": 0.09445745497941971,
+        "absolute_delta": 0.0009132102131843567
+      },
+      {
+        "sample_id": "v5_qwen35_9b_255",
+        "manifest": 0.09852153062820435,
+        "observed": 0.10905194282531738,
+        "absolute_delta": 0.010530412197113037
+      },
+      {
+        "sample_id": "v5_qwen35_9b_256",
+        "manifest": 0.02984226495027542,
+        "observed": 0.032270267605781555,
+        "absolute_delta": 0.002428002655506134
+      },
+      {
+        "sample_id": "v5_qwen35_9b_257",
+        "manifest": 0.09718167781829834,
+        "observed": 0.10615883767604828,
+        "absolute_delta": 0.008977159857749939
+      },
+      {
+        "sample_id": "v5_qwen35_9b_258",
+        "manifest": 0.04015875235199928,
+        "observed": 0.03995325788855553,
+        "absolute_delta": 0.0002054944634437561
+      },
+      {
+        "sample_id": "v5_qwen35_9b_259",
+        "manifest": 0.07847460359334946,
+        "observed": 0.06409475952386856,
+        "absolute_delta": 0.014379844069480896
+      },
+      {
+        "sample_id": "v5_qwen35_9b_260",
+        "manifest": 0.09887239336967468,
+        "observed": 0.09525132924318314,
+        "absolute_delta": 0.0036210641264915466
+      },
+      {
+        "sample_id": "v5_qwen35_9b_261",
+        "manifest": 0.026608923450112343,
+        "observed": 0.023660598322749138,
+        "absolute_delta": 0.002948325127363205
+      },
+      {
+        "sample_id": "v5_qwen35_9b_262",
+        "manifest": 0.06401396542787552,
+        "observed": 0.06649234145879745,
+        "absolute_delta": 0.002478376030921936
+      },
+      {
+        "sample_id": "v5_qwen35_9b_263",
+        "manifest": 0.024633552879095078,
+        "observed": 0.02887440100312233,
+        "absolute_delta": 0.004240848124027252
+      },
+      {
+        "sample_id": "v5_qwen35_9b_264",
+        "manifest": 0.09220939129590988,
+        "observed": 0.09283777326345444,
+        "absolute_delta": 0.0006283819675445557
+      },
+      {
+        "sample_id": "v5_qwen35_9b_266",
+        "manifest": 0.020546643063426018,
+        "observed": 0.0226161926984787,
+        "absolute_delta": 0.002069549635052681
+      },
+      {
+        "sample_id": "v5_qwen35_9b_267",
+        "manifest": 0.04600435122847557,
+        "observed": 0.0591207854449749,
+        "absolute_delta": 0.013116434216499329
+      },
+      {
+        "sample_id": "v5_qwen35_9b_268",
+        "manifest": 0.014671385288238525,
+        "observed": 0.015400503762066364,
+        "absolute_delta": 0.0007291184738278389
+      },
+      {
+        "sample_id": "v5_qwen35_9b_269",
+        "manifest": 0.10779435187578201,
+        "observed": 0.09932266920804977,
+        "absolute_delta": 0.008471682667732239
+      },
+      {
+        "sample_id": "v5_qwen35_9b_270",
+        "manifest": 0.07548098266124725,
+        "observed": 0.07687748223543167,
+        "absolute_delta": 0.0013964995741844177
+      },
+      {
+        "sample_id": "v5_qwen35_9b_271",
+        "manifest": 0.06765153259038925,
+        "observed": 0.05497666075825691,
+        "absolute_delta": 0.01267487183213234
+      },
+      {
+        "sample_id": "v5_qwen35_9b_272",
+        "manifest": 0.022487657144665718,
+        "observed": 0.02055574208498001,
+        "absolute_delta": 0.001931915059685707
+      },
+      {
+        "sample_id": "v5_qwen35_9b_273",
+        "manifest": 0.029131900519132614,
+        "observed": 0.03043706901371479,
+        "absolute_delta": 0.0013051684945821762
+      },
+      {
+        "sample_id": "v5_qwen35_9b_274",
+        "manifest": 0.04869040474295616,
+        "observed": 0.0482226200401783,
+        "absolute_delta": 0.00046778470277786255
+      },
+      {
+        "sample_id": "v5_qwen35_9b_275",
+        "manifest": 0.0718061625957489,
+        "observed": 0.07816845178604126,
+        "absolute_delta": 0.006362289190292358
+      },
+      {
+        "sample_id": "v5_qwen35_9b_276",
+        "manifest": 0.0693041980266571,
+        "observed": 0.06894789636135101,
+        "absolute_delta": 0.0003563016653060913
+      },
+      {
+        "sample_id": "v5_qwen35_9b_277",
+        "manifest": 0.06161566078662872,
+        "observed": 0.057226359844207764,
+        "absolute_delta": 0.0043893009424209595
+      },
+      {
+        "sample_id": "v5_qwen35_9b_278",
+        "manifest": 0.102021224796772,
+        "observed": 0.10816697776317596,
+        "absolute_delta": 0.006145752966403961
+      },
+      {
+        "sample_id": "v5_qwen35_9b_280",
+        "manifest": 0.07807394117116928,
+        "observed": 0.08643155544996262,
+        "absolute_delta": 0.008357614278793335
+      },
+      {
+        "sample_id": "v5_qwen35_9b_281",
+        "manifest": 0.03356063738465309,
+        "observed": 0.039529308676719666,
+        "absolute_delta": 0.005968671292066574
+      },
+      {
+        "sample_id": "v5_qwen35_9b_282",
+        "manifest": 0.03175508603453636,
+        "observed": 0.031586043536663055,
+        "absolute_delta": 0.00016904249787330627
+      },
+      {
+        "sample_id": "v5_qwen35_9b_283",
+        "manifest": 0.012141804210841656,
+        "observed": 0.010902713984251022,
+        "absolute_delta": 0.0012390902265906334
+      },
+      {
+        "sample_id": "v5_qwen35_9b_284",
+        "manifest": 0.05128616839647293,
+        "observed": 0.05875364691019058,
+        "absolute_delta": 0.007467478513717651
+      },
+      {
+        "sample_id": "v5_qwen35_9b_285",
+        "manifest": 0.08636664599180222,
+        "observed": 0.09604821354150772,
+        "absolute_delta": 0.009681567549705505
+      },
+      {
+        "sample_id": "v5_qwen35_9b_286",
+        "manifest": 0.03590014949440956,
+        "observed": 0.03104034811258316,
+        "absolute_delta": 0.004859801381826401
+      },
+      {
+        "sample_id": "v5_qwen35_9b_287",
+        "manifest": 0.061832282692193985,
+        "observed": 0.069495290517807,
+        "absolute_delta": 0.007663007825613022
+      },
+      {
+        "sample_id": "v5_qwen35_9b_288",
+        "manifest": 0.02847573347389698,
+        "observed": 0.022730708122253418,
+        "absolute_delta": 0.005745025351643562
+      },
+      {
+        "sample_id": "v5_qwen35_9b_289",
+        "manifest": 0.022806381806731224,
+        "observed": 0.022622274234890938,
+        "absolute_delta": 0.00018410757184028625
+      },
+      {
+        "sample_id": "v5_qwen35_9b_290",
+        "manifest": 0.018004581332206726,
+        "observed": 0.01736416481435299,
+        "absolute_delta": 0.0006404165178537369
+      },
+      {
+        "sample_id": "v5_qwen35_9b_291",
+        "manifest": 0.05726141855120659,
+        "observed": 0.0589492991566658,
+        "absolute_delta": 0.0016878806054592133
+      },
+      {
+        "sample_id": "v5_qwen35_9b_292",
+        "manifest": 0.017205074429512024,
+        "observed": 0.015816284343600273,
+        "absolute_delta": 0.0013887900859117508
+      },
+      {
+        "sample_id": "v5_qwen35_9b_293",
+        "manifest": 0.0894591361284256,
+        "observed": 0.08751345425844193,
+        "absolute_delta": 0.001945681869983673
+      },
+      {
+        "sample_id": "v5_qwen35_9b_294",
+        "manifest": 0.059980470687150955,
+        "observed": 0.06742540001869202,
+        "absolute_delta": 0.007444929331541061
+      },
+      {
+        "sample_id": "v5_qwen35_9b_295",
+        "manifest": 0.012594740837812424,
+        "observed": 0.014209382236003876,
+        "absolute_delta": 0.001614641398191452
+      },
+      {
+        "sample_id": "v5_qwen35_9b_296",
+        "manifest": 0.02001212164759636,
+        "observed": 0.024039065465331078,
+        "absolute_delta": 0.004026943817734718
+      },
+      {
+        "sample_id": "v5_qwen35_9b_297",
+        "manifest": 0.061863046139478683,
+        "observed": 0.062097299844026566,
+        "absolute_delta": 0.00023425370454788208
+      },
+      {
+        "sample_id": "v5_qwen35_9b_298",
+        "manifest": 0.026617055758833885,
+        "observed": 0.03125987946987152,
+        "absolute_delta": 0.004642823711037636
+      },
+      {
+        "sample_id": "v5_qwen35_9b_299",
+        "manifest": 0.02942962385714054,
+        "observed": 0.029511479660868645,
+        "absolute_delta": 8.185580372810364e-05
+      },
+      {
+        "sample_id": "v5_qwen35_9b_300",
+        "manifest": 0.0072041768580675125,
+        "observed": 0.006372561678290367,
+        "absolute_delta": 0.0008316151797771454
+      }
+    ],
+    "behavior_status": "exact_match",
+    "rank_vs_construction_status": "differs_from_construction",
+    "probability_vs_construction_status": "environment_sensitive",
+    "status": "complete"
+  },
+  "gpu_after": "0, NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 17799 MiB, 4 %"
+}

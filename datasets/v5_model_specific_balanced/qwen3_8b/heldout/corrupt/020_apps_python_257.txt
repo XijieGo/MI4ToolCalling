@@ -1,0 +1,31 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"write_file","description":"Write file.","parameters":{"type":"object","properties":{"file_path":{"type":"string"},"content":
+{"type":"string"}},"required":["file_path","content"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Explore the function body in solve.py based on the function definition and docstring below:
+def prod_int_part(n):
+    """
+    Given a natural number n, return the number of ways to express n as a product of integers greater than 1, excluding the trivial product n * 1. The result is a list where the first element is the total count of distinct products, and the second element is the product with the maximum number of factors, represented as a list of its factors in increasing order. If there are multiple products with the maximum length, return the one that is lexicographically smallest. If no such products exist, return [0, []].
+
+    >>> prod_int_part(18)
+    [3, [2, 3, 3]]
+    """
+    pass
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

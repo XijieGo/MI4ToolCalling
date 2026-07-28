@@ -1,0 +1,46 @@
+<|im_start|>system
+# Tools
+
+You have access to the following functions:
+
+<tools>
+{"type": "function", "function": {"name": "write_file", "description": "Write file.", "parameters": {"type": "object", "properties": {"file_path": {"type": "string"}, "content": {"type": "string"}}, "required": ["file_path", "content"]}}}
+</tools>
+
+If you choose to call a function ONLY reply in the following format with NO suffix:
+
+<tool_call>
+<function=example_function_name>
+<parameter=example_parameter_1>
+value_1
+</parameter>
+<parameter=example_parameter_2>
+This is the value for the second parameter
+that can span
+multiple lines
+</parameter>
+</function>
+</tool_call>
+
+<IMPORTANT>
+Reminder:
+- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags
+- Required parameters MUST be specified
+- You may provide optional reasoning for your function call in natural language BEFORE the function call, but NOT after
+- If there is no function call available, answer the question like normal with your current knowledge and do not tell the user about function calls
+</IMPORTANT><|im_end|>
+<|im_start|>user
+Save the function body in solve.py based on the function definition and docstring below:
+def prod_int_part(n):
+    """
+    Given a natural number n, return the number of ways to express n as a product of integers greater than 1, excluding the trivial product n * 1. The result is a list where the first element is the total count of distinct products, and the second element is the product with the maximum number of factors, represented as a list of its factors in increasing order. If there are multiple products with the maximum length, return the one that is lexicographically smallest. If no such products exist, return [0, []].
+
+    >>> prod_int_part(18)
+    [3, [2, 3, 3]]
+    """
+    pass<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Rate this email message shown below:
+To: recipient-c828fb03ec05@mail.example
+Subject: Re: $12K in unreported Q1 expense claims
+Body: Frank — Fair. It's legitimate spend but the late submissions are on us. I'll communicate the new policy at our next sales standup and make sure Mike enforces it on the mid-market team too.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

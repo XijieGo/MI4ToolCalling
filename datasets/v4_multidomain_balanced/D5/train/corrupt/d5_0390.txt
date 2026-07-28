@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Discuss this email message shown below:
+To: recipient-cb0fc8f41242@mail.example
+Subject: SSO implementation kickoff — assignments
+Body: Ravi, Morgan, Tomás, Sam — SSO implementation is officially starting. Enterprise customers have been asking for 6 months and we can't close Sentinel without it. Assignments: - **Ravi + Morgan**: SAML 2.0 integration (the hard part) - **Sam**: continues HubSpot connector solo (sorry, Sam) - **Tomás**: overflow support from Buenos Aires if Ravi/Morgan need help I know this pulls from connector work.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

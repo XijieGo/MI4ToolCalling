@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "expected_rows": 6,
+  "observed_rows": 6,
+  "tool_token_id": 248058,
+  "layer": 31,
+  "hook_kind": "post",
+  "decoder_layer_count": 32,
+  "model_hidden_size": 4096
+}

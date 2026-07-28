@@ -1,0 +1,66 @@
+<|im_start|>system
+# Tools
+
+You have access to the following functions:
+
+<tools>
+{"type": "function", "function": {"name": "refuel_data", "description": "Refuels data for a specific line, adding to the customer's bill.\n\nChecks: Line status must be Active, Customer owns the line.\nLogic: Adds data to the line and charges customer based on the plan's refueling rate.", "parameters": {"properties": {"customer_id": {"description": "ID of the customer who owns the line.", "title": "Customer Id", "type": "string"}, "line_id": {"description": "ID of the line to refuel data for.", "title": "Line Id", "type": "string"}, "gb_amount": {"description": "Amount of data to add in gigabytes.", "title": "Gb Amount", "type": "number"}}, "required": ["customer_id", "line_id", "gb_amount"], "title": "parameters", "type": "object"}}}
+</tools>
+
+If you choose to call a function ONLY reply in the following format with NO suffix:
+
+<tool_call>
+<function=example_function_name>
+<parameter=example_parameter_1>
+value_1
+</parameter>
+<parameter=example_parameter_2>
+This is the value for the second parameter
+that can span
+multiple lines
+</parameter>
+</function>
+</tool_call>
+
+<IMPORTANT>
+Reminder:
+- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags
+- Required parameters MUST be specified
+- You may provide optional reasoning for your function call in natural language BEFORE the function call, but NOT after
+- If there is no function call available, answer the question like normal with your current knowledge and do not tell the user about function calls
+</IMPORTANT>
+
+You are a telecom support agent. Use the provided functions when the user asks you to perform an account action. When the user asks only to discuss, explain, review, summarize, or describe an action, answer in text without using a function.<|im_end|>
+<|im_start|>assistant
+Thank you for enabling those settings. Now, regarding your data limit issue: You've used 15.1 GB on your Premium Plan, which has a 15 GB monthly limit. When you exceed your data limit, data connectivity is typically restricted or lost.
+
+To restore your data connectivity, you have two options:
+1. **Refuel data**: Add more data to your line for an additional charge. The cost is $2.00 per GB, and you can add up to 2 GB at a time.
+2. **Change to a plan with more data**: We could discuss upgrading to a plan with a higher monthly data limit.
+
+Since you're traveling and need immediate access, I'd recommend refueling data. How much data would you like to add? You can choose up to 2 GB.
+
+For example:
+- 1 GB would cost $2.00
+- 2 GB would cost $4.00
+
+Please let me know how much data you'd like to refuel, and I'll confirm the total price before applying it to your line.<|im_end|>
+<|im_start|>user
+I don't want to change my plan. I would like to refuel 2.0 GB of data, please. Can you please confirm the price for that?<|im_end|>
+<|im_start|>assistant
+Yes, I can confirm the price for refueling 2.0 GB of data on your line (555-123-2002):
+
+**Total cost: $4.00** ($2.00 per GB × 2.0 GB)
+
+This charge will be added to your current bill. Once the refuel is applied, your data connectivity should be restored, and you should experience improved internet speeds (assuming your network connection is properly configured).
+
+Would you like me to proceed with refueling 2.0 GB of data to your line?<|im_end|>
+<|im_start|>user
+Yes, please go ahead and add the 2.0 GB of data to my line. Thank you.<|im_end|>
+<|im_start|>user
+Please complete the next appropriate account action now.<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

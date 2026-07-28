@@ -1,0 +1,67 @@
+<|im_start|>system
+# Tools
+
+You have access to the following functions:
+
+<tools>
+{"type": "function", "function": {"name": "write_file", "description": "Write file.", "parameters": {"type": "object", "properties": {"file_path": {"type": "string"}, "content": {"type": "string"}}, "required": ["file_path", "content"]}}}
+</tools>
+
+If you choose to call a function ONLY reply in the following format with NO suffix:
+
+<tool_call>
+<function=example_function_name>
+<parameter=example_parameter_1>
+value_1
+</parameter>
+<parameter=example_parameter_2>
+This is the value for the second parameter
+that can span
+multiple lines
+</parameter>
+</function>
+</tool_call>
+
+<IMPORTANT>
+Reminder:
+- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags
+- Required parameters MUST be specified
+- You may provide optional reasoning for your function call in natural language BEFORE the function call, but NOT after
+- If there is no function call available, answer the question like normal with your current knowledge and do not tell the user about function calls
+</IMPORTANT><|im_end|>
+<|im_start|>user
+Review the function body in solve.java based on the function definition and docstring below:
+/*
+Given a sorted array of nk numbers, partition it into k arrays of size n to maximize the sum of their medians, and output that maximum for each test case.
+Example:
+input:
+6
+2 4
+0 24 34 58 62 64 69 78
+2 2
+27 61 81 91
+4 3
+2 4 16 18 21 27 36 53 82 91 92 95
+3 4
+3 11 12 22 33 35 38 67 69 71 94 99
+2 1
+11 41
+3 3
+1 1 1 1 1 1 1 1 1
+output:
+165
+108
+145
+234
+11
+3
+*/
+static String solve(String input) {
+    // TODO: implement
+    return "";
+}<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

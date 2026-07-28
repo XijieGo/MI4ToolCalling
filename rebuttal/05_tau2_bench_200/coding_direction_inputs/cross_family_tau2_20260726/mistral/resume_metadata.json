@@ -1,0 +1,27 @@
+{
+  "resumed_unix": 1785044309.3030667,
+  "model": "Mistral-Small-3.2-24B-Instruct-2506",
+  "frozen_vector_bundle": "./results/natural_trajectory/cross_family_tau2_20260726/mistral/coding_vector_bundle.pt",
+  "vector_source": "coding clean/corrupt pairs only; no Telecom fitting",
+  "layer": 26,
+  "tool_token": {
+    "tool_token_text": "[TOOL_CALLS]",
+    "tool_token_id_via_convert": 9,
+    "tool_token_ids_via_encode": [
+      1091,
+      9197,
+      8568,
+      74483,
+      1083,
+      1093
+    ],
+    "tool_token_encode_len": 6
+  },
+  "reused_tool_baseline_screen": "./results/natural_trajectory/cross_family_tau2_20260726/mistral/tool_baseline_screen.jsonl",
+  "reused_induction_baseline_screen": "./results/natural_trajectory/cross_family_tau2_20260726/mistral/induction_baseline_screen.jsonl",
+  "induction_selection": {
+    "n_screened": 283,
+    "max_baseline_tool_probability": 0.1,
+    "selected": 50
+  }
+}

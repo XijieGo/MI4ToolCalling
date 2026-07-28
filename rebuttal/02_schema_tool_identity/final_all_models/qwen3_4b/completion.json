@@ -1,0 +1,69 @@
+{
+  "status": "complete",
+  "completed_at": "2026-07-28T00:14:29.299520Z",
+  "model_key": "qwen3_4b",
+  "model_label": "Qwen3-4B",
+  "dataset_version": "v5_model_specific_balanced",
+  "dataset_root": "./datasets/v5_model_specific_balanced/qwen3_4b",
+  "selected_layer": 31,
+  "layer_position": "decoder-block output at final non-padding prompt token",
+  "n_layer_selection_train": 64,
+  "n_vector_fit_train": 136,
+  "n_heldout": 300,
+  "tool_call_token_id": 151657,
+  "tool_call_marker": "<tool_call>",
+  "baseline_screening_replay": {
+    "clean": {
+      "side": "clean",
+      "n": 300,
+      "manifest_tool_top1_count": 300,
+      "rerun_tool_top1_count": 300,
+      "mismatch_count": 0,
+      "mismatches": [],
+      "status": "exact_match"
+    },
+    "corrupt": {
+      "side": "corrupt",
+      "n": 300,
+      "manifest_tool_top1_count": 0,
+      "rerun_tool_top1_count": 0,
+      "mismatch_count": 0,
+      "mismatches": [],
+      "status": "exact_match"
+    }
+  },
+  "table_metrics": {
+    "V1": {
+      "label": "Renamed",
+      "cosine": 0.9812523126602173,
+      "strict_flip": 1.0,
+      "strict_drop": 1.0,
+      "strict_flip_count": 300,
+      "strict_flip_denominator": 300,
+      "strict_drop_count": 300,
+      "strict_drop_denominator": 300
+    },
+    "V2": {
+      "label": "Removed",
+      "cosine": 0.8877917528152466,
+      "strict_flip": 1.0,
+      "strict_drop": 1.0,
+      "strict_flip_count": 287,
+      "strict_flip_denominator": 287,
+      "strict_drop_count": 230,
+      "strict_drop_denominator": 230
+    },
+    "V5": {
+      "label": "Mismatched",
+      "cosine": 0.6546322107315063,
+      "strict_flip": 0.9933333333333333,
+      "strict_drop": null,
+      "strict_flip_count": 298,
+      "strict_flip_denominator": 300,
+      "strict_drop_count": 0,
+      "strict_drop_denominator": 0
+    }
+  },
+  "peak_cuda_memory_gib": 7.828756332397461,
+  "gpu_postrun": "0, NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 8391 MiB, 1 %"
+}

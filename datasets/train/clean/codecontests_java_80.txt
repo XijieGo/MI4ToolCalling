@@ -1,0 +1,46 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"write_file","description":"Write file.","parameters":{"type":"object","properties":{"file_path":{"type":"string"},"content":
+{"type":"string"}},"required":["file_path","content"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Add the function body in solve.java based on the function definition and docstring below:
+/*
+For each pair a and b, find the minimum possible value of (a XOR x) + (b XOR x) over all integers x, and output that minimum.
+Example:
+input:
+6
+6 12
+4 9
+59 832
+28 14
+4925 2912
+1 1
+output:
+10
+13
+891
+18
+6237
+0
+*/
+static String solve(String input) {
+    // TODO: implement
+    return "";
+}
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

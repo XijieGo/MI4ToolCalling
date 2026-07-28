@@ -1,0 +1,46 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"write_file","description":"Write file.","parameters":{"type":"object","properties":{"file_path":{"type":"string"},"content":
+{"type":"string"}},"required":["file_path","content"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Build the function body in solve.java based on the function definition and docstring below:
+/*
+For each even n, either output NO or output YES and an array of n distinct positive ints where first half are even, second half are odd, and both halves sum equally.
+Example:
+input:
+5
+2
+4
+6
+8
+10
+output:
+NO
+YES
+2 4 1 5
+NO
+YES
+2 4 6 8 1 3 5 11
+NO
+*/
+static String solve(String input) {
+    // TODO: implement
+    return "";
+}
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

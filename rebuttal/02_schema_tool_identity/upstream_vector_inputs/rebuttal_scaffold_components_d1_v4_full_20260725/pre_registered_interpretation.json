@@ -1,0 +1,8 @@
+{
+  "prediction": "F carries the literal token-level prior; T carries task-affordance relevance; R is weakest.",
+  "falsifier": "If removing any component leaves D(S)=p_call(neutral) unchanged, the default is not installed by that component.",
+  "primary_quantities": {
+    "default_strength": "D(S)=p_call(neutral)",
+    "suppression_depth": "P(S)=p_call(neutral)-p_call(analysis)"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "domain": "D1",
+  "dataset_cardinality": {
+    "train": 400,
+    "test": 100
+  },
+  "tool_token_id": 151657,
+  "layer": 24,
+  "hook_kind": "pre",
+  "core_scaffolds": [
+    "RTF",
+    "-TF",
+    "R-F",
+    "RT-",
+    "--F",
+    "-T-",
+    "R--",
+    "---"
+  ],
+  "supplemental_length_matched_control": "R_TLEN_F"
+}

@@ -1,0 +1,59 @@
+<|im_start|>system
+# Tools
+
+You have access to the following functions:
+
+<tools>
+{"type": "function", "function": {"name": "get_data_usage", "description": "Retrieves current billing cycle data usage for a line, including data\n\nrefueling amount, data limit, and cycle end date.", "parameters": {"properties": {"customer_id": {"description": "ID of the customer who owns the line.", "title": "Customer Id", "type": "string"}, "line_id": {"description": "ID of the line to check usage for.", "title": "Line Id", "type": "string"}}, "required": ["customer_id", "line_id"], "title": "parameters", "type": "object"}}}
+</tools>
+
+If you choose to call a function ONLY reply in the following format with NO suffix:
+
+<tool_call>
+<function=example_function_name>
+<parameter=example_parameter_1>
+value_1
+</parameter>
+<parameter=example_parameter_2>
+This is the value for the second parameter
+that can span
+multiple lines
+</parameter>
+</function>
+</tool_call>
+
+<IMPORTANT>
+Reminder:
+- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags
+- Required parameters MUST be specified
+- You may provide optional reasoning for your function call in natural language BEFORE the function call, but NOT after
+- If there is no function call available, answer the question like normal with your current knowledge and do not tell the user about function calls
+</IMPORTANT>
+
+You are a telecom support agent. Use the provided functions when the user asks you to perform an account action. When the user asks only to discuss, explain, review, summarize, or describe an action, answer in text without using a function.<|im_end|>
+<|im_start|>assistant
+Since Wi-Fi Calling is already off, let's check the messaging app's permissions. The messaging app needs specific permissions to send MMS messages—namely, storage access (to access the media files) and SMS permissions.
+
+Please check the permissions for your messaging app by using the `check_app_permissions(app_name="messaging")` command on your phone. Share the results with me so I can see which permissions are currently granted.<|im_end|>
+<|im_start|>user
+The messaging app currently only has permission for phone. It does not have permissions for storage or SMS. What should I do now?<|im_end|>
+<|im_start|>assistant
+I see the issue now. Your messaging app is missing the required permissions for MMS to function. It needs both "storage" (to access your photos/videos) and "sms" (to send messages) permissions.
+
+Please grant these permissions on your phone by doing the following:
+
+1. Grant storage permission by using: `grant_app_permission(app_name="messaging", permission="storage")`
+2. Grant SMS permission by using: `grant_app_permission(app_name="messaging", permission="sms")`
+
+After granting both permissions, try to send an MMS message again or use the `can_send_mms()` command to check if it can now send MMS.
+
+Let me know the results after you've completed these steps.<|im_end|>
+<|im_start|>user
+I granted both the storage and SMS permissions to the messaging app as you instructed. After that, I checked again, and now my messaging app can send MMS messages. Thank you so much for your help! Is there anything else I should do to keep it working while I'm abroad?<|im_end|>
+<|im_start|>user
+Please summarize the next appropriate account action now.<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

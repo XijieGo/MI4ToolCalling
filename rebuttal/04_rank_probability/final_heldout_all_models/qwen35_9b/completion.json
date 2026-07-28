@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "completed_at": "2026-07-28T00:29:51.946403Z",
+  "model_key": "qwen35_9b",
+  "n_heldout": 300,
+  "manifest_sha256": "80260edfa2faa90d445e2c59e0f07f68c2d47c51bc23c05a5402d312038d5f24",
+  "summary_sha256": "8d43bbf0df7a75ee0fbff254b7ffa340c9670b6c967853008209b436e34759eb",
+  "replay_status": "complete",
+  "behavior_replay_status": "exact_match",
+  "rank_vs_construction_status": "differs_from_construction",
+  "probability_vs_construction_status": "environment_sensitive"
+}

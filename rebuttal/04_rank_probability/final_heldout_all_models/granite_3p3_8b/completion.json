@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "completed_at": "2026-07-28T00:33:09.641368Z",
+  "model_key": "granite_3p3_8b",
+  "n_heldout": 300,
+  "manifest_sha256": "87a489e121288e00f1063f6668145d28d23617bd62b7b53c57e6d2015b38c9ff",
+  "summary_sha256": "cf1c5de8fe2e098a8da09fb84051e0a7b1395ac76094254812868e47a14033df",
+  "replay_status": "complete",
+  "behavior_replay_status": "exact_match",
+  "rank_vs_construction_status": "differs_from_construction",
+  "probability_vs_construction_status": "environment_sensitive"
+}

@@ -1,0 +1,49 @@
+{
+  "started_unix": 1785052833.9293377,
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+  "torch": "2.8.0+cu128",
+  "model": "Qwen3.5-4B",
+  "model_path": "/root/autodl-tmp/Qwen/Qwen3.5-4B",
+  "decoder_layer_count": 32,
+  "tool_token": {
+    "tool_token_text": "<tool_call>",
+    "tool_token_id": 248058,
+    "tool_token_ids_via_encode": [
+      248058
+    ],
+    "semantic_position": "first token after native add_generation_prompt assistant prefix with enable_thinking=False"
+  },
+  "coding_layer_source": "fresh coding-only disjoint fit/evaluation layer selection in this run",
+  "coding_vector_source": "fresh coding-only clean-minus-corrupt mean difference in this run",
+  "intervention_hook": "post-output of selected decoder layer; final real prompt token only",
+  "tau2_prompt_adapter": "native Qwen3.5 chat template with historical tool_calls rendered as Qwen XML and enable_thinking=False",
+  "raw_files": {
+    "tau2_system_prompt.txt": {
+      "path": "./datasets/external/tau2_telecom_qwen35_9b/raw/tau2_system_prompt.txt",
+      "sha256": "b7b858bcc95b40e66ca0a0bdaefe40beabeb8b4a6e51152506a4917d795cd08e"
+    },
+    "tau2_tool_schemas.json": {
+      "path": "./datasets/external/tau2_telecom_qwen35_9b/raw/tau2_tool_schemas.json",
+      "sha256": "a5938ab505dca5f7368b813a798400ff37a1decb2f0aa6e58057a16812be5671"
+    }
+  },
+  "arguments": {
+    "model": "qwen35_4b",
+    "output_root": "./results/natural_trajectory/cross_family_tau2_20260726",
+    "raw_root": "./datasets/external/tau2_telecom_qwen35_9b/raw",
+    "prepared_root": "./datasets/external/tau2_telecom_qwen35_9b/prepared",
+    "coding_batch_size": 4,
+    "tau_batch_size": 1,
+    "max_context_tokens": 32768,
+    "tool_screen_limit": 400,
+    "induction_screen_limit": 0,
+    "final_count": 50,
+    "max_baseline_tool_probability": 0.05,
+    "layer_fit_count": 64,
+    "layer_eval_count": 32,
+    "max_new_tokens": 128,
+    "seed": 20260726,
+    "skip_generation": false
+  }
+}

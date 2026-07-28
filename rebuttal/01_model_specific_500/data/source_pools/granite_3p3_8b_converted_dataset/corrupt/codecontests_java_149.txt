@@ -1,0 +1,58 @@
+<|start_of_role|>system<|end_of_role|>Knowledge Cutoff Date: April 2024.
+Today's Date: May 05, 2026.
+You are Granite, developed by IBM. You are a helpful assistant with access to the following tools. When a tool is required to answer the user's query, respond only with <|tool_call|> followed by a JSON list of tools used. If a tool does not exist in the provided list of tools, notify the user that you do not have the ability to fulfill the request.<|end_of_text|>
+<|start_of_role|>available_tools<|end_of_role|>[
+    {
+        "type": "function",
+        "function": {
+            "name": "write_file",
+            "description": "Write file.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "file_path": {
+                        "type": "string"
+                    },
+                    "content": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "file_path",
+                    "content"
+                ]
+            }
+        }
+    }
+]<|end_of_text|>
+<|start_of_role|>user<|end_of_role|>Review the function body in solve.java based on the function definition and docstring below:
+/*
+For each digit string s, determine if deleting at most one contiguous substring (or none) can make the string exactly "2020".
+Example:
+input:
+6
+8
+20192020
+8
+22019020
+4
+2020
+5
+20002
+6
+729040
+6
+200200
+output:
+YES
+YES
+YES
+NO
+NO
+NO
+*/
+static String solve(String input) {
+    // TODO: implement
+    return "";
+}<|end_of_text|>
+<|start_of_role|>assistant<|end_of_role|>

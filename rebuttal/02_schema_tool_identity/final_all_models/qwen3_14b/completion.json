@@ -1,0 +1,69 @@
+{
+  "status": "complete",
+  "completed_at": "2026-07-28T00:20:42.155702Z",
+  "model_key": "qwen3_14b",
+  "model_label": "Qwen3-14B",
+  "dataset_version": "v5_model_specific_balanced",
+  "dataset_root": "./datasets/v5_model_specific_balanced/qwen3_14b",
+  "selected_layer": 36,
+  "layer_position": "decoder-block output at final non-padding prompt token",
+  "n_layer_selection_train": 64,
+  "n_vector_fit_train": 136,
+  "n_heldout": 300,
+  "tool_call_token_id": 151657,
+  "tool_call_marker": "<tool_call>",
+  "baseline_screening_replay": {
+    "clean": {
+      "side": "clean",
+      "n": 300,
+      "manifest_tool_top1_count": 300,
+      "rerun_tool_top1_count": 300,
+      "mismatch_count": 0,
+      "mismatches": [],
+      "status": "exact_match"
+    },
+    "corrupt": {
+      "side": "corrupt",
+      "n": 300,
+      "manifest_tool_top1_count": 0,
+      "rerun_tool_top1_count": 0,
+      "mismatch_count": 0,
+      "mismatches": [],
+      "status": "exact_match"
+    }
+  },
+  "table_metrics": {
+    "V1": {
+      "label": "Renamed",
+      "cosine": 0.9850189685821533,
+      "strict_flip": 1.0,
+      "strict_drop": 1.0,
+      "strict_flip_count": 300,
+      "strict_flip_denominator": 300,
+      "strict_drop_count": 296,
+      "strict_drop_denominator": 296
+    },
+    "V2": {
+      "label": "Removed",
+      "cosine": 0.712005615234375,
+      "strict_flip": 1.0,
+      "strict_drop": 1.0,
+      "strict_flip_count": 300,
+      "strict_flip_denominator": 300,
+      "strict_drop_count": 137,
+      "strict_drop_denominator": 137
+    },
+    "V5": {
+      "label": "Mismatched",
+      "cosine": 0.5440255403518677,
+      "strict_flip": 0.9966666666666667,
+      "strict_drop": 1.0,
+      "strict_flip_count": 299,
+      "strict_flip_denominator": 300,
+      "strict_drop_count": 14,
+      "strict_drop_denominator": 14
+    }
+  },
+  "peak_cuda_memory_gib": 27.70521879196167,
+  "gpu_postrun": "0, NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 28887 MiB, 0 %"
+}

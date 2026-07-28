@@ -1,0 +1,17 @@
+{
+  "base_csv": "./datasets/provenance/v1_1711/metadata/candidate_validity.csv",
+  "additional_csvs": [
+    "./datasets/provenance/v1_1711/metadata/candidate_validity_qwen3_14b.csv"
+  ],
+  "output_csv": "./datasets/provenance/v1_1711/metadata/candidate_validity_4models.csv",
+  "models": [
+    "Qwen3-1.7B",
+    "Qwen3-14B",
+    "Qwen3-4B",
+    "Qwen3-8B"
+  ],
+  "n_base_rows_before_intersection": 17220,
+  "n_rows": 17110,
+  "n_base_rows_dropped_for_key_intersection": 110,
+  "n_all_models_valid": 10505
+}

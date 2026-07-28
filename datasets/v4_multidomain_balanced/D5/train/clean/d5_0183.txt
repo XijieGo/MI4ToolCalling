@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Send this email message shown below:
+To: recipient-57759bcb3640@mail.example
+Subject: Re: 2.5 final sprint: daily 8 AM standups
+Body: Nadia — "If Priya has an idea, she writes it down for 3.0." Fair. I deserve that. I'll handle stakeholder communications and keep the noise away from your team.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

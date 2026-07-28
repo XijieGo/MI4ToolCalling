@@ -1,0 +1,40 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"write_file","description":"Write file.","parameters":{"type":"object","properties":{"file_path":{"type":"string"},"content":
+{"type":"string"}},"required":["file_path","content"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Study the function body in solve.cpp based on the function definition and docstring below:
+/*
+Given k pairs of locations (ta, fa) and (tb, fb) in a building with n towers and h floors, where passages between adjacent towers exist only on floors a to b, compute the minimum walking time for each query.
+Example:
+input:
+3 6 2 3 3
+1 2 1 3
+1 4 3 4
+1 2 2 3
+output:
+1
+4
+2
+*/
+std::string solve(const std::string& input) {
+    // TODO: implement
+    return "";
+}
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

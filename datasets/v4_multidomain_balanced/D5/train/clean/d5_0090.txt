@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Mail this email message shown below:
+To: recipient-307ed801ddda@mail.example
+Subject: H1 2026 finals: ARR $19.3M, pace for $24M+, profitable
+Body: Marcus, Priya — H1 2026 final numbers: - **ARR: $19.3M** (pace for $24M+ by year-end) - **Enterprise ARR: $2.23M** (12% of total — from 0% 15 months ago) - **Monthly profit: $122K** (3 consecutive months) - **Runway: 27+ months** (growing) - **Team: 102 people** A transformed company by every measure. Revenue, product, culture, security, leadership alignment. This is the company I came to build.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

@@ -1,0 +1,16 @@
+{
+  "model": "Qwen3-8B",
+  "model_path": "/root/autodl-tmp/Qwen/Qwen3-8B",
+  "enable_thinking": false,
+  "source_pool_count": 283,
+  "screen_input_count": 283,
+  "rendered_count": 283,
+  "rejected_count": 0,
+  "max_context_tokens": 16384,
+  "depth_group_counts_input": {
+    "3": 56,
+    "4": 96,
+    "5": 131
+  },
+  "rejections": []
+}

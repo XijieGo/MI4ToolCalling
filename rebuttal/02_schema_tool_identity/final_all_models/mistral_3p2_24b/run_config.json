@@ -1,0 +1,49 @@
+{
+  "experiment": "reviewer_cjrq_v5_tool_identity",
+  "created_at": "2026-07-28T00:37:14.955308Z",
+  "model_key": "mistral_3p2_24b",
+  "model_label": "Mistral-Small-3.2-24B-Instruct-2506",
+  "model_path": "/root/autodl-tmp/Mistral/Mistral-Small-3.2-24B-Instruct-2506",
+  "dataset_root": "./datasets/v5_model_specific_balanced/mistral_3p2_24b",
+  "dataset_version": "v5_model_specific_balanced",
+  "family": "mistral_native",
+  "variants": [
+    "V0",
+    "V1",
+    "V2",
+    "V5"
+  ],
+  "table_variants": [
+    "V1",
+    "V2",
+    "V5"
+  ],
+  "metrics": "cosine_to_V0 / strict_flip / strict_drop",
+  "selection_pairs": 64,
+  "vector_pairs": 136,
+  "heldout_pairs": 300,
+  "partition_rule": "manifest order: first train prefix for layer selection, following disjoint train prefix for vectors, all heldout rows",
+  "selection_protocol": "paired clean-state replacement, V0 only, decoder-block output at final non-padding prompt token",
+  "vector_protocol": "mean(clean state - corrupt state), variant-specific fit on disjoint train pairs at the selected V0 layer",
+  "causal_protocol": "frozen V0 vector added to baseline-corrupt and subtracted from baseline-clean at the selected block output / final prompt token",
+  "strict_denominators": "baseline-corrupt non-tool prompts for flip; baseline-clean tool prompts for drop, measured separately for every schema variant",
+  "mistral_rule": "V0 stored native input_ids; V1/V2/V5 apply_chat_template(tokenize=True, tools=mutated_tools); no decoded-text re-encode",
+  "batch_size": 4,
+  "dtype": "bfloat16",
+  "attn_implementation": null,
+  "seed": 20260728,
+  "allow_subset": false,
+  "runner_path": "./src/rebuttal/run_cjrq_v5_tool_identity.py",
+  "runner_sha256": "547334670d5370f1d7c5f20dedadab61d1715b7a7daf63fd095a9ccee4ab0554",
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+  "torch_version": "2.8.0+cu128",
+  "cuda_available": true,
+  "gpu_preflight": "0, NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 3 MiB, 0 %",
+  "git": {
+    "commit": "9202b474a88a80ebb54299df54ee5d4e0a67d499",
+    "branch": "main",
+    "worktree_dirty": true,
+    "worktree_status_line_count": 174
+  }
+}

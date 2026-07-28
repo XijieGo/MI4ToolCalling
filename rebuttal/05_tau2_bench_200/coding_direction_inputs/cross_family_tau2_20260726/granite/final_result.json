@@ -1,0 +1,216 @@
+{
+  "model": "Granite-3.3-8B-Instruct",
+  "coding_vector": {
+    "fit_pairs": 345,
+    "heldout_pairs": 155,
+    "layer": 35,
+    "mean_diff_norm": 55.736270904541016,
+    "validation": {
+      "n_heldout_pairs": 155,
+      "clean_baseline_tool_top1": 154,
+      "clean_minus_tool_top1": 3,
+      "strict_drop": 151,
+      "strict_drop_rate": 0.9805194805194806,
+      "corrupt_baseline_tool_top1": 1,
+      "corrupt_plus_tool_top1": 155,
+      "strict_flip": 154,
+      "strict_flip_rate": 1.0
+    },
+    "vector_bundle": "./results/natural_trajectory/cross_family_tau2_20260726/granite/coding_vector_bundle.pt"
+  },
+  "screening": {
+    "tool": {
+      "screen_stats": {
+        "hook_calls": 0,
+        "modified_calls": 0
+      },
+      "selected": 50,
+      "screened": 400
+    },
+    "induction": {
+      "screen_stats": {
+        "hook_calls": 0,
+        "modified_calls": 0
+      },
+      "selected": 50,
+      "screened": 283
+    }
+  },
+  "suppression": [
+    {
+      "condition": "baseline_no_hook_alpha_0",
+      "condition_family": "baseline",
+      "alpha": 0.0,
+      "delta_norm": 0.0,
+      "n": 50,
+      "tool_call_top1_count": 50,
+      "tool_call_top1_rate": 1.0,
+      "baseline_tool_call_top1_count": 50,
+      "baseline_non_tool_top1_count": 0,
+      "baseline_tool_to_non_tool_count": 0,
+      "baseline_tool_to_non_tool_rate": 0.0,
+      "baseline_non_tool_to_tool_count": 0,
+      "baseline_non_tool_to_tool_rate": 0.0,
+      "mean_tool_call_logit": 19.5175,
+      "mean_tool_call_probability": 0.8320909887552261,
+      "mean_tool_logit_change_vs_baseline": 0.0
+    },
+    {
+      "condition": "minus_mean_diff_alpha_1",
+      "condition_family": "coding_direction_suppression",
+      "alpha": 1.0,
+      "delta_norm": 55.736270904541016,
+      "n": 50,
+      "tool_call_top1_count": 3,
+      "tool_call_top1_rate": 0.06,
+      "baseline_tool_call_top1_count": 50,
+      "baseline_non_tool_top1_count": 0,
+      "baseline_tool_to_non_tool_count": 47,
+      "baseline_tool_to_non_tool_rate": 0.94,
+      "baseline_non_tool_to_tool_count": 0,
+      "baseline_non_tool_to_tool_rate": 0.0,
+      "mean_tool_call_logit": 17.97125,
+      "mean_tool_call_probability": 0.17879005316644908,
+      "mean_tool_logit_change_vs_baseline": -1.54625
+    },
+    {
+      "condition": "minus_mean_diff_alpha_1.5",
+      "condition_family": "coding_direction_suppression",
+      "alpha": 1.5,
+      "delta_norm": 83.6043930053711,
+      "n": 50,
+      "tool_call_top1_count": 0,
+      "tool_call_top1_rate": 0.0,
+      "baseline_tool_call_top1_count": 50,
+      "baseline_non_tool_top1_count": 0,
+      "baseline_tool_to_non_tool_count": 50,
+      "baseline_tool_to_non_tool_rate": 1.0,
+      "baseline_non_tool_to_tool_count": 0,
+      "baseline_non_tool_to_tool_rate": 0.0,
+      "mean_tool_call_logit": 15.85875,
+      "mean_tool_call_probability": 0.026426043834071607,
+      "mean_tool_logit_change_vs_baseline": -3.65875
+    },
+    {
+      "condition": "minus_random_norm_matched_alpha_1",
+      "condition_family": "norm_matched_random_control",
+      "alpha": 1.0,
+      "delta_norm": 55.73626708984375,
+      "n": 50,
+      "tool_call_top1_count": 37,
+      "tool_call_top1_rate": 0.74,
+      "baseline_tool_call_top1_count": 50,
+      "baseline_non_tool_top1_count": 0,
+      "baseline_tool_to_non_tool_count": 13,
+      "baseline_tool_to_non_tool_rate": 0.26,
+      "baseline_non_tool_to_tool_count": 0,
+      "baseline_non_tool_to_tool_rate": 0.0,
+      "mean_tool_call_logit": 18.9875,
+      "mean_tool_call_probability": 0.6537090510129928,
+      "mean_tool_logit_change_vs_baseline": -0.53
+    },
+    {
+      "condition": "minus_random_norm_matched_alpha_1.5",
+      "condition_family": "norm_matched_random_control",
+      "alpha": 1.5,
+      "delta_norm": 83.60440826416016,
+      "n": 50,
+      "tool_call_top1_count": 22,
+      "tool_call_top1_rate": 0.44,
+      "baseline_tool_call_top1_count": 50,
+      "baseline_non_tool_top1_count": 0,
+      "baseline_tool_to_non_tool_count": 28,
+      "baseline_tool_to_non_tool_rate": 0.56,
+      "baseline_non_tool_to_tool_count": 0,
+      "baseline_non_tool_to_tool_rate": 0.0,
+      "mean_tool_call_logit": 17.7625,
+      "mean_tool_call_probability": 0.3876961133629084,
+      "mean_tool_logit_change_vs_baseline": -1.755
+    }
+  ],
+  "induction": [
+    {
+      "condition": "baseline_no_hook_alpha_0",
+      "condition_family": "baseline",
+      "alpha": 0.0,
+      "delta_norm": 0.0,
+      "n": 50,
+      "tool_call_top1_count": 0,
+      "tool_call_top1_rate": 0.0,
+      "baseline_tool_call_top1_count": 0,
+      "baseline_non_tool_top1_count": 50,
+      "baseline_tool_to_non_tool_count": 0,
+      "baseline_tool_to_non_tool_rate": 0.0,
+      "baseline_non_tool_to_tool_count": 0,
+      "baseline_non_tool_to_tool_rate": 0.0,
+      "mean_tool_call_logit": 15.185,
+      "mean_tool_call_probability": 0.00374509973655222,
+      "mean_tool_logit_change_vs_baseline": 0.0
+    },
+    {
+      "condition": "plus_mean_diff_alpha_1",
+      "condition_family": "coding_direction_induction",
+      "alpha": 1.0,
+      "delta_norm": 55.736270904541016,
+      "n": 50,
+      "tool_call_top1_count": 0,
+      "tool_call_top1_rate": 0.0,
+      "baseline_tool_call_top1_count": 0,
+      "baseline_non_tool_top1_count": 50,
+      "baseline_tool_to_non_tool_count": 0,
+      "baseline_tool_to_non_tool_rate": 0.0,
+      "baseline_non_tool_to_tool_count": 0,
+      "baseline_non_tool_to_tool_rate": 0.0,
+      "mean_tool_call_logit": 15.3075,
+      "mean_tool_call_probability": 0.024483885236550124,
+      "mean_tool_logit_change_vs_baseline": 0.1225
+    },
+    {
+      "condition": "plus_mean_diff_alpha_1.5",
+      "condition_family": "coding_direction_induction",
+      "alpha": 1.5,
+      "delta_norm": 83.6043930053711,
+      "n": 50,
+      "tool_call_top1_count": 0,
+      "tool_call_top1_rate": 0.0,
+      "baseline_tool_call_top1_count": 0,
+      "baseline_non_tool_top1_count": 50,
+      "baseline_tool_to_non_tool_count": 0,
+      "baseline_tool_to_non_tool_rate": 0.0,
+      "baseline_non_tool_to_tool_count": 0,
+      "baseline_non_tool_to_tool_rate": 0.0,
+      "mean_tool_call_logit": 14.05,
+      "mean_tool_call_probability": 0.019634634002577513,
+      "mean_tool_logit_change_vs_baseline": -1.135
+    },
+    {
+      "condition": "plus_random_norm_matched_alpha_1",
+      "condition_family": "norm_matched_random_control",
+      "alpha": 1.0,
+      "delta_norm": 55.73626708984375,
+      "n": 50,
+      "tool_call_top1_count": 0,
+      "tool_call_top1_rate": 0.0,
+      "baseline_tool_call_top1_count": 0,
+      "baseline_non_tool_top1_count": 50,
+      "baseline_tool_to_non_tool_count": 0,
+      "baseline_tool_to_non_tool_rate": 0.0,
+      "baseline_non_tool_to_tool_count": 0,
+      "baseline_non_tool_to_tool_rate": 0.0,
+      "mean_tool_call_logit": 12.455,
+      "mean_tool_call_probability": 0.00037099049921380357,
+      "mean_tool_logit_change_vs_baseline": -2.73
+    }
+  ],
+  "induction_alpha1_generation": {
+    "n": 50,
+    "first_tool_call": 0,
+    "well_formed_tool_call": 0,
+    "direct_forward_match": 50,
+    "hook_stats": {
+      "hook_calls": 3785,
+      "modified_calls": 50
+    }
+  },
+  "completed_unix": 1785042297.6528304
+}

@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Mail this email message shown below:
+To: recipient-3b19be41226e@mail.example
+Subject: End-of-May summary: $1.02M MRR, inflection point
+Body: Marcus — End-of-May executive summary: - **MRR:** $1.02M (+3.2% MoM) - **Burn:** $1.67M/month - **Runway:** 19.8 months - **Flow 3.0:** ~45% complete - **Enterprise features shipped:** SSO (GA), audit logging (in progress) The company is at an inflection point. Enterprise strategy must deliver in H2 or we face a difficult board conversation in December. Wren
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

@@ -1,0 +1,12 @@
+sample_id,filename,language,dataset_name,has_valid_clean,has_valid_corrupt,drop_reason
+codecontests_cpp_6,codecontests_cpp_6.txt,cpp,codecontests,True,False,missing_corrupt
+codecontests_cpp_85,codecontests_cpp_85.txt,cpp,codecontests,True,False,missing_corrupt
+codecontests_java_105,codecontests_java_105.txt,java,codecontests,True,False,missing_corrupt
+codecontests_cpp_174,codecontests_cpp_174.txt,cpp,codecontests,True,False,missing_corrupt
+codecontests_java_230,codecontests_java_230.txt,java,codecontests,True,False,missing_corrupt
+codecontests_java_267,codecontests_java_267.txt,java,codecontests,True,False,missing_corrupt
+codecontests_cpp_337,codecontests_cpp_337.txt,cpp,codecontests,True,False,missing_corrupt
+codecontests_cpp_375,codecontests_cpp_375.txt,cpp,codecontests,True,False,missing_corrupt
+codecontests_cpp_458,codecontests_cpp_458.txt,cpp,codecontests,True,False,missing_corrupt
+codecontests_cpp_524,codecontests_cpp_524.txt,cpp,codecontests,True,False,missing_corrupt
+codecontests_cpp_626,codecontests_cpp_626.txt,cpp,codecontests,True,False,missing_corrupt

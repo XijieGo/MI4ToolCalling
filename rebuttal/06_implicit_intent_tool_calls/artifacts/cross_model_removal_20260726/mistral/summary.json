@@ -1,0 +1,233 @@
+{
+  "model": "Mistral-Small-3.2-24B-Instruct-2506",
+  "source_candidates": 600,
+  "baseline_tool_call_top1": 292,
+  "baseline_by_domain_pattern": {
+    "D1": {
+      "P1": {
+        "n": 30,
+        "baseline_tool_call_top1": 0
+      },
+      "P2": {
+        "n": 30,
+        "baseline_tool_call_top1": 0
+      },
+      "P3": {
+        "n": 30,
+        "baseline_tool_call_top1": 0
+      },
+      "P4": {
+        "n": 30,
+        "baseline_tool_call_top1": 0
+      },
+      "P5": {
+        "n": 30,
+        "baseline_tool_call_top1": 0
+      }
+    },
+    "D3": {
+      "P1": {
+        "n": 30,
+        "baseline_tool_call_top1": 19
+      },
+      "P2": {
+        "n": 30,
+        "baseline_tool_call_top1": 29
+      },
+      "P3": {
+        "n": 30,
+        "baseline_tool_call_top1": 25
+      },
+      "P4": {
+        "n": 30,
+        "baseline_tool_call_top1": 7
+      },
+      "P5": {
+        "n": 30,
+        "baseline_tool_call_top1": 14
+      }
+    },
+    "D4": {
+      "P1": {
+        "n": 30,
+        "baseline_tool_call_top1": 22
+      },
+      "P2": {
+        "n": 30,
+        "baseline_tool_call_top1": 25
+      },
+      "P3": {
+        "n": 30,
+        "baseline_tool_call_top1": 19
+      },
+      "P4": {
+        "n": 30,
+        "baseline_tool_call_top1": 17
+      },
+      "P5": {
+        "n": 30,
+        "baseline_tool_call_top1": 27
+      }
+    },
+    "D5": {
+      "P1": {
+        "n": 30,
+        "baseline_tool_call_top1": 14
+      },
+      "P2": {
+        "n": 30,
+        "baseline_tool_call_top1": 21
+      },
+      "P3": {
+        "n": 30,
+        "baseline_tool_call_top1": 21
+      },
+      "P4": {
+        "n": 30,
+        "baseline_tool_call_top1": 20
+      },
+      "P5": {
+        "n": 30,
+        "baseline_tool_call_top1": 12
+      }
+    }
+  },
+  "removal_arm_n": 147,
+  "conditions": {
+    "mean_diff_a1.0": {
+      "n": 147,
+      "strict_drop": 118,
+      "strict_drop_rate": 0.8027210884353742,
+      "by_domain": {
+        "D1": {
+          "n": 0,
+          "strict_drop": 0,
+          "strict_drop_rate": null
+        },
+        "D3": {
+          "n": 47,
+          "strict_drop": 19,
+          "strict_drop_rate": 0.40425531914893614
+        },
+        "D4": {
+          "n": 50,
+          "strict_drop": 49,
+          "strict_drop_rate": 0.98
+        },
+        "D5": {
+          "n": 50,
+          "strict_drop": 50,
+          "strict_drop_rate": 1.0
+        }
+      }
+    },
+    "mean_diff_a1.5": {
+      "n": 147,
+      "strict_drop": 133,
+      "strict_drop_rate": 0.9047619047619048,
+      "by_domain": {
+        "D1": {
+          "n": 0,
+          "strict_drop": 0,
+          "strict_drop_rate": null
+        },
+        "D3": {
+          "n": 47,
+          "strict_drop": 33,
+          "strict_drop_rate": 0.7021276595744681
+        },
+        "D4": {
+          "n": 50,
+          "strict_drop": 50,
+          "strict_drop_rate": 1.0
+        },
+        "D5": {
+          "n": 50,
+          "strict_drop": 50,
+          "strict_drop_rate": 1.0
+        }
+      }
+    },
+    "random_a1.5": {
+      "n": 147,
+      "strict_drop": 94,
+      "strict_drop_rate": 0.6394557823129252,
+      "by_domain": {
+        "D1": {
+          "n": 0,
+          "strict_drop": 0,
+          "strict_drop_rate": null
+        },
+        "D3": {
+          "n": 47,
+          "strict_drop": 13,
+          "strict_drop_rate": 0.2765957446808511
+        },
+        "D4": {
+          "n": 50,
+          "strict_drop": 37,
+          "strict_drop_rate": 0.74
+        },
+        "D5": {
+          "n": 50,
+          "strict_drop": 44,
+          "strict_drop_rate": 0.88
+        }
+      }
+    }
+  },
+  "hook_audits": {
+    "baseline": {
+      "hook_calls": 0,
+      "modified_calls": 0
+    },
+    "mean_diff_a1.0": {
+      "hook_calls": 147,
+      "modified_calls": 147
+    },
+    "mean_diff_a1.5": {
+      "hook_calls": 147,
+      "modified_calls": 147
+    },
+    "random_a1.5": {
+      "hook_calls": 147,
+      "modified_calls": 147
+    }
+  },
+  "vector": {
+    "bundle_path": "./results/natural_trajectory/cross_family_tau2_20260726/mistral/coding_vector_bundle.pt",
+    "bundle_sha256": "94988e0149770101f60c94651dae3f7fb9c6059fca042e3cbbbbfcb3746460ca",
+    "mean_diff_norm": 6.639774322509766,
+    "random_direction_norm": 6.639774799346924,
+    "cosine_mean_random": -0.023462383076548576,
+    "bundle_layer": 26,
+    "bundle_hook_kind": "post",
+    "bundle_keys": [
+      "fit_split",
+      "hook_kind",
+      "layer",
+      "mean_diff",
+      "model",
+      "model_path",
+      "random_direction_unit",
+      "random_seed",
+      "source_domain",
+      "tool_token",
+      "validation_split"
+    ]
+  },
+  "layer": 26,
+  "hook_kind": "post",
+  "tool_token": {
+    "text": "[TOOL_CALLS]",
+    "id_via_convert": 9,
+    "ids_via_encode": [
+      1091,
+      9197,
+      8568,
+      74483,
+      1083,
+      1093
+    ]
+  }
+}

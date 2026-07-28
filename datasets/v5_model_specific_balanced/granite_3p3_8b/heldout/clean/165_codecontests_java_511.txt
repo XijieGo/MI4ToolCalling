@@ -1,0 +1,41 @@
+<|start_of_role|>system<|end_of_role|>Knowledge Cutoff Date: April 2024.
+Today's Date: May 05, 2026.
+You are Granite, developed by IBM. You are a helpful assistant with access to the following tools. When a tool is required to answer the user's query, respond only with <|tool_call|> followed by a JSON list of tools used. If a tool does not exist in the provided list of tools, notify the user that you do not have the ability to fulfill the request.<|end_of_text|>
+<|start_of_role|>available_tools<|end_of_role|>[
+    {
+        "type": "function",
+        "function": {
+            "name": "write_file",
+            "description": "Write file.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "file_path": {
+                        "type": "string"
+                    },
+                    "content": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "file_path",
+                    "content"
+                ]
+            }
+        }
+    }
+]<|end_of_text|>
+<|start_of_role|>user<|end_of_role|>Save the function body in solve.java based on the function definition and docstring below:
+/*
+Two players alternately pick an intersection in an nxm stick grid and remove its horizontal and vertical sticks. With optimal play, output the winner (first player starts).
+Example:
+input:
+2 3
+output:
+Malvika
+*/
+static String solve(String input) {
+    // TODO: implement
+    return "";
+}<|end_of_text|>
+<|start_of_role|>assistant<|end_of_role|>

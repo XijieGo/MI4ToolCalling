@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Discuss this email message shown below:
+To: recipient-524012285ea2@mail.example
+Subject: Re: Sentinel Phase 2 expansion
+Body: Craig — Real-time claims processing is exactly the 3.0 use case. When we migrate Sentinel to 3.0, their Phase 2 pipelines will run 3x faster. $600K total.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

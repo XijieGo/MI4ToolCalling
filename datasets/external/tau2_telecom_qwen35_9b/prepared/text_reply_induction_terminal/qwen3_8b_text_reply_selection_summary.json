@@ -1,0 +1,42 @@
+{
+  "screened_prefixes": 283,
+  "baseline_non_tool_top1_prefixes": 275,
+  "strong_non_tool_prefixes": 274,
+  "max_baseline_tool_probability": 0.05,
+  "selected_prefixes": 50,
+  "selection_seed": 20260725,
+  "selection_rule": "baseline non-<tool_call> top-1, tool probability cutoff, one prefix per trace, depth-stratified round robin",
+  "selected_depth_group_counts": {
+    "3": 16,
+    "4": 17,
+    "5": 17
+  },
+  "selected_token_lengths": {
+    "min": 11268,
+    "median": 11778,
+    "max": 12402
+  },
+  "next_causal_intervention": {
+    "model": "Qwen3-8B",
+    "vector_key": "mean_diff",
+    "layer": 24,
+    "hook": "blocks.24.hook_resid_pre",
+    "token_position": "final prompt token / first generated-token decision",
+    "induction_operation": "add +alpha*mean_diff; +mean_diff is the paper's tool-call direction",
+    "recommended_amplitudes": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.5,
+      2.0,
+      3.0
+    ],
+    "negative_control": "norm-matched random direction at matching amplitudes"
+  },
+  "files": {
+    "baseline_screen": "datasets/external/tau2_telecom_qwen35_9b/prepared/text_reply_induction_terminal/qwen3_8b_text_reply_baseline_screen.jsonl",
+    "selected_50": "datasets/external/tau2_telecom_qwen35_9b/prepared/text_reply_induction_terminal/selected_50_qwen3_8b_text_reply.jsonl"
+  }
+}

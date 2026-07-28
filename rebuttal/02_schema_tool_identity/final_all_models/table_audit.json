@@ -1,0 +1,106 @@
+{
+  "status": "complete",
+  "created_at": "2026-07-28T00:46:51.942434Z",
+  "run_root": "./results/runs/rebuttal_cjrq_v5_tool_identity_all_models_20260728T001220Z",
+  "model_audits": [
+    {
+      "model_key": "qwen3_4b",
+      "model_label": "Qwen3-4B",
+      "model_root": "./results/runs/rebuttal_cjrq_v5_tool_identity_all_models_20260728T001220Z/qwen3_4b",
+      "heldout_membership_verified": true,
+      "heldout_count": 300,
+      "manifest_sha256_verified": "b0649501922ba0c7cfe7054f6eb972a74c715fe49f28b428990d0398d53db01c",
+      "input_provenance_count": 4000,
+      "sample_metric_count": 4800,
+      "baseline_replay_verified": true,
+      "mistral_native_input_rule_verified": null
+    },
+    {
+      "model_key": "qwen3_8b",
+      "model_label": "Qwen3-8B",
+      "model_root": "./results/runs/rebuttal_cjrq_v5_tool_identity_all_models_20260728T001220Z/qwen3_8b",
+      "heldout_membership_verified": true,
+      "heldout_count": 300,
+      "manifest_sha256_verified": "429ba1edd66b1512d43331d15d7816f1b56a200b7548157b5e760610470d7247",
+      "input_provenance_count": 4000,
+      "sample_metric_count": 4800,
+      "baseline_replay_verified": true,
+      "mistral_native_input_rule_verified": null
+    },
+    {
+      "model_key": "qwen3_14b",
+      "model_label": "Qwen3-14B",
+      "model_root": "./results/runs/rebuttal_cjrq_v5_tool_identity_all_models_20260728T001220Z/qwen3_14b",
+      "heldout_membership_verified": true,
+      "heldout_count": 300,
+      "manifest_sha256_verified": "143e15918995e450b6f515bad7b9b15f27da6b473eefd2dfee3d1153805f472f",
+      "input_provenance_count": 4000,
+      "sample_metric_count": 4800,
+      "baseline_replay_verified": true,
+      "mistral_native_input_rule_verified": null
+    },
+    {
+      "model_key": "qwen35_4b",
+      "model_label": "Qwen3.5-4B",
+      "model_root": "./results/runs/rebuttal_cjrq_v5_tool_identity_all_models_20260728T001220Z/qwen35_4b",
+      "heldout_membership_verified": true,
+      "heldout_count": 300,
+      "manifest_sha256_verified": "bc805902cfc95166a95015f168e38aa429f6348f13234f5718d871abe534fc68",
+      "input_provenance_count": 4000,
+      "sample_metric_count": 4800,
+      "baseline_replay_verified": true,
+      "mistral_native_input_rule_verified": null
+    },
+    {
+      "model_key": "qwen35_9b",
+      "model_label": "Qwen3.5-9B",
+      "model_root": "./results/runs/rebuttal_cjrq_v5_tool_identity_all_models_20260728T001220Z/qwen35_9b",
+      "heldout_membership_verified": true,
+      "heldout_count": 300,
+      "manifest_sha256_verified": "80260edfa2faa90d445e2c59e0f07f68c2d47c51bc23c05a5402d312038d5f24",
+      "input_provenance_count": 4000,
+      "sample_metric_count": 4800,
+      "baseline_replay_verified": true,
+      "mistral_native_input_rule_verified": null
+    },
+    {
+      "model_key": "mistral_3p2_24b",
+      "model_label": "Mistral",
+      "model_root": "./results/runs/rebuttal_cjrq_v5_tool_identity_all_models_20260728T001220Z/mistral_3p2_24b",
+      "heldout_membership_verified": true,
+      "heldout_count": 300,
+      "manifest_sha256_verified": "7826d9d759d0986e5058847b4e0986f3d616cb5564bf4fa22133637390c0a407",
+      "input_provenance_count": 4000,
+      "sample_metric_count": 4800,
+      "baseline_replay_verified": true,
+      "mistral_native_input_rule_verified": true
+    },
+    {
+      "model_key": "granite_3p3_8b",
+      "model_label": "Granite",
+      "model_root": "./results/runs/rebuttal_cjrq_v5_tool_identity_all_models_20260728T001220Z/granite_3p3_8b",
+      "heldout_membership_verified": true,
+      "heldout_count": 300,
+      "manifest_sha256_verified": "87a489e121288e00f1063f6668145d28d23617bd62b7b53c57e6d2015b38c9ff",
+      "input_provenance_count": 4000,
+      "sample_metric_count": 4800,
+      "baseline_replay_verified": true,
+      "mistral_native_input_rule_verified": null
+    }
+  ],
+  "checked_models": [
+    "qwen3_4b",
+    "qwen3_8b",
+    "qwen3_14b",
+    "qwen35_4b",
+    "qwen35_9b",
+    "mistral_3p2_24b",
+    "granite_3p3_8b"
+  ],
+  "checked_variants": [
+    "V1",
+    "V2",
+    "V5"
+  ],
+  "table_source": "per-sample heldout metrics, independently recomputed strict numerators and denominators"
+}

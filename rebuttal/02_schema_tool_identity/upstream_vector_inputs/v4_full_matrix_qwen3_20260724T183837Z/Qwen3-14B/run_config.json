@@ -1,0 +1,42 @@
+{
+  "model_label": "Qwen3-14B",
+  "model_path": "/root/autodl-tmp/Qwen/Qwen3-14B",
+  "dataset_view_root": "./results/runs/v4_d1_mu_transfer_qwen3_8b_20260724T173038Z/v4_pair_view",
+  "domains": [
+    "D1",
+    "D3",
+    "D4",
+    "D5"
+  ],
+  "source_domains": [
+    "D1",
+    "D3",
+    "D4",
+    "D5"
+  ],
+  "target_domains": [
+    "D1",
+    "D3",
+    "D4",
+    "D5"
+  ],
+  "vector_domains": [
+    "D1",
+    "D3",
+    "D4",
+    "D5"
+  ],
+  "layer": 24,
+  "hook_kind": "pre",
+  "train_pairs": 400,
+  "eval_pairs": 100,
+  "batch_size": 16,
+  "conditions": [
+    "target_norm_aligned",
+    "raw_1p5"
+  ],
+  "condition_definitions": {
+    "target_norm_aligned": "source direction rescaled to target native L2 norm; alpha=1",
+    "raw_1p5": "unmodified source native vector multiplied by alpha=1.5"
+  }
+}

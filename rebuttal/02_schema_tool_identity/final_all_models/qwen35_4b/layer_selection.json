@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "selection_split": "first 64 manifest-order train pairs only",
+  "position": "last non-padding prompt token; decoder-block output",
+  "selection_rule": "max strict paired-state replacement flip; tie mean patched tool logit; tie earlier layer",
+  "coarse_layers": [
+    14,
+    18,
+    19,
+    21,
+    22,
+    24,
+    26,
+    27
+  ],
+  "fine_layers": [
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "selected_layer": 29,
+  "selected_metrics": {
+    "phase": "fine_train",
+    "layer": 29,
+    "n_train_pairs": 64,
+    "baseline_corrupt_top1_rate": 0.0,
+    "paired_replace_top1_rate": 0.328125,
+    "strict_flip_count": 21,
+    "strict_flip_rate": 0.328125,
+    "mean_patched_tool_logit": 21.025390625,
+    "mean_patched_tool_probability": 0.2649664842756465
+  }
+}
