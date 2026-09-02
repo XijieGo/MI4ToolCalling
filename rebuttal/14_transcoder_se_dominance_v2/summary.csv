@@ -1,0 +1,7 @@
+model_key,model_label,S_to_clean_delta_m,E_to_clean_delta_m,S_to_corrupt_delta_m,E_to_corrupt_delta_m,S_over_E,output_root
+qwen3_4b,Qwen3-4B,-0.6320833333333333,-0.665,-0.8733333333333333,3.6879166666666667,0.3458409112663922,/root/autodl-tmp/MI4ToolCalling/rebuttal/14_transcoder_se_dominance_v2/qwen3_4b
+qwen3_8b,Qwen3-8B,-1.6404166666666666,-0.18791666666666668,2.515833333333333,1.58,2.350930945086024,/root/autodl-tmp/MI4ToolCalling/rebuttal/14_transcoder_se_dominance_v2/qwen3_8b
+qwen3_14b,Qwen3-14B,-0.48125,-2.8241666666666667,0.86734375,8.21484375,0.12216618148705585,/root/autodl-tmp/MI4ToolCalling/rebuttal/14_transcoder_se_dominance_v2/qwen3_14b
+qwen35_4b,Qwen3.5-4B,0.07791666666666666,-0.0020833333333333333,0.159375,0.1725,1.3591885441527447,/root/autodl-tmp/MI4ToolCalling/rebuttal/14_transcoder_se_dominance_v2/qwen35_4b
+qwen35_9b,Qwen3.5-9B,-0.06729166666666667,0.14145833333333332,-0.02625,0.19208333333333333,0.2804497189256715,/root/autodl-tmp/MI4ToolCalling/rebuttal/14_transcoder_se_dominance_v2/qwen35_9b
+granite_3p3_8b,Granite-3.3-8B-Instruct,0.6908333333333333,0.6708333333333333,0.02875,0.8377083333333334,0.47700593840629746,/root/autodl-tmp/MI4ToolCalling/rebuttal/14_transcoder_se_dominance_v2/granite_3p3_8b

@@ -1,0 +1,20 @@
+{
+  "G_kappa": 0.22427764534950256,
+  "n_features": 40960,
+  "suppressor_mass": 1.3845973014831543,
+  "suppressor_signed_kappa": 1.3845973014831543,
+  "n_suppressor": 2199,
+  "driver_mass": 3.258362293243408,
+  "driver_signed_kappa": 3.258362293243408,
+  "n_driver": 3045,
+  "clean_higher_away_mass": 3.066638708114624,
+  "clean_higher_away_signed_kappa": -3.066638708114624,
+  "n_clean_higher_away": 3141,
+  "corrupt_higher_toward_mass": 1.3520432710647583,
+  "corrupt_higher_toward_signed_kappa": -1.3520432710647583,
+  "n_corrupt_higher_toward": 2068,
+  "suppressor_driver_ratio": 0.4249365714654498,
+  "S_minus_E": -1.873764991760254,
+  "quadrant_reconstruction": 0.22427761554718018,
+  "quadrant_reconstruction_residual": 2.9802322387695312e-08
+}

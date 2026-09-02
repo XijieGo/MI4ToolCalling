@@ -10,31 +10,54 @@ is the control.
 """
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
 
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-MODEL_PATH = "/root/autodl-tmp/Qwen/Qwen3-8B"
-VECTOR_PATH = "./results/runs/rebuttal_scaffold_components_d1_v4_full_20260725/native_vectors/RTF_L24_pre.pt"
-LAYER = 24
-OUT_DIR = Path(__file__).resolve().parent
-IN_PATH = OUT_DIR / "implicit_intent_removal_final.jsonl"
-OUT_PATH = OUT_DIR / "implicit_intent_removal_results.jsonl"
+from release_paths import (
+    DEFAULT_QWEN3_8B_REMOVAL_ROOT,
+    FROZEN_QWEN3_8B_REMOVAL_ARM,
+    MODEL_PATHS,
+    VECTOR_PATHS,
+)
+
+
 ALPHAS = (0.0, 0.5, 1.0, 1.5, 2.0, 3.0)
 SEED = 20260726
 
 
-def main() -> None:
-    rows = [json.loads(l) for l in open(IN_PATH)]
-    tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
-    model = AutoModelForCausalLM.from_pretrained(MODEL_PATH, dtype=torch.bfloat16, device_map="cuda")
-    model.eval()
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--input", type=Path, default=FROZEN_QWEN3_8B_REMOVAL_ARM)
+    parser.add_argument("--output", type=Path, default=DEFAULT_QWEN3_8B_REMOVAL_ROOT / "removal_results.jsonl")
+    parser.add_argument("--model-path", type=Path, default=MODEL_PATHS["qwen3_8b"])
+    parser.add_argument("--vector-path", type=Path, default=VECTOR_PATHS["qwen3_8b"])
+    parser.add_argument("--device", type=str, default="cuda")
+    parser.add_argument("--overwrite", action="store_true")
+    return parser.parse_args()
 
-    bundle = torch.load(VECTOR_PATH, map_location="cpu")
+
+def main() -> None:
+    args = parse_args()
+    if args.output.exists() and not args.overwrite:
+        raise FileExistsError(f"Output exists: {args.output}; pass --overwrite to replace it")
+    rows = [json.loads(line) for line in args.input.read_text(encoding="utf-8").splitlines() if line.strip()]
+    tokenizer = AutoTokenizer.from_pretrained(str(args.model_path))
+    kwargs: dict[str, object] = {"torch_dtype": torch.bfloat16}
+    if args.device.startswith("cuda"):
+        kwargs["device_map"] = {"": 0}
+    model = AutoModelForCausalLM.from_pretrained(str(args.model_path), **kwargs)
+    model.eval()
+    device = next(model.parameters()).device
+
+    bundle = torch.load(args.vector_path, map_location="cpu", weights_only=False)
     mean_diff = bundle["mean_diff"].to(torch.float32)
-    assert bundle["layer"] == LAYER and bundle["hook_kind"] == "pre"
+    layer = bundle.get("layer") or bundle.get("patch_layer")
+    if layer is None or str(bundle.get("hook_kind", "pre")) != "pre":
+        raise ValueError(f"Expected a pre-hook vector with layer metadata: {args.vector_path}")
 
     g = torch.Generator().manual_seed(SEED)
     random_dir = torch.randn(mean_diff.shape, generator=g)
@@ -43,7 +66,7 @@ def main() -> None:
     tool_call_ids = tokenizer.encode("<tool_call>", add_special_tokens=False)
     first_tool_call_id = tool_call_ids[0]
 
-    target_layer = model.model.layers[LAYER]
+    target_layer = model.model.layers[int(layer)]
 
     current_delta = {"value": None}
 
@@ -61,7 +84,7 @@ def main() -> None:
     results = []
     with torch.no_grad():
         for i, row in enumerate(rows):
-            enc = tokenizer(row["prompt"], return_tensors="pt", add_special_tokens=False).to("cuda")
+            enc = tokenizer(row["prompt"], return_tensors="pt", add_special_tokens=False).to(device)
             row_result = {k: row[k] for k in ("domain", "pattern", "source_id", "item_id")}
             row_result["conditions"] = {}
             for direction_name, direction in (("mean_diff", mean_diff), ("random", random_dir)):
@@ -85,10 +108,11 @@ def main() -> None:
 
     handle.remove()
 
-    with OUT_PATH.open("w", encoding="utf-8") as f:
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    with args.output.open("w", encoding="utf-8") as f:
         for r in results:
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
-    print(f"Wrote {OUT_PATH}")
+    print(f"Wrote {args.output}")
 
 
 if __name__ == "__main__":

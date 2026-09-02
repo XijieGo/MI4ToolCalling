@@ -20,7 +20,7 @@ public release.
 | CJrQ §1: renamed, removed, and mismatched schemas | For every model, `02_schema_tool_identity/final_all_models/<model>/sample_metrics.csv` stores native baseline decisions and `intervention_long.csv` stores the ±μΔ decisions for each held-out pair and schema. Strict flips/drops are counts over the corresponding baseline stratum. | `<model>/table_metrics.json`; combined `table_metrics.csv` and `table_audit.json`. | `src/rebuttal/run_cjrq_v5_tool_identity.py`; `src/rebuttal/render_cjrq_v5_table.py` |
 | CJrQ §1: affordance-reversal 2×2 | `02_schema_tool_identity/affordance_reversal_qwen3_8b_v4_20260725/affordance_reversal_2x2_samples.csv` has all 400 held-out rows (100 per verb/schema cell), with first-token logit, probability, rank, and top-1 decision. | `affordance_reversal_2x2.csv`; frozen vectors in `native_vectors/`. | `src/multidomain/run_tool_identity_ablation.py` |
 | CJrQ §2; LxEy §1; wPFH §2: τ²-bench | Native contexts and selected 200-turn arms are in `datasets/external/tau2_*`. Each model's `suppression_per_sample.jsonl` and `induction_per_sample.jsonl` stores baseline and intervened first-token outcomes for mean and random directions. | `05_tau2_bench_200/final_bidirectional_results/tau2_bidirectional_200_interventions_20260727_canonical_batch1/run_summary.json`. | `src/natural_trajectory/run_tau2_bidirectional_200_intervention.py` |
-| CJrQ §3: 600 implicit-intent requests | Construction/rejection records are in `06_implicit_intent_tool_calls/artifacts/implicit_intent_*.jsonl`. For each model, `rendered_600.jsonl` → `baseline_600.jsonl` → `removal_arm.jsonl` records construction, baseline eligibility, and each intervention. | Per-model `summary.json`; `cross_model_summary.json`. | `build_implicit_intent_set.py`, `run_cross_model_removal.py`, and `summarize_removal.py` in the same artifact directory. |
+| CJrQ §3: 600 implicit-intent requests | Construction/rejection records are in `06_implicit_intent_tool_calls/artifacts/implicit_intent_*.jsonl`. For each model, `rendered_600.jsonl` → `baseline_600.jsonl` → `removal_arm.jsonl` records construction, baseline eligibility, and each intervention. | Per-model `summary.json`; `cross_model_summary.json`. | See `06_implicit_intent_tool_calls/artifacts/README.md`; the canonical runner is `run_cross_model_removal.py`. |
 | LxEy §2: request ladder | `03_scaffold_ablation_and_request_ladder/final_v5_qwen3_8b/request_ladder/sample_metrics.csv` has one row per held-out prompt and ladder level. Top-1 rate and mean probability are grouped by level. | `ladder_summary.csv`; `summary/request_ladder_table.md`. | `src/multidomain/run_request_ladder_ablation.py` |
 | wPFH §4: R/T/F scaffold factorial | `03_scaffold_ablation_and_request_ladder/final_v5_qwen3_8b/components/sample_metrics.csv` records each scaffold × prompt × request condition; `intervention_long.csv` retains the matched vector interventions. Neutral and analysis probabilities are averaged within scaffold. | `components/scaffold_component_results.json`; `summary/scaffold_components_table.md`. | `src/multidomain/run_scaffold_component_ablation.py`; `src/multidomain/summarize_scaffold_ablation.py` |
 | LxEy §3: three-head table | `07_lxey_mechanistic_controls/lxey_other_concerns_v2_1500/head_attribution/top_head_per_sample_attribution.csv` stores the 300-pair attention and μΔ-write measurements; `head_sweep_cache.pt` preserves the raw head-state cache. Cross-domain patches are stored row-wise in `lxey_crossdomain_heads_v4/D{3,4,5}/causal_patch_per_sample.csv`. | `head_linear_attribution_summary.csv`; `causal_head_z_patch_summary.csv`; `lxey_crossdomain_heads_v4/summary.md`. | `src/qwen3_8b/rebuttal_lxey_head_attribution.py`; `src/qwen3_8b/rebuttal_lxey_crossdomain_head_roles.py` |
@@ -43,3 +43,19 @@ public release.
 - τ² raw trajectories and selected collections: `datasets/external/`.
 - Model and Transcoder weights are external dependencies; all other inputs,
   vectors, intermediate records, and summaries above are in this repository.
+
+## Current Transcoder suite
+
+The current Qwen3.5/Granite Transcoder results are a separate, structured
+rebuttal block. They use the same frozen v5 200-train/300-heldout split and
+are indexed by the experiment registry.
+
+| Evidence block | Primary frozen records | Code |
+| --- | --- | --- |
+| 09: Qwen3.5 feature analysis | `09_qwen35_transcoder_feature_analysis/qwen35_4b_paper_style/{activation_cache.pt,paper_k_summary.csv,paper_causal_summary.csv}` | `src/qwen35/run_transcoder_feature_analysis.py`; `run_paper_transcoder_analysis.py`; `audit_*.py` |
+| 10: cross-model K | `10_cross_model_transcoder_k/{qwen35_4b,qwen35_9b,granite_3p3_8b_strict}/{activation_cache.pt,summary.json}` | `src/qwen35/run_cross_model_transcoder_k.py` |
+| 11–13: selected-feature causal tests and sweeps | `11_selected_layer_transcoder_causal_ablation/`, `12_selected_layer_causal_sweep/`, `13_selected_layer_causal_consistency08/` | `src/qwen35/run_selected_layer_transcoder_causal.py`; `src/qwen35/run_selected_layer_transcoder_causal_sweep.py` |
+| 14: suppressor/execution dominance | `14_transcoder_se_dominance_v2/{summary.json,summary.csv}` and per-model feature/per-sample records | `src/qwen35/run_transcoder_se_dominance.py` |
+
+See `src/qwen35/README.md` for the code-layer boundary and portable external
+weight configuration.

@@ -1,0 +1,32 @@
+{
+  "experiment": "transcoder_SE_dominance",
+  "model_key": "qwen35_4b",
+  "model_label": "Qwen3.5-4B",
+  "model_path": "/root/autodl-tmp/Qwen/Qwen3.5-4B",
+  "dataset_root": "/root/autodl-tmp/MI4ToolCalling/datasets/v5_model_specific_balanced/qwen35_4b",
+  "transcoder_root": "/root/autodl-tmp/Transcoder/Qwen3.5-4B",
+  "transcoder_checkpoints": {
+    "26": "/root/autodl-tmp/Transcoder/Qwen3.5-4B/layer26/checkpoint_step_0061035.pt",
+    "27": "/root/autodl-tmp/Transcoder/Qwen3.5-4B/layer27/checkpoint_step_0061035.pt",
+    "28": "/root/autodl-tmp/Transcoder/Qwen3.5-4B/layer28/checkpoint_step_0070000.pt",
+    "29": "/root/autodl-tmp/Transcoder/Qwen3.5-4B/layer29/checkpoint_step_0065000.pt"
+  },
+  "formation_layers": [
+    26,
+    27,
+    28,
+    29
+  ],
+  "decision_layer": 29,
+  "train_pairs": 200,
+  "heldout_pairs": 300,
+  "alignment_policy": "allow-unequal",
+  "selection": "train aligned S=(delta<0,beta<0), E=(delta>0,beta>0); per-layer top |kappa| then global equal budget",
+  "budget": 20,
+  "per_layer_top_k": 20,
+  "intervention": "heldout paired activation swap into actual HF MLP output",
+  "S_to_clean": "clean prompt selected z <- paired corrupt z",
+  "S_to_corrupt": "corrupt prompt selected z <- paired clean z",
+  "direction": "unit mean(clean - corrupt) decision-layer output on train",
+  "seed": 20260803
+}

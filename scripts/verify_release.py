@@ -15,6 +15,15 @@ ROOT = Path(__file__).resolve().parents[1]
 REQUIRED_FILES = (
     "README.md",
     "scripts/verify_release.py",
+    "scripts/verify_standalone.py",
+    "experiments/README.md",
+    "experiments/registry.json",
+    "src/README.md",
+    "paper/neurips_2026.tex",
+    "paper/main.tex",
+    "paper/appendix.tex",
+    "paper/references.bib",
+    "paper/figures/feature_circuit.png",
     "datasets/provenance/v2_1500/selection_manifest.csv",
     "datasets/provenance/v2_1500/split_manifest.csv",
     "datasets/v5_model_specific_balanced/README.md",
@@ -78,7 +87,7 @@ JSON_FILES = (
     "rebuttal/02_schema_tool_identity/final_all_models/completion.json",
     "rebuttal/04_rank_probability/final_heldout_all_models/completion.json",
 )
-PUBLIC_RELEASE_TREES = ("README.md", "datasets", "rebuttal", "scripts", "src")
+PUBLIC_RELEASE_TREES = ("README.md", "datasets", "experiments", "rebuttal", "scripts", "src")
 FORBIDDEN_WORKSPACE_FRAGMENTS = ("MI4ToolCalling" + chr(45) + "sync",)
 
 

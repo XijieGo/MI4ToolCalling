@@ -1,0 +1,32 @@
+{
+  "experiment": "transcoder_SE_dominance",
+  "model_key": "granite_3p3_8b",
+  "model_label": "Granite-3.3-8B-Instruct",
+  "model_path": "/root/autodl-tmp/Granite/granite-3.3-8b-instruct",
+  "dataset_root": "/root/autodl-tmp/MI4ToolCalling/datasets/v5_model_specific_balanced/granite_3p3_8b",
+  "transcoder_root": "/root/autodl-tmp/Transcoder/granite-3.3-8b-instruct",
+  "transcoder_checkpoints": {
+    "29": "/root/autodl-tmp/Transcoder/granite-3.3-8b-instruct/layer29/checkpoint_step_0061035.pt",
+    "30": "/root/autodl-tmp/Transcoder/granite-3.3-8b-instruct/layer30/checkpoint_step_0061035.pt",
+    "31": "/root/autodl-tmp/Transcoder/granite-3.3-8b-instruct/layer31/checkpoint_step_0061035.pt",
+    "32": "/root/autodl-tmp/Transcoder/granite-3.3-8b-instruct/layer32/checkpoint_step_0061035.pt"
+  },
+  "formation_layers": [
+    29,
+    30,
+    31,
+    32
+  ],
+  "decision_layer": 36,
+  "train_pairs": 200,
+  "heldout_pairs": 300,
+  "alignment_policy": "allow-unequal",
+  "selection": "train aligned S=(delta<0,beta<0), E=(delta>0,beta>0); per-layer top |kappa| then global equal budget",
+  "budget": 20,
+  "per_layer_top_k": 20,
+  "intervention": "heldout paired activation swap into actual HF MLP output",
+  "S_to_clean": "clean prompt selected z <- paired corrupt z",
+  "S_to_corrupt": "corrupt prompt selected z <- paired clean z",
+  "direction": "unit mean(clean - corrupt) decision-layer output on train",
+  "seed": 20260803
+}

@@ -34,10 +34,15 @@ from typing import Any, Iterator, Sequence
 import torch
 
 
-PROJECT_ROOT = Path(".")
-SRC_ROOT = PROJECT_ROOT / "src"
-if str(SRC_ROOT) not in sys.path:
-    sys.path.insert(0, str(SRC_ROOT))
+from release_paths import (  # noqa: E402
+    D1_REFERENCE,
+    DEFAULT_CROSS_MODEL_OUTPUT_ROOT,
+    FROZEN_CANDIDATES,
+    MISTRAL_SYSTEM_PATH,
+    MODEL_PATHS,
+    QWEN35_REFERENCE,
+    VECTOR_PATHS,
+)
 
 from multidomain.common import TOOL_SCHEMAS  # noqa: E402
 
@@ -60,17 +65,7 @@ finally:
     importlib.util.find_spec = _ORIGINAL_FIND_SPEC
 
 
-SOURCE_PATH = PROJECT_ROOT / "outputs" / "implicit_intent_transfer" / "implicit_intent_oversampled_600.jsonl"
-DEFAULT_OUTPUT_ROOT = PROJECT_ROOT / "outputs" / "implicit_intent_transfer" / "cross_model_removal_20260726"
-QWEN35_REFERENCE = PROJECT_ROOT / "results" / "section6_generalization" / "qwen35_9b" / "datasets" / "clean_1.txt"
-MISTRAL_SYSTEM_PATH = (
-    PROJECT_ROOT
-    / "results"
-    / "section6_generalization"
-    / "mistral_3p2_24b"
-    / "converted_dataset"
-    / "tokenizer_verification.json"
-)
+DEFAULT_OUTPUT_ROOT = DEFAULT_CROSS_MODEL_OUTPUT_ROOT
 RANDOM_SEED = 20260726
 DOMAINS = ("D1", "D3", "D4", "D5")
 PATTERNS = ("P1", "P2", "P3", "P4", "P5")
@@ -92,8 +87,8 @@ SPECS: dict[str, ModelSpec] = {
     "qwen3_4b": ModelSpec(
         key="qwen3_4b",
         display_name="Qwen3-4B",
-        model_path=Path("/root/autodl-tmp/Qwen/Qwen3-4B"),
-        vector_path=PROJECT_ROOT / "results" / "runs" / "v4_full_matrix_qwen3_20260724T183837Z" / "Qwen3-4B" / "native_vectors" / "D1_L24_pre.pt",
+        model_path=MODEL_PATHS["qwen3_4b"],
+        vector_path=VECTOR_PATHS["qwen3_4b"],
         tool_token_text="<tool_call>",
         renderer="qwen3_source",
         batch_size=8,
@@ -101,8 +96,8 @@ SPECS: dict[str, ModelSpec] = {
     "qwen3_8b": ModelSpec(
         key="qwen3_8b",
         display_name="Qwen3-8B",
-        model_path=Path("/root/autodl-tmp/Qwen/Qwen3-8B"),
-        vector_path=PROJECT_ROOT / "results" / "runs" / "rebuttal_scaffold_components_d1_v4_full_20260725" / "native_vectors" / "RTF_L24_pre.pt",
+        model_path=MODEL_PATHS["qwen3_8b"],
+        vector_path=VECTOR_PATHS["qwen3_8b"],
         tool_token_text="<tool_call>",
         renderer="qwen3_source",
         batch_size=6,
@@ -110,8 +105,8 @@ SPECS: dict[str, ModelSpec] = {
     "qwen3_14b": ModelSpec(
         key="qwen3_14b",
         display_name="Qwen3-14B",
-        model_path=Path("/root/autodl-tmp/Qwen/Qwen3-14B"),
-        vector_path=PROJECT_ROOT / "results" / "runs" / "v4_full_matrix_qwen3_20260724T183837Z" / "Qwen3-14B" / "native_vectors" / "D1_L24_pre.pt",
+        model_path=MODEL_PATHS["qwen3_14b"],
+        vector_path=VECTOR_PATHS["qwen3_14b"],
         tool_token_text="<tool_call>",
         renderer="qwen3_source",
         batch_size=4,
@@ -119,8 +114,8 @@ SPECS: dict[str, ModelSpec] = {
     "qwen35_4b": ModelSpec(
         key="qwen35_4b",
         display_name="Qwen3.5-4B",
-        model_path=Path("/root/autodl-tmp/Qwen/Qwen3.5-4B"),
-        vector_path=PROJECT_ROOT / "results" / "natural_trajectory" / "cross_family_tau2_20260726" / "qwen35_4b" / "coding_vector_bundle.pt",
+        model_path=MODEL_PATHS["qwen35_4b"],
+        vector_path=VECTOR_PATHS["qwen35_4b"],
         tool_token_text="<tool_call>",
         renderer="qwen35_source_style",
         batch_size=8,
@@ -128,8 +123,8 @@ SPECS: dict[str, ModelSpec] = {
     "qwen35_9b": ModelSpec(
         key="qwen35_9b",
         display_name="Qwen3.5-9B",
-        model_path=Path("/root/autodl-tmp/Qwen/Qwen3.5-9B"),
-        vector_path=PROJECT_ROOT / "results" / "natural_trajectory" / "cross_family_tau2_20260726" / "qwen35_9b" / "coding_vector_bundle.pt",
+        model_path=MODEL_PATHS["qwen35_9b"],
+        vector_path=VECTOR_PATHS["qwen35_9b"],
         tool_token_text="<tool_call>",
         renderer="qwen35_source_style",
         batch_size=6,
@@ -137,8 +132,8 @@ SPECS: dict[str, ModelSpec] = {
     "mistral": ModelSpec(
         key="mistral",
         display_name="Mistral-Small-3.2-24B-Instruct-2506",
-        model_path=Path("/root/autodl-tmp/Mistral/Mistral-Small-3.2-24B-Instruct-2506"),
-        vector_path=PROJECT_ROOT / "results" / "natural_trajectory" / "cross_family_tau2_20260726" / "mistral" / "coding_vector_bundle.pt",
+        model_path=MODEL_PATHS["mistral"],
+        vector_path=VECTOR_PATHS["mistral"],
         tool_token_text="[TOOL_CALLS]",
         renderer="mistral_native",
         batch_size=2,
@@ -146,8 +141,8 @@ SPECS: dict[str, ModelSpec] = {
     "granite": ModelSpec(
         key="granite",
         display_name="Granite-3.3-8B-Instruct",
-        model_path=Path("/root/autodl-tmp/Granite/granite-3.3-8b-instruct"),
-        vector_path=PROJECT_ROOT / "results" / "natural_trajectory" / "cross_family_tau2_20260726" / "granite" / "coding_vector_bundle.pt",
+        model_path=MODEL_PATHS["granite"],
+        vector_path=VECTOR_PATHS["granite"],
         tool_token_text="<|tool_call|>",
         renderer="granite_native",
         batch_size=6,
@@ -168,6 +163,12 @@ GRANITE_SYSTEM = (
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--models", nargs="+", choices=sorted(SPECS), default=list(SPECS))
+    parser.add_argument(
+        "--source-path",
+        type=Path,
+        default=FROZEN_CANDIDATES,
+        help="Frozen 600-item JSONL included in this release by default.",
+    )
     parser.add_argument("--output-root", type=Path, default=DEFAULT_OUTPUT_ROOT)
     parser.add_argument("--batch-size", type=int, default=0, help="Override the conservative model-specific batch size.")
     parser.add_argument("--limit", type=int, default=0, help="Optional smoke-test cap on source candidates; zero uses all 600.")
@@ -206,8 +207,7 @@ def clear_cuda() -> None:
 
 
 def parse_d1_tool() -> dict[str, Any]:
-    reference = PROJECT_ROOT / "datasets" / "train" / "clean" / "apps_python_1.txt"
-    text = reference.read_text(encoding="utf-8")
+    text = D1_REFERENCE.read_text(encoding="utf-8")
     payload = text.split("<tools>\n", 1)[1].split("\n</tools>", 1)[0]
     return json.loads(payload)
 
@@ -498,7 +498,7 @@ def run_model(spec: ModelSpec, args: argparse.Namespace) -> dict[str, Any]:
     if not spec.model_path.exists() or not spec.vector_path.exists():
         raise FileNotFoundError(f"Missing model or vector for {spec.key}")
 
-    source_rows = read_jsonl(SOURCE_PATH)
+    source_rows = read_jsonl(args.source_path)
     if args.limit:
         source_rows = source_rows[: args.limit]
     tools_by_domain = source_tools()
@@ -552,8 +552,8 @@ def run_model(spec: ModelSpec, args: argparse.Namespace) -> dict[str, Any]:
         "model_path": str(spec.model_path),
         "renderer": spec.renderer,
         "source_candidates": len(prepared),
-        "source_path": str(SOURCE_PATH),
-        "source_sha256": sha256_file(SOURCE_PATH),
+        "source_path": str(args.source_path),
+        "source_sha256": sha256_file(args.source_path),
         "tool_token": token_info,
         "layer": layer,
         "hook_kind": hook_kind,

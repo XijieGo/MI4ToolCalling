@@ -1,0 +1,46 @@
+{
+  "train": {
+    "clean": {
+      "n": 200,
+      "mean_tool_logit": 32.021873474121094,
+      "mean_tool_probability": 0.9977309703826904,
+      "mean_top1_margin": 11.336250305175781,
+      "mean_log_odds": 10.635828971862793,
+      "tool_call_top1_rate": 1.0,
+      "median_tool_rank": 1.0,
+      "top10_rate": 1.0
+    },
+    "corrupt": {
+      "n": 200,
+      "mean_tool_logit": 21.927499771118164,
+      "mean_tool_probability": 0.0027693230658769608,
+      "mean_top1_margin": -15.373125076293945,
+      "mean_log_odds": -15.375033378601074,
+      "tool_call_top1_rate": 0.0,
+      "median_tool_rank": 13.0,
+      "top10_rate": 0.38999998569488525
+    }
+  },
+  "heldout": {
+    "clean": {
+      "n": 300,
+      "mean_tool_logit": 31.923749923706055,
+      "mean_tool_probability": 0.9992521405220032,
+      "mean_top1_margin": 11.5024995803833,
+      "mean_log_odds": 10.783456802368164,
+      "tool_call_top1_rate": 1.0,
+      "median_tool_rank": 1.0,
+      "top10_rate": 1.0
+    },
+    "corrupt": {
+      "n": 300,
+      "mean_tool_logit": 23.114166259765625,
+      "mean_tool_probability": 0.007438987027853727,
+      "mean_top1_margin": -12.557916641235352,
+      "mean_log_odds": -12.560544967651367,
+      "tool_call_top1_rate": 0.0,
+      "median_tool_rank": 9.0,
+      "top10_rate": 0.6433333158493042
+    }
+  }
+}

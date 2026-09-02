@@ -1,0 +1,34 @@
+{
+  "model_path": "/root/autodl-tmp/Qwen/Qwen3.5-4B",
+  "dataset_root": "/root/autodl-tmp/MI4ToolCalling/datasets/v5_model_specific_balanced/qwen35_4b",
+  "manifest": "/root/autodl-tmp/MI4ToolCalling/datasets/v5_model_specific_balanced/qwen35_4b/manifest.jsonl",
+  "manifest_sha256": "495b20f6a0046f64c990413bb31514c19189521da054fa02c5382b466d568103",
+  "transcoder_checkpoints": {
+    "28": "/root/autodl-tmp/Transcoder/Qwen3.5-4B/checkpoint_step_0070000.pt",
+    "29": "/root/autodl-tmp/Transcoder/Qwen3.5-4B/checkpoint_step_0065000.pt"
+  },
+  "transcoder_steps": {
+    "28": 70000,
+    "29": 65000
+  },
+  "layers_analyzed": [
+    28,
+    29
+  ],
+  "decision_layer": 29,
+  "train_pairs": 200,
+  "heldout_pairs": 300,
+  "tool_call_token_id": 248058,
+  "tool_call_token_text": "<tool_call>",
+  "dtype": "bfloat16",
+  "batch_size": 8,
+  "feature_batch_size": 16,
+  "top_k_per_category_per_layer": 20,
+  "causal_k": 5,
+  "seed": 20260802,
+  "vector_fit": "mean(final decoder-block state clean - corrupt) at L29 over the 200 train pairs",
+  "feature_activation": "relu(F.linear(MLP pre-hook input, W_enc, b_enc))",
+  "kappa": "(mean_clean_activation - mean_corrupt_activation) * (W_dec @ unit_mu_delta)",
+  "causal_intervention": "add selected decoder contribution difference to the actual HF MLP output at the final prompt position",
+  "heldout_not_used_for_selection": true
+}

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the 200-item implicit-intent (no execution/analysis verb) request set.
+"""Historical reconstruction of the implicit-intent source collection.
 
 Rule-based only: no LLM is called anywhere in this script.  Naturalness comes
 from real human-written text already in the paper's own corpora (APPS
@@ -7,6 +7,11 @@ docstrings, FEVER claims, Spider's `question` column, Vectrix email bodies).
 The only synthesis is (a) picking unused source records, (b) wrapping them in
 a small fixed bank of non-imperative carrier phrases, and (c) rejecting any
 render that contains a banned verb anywhere in the string.
+
+This script is retained for provenance, but its D3--D5 raw source pool was an
+internal construction input and is deliberately not a prerequisite for a
+standalone rerun.  Start from ``implicit_intent_oversampled_600.jsonl`` and
+``run_cross_model_removal.py`` for the released experiment.
 """
 
 from __future__ import annotations
@@ -18,13 +23,15 @@ import re
 import sys
 from pathlib import Path
 
-PROJECT_ROOT = Path(".")
-SRC_ROOT = PROJECT_ROOT / "src"
-sys.path.insert(0, str(SRC_ROOT))
+from release_paths import ARTIFACT_DIR as OUT_DIR
+from release_paths import REPO_ROOT as PROJECT_ROOT
+from release_paths import SRC_ROOT
+
+if str(SRC_ROOT) not in sys.path:
+    sys.path.insert(0, str(SRC_ROOT))
 
 from multidomain.common import TOOL_SCHEMAS, build_template  # noqa: E402
 
-OUT_DIR = Path(__file__).resolve().parent
 SEED = 42
 N_PER_PATTERN = 30  # oversample; final selection keeps 10/pattern that are also baseline-positive
 

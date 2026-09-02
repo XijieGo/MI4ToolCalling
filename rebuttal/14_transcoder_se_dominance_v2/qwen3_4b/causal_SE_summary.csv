@@ -1,0 +1,5 @@
+group,side,transfer,n,feature_count,layers,mean_delta_m,mean_tool_logit_delta,mean_gate_delta,top1_flip_rate,margin_boundary_flip_rate,raw_tool_logit_midpoint_flip_rate,raw_tool_logit_reached_paired_target_rate,intervened_tool_top1_rate
+S_top20,clean,corrupt_to_clean,300,20,"{25: 8, 24: 3, 23: 9}",-0.6320833333333333,0.11,-6.17164616925021,0.01,0.006666666666666667,0.0,0.0,0.99
+S_top20,corrupt,clean_to_corrupt,300,20,"{25: 8, 24: 3, 23: 9}",-0.8733333333333333,-0.8745833333333334,5.27655356725057,0.0,0.0,0.0,0.0,0.0
+E_top20,clean,corrupt_to_clean,300,20,"{23: 8, 24: 4, 25: 6, 22: 2}",-0.665,0.027083333333333334,-3.713833542143305,0.02,0.016666666666666666,0.0,0.0,0.98
+E_top20,corrupt,clean_to_corrupt,300,20,"{23: 8, 24: 4, 25: 6, 22: 2}",3.6879166666666667,1.73625,2.923399117787679,0.0,0.0,0.0,0.0,0.0

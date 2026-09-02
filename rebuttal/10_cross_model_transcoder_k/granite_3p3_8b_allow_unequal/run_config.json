@@ -1,0 +1,41 @@
+{
+  "experiment": "cross_model_paper_transcoder_K",
+  "model_key": "granite_3p3_8b",
+  "model_label": "Granite-3.3-8B-Instruct",
+  "model_path": "/root/autodl-tmp/Granite/granite-3.3-8b-instruct",
+  "dataset_root": "/root/autodl-tmp/MI4ToolCalling/datasets/v5_model_specific_balanced/granite_3p3_8b",
+  "dataset_version": "v5_model_specific_balanced",
+  "transcoder_root": "/root/autodl-tmp/Transcoder/granite-3.3-8b-instruct",
+  "transcoder_checkpoints": {
+    "29": "/root/autodl-tmp/Transcoder/granite-3.3-8b-instruct/layer29/checkpoint_step_0061035.pt",
+    "30": "/root/autodl-tmp/Transcoder/granite-3.3-8b-instruct/layer30/checkpoint_step_0061035.pt",
+    "31": "/root/autodl-tmp/Transcoder/granite-3.3-8b-instruct/layer31/checkpoint_step_0061035.pt",
+    "32": "/root/autodl-tmp/Transcoder/granite-3.3-8b-instruct/layer32/checkpoint_step_0061035.pt"
+  },
+  "model_layer_count": 40,
+  "reference_layer": 36,
+  "available_transcoder_layers": [
+    29,
+    30,
+    31,
+    32
+  ],
+  "available_layer_relation": "reference layer is outside the available Transcoder coverage",
+  "alignment_policy": "allow-unequal",
+  "full_train_pairs_before_alignment": 200,
+  "full_heldout_pairs_before_alignment": 300,
+  "train_token_length_mismatch_count": 40,
+  "heldout_token_length_mismatch_count": 60,
+  "train_pairs": 200,
+  "heldout_pairs": 300,
+  "tool_call_marker": "<|tool_call|>",
+  "tool_call_token_id": 49154,
+  "direction": "unit mean(clean - corrupt) reference-layer output over train-200",
+  "paper_K_definition": "sum(abs(kappa) by activation side over all features; no top-k or C filter)",
+  "table3_topk_definition": "aligned mask; top-k abs(train kappa) per layer; global top-k per category; heldout frozen validation",
+  "top_k": 20,
+  "dtype": "bfloat16",
+  "batch_size": 8,
+  "feature_batch_size": 16,
+  "direction_norm_before_unit": 64.98035430908203
+}

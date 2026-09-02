@@ -1,0 +1,22 @@
+{
+  "clean": {
+    "n": 300,
+    "mean_tool_logit": 22.844999313354492,
+    "mean_tool_probability": 0.6854533553123474,
+    "mean_top1_margin": 1.375,
+    "mean_log_odds": 0.9226160645484924,
+    "tool_call_top1_rate": 0.996666669845581,
+    "median_tool_rank": 1.0,
+    "top10_rate": 1.0
+  },
+  "corrupt": {
+    "n": 300,
+    "mean_tool_logit": 17.388957977294922,
+    "mean_tool_probability": 0.01173816341906786,
+    "mean_top1_margin": -5.175624847412109,
+    "mean_log_odds": -5.703904628753662,
+    "tool_call_top1_rate": 0.0,
+    "median_tool_rank": 12.0,
+    "top10_rate": 0.44333332777023315
+  }
+}

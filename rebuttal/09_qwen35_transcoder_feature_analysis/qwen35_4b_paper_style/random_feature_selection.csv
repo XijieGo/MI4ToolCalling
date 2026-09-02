@@ -1,0 +1,6 @@
+layer,feature_idx,category,train_delta_activation,heldout_delta_activation,beta_mu,train_kappa,heldout_kappa,train_abs_kappa,heldout_abs_kappa,train_active_rate_clean,train_active_rate_corrupt,heldout_active_rate_clean,heldout_active_rate_corrupt
+28,14768,random_layer_matched,0.0,0.0,0.02727152220904827,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+28,36123,random_layer_matched,0.0,0.0,-0.007295208517462015,-0.0,-0.0,0.0,0.0,0.0,0.0,0.0,0.0
+28,1591,random_layer_matched,0.0,0.0,-0.045513782650232315,-0.0,-0.0,0.0,0.0,0.0,0.0,0.0,0.0
+28,12969,random_layer_matched,0.0,0.0,0.013967355713248253,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+29,13818,random_layer_matched,0.0,0.0,0.034107618033885956,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0

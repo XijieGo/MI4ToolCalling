@@ -1,0 +1,4 @@
+group,side,direction,n,feature_count,mean_intervened_tool_logit,mean_tool_logit_delta,mean_intervened_best_non_tool_logit,mean_top1_margin_delta,mean_log_odds_delta,mean_tool_logit_gap_progress,intervened_tool_top1_rate,top1_flip_rate,margin_boundary_flip_rate,raw_tool_logit_midpoint_flip_rate,raw_tool_logit_reached_paired_target_rate,mean_gate_score_delta
+suppressor_top20,corrupt,ablate,240,20,15.478385416666667,0.09348958333333333,18.638020833333332,0.22057291666666667,0.23334062099456787,0.022490183574143275,0.0,0.0,0.0,0.0,0.0,2.502793471018473
+driver_top20,clean,ablate,240,20,19.723958333333332,0.121875,16.8109375,-0.06536458333333334,0.016594529151916504,-0.036893379208739654,1.0,0.0,0.0,0.0,0.0,-1.1718523104985554
+random_layer_matched,corrupt,ablate,240,20,15.3828125,-0.0020833333333333333,18.7640625,-0.0010416666666666667,-0.0002997795740763346,-0.0017693092954193666,0.0,0.0,0.0,0.0,0.0,0.004640769958496094

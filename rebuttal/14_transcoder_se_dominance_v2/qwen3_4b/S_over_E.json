@@ -1,0 +1,9 @@
+{
+  "S_to_clean_delta_m": -0.6320833333333333,
+  "E_to_clean_delta_m": -0.665,
+  "S_to_corrupt_delta_m": -0.8733333333333333,
+  "E_to_corrupt_delta_m": 3.6879166666666667,
+  "S_over_E": 0.3458409112663922,
+  "model_key": "qwen3_4b",
+  "model_label": "Qwen3-4B"
+}

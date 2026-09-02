@@ -13,6 +13,10 @@ venv/
 outputs/
 wandb/
 
+# Fresh implicit-intent reruns are intentionally separate from frozen rebuttal
+# evidence. They should not be mistaken for release inputs.
+rebuttal/06_implicit_intent_tool_calls/artifacts/reruns/
+
 # Generated experiment outputs are not release inputs.
 results/
 

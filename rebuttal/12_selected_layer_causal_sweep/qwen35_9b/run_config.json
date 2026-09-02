@@ -1,0 +1,28 @@
+{
+  "experiment": "selected_layer_transcoder_causal_k_sweep",
+  "model_key": "qwen35_9b",
+  "model_label": "Qwen3.5-9B",
+  "model_path": "/root/autodl-tmp/Qwen/Qwen3.5-9B",
+  "dataset_root": "/root/autodl-tmp/MI4ToolCalling/datasets/v5_model_specific_balanced/qwen35_9b",
+  "transcoder_checkpoint": "/root/autodl-tmp/Transcoder/Qwen3.5-9B/layer28/checkpoint_step_0061035.pt",
+  "target_layer": 28,
+  "reference_layer": 28,
+  "train_pairs": 200,
+  "heldout_pairs": 300,
+  "full_train_pairs_before_alignment": 200,
+  "full_heldout_pairs_before_alignment": 300,
+  "train_token_length_mismatch_count": 0,
+  "heldout_token_length_mismatch_count": 0,
+  "k_values": [
+    1,
+    5,
+    10,
+    20
+  ],
+  "feature_selection": "train-frozen aligned suppressor delta<0,beta<0 and driver delta>0,beta>0; descending abs(kappa) within target layer",
+  "primary_intervention": "heldout corrupt->clean zero-ablation and paired feature activation replacement",
+  "logit_boundary": "tool_logit - best_non_tool_logit crosses 0",
+  "raw_logit_flip": "tool-call logit crosses paired clean/corrupt midpoint",
+  "dtype": "bfloat16",
+  "seed": 20260802
+}
