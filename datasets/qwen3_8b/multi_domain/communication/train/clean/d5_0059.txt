@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Post this email message shown below:
+To: recipient-1e669746055d@mail.example
+Subject: Re: Backend velocity concerns — need to talk
+Body: Derek, Darius — I can see there's tension here and I don't think an email thread is going to resolve it. I'd like to facilitate a conversation between you two. Monday works — I'll book the Pecan room for an hour.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

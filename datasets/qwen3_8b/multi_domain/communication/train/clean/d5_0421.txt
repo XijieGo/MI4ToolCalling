@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Mail this email message shown below:
+To: recipient-d856370893e8@mail.example
+Subject: Debugging masterclass recap: serialization layer fix
+Body: Taylor, Nia, Ryan — Great session today. Here's the recap of the production debugging exercise: **Problem:** Intermittent data corruption in the serialization layer **Root cause:** Race condition in concurrent write path — two threads writing to the same buffer **Fix:** Lock-free queue with compare-and-swap **Lesson:** Always check concurrent access patterns before assuming single-threaded safety Ryan — your instinct to check the thread dump was right. That's exactly where experienced engineers start.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

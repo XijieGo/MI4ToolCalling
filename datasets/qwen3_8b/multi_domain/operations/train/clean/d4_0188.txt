@@ -1,0 +1,29 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"run_sql","description":"Run query.","parameters":{"type":"object","properties":{"database":{"type":"string"},"query":{"type":"string"}},"required":["database","query"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Execute the completed SQL query shown below:
+Database: e_government
+Schema:
+  organizations(organization_id, date_formed, organization_name, uk_vat_number)
+  organization_contact_individuals(individual_id, organization_id, date_contact_from, date_contact_to)
+  individuals(individual_id, individual_first_name, individual_middle_name, inidividual_phone, individual_email, individual_address, individual_last_name)
+SQL:
+  SELECT t3.individual_last_name FROM organizations AS t1 JOIN organization_contact_individuals AS t2 ON t1.organization_id = t2.organization_id JOIN individuals AS t3 ON t2.individual_id = t3.individual_id WHERE t1.uk_vat_number = (SELECT max(uk_vat_number) FROM organizations) ORDER BY t2.date_contact_to ASC LIMIT 1
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

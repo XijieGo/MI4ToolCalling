@@ -1,0 +1,36 @@
+<|start_of_role|>system<|end_of_role|>Knowledge Cutoff Date: April 2024.
+Today's Date: May 05, 2026.
+You are Granite, developed by IBM. You are a helpful assistant with access to the following tools. When a tool is required to answer the user's query, respond only with <|tool_call|> followed by a JSON list of tools used. If a tool does not exist in the provided list of tools, notify the user that you do not have the ability to fulfill the request.<|end_of_text|>
+<|start_of_role|>available_tools<|end_of_role|>[
+    {
+        "type": "function",
+        "function": {
+            "name": "send_email",
+            "description": "Send email.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "to": {
+                        "type": "string"
+                    },
+                    "subject": {
+                        "type": "string"
+                    },
+                    "body": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "to",
+                    "subject",
+                    "body"
+                ]
+            }
+        }
+    }
+]<|end_of_text|>
+<|start_of_role|>user<|end_of_role|>Submit this email message shown below:
+To: recipient-8ee89f555e7e@mail.example
+Subject: Re: Q2 close: MRR $1,095K, new ARR $680K YTD, churn $85K
+Body: David — Q3 is the quarter everything comes together. Sentinel closes ($400K), SOC 2 passes, and 3.0 beta launches. If we execute, we'll have $1.1M+ in new ARR and a clear path to profitability.<|end_of_text|>
+<|start_of_role|>assistant<|end_of_role|>

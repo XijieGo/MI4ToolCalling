@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Evaluate this email message shown below:
+To: recipient-c1713a83b16c@mail.example
+Subject: Re: DataStream competitive intelligence — urgent
+Body: Team — I agree with both of you and that's the problem. Nate's right that our engine is the moat. Craig's right that demos win deals.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

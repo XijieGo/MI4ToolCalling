@@ -1,0 +1,28 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"run_sql","description":"Run query.","parameters":{"type":"object","properties":{"database":{"type":"string"},"query":{"type":"string"}},"required":["database","query"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Detail the completed SQL query shown below:
+Database: insurance_fnol
+Schema:
+  claims(Claim_ID, FNOL_ID, Effective_Date)
+  settlements(Settlement_ID, Claim_ID, Effective_Date, Settlement_Amount)
+SQL:
+  SELECT t1.Effective_Date FROM claims AS t1 JOIN settlements AS t2 ON t1.claim_id = t2.claim_id GROUP BY t1.claim_id ORDER BY sum(t2.settlement_amount) DESC LIMIT 1
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

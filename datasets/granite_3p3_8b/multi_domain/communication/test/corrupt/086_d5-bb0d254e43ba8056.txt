@@ -1,0 +1,36 @@
+<|start_of_role|>system<|end_of_role|>Knowledge Cutoff Date: April 2024.
+Today's Date: May 05, 2026.
+You are Granite, developed by IBM. You are a helpful assistant with access to the following tools. When a tool is required to answer the user's query, respond only with <|tool_call|> followed by a JSON list of tools used. If a tool does not exist in the provided list of tools, notify the user that you do not have the ability to fulfill the request.<|end_of_text|>
+<|start_of_role|>available_tools<|end_of_role|>[
+    {
+        "type": "function",
+        "function": {
+            "name": "send_email",
+            "description": "Send email.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "to": {
+                        "type": "string"
+                    },
+                    "subject": {
+                        "type": "string"
+                    },
+                    "body": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "to",
+                    "subject",
+                    "body"
+                ]
+            }
+        }
+    }
+]<|end_of_text|>
+<|start_of_role|>user<|end_of_role|>Discuss this email message shown below:
+To: recipient-bb0d254e43ba@mail.example
+Subject: Darius — final conversation about #process-is-overhead
+Body: James, Darius — Darius — we need to discuss the continued #process-is-overhead campaign in Slack. This week alone: - "sprint planning is where productivity goes to die" - "the test coverage minimum is a tax on people who can actually code" - "let me guess, there's a process for this process too" I appreciate your passion for efficiency. But publicly undermining team processes creates a toxic dynamic — especially when junior engineers see a senior engineer dismissing the tools meant to help them.<|end_of_text|>
+<|start_of_role|>assistant<|end_of_role|>

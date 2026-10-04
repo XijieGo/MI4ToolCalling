@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Mail this email message shown below:
+To: recipient-a975daeeb8b0@mail.example
+Subject: November actuals: MRR $1,287K — best month ever, 3.7% MoM 📊
+Body: Marcus, Rachel — November financials: - **MRR: $1,287K** — best month in company history - **MoM growth: 3.7%** — accelerating - **Burn: $1.6M** — still declining - **Runway: 22.1 months** Sentinel revenue is now fully in the numbers. Combined with Meridian expansion, enterprise is 34% of total revenue. Profitability by Q2 2026 is on track.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Score this email message shown below:
+To: recipient-c19ba4e74d83@mail.example
+Subject: Sentinel RFP: engineering sections need your input
+Body: Jamie, Raj, Andre — The Sentinel RFP has substantial technical sections that need engineering input: - **Jamie**: Security & compliance (12 pages) — they're asking about encryption, access controls, incident response - **Raj**: Architecture & scalability — they want to know about multi-tenant isolation, uptime guarantees, disaster recovery - **Andre**: SOC 2 section — reference our Q4 audit timeline and current controls Draft input needed by next Friday. Trish is coordinating the full response. Craig
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

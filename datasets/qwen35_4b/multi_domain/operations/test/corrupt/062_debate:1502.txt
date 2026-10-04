@@ -1,0 +1,45 @@
+<|im_start|>system
+# Tools
+
+You have access to the following functions:
+
+<tools>
+{"type": "function", "function": {"name": "run_sql", "description": "Run query.", "parameters": {"type": "object", "properties": {"database": {"type": "string"}, "query": {"type": "string"}}, "required": ["database", "query"]}}}
+</tools>
+
+If you choose to call a function ONLY reply in the following format with NO suffix:
+
+<tool_call>
+<function=example_function_name>
+<parameter=example_parameter_1>
+value_1
+</parameter>
+<parameter=example_parameter_2>
+This is the value for the second parameter
+that can span
+multiple lines
+</parameter>
+</function>
+</tool_call>
+
+<IMPORTANT>
+Reminder:
+- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags
+- Required parameters MUST be specified
+- You may provide optional reasoning for your function call in natural language BEFORE the function call, but NOT after
+- If there is no function call available, answer the question like normal with your current knowledge and do not tell the user about function calls
+</IMPORTANT><|im_end|>
+<|im_start|>user
+Detail the completed SQL query shown below:
+Database: debate
+Schema:
+  debate_people(Debate_ID, Affirmative, Negative, If_Affirmative_Win)
+  debate(Debate_ID, Date, Venue, Num_of_Audience)
+  people(People_ID, District, Name, Party, Age)
+SQL:
+  SELECT T3.Name , T2.Date , T2.Venue FROM debate_people AS T1 JOIN debate AS T2 ON T1.Debate_ID = T2.Debate_ID JOIN people AS T3 ON T1.Negative = T3.People_ID ORDER BY T3.Name ASC<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

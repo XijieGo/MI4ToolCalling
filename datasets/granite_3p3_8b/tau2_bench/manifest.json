@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "model_key": "granite_3p3_8b",
+  "source_domain": "tau2_retail",
+  "candidate_sets": {
+    "native-call-200.jsonl": {
+      "n": 200,
+      "source_sha256": "befd9df0733bed14b1805fa1b49311f8e2f6464d387bc2426562f2588d1d1f13",
+      "output_sha256": "f7f8d36402a2dc8339c8d37ba6681dbb002699de7f588942097eb276e1fa295f"
+    },
+    "native-text-200.jsonl": {
+      "n": 200,
+      "source_sha256": "84ff80394a6a9ce8c41a15cd58ffdc02cb04a6a76e491967d68674868b6d2928",
+      "output_sha256": "613dab0db4fcc570a1c9dcd71b89ae03e83b7362e76d52ed0cd43f49010bdffb"
+    }
+  },
+  "selection_rule": "Re-run the current model baseline on both frozen candidate sets before intervention; do not estimate the direction on tau2."
+}

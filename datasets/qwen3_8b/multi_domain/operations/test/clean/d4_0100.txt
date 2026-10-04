@@ -1,0 +1,28 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"run_sql","description":"Run query.","parameters":{"type":"object","properties":{"database":{"type":"string"},"query":{"type":"string"}},"required":["database","query"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Launch the completed SQL query shown below:
+Database: cre_Doc_Tracking_DB
+Schema:
+  documents_to_be_destroyed(Document_ID, Destruction_Authorised_by_Employee_ID, Destroyed_by_Employee_ID, Planned_Destruction_Date, Actual_Destruction_Date, Other_Details)
+  employees(Employee_ID, Role_Code, Employee_Name, Gender_MFU, Date_of_Birth, Other_Details)
+SQL:
+  SELECT T2.employee_name , T3.employee_name FROM Documents_to_be_destroyed AS T1 JOIN Employees AS T2 ON T1.Destruction_Authorised_by_Employee_ID = T2.employee_id JOIN Employees AS T3 ON T1.Destroyed_by_Employee_ID = T3.employee_id;
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Score this email message shown below:
+To: recipient-4655336b66e2@mail.example
+Subject: Re: SOC 2 Gap Analysis — URGENT
+Body: Andre — good work surfacing this. It's exactly the kind of thing that can derail our enterprise push if we don't get ahead of it. James — let's discuss Wednesday.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

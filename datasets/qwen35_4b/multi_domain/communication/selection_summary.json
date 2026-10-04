@@ -1,0 +1,93 @@
+{
+  "model": "qwen35_4b",
+  "domain": "communication",
+  "n_source_rows": 500,
+  "n_unique_body": 500,
+  "n_eligible": 500,
+  "n_selected": 100,
+  "target": 100,
+  "split": "test",
+  "clean_verb_counts": {
+    "dispatch": 20,
+    "mail": 20,
+    "post": 20,
+    "send": 20,
+    "submit": 20
+  },
+  "corrupt_verb_counts": {
+    "score": 20,
+    "describe": 20,
+    "discuss": 20,
+    "evaluate": 20,
+    "rate": 20
+  },
+  "verb_pair_counts": {
+    "dispatch/score": 4,
+    "mail/score": 4,
+    "post/score": 4,
+    "send/score": 4,
+    "submit/score": 4,
+    "dispatch/describe": 4,
+    "dispatch/discuss": 4,
+    "dispatch/evaluate": 4,
+    "dispatch/rate": 4,
+    "mail/describe": 4,
+    "mail/discuss": 4,
+    "mail/evaluate": 4,
+    "mail/rate": 4,
+    "post/describe": 4,
+    "post/discuss": 4,
+    "post/evaluate": 4,
+    "post/rate": 4,
+    "send/describe": 4,
+    "send/discuss": 4,
+    "send/evaluate": 4,
+    "send/rate": 4,
+    "submit/describe": 4,
+    "submit/discuss": 4,
+    "submit/evaluate": 4,
+    "submit/rate": 4
+  },
+  "call_counts": {
+    "send": {
+      "calls": 500,
+      "n": 500
+    },
+    "mail": {
+      "calls": 500,
+      "n": 500
+    },
+    "dispatch": {
+      "calls": 500,
+      "n": 500
+    },
+    "submit": {
+      "calls": 500,
+      "n": 500
+    },
+    "post": {
+      "calls": 500,
+      "n": 500
+    },
+    "describe": {
+      "calls": 0,
+      "n": 500
+    },
+    "discuss": {
+      "calls": 0,
+      "n": 500
+    },
+    "rate": {
+      "calls": 0,
+      "n": 500
+    },
+    "score": {
+      "calls": 43,
+      "n": 500
+    },
+    "evaluate": {
+      "calls": 0,
+      "n": 500
+    }
+  }
+}

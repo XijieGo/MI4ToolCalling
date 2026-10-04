@@ -1,0 +1,64 @@
+<|im_start|>system
+# Tools
+
+You have access to the following functions:
+
+<tools>
+{"type": "function", "function": {"name": "get_data_usage", "description": "Retrieves current billing cycle data usage for a line, including data\n\nrefueling amount, data limit, and cycle end date.", "parameters": {"properties": {"customer_id": {"description": "ID of the customer who owns the line.", "title": "Customer Id", "type": "string"}, "line_id": {"description": "ID of the line to check usage for.", "title": "Line Id", "type": "string"}}, "required": ["customer_id", "line_id"], "title": "parameters", "type": "object"}}}
+</tools>
+
+If you choose to call a function ONLY reply in the following format with NO suffix:
+
+<tool_call>
+<function=example_function_name>
+<parameter=example_parameter_1>
+value_1
+</parameter>
+<parameter=example_parameter_2>
+This is the value for the second parameter
+that can span
+multiple lines
+</parameter>
+</function>
+</tool_call>
+
+<IMPORTANT>
+Reminder:
+- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags
+- Required parameters MUST be specified
+- You may provide optional reasoning for your function call in natural language BEFORE the function call, but NOT after
+- If there is no function call available, answer the question like normal with your current knowledge and do not tell the user about function calls
+</IMPORTANT>
+
+You are a telecom support agent. Use the provided functions when the user asks you to perform an account action. When the user asks only to discuss, explain, review, summarize, or describe an action, answer in text without using a function.<|im_end|>
+<|im_start|>assistant
+Yes, that's exactly the right approach. Even though the APN settings appear to be set, resetting them to the carrier defaults often resolves MMS issues. After resetting, a reboot is required for the changes to take full effect.
+
+Please proceed with these steps:
+
+1. **Reset APN settings**: Run `reset_apn_settings` on your phone to restore the default APN settings.
+
+2. **Reboot your device**: After resetting, run `reboot_device` to restart your phone completely. This is necessary for the new APN settings to apply.
+
+Once your phone has finished rebooting, let me know and we'll check your network status and test MMS again. I'm here to guide you through each step carefully.<|im_end|>
+<|im_start|>user
+I have reset your APN settings to the default and rebooted your device. Your phone still shows excellent 5G signal with mobile data enabled.
+
+Would you please try sending an MMS message again now? Or would you prefer that I check if your messaging app can send MMS first? I understand this is important, so I'll help you carefully through the next step.<|im_end|>
+<|im_start|>assistant
+Great! After the reboot, let's verify that your messaging app can now send MMS messages.
+
+Please run `can_send_mms` on your phone and tell me the result. This will tell us whether the APN reset and reboot resolved the issue, or if we need to check other settings (like app permissions or Wi‑Fi Calling).<|im_end|>
+<|im_start|>user
+I'm sorry to see the issue with sending MMS messages still persists despite resetting APN settings and rebooting your device. I understand this is frustrating.
+
+Would you be willing to try refueling your data with an additional 2.0 GB? Sometimes MMS can be blocked if mobile data is low or depleted abroad, and adding data without changing your overall plan could help.
+
+If you'd prefer, I can also check your messaging app's permissions or other settings next. Please let me know how you'd like to proceed or if you have any questions.<|im_end|>
+<|im_start|>user
+Please complete the next appropriate account action now.<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

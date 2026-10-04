@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Dispatch this email message shown below:
+To: recipient-610e52a1a664@mail.example
+Subject: Re: December board prep
+Body: David, Marcus — From the revenue side: Q1 pipeline is the strongest we've ever had. Fortune 500 logistics ($350-500K), two additional enterprise prospects ($200K each), plus mid-market momentum. If the board pushes, push back with the pipeline.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

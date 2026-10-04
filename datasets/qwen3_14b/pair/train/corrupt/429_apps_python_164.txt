@@ -1,0 +1,30 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"write_file","description":"Write file.","parameters":{"type":"object","properties":{"file_path":{"type":"string"},"content":
+{"type":"string"}},"required":["file_path","content"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Explore the function body in solve.py based on the function definition and docstring below:
+def get_score(arr) -> int:
+    """
+    Calculate the final score using the original Nintendo Tetris scoring system, where the level increases by 1 every 10 lines cleared and points depend on the current level and numbe.
+    >>> get_score([0, 1, 2, 3, 4])
+    1640
+    """
+    pass
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

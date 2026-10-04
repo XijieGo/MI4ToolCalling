@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Mail this email message shown below:
+To: recipient-09b87615e243@mail.example
+Subject: Sentinel: 27 final questions — need all hands
+Body: James, Andre, Raj — Sentinel just sent their final evaluation questionnaire. **27 questions.** I've sorted them by owner: - **James (8)**: Architecture, scalability, disaster recovery, uptime SLA - **Andre (8)**: SOC 2 timeline, encryption, access controls, incident response, vendor management - **Raj (6)**: API capabilities, integration patterns, custom connectors, webhook support - **Me (5)**: Pricing, SLA terms, support tiers, implementation timeline Deadline: **July 25** — one week. Every answer needs to be thorough, honest, and specific.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

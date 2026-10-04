@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Post this email message shown below:
+To: recipient-53179e830d82@mail.example
+Subject: Re: Sentinel onboarding kickoff: 16 pipelines in 60 days
+Body: Team — This is exactly the energy I want. Front-load the hard stuff, surface issues early, and deliver ahead of schedule. Remember: every interaction with Sentinel's team is a reference call in disguise.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

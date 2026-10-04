@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Discuss this email message shown below:
+To: recipient-cc717e5dfb00@mail.example
+Subject: Re: Sentinel: 27 final questions — need all hands
+Body: Craig — Integration answers submitted. Highlighted the new connector framework shipping with 3.0 — 12 out-of-box connectors plus SDK for custom. Sentinel's stack uses 4 of our built-in connectors already.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

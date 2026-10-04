@@ -1,0 +1,28 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"run_sql","description":"Run query.","parameters":{"type":"object","properties":{"database":{"type":"string"},"query":{"type":"string"}},"required":["database","query"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Run the completed SQL query shown below:
+Database: university_basketball
+Schema:
+  university(School_ID, School, Location, Founded, Affiliation, Enrollment, Nickname, Primary_conference)
+  basketball_match(Team_ID, School_ID, Team_Name, ACC_Regular_Season, ACC_Percent, ACC_Home, ACC_Road, All_Games, All_Games_Percent, All_Home, All_Road, All_Neutral)
+SQL:
+  SELECT t2.All_Games , t1.location FROM university AS t1 JOIN basketball_match AS t2 ON t1.school_id = t2.school_id WHERE team_name = 'Clemson'
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

@@ -1,0 +1,27 @@
+{
+  "model_path": "joint_multi_model_pool_selection",
+  "output_root": "datasets/test",
+  "strict_pruned": true,
+  "dropped_rows": 0,
+  "corrupt_rows": 300,
+  "clean_rows": 300,
+  "language_counts": {
+    "cpp": 101,
+    "java": 101,
+    "python": 98
+  },
+  "corrupt_candidate_counts": {
+    "discuss": 60,
+    "explore": 53,
+    "inspect": 54,
+    "review": 60,
+    "study": 73
+  },
+  "clean_candidate_counts": {
+    "add": 86,
+    "build": 20,
+    "complete": 20,
+    "save": 87,
+    "write": 87
+  }
+}

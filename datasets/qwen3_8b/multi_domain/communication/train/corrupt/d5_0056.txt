@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Score this email message shown below:
+To: recipient-1d406bd22f6f@mail.example
+Subject: New Year Resolution Board is up! 📝
+Body: Craig, Dale, Frank — Resolution Board is in the kitchen. Highlights: - **Craig:** "Close 3 enterprise deals worth $500K+ each" - **Dale:** "Fix the north wing heating once and for all" (he already installed the locking thermostat) - **Frank:** "Keep SaaS spend under $45K/month" (he wrote it in red) - **Nadia:** "Build something permanent" (she pinned it with a server room key) - **Darius:** "Write fewer angry Slack messages" (Derek added: "I'll believe it when I see it") Pat
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

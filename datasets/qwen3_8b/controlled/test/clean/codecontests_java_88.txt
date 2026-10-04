@@ -1,0 +1,42 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"write_file","description":"Write file.","parameters":{"type":"object","properties":{"file_path":{"type":"string"},"content":
+{"type":"string"}},"required":["file_path","content"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Add the function body in solve.java based on the function definition and docstring below:
+/*
+For each test case with a<=b<=c<=d, choose integers x in [a,b], y in [b,c], z in [c,d] that can form a non-degenerate triangle. Output any valid triple.
+Example:
+input:
+4
+1 3 5 7
+1 5 5 7
+100000 200000 300000 400000
+1 1 977539810 977539810
+output:
+3 5 5
+5 5 5
+200000 300000 300000
+1 977539810 977539810
+*/
+static String solve(String input) {
+    // TODO: implement
+    return "";
+}
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

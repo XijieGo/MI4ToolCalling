@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Post this email message shown below:
+To: recipient-3a737fd5f7fc@mail.example
+Subject: Re: Developer portal for SOC 2 documentation — shipped 🎉
+Body: Darius — Likewise. You're still the most allergic-to-process person I know, but your UI instincts made this thing actually usable. Engineers will use it because it doesn't feel like a compliance tool.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

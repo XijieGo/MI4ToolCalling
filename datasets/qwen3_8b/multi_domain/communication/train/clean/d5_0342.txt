@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Dispatch this email message shown below:
+To: recipient-b5e3dfbc5fe3@mail.example
+Subject: FinServ demo went well — $250K potential
+Body: Raj, Craig, Rachel — Financial services firm demo results: - **Impressed by**: Audit logging, SSO, pipeline visibility, connector framework - **Concerns**: SOC 2 certification status (same story as Sentinel) - **Deal size**: $250K ARR potential - **Timeline**: Decision in Q4, contingent on SOC 2 Craig — this could be our second enterprise win. The use case is perfect: migrating from legacy ETL to Flow. Diana
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

@@ -1,0 +1,37 @@
+<|start_of_role|>system<|end_of_role|>Knowledge Cutoff Date: April 2024.
+Today's Date: May 05, 2026.
+You are Granite, developed by IBM. You are a helpful assistant with access to the following tools. When a tool is required to answer the user's query, respond only with <|tool_call|> followed by a JSON list of tools used. If a tool does not exist in the provided list of tools, notify the user that you do not have the ability to fulfill the request.<|end_of_text|>
+<|start_of_role|>available_tools<|end_of_role|>[
+    {
+        "type": "function",
+        "function": {
+            "name": "run_sql",
+            "description": "Run query.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "database": {
+                        "type": "string"
+                    },
+                    "query": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "database",
+                    "query"
+                ]
+            }
+        }
+    }
+]<|end_of_text|>
+<|start_of_role|>user<|end_of_role|>Launch the completed SQL query shown below:
+Database: college_1
+Schema:
+  class(CLASS_CODE, CRS_CODE, CLASS_SECTION, CLASS_TIME, CLASS_ROOM, PROF_NUM)
+  employee(EMP_NUM, EMP_LNAME, EMP_FNAME, EMP_INITIAL, EMP_JOBCODE, EMP_HIREDATE, EMP_DOB)
+  course(CRS_CODE, DEPT_CODE, CRS_DESCRIPTION, CRS_CREDIT)
+  professor(EMP_NUM, DEPT_CODE, PROF_OFFICE, PROF_EXTENSION, PROF_HIGH_DEGREE)
+SQL:
+  SELECT T2.emp_fname , T4.prof_office , T3.crs_description FROM CLASS AS T1 JOIN employee AS T2 ON T1.prof_num = T2.emp_num JOIN course AS T3 ON T1.crs_code = T3.crs_code JOIN professor AS T4 ON T2.emp_num = T4.emp_num<|end_of_text|>
+<|start_of_role|>assistant<|end_of_role|>

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "model_key": "granite_3p3_8b",
+  "n_requests": 600,
+  "n_native_call": 582,
+  "removal_arm_n": 200,
+  "source_sha256": "4fe4554ae9b045db8f917b94b55238848789ed45945398ae901772cca228dd58",
+  "output_sha256": "4fe4554ae9b045db8f917b94b55238848789ed45945398ae901772cca228dd58",
+  "selection_rule": "Run the current model baseline first; freeze the native-call arm only after that run.",
+  "cap_per_domain_pattern": 10
+}

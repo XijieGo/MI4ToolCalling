@@ -1,0 +1,42 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"write_file","description":"Write file.","parameters":{"type":"object","properties":{"file_path":{"type":"string"},"content":
+{"type":"string"}},"required":["file_path","content"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Discuss the function body in solve.cpp based on the function definition and docstring below:
+/*
+Vova travels from 1 to L at speed 1, with lanterns at multiples of v. A standing train blocks [l, r]. For each query, count the lanterns Vova can see that are not blocked.
+Example:
+input:
+4
+10 2 3 7
+100 51 51 51
+1234 1 100 199
+1000000000 1 1 1000000000
+output:
+3
+0
+1134
+0
+*/
+std::string solve(const std::string& input) {
+    // TODO: implement
+    return "";
+}
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

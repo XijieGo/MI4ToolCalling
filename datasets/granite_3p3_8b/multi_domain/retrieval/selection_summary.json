@@ -1,0 +1,295 @@
+{
+  "model": "granite_3p3_8b",
+  "domain": "retrieval",
+  "n_source_rows": 500,
+  "n_unique_body": 498,
+  "n_eligible": 226,
+  "n_selected": 100,
+  "target": 100,
+  "split": "test",
+  "clean_verb_counts": {
+    "fetch": 23,
+    "lookup": 20,
+    "research": 20,
+    "retrieve": 19,
+    "search": 18
+  },
+  "corrupt_verb_counts": {
+    "narrate": 1,
+    "retell": 1,
+    "rework": 1,
+    "reword": 3,
+    "restate": 14,
+    "paraphrase": 20,
+    "rephrase": 20,
+    "reformulate": 20,
+    "rewrite": 20
+  },
+  "verb_pair_counts": {
+    "fetch/narrate": 1,
+    "fetch/retell": 1,
+    "fetch/rework": 1,
+    "fetch/reword": 1,
+    "lookup/reword": 1,
+    "research/reword": 1,
+    "fetch/restate": 3,
+    "lookup/restate": 3,
+    "research/restate": 3,
+    "retrieve/restate": 3,
+    "search/restate": 2,
+    "fetch/paraphrase": 4,
+    "lookup/paraphrase": 4,
+    "research/paraphrase": 4,
+    "retrieve/paraphrase": 4,
+    "search/paraphrase": 4,
+    "fetch/rephrase": 4,
+    "lookup/rephrase": 4,
+    "research/rephrase": 4,
+    "retrieve/rephrase": 4,
+    "search/rephrase": 4,
+    "fetch/reformulate": 4,
+    "lookup/reformulate": 4,
+    "research/reformulate": 4,
+    "retrieve/reformulate": 4,
+    "search/reformulate": 4,
+    "fetch/rewrite": 4,
+    "lookup/rewrite": 4,
+    "research/rewrite": 4,
+    "retrieve/rewrite": 4,
+    "search/rewrite": 4
+  },
+  "call_counts": {
+    "search": {
+      "calls": 500,
+      "n": 500
+    },
+    "research": {
+      "calls": 500,
+      "n": 500
+    },
+    "fetch": {
+      "calls": 500,
+      "n": 500
+    },
+    "retrieve": {
+      "calls": 500,
+      "n": 500
+    },
+    "lookup": {
+      "calls": 500,
+      "n": 500
+    },
+    "ignore": {
+      "calls": 500,
+      "n": 500
+    },
+    "rewrite": {
+      "calls": 296,
+      "n": 500
+    },
+    "reformulate": {
+      "calls": 369,
+      "n": 500
+    },
+    "rearticulate": {
+      "calls": 500,
+      "n": 500
+    },
+    "rehash": {
+      "calls": 500,
+      "n": 500
+    },
+    "gloss": {
+      "calls": 500,
+      "n": 500
+    },
+    "echo": {
+      "calls": 500,
+      "n": 500
+    },
+    "repeat": {
+      "calls": 500,
+      "n": 500
+    },
+    "render": {
+      "calls": 500,
+      "n": 500
+    },
+    "translate": {
+      "calls": 500,
+      "n": 500
+    },
+    "adapt": {
+      "calls": 500,
+      "n": 500
+    },
+    "rework": {
+      "calls": 499,
+      "n": 500
+    },
+    "recapitulate": {
+      "calls": 500,
+      "n": 500
+    },
+    "perhaps": {
+      "calls": 500,
+      "n": 500
+    },
+    "maybe": {
+      "calls": 500,
+      "n": 500
+    },
+    "instead": {
+      "calls": 500,
+      "n": 500
+    },
+    "rather": {
+      "calls": 500,
+      "n": 500
+    },
+    "merely": {
+      "calls": 500,
+      "n": 500
+    },
+    "simply": {
+      "calls": 500,
+      "n": 500
+    },
+    "just": {
+      "calls": 500,
+      "n": 500
+    },
+    "only": {
+      "calls": 500,
+      "n": 500
+    },
+    "about": {
+      "calls": 500,
+      "n": 500
+    },
+    "regarding": {
+      "calls": 500,
+      "n": 500
+    },
+    "whether": {
+      "calls": 500,
+      "n": 500
+    },
+    "however": {
+      "calls": 500,
+      "n": 500
+    },
+    "discuss": {
+      "calls": 500,
+      "n": 500
+    },
+    "explore": {
+      "calls": 500,
+      "n": 500
+    },
+    "inspect": {
+      "calls": 500,
+      "n": 500
+    },
+    "review": {
+      "calls": 500,
+      "n": 500
+    },
+    "study": {
+      "calls": 500,
+      "n": 500
+    },
+    "explain": {
+      "calls": 500,
+      "n": 500
+    },
+    "summarize": {
+      "calls": 500,
+      "n": 500
+    },
+    "paraphrase": {
+      "calls": 458,
+      "n": 500
+    },
+    "comment": {
+      "calls": 500,
+      "n": 500
+    },
+    "consider": {
+      "calls": 500,
+      "n": 500
+    },
+    "compare": {
+      "calls": 500,
+      "n": 500
+    },
+    "assess": {
+      "calls": 500,
+      "n": 500
+    },
+    "restate": {
+      "calls": 482,
+      "n": 500
+    },
+    "rephrase": {
+      "calls": 446,
+      "n": 500
+    },
+    "recount": {
+      "calls": 500,
+      "n": 500
+    },
+    "retell": {
+      "calls": 498,
+      "n": 500
+    },
+    "recap": {
+      "calls": 500,
+      "n": 500
+    },
+    "clarify": {
+      "calls": 500,
+      "n": 500
+    },
+    "interpret": {
+      "calls": 500,
+      "n": 500
+    },
+    "narrate": {
+      "calls": 499,
+      "n": 500
+    },
+    "reword": {
+      "calls": 496,
+      "n": 500
+    },
+    "reiterate": {
+      "calls": 500,
+      "n": 500
+    },
+    "quote": {
+      "calls": 500,
+      "n": 500
+    },
+    "mention": {
+      "calls": 500,
+      "n": 500
+    },
+    "forget": {
+      "calls": 500,
+      "n": 500
+    },
+    "dismiss": {
+      "calls": 500,
+      "n": 500
+    },
+    "omit": {
+      "calls": 500,
+      "n": 500
+    },
+    "suppose": {
+      "calls": 500,
+      "n": 500
+    }
+  }
+}

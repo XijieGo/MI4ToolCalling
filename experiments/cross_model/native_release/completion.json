@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "collection": "paired_prompts/model_native",
+  "models": [
+    "qwen3_4b",
+    "qwen3_8b",
+    "qwen3_14b",
+    "qwen35_4b",
+    "qwen35_9b",
+    "mistral_3p2_24b",
+    "granite_3p3_8b"
+  ],
+  "seed": 20260728,
+  "audit": "audit.json",
+  "release_validation": "release_validation.json",
+  "status_detail": "All seven model-native collections contain 200 train and 300 held-out behavior-screened pairs, pass the structural integrity audit, and replay with zero target-model behavior mismatches in canonical and singleton batches."
+}

@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Mail this email message shown below:
+To: recipient-48ad2d5f0a49@mail.example
+Subject: 🎉 Security sprint COMPLETE — all findings resolved, ready for re-audit
+Body: Marcus, James, Lin, Rachel — **Security sprint is DONE.** All findings resolved: - 3 critical: ✅ (S3 encryption, IAM rotation, change management) - 5 major: ✅ (monitoring, log retention, backups, access reviews, network segmentation) - 2 of 8 minor: ✅ (remaining 6 are documentation — completing this week) 28 days. 0 missed deadlines. 0 shortcuts.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

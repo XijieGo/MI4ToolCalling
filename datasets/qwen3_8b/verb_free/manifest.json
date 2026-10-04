@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "model_key": "qwen3_8b",
+  "n_requests": 600,
+  "source_sha256": "d870ca9eef24442e955c2f4127d7b00c0a5a4ebef900685b1bb7a7b2ef817a13",
+  "output_sha256": "2dec2812b9fee8a91a0e260ec5fa97a951d9cca0a05ca363f5b008a236e97aa4",
+  "selection_rule": "Run the current model baseline first; freeze the native-call arm only after that run."
+}

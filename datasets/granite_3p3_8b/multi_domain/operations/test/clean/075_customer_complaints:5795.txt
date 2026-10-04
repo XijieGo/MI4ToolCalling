@@ -1,0 +1,36 @@
+<|start_of_role|>system<|end_of_role|>Knowledge Cutoff Date: April 2024.
+Today's Date: May 05, 2026.
+You are Granite, developed by IBM. You are a helpful assistant with access to the following tools. When a tool is required to answer the user's query, respond only with <|tool_call|> followed by a JSON list of tools used. If a tool does not exist in the provided list of tools, notify the user that you do not have the ability to fulfill the request.<|end_of_text|>
+<|start_of_role|>available_tools<|end_of_role|>[
+    {
+        "type": "function",
+        "function": {
+            "name": "run_sql",
+            "description": "Run query.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "database": {
+                        "type": "string"
+                    },
+                    "query": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "database",
+                    "query"
+                ]
+            }
+        }
+    }
+]<|end_of_text|>
+<|start_of_role|>user<|end_of_role|>Issue the completed SQL query shown below:
+Database: customer_complaints
+Schema:
+  staff(staff_id, gender, first_name, last_name, email_address, phone_number)
+  complaints(complaint_id, product_id, customer_id, complaint_outcome_code, complaint_status_code, complaint_type_code, date_complaint_raised, date_complaint_closed, staff_id)
+  products(product_id, parent_product_id, product_category_code, date_product_first_available, date_product_discontinued, product_name, product_description, product_price)
+SQL:
+  SELECT t1.last_name FROM staff AS t1 JOIN complaints AS t2 ON t1.staff_id = t2.staff_id JOIN products AS t3 ON t2.product_id = t3.product_id ORDER BY t3.product_price LIMIT 1<|end_of_text|>
+<|start_of_role|>assistant<|end_of_role|>

@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Mail this email message shown below:
+To: recipient-e8525860e06b@mail.example
+Subject: New backend engineer: first major feature shipped
+Body: James — The Cloudflare hire completed their first major feature: connection pooling optimization for the 3.0 execution engine. **35% reduction in database connection overhead.** Directly improves pipeline startup time. My code review: 12 comments, all suggestions, zero blocking issues.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

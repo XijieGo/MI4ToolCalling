@@ -1,0 +1,36 @@
+<|start_of_role|>system<|end_of_role|>Knowledge Cutoff Date: April 2024.
+Today's Date: May 05, 2026.
+You are Granite, developed by IBM. You are a helpful assistant with access to the following tools. When a tool is required to answer the user's query, respond only with <|tool_call|> followed by a JSON list of tools used. If a tool does not exist in the provided list of tools, notify the user that you do not have the ability to fulfill the request.<|end_of_text|>
+<|start_of_role|>available_tools<|end_of_role|>[
+    {
+        "type": "function",
+        "function": {
+            "name": "send_email",
+            "description": "Send email.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "to": {
+                        "type": "string"
+                    },
+                    "subject": {
+                        "type": "string"
+                    },
+                    "body": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "to",
+                    "subject",
+                    "body"
+                ]
+            }
+        }
+    }
+]<|end_of_text|>
+<|start_of_role|>user<|end_of_role|>Post this email message shown below:
+To: recipient-0e2861c0104f@mail.example
+Subject: Strong senior backend candidate — ex-Stripe
+Body: Tyler, Sandra, James — Found a strong senior backend candidate through a referral network. Key highlights: - 6 years at Stripe on their payments infrastructure team - Distributed systems expertise — exactly what 3.0 needs - Currently in notice period, available in 3 weeks - Comp expectations in range ($185K-$200K base) Resume attached. Tyler — can you fast-track to James for a technical screen?<|end_of_text|>
+<|start_of_role|>assistant<|end_of_role|>

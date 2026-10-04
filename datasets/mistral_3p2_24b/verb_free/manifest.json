@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "model_key": "mistral_3p2_24b",
+  "n_requests": 600,
+  "n_native_call": 300,
+  "removal_arm_n": 148,
+  "source_sha256": "28180751521892c38a53ae7353aaa3682ff1fde770b748aea403d0e885e54040",
+  "output_sha256": "09714decd62edb39ea527d5d4b4b8b38a6fb5f01057db31476512c100a1f3f7e",
+  "selection_rule": "Run the current model baseline first; freeze the native-call arm only after that run.",
+  "cap_per_domain_pattern": 10
+}

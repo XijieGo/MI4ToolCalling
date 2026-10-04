@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Mail this email message shown below:
+To: recipient-74493160a611@mail.example
+Subject: Q2 planning — targets and milestones
+Body: Rachel, James, David, Priya — Q2 targets: - **Revenue**: $1.5M new ARR (up from $1.1M actual in Q1) - **Product**: Flow 3.0 beta by end of July - **Enterprise**: Close Sentinel ($400K) and advance 2 more to PoC stage - **SOC 2**: Pass mock audit by end of August These are aggressive. I know. But David's Q1 numbers show our growth decelerating.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

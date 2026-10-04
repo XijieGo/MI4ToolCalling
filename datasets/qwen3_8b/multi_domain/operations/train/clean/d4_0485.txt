@@ -1,0 +1,28 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"run_sql","description":"Run query.","parameters":{"type":"object","properties":{"database":{"type":"string"},"query":{"type":"string"}},"required":["database","query"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Issue the completed SQL query shown below:
+Database: tracking_software_problems
+Schema:
+  problems(problem_id, product_id, closure_authorised_by_staff_id, reported_by_staff_id, date_problem_reported, date_problem_closed, problem_description, other_problem_details)
+  staff(staff_id, staff_first_name, staff_last_name, other_staff_details)
+SQL:
+  SELECT product_id FROM problems AS T1 JOIN staff AS T2 ON T1.reported_by_staff_id = T2.staff_id WHERE T2.staff_first_name = "Christop" AND T2.staff_last_name = "Berge" INTERSECT SELECT product_id FROM problems AS T1 JOIN staff AS T2 ON T1.closure_authorised_by_staff_id = T2.staff_id WHERE T2.staff_first_name = "Ashley" AND T2.staff_last_name = "Medhurst"
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Post this email message shown below:
+To: recipient-5e97fc495d9d@mail.example
+Subject: ALERT: SMB usage down 12% MoM — silent churn risk
+Body: Harrison, Tunde, Ava, Mike — Analytics flag: **SMB usage dropped 12% month-over-month.** This is the steepest decline since I started tracking. Breakdown: - 8 SMB accounts haven't logged in for 30+ days - Average pipeline runs per SMB account down 18% - Self-serve signups flat (no new inbound to replace churning accounts) My hypothesis: the enterprise focus is causing neglect of the SMB experience. No product updates for SMB in 3 months.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "collection": "paired_prompts/model_native",
+  "model_key": "qwen3_4b",
+  "model_label": "Qwen3-4B",
+  "model_reference": "external model weights",
+  "input_provenance": "historical candidate pool (external; not copied)",
+  "tool_call_marker": "<tool_call>",
+  "tool_call_token_id": 151657,
+  "seed": 20260728,
+  "candidate_per_verb_cell": 60,
+  "selected_clean_verbs": [
+    "add",
+    "build",
+    "save",
+    "write"
+  ],
+  "selected_corrupt_verbs": [
+    "discuss",
+    "explore",
+    "inspect",
+    "review",
+    "study"
+  ],
+  "selection_rule": "Target-model first-token clean-call/corrupt-non-call screen with required safety margins, followed by maximum-quality exact marginal verb balancing.",
+  "screening_margin_requirements": {
+    "minimum_clean_tool_minus_best_non_tool": 1.0,
+    "minimum_corrupt_best_non_tool_minus_tool": 1.0
+  },
+  "n_pairs": 500,
+  "n_train": 200,
+  "n_heldout": 300,
+  "all": {
+    "n_pairs": 500,
+    "clean_tool_call_top1_rate": 1.0,
+    "corrupt_tool_call_top1_rate": 0.0,
+    "mean_clean_tool_probability": 0.9421993384361267,
+    "mean_corrupt_tool_probability": 0.0008408508667441709,
+    "minimum_clean_margin": 1.125,
+    "minimum_corrupt_non_tool_margin": 1.5,
+    "clean_verb_counts": {
+      "add": 125,
+      "build": 125,
+      "save": 125,
+      "write": 125
+    },
+    "corrupt_verb_counts": {
+      "discuss": 100,
+      "explore": 100,
+      "inspect": 100,
+      "review": 100,
+      "study": 100
+    },
+    "verb_pair_counts": {
+      "add__discuss": 25,
+      "add__explore": 27,
+      "add__inspect": 26,
+      "add__review": 26,
+      "add__study": 21,
+      "build__discuss": 26,
+      "build__explore": 25,
+      "build__inspect": 21,
+      "build__review": 26,
+      "build__study": 27,
+      "save__discuss": 19,
+      "save__explore": 24,
+      "save__inspect": 27,
+      "save__review": 27,
+      "save__study": 28,
+      "write__discuss": 30,
+      "write__explore": 24,
+      "write__inspect": 26,
+      "write__review": 21,
+      "write__study": 24
+    },
+    "source_dataset_counts": {
+      "apps": 160,
+      "codecontests": 282,
+      "humaneval": 15,
+      "mbpp": 43
+    },
+    "source_language_counts": {
+      "cpp": 153,
+      "java": 129,
+      "python": 218
+    }
+  },
+  "splits": {
+    "train": {
+      "n_pairs": 200,
+      "clean_tool_call_top1_rate": 1.0,
+      "corrupt_tool_call_top1_rate": 0.0,
+      "mean_clean_tool_probability": 0.9534734255075454,
+      "mean_corrupt_tool_probability": 5.3378820614009887e-05,
+      "minimum_clean_margin": 1.125,
+      "minimum_corrupt_non_tool_margin": 5.625,
+      "clean_verb_counts": {
+        "add": 50,
+        "build": 50,
+        "save": 50,
+        "write": 50
+      },
+      "corrupt_verb_counts": {
+        "discuss": 40,
+        "explore": 40,
+        "inspect": 40,
+        "review": 40,
+        "study": 40
+      },
+      "verb_pair_counts": {
+        "add__discuss": 3,
+        "add__review": 26,
+        "add__study": 21,
+        "build__inspect": 20,
+        "build__review": 11,
+        "build__study": 19,
+        "save__discuss": 7,
+        "save__explore": 20,
+        "save__inspect": 20,
+        "save__review": 3,
+        "write__discuss": 30,
+        "write__explore": 20
+      },
+      "source_dataset_counts": {
+        "apps": 66,
+        "codecontests": 108,
+        "humaneval": 6,
+        "mbpp": 20
+      },
+      "source_language_counts": {
+        "cpp": 54,
+        "java": 54,
+        "python": 92
+      }
+    },
+    "heldout": {
+      "n_pairs": 300,
+      "clean_tool_call_top1_rate": 1.0,
+      "corrupt_tool_call_top1_rate": 0.0,
+      "mean_clean_tool_probability": 0.9346832803885142,
+      "mean_corrupt_tool_probability": 0.0013658322308309448,
+      "minimum_clean_margin": 1.125,
+      "minimum_corrupt_non_tool_margin": 1.5,
+      "clean_verb_counts": {
+        "add": 75,
+        "build": 75,
+        "save": 75,
+        "write": 75
+      },
+      "corrupt_verb_counts": {
+        "discuss": 60,
+        "explore": 60,
+        "inspect": 60,
+        "review": 60,
+        "study": 60
+      },
+      "verb_pair_counts": {
+        "add__discuss": 22,
+        "add__explore": 27,
+        "add__inspect": 26,
+        "build__discuss": 26,
+        "build__explore": 25,
+        "build__inspect": 1,
+        "build__review": 15,
+        "build__study": 8,
+        "save__discuss": 12,
+        "save__explore": 4,
+        "save__inspect": 7,
+        "save__review": 24,
+        "save__study": 28,
+        "write__explore": 4,
+        "write__inspect": 26,
+        "write__review": 21,
+        "write__study": 24
+      },
+      "source_dataset_counts": {
+        "apps": 94,
+        "codecontests": 174,
+        "humaneval": 9,
+        "mbpp": 23
+      },
+      "source_language_counts": {
+        "cpp": 99,
+        "java": 75,
+        "python": 126
+      }
+    }
+  }
+}

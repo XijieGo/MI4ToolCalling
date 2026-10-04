@@ -1,0 +1,36 @@
+<|start_of_role|>system<|end_of_role|>Knowledge Cutoff Date: April 2024.
+Today's Date: May 05, 2026.
+You are Granite, developed by IBM. You are a helpful assistant with access to the following tools. When a tool is required to answer the user's query, respond only with <|tool_call|> followed by a JSON list of tools used. If a tool does not exist in the provided list of tools, notify the user that you do not have the ability to fulfill the request.<|end_of_text|>
+<|start_of_role|>available_tools<|end_of_role|>[
+    {
+        "type": "function",
+        "function": {
+            "name": "send_email",
+            "description": "Send email.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "to": {
+                        "type": "string"
+                    },
+                    "subject": {
+                        "type": "string"
+                    },
+                    "body": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "to",
+                    "subject",
+                    "body"
+                ]
+            }
+        }
+    }
+]<|end_of_text|>
+<|start_of_role|>user<|end_of_role|>Dispatch this email message shown below:
+To: recipient-4ead643faf14@mail.example
+Subject: 3.0 feature revision: streaming deferred to 3.1, observability promoted
+Body: Derek, Wesley, Theo, Talia, Nadia — Based on Talia's 30-customer research (87% want observability, 34% want streaming), I'm revising the 3.0 scope: **Promoted to 3.0 core:** Pipeline observability dashboard — real-time visibility into pipeline health, error tracing, performance metrics **Deferred to 3.1:** Real-time streaming I made the spec creep mistake once. Not again. We ship what customers need, not what sounds impressive.<|end_of_text|>
+<|start_of_role|>assistant<|end_of_role|>

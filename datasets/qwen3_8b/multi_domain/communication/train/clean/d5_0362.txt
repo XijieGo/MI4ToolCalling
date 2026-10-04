@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Submit this email message shown below:
+To: recipient-bff0737c3876@mail.example
+Subject: Re: Proposal: migrate 3.0 infrastructure to Kubernetes
+Body: James — 2 engineers: Fatima and me. We can run it parallel — the migration is infrastructure-level and doesn't touch application code. Feature teams won't be affected until the cutover, which is a single deployment config change.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

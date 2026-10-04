@@ -1,0 +1,36 @@
+<|start_of_role|>system<|end_of_role|>Knowledge Cutoff Date: April 2024.
+Today's Date: May 05, 2026.
+You are Granite, developed by IBM. You are a helpful assistant with access to the following tools. When a tool is required to answer the user's query, respond only with <|tool_call|> followed by a JSON list of tools used. If a tool does not exist in the provided list of tools, notify the user that you do not have the ability to fulfill the request.<|end_of_text|>
+<|start_of_role|>available_tools<|end_of_role|>[
+    {
+        "type": "function",
+        "function": {
+            "name": "run_sql",
+            "description": "Run query.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "database": {
+                        "type": "string"
+                    },
+                    "query": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "database",
+                    "query"
+                ]
+            }
+        }
+    }
+]<|end_of_text|>
+<|start_of_role|>user<|end_of_role|>Discuss the completed SQL query shown below:
+Database: cre_Drama_Workshop_Groups
+Schema:
+  addresses(Address_ID, Line_1, Line_2, City_Town, State_County, Other_Details)
+  customers(Customer_ID, Address_ID, Customer_Name, Customer_Phone, Customer_Email_Address, Other_Details)
+  performers(Performer_ID, Address_ID, Customer_Name, Customer_Phone, Customer_Email_Address, Other_Details)
+SQL:
+  SELECT T1.City_Town FROM Addresses AS T1 JOIN Customers AS T2 ON T1.Address_ID = T2.Address_ID EXCEPT SELECT T1.City_Town FROM Addresses AS T1 JOIN Performers AS T2 ON T1.Address_ID = T2.Address_ID<|end_of_text|>
+<|start_of_role|>assistant<|end_of_role|>

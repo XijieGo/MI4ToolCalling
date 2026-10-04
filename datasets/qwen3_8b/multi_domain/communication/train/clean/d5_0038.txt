@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Dispatch this email message shown below:
+To: recipient-1485de722922@mail.example
+Subject: Re: 3.0 Sprint 3: event bus load test
+Body: Amir, Nadia — ADR #7 updated with load test results. Every architectural decision we made in Sprint 1 is validated by these numbers. This is what happens when you give engineers time to build properly.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

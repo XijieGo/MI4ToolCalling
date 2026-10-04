@@ -1,0 +1,29 @@
+{
+  "id": "controlled_verb_pairs",
+  "collection": "paired_prompts/controlled",
+  "role": "central paired-verb interface",
+  "splits": {
+    "train": 1200,
+    "test": 300
+  },
+  "invariant": "Each retained pair has matched clean/corrupt filenames and is intended to differ only in the selected request-word token under the designated Qwen tokenization.",
+  "construction_models": [
+    "Qwen3-1.7B",
+    "Qwen3-4B",
+    "Qwen3-8B"
+  ],
+  "source_domains": [
+    "APPS",
+    "CodeContests",
+    "HumanEval",
+    "MBPP"
+  ],
+  "frozen_files_sha256": {
+    "train/clean/manifest.jsonl": "a18a104c07ff3732728a829fcf4b3e964cf6ac8b0e5800b9d15017c2cc0b80be",
+    "train/corrupt/manifest.jsonl": "35b21ec5ab90bac1201b99b0331ff9682723d7abe6f8d99e6dcf9b03feb0704a",
+    "test/clean/manifest.jsonl": "95da26ab2646d312cc80a63c3fce7e71f02f1b2dfe4d3503c2262c4b40d647c9",
+    "test/corrupt/manifest.jsonl": "30a496c9713268e3b442473a368846bc9eab4ff0aa4a9e5545fb92a686f5e486",
+    "provenance/split_manifest.csv": "7f11b431dadd53bbca5ff913af0b4c2282d0e3d6860ab57de4b1af960ad6d654",
+    "provenance/selection_manifest.csv": "4f6c34bf1ca38110f62611bcd9aecd7cc81e4855e6f13f44f9c2e85877562ba8"
+  }
+}

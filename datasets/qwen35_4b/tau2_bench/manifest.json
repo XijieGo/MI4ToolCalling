@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "model_key": "qwen35_4b",
+  "source_domain": "tau2_telecom",
+  "candidate_sets": {
+    "native-call-200.jsonl": {
+      "n": 200,
+      "source_sha256": "d2d5e784b8e96ce05cab0def1fe0adc24e14fbd4ed4aebb829ac3c19db392f40",
+      "output_sha256": "68f3141b353d9827ae26b0518ca16b8e277d3f856bc71d584ab2e566e4058829"
+    },
+    "native-text-200.jsonl": {
+      "n": 200,
+      "source_sha256": "4180120a4734cc5171b767296b8bf7ebe7a0a25ad1914db72646c473dcf6f530",
+      "output_sha256": "428ffdf3a7afe08314f1d61e60cacd9e1a882df0657473955c7291f7ad7ba6e3"
+    }
+  },
+  "selection_rule": "Re-run the current model baseline on both frozen candidate sets before intervention; do not estimate the direction on tau2."
+}

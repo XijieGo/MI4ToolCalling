@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Score this email message shown below:
+To: recipient-c1e8466b32ba@mail.example
+Subject: Pipeline Dashboard shipped for 3.0 beta 📊
+Body: Kai, Ava — The updated pipeline dashboard is live in the 3.0 beta: - Real-time pipeline status via websockets (Kai built this) - Execution history with drill-down - Performance metrics with alerting thresholds - Dark mode (because engineers) Beta users unanimously prefer it over the old UI. At demo I said: "This is the first time our frontend matches the quality of our backend." Nadia (from the back of the room): "That's a low bar." I'm taking the compliment. Derek
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

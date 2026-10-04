@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Mail this email message shown below:
+To: recipient-5df7d094b6bd@mail.example
+Subject: Re: URGENT: Access control audit findings — SOC 2 risk
+Body: All — RBAC cleanup complete as of 5pm. Results: - Former employee access: REVOKED (all 4) - Unnecessary admin access: REVOKED (7 accounts, owners notified) - Shared service accounts: ELIMINATED (2 accounts replaced with individual creds) - Remaining production admins: 12 (all verified necessary) - Automated deprovisioning: implementation starts tomorrow with Sandra's team Full remediation documented for SOC 2 evidence file. Timeline: discovery to remediation in 10 hours.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Post this email message shown below:
+To: recipient-6f4559541c57@mail.example
+Subject: AWS reserved instances: $180K annual savings negotiated
+Body: Lin, David, Marcus — Lin and I completed the AWS cost optimization project. Results: - **Reserved instances**: 3-year commitments on stable workloads → **$180K/year savings** - **Right-sizing**: Identified 14 over-provisioned instances → $35K/year additional - **Total annual savings: $215K** ($18K/month) David — this is the biggest single cost reduction in company history. Frank
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

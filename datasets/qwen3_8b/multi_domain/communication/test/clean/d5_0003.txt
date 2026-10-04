@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Mail this email message shown below:
+To: recipient-01697119acb6@mail.example
+Subject: Q3 performance check-ins: new format, same goal
+Body: James, Darius, Derek — Q3 check-ins are next week. Reminder: we're using the Maya Reforms format. **What's different:** - 45-minute conversations, not spreadsheet exercises - Bidirectional feedback (you evaluate your manager too) - Focus on growth goals, not metrics anxiety - No stack ranking.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

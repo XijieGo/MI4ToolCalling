@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Rate this email message shown below:
+To: recipient-bcd4d518a215@mail.example
+Subject: Re: September pulse survey: trust rebounds to 71% 📈
+Body: Sandra — 71% trust. 6 months ago it was 58% and I was worried we'd lose half the engineering team. The Maya Reforms weren't just the right thing to do — they were the smart thing to do.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Evaluate this email message shown below:
+To: recipient-4cf0f84b679c@mail.example
+Subject: Re: Q2 All-Hands
+Body: Marcus, Priya — A year and a half ago I was the sales guy fighting for table scraps in enterprise. Today enterprise is a $2.23M business with a $2.8M pipeline. This company gave me the product and the credibility to build something real.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

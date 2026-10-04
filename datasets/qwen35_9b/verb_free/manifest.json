@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "model_key": "qwen35_9b",
+  "n_requests": 600,
+  "n_native_call": 411,
+  "removal_arm_n": 186,
+  "source_sha256": "db7e76f854967b8f63d7d0dfeade7667e69e53d597736a9a25f2ce205380d604",
+  "output_sha256": "db7e76f854967b8f63d7d0dfeade7667e69e53d597736a9a25f2ce205380d604",
+  "selection_rule": "Run the current model baseline first; freeze the native-call arm only after that run.",
+  "cap_per_domain_pattern": 10
+}

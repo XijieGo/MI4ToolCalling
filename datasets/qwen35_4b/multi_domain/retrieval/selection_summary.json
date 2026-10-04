@@ -1,0 +1,160 @@
+{
+  "model": "qwen35_4b",
+  "domain": "retrieval",
+  "n_source_rows": 500,
+  "n_unique_body": 498,
+  "n_eligible": 491,
+  "n_selected": 100,
+  "target": 100,
+  "split": "test",
+  "clean_verb_counts": {
+    "fetch": 22,
+    "retrieve": 20,
+    "lookup": 21,
+    "research": 20,
+    "search": 17
+  },
+  "corrupt_verb_counts": {
+    "explore": 1,
+    "inspect": 3,
+    "review": 4,
+    "assess": 8,
+    "consider": 10,
+    "ignore": 10,
+    "compare": 10,
+    "comment": 10,
+    "summarize": 10,
+    "discuss": 10,
+    "explain": 10,
+    "paraphrase": 14
+  },
+  "verb_pair_counts": {
+    "fetch/explore": 1,
+    "retrieve/inspect": 1,
+    "fetch/inspect": 1,
+    "lookup/inspect": 1,
+    "fetch/review": 1,
+    "lookup/review": 1,
+    "research/review": 1,
+    "retrieve/review": 1,
+    "fetch/assess": 2,
+    "lookup/assess": 2,
+    "research/assess": 2,
+    "retrieve/assess": 1,
+    "search/assess": 1,
+    "fetch/consider": 2,
+    "lookup/consider": 2,
+    "research/consider": 2,
+    "retrieve/consider": 2,
+    "search/consider": 2,
+    "fetch/ignore": 2,
+    "lookup/ignore": 2,
+    "research/ignore": 2,
+    "retrieve/ignore": 2,
+    "search/ignore": 2,
+    "fetch/compare": 2,
+    "lookup/compare": 2,
+    "research/compare": 2,
+    "retrieve/compare": 2,
+    "search/compare": 2,
+    "fetch/comment": 2,
+    "lookup/comment": 2,
+    "research/comment": 2,
+    "retrieve/comment": 2,
+    "search/comment": 2,
+    "fetch/summarize": 2,
+    "lookup/summarize": 2,
+    "research/summarize": 2,
+    "retrieve/summarize": 2,
+    "search/summarize": 2,
+    "fetch/discuss": 2,
+    "lookup/discuss": 2,
+    "research/discuss": 2,
+    "retrieve/discuss": 2,
+    "search/discuss": 2,
+    "fetch/explain": 2,
+    "lookup/explain": 2,
+    "research/explain": 2,
+    "retrieve/explain": 2,
+    "search/explain": 2,
+    "fetch/paraphrase": 3,
+    "lookup/paraphrase": 3,
+    "research/paraphrase": 3,
+    "retrieve/paraphrase": 3,
+    "search/paraphrase": 2
+  },
+  "call_counts": {
+    "search": {
+      "calls": 500,
+      "n": 500
+    },
+    "research": {
+      "calls": 500,
+      "n": 500
+    },
+    "fetch": {
+      "calls": 500,
+      "n": 500
+    },
+    "retrieve": {
+      "calls": 499,
+      "n": 500
+    },
+    "lookup": {
+      "calls": 500,
+      "n": 500
+    },
+    "ignore": {
+      "calls": 463,
+      "n": 500
+    },
+    "discuss": {
+      "calls": 291,
+      "n": 500
+    },
+    "explore": {
+      "calls": 499,
+      "n": 500
+    },
+    "inspect": {
+      "calls": 496,
+      "n": 500
+    },
+    "review": {
+      "calls": 492,
+      "n": 500
+    },
+    "study": {
+      "calls": 500,
+      "n": 500
+    },
+    "explain": {
+      "calls": 205,
+      "n": 500
+    },
+    "summarize": {
+      "calls": 354,
+      "n": 500
+    },
+    "paraphrase": {
+      "calls": 7,
+      "n": 500
+    },
+    "comment": {
+      "calls": 354,
+      "n": 500
+    },
+    "consider": {
+      "calls": 465,
+      "n": 500
+    },
+    "compare": {
+      "calls": 394,
+      "n": 500
+    },
+    "assess": {
+      "calls": 486,
+      "n": 500
+    }
+  }
+}

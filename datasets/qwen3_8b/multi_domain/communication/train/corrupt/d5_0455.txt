@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Score this email message shown below:
+To: recipient-ead859119811@mail.example
+Subject: Re: February all-hands recap + recording
+Body: Adding some technical context to Marcus's recap: The Flow 3.0 demo showed the new DAG engine processing a 500-node pipeline in under 2 seconds (vs 45 seconds in 2.x). The visual builder prototype is early but the drag-and-drop interaction model tested well with our beta users. We're on track for architecture freeze by end of March, feature freeze by June, and beta by August.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Rate this email message shown below:
+To: recipient-311b07a856dd@mail.example
+Subject: Vendor management documentation complete — 22 of 23 SOC 2 gaps closed
+Body: Frank, Monica, James — The last major documentation gap is closed. Every SaaS vendor, cloud provider, and third-party service is documented with: - Data classification - Access controls - Contract review dates - Incident response contacts **22 of 23 gaps now closed.** One remaining: change management enforcement (James — the GitHub approval gates need to be verified). Mock audit is 4 weeks away.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

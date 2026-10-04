@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "model_key": "qwen3_8b",
+  "model_label": "Qwen3-8B",
+  "pair": {
+    "pairs_jsonl_sha256": "d210e0fb1be4c26800b7e60451092137b5968710ccb4de97cfdc457c7d3215ed",
+    "balance_csv_sha256": "932e51885fa98371ab99490802eb2f89c7afd4b3006c79c8eb56835e1e15a54f",
+    "split_counts": {
+      "heldout": 200,
+      "train": 300
+    },
+    "clean_verb_counts": {
+      "train": {
+        "complete": 60,
+        "save": 60,
+        "build": 60,
+        "write": 60,
+        "add": 60
+      },
+      "heldout": {
+        "write": 40,
+        "add": 40,
+        "save": 40,
+        "complete": 40,
+        "build": 40
+      }
+    },
+    "corrupt_verb_counts": {
+      "train": {
+        "discuss": 75,
+        "explore": 75,
+        "review": 75,
+        "study": 75
+      },
+      "heldout": {
+        "study": 50,
+        "review": 50,
+        "discuss": 50,
+        "explore": 50
+      }
+    }
+  },
+  "verb_free": {
+    "schema_version": 1,
+    "model_key": "qwen3_8b",
+    "n_requests": 600,
+    "source_sha256": "d870ca9eef24442e955c2f4127d7b00c0a5a4ebef900685b1bb7a7b2ef817a13",
+    "output_sha256": "2dec2812b9fee8a91a0e260ec5fa97a951d9cca0a05ca363f5b008a236e97aa4",
+    "selection_rule": "Run the current model baseline first; freeze the native-call arm only after that run."
+  },
+  "tau2": {
+    "schema_version": 1,
+    "model_key": "qwen3_8b",
+    "source_domain": "tau2_telecom",
+    "candidate_sets": {
+      "native-call-200.jsonl": {
+        "n": 200,
+        "source_sha256": "1079ad70d578f49959e1f330da777757df64b5f4409f9dbc1594497d0b7014db",
+        "output_sha256": "4559f34c8b868f4984e918636ec3446146f6d772363e67c7bef810316c66a8ab"
+      },
+      "native-text-200.jsonl": {
+        "n": 200,
+        "source_sha256": "176cd1f1dd198d49fbcbe261b53fce4cab9b9b0e0acc39631172a917cadc2845",
+        "output_sha256": "e5bafab269b7a0a97dec98a5bad320875df71928bce45f4ae276f44452fe45f6"
+      }
+    },
+    "selection_rule": "Re-run the current model baseline on both frozen candidate sets before intervention; do not estimate the direction on tau2."
+  },
+  "pair_split_seed": "qwen3_8b_clean_rerun_pair_split",
+  "pair_heldout_quotas": [
+    {
+      "clean_verb": "add",
+      "corrupt_verb": "discuss",
+      "heldout_pairs": 10
+    },
+    {
+      "clean_verb": "add",
+      "corrupt_verb": "explore",
+      "heldout_pairs": 10
+    },
+    {
+      "clean_verb": "add",
+      "corrupt_verb": "review",
+      "heldout_pairs": 9
+    },
+    {
+      "clean_verb": "add",
+      "corrupt_verb": "study",
+      "heldout_pairs": 11
+    },
+    {
+      "clean_verb": "build",
+      "corrupt_verb": "discuss",
+      "heldout_pairs": 9
+    },
+    {
+      "clean_verb": "build",
+      "corrupt_verb": "explore",
+      "heldout_pairs": 11
+    },
+    {
+      "clean_verb": "build",
+      "corrupt_verb": "review",
+      "heldout_pairs": 10
+    },
+    {
+      "clean_verb": "build",
+      "corrupt_verb": "study",
+      "heldout_pairs": 10
+    },
+    {
+      "clean_verb": "complete",
+      "corrupt_verb": "discuss",
+      "heldout_pairs": 9
+    },
+    {
+      "clean_verb": "complete",
+      "corrupt_verb": "explore",
+      "heldout_pairs": 10
+    },
+    {
+      "clean_verb": "complete",
+      "corrupt_verb": "review",
+      "heldout_pairs": 12
+    },
+    {
+      "clean_verb": "complete",
+      "corrupt_verb": "study",
+      "heldout_pairs": 9
+    },
+    {
+      "clean_verb": "save",
+      "corrupt_verb": "discuss",
+      "heldout_pairs": 11
+    },
+    {
+      "clean_verb": "save",
+      "corrupt_verb": "explore",
+      "heldout_pairs": 10
+    },
+    {
+      "clean_verb": "save",
+      "corrupt_verb": "review",
+      "heldout_pairs": 10
+    },
+    {
+      "clean_verb": "save",
+      "corrupt_verb": "study",
+      "heldout_pairs": 9
+    },
+    {
+      "clean_verb": "write",
+      "corrupt_verb": "discuss",
+      "heldout_pairs": 11
+    },
+    {
+      "clean_verb": "write",
+      "corrupt_verb": "explore",
+      "heldout_pairs": 9
+    },
+    {
+      "clean_verb": "write",
+      "corrupt_verb": "review",
+      "heldout_pairs": 9
+    },
+    {
+      "clean_verb": "write",
+      "corrupt_verb": "study",
+      "heldout_pairs": 11
+    }
+  ]
+}

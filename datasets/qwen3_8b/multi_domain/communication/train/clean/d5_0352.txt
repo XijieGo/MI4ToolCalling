@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Post this email message shown below:
+To: recipient-bb0d254e43ba@mail.example
+Subject: Darius — final conversation about #process-is-overhead
+Body: James, Darius — Darius — we need to discuss the continued #process-is-overhead campaign in Slack. This week alone: - "sprint planning is where productivity goes to die" - "the test coverage minimum is a tax on people who can actually code" - "let me guess, there's a process for this process too" I appreciate your passion for efficiency. But publicly undermining team processes creates a toxic dynamic — especially when junior engineers see a senior engineer dismissing the tools meant to help them.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

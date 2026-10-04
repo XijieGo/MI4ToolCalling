@@ -1,0 +1,26 @@
+{
+  "assets": [
+    {
+      "id": "open_weight_models",
+      "kind": "model weights",
+      "access": "Set the MI4TC_*_PATH variables in .env.example, or pass --model-path.",
+      "reason_not_in_repo": "Large, separately licensed external dependency."
+    },
+    {
+      "id": "transcoder_checkpoints",
+      "kind": "Transcoder checkpoints",
+      "access": "Set MI4TC_TRANSCODER_ROOT.",
+      "reason_not_in_repo": "Large checkpoint dependency with model-specific provenance."
+    },
+    {
+      "id": "tau2_raw_trajectories",
+      "kind": "natural multi-turn trajectories",
+      "reason_not_in_repo": "About 477 MB. The compact run summary is experiments/cross_model/tau2_transfer/run_summary.json. The Qwen3-8B candidate sets are datasets/qwen3_8b/tau2_bench/."
+    },
+    {
+      "id": "activation_caches",
+      "kind": "derived model activations",
+      "reason_not_in_repo": "Heavyweight intermediates. Regenerate them from the experiment runners."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+<|start_of_role|>system<|end_of_role|>Knowledge Cutoff Date: April 2024.
+Today's Date: May 05, 2026.
+You are Granite, developed by IBM. You are a helpful assistant with access to the following tools. When a tool is required to answer the user's query, respond only with <|tool_call|> followed by a JSON list of tools used. If a tool does not exist in the provided list of tools, notify the user that you do not have the ability to fulfill the request.<|end_of_text|>
+<|start_of_role|>available_tools<|end_of_role|>[
+    {
+        "type": "function",
+        "function": {
+            "name": "send_email",
+            "description": "Send email.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "to": {
+                        "type": "string"
+                    },
+                    "subject": {
+                        "type": "string"
+                    },
+                    "body": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "to",
+                    "subject",
+                    "body"
+                ]
+            }
+        }
+    }
+]<|end_of_text|>
+<|start_of_role|>user<|end_of_role|>Mail this email message shown below:
+To: recipient-534e09e51ddd@mail.example
+Subject: 2025 year-end finals: $15.4M ARR, 52% YoY growth 📊
+Body: Marcus — Final 2025 numbers: - **ARR: $15.4M** (52% YoY growth) - **Enterprise ARR: $1.4M** (from $0 at start of year) - **Mid-market ARR: $14M** (36% growth) - **Annual burn: $20.1M** (down from $21.3M run rate in Q1) - **Cash remaining: $27.2M** A year of two halves. H1 was chaos: spec creep, cultural crisis, Maya leaving, SOC 2 panic. H2 was momentum: enterprise wins, 2.5 shipping, cultural turnaround, record revenue.<|end_of_text|>
+<|start_of_role|>assistant<|end_of_role|>

@@ -1,62 +1,75 @@
-# MI4 Tool-Calling
+---
+license: apache-2.0
+tags:
+- mechanistic-interpretability
+- tool-calling
+- agentic-llm
+- transcoder
+- feature-steering
+---
 
-This is the standalone migration bundle for the paper and its rebuttal. It
-contains the paper source and figures, frozen data, intervention vectors,
-per-example records, final summaries, and the code that produced them. The
-only intentionally external dependencies are model weights and Transcoder
-weights.
+# [NeurIPS 2026] How Do Agentic LLMs Decide to Call Tools?
 
-## Standalone migration contract
+<div align="center">
 
-After copying all working-tree files, every item in the experiment registry can
-resolve its registered code, data, vectors, and evidence from this directory
-alone. The paper source-map entries preserve the core code/data lineage; the
-active rebuttal entries additionally preserve their frozen per-example
-evidence. A Git-based transfer must materialize Git-LFS payloads rather than
-leave pointer files. Nothing in the supported migration surface reads the
-retired synchronization workspace.
+[![Paper](https://img.shields.io/badge/Paper-NeurIPS%202026-3B6EA8)](#citation)
+[![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-F9AB00)](https://huggingface.co/datasets/XijieGong/MI4ToolCalling)
+[![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-FFCC4D)](https://huggingface.co/XijieGong/MI4ToolCalling)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-red.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
-Run the no-model structural check after transfer:
+</div>
 
-```bash
-python scripts/verify_standalone.py
-```
+> Official repository for the NeurIPS 2026 paper **"How Do Agentic LLMs Decide to Call Tools? A Tool-Call Vector Shaped by Suppression."**
 
-It validates the experiment registry, v2/v5 cardinalities, rebuttal evidence,
-source syntax, LFS payloads, and the absence of retired-workspace paths in
-canonical sources. `python scripts/verify_release.py` retains the original
-release-level checks and frozen-vector hashes.
+## Overview
 
-For a Git-based migration, do not rely only on the committed release: the
-current Qwen3.5/Transcoder rebuttal code and evidence are present in this
-working tree and must be added before creating a new commit. A direct
-directory transfer already includes them.
+When an agentic language model receives a tool-enabled prompt, it must decide whether to call a tool before it begins its response. We study this first-token **call-or-no-call** decision through controlled contrastive prompts across Qwen, Mistral, and Granite model families.
 
-## Start here
+We identify a **tool-call vector** that causally controls this decision boundary, and use cross-layer sparse autoencoders (Transcoders) to characterize how it forms. Our results support a suppression account: the agentic scaffold establishes tool calling as a default, while requests that do not require a tool recruit internal features that suppress that default.
 
-- [experiments/README.md](experiments/README.md) is the canonical map from a
-  scientific question to frozen data, code, and evidence.
-- [rebuttal/README.md](rebuttal/README.md) gives the reviewer-item-level
-  evidence chain.
-- [src/README.md](src/README.md) distinguishes active code from retained
-  historical exploration.
-- [paper/neurips_2026.tex](paper/neurips_2026.tex) is the paper entry point;
-  its source, bibliography, figures, and rebuttal materials are included in
-  this checkout.
+## Release
 
-## Layout
+This repository contains:
+
+- Canonical contrastive datasets for tool-calling and no-tool requests.
+- Experiment code for causal intervention, readout, Transcoder formation, and scaffold-ablation analyses.
+- Per-model result artifacts and cross-model transfer evaluations.
+- A compact `mi4tc` library for data handling, interventions, and measurements.
+
+## Repository Structure
 
 ```text
-datasets/      frozen v2/v4/v5 data, provenance, and tau2 trajectories
-experiments/   canonical experiment registry and migration map
-paper/         NeurIPS source snapshot, figures, and rebuttal materials
-rebuttal/      frozen rebuttal records, vectors, summaries, and tables
-src/           data construction, intervention, measurement, and rendering
-scripts/       no-model structural validation
+MI4Toolcalling/
+├── datasets/       # Contrastive inputs, organized by model family
+├── experiments/    # Reproduction pipelines and analysis runners
+├── results/        # Released measurements and evaluation artifacts
+├── scripts/        # Data preparation and utility scripts
+├── src/mi4tc/      # Core experimental library
+└── tests/          # Input and package validation
 ```
 
-Paths for external weights are centralized in `src/artifact_paths.py`. By
-default they resolve under `external/models/` and `external/transcoders/` in
-this repository; set `MODEL_ROOT`, `TRANSCODER_ROOT`, or a model-specific
-environment variable on the destination server. Large immutable vectors and
-tau2 JSONL files are configured for Git LFS in `.gitattributes`.
+Model-specific material is aligned across `datasets/<model>/`, `experiments/<model>/`, and `results/<model>/`.
+
+## Installation
+
+```bash
+pip install -e .
+python tests/test_inputs.py
+```
+
+External base-model and Transcoder checkpoint locations are configured through the local environment; released datasets and model artifacts are linked above.
+
+## Citation
+
+```bibtex
+@inproceedings{mi4toolcalling2026,
+  title     = {How Do Agentic LLMs Decide to Call Tools? A Tool-Call Vector Shaped by Suppression},
+  author    = {Anonymous Authors},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2026}
+}
+```
+
+## License
+
+This project and its released datasets are licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).

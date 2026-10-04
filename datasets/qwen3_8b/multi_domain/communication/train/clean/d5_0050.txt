@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Dispatch this email message shown below:
+To: recipient-1aaa4d234a14@mail.example
+Subject: May Pulse Survey — All-Time Highs Across the Board
+Body: Marcus — May pulse: - **Trust in leadership: 85%** (from 58% one year ago) - **Job satisfaction: 87%** - **Belonging: 82%** All-time highs. Every single metric. This is the culture we fought for — through Maya leaving, through the process debates, through the career ladder rollout, through everything.
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Mail this email message shown below:
+To: recipient-3e3e8bc5cdf1@mail.example
+Subject: Mid-Market Q3 Pipeline: $420K in 14 Deals
+Body: Connor, Brittany, Leo, Rachel — Q3 pipeline review: - **$420K across 14 deals** - Connor leads with 4 deals ($180K) - Brittany ramping: 3 deals ($95K) - Leo steady: 4 deals ($100K) The mid-market engine is self-sustaining. We're not dependent on any single deal or rep anymore. Mike
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

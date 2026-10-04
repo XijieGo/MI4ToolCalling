@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type":"function","function":{"name":"send_email","description":"Send email.","parameters":{"type":"object","properties":{"to":{"type":"string"},"subject":{"type":"string"},"body":{"type":"string"}},"required":["to","subject","body"]}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Submit this email message shown below:
+To: recipient-4cf1d23d449d@mail.example
+Subject: Board revenue scenarios: bull $2.1M, base $1.6M, bear $1.1M
+Body: Marcus — Three revenue scenarios for the September board update: | Scenario | Year-end MRR | Key assumptions | |----------|-------------|-----------------| | **Bull** | $2.1M | Sentinel + PharmaCorp + 2 enterprise deals close | | **Base** | $1.6M | Sentinel closes, 1 additional enterprise, mid-market holds | | **Bear** | $1.1M | Enterprise delays, mid-market churn increases | My recommendation: present the **base case**. It's achievable and sets realistic expectations. David
+<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

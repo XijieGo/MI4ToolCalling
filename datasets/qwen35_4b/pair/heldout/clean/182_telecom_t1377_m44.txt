@@ -1,0 +1,56 @@
+<|im_start|>system
+# Tools
+
+You have access to the following functions:
+
+<tools>
+{"type": "function", "function": {"name": "get_data_usage", "description": "Retrieves current billing cycle data usage for a line, including data\n\nrefueling amount, data limit, and cycle end date.", "parameters": {"properties": {"customer_id": {"description": "ID of the customer who owns the line.", "title": "Customer Id", "type": "string"}, "line_id": {"description": "ID of the line to check usage for.", "title": "Line Id", "type": "string"}}, "required": ["customer_id", "line_id"], "title": "parameters", "type": "object"}}}
+</tools>
+
+If you choose to call a function ONLY reply in the following format with NO suffix:
+
+<tool_call>
+<function=example_function_name>
+<parameter=example_parameter_1>
+value_1
+</parameter>
+<parameter=example_parameter_2>
+This is the value for the second parameter
+that can span
+multiple lines
+</parameter>
+</function>
+</tool_call>
+
+<IMPORTANT>
+Reminder:
+- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags
+- Required parameters MUST be specified
+- You may provide optional reasoning for your function call in natural language BEFORE the function call, but NOT after
+- If there is no function call available, answer the question like normal with your current knowledge and do not tell the user about function calls
+</IMPORTANT>
+
+You are a telecom support agent. Use the provided functions when the user asks you to perform an account action. When the user asks only to discuss, explain, review, summarize, or describe an action, answer in text without using a function.<|im_end|>
+<|im_start|>assistant
+Your messaging app has storage permission but is missing the "sms" permission, which is required for MMS functionality. Please run the following action on your phone:
+
+**grant_app_permission(app_name="messaging", permission="sms")** – This will grant the messaging app the SMS permission it needs to send MMS messages.
+
+After you do this, let me know if it was successful. Then we can test if MMS works.<|im_end|>
+<|im_start|>user
+I have granted the SMS permission to the messaging app successfully. The status bar still shows excellent 5G signal, mobile data enabled, and 80% battery. Should I try sending an MMS message now to check if it works?<|im_end|>
+<|im_start|>assistant
+Great! Now that you've granted the SMS permission, let's verify if your messaging app can send MMS messages. Please run the following action on your phone:
+
+**can_send_mms** – This will check if the messaging app is now able to send MMS messages.
+
+Let me know what it shows.<|im_end|>
+<|im_start|>user
+I checked, and my messaging app still cannot send MMS messages. What should we try next?<|im_end|>
+<|im_start|>user
+Please perform the next appropriate account action now.<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

@@ -1,0 +1,36 @@
+<|start_of_role|>system<|end_of_role|>Knowledge Cutoff Date: April 2024.
+Today's Date: May 05, 2026.
+You are Granite, developed by IBM. You are a helpful assistant with access to the following tools. When a tool is required to answer the user's query, respond only with <|tool_call|> followed by a JSON list of tools used. If a tool does not exist in the provided list of tools, notify the user that you do not have the ability to fulfill the request.<|end_of_text|>
+<|start_of_role|>available_tools<|end_of_role|>[
+    {
+        "type": "function",
+        "function": {
+            "name": "run_sql",
+            "description": "Run query.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "database": {
+                        "type": "string"
+                    },
+                    "query": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "database",
+                    "query"
+                ]
+            }
+        }
+    }
+]<|end_of_text|>
+<|start_of_role|>user<|end_of_role|>Discuss the completed SQL query shown below:
+Database: products_gen_characteristics
+Schema:
+  products(product_id, color_code, product_category_code, product_name, typical_buying_price, typical_selling_price, product_description, other_product_details)
+  ref_colors(color_code, color_description)
+  product_characteristics(product_id, characteristic_id, product_characteristic_value)
+SQL:
+  SELECT t1.product_id , t2.color_description FROM products AS t1 JOIN ref_colors AS t2 ON t1.color_code = t2.color_code JOIN product_characteristics AS t3 ON t1.product_id = t3.product_id GROUP BY t1.product_id HAVING count(*) >= 2<|end_of_text|>
+<|start_of_role|>assistant<|end_of_role|>
