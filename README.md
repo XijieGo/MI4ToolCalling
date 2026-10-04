@@ -1,25 +1,8 @@
----
-license: apache-2.0
-tags:
-- mechanistic-interpretability
-- tool-calling
-- agentic-llm
-- transcoder
-- feature-steering
----
+# How Do Agentic LLMs Decide to Call Tools? A Tool-Call Vector Shaped by Suppression
 
-# [NeurIPS 2026] How Do Agentic LLMs Decide to Call Tools?
+> Official repository for the NeurIPS 2026 poster **"How Do Agentic LLMs Decide to Call Tools? A Tool-Call Vector Shaped by Suppression."**
 
-<div align="center">
-
-[![Paper](https://img.shields.io/badge/Paper-NeurIPS%202026-3B6EA8)](#citation)
-[![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-F9AB00)](https://huggingface.co/datasets/XijieGong/MI4ToolCalling)
-[![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-FFCC4D)](https://huggingface.co/XijieGong/MI4ToolCalling)
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-red.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-
-</div>
-
-> Official repository for the NeurIPS 2026 paper **"How Do Agentic LLMs Decide to Call Tools? A Tool-Call Vector Shaped by Suppression."**
+[Paper](https://neurips.cc/virtual/2026/poster/148769) · [Dataset](https://huggingface.co/datasets/XijieGong/MI4ToolCalling) · [Transcoder Checkpoints](https://huggingface.co/XijieGong/MI4ToolCalling)
 
 ## Overview
 
@@ -33,7 +16,7 @@ This repository contains:
 
 - Canonical contrastive datasets for tool-calling and no-tool requests.
 - Experiment code for causal intervention, readout, Transcoder formation, and scaffold-ablation analyses.
-- Per-model result artifacts and cross-model transfer evaluations.
+- Selected analysis artifacts and cross-model transfer evaluations.
 - A compact `mi4tc` library for data handling, interventions, and measurements.
 
 ## Repository Structure
@@ -41,14 +24,13 @@ This repository contains:
 ```text
 MI4Toolcalling/
 ├── datasets/       # Contrastive inputs, organized by model family
-├── experiments/    # Reproduction pipelines and analysis runners
-├── results/        # Released measurements and evaluation artifacts
+├── experiments/    # Reproduction pipelines and selected analysis artifacts
 ├── scripts/        # Data preparation and utility scripts
 ├── src/mi4tc/      # Core experimental library
 └── tests/          # Input and package validation
 ```
 
-Model-specific material is aligned across `datasets/<model>/`, `experiments/<model>/`, and `results/<model>/`.
+Model-specific material is organized under `datasets/<model>/` and `experiments/<model>/`.
 
 ## Installation
 
