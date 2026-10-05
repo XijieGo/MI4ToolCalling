@@ -1,9 +1,0 @@
-{
-  "S_to_clean_delta_m": 0.6908333333333333,
-  "E_to_clean_delta_m": 0.6708333333333333,
-  "S_to_corrupt_delta_m": 0.02875,
-  "E_to_corrupt_delta_m": 0.8377083333333334,
-  "S_over_E": 0.47700593840629746,
-  "model_key": "granite_3p3_8b",
-  "model_label": "Granite-3.3-8B-Instruct"
-}

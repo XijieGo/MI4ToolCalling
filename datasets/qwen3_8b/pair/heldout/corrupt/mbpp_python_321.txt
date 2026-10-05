@@ -14,7 +14,7 @@ For each function call, return a json object with function name and arguments wi
 {"name": <function-name>, "arguments": <args-json-object>}
 </tool_call><|im_end|>
 <|im_start|>user
-Study the function body in solve.py based on the function definition and docstring below:
+Explore the function body in solve.py based on the function definition and docstring below:
 def find_Divisor(x, y):
     """Find the maximum occurring divisor in an interval.
 

@@ -14,7 +14,7 @@ For each function call, return a json object with function name and arguments wi
 {"name": <function-name>, "arguments": <args-json-object>}
 </tool_call><|im_end|>
 <|im_start|>user
-Discuss the function body in solve.py based on the function definition and docstring below:
+Explore the function body in solve.py based on the function definition and docstring below:
 def isAlienSorted(words: list[str], order: str) -> bool:
     """
     Return True if the given words are sorted lexicographically according to the alien alphabet order.

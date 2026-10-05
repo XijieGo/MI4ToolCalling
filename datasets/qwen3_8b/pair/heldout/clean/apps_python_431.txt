@@ -14,7 +14,7 @@ For each function call, return a json object with function name and arguments wi
 {"name": <function-name>, "arguments": <args-json-object>}
 </tool_call><|im_end|>
 <|im_start|>user
-Write the function body in solve.py based on the function definition and docstring below:
+Save the function body in solve.py based on the function definition and docstring below:
 def maximumGap(nums: list[int]) -> int:
     """
     Return the maximum difference between successive elements in the sorted form of nums, or 0 if nums has fewer than 2 elements.

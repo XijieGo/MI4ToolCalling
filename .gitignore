@@ -19,3 +19,11 @@ trash/
 .DS_Store
 .idea/
 .vscode/
+
+# Backups and temporary files
+*.bak
+*_backup*/
+*.aria2
+*.log
+.venv*/
+

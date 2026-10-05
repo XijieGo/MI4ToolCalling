@@ -14,7 +14,7 @@ For each function call, return a json object with function name and arguments wi
 {"name": <function-name>, "arguments": <args-json-object>}
 </tool_call><|im_end|>
 <|im_start|>user
-Write the function body in solve.cpp based on the function definition and docstring below:
+Complete the function body in solve.cpp based on the function definition and docstring below:
 /*
 Given shovel price k and a special coin value r (plus unlimited 10-coins), find the smallest positive count of shovels so total cost ends with 0 or r.
 Example:

@@ -38,9 +38,9 @@ CONFIGS: dict[str, dict[str, Any]] = {
         "key_head": (29, 9),
     },
     "qwen3_14b": {
-        "formation_layers": [28, 29, 30, 31, 32],
-        "commitment_layer": 33,
-        "readout_layers": [30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40],
+        "formation_layers": [32, 33],
+        "commitment_layer": 34,
+        "readout_layers": [32, 33, 34, 35, 36, 37, 38, 39],
         "target_span": "F",
         "key_head": (34, 8),
     },
@@ -208,6 +208,7 @@ def main():
     parser.add_argument("--model-key", required=True, choices=tuple(CONFIGS))
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--max-pairs", type=int, default=50)
+    parser.add_argument("--output-dir", type=Path, default=None)
     args = parser.parse_args()
 
     model_key = args.model_key
@@ -398,7 +399,7 @@ def main():
         "best_head": f"L{best_head[0]}H{best_head[1]}" if best_head else f"L{key_head[0]}H{key_head[1]}",
     }
 
-    out_dir = REPO_ROOT / "results" / "formation_readout" / model_key
+    out_dir = args.output_dir if args.output_dir is not None else (REPO_ROOT / "results" / "formation_readout" / model_key)
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "summary.json").write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
     print(f"[{model_key}] DONE: MLP/Attn={mlp_attn_str} (tot_mlp={tot_mlp:.2f}, tot_attn={tot_attn:.2f}), Max Attn (pp)=+{max_shift_pp:.1f} (head={result['best_head']})", flush=True)

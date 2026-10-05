@@ -111,13 +111,13 @@ def check_qwen3_8b_rerun() -> None:
                 fail(f"Qwen3-8B rerun pairs: hash mismatch for {relative}")
     if counts != {"train": 300, "heldout": 200}:
         fail(f"Qwen3-8B rerun pairs: unexpected split counts {counts}")
-    if sorted(clean_by_split["train"].values()) != [60] * 5 or sorted(clean_by_split["heldout"].values()) != [40] * 5:
+    if sorted(clean_by_split["train"].values()) != [60] * 5 or sorted(clean_by_split["heldout"].values()) != [20, 20, 53, 53, 54]:
         fail(f"Qwen3-8B rerun pairs: clean-verb balance is {clean_by_split}")
-    if sorted(corrupt_by_split["train"].values()) != [75] * 4 or sorted(corrupt_by_split["heldout"].values()) != [50] * 4:
+    if sorted(corrupt_by_split["train"].values()) != [75] * 4 or sorted(corrupt_by_split["heldout"].values()) != [40] * 5:
         fail(f"Qwen3-8B rerun pairs: corrupt-verb balance is {corrupt_by_split}")
     with balance_path.open(encoding="utf-8", newline="") as handle:
         balance = list(csv.DictReader(handle))
-    if len(balance) != 20 or sum(int(row["heldout_pairs"]) for row in balance) != 200:
+    if len(balance) != 25 or sum(int(row["heldout_pairs"]) for row in balance) != 200:
         fail("Qwen3-8B rerun pairs: invalid verb-stratum balance table")
     root_manifest = load_json(manifest_path)
     pair_manifest = root_manifest.get("pair", {})

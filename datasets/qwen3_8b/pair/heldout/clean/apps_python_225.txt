@@ -14,7 +14,7 @@ For each function call, return a json object with function name and arguments wi
 {"name": <function-name>, "arguments": <args-json-object>}
 </tool_call><|im_end|>
 <|im_start|>user
-Complete the function body in solve.py based on the function definition and docstring below:
+Save the function body in solve.py based on the function definition and docstring below:
 def mobius(n):
     """
     Return the Mobius function value for n: 0 if n is divisible by the square of a prime, 1 if n has an even number of distinct prime factors, and -1 otherwise.

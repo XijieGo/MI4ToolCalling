@@ -14,7 +14,7 @@ For each function call, return a json object with function name and arguments wi
 {"name": <function-name>, "arguments": <args-json-object>}
 </tool_call><|im_end|>
 <|im_start|>user
-Write the function body in solve.cpp based on the function definition and docstring below:
+Add the function body in solve.cpp based on the function definition and docstring below:
 /*
 Two players take turns removing stones from the first non-empty pile; the player who cannot move loses. Determine the winner with optimal play.
 Example:

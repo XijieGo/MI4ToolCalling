@@ -14,7 +14,7 @@ For each function call, return a json object with function name and arguments wi
 {"name": <function-name>, "arguments": <args-json-object>}
 </tool_call><|im_end|>
 <|im_start|>user
-Review the function body in solve.py based on the function definition and docstring below:
+Inspect the function body in solve.py based on the function definition and docstring below:
 def isSolvable(words: list[str], result: str) -> bool:
     """
     Return True if the equation formed by the given words summing to the result is solvable, with each character mapping to a unique digit and no leading zeros.

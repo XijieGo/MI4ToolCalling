@@ -1,8 +1,0 @@
-{
-  "tool_call_marker": "<tool_call>",
-  "tool_call_token_id": 248058,
-  "resolution": "tokenizer.encode",
-  "encode_ids": [
-    248058
-  ]
-}

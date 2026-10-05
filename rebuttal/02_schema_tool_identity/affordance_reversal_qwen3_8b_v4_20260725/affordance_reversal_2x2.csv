@@ -1,5 +1,0 @@
-user_verb,schema,behavior_n,behavior_mean_tool_call_logit,behavior_mean_tool_call_prob,behavior_tool_call_top1_rate,behavior_mean_tool_call_rank,behavior_median_tool_call_rank,behavior_tool_call_top3_rate
-Write,write_file,100,32.0475,0.999976841211319,1.0,1.0,1.0,1.0
-Write,submit_review,100,24.10375,0.34108527413758566,0.34,3.41,2.0,0.66
-Review,write_file,100,25.50125,0.11823552321281511,0.04,4.71,2.0,0.67
-Review,submit_review,100,30.75,0.9990160065889359,1.0,1.0,1.0,1.0

@@ -14,7 +14,7 @@ For each function call, return a json object with function name and arguments wi
 {"name": <function-name>, "arguments": <args-json-object>}
 </tool_call><|im_end|>
 <|im_start|>user
-Study the function body in solve.java based on the function definition and docstring below:
+Explore the function body in solve.java based on the function definition and docstring below:
 /*
 Given equal-length strings a, b, c, for each position swap c[i] with either a[i] or b[i]. Determine if a can become exactly equal to b.
 Example:

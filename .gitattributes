@@ -1,7 +1,0 @@
-# GitHub rejects regular Git objects larger than 100 MiB. These immutable
-# release artifacts are stored through Git LFS when this checkout is published.
-rebuttal/**/*.pt filter=lfs diff=lfs merge=lfs -text
-rebuttal/**/*.pth filter=lfs diff=lfs merge=lfs -text
-rebuttal/**/*.safetensors filter=lfs diff=lfs merge=lfs -text
-rebuttal/05_tau2_bench_200/source_data/**/*.jsonl filter=lfs diff=lfs merge=lfs -text
-datasets/external/**/*.jsonl filter=lfs diff=lfs merge=lfs -text

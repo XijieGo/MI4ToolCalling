@@ -14,7 +14,7 @@ For each function call, return a json object with function name and arguments wi
 {"name": <function-name>, "arguments": <args-json-object>}
 </tool_call><|im_end|>
 <|im_start|>user
-Save the function body in solve.py based on the function definition and docstring below:
+Write the function body in solve.py based on the function definition and docstring below:
 def odd_Equivalent(s, n):
     """
     Return the number of rotations of a binary string that result in an odd integer value.

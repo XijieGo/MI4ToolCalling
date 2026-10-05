@@ -22,6 +22,7 @@ import csv
 import gc
 import json
 import math
+import random
 import sys
 from pathlib import Path
 from typing import Any
@@ -39,18 +40,23 @@ TOOL_CALL_TOKEN = "<tool_call>"
 TOOL_CALL_ID = 151657
 
 
-def load_heldout_pairs(dataset_root: Path, max_pairs: int = 0) -> list[dict[str, Any]]:
+def load_pairs(dataset_root: Path, split: str, max_pairs: int = 0) -> list[dict[str, Any]]:
+    """Load one explicit split from the model-specific paired dataset."""
     pairs_file = dataset_root / "manifest.jsonl" if (dataset_root / "manifest.jsonl").exists() else dataset_root / "pairs.jsonl"
     rows = []
     with pairs_file.open(encoding="utf-8") as f:
         for line in f:
             if line.strip():
                 item = json.loads(line)
-                if item.get("split") == "heldout":
+                if item.get("split") == split:
                     rows.append(item)
     if max_pairs > 0:
         rows = rows[:max_pairs]
     return rows
+
+
+def load_heldout_pairs(dataset_root: Path, max_pairs: int = 0) -> list[dict[str, Any]]:
+    return load_pairs(dataset_root, "heldout", max_pairs=max_pairs)
 
 
 def load_coding_vector(vector_path: Path) -> tuple[torch.Tensor, torch.Tensor]:
@@ -60,6 +66,81 @@ def load_coding_vector(vector_path: Path) -> tuple[torch.Tensor, torch.Tensor]:
     raw = raw.float()
     unit = raw / raw.norm().clamp_min(1e-12)
     return raw, unit
+
+
+def make_input_batch(
+    tokenizer: Any,
+    pairs: list[dict[str, Any]],
+    dataset_root: Path,
+    side: str,
+    device: torch.device,
+) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
+    """Right-pad a batch while retaining each prompt's prediction position."""
+    rel_key = "clean_relpath" if side == "clean" else "corrupt_relpath"
+    prompts = [(dataset_root / pair[rel_key]).read_text(encoding="utf-8") for pair in pairs]
+    tokenized = [tokenizer.encode(prompt, add_special_tokens=False) for prompt in prompts]
+    if not tokenized or any(not tokens for tokens in tokenized):
+        raise ValueError(f"Encountered an empty {side} prompt batch")
+
+    pad_id = tokenizer.pad_token_id if tokenizer.pad_token_id is not None else 0
+    max_len = max(len(tokens) for tokens in tokenized)
+    batch_size = len(tokenized)
+    input_ids = torch.full((batch_size, max_len), pad_id, dtype=torch.long, device=device)
+    attention_mask = torch.zeros((batch_size, max_len), dtype=torch.long, device=device)
+    last_pos = torch.zeros(batch_size, dtype=torch.long, device=device)
+    for idx, tokens in enumerate(tokenized):
+        input_ids[idx, : len(tokens)] = torch.tensor(tokens, dtype=torch.long, device=device)
+        attention_mask[idx, : len(tokens)] = 1
+        last_pos[idx] = len(tokens) - 1
+    return input_ids, attention_mask, last_pos
+
+
+def capture_formation_mlp_inputs(
+    model: Any,
+    tokenizer: Any,
+    pairs: list[dict[str, Any]],
+    dataset_root: Path,
+    batch_size: int,
+    device: torch.device,
+) -> tuple[dict[int, torch.Tensor], dict[int, torch.Tensor]]:
+    """Capture L20--L23 MLP inputs for train-only feature selection."""
+    formation_layers = (20, 21, 22, 23)
+    captured: dict[str, dict[int, list[torch.Tensor]]] = {
+        side: {layer: [] for layer in formation_layers} for side in ("clean", "corrupt")
+    }
+
+    print(f"Capturing L20--L23 MLP inputs on {len(pairs)} train pairs for feature selection...", flush=True)
+    for start in range(0, len(pairs), batch_size):
+        batch_pairs = pairs[start : start + batch_size]
+        for side in ("clean", "corrupt"):
+            input_ids, attention_mask, last_pos = make_input_batch(tokenizer, batch_pairs, dataset_root, side, device)
+            rows = torch.arange(len(batch_pairs), device=device)
+            holders: dict[int, torch.Tensor] = {}
+            handles = []
+            for layer in formation_layers:
+                def make_hook(layer_idx: int):
+                    def hook(module, args):
+                        holders[layer_idx] = args[0][rows, last_pos].detach().float().cpu()
+                    return hook
+
+                handles.append(model.model.layers[layer].mlp.register_forward_pre_hook(make_hook(layer)))
+            try:
+                with torch.no_grad():
+                    model(input_ids=input_ids, attention_mask=attention_mask, use_cache=False)
+            finally:
+                for handle in handles:
+                    handle.remove()
+
+            for layer in formation_layers:
+                captured[side][layer].append(holders[layer])
+
+        if (start // batch_size + 1) % max(1, len(pairs) // (batch_size * 4)) == 0:
+            print(f"  Selected-input capture processed {min(start + batch_size, len(pairs))}/{len(pairs)}", flush=True)
+
+    return (
+        {layer: torch.cat(captured["clean"][layer]) for layer in formation_layers},
+        {layer: torch.cat(captured["corrupt"][layer]) for layer in formation_layers},
+    )
 
 
 def capture_trajectory_and_writes(
@@ -322,7 +403,9 @@ def analyze_transcoder_layers(
         suppressor_mask = corrupt_higher & (beta < 0)
         suppressor_indices = torch.where(suppressor_mask)[0]
         suppressor_scores = kappa[suppressor_indices].abs()
-        top_k_supp = torch.topk(suppressor_scores, min(10, len(suppressor_indices)))
+        # Retain a broader train-selected pool so the primary top-five set and
+        # a layer-matched random control can be evaluated on held-out prompts.
+        top_k_supp = torch.topk(suppressor_scores, min(100, len(suppressor_indices)))
 
         for idx, score in zip(top_k_supp.indices.tolist(), top_k_supp.values.tolist()):
             f_idx = int(suppressor_indices[idx].item())
@@ -378,92 +461,264 @@ def analyze_transcoder_layers(
     return table5_rows, top_features, all_suppressor_features
 
 
+def _feature_metadata(features: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    return [{key: value for key, value in item.items() if key != "decoder_vector"} for item in features]
+
+
+def select_layer_matched_random_control(
+    suppressor_features: list[dict[str, Any]],
+    selected: list[dict[str, Any]],
+    *,
+    seed: int,
+) -> list[dict[str, Any]]:
+    """Sample a non-selected suppressor control with the same layer counts."""
+    selected_keys = {(int(item["layer"]), int(item["feature_idx"])) for item in selected}
+    candidates_by_layer: dict[int, list[dict[str, Any]]] = {}
+    for item in suppressor_features:
+        key = (int(item["layer"]), int(item["feature_idx"]))
+        if key not in selected_keys:
+            candidates_by_layer.setdefault(int(item["layer"]), []).append(item)
+
+    rng = random.Random(seed)
+    control: list[dict[str, Any]] = []
+    for item in selected:
+        layer = int(item["layer"])
+        pool = candidates_by_layer.get(layer, [])
+        if not pool:
+            raise RuntimeError(f"No non-selected suppressor features remain for layer {layer}")
+        chosen = pool.pop(rng.randrange(len(pool)))
+        control.append(chosen)
+    return control
+
+
+def load_feature_payloads(
+    transcoder_dir: Path,
+    features: list[dict[str, Any]],
+    device: torch.device,
+) -> dict[int, dict[str, torch.Tensor]]:
+    """Load only the selected Transcoder rows for exact per-sample zeroing."""
+    by_layer: dict[int, list[int]] = {}
+    for item in features:
+        by_layer.setdefault(int(item["layer"]), []).append(int(item["feature_idx"]))
+
+    weight_dtype = torch.bfloat16 if device.type == "cuda" else torch.float32
+    payloads: dict[int, dict[str, torch.Tensor]] = {}
+    for layer, feature_ids in by_layer.items():
+        weights = load_file(str(transcoder_dir / f"layer_{layer}.safetensors"))
+        indices = torch.tensor(feature_ids, dtype=torch.long)
+        payloads[layer] = {
+            "W_enc": weights["W_enc"][indices].to(device=device, dtype=weight_dtype),
+            "b_enc": weights["b_enc"][indices].to(device=device, dtype=weight_dtype),
+            "W_dec": weights["W_dec"][indices].to(device=device, dtype=weight_dtype),
+        }
+    return payloads
+
+
+def forward_with_l24_capture(
+    model: Any,
+    input_ids: torch.Tensor,
+    attention_mask: torch.Tensor,
+    last_pos: torch.Tensor,
+    *,
+    feature_payloads: dict[int, dict[str, torch.Tensor]] | None = None,
+) -> dict[str, torch.Tensor]:
+    """Run a forward pass and optionally zero selected feature writes in-place.
+
+    The intervention is applied at each source MLP output.  For a selected
+    Transcoder feature f, its *current per-sample* contribution
+    a_f(x) W_dec[f] is subtracted from the actual MLP output at the prediction
+    position.  Capturing L24's input then measures the resulting state rather
+    than an algebraic proxy for it.
+    """
+    batch_size = int(input_ids.shape[0])
+    device = input_ids.device
+    rows = torch.arange(batch_size, device=device)
+    captured: dict[str, torch.Tensor] = {}
+    handles = []
+
+    def capture_l24_pre(module, args):
+        captured["l24_pre"] = args[0][rows, last_pos].detach().float().cpu()
+
+    handles.append(model.model.layers[24].register_forward_pre_hook(capture_l24_pre))
+
+    if feature_payloads:
+        for layer, payload in feature_payloads.items():
+            def make_zero_hook(layer_payload: dict[str, torch.Tensor]):
+                def hook(module, args, output):
+                    mlp_input = args[0][rows, last_pos]
+                    activations = F.relu(
+                        F.linear(
+                            mlp_input.to(dtype=layer_payload["W_enc"].dtype),
+                            layer_payload["W_enc"],
+                            layer_payload["b_enc"],
+                        )
+                    )
+                    contribution = activations @ layer_payload["W_dec"]
+                    out = output.clone()
+                    out[rows, last_pos] = out[rows, last_pos] - contribution.to(dtype=out.dtype)
+                    return out
+
+                return hook
+
+            handles.append(model.model.layers[layer].mlp.register_forward_hook(make_zero_hook(payload)))
+
+    try:
+        with torch.no_grad():
+            output = model(input_ids=input_ids, attention_mask=attention_mask, use_cache=False)
+    finally:
+        for handle in handles:
+            handle.remove()
+
+    logits = output.logits if hasattr(output, "logits") else output[0]
+    last_logits = logits[rows, last_pos].float()
+    tool_logits = last_logits[:, TOOL_CALL_ID]
+    competitors = last_logits.clone()
+    competitors[:, TOOL_CALL_ID] = -torch.inf
+    return {
+        "l24_pre": captured["l24_pre"],
+        "top1": last_logits.argmax(dim=-1).detach().cpu(),
+        "tool_logit": tool_logits.detach().cpu(),
+        "tool_margin": (tool_logits - competitors.max(dim=-1).values).detach().cpu(),
+    }
+
+
+def collect_l24_baselines(
+    model: Any,
+    tokenizer: Any,
+    pairs: list[dict[str, Any]],
+    dataset_root: Path,
+    batch_size: int,
+    device: torch.device,
+) -> dict[str, torch.Tensor]:
+    """Collect matched clean/corrupt prediction states and behavior once."""
+    collected: dict[str, list[torch.Tensor]] = {
+        f"{side}_{name}": []
+        for side in ("clean", "corrupt")
+        for name in ("l24_pre", "top1", "tool_logit", "tool_margin")
+    }
+    print(f"Collecting clean/corrupt L24 baselines on {len(pairs)} held-out pairs...", flush=True)
+    for start in range(0, len(pairs), batch_size):
+        batch_pairs = pairs[start : start + batch_size]
+        for side in ("clean", "corrupt"):
+            input_ids, attention_mask, last_pos = make_input_batch(tokenizer, batch_pairs, dataset_root, side, device)
+            result = forward_with_l24_capture(model, input_ids, attention_mask, last_pos)
+            for name, value in result.items():
+                collected[f"{side}_{name}"].append(value)
+    return {key: torch.cat(values) for key, values in collected.items()}
+
+
+def run_zero_ablation(
+    model: Any,
+    tokenizer: Any,
+    pairs: list[dict[str, Any]],
+    dataset_root: Path,
+    batch_size: int,
+    device: torch.device,
+    feature_payloads: dict[int, dict[str, torch.Tensor]],
+) -> dict[str, torch.Tensor]:
+    collected: dict[str, list[torch.Tensor]] = {name: [] for name in ("l24_pre", "top1", "tool_logit", "tool_margin")}
+    for start in range(0, len(pairs), batch_size):
+        batch_pairs = pairs[start : start + batch_size]
+        input_ids, attention_mask, last_pos = make_input_batch(tokenizer, batch_pairs, dataset_root, "corrupt", device)
+        result = forward_with_l24_capture(
+            model,
+            input_ids,
+            attention_mask,
+            last_pos,
+            feature_payloads=feature_payloads,
+        )
+        for name, value in result.items():
+            collected[name].append(value)
+    return {key: torch.cat(values) for key, values in collected.items()}
+
+
+def summarize_zero_ablation(
+    baseline: dict[str, torch.Tensor],
+    ablated: dict[str, torch.Tensor],
+    mu_hat: torch.Tensor,
+) -> dict[str, Any]:
+    mu_cpu = mu_hat.detach().float().cpu()
+    clean_projection = baseline["clean_l24_pre"] @ mu_cpu
+    corrupt_projection = baseline["corrupt_l24_pre"] @ mu_cpu
+    ablated_projection = ablated["l24_pre"] @ mu_cpu
+    state_delta = ablated_projection - corrupt_projection
+    clean_minus_corrupt_gap = clean_projection - corrupt_projection
+    mean_gap = float(clean_minus_corrupt_gap.mean().item())
+    mean_delta = float(state_delta.mean().item())
+
+    baseline_corrupt_top1 = baseline["corrupt_top1"] == TOOL_CALL_ID
+    ablated_top1 = ablated["top1"] == TOOL_CALL_ID
+    strict_recovery = (~baseline_corrupt_top1) & ablated_top1
+    n_samples = int(ablated_top1.shape[0])
+
+    return {
+        "intervention": "zero each selected feature's current a_f(x) W_dec[f] at its source MLP output",
+        "n_heldout": n_samples,
+        "baseline_corrupt_tool_call_top1_count": int(baseline_corrupt_top1.sum().item()),
+        "baseline_corrupt_tool_call_top1_rate": float(baseline_corrupt_top1.float().mean().item() * 100.0),
+        "post_ablation_tool_call_top1_count": int(ablated_top1.sum().item()),
+        "post_ablation_tool_call_top1_rate": float(ablated_top1.float().mean().item() * 100.0),
+        "strict_recovery_count": int(strict_recovery.sum().item()),
+        "strict_recovery_rate": float(strict_recovery.float().mean().item() * 100.0),
+        "mean_tool_call_logit_delta": float((ablated["tool_logit"] - baseline["corrupt_tool_logit"]).mean().item()),
+        "mean_tool_call_margin_delta": float((ablated["tool_margin"] - baseline["corrupt_tool_margin"]).mean().item()),
+        "mean_clean_l24_projection": float(clean_projection.mean().item()),
+        "mean_corrupt_l24_projection": float(corrupt_projection.mean().item()),
+        "mean_post_ablation_l24_projection": float(ablated_projection.mean().item()),
+        "mean_clean_minus_corrupt_l24_gap": mean_gap,
+        "mean_l24_delta_along_mu_hat": mean_delta,
+        "fraction_of_l24_gap_closed": (mean_delta / mean_gap) if abs(mean_gap) > 1e-12 else None,
+    }
+
+
 def evaluate_feature_ablation(
     model: Any,
     tokenizer: Any,
     pairs: list[dict[str, Any]],
     dataset_root: Path,
+    transcoder_dir: Path,
     suppressor_features: list[dict[str, Any]],
     mu_hat: torch.Tensor,
     device: torch.device,
+    *,
+    selection_pair_count: int,
+    batch_size: int,
+    control_seed: int = 42,
 ) -> dict[str, Any]:
-    # Select top 5 strongest suppressor features overall
-    suppressor_features.sort(key=lambda x: x["abs_kappa"], reverse=True)
+    """Evaluate a train-selected top-five zero ablation on held-out pairs."""
+    suppressor_features.sort(key=lambda item: float(item["abs_kappa"]), reverse=True)
     top5 = suppressor_features[:5]
-    labels = [f"L{x['layer']}/F{x['feature_idx']}" for x in top5]
-    print(f"\nTop-5 suppressor features across L20-L23: {labels}")
+    labels = [f"L{item['layer']}/F{item['feature_idx']}" for item in top5]
+    print(f"\nTrain-selected top-5 suppressor features across L20-L23: {labels}", flush=True)
+    control = select_layer_matched_random_control(suppressor_features, top5, seed=control_seed)
+    control_labels = [f"L{item['layer']}/F{item['feature_idx']}" for item in control]
+    print(f"Layer-matched random suppressor control: {control_labels}", flush=True)
 
-    pad_id = tokenizer.pad_token_id if tokenizer.pad_token_id is not None else 0
-    mu_dev = mu_hat.to(device=device, dtype=torch.float32)
+    baseline = collect_l24_baselines(model, tokenizer, pairs, dataset_root, batch_size, device)
+    top5_payloads = load_feature_payloads(transcoder_dir, top5, device)
+    control_payloads = load_feature_payloads(transcoder_dir, control, device)
 
-    # For each sample, evaluate corrupt prompt baseline vs ablated
-    baseline_top1_count = 0
-    restored_top1_count = 0
-    delta_g24_sum = 0.0
-    n_samples = len(pairs)
+    print("Evaluating per-sample top-5 zero ablation...", flush=True)
+    top5_result = run_zero_ablation(model, tokenizer, pairs, dataset_root, batch_size, device, top5_payloads)
+    print("Evaluating layer-matched random zero-ablation control...", flush=True)
+    control_result = run_zero_ablation(model, tokenizer, pairs, dataset_root, batch_size, device, control_payloads)
 
-    batch_size = 8
-    for b_start in range(0, n_samples, batch_size):
-        b_pairs = pairs[b_start : b_start + batch_size]
-        prompts = [(dataset_root / p["corrupt_relpath"]).read_text(encoding="utf-8") for p in b_pairs]
-        tokenized = [tokenizer.encode(p, add_special_tokens=False) for p in prompts]
-        max_len = max(len(t) for t in tokenized)
-        B = len(prompts)
-        input_ids = torch.full((B, max_len), pad_id, dtype=torch.long, device=device)
-        attention_mask = torch.zeros((B, max_len), dtype=torch.long, device=device)
-        last_pos = torch.zeros(B, dtype=torch.long, device=device)
-        for i, tok in enumerate(tokenized):
-            input_ids[i, : len(tok)] = torch.tensor(tok, dtype=torch.long, device=device)
-            attention_mask[i, : len(tok)] = 1
-            last_pos[i] = len(tok) - 1
-
-        # We intervene by adding the removed suppressor writes to L24 pre-hook
-        # Note: Suppressor write is a_f * W_dec[f] (which points against mu_hat).
-        # Removing it means adding -a_f * W_dec[f] to cancel the suppressive write.
-        # Since each top feature has mean corrupt activation mean_a_corrupt,
-        # the collective cancellation vector is: Delta_supp = sum_f (mean_a_corrupt[f] * (-W_dec[f]))
-        ablation_offset = torch.zeros(4096, device=device, dtype=torch.float32)
-        for item in top5:
-            w_dec = item["decoder_vector"].to(device=device, dtype=torch.float32)
-            # Subtracting the suppressive opposing write restores mu_hat
-            ablation_offset += (-item["mean_a_corrupt"]) * w_dec
-
-        # Baseline corrupt forward
-        with torch.no_grad():
-            out_base = model(input_ids=input_ids, attention_mask=attention_mask, use_cache=False)
-            logits_base = out_base.logits if hasattr(out_base, "logits") else out_base[0]
-
-        rows = torch.arange(B, device=device)
-        base_top1 = logits_base[rows, last_pos].argmax(dim=-1) == TOOL_CALL_ID
-        baseline_top1_count += int(base_top1.sum().item())
-
-        # Intervened corrupt forward (patch at L24)
-        def pre_hook(module, args):
-            hidden = args[0].clone()
-            hidden[rows, last_pos] = hidden[rows, last_pos] - ablation_offset.to(dtype=hidden.dtype)
-            return (hidden, *args[1:])
-
-        handle = model.model.layers[24].register_forward_pre_hook(pre_hook)
-        try:
-            with torch.no_grad():
-                out_abl = model(input_ids=input_ids, attention_mask=attention_mask, use_cache=False)
-                logits_abl = out_abl.logits if hasattr(out_abl, "logits") else out_abl[0]
-        finally:
-            handle.remove()
-
-        abl_top1 = logits_abl[rows, last_pos].argmax(dim=-1) == TOOL_CALL_ID
-        restored_top1_count += int(abl_top1.sum().item())
-        delta_g24_sum += float((ablation_offset @ mu_dev).item()) * B
-
-    recovery_rate = (restored_top1_count / n_samples) * 100.0
-    baseline_call_rate = (baseline_top1_count / n_samples) * 100.0
-    mean_delta_g24 = delta_g24_sum / n_samples
-
+    top5_summary = summarize_zero_ablation(baseline, top5_result, mu_hat)
+    control_summary = summarize_zero_ablation(baseline, control_result, mu_hat)
     return {
-        "top5_features": [{k: v for k, v in item.items() if k != "decoder_vector"} for item in top5],
-        "baseline_corrupt_call_rate": baseline_call_rate,
-        "restored_tool_call_rate": recovery_rate,
-        "shift_along_mu_hat": mean_delta_g24,
+        "selection_split": "train",
+        "selection_pair_count": selection_pair_count,
+        "selection_rule": "top five corrupt-higher, mu-hat-opposing Transcoder features by |kappa|",
+        "top5_features": _feature_metadata(top5),
+        "layer_matched_random_suppressor_control_features": _feature_metadata(control),
+        "top5_zero_ablation": top5_summary,
+        "layer_matched_random_suppressor_zero_control": control_summary,
+        # Clear aliases for the quantities previously reported under ambiguous
+        # names in the original summary.
+        "baseline_corrupt_call_rate": top5_summary["baseline_corrupt_tool_call_top1_rate"],
+        "restored_tool_call_rate": top5_summary["post_ablation_tool_call_top1_rate"],
+        "strict_recovery_rate": top5_summary["strict_recovery_rate"],
+        "shift_along_mu_hat": top5_summary["mean_l24_delta_along_mu_hat"],
     }
 
 
@@ -476,6 +731,7 @@ def main() -> int:
     parser.add_argument("--output-root", type=Path, default=REPO_ROOT / "results/qwen3_8b/formation_transcoder")
     parser.add_argument("--batch-size", type=int, default=8)
     parser.add_argument("--max-pairs", type=int, default=0)
+    parser.add_argument("--selection-max-pairs", type=int, default=0)
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     parser.add_argument("--dtype", default="bfloat16")
     args = parser.parse_args()
@@ -500,7 +756,8 @@ def main() -> int:
     model.eval()
 
     pairs = load_heldout_pairs(args.dataset_root, max_pairs=args.max_pairs)
-    print(f"Loaded {len(pairs)} held-out pairs from {args.dataset_root}")
+    selection_pairs = load_pairs(args.dataset_root, "train", max_pairs=args.selection_max_pairs)
+    print(f"Loaded {len(pairs)} held-out pairs and {len(selection_pairs)} train pairs from {args.dataset_root}")
 
     # 1. Formation Trajectory & Component Writes (Figure 2)
     sweep_results = capture_trajectory_and_writes(
@@ -529,9 +786,11 @@ def main() -> int:
     print(f"  Total Attn write: {formation_summary['total_attn_write']:.2f} ({formation_summary['attn_share_pct']:.1f}%)")
     print(f"  Max MLP single write: Layer {formation_summary['max_mlp_write_layer']} ({formation_summary['max_mlp_write_value']:.2f})")
 
-    # 2. Transcoder Feature Analysis (Table 5)
-    print(f"\nAnalyzing Transcoder features from {args.transcoder_dir}...")
-    table5_rows, top_features, all_suppressor_features = analyze_transcoder_layers(
+    # 2. Descriptive held-out Table-5 accounting.  The causal top-five set is
+    # selected separately on train pairs below, so held-out evaluation stays
+    # independent of feature selection.
+    print(f"\nAnalyzing held-out Transcoder features from {args.transcoder_dir}...")
+    table5_rows, top_features, _heldout_suppressor_features = analyze_transcoder_layers(
         transcoder_dir=args.transcoder_dir,
         clean_mlp_inputs=sweep_results["clean_mlp_inputs"],
         corrupt_mlp_inputs=sweep_results["corrupt_mlp_inputs"],
@@ -540,15 +799,36 @@ def main() -> int:
         device=device,
     )
 
-    # 3. Top-5 Suppressor Feature Ablation
+    selection_clean_inputs, selection_corrupt_inputs = capture_formation_mlp_inputs(
+        model=model,
+        tokenizer=tokenizer,
+        pairs=selection_pairs,
+        dataset_root=args.dataset_root,
+        batch_size=args.batch_size,
+        device=device,
+    )
+    print("Analyzing train-only Transcoder features for causal-set selection...", flush=True)
+    selection_table5_rows, _selection_top_features, selection_suppressor_features = analyze_transcoder_layers(
+        transcoder_dir=args.transcoder_dir,
+        clean_mlp_inputs=selection_clean_inputs,
+        corrupt_mlp_inputs=selection_corrupt_inputs,
+        mu_hat=mu_hat,
+        formation_mlp_write=formation_summary["total_mlp_write"],
+        device=device,
+    )
+
+    # 3. Train-selected, held-out per-sample Top-5 Suppressor Ablation
     ablation_summary = evaluate_feature_ablation(
         model=model,
         tokenizer=tokenizer,
         pairs=pairs,
         dataset_root=args.dataset_root,
-        suppressor_features=all_suppressor_features,
+        transcoder_dir=args.transcoder_dir,
+        suppressor_features=selection_suppressor_features,
         mu_hat=mu_hat,
         device=device,
+        selection_pair_count=len(selection_pairs),
+        batch_size=args.batch_size,
     )
 
     # Write Table 5 Markdown
@@ -599,8 +879,21 @@ def main() -> int:
             "model_path": str(args.model_path),
             "vector_path": str(args.vector_path),
             "n_heldout": len(pairs),
+            "n_train_for_feature_selection": len(selection_pairs),
             "formation_window_summary": formation_summary,
-            "table5": clean_table5_rows,
+            "heldout_table5": clean_table5_rows,
+            "train_selection_table5": [
+                {
+                    "layer": row["layer"],
+                    "dominant": row["dominant"],
+                    "K_corrupt": round(row["K_corrupt"], 2),
+                    "K_clean": round(row["K_clean"], 2),
+                    "K_corrupt_over_K_clean": round(row["K_corrupt_over_K_clean"], 2),
+                    "share_pct": round(row["share_pct"], 1),
+                    "semantic_label": row["semantic_label"],
+                }
+                for row in selection_table5_rows
+            ],
             "top5_feature_ablation": ablation_summary,
         }, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",

@@ -1,4 +1,0 @@
-group,n,feature_count,layers,mean_gate_score_delta,mean_gate_progress_toward_clean,mean_tool_logit_delta,mean_tool_probability_delta,mean_top1_margin_delta,mean_log_odds_delta,intervened_tool_top1_rate,strict_recovery_rate
-paper_suppressor_top,300,5,"{29: 1, 28: 4}",0.4518748311201731,0.024165624044299186,-1.2454166666666666,-0.006360298153255523,-0.6795833333333333,-0.9735214614868164,0.0,0.0
-aligned_driver_top_control,300,5,"{29: 3, 28: 2}",-0.0446282829840978,-0.0031408423941129276,-0.03770833333333334,-0.0008182815382072779,-0.027291666666666665,-0.03280124028523763,0.0,0.0
-random_layer_matched_control,300,5,"{28: 4, 29: 1}",0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0

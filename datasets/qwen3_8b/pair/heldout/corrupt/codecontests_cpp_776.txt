@@ -14,7 +14,7 @@ For each function call, return a json object with function name and arguments wi
 {"name": <function-name>, "arguments": <args-json-object>}
 </tool_call><|im_end|>
 <|im_start|>user
-Discuss the function body in solve.cpp based on the function definition and docstring below:
+Inspect the function body in solve.cpp based on the function definition and docstring below:
 /*
 Calculate the number of minutes Sonya and Filya can spend together given their availability intervals and a minute when Sonya is unavailable.
 Example:

@@ -1,4 +1,0 @@
-sample_id,task_source,language,clean_verb,corrupt_verb,prompt_tokens,prompt_chars,length_bin,baseline_tool_top1,patched_tool_top1,strict_recovery,recovery_failure,patched_non_tool,baseline_tool_logit,patched_tool_logit,tool_logit_change,baseline_tool_probability,patched_tool_probability,baseline_tool_rank,patched_tool_rank,baseline_margin,patched_margin,baseline_mu_coordinate,patched_mu_coordinate
-mbpp_python_96,mbpp,python,save,discuss,200,899,short,0,0,0,1,1,19.875,27.5,7.625,5.21132081932052e-10,0.3748466968536377,31,2,-21.375,-0.5,-0.39205971360206604,0.6080060601234436
-apps_python_366,apps,python,save,discuss,212,990,short,0,0,0,1,1,19.25,26.5,7.25,3.5816671850597004e-10,0.29350745677948,39,2,-21.75,-0.875,-0.36671900749206543,0.6335053443908691
-apps_python_469,apps,python,build,discuss,210,971,short,0,0,0,1,1,19.0,27.375,8.375,2.4133496850237135e-12,0.08493092656135559,62,2,-26.75,-2.375,-0.4007420539855957,0.5994016528129578

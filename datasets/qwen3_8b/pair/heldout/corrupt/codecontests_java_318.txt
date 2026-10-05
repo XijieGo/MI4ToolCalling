@@ -14,7 +14,7 @@ For each function call, return a json object with function name and arguments wi
 {"name": <function-name>, "arguments": <args-json-object>}
 </tool_call><|im_end|>
 <|im_start|>user
-Explore the function body in solve.java based on the function definition and docstring below:
+Inspect the function body in solve.java based on the function definition and docstring below:
 /*
 Given n dollars, find the minimum number of bills needed using denominations 1, 5, 10, 20, and 100.
 Example:

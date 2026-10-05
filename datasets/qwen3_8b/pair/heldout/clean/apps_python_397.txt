@@ -14,7 +14,7 @@ For each function call, return a json object with function name and arguments wi
 {"name": <function-name>, "arguments": <args-json-object>}
 </tool_call><|im_end|>
 <|im_start|>user
-Add the function body in solve.py based on the function definition and docstring below:
+Save the function body in solve.py based on the function definition and docstring below:
 def tallestBillboard(rods: list[int]) -> int:
     """
     Return the maximum equal height for two billboard supports, or 0 if impossible.

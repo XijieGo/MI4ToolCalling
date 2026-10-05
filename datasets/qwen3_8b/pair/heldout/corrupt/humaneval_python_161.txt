@@ -14,7 +14,7 @@ For each function call, return a json object with function name and arguments wi
 {"name": <function-name>, "arguments": <args-json-object>}
 </tool_call><|im_end|>
 <|im_start|>user
-Discuss the function body in solve.py based on the function definition and docstring below:
+Study the function body in solve.py based on the function definition and docstring below:
 def do_algebra(operator, operand):
     """
     Given two lists operator, and operand. The first list has basic algebra operations, and the second list is a list of integers.

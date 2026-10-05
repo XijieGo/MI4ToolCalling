@@ -14,7 +14,7 @@ For each function call, return a json object with function name and arguments wi
 {"name": <function-name>, "arguments": <args-json-object>}
 </tool_call><|im_end|>
 <|im_start|>user
-Save the function body in solve.py based on the function definition and docstring below:
+Build the function body in solve.py based on the function definition and docstring below:
 def maxCoins(piles: list[int]) -> int:
     """
     Return the maximum number of coins you can obtain by repeatedly selecting triplets of piles, where Alice takes the largest, you take the next largest, and Bob takes the smallest.

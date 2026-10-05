@@ -73,7 +73,7 @@ LOCKED: dict[str, dict[str, Any]] = {
         "marker": "<tool_call>",
         "marker_id": 151657,
         "token_budget": 49152,
-        "layer": 33,
+        "layer": 34,
         "hook": "pre",
     },
     "qwen35_4b": {

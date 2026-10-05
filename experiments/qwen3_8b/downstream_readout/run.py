@@ -60,10 +60,21 @@ def load_heldout_pairs(dataset_root: Path, max_pairs: int = 0) -> list[dict[str,
     return rows
 
 
-def load_coding_vector(vector_path: Path) -> torch.Tensor:
+def load_coding_vector(vector_path: Path) -> tuple[torch.Tensor, torch.Tensor]:
+    """Return the raw intervention vector and its unit state direction."""
     payload = torch.load(str(vector_path), map_location="cpu", weights_only=False)
     raw = payload["mean_diff"] if isinstance(payload, dict) and "mean_diff" in payload else payload
-    return raw.float()
+    raw = raw.float()
+    return raw, raw / raw.norm().clamp_min(1e-12)
+
+
+def tool_logit_and_margin(logits: torch.Tensor, position: int) -> tuple[float, float]:
+    """Return the tool-call logit and its margin over the best competing token."""
+    row = logits[0, position].float()
+    tool_logit = float(row[TOOL_CALL_ID].item())
+    competitors = row.clone()
+    competitors[TOOL_CALL_ID] = -torch.inf
+    return tool_logit, float((row[TOOL_CALL_ID] - competitors.max()).item())
 
 
 def identify_spans(text: str, offsets: list[tuple[int, int]]) -> dict[str, list[int]]:
@@ -97,7 +108,9 @@ def main() -> int:
     device = torch.device(args.device)
 
     print(f"Loading coding vector from {args.vector_path}...")
-    mu_Delta = load_coding_vector(args.vector_path).to(device=device)
+    mu_Delta, mu_hat = load_coding_vector(args.vector_path)
+    mu_Delta = mu_Delta.to(device=device)
+    mu_hat = mu_hat.to(device=device)
 
     print(f"Loading Qwen3-8B from {args.model_path} with eager attention...")
     import transformers
@@ -142,7 +155,16 @@ def main() -> int:
     # MLP34 and F109925 data
     corrupt_base_top1_count = 0
     mlp34_patch_top1_count = 0
+    mlp34_strict_recovery_count = 0
     f109925_patch_top1_count = 0
+    f109925_strict_recovery_count = 0
+
+    corrupt_base_tool_logit_sum = 0.0
+    corrupt_base_margin_sum = 0.0
+    mlp34_patch_tool_logit_sum = 0.0
+    mlp34_patch_margin_sum = 0.0
+    f109925_patch_tool_logit_sum = 0.0
+    f109925_patch_margin_sum = 0.0
 
     clean_f109925_acts = []
     corrupt_f109925_acts = []
@@ -177,6 +199,8 @@ def main() -> int:
         k_tokens = torch.tensor([corrupt_enc["input_ids"]], dtype=torch.long, device=device)
         c_len = c_tokens.shape[1]
         k_len = k_tokens.shape[1]
+        if c_len != k_len:
+            raise ValueError(f"Pair {p['sample_id']} has unequal token lengths: {c_len} vs {k_len}")
 
         # Hook holders
         c_head_outs: dict[tuple[int, int], torch.Tensor] = {}
@@ -272,8 +296,11 @@ def main() -> int:
         corrupt_f109925_acts.append(k_act_f109925)
 
         base_top1 = (k_out.logits[0, -1].argmax().item() == TOOL_CALL_ID)
+        base_tool_logit, base_margin = tool_logit_and_margin(k_out.logits, -1)
         if base_top1:
             corrupt_base_top1_count += 1
+        corrupt_base_tool_logit_sum += base_tool_logit
+        corrupt_base_margin_sum += base_margin
 
         # --- Forward Corrupt + mu_Delta at L24 ---
         def add_mu_hook(module, args):
@@ -323,8 +350,14 @@ def main() -> int:
         with torch.no_grad():
             out_patch = model(input_ids=k_tokens, use_cache=False)
         handle.remove()
-        if out_patch.logits[0, -1].argmax().item() == TOOL_CALL_ID:
+        mlp34_patch_top1 = out_patch.logits[0, -1].argmax().item() == TOOL_CALL_ID
+        mlp34_patch_tool_logit, mlp34_patch_margin = tool_logit_and_margin(out_patch.logits, -1)
+        if mlp34_patch_top1:
             mlp34_patch_top1_count += 1
+        if not base_top1 and mlp34_patch_top1:
+            mlp34_strict_recovery_count += 1
+        mlp34_patch_tool_logit_sum += mlp34_patch_tool_logit
+        mlp34_patch_margin_sum += mlp34_patch_margin
 
         # --- Test F109925 Feature Replacement ---
         # Add (c_act - k_act) * w_dec to corrupt MLP34 output
@@ -338,8 +371,14 @@ def main() -> int:
         with torch.no_grad():
             out_f_patch = model(input_ids=k_tokens, use_cache=False)
         handle.remove()
-        if out_f_patch.logits[0, -1].argmax().item() == TOOL_CALL_ID:
+        f109925_patch_top1 = out_f_patch.logits[0, -1].argmax().item() == TOOL_CALL_ID
+        f109925_patch_tool_logit, f109925_patch_margin = tool_logit_and_margin(out_f_patch.logits, -1)
+        if f109925_patch_top1:
             f109925_patch_top1_count += 1
+        if not base_top1 and f109925_patch_top1:
+            f109925_strict_recovery_count += 1
+        f109925_patch_tool_logit_sum += f109925_patch_tool_logit
+        f109925_patch_margin_sum += f109925_patch_margin
 
         if idx % max(1, n_pairs // 5) == 0:
             print(f"  Processed {idx}/{n_pairs} pairs...", flush=True)
@@ -408,19 +447,59 @@ def main() -> int:
     mean_k_act = sum(corrupt_f109925_acts) / n_pairs
     mean_int_act = sum(interv_f109925_acts) / n_pairs
     call_proj = float((w_dec_f109925 @ u_call).item())
+    mu_hat_proj = float((w_dec_f109925 @ mu_hat).item())
+
+    def projected_writes(projection: float) -> dict[str, float]:
+        return {
+            "per_unit_projection": projection,
+            "clean_mean_write": mean_c_act * projection,
+            "corrupt_mean_write": mean_k_act * projection,
+            "corrupt_plus_mu_delta_mean_write": mean_int_act * projection,
+        }
 
     sec62_summary = {
-        "mlp34_patching_restoration_rate": (mlp34_patch_top1_count / n_pairs) * 100.0,
+        "evaluation": {
+            "n_heldout": n_pairs,
+            "patch_site": "MLP34 output at the prediction position only",
+            "vector_intervention_site": "L24 decoder-block input at the prediction position",
+        },
+        "mlp34_prediction_position_patching": {
+            "baseline_corrupt_tool_call_top1_count": corrupt_base_top1_count,
+            "baseline_corrupt_tool_call_top1_rate": (corrupt_base_top1_count / n_pairs) * 100.0,
+            "patched_tool_call_top1_count": mlp34_patch_top1_count,
+            "patched_tool_call_top1_rate": (mlp34_patch_top1_count / n_pairs) * 100.0,
+            "strict_recovery_count": mlp34_strict_recovery_count,
+            "strict_recovery_rate": (mlp34_strict_recovery_count / n_pairs) * 100.0,
+            "mean_tool_call_logit_delta": (mlp34_patch_tool_logit_sum - corrupt_base_tool_logit_sum) / n_pairs,
+            "mean_tool_call_margin_delta": (mlp34_patch_margin_sum - corrupt_base_margin_sum) / n_pairs,
+        },
+        # Retained for callers that consumed the previous output schema.  It is
+        # now explicitly the strict recovery rate, rather than an ambiguous
+        # post-intervention top-1 rate.
+        "mlp34_patching_restoration_rate": (mlp34_strict_recovery_count / n_pairs) * 100.0,
         "feature_f109925": {
             "index": TARGET_FEATURE_IDX,
-            "call_token_write_projection": call_proj,
             "mean_clean_activation": round(mean_c_act, 2),
             "mean_corrupt_activation": round(mean_k_act, 2),
             "mean_intervened_activation": round(mean_int_act, 2),
+            "projection_axes": {
+                "call_token_logit": projected_writes(call_proj),
+                "mu_hat_state_direction": projected_writes(mu_hat_proj),
+            },
+            # Compatibility aliases for the original direct-logit metric.
+            "call_token_write_projection": call_proj,
             "projected_clean_write": round(mean_c_act * call_proj, 1),
             "projected_corrupt_write": round(mean_k_act * call_proj, 1),
             "projected_intervened_write": round(mean_int_act * call_proj, 1),
-            "single_feature_replacement_recovery_rate": (f109925_patch_top1_count / n_pairs) * 100.0,
+            "single_feature_prediction_position_replacement": {
+                "patched_tool_call_top1_count": f109925_patch_top1_count,
+                "patched_tool_call_top1_rate": (f109925_patch_top1_count / n_pairs) * 100.0,
+                "strict_recovery_count": f109925_strict_recovery_count,
+                "strict_recovery_rate": (f109925_strict_recovery_count / n_pairs) * 100.0,
+                "mean_tool_call_logit_delta": (f109925_patch_tool_logit_sum - corrupt_base_tool_logit_sum) / n_pairs,
+                "mean_tool_call_margin_delta": (f109925_patch_margin_sum - corrupt_base_margin_sum) / n_pairs,
+            },
+            "single_feature_replacement_recovery_rate": (f109925_strict_recovery_count / n_pairs) * 100.0,
         },
     }
 
@@ -467,12 +546,13 @@ def main() -> int:
         "",
         "## 2. Late Structural Feature Readout (Sec 6.2, Figure 3C)",
         "",
-        f"- **MLP34 Causal Patching**: Recovers `<tool_call>` top-1 on **{sec62_summary['mlp34_patching_restoration_rate']:.1f}%** of held-out analysis prompts.",
+        f"- **MLP34 prediction-position patching**: strict recovery on **{sec62_summary['mlp34_prediction_position_patching']['strict_recovery_count']}/{n_pairs}** held-out analysis prompts ({sec62_summary['mlp34_prediction_position_patching']['strict_recovery_rate']:.1f}%).",
         f"- **Transcoder Feature L34/F{TARGET_FEATURE_IDX}**:",
         f"  - Clean activation: `{sec62_summary['feature_f109925']['mean_clean_activation']}` (projected write = `{sec62_summary['feature_f109925']['projected_clean_write']}`)",
         f"  - Corrupt activation: `{sec62_summary['feature_f109925']['mean_corrupt_activation']}` (projected write = `{sec62_summary['feature_f109925']['projected_corrupt_write']}`)",
         f"  - Corrupt + $\\mu_\\Delta$ activation: `{sec62_summary['feature_f109925']['mean_intervened_activation']}` (projected write = `{sec62_summary['feature_f109925']['projected_intervened_write']}`)",
-        f"  - **Single-feature replacement recovery rate**: **{sec62_summary['feature_f109925']['single_feature_replacement_recovery_rate']:.1f}%** of held-out analysis prompts.",
+        f"  - Direct-logit and $\\hat{{\\mu}}_\\Delta$ state-direction projections are both recorded in `mlp34_feature_readout.json`.",
+        f"  - **Single-feature prediction-position replacement**: strict recovery on **{sec62_summary['feature_f109925']['single_feature_prediction_position_replacement']['strict_recovery_count']}/{n_pairs}** prompts ({sec62_summary['feature_f109925']['single_feature_prediction_position_replacement']['strict_recovery_rate']:.1f}%).",
         "",
     ])
 

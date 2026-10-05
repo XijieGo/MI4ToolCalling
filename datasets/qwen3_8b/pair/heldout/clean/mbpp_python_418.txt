@@ -14,7 +14,7 @@ For each function call, return a json object with function name and arguments wi
 {"name": <function-name>, "arguments": <args-json-object>}
 </tool_call><|im_end|>
 <|im_start|>user
-Write the function body in solve.py based on the function definition and docstring below:
+Complete the function body in solve.py based on the function definition and docstring below:
 def positive_count(nums):
     """
     Find the ration of positive numbers in an array of integers.

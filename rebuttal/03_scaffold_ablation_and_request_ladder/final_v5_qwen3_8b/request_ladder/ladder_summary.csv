@@ -1,9 +1,0 @@
-dataset_label,ladder_level,description,request_type,unique_prompt_count,behavior_n,behavior_mean_tool_call_logit,behavior_mean_tool_call_prob,behavior_tool_call_top1_rate,behavior_mean_tool_call_rank,behavior_median_tool_call_rank,behavior_tool_call_top3_rate
-qwen3_8b_v5_final,L0,empty user turn,literal_baseline,1,1,21.5,0.00046038124128244817,0.0,7.0,7.0,0.0
-qwen3_8b_v5_final,L1,Hello,neutral_greeting,1,1,3.953125,4.503372233778139e-20,0.0,10329.0,10329.0,0.0
-qwen3_8b_v5_final,L2,unrelated factual question,unrelated_question,1,1,3.75,3.4337762769623675e-17,0.0,9180.0,9180.0,0.0
-qwen3_8b_v5_final,L3,task body only,verb_free_task,300,300,25.25583333333333,0.3309547887486373,0.3233333333333333,3.28,3.0,0.64
-qwen3_8b_v5_final,L4,predeclared neutral verb + body,neutral_verb_task,300,300,29.359583333333333,0.8546752775728237,0.8666666666666667,1.2266666666666666,1.0,0.97
-qwen3_8b_v5_final,L5,analysis verb + body,analysis_task,300,300,23.169583333333332,0.008039854398542347,0.0,11.353333333333333,9.0,0.25333333333333335
-qwen3_8b_v5_final,L6,execution verb + body,execution_task,300,300,31.956666666666667,0.9993091400464376,1.0,1.0,1.0,1.0
-qwen3_8b_v5_final,L7,no system scaffold + execution + body,execution_without_scaffold,300,300,0.3462206013997396,6.56048807709493e-17,0.0,33007.74333333333,33255.5,0.0

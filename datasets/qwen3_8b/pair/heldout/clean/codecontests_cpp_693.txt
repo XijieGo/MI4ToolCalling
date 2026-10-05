@@ -14,7 +14,7 @@ For each function call, return a json object with function name and arguments wi
 {"name": <function-name>, "arguments": <args-json-object>}
 </tool_call><|im_end|>
 <|im_start|>user
-Save the function body in solve.cpp based on the function definition and docstring below:
+Write the function body in solve.cpp based on the function definition and docstring below:
 /*
 Compare two positive numbers X and Y given in different bases, with digits provided from most to least significant.
 Example:

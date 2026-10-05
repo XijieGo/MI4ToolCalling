@@ -14,7 +14,7 @@ For each function call, return a json object with function name and arguments wi
 {"name": <function-name>, "arguments": <args-json-object>}
 </tool_call><|im_end|>
 <|im_start|>user
-Write the function body in solve.py based on the function definition and docstring below:
+Add the function body in solve.py based on the function definition and docstring below:
 def longestPalindrome(s: str) -> int:
     """Given a case-sensitive string, return the maximum length of a palindrome that can be built using its letters.
 

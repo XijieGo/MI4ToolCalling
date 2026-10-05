@@ -14,7 +14,7 @@ For each function call, return a json object with function name and arguments wi
 {"name": <function-name>, "arguments": <args-json-object>}
 </tool_call><|im_end|>
 <|im_start|>user
-Explore the function body in solve.py based on the function definition and docstring below:
+Discuss the function body in solve.py based on the function definition and docstring below:
 def findMinStep(board: str, hand: str) -> int:
     """
     Return the minimal number of balls from hand to insert into board to clear all balls, or -1 if impossible.

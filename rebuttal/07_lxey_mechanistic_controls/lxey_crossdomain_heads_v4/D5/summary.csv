@@ -1,5 +1,0 @@
-domain,variant,heads,n_heads,n_test_pairs,baseline_clean_tool_top1_rate,baseline_corrupt_tool_top1_rate,sum_delta_attention_clean_minus_corrupt,sum_delta_raw_tool_unembedding_write,rescue_patched_tool_top1_rate,rescue_strict_recovery_rate,rescue_mean_tool_logit_delta,ablation_patched_tool_top1_rate,ablation_strict_loss_rate,ablation_mean_tool_logit_delta
-D5,L19H31,L19H31,1,100,1.0,0.0,-0.026198826730251312,0.08055268973112106,0.0,0.0,2.1762499809265137,1.0,0.0,-0.53125
-D5,L20H29,L20H29,1,100,1.0,0.0,0.007627543061971664,0.006393294781446457,0.0,0.0,0.2893750071525574,1.0,0.0,-0.054999999701976776
-D5,L20H14,L20H14,1,100,1.0,0.0,-0.024653086438775063,0.04038027301430702,0.0,0.0,0.9362499713897705,1.0,0.0,-0.10000000149011612
-D5,all_3,L19H31+L20H29+L20H14,3,100,1.0,0.0,-0.04322437196969986,0.12732626497745514,0.0,0.0,2.807499885559082,1.0,0.0,-0.5674999952316284

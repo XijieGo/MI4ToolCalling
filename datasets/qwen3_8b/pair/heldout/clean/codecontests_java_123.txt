@@ -14,7 +14,7 @@ For each function call, return a json object with function name and arguments wi
 {"name": <function-name>, "arguments": <args-json-object>}
 </tool_call><|im_end|>
 <|im_start|>user
-Save the function body in solve.java based on the function definition and docstring below:
+Add the function body in solve.java based on the function definition and docstring below:
 /*
 For each test case with three given side lengths a, b, and c, output any integer length d such that a, b, c, and d can form a non-degenerate simple quadrilateral.
 Example:

@@ -1,9 +1,0 @@
-{
-  "semantic_tool_opening": "[TOOL_CALLS]",
-  "tool_token_id_via_convert": 9,
-  "tool_token_ids_via_encode": [
-    9
-  ],
-  "tool_token_encode_length": 1,
-  "decision_position": "final native prompt token / first generation decision"
-}

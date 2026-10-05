@@ -3,8 +3,8 @@
   "model_key": "qwen3_8b",
   "model_label": "Qwen3-8B",
   "pair": {
-    "pairs_jsonl_sha256": "d210e0fb1be4c26800b7e60451092137b5968710ccb4de97cfdc457c7d3215ed",
-    "balance_csv_sha256": "932e51885fa98371ab99490802eb2f89c7afd4b3006c79c8eb56835e1e15a54f",
+    "pairs_jsonl_sha256": "78b993a23ab17844c2a81682748f311af7772f3e2fe7f416c84551ec441d1bde",
+    "balance_csv_sha256": "300cfd0409e64aa10db8f7334de1b693f6f2c02f7b333ef59b4768b69558c218",
     "split_counts": {
       "heldout": 200,
       "train": 300
@@ -18,11 +18,11 @@
         "add": 60
       },
       "heldout": {
-        "write": 40,
-        "add": 40,
-        "save": 40,
-        "complete": 40,
-        "build": 40
+        "write": 54,
+        "add": 53,
+        "save": 53,
+        "complete": 20,
+        "build": 20
       }
     },
     "corrupt_verb_counts": {
@@ -33,10 +33,11 @@
         "study": 75
       },
       "heldout": {
-        "study": 50,
-        "review": 50,
-        "discuss": 50,
-        "explore": 50
+        "discuss": 40,
+        "explore": 40,
+        "inspect": 40,
+        "review": 40,
+        "study": 40
       }
     }
   },
@@ -76,7 +77,12 @@
     {
       "clean_verb": "add",
       "corrupt_verb": "explore",
-      "heldout_pairs": 10
+      "heldout_pairs": 14
+    },
+    {
+      "clean_verb": "add",
+      "corrupt_verb": "inspect",
+      "heldout_pairs": 8
     },
     {
       "clean_verb": "add",
@@ -86,87 +92,107 @@
     {
       "clean_verb": "add",
       "corrupt_verb": "study",
-      "heldout_pairs": 11
+      "heldout_pairs": 12
     },
     {
       "clean_verb": "build",
       "corrupt_verb": "discuss",
-      "heldout_pairs": 9
+      "heldout_pairs": 4
     },
     {
       "clean_verb": "build",
       "corrupt_verb": "explore",
-      "heldout_pairs": 11
+      "heldout_pairs": 2
+    },
+    {
+      "clean_verb": "build",
+      "corrupt_verb": "inspect",
+      "heldout_pairs": 3
     },
     {
       "clean_verb": "build",
       "corrupt_verb": "review",
-      "heldout_pairs": 10
+      "heldout_pairs": 6
     },
     {
       "clean_verb": "build",
       "corrupt_verb": "study",
-      "heldout_pairs": 10
+      "heldout_pairs": 5
     },
     {
       "clean_verb": "complete",
       "corrupt_verb": "discuss",
-      "heldout_pairs": 9
+      "heldout_pairs": 3
     },
     {
       "clean_verb": "complete",
       "corrupt_verb": "explore",
-      "heldout_pairs": 10
+      "heldout_pairs": 4
     },
     {
       "clean_verb": "complete",
+      "corrupt_verb": "inspect",
+      "heldout_pairs": 4
+    },
+    {
+      "clean_verb": "complete",
+      "corrupt_verb": "review",
+      "heldout_pairs": 5
+    },
+    {
+      "clean_verb": "complete",
+      "corrupt_verb": "study",
+      "heldout_pairs": 4
+    },
+    {
+      "clean_verb": "save",
+      "corrupt_verb": "discuss",
+      "heldout_pairs": 11
+    },
+    {
+      "clean_verb": "save",
+      "corrupt_verb": "explore",
+      "heldout_pairs": 12
+    },
+    {
+      "clean_verb": "save",
+      "corrupt_verb": "inspect",
+      "heldout_pairs": 15
+    },
+    {
+      "clean_verb": "save",
+      "corrupt_verb": "review",
+      "heldout_pairs": 8
+    },
+    {
+      "clean_verb": "save",
+      "corrupt_verb": "study",
+      "heldout_pairs": 7
+    },
+    {
+      "clean_verb": "write",
+      "corrupt_verb": "discuss",
+      "heldout_pairs": 12
+    },
+    {
+      "clean_verb": "write",
+      "corrupt_verb": "explore",
+      "heldout_pairs": 8
+    },
+    {
+      "clean_verb": "write",
+      "corrupt_verb": "inspect",
+      "heldout_pairs": 10
+    },
+    {
+      "clean_verb": "write",
       "corrupt_verb": "review",
       "heldout_pairs": 12
     },
     {
-      "clean_verb": "complete",
-      "corrupt_verb": "study",
-      "heldout_pairs": 9
-    },
-    {
-      "clean_verb": "save",
-      "corrupt_verb": "discuss",
-      "heldout_pairs": 11
-    },
-    {
-      "clean_verb": "save",
-      "corrupt_verb": "explore",
-      "heldout_pairs": 10
-    },
-    {
-      "clean_verb": "save",
-      "corrupt_verb": "review",
-      "heldout_pairs": 10
-    },
-    {
-      "clean_verb": "save",
-      "corrupt_verb": "study",
-      "heldout_pairs": 9
-    },
-    {
-      "clean_verb": "write",
-      "corrupt_verb": "discuss",
-      "heldout_pairs": 11
-    },
-    {
-      "clean_verb": "write",
-      "corrupt_verb": "explore",
-      "heldout_pairs": 9
-    },
-    {
-      "clean_verb": "write",
-      "corrupt_verb": "review",
-      "heldout_pairs": 9
-    },
-    {
       "clean_verb": "write",
       "corrupt_verb": "study",
-      "heldout_pairs": 11
+      "heldout_pairs": 12
     }
   ]
 }
