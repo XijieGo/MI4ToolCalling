@@ -1,7 +1,3 @@
-# MI4ToolCalling
-
-**Release V1.0**
-
 Official code for the NeurIPS 2026 paper **"How Do Agentic LLMs Decide to Call Tools? A Tool-Call Vector Shaped by Suppression."**
 
 [Paper](https://neurips.cc/virtual/2026/poster/148769) · [Dataset](https://huggingface.co/datasets/XijieGong/MI4ToolCalling) · [Transcoder Checkpoints](https://huggingface.co/XijieGong/MI4ToolCalling)
