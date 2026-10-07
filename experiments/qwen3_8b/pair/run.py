@@ -254,7 +254,7 @@ def main() -> int:
             "summary": summary,
         },
     )
-    del adapter
+    adapter = None
     gc.collect()
     print(f"Wrote pair localization results to {output_root}")
     return 0

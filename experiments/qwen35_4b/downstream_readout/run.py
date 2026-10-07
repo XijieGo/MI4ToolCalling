@@ -17,11 +17,13 @@ import torch.nn.functional as F
 REPO_ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO_ROOT / "src"))
 
+from mi4tc.paths import model_path  # noqa: E402
+
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 TOOL_CALL_TOKEN = "<tool_call>"
 TOOL_CALL_ID = 248058
-INTERVENTION_LAYER = 30
+INTERVENTION_LAYER = 31  # pre L31 equals the archived post L30 vector location.
 FULL_ATTN_LAYERS = [23, 27, 31]
 
 
@@ -74,7 +76,7 @@ def identify_spans(text: str, offset_mapping: list[tuple[int, int]]) -> dict[str
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model-path", type=Path, default=Path("/root/autodl-tmp/Qwen/Qwen3.5-4B"))
+    parser.add_argument("--model-path", type=Path, default=model_path("qwen35_4b"))
     parser.add_argument("--vector-path", type=Path, default=Path("results/transfer/qwen35_4b/coding_vector.pt"))
     parser.add_argument("--dataset-root", type=Path, default=Path("datasets/qwen35_4b/pair"))
     parser.add_argument("--output-root", type=Path, default=Path("results/qwen35_4b/downstream_readout"))
@@ -194,7 +196,6 @@ def main():
         "model": "Qwen3.5-4B",
         "n_heldout": total_eval,
         "max_attention_shift_pp": round(max_shift_pp, 1),
-        "table6_reported_max_attn_pp": 47.3,
         "intervention_layer": INTERVENTION_LAYER,
         "vector_recovery_rate_pct": round(recovery_rate, 1),
     }
@@ -216,7 +217,7 @@ def main():
 
     md_lines.extend([
         "",
-        f"- **Max Attention Shift**: `{max_shift_pp:.1f} pp` (Table 6 reports `+47.3 pp`).",
+        f"- **Max Attention Shift**: `{max_shift_pp:.1f} pp`.",
         f"- **Vector Intervention at L{INTERVENTION_LAYER}**: Recovers `<tool_call>` top-1 on **{recovery_rate:.1f}%** of held-out analysis prompts.",
     ])
     md_content = "\n".join(md_lines) + "\n"

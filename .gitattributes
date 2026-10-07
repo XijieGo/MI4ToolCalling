@@ -1,0 +1,2 @@
+# Preserve the upstream tau2 prompt templates verbatim.
+experiments/cross_model/transfer/templates/*/tau2_system_prompt.txt -whitespace

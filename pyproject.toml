@@ -4,17 +4,26 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mi4tc"
-version = "0.1.0"
-description = "Code and datasets for first-token tool-call experiments"
+version = "1.0.0"
+description = "Experiment code for first-token tool-call mechanisms"
 readme = "README.md"
 requires-python = ">=3.10"
+license = {file = "LICENSE"}
 dependencies = []
 
 [project.optional-dependencies]
 model = [
-  "torch>=2.2",
-  "transformers>=4.52.4",
+  "torch>=2.6",
+  "transformers>=5.3,<6",
+  "safetensors>=0.4",
+  "sentencepiece>=0.2",
+  "accelerate>=1",
 ]
+mistral = ["mi4tc[model]", "mistral-common>=1.12,<2"]
+analysis = ["mi4tc[model]", "numpy>=1.26", "scipy>=1.11"]
+legacy = ["mi4tc[model]", "transformer-lens>=2.0"]
+test = ["mi4tc[model]", "pytest>=8"]
+hub = ["huggingface-hub>=1"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -23,12 +23,14 @@ from typing import Callable
 import torch
 
 
-ROOT = Path("/root/autodl-tmp")
-LEGACY_SRC = ROOT / "project-new/tool-call-mechanism-artifact/src"
-MODEL_PATH = ROOT / "Qwen/Qwen3-8B"
+ROOT = Path(__file__).resolve().parents[3]
+sys.path.insert(0, str(ROOT / "src"))
+from mi4tc.paths import model_path
+
+MODEL_PATH = model_path("qwen3_8b")
 TOOL_CALL = "<tool_call>"
 MLP_LAYER = 34
-DEFAULT_OUTPUT_ROOT = ROOT / "MI4Toolcalling/results/qwen3_8b/historical_source_audit_20261005"
+DEFAULT_OUTPUT_ROOT = ROOT / "results/qwen3_8b/historical_source_audit_20261005"
 
 
 @dataclass(frozen=True)
@@ -52,6 +54,7 @@ class Batch:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--label", required=True)
+    parser.add_argument("--model-path", type=Path, default=MODEL_PATH)
     parser.add_argument("--dataset-root", type=Path, required=True)
     parser.add_argument("--output-root", type=Path, default=DEFAULT_OUTPUT_ROOT)
     parser.add_argument("--batch-size", type=int, default=8)
@@ -191,12 +194,10 @@ def main() -> None:
     args = parse_args()
     output_root = args.output_root / args.label / "mlp34_patching"
     output_root.mkdir(parents=True, exist_ok=True)
-    if str(LEGACY_SRC) not in sys.path:
-        sys.path.insert(0, str(LEGACY_SRC))
-    from toolcall_circuit.single_sample import load_hooked_qwen3
+    from mi4tc.legacy_qwen import load_hooked_qwen3
 
     dtype = torch.bfloat16
-    model, _tokenizer = load_hooked_qwen3(str(MODEL_PATH), args.device, dtype)
+    model, _tokenizer = load_hooked_qwen3(str(args.model_path), args.device, dtype)
     if args.use_hook_mlp_in:
         model.set_use_hook_mlp_in(True)
     token_ids = model.tokenizer.encode(TOOL_CALL, add_special_tokens=False)

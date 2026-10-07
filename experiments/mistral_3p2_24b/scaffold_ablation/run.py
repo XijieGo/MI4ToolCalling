@@ -18,6 +18,8 @@ import torch.nn.functional as F
 REPO_ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO_ROOT / "src"))
 
+from mi4tc.paths import model_path  # noqa: E402
+
 from transformers import AutoTokenizer, Mistral3ForConditionalGeneration
 
 NEUTRAL_VERBS = ("Consider", "Handle", "Take", "Use", "Process")
@@ -180,7 +182,7 @@ def evaluate_prompts(model, tokenizer, prompts: list[str], batch_size: int = 4) 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model-path", type=Path, default=Path("/root/autodl-tmp/Mistral-Small-3.2-24B-Instruct-2506"))
+    parser.add_argument("--model-path", type=Path, default=model_path("mistral"))
     parser.add_argument("--dataset-root", type=Path, default=Path("datasets/mistral_3p2_24b/pair"))
     parser.add_argument("--output-dir", type=Path, default=Path("results/mistral_3p2_24b/scaffold_ablation"))
     parser.add_argument("--batch-size", type=int, default=4)

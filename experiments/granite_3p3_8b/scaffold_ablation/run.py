@@ -18,6 +18,8 @@ import torch.nn.functional as F
 REPO_ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO_ROOT / "src"))
 
+from mi4tc.paths import model_path  # noqa: E402
+
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 NEUTRAL_VERBS = ("Consider", "Handle", "Take", "Use", "Process")
@@ -182,7 +184,7 @@ def evaluate_prompts(model, tokenizer, prompts: list[str], batch_size: int = 8) 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model-path", type=Path, default=Path("/root/autodl-tmp/Granite/granite-3.3-8b-instruct"))
+    parser.add_argument("--model-path", type=Path, default=model_path("granite"))
     parser.add_argument("--dataset-root", type=Path, default=Path("datasets/granite_3p3_8b/pair"))
     parser.add_argument("--output-dir", type=Path, default=Path("results/granite_3p3_8b/scaffold_ablation"))
     parser.add_argument("--batch-size", type=int, default=8)

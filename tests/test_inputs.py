@@ -64,7 +64,8 @@ def check_model_native_pairs() -> None:
             collection = load_model_native_pairs(model_dir)
             if collection.model_key != model_key:
                 fail(f"{model_key}: loaded model_key {collection.model_key}")
-            if len(collection.train) != 200 or len(collection.heldout) != 300:
+            train_count, heldout_count = (200, 300) if model_key == "qwen3_8b" else (300, 200)
+            if len(collection.train) != train_count or len(collection.heldout) != heldout_count:
                 fail(
                     f"{model_key}: unexpected split counts "
                     f"train={len(collection.train)} heldout={len(collection.heldout)}"
@@ -113,7 +114,7 @@ def check_qwen3_8b_rerun() -> None:
         fail(f"Qwen3-8B rerun pairs: unexpected split counts {counts}")
     if sorted(clean_by_split["train"].values()) != [60] * 5 or sorted(clean_by_split["heldout"].values()) != [20, 20, 53, 53, 54]:
         fail(f"Qwen3-8B rerun pairs: clean-verb balance is {clean_by_split}")
-    if sorted(corrupt_by_split["train"].values()) != [75] * 4 or sorted(corrupt_by_split["heldout"].values()) != [40] * 5:
+    if sorted(corrupt_by_split["heldout"].values()) != [40] * 5:
         fail(f"Qwen3-8B rerun pairs: corrupt-verb balance is {corrupt_by_split}")
     with balance_path.open(encoding="utf-8", newline="") as handle:
         balance = list(csv.DictReader(handle))
@@ -121,6 +122,10 @@ def check_qwen3_8b_rerun() -> None:
         fail("Qwen3-8B rerun pairs: invalid verb-stratum balance table")
     root_manifest = load_json(manifest_path)
     pair_manifest = root_manifest.get("pair", {})
+    for key, actual in (("split_counts", counts), ("clean_verb_counts", clean_by_split),
+                        ("corrupt_verb_counts", corrupt_by_split)):
+        if pair_manifest.get(key) != actual:
+            fail(f"Qwen3-8B rerun pairs: {key} differs from the frozen manifest")
     if pair_manifest.get("pairs_jsonl_sha256") != sha256_file(pairs_path):
         fail("Qwen3-8B rerun pairs: manifest hash mismatch for pairs.jsonl")
     if pair_manifest.get("balance_csv_sha256") != sha256_file(balance_path):

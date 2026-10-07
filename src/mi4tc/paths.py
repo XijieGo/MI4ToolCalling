@@ -24,26 +24,7 @@ def external_path(name: str, default: str | Path) -> Path:
 
 
 def model_path(name: str = "qwen3_8b") -> Path:
-    local_fallbacks = {
-        "qwen3_8b": Path("/home/xijie/models/Qwen3-8B"),
-        "qwen3_4b": Path("/home/xijie/models/Qwen3-4B"),
-        "qwen3_14b": Path("/home/xijie/models/Qwen3-14B"),
-        "qwen35_4b": Path("/home/xijie/models/Qwen3.5-4B"),
-        "qwen35_9b": Path("/home/xijie/models/Qwen3.5-9B"),
-        "mistral": Path("/home/xijie/models/Mistral-Small-3.2-24B-Instruct-2506"),
-        "granite": Path("/home/xijie/models/granite-3.3-8b-instruct"),
-        "devstral": Path("/home/xijie/models/Devstral-Small-2-24B-Instruct-2512"),
-    }
-    autodl_fallbacks = {
-        "qwen3_8b": Path("/root/autodl-tmp/Qwen/Qwen3-8B"),
-        "qwen3_4b": Path("/root/autodl-tmp/Qwen/Qwen3-4B"),
-        "qwen3_14b": Path("/root/autodl-tmp/Qwen/Qwen3-14B"),
-        "qwen35_4b": Path("/root/autodl-tmp/Qwen/Qwen3.5-4B"),
-        "qwen35_9b": Path("/root/autodl-tmp/Qwen/Qwen3.5-9B"),
-        "mistral": Path("/root/autodl-tmp/Mistral-Small-3.2-24B-Instruct-2506"),
-        "granite": Path("/root/autodl-tmp/Granite/granite-3.3-8b-instruct"),
-        "devstral": Path("/root/autodl-tmp/Hermes/Devstral-Small-2-24B-Instruct-2512"),
-    }
+    name = {"granite_3p3_8b": "granite", "mistral_3p2_24b": "mistral"}.get(name, name)
     defaults = {
         "qwen3_8b": ("MI4TC_QWEN3_8B_PATH", "external/models/Qwen3-8B"),
         "qwen3_4b": ("MI4TC_QWEN3_4B_PATH", "external/models/Qwen3-4B"),
@@ -58,14 +39,17 @@ def model_path(name: str = "qwen3_8b") -> Path:
         env_name, default = defaults[name]
     except KeyError as exc:
         raise ValueError(f"Unknown model key: {name!r}; choose from {sorted(defaults)}") from exc
-    default_path = local_fallbacks[name] if local_fallbacks[name].exists() else REPO_ROOT / default
+    root = external_path("MI4TC_MODEL_ROOT", REPO_ROOT / "external/models")
+    default_path = root / Path(default).name
     return external_path(env_name, default_path)
 
 
 def transcoder_root() -> Path:
-    local_tc = Path("/home/xijie/transcoders")
-    default = local_tc if local_tc.exists() else REPO_ROOT / "external" / "transcoders"
-    return external_path("MI4TC_TRANSCODER_ROOT", default)
+    return external_path("MI4TC_TRANSCODER_ROOT", REPO_ROOT / "external/transcoders")
+
+
+def released_transcoder_root() -> Path:
+    return external_path("MI4TC_RELEASE_ROOT", transcoder_root() / "release")
 
 
 def require_inside_repo(path: Path) -> Path:
@@ -74,6 +58,6 @@ def require_inside_repo(path: Path) -> Path:
     resolved = path.expanduser().resolve()
     # Detect the old checkout by its directory name without embedding a
     # machine-specific absolute path in the new repository.
-    if any(part == "MI4ToolCalling" for part in resolved.parts):
+    if any(parts == ("ToolCalling", "MI4ToolCalling") for parts in zip(resolved.parts, resolved.parts[1:])):
         raise ValueError(f"Path points into a predecessor repository: {resolved}")
     return resolved

@@ -200,12 +200,9 @@ def load_mistral3(
             dtype=torch_dtype,
             trust_remote_code=True,
         )
-    try:
-        from transformers import AutoTokenizer
+    from .native_mistral import NativeMistralTokenizer
 
-        tokenizer = AutoTokenizer.from_pretrained(str(model_path), trust_remote_code=True)
-    except Exception:  # pragma: no cover - only when the checkpoint ships no tokenizer
-        tokenizer = None
+    tokenizer = NativeMistralTokenizer(model_path)
     requested_device = torch.device(device)
     model.to(requested_device)
     model.eval()

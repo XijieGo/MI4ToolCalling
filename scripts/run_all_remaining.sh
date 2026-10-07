@@ -7,7 +7,7 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
-PY="${PYTHON:-/root/miniconda3/envs/qwen35scan/bin/python}"
+PY="${PYTHON:-python}"
 
 echo "Waiting for current tasks to complete..."
 while pgrep -f "experiments/qwen35_4b" >/dev/null || pgrep -f "experiments/granite_3p3_8b" >/dev/null; do

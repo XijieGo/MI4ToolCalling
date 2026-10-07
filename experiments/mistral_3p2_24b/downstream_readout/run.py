@@ -17,6 +17,8 @@ import torch.nn.functional as F
 REPO_ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO_ROOT / "src"))
 
+from mi4tc.paths import model_path  # noqa: E402
+
 from transformers import AutoTokenizer, Mistral3ForConditionalGeneration
 
 TOOL_CALL_TOKEN = "[TOOL_CALLS]"
@@ -88,7 +90,7 @@ def get_token_offsets(tokenizer, input_ids: list[int]) -> list[tuple[int, int]]:
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model-path", type=Path, default=Path("/root/autodl-tmp/Mistral-Small-3.2-24B-Instruct-2506"))
+    parser.add_argument("--model-path", type=Path, default=model_path("mistral"))
     parser.add_argument("--vector-path", type=Path, default=Path("results/transfer/mistral_3p2_24b/coding_vector.pt"))
     parser.add_argument("--dataset-root", type=Path, default=Path("datasets/mistral_3p2_24b/pair"))
     parser.add_argument("--output-root", type=Path, default=Path("results/mistral_3p2_24b/downstream_readout"))
@@ -280,7 +282,6 @@ def main():
         "reader_head": f"L{READER_HEAD[0]}H{READER_HEAD[1]}",
         "key_component": f"L{KEY_COMPONENT[0]}H{KEY_COMPONENT[1]}",
         "max_attention_shift_pp": round(max_shift_pp, 1),
-        "table6_reported_max_attn_pp": 8.8,
         "intervention_layer": INTERVENTION_LAYER,
         "vector_recovery_rate_pct": round(recovery_rate, 1),
     }
@@ -302,7 +303,7 @@ def main():
 
     md_lines.extend([
         "",
-        f"- **Max Attention Shift**: `{max_shift_pp:.1f} pp` (Table 6 reports `+8.8 pp`).",
+        f"- **Max Attention Shift**: `{max_shift_pp:.1f} pp`.",
         f"- **Top Head by $\\Delta$ DLA**: `{dla_rows[0]['head']}` ($\\Delta$ DLA = `+{dla_rows[0]['delta_dla']}`).",
         f"- **Vector Intervention at L{INTERVENTION_LAYER}**: Recovers `[TOOL_CALLS]` top-1 on **{recovery_rate:.1f}%** of held-out analysis prompts.",
     ])

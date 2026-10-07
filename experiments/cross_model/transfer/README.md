@@ -1,15 +1,21 @@
-# Locked-vector transfer
+# Tool-call vector transfer
 
-Fits each model's coding vector once, at the layer and hook in `tool_call_vector/run.py`, then applies it unchanged.
+Follow the [project README](../../../README.md) for installation, input downloads and path configuration. Run the commands below from the repository root.
 
-- Multi-domain keeps the coding direction and rescales its L2 norm to the target domain contrast. Qwen3-4B, Qwen3-8B, and Qwen3-14B all read `datasets/qwen3_8b/multi_domain`: 400 train pairs set the norm and 100 test pairs are scored. Other models use their own 100-pair test set for both the norm and the score.
-- Verb-free baselines all 600 stored requests, then keeps up to 10 fresh tool-call top-1 rows per domain and pattern. Removal is alpha 1 and 1.5. Mistral uses stored `input_ids`.
-- Tau2 uses the raw coding vector at alpha 1. The call arm is subtracted and the text arm is added. Qwen models render Telecom. Granite and Mistral render Retail, with the historical message adapters.
-
-The control is a same-norm Gaussian made orthogonal to the coding vector, seed 20260726. Pairs are not dropped when a fresh baseline disagrees with an older screen.
+`run.py` applies the coding vector at the layer and hook defined in `../tool_call_vector/run.py`. It evaluates cross-domain prompt pairs, verb-free requests, and native multi-turn tau2 trajectories. Cross-domain transfer preserves the direction and calibrates its norm to the target domain; verb-free and tau2 interventions use fixed gains.
 
 ```bash
-bash scripts/run_transfer.sh
+bash scripts/run_tool_call_vector.sh qwen3_8b
+bash scripts/run_transfer.sh qwen3_8b
+
+# Select individual evaluation arms
+python experiments/cross_model/transfer/run.py \
+  --model-key qwen3_8b --arms multi_domain,verb_free \
+  --token-budget 4096
 ```
 
-Outputs land in `results/transfer/<model>/summary.json` and `results/transfer/summary.md`.
+Tau2 call-arm interventions subtract the vector; text-arm interventions add it. The control uses a same-norm Gaussian direction orthogonal to the coding vector, with seed `20260726`. Telecom and Retail system prompts and tool schemas are provided in `templates/`, with the original tau2-bench license. The frozen candidate turns come from the Hugging Face dataset.
+
+`tau2_alphas.py` evaluates additional gains. `tau2_parallel.py` runs and merges independent call/text shards using the same layer, vector and template provenance.
+
+Outputs are written to `results/transfer/<model-key>/summary.json` and `results/transfer/summary.md`.

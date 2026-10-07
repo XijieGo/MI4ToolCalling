@@ -27,3 +27,31 @@ trash/
 *.log
 .venv*/
 
+# Dataset and checkpoint releases live on Hugging Face.
+/datasets/
+
+# Experiment directories publish code and instructions; generated tables stay local.
+/experiments/**
+!/experiments/**/
+!/experiments/**/*.py
+!/experiments/**/README.md
+!/experiments/cross_model/transfer/templates/**/*.json
+!/experiments/cross_model/transfer/templates/**/*.txt
+!/experiments/cross_model/transfer/templates/LICENSE
+/experiments/cross_model/native_release/
+
+# Local queue supervision, diagnostic runs and one-off dataset migrations.
+/experiments/cross_model/audit_suspect_models.py
+/scripts/recompute_all.py
+/scripts/extend_recompute_queue.py
+/scripts/recompute_pre_layers.py
+/scripts/recompute_retry.py
+/scripts/swap_pair_splits.py
+
+# Package builds and local release exports.
+*.egg-info/
+/build/
+/dist/
+/release/
+*.tar.gz
+*.zip

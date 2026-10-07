@@ -17,6 +17,8 @@ import torch.nn.functional as F
 REPO_ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO_ROOT / "src"))
 
+from mi4tc.paths import model_path  # noqa: E402
+
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 TOOL_CALL_TOKEN = "<|tool_call|>"
@@ -74,7 +76,7 @@ def identify_spans(text: str, offset_mapping: list[tuple[int, int]]) -> dict[str
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model-path", type=Path, default=Path("/root/autodl-tmp/Granite/granite-3.3-8b-instruct"))
+    parser.add_argument("--model-path", type=Path, default=model_path("granite"))
     parser.add_argument("--vector-path", type=Path, default=Path("results/transfer/granite_3p3_8b/coding_vector.pt"))
     parser.add_argument("--dataset-root", type=Path, default=Path("datasets/granite_3p3_8b/pair"))
     parser.add_argument("--output-root", type=Path, default=Path("results/granite_3p3_8b/downstream_readout"))
@@ -266,7 +268,6 @@ def main():
         "reader_head": f"L{READER_HEAD[0]}H{READER_HEAD[1]}",
         "key_component": f"L{KEY_COMPONENT[0]}H{KEY_COMPONENT[1]}",
         "max_attention_shift_pp": round(max_shift_pp, 1),
-        "table6_reported_max_attn_pp": 25.2,
         "intervention_layer": INTERVENTION_LAYER,
         "vector_recovery_rate_pct": round(recovery_rate, 1),
     }
@@ -288,7 +289,7 @@ def main():
 
     md_lines.extend([
         "",
-        f"- **Max Attention Shift**: `{max_shift_pp:.1f} pp` (Table 6 reports `+25.2 pp`).",
+        f"- **Max Attention Shift**: `{max_shift_pp:.1f} pp`.",
         f"- **Top Head by $\\Delta$ DLA**: `{dla_rows[0]['head']}` ($\\Delta$ DLA = `+{dla_rows[0]['delta_dla']}`).",
         f"- **Vector Intervention at L{INTERVENTION_LAYER}**: Recovers `<|tool_call|>` top-1 on **{recovery_rate:.1f}%** of held-out analysis prompts.",
     ])

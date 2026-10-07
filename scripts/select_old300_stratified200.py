@@ -11,6 +11,7 @@ from __future__ import annotations
 import csv
 import hashlib
 import json
+import os
 from collections import Counter
 from pathlib import Path
 
@@ -20,7 +21,7 @@ from scipy.optimize import Bounds, LinearConstraint, milp
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-OLD_DATA_ROOT = Path("/root/autodl-tmp/MI4ToolCalling-sync-v0/datasets/test")
+OLD_DATA_ROOT = Path(os.environ.get("MI4TC_OLD_DATA_ROOT", str(REPO_ROOT / "external/historical/datasets/test"))).expanduser()
 HIST_ROOT = REPO_ROOT / "results/qwen3_8b/historical_source_audit_20261005/v2_300_fixed_v1_protocol"
 BASE_CACHE_PATH = HIST_ROOT / "phase6_cache.pt"
 BASE_MLP_CSV = HIST_ROOT / "mlp34_patching/mlp34_patch_per_sample.csv"

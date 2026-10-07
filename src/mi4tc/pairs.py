@@ -228,8 +228,11 @@ def load_model_native_pairs(dataset_root: Path) -> ModelNativePairs:
     if expected_total != 500 or len(rows) != 500:
         raise ValueError(f"{dataset_root}: expected exactly 500 selected pairs")
     expected_by_split = {"train": summary.get("n_train"), "heldout": summary.get("n_heldout")}
-    if expected_by_split != {"train": 200, "heldout": 300}:
-        raise ValueError(f"{dataset_root}: expected a 200-train / 300-heldout split")
+    # The Qwen3-8B native collection uses 200/300; the other native
+    # collections use 300/200. The primary Qwen3-8B pair loader is separate.
+    required_split = {"train": 200, "heldout": 300} if model_key == "qwen3_8b" else {"train": 300, "heldout": 200}
+    if expected_by_split != required_split:
+        raise ValueError(f"{dataset_root}: expected split counts {required_split}")
 
     grouped: dict[str, list[NativePair]] = {"train": [], "heldout": []}
     seen_ids: set[str] = set()

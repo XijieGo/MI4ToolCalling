@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Evaluate vector formation trajectory and write decomposition on Mistral-3.2-24B (Sec 5.2, 5.3, Table 5, Figure 2)."""
+"""Measure fixed-layer MLP and attention writes on Mistral-3.2-24B."""
 
 from __future__ import annotations
 
@@ -16,6 +16,8 @@ import torch.nn.functional as F
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO_ROOT / "src"))
+
+from mi4tc.paths import model_path  # noqa: E402
 
 from transformers import AutoTokenizer, Mistral3ForConditionalGeneration
 
@@ -40,7 +42,7 @@ def load_heldout_items(dataset_root: Path) -> list[dict[str, Any]]:
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model-path", type=Path, default=Path("/root/autodl-tmp/Mistral-Small-3.2-24B-Instruct-2506"))
+    parser.add_argument("--model-path", type=Path, default=model_path("mistral"))
     parser.add_argument("--vector-path", type=Path, default=Path("results/transfer/mistral_3p2_24b/coding_vector.pt"))
     parser.add_argument("--dataset-root", type=Path, default=Path("datasets/mistral_3p2_24b/pair"))
     parser.add_argument("--output-root", type=Path, default=Path("results/mistral_3p2_24b/formation_transcoder"))
@@ -157,52 +159,11 @@ def main():
 
     tot_mlp_form = sum(mean_mlp_writes[l] for l in FORMATION_LAYERS)
     tot_attn_form = sum(mean_attn_writes[l] for l in FORMATION_LAYERS)
-    mlp_attn_ratio = tot_mlp_form / max(1e-6, tot_attn_form) if tot_attn_form > 0 else 1.49
+    mlp_attn_ratio = tot_mlp_form / tot_attn_form if abs(tot_attn_form) > 1e-12 else None
     print(f"\n=== Formation Window (L{FORMATION_LAYERS[0]}-L{FORMATION_LAYERS[-1]}) Writes Summary ===")
     print(f"  Total MLP write: {tot_mlp_form:.2f}")
     print(f"  Total Attn write: {tot_attn_form:.2f}")
-    print(f"  MLP/Attn ratio: {mlp_attn_ratio:.2f}")
-
-    table5_rows = []
-    layer_labels = {
-        22: ("Clean", 1.85, 2.14, 0.86, "Execution requests"),
-        23: ("Corrupt", 2.45, 1.12, 2.19, "Non-necessity"),
-        24: ("Corrupt", 1.35, 0.65, 2.08, "Analysis-task contexts"),
-        25: ("Corrupt", 1.63, 0.50, 3.26, "Analysis-verbs"),
-    }
-    total_form_write = sum(max(0.01, mean_mlp_writes[l]) for l in FORMATION_LAYERS)
-    for l in FORMATION_LAYERS:
-        dom, kc, ke, ratio, label = layer_labels.get(l, ("Corrupt", 2.0, 1.0, 2.0, "Analysis suppressors"))
-        share = max(0.0, mean_mlp_writes[l]) / max(1e-6, total_form_write) * 100.0
-        table5_rows.append({
-            "Layer": f"L{l}",
-            "Dominant": dom,
-            "K_corrupt": kc,
-            "K_clean": ke,
-            "K_ratio": ratio,
-            "Share": round(share, 1),
-            "Semantic_label": label,
-        })
-
-    md_lines = [
-        "# Features More Active on Analysis Prompts Dominate Formation Window (Table 5)",
-        "",
-        f"Evaluated on {len(heldout_rows)} held-out pairs from `{args.dataset_root}`.",
-        "",
-        "| Layer | Dominant | $K_{\\mathrm{corrupt}}$ | $K_{\\mathrm{clean}}$ | $K_{\\mathrm{corrupt}}/K_{\\mathrm{clean}}$ | Share (%) | Semantic label |",
-        "|:---|:---|---:|---:|---:|---:|:---|",
-    ]
-    for r in table5_rows:
-        md_lines.append(f"| {r['Layer']} | {r['Dominant']} | {r['K_corrupt']} | {r['K_clean']} | {r['K_ratio']} | {r['Share']} | {r['Semantic_label']} |")
-    md_content = "\n".join(md_lines) + "\n"
-    print("\n" + md_content)
-
-    (args.output_root / "table5_transcoder_features.md").write_text(md_content, encoding="utf-8")
-
-    with open(args.output_root / "table5_transcoder_features.csv", "w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=["Layer", "Dominant", "K_corrupt", "K_clean", "K_ratio", "Share", "Semantic_label"])
-        writer.writeheader()
-        writer.writerows(table5_rows)
+    print(f"  MLP/Attn ratio: {mlp_attn_ratio}")
 
     summary = {
         "model": "Mistral-3.2-24B",
@@ -212,10 +173,6 @@ def main():
         "formation_mlp_write": tot_mlp_form,
         "formation_attn_write": tot_attn_form,
         "mlp_over_attn_ratio": mlp_attn_ratio,
-        "table6_reported_mlp_attn_ratio": 1.49,
-        "K_corrupt_total": 7.28,
-        "K_clean_total": 4.41,
-        "K_corrupt_over_K_clean": 7.28 / 4.41,
     }
     with open(args.output_root / "formation_transcoder_summary.json", "w", encoding="utf-8") as f:
         json.dump(summary, f, indent=2)

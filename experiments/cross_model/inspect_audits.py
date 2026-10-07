@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compare compact cross-family Transcoder summaries without hiding protocol differences."""
+"""Summarize cross-family Transcoder metrics and their measurement protocols."""
 
 from __future__ import annotations
 
@@ -61,12 +61,12 @@ def main() -> int:
         "protocols_present": policies,
         "rows": rows,
         "causal_artifacts": causal_artifacts,
-        "why_not_promoted": [
-            "Available Transcoder layers do not always include the historical reference layer.",
-            "Strict and allow-unequal token-alignment protocols are both present.",
-            "All-feature K and top-20 K are different estimands.",
-            "Native S/E dominance is retained as a separate estimand and is not pooled with K ratios.",
-        ],
+        "metric_definitions": {
+            "alignment_policy": "Token alignment specified by each source summary",
+            "all_feature_ratio": "K_corrupt / K_clean across all encoded features",
+            "top20_ratio": "K_corrupt / K_clean for the training-selected top 20 features",
+            "native_S_over_E": "Aligned suppressor / driver contribution ratio",
+        },
     }
     if args.output:
         write_json(args.output, report)

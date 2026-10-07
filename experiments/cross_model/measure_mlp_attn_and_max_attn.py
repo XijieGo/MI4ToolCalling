@@ -258,7 +258,7 @@ def main():
         mu_norm = float(coding.norm().item())
         u_Delta = (coding / mu_norm).to(device_str)
     else:
-        u_Delta = torch.ones(model.config.hidden_size, device=device_str) / (model.config.hidden_size ** 0.5)
+        raise FileNotFoundError(f"Fit the coding vector before measuring component writes: {vector_path}")
 
     pairs = load_pairs(model_key, spec, args.max_pairs)
     print(f"[{model_key}] Loaded {len(pairs)} pairs for measurement.", flush=True)
@@ -266,7 +266,6 @@ def main():
     formation_layers = [l for l in cfg["formation_layers"] if l < n_layers]
     readout_layers = [l for l in cfg["readout_layers"] if l < n_layers]
     target_span = cfg["target_span"]
-    key_head = cfg["key_head"]
 
     mlp_diffs = {l: [] for l in formation_layers}
     attn_diffs = {l: [] for l in formation_layers}
@@ -359,35 +358,20 @@ def main():
     if "qwen35" in model_key:
         mlp_attn_str = "--"
         mlp_attn_ratio = None
-    elif tot_attn > 0:
+    elif abs(tot_attn) > 1e-12:
         mlp_attn_ratio = round(tot_mlp / tot_attn, 2)
         mlp_attn_str = f"{mlp_attn_ratio:.2f}"
     else:
-        mlp_attn_ratio = 2.45
-        mlp_attn_str = "2.45"
+        mlp_attn_ratio = None
+        mlp_attn_str = "--"
 
     # 2. Max Attn shift in pp
-    max_shift_pp = 0.0
-    best_head = None
-    for (l, h), shifts in attn_shifts_per_head.items():
-        if shifts:
-            mean_shift = (sum(shifts) / len(shifts)) * 100.0
-            if mean_shift > max_shift_pp:
-                max_shift_pp = mean_shift
-                best_head = (l, h)
-
-    # If eager attention didn't yield attention matrices, fallback
-    if max_shift_pp == 0.0:
-        historical_defaults = {
-            "qwen3_4b": 73.9,
-            "qwen3_8b": 72.6,
-            "qwen3_14b": 85.1,
-            "qwen35_4b": 13.5,
-            "qwen35_9b": 14.9,
-            "granite_3p3_8b": 25.2,
-            "mistral_3p2_24b": 42.0,
-        }
-        max_shift_pp = historical_defaults.get(model_key, 25.0)
+    head_shifts = {head: sum(shifts) / len(shifts) * 100.0
+                   for head, shifts in attn_shifts_per_head.items() if shifts}
+    if not head_shifts:
+        raise RuntimeError("Attention matrices are required to compute the target-span shift")
+    best_head = max(head_shifts, key=head_shifts.get)
+    max_shift_pp = head_shifts[best_head]
 
     result = {
         "model_key": model_key,
@@ -396,7 +380,7 @@ def main():
         "tot_attn_write": round(tot_attn, 3),
         "mlp_attn_ratio": mlp_attn_str,
         "max_attn_pp": round(max_shift_pp, 1),
-        "best_head": f"L{best_head[0]}H{best_head[1]}" if best_head else f"L{key_head[0]}H{key_head[1]}",
+        "best_head": f"L{best_head[0]}H{best_head[1]}",
     }
 
     out_dir = args.output_dir if args.output_dir is not None else (REPO_ROOT / "results" / "formation_readout" / model_key)

@@ -256,13 +256,6 @@ def analyze_transcoder_layers(
     top_features = []
     all_suppressor_features = []
 
-    semantic_labels = {
-        28: "Execution requests",
-        29: "Non-necessity",
-        30: "Analysis-task contexts",
-        31: "Analysis-task contexts",
-        32: "Analysis-verbs",
-    }
 
     layer_total_kappas = {}
 
@@ -359,7 +352,7 @@ def analyze_transcoder_layers(
             "K_clean": K_clean,
             "K_corrupt_over_K_clean": ratio,
             "share_pct": 0.0,  # Will compute after sum
-            "semantic_label": semantic_labels[layer],
+
             "_total_kappa": total_kappa_layer,
         })
 
@@ -374,7 +367,7 @@ def analyze_transcoder_layers(
         if total_formation_kappa != 0:
             r["share_pct"] = (r["_total_kappa"] / total_formation_kappa) * 100.0
         else:
-            r["share_pct"] = 25.0
+            r["share_pct"] = 100.0 / len(table5_rows)
 
     return table5_rows, top_features, all_suppressor_features
 
@@ -554,12 +547,12 @@ def main() -> int:
 
     # Write Table 5 Markdown
     md_lines = [
-        "# Features More Active on Analysis Prompts Dominate Formation Window (Table 5)",
+        "# Transcoder feature contributions",
         "",
         f"Evaluated on {len(pairs)} held-out pairs from `datasets/qwen3_14b/pair`.",
         "",
-        "| Layer | Dominant | $K_{\\mathrm{corrupt}}$ | $K_{\\mathrm{clean}}$ | $K_{\\mathrm{corrupt}}/K_{\\mathrm{clean}}$ | Share (%) | Semantic label |",
-        "|:---|:---|---:|---:|---:|---:|:---|",
+        "| Layer | Dominant | $K_{\\mathrm{corrupt}}$ | $K_{\\mathrm{clean}}$ | $K_{\\mathrm{corrupt}}/K_{\\mathrm{clean}}$ | Share (%) |",
+        "|:---|:---|---:|---:|---:|---:|",
     ]
     clean_table5_rows = []
     for r in table5_rows:
@@ -570,12 +563,12 @@ def main() -> int:
             "K_clean": round(r["K_clean"], 2),
             "K_corrupt_over_K_clean": round(r["K_corrupt_over_K_clean"], 2),
             "share_pct": round(r["share_pct"], 1),
-            "semantic_label": r["semantic_label"],
+
         }
         clean_table5_rows.append(row_dict)
         md_lines.append(
             f"| {row_dict['layer']} | {row_dict['dominant']} | {row_dict['K_corrupt']} | "
-            f"{row_dict['K_clean']} | {row_dict['K_corrupt_over_K_clean']} | {row_dict['share_pct']} | {row_dict['semantic_label']} |"
+            f"{row_dict['K_clean']} | {row_dict['K_corrupt_over_K_clean']} | {row_dict['share_pct']} |"
         )
     md_lines.append("")
     md_content = "\n".join(md_lines)

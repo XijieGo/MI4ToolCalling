@@ -24,6 +24,7 @@ REPO_ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO_ROOT / "src"))
 
 from mi4tc.io import write_json  # noqa: E402
+from mi4tc.paths import model_path  # noqa: E402
 from mi4tc.model import CausalLMAdapter, _find_decoder_layers, load_mistral3  # noqa: E402
 from mi4tc.pairs import load_model_native_pairs, native_pair_token_ids, token_ids  # noqa: E402
 
@@ -33,18 +34,11 @@ HOOK_CONVENTION = {
     "post": "HuggingFace decoder-block output (post-block residual state)",
 }
 
-# Layer indices are 0-based. Qwen3, Granite, and Mistral use the block input.
-# Qwen3.5 uses the block output. Splits are the ones on which the layer was chosen.
-def _model_dir(name: str, fallback: str) -> str:
-    local_p = Path("/home/xijie/models") / name
-    if local_p.exists():
-        return str(local_p)
-    return fallback
-
-# Layer indices are 0-based.
+# Lk means the input residual of decoder layers[k], using a pre hook.
+# Layer indices are 0-based and use this convention for every model.
 LOCKED: dict[str, dict[str, Any]] = {
     "qwen3_4b": {
-        "path": _model_dir("Qwen3-4B", "/root/autodl-tmp/Qwen/Qwen3-4B"),
+        "path": str(model_path("qwen3_4b")),
         "dataset": REPO_ROOT / "datasets/qwen3_4b/pair",
         "layout": "native",
         "loader": "causal",
@@ -55,7 +49,7 @@ LOCKED: dict[str, dict[str, Any]] = {
         "hook": "pre",
     },
     "qwen3_8b": {
-        "path": _model_dir("Qwen3-8B", "/root/autodl-tmp/Qwen/Qwen3-8B"),
+        "path": str(model_path("qwen3_8b")),
         "dataset": REPO_ROOT / "datasets/qwen3_8b/pair",
         "layout": "text_dir",
         "loader": "causal",
@@ -66,7 +60,7 @@ LOCKED: dict[str, dict[str, Any]] = {
         "hook": "pre",
     },
     "qwen3_14b": {
-        "path": _model_dir("Qwen3-14B", "/root/autodl-tmp/Qwen/Qwen3-14B"),
+        "path": str(model_path("qwen3_14b")),
         "dataset": REPO_ROOT / "datasets/qwen3_14b/pair",
         "layout": "native",
         "loader": "causal",
@@ -77,29 +71,29 @@ LOCKED: dict[str, dict[str, Any]] = {
         "hook": "pre",
     },
     "qwen35_4b": {
-        "path": _model_dir("Qwen3.5-4B", "/root/autodl-tmp/Qwen/Qwen3.5-4B"),
-        "dataset": REPO_ROOT / "trash/selected_500/qwen35_4b",
-        "layout": "text_dir",
+        "path": str(model_path("qwen35_4b")),
+        "dataset": REPO_ROOT / "datasets/qwen35_4b/pair",
+        "layout": "native",
         "loader": "auto",
         "marker": "<tool_call>",
         "marker_id": 248058,
         "token_budget": 65536,
         "layer": 31,
-        "hook": "post",
+        "hook": "pre",
     },
     "qwen35_9b": {
-        "path": _model_dir("Qwen3.5-9B", "/root/autodl-tmp/Qwen/Qwen3.5-9B"),
-        "dataset": REPO_ROOT / "trash/selected_500/qwen35_9b",
-        "layout": "text_dir",
+        "path": str(model_path("qwen35_9b")),
+        "dataset": REPO_ROOT / "datasets/qwen35_9b/pair",
+        "layout": "native",
         "loader": "auto",
         "marker": "<tool_call>",
         "marker_id": 248058,
         "token_budget": 16384,
         "layer": 31,
-        "hook": "post",
+        "hook": "pre",
     },
     "granite_3p3_8b": {
-        "path": _model_dir("granite-3.3-8b-instruct", "/root/autodl-tmp/Granite/granite-3.3-8b-instruct"),
+        "path": str(model_path("granite")),
         "dataset": REPO_ROOT / "datasets/granite_3p3_8b/pair",
         "layout": "native",
         "loader": "causal",
@@ -110,7 +104,7 @@ LOCKED: dict[str, dict[str, Any]] = {
         "hook": "pre",
     },
     "mistral_3p2_24b": {
-        "path": _model_dir("Mistral-Small-3.2-24B-Instruct-2506", "/root/autodl-tmp/Mistral-Small-3.2-24B-Instruct-2506"),
+        "path": str(model_path("mistral")),
         "dataset": REPO_ROOT / "datasets/mistral_3p2_24b/pair",
         "layout": "native",
         "loader": "mistral",
@@ -579,8 +573,11 @@ def run_model(
     max_train: int,
     max_heldout: int,
     device: str,
+    token_budget: int = 0,
 ) -> dict[str, Any]:
-    spec = LOCKED[model_key]
+    spec = dict(LOCKED[model_key])
+    if token_budget:
+        spec["token_budget"] = token_budget
     dataset = spec["dataset"]
     layout = spec["layout"]
     hook = spec["hook"]
@@ -743,6 +740,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--max-train-pairs", type=int, default=0)
     parser.add_argument("--max-heldout-pairs", type=int, default=0)
     parser.add_argument("--device", default="cuda")
+    parser.add_argument("--token-budget", type=int, default=0)
     return parser.parse_args()
 
 
@@ -757,6 +755,7 @@ def main() -> int:
         args.max_train_pairs,
         args.max_heldout_pairs,
         args.device,
+        args.token_budget,
     )
     return 0
 

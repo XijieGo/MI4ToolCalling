@@ -17,6 +17,7 @@ import argparse
 import fcntl
 import importlib.util
 import json
+import os
 import sys
 import time
 from pathlib import Path
@@ -27,15 +28,8 @@ import torch
 REPO_ROOT = Path(__file__).resolve().parents[3]
 VECTOR_RUN = REPO_ROOT / "experiments/cross_model/tool_call_vector/run.py"
 def _resolve_tau2(name: str) -> Path:
-    candidates = [
-        Path(f"/home/xijie/ToolCalling/MI4ToolCalling/datasets/external/tau2_{name}_qwen35_9b/raw"),
-        Path(f"/home/xijie/ToolCalling/MI4ToolCalling/rebuttal/05_tau2_bench_200/source_data/tau2_{name}_qwen35_9b"),
-        Path(f"/root/autodl-tmp/MI4ToolCalling-sync-v0/datasets/external/tau2_{name}_qwen35_9b/raw"),
-    ]
-    for c in candidates:
-        if c.exists():
-            return c
-    return candidates[0]
+    default = Path(__file__).resolve().parent / "templates" / name
+    return Path(os.environ.get(f"MI4TC_TAU2_{name.upper()}_ROOT", str(default))).expanduser()
 
 TAU2_RAW = {
     "telecom": _resolve_tau2("telecom"),

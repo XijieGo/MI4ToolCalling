@@ -6,7 +6,7 @@ set -uo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 export PYTORCH_CUDA_ALLOC_CONF="${PYTORCH_CUDA_ALLOC_CONF:-expandable_segments:True}"
-PY="${PYTHON:-/root/miniconda3/envs/qwen35scan/bin/python}"
+PY="${PYTHON:-python}"
 mkdir -p results/transfer/logs
 
 run_one() {
