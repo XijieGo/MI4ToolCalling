@@ -110,11 +110,14 @@ The input validator checks the frozen manifests, prompt hashes and splits. The u
 ## Citation
 
 ```bibtex
-@inproceedings{mi4toolcalling2026,
-  title     = {How Do Agentic LLMs Decide to Call Tools? A Tool-Call Vector Shaped by Suppression},
-  author    = {Gong, Xijie and Han, Tingxu and Zhang, Jiahao and Song, Wei and Ding, Ziqi and Yan, Hanqi and Sun, Youcheng and Hu, Lijie},
-  booktitle = {Advances in Neural Information Processing Systems},
-  year      = {2026}
+@misc{gong2026agenticllmsdecidetools,
+      title={How Do Agentic LLMs Decide to Call Tools? A Tool-Call Vector Shaped by Suppression}, 
+      author={Xijie Gong and Tingxu Han and Jiahao Zhang and Wei Song and Ziqi Ding and Hanqi Yan and Youcheng Sun and Lijie Hu},
+      year={2026},
+      eprint={2610.09624},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2610.09624}, 
 }
 ```
 
